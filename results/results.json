@@ -1,7 +1,7 @@
 {
   "nonebot-plugin-status": {
     "run": true,
-    "output": "插件 nonebot-plugin-status 的信息如下：\n    name         : nonebot-plugin-status                                          \n     version      : 0.7.1                                                          \n     description  : Check your server status (CPU, Memory, Disk Usage) via nonebot \n    \n    dependencies\n     - humanize &gt;=4.0.0,&lt;5.0.0\n     - Jinja2 &gt;=3.0.0,&lt;4.0.0\n     - nonebot2 &gt;=2.0.0,&lt;3.0.0\n     - psutil &gt;=5.7.2,&lt;6.0.0\n插件 nonebot-plugin-status 依赖的插件如下：\n    \n插件 nonebot_plugin_status 加载正常：\n    <span class=\"ansi32\">06-19 13:15:21</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 13:15:21</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 13:15:22</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_status</span>\"",
+    "output": "插件 nonebot-plugin-status 的信息如下：\n    name         : nonebot-plugin-status                                          \n     version      : 0.7.1                                                          \n     description  : Check your server status (CPU, Memory, Disk Usage) via nonebot \n    \n    dependencies\n     - humanize &gt;=4.0.0,&lt;5.0.0\n     - Jinja2 &gt;=3.0.0,&lt;4.0.0\n     - nonebot2 &gt;=2.0.0,&lt;3.0.0\n     - psutil &gt;=5.7.2,&lt;6.0.0\n插件 nonebot-plugin-status 依赖的插件如下：\n    \n插件 nonebot_plugin_status 加载正常：\n    <span class=\"ansi32\">06-19 13:53:41</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 13:53:41</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 13:53:41</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_status</span>\"",
     "valid": true,
     "metadata": {
       "name": "服务器状态查看",
@@ -57,11 +57,12 @@
       "is_official": false,
       "type": "application",
       "supported_adapters": null
-    }
+    },
+    "time": "2023-06-19 21:53:46"
   },
   "haruka-bot": {
     "run": false,
-    "output": "插件 haruka-bot 的信息如下：\n    name         : haruka-bot                                                                  \n     version      : 1.5.4                                                                       \n     description  : Push dynamics and live informations from bilibili to QQ. Based on nonebot2. \n    \n    dependencies\n     - bilireq &gt;=0.2.5\n     - click &gt;=8.1.3\n     - httpx &gt;=0.24.0\n     - msvc-runtime &gt;=14.34.31931\n     - nonebot-adapter-onebot &gt;=2.2.3\n     - nonebot-plugin-apscheduler &gt;=0.2.0\n     - nonebot-plugin-guild-patch &gt;=0.2.3\n     - nonebot2 &gt;=2.0.0rc4\n     - packaging &gt;=23.1\n     - playwright &gt;=1.33.0\n     - pydantic &gt;=1.10.7\n     - python-dotenv &gt;=1.0.0\n     - tortoise-orm &gt;=0.19.3\n插件 haruka-bot 依赖的插件如下：\n    nonebot_plugin_apscheduler, nonebot_plugin_guild_patch\n插件 haruka_bot 加载出错：\n    <span class=\"ansi32\">06-19 13:15:38</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 13:15:38</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 13:15:38</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_apscheduler</span>\"\n    <span class=\"ansi32\">06-19 13:15:38</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">haruka_bot</span><span class=\"ansi36\"></span> | 检查 Chromium 更新\n    Downloading Chromium 115.0.5790.24 (playwright build v1067) from https://npmmirror.com/mirrors/playwright//builds/chromium/1067/chromium-linux.zip\n    |                                                                                |   0% of 146.4 Mb\n    |■■■■■■■■                                                                        |  10% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■                                                                |  20% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 146.4 Mb\n    Chromium 115.0.5790.24 (playwright build v1067) downloaded to /home/runner/.cache/ms-playwright/chromium-1067\n    Downloading FFMPEG playwright build v1009 from https://npmmirror.com/mirrors/playwright//builds/ffmpeg/1009/ffmpeg-linux.zip\n    |                                                                                |   0% of 2.6 Mb\n    |■■■■■■■■                                                                        |  10% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■                                                                |  20% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 2.6 Mb\n    FFMPEG playwright build v1009 downloaded to /home/runner/.cache/ms-playwright/ffmpeg-1009\n    <span class=\"ansi32\">06-19 13:15:56</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">haruka_bot</span><span class=\"ansi36\"></span> | 检查 Playwright 依赖\n    <span class=\"ansi32\">06-19 13:15:57</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">haruka_bot</span>\"\n    <span class=\"ansi32\">06-19 13:15:57</span> [<span class=\"ansi31\"></span><span class=\"ansi1 ansi31\">ERROR</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | <span class=\"ansi31\"></span><span class=\"ansi31 ansi48-248187208\">Failed to import \"nonebot_plugin_guild_patch\"</span><span class=\"ansi31\"></span>\n    <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Traceback (most recent call last):</span>\n      File \"<span class=\"ansi32\">/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/haruka-bot-test/</span><span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">runner.py</span>\", line <span class=\"ansi33\">31</span>, in <span class=\"ansi35\">&lt;module&gt;</span>\n        <span class=\"ansi1\">require</span><span class=\"ansi1\">(</span><span class=\"ansi36\">'nonebot_plugin_guild_patch'</span><span class=\"ansi1\">)</span>\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 174, in require\n        plugin = load_plugin(name)\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    &gt; File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 154, in load_plugin\n        raise RuntimeError(\n    <span class=\"ansi31\"></span><span class=\"ansi1 ansi31\">RuntimeError</span>:<span class=\"ansi1\"> Module nonebot_plugin_guild_patch is not loaded as a plugin! Make sure not to import it before loading.</span>\n    Traceback (most recent call last):\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/haruka-bot-test/runner.py\", line 31, in &lt;module&gt;\n        require('nonebot_plugin_guild_patch')\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 178, in require\n        raise RuntimeError(f'Cannot load plugin \"{name}\"!')\n    RuntimeError: Cannot load plugin \"nonebot_plugin_guild_patch\"!",
+    "output": "插件 haruka-bot 的信息如下：\n    name         : haruka-bot                                                                  \n     version      : 1.5.4                                                                       \n     description  : Push dynamics and live informations from bilibili to QQ. Based on nonebot2. \n    \n    dependencies\n     - bilireq &gt;=0.2.5\n     - click &gt;=8.1.3\n     - httpx &gt;=0.24.0\n     - msvc-runtime &gt;=14.34.31931\n     - nonebot-adapter-onebot &gt;=2.2.3\n     - nonebot-plugin-apscheduler &gt;=0.2.0\n     - nonebot-plugin-guild-patch &gt;=0.2.3\n     - nonebot2 &gt;=2.0.0rc4\n     - packaging &gt;=23.1\n     - playwright &gt;=1.33.0\n     - pydantic &gt;=1.10.7\n     - python-dotenv &gt;=1.0.0\n     - tortoise-orm &gt;=0.19.3\n插件 haruka-bot 依赖的插件如下：\n    nonebot_plugin_apscheduler, nonebot_plugin_guild_patch\n插件 haruka_bot 加载出错：\n    <span class=\"ansi32\">06-19 13:54:00</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 13:54:00</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 13:54:01</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_apscheduler</span>\"\n    <span class=\"ansi32\">06-19 13:54:01</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">haruka_bot</span><span class=\"ansi36\"></span> | 检查 Chromium 更新\n    Downloading Chromium 115.0.5790.24 (playwright build v1067) from https://npmmirror.com/mirrors/playwright//builds/chromium/1067/chromium-linux.zip\n    |                                                                                |   0% of 146.4 Mb\n    |■■■■■■■■                                                                        |  10% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■                                                                |  20% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 146.4 Mb\n    Chromium 115.0.5790.24 (playwright build v1067) downloaded to /home/runner/.cache/ms-playwright/chromium-1067\n    Downloading FFMPEG playwright build v1009 from https://npmmirror.com/mirrors/playwright//builds/ffmpeg/1009/ffmpeg-linux.zip\n    |                                                                                |   0% of 2.6 Mb\n    |■■■■■■■■                                                                        |  10% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■                                                                |  20% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 2.6 Mb\n    FFMPEG playwright build v1009 downloaded to /home/runner/.cache/ms-playwright/ffmpeg-1009\n    <span class=\"ansi32\">06-19 13:54:36</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">haruka_bot</span><span class=\"ansi36\"></span> | 检查 Playwright 依赖\n    <span class=\"ansi32\">06-19 13:54:38</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">haruka_bot</span>\"\n    <span class=\"ansi32\">06-19 13:54:38</span> [<span class=\"ansi31\"></span><span class=\"ansi1 ansi31\">ERROR</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | <span class=\"ansi31\"></span><span class=\"ansi31 ansi48-248187208\">Failed to import \"nonebot_plugin_guild_patch\"</span><span class=\"ansi31\"></span>\n    <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Traceback (most recent call last):</span>\n      File \"<span class=\"ansi32\">/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/haruka-bot-test/</span><span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">runner.py</span>\", line <span class=\"ansi33\">31</span>, in <span class=\"ansi35\">&lt;module&gt;</span>\n        <span class=\"ansi1\">require</span><span class=\"ansi1\">(</span><span class=\"ansi36\">'nonebot_plugin_guild_patch'</span><span class=\"ansi1\">)</span>\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 174, in require\n        plugin = load_plugin(name)\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    &gt; File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 154, in load_plugin\n        raise RuntimeError(\n    <span class=\"ansi31\"></span><span class=\"ansi1 ansi31\">RuntimeError</span>:<span class=\"ansi1\"> Module nonebot_plugin_guild_patch is not loaded as a plugin! Make sure not to import it before loading.</span>\n    Traceback (most recent call last):\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/haruka-bot-test/runner.py\", line 31, in &lt;module&gt;\n        require('nonebot_plugin_guild_patch')\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 178, in require\n        raise RuntimeError(f'Cannot load plugin \"{name}\"!')\n    RuntimeError: Cannot load plugin \"nonebot_plugin_guild_patch\"!",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -83,11 +84,12 @@
       "type": null,
       "supported_adapters": null
     },
-    "current": null
+    "current": null,
+    "time": "2023-06-19 21:54:38"
   },
   "nonebot-plugin-rauthman": {
     "run": true,
-    "output": "插件 nonebot-plugin-rauthman 的信息如下：\n    name         : nonebot-plugin-rauthman                               \n     version      : 2.0.0rc1.post1                                        \n     description  : Rule-based authorization manager worked with nonebot2 \n    \n    dependencies\n     - nonebot-adapter-onebot &gt;=2.1.3,&lt;3.0.0\n     - nonebot-plugin-apscheduler &gt;=0.2.0,&lt;0.3.0\n     - nonebot2 &gt;=2.0.0rc1,&lt;3.0.0\n     - ujson &gt;=4.0.2,&lt;6.0.0\n插件 nonebot-plugin-rauthman 依赖的插件如下：\n    nonebot_plugin_apscheduler\n插件 nonebot_plugin_rauthman 加载正常：\n    <span class=\"ansi32\">06-19 13:16:05</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 13:16:05</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 13:16:05</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_apscheduler</span>\"\n    <span class=\"ansi32\">06-19 13:16:05</span> [<span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">WARNING</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot_plugin_rauthman</span><span class=\"ansi36\"></span> | File /home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-rauthman-test/global.json not found\n    <span class=\"ansi32\">06-19 13:16:05</span> [<span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">WARNING</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | <span class=\"ansi35\">RAM</span> | RAM data not exist. Try converting from legacy automatically.\n    <span class=\"ansi32\">06-19 13:16:05</span> [<span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">WARNING</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot_plugin_rauthman</span><span class=\"ansi36\"></span> | File /home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-rauthman-test/auth.json not found\n    <span class=\"ansi32\">06-19 13:16:05</span> [<span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">WARNING</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | <span class=\"ansi35\">RAM</span> | Legacy data not vanilla, skip converting.\n    <span class=\"ansi32\">06-19 13:16:05</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | <span class=\"ansi35\">RAM</span> | Initialized: global.json\n    <span class=\"ansi32\">06-19 13:16:05</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_rauthman</span>\"",
+    "output": "插件 nonebot-plugin-rauthman 的信息如下：\n    name         : nonebot-plugin-rauthman                               \n     version      : 2.0.0rc1.post1                                        \n     description  : Rule-based authorization manager worked with nonebot2 \n    \n    dependencies\n     - nonebot-adapter-onebot &gt;=2.1.3,&lt;3.0.0\n     - nonebot-plugin-apscheduler &gt;=0.2.0,&lt;0.3.0\n     - nonebot2 &gt;=2.0.0rc1,&lt;3.0.0\n     - ujson &gt;=4.0.2,&lt;6.0.0\n插件 nonebot-plugin-rauthman 依赖的插件如下：\n    nonebot_plugin_apscheduler\n插件 nonebot_plugin_rauthman 加载正常：\n    <span class=\"ansi32\">06-19 13:54:47</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 13:54:47</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 13:54:47</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_apscheduler</span>\"\n    <span class=\"ansi32\">06-19 13:54:47</span> [<span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">WARNING</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot_plugin_rauthman</span><span class=\"ansi36\"></span> | File /home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-rauthman-test/global.json not found\n    <span class=\"ansi32\">06-19 13:54:47</span> [<span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">WARNING</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | <span class=\"ansi35\">RAM</span> | RAM data not exist. Try converting from legacy automatically.\n    <span class=\"ansi32\">06-19 13:54:47</span> [<span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">WARNING</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot_plugin_rauthman</span><span class=\"ansi36\"></span> | File /home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-rauthman-test/auth.json not found\n    <span class=\"ansi32\">06-19 13:54:47</span> [<span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">WARNING</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | <span class=\"ansi35\">RAM</span> | Legacy data not vanilla, skip converting.\n    <span class=\"ansi32\">06-19 13:54:47</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | <span class=\"ansi35\">RAM</span> | Initialized: global.json\n    <span class=\"ansi32\">06-19 13:54:47</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_rauthman</span>\"",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -109,11 +111,12 @@
       "type": null,
       "supported_adapters": null
     },
-    "current": null
+    "current": null,
+    "time": "2023-06-19 21:54:47"
   },
   "nonebot-plugin-docs": {
     "run": true,
-    "output": "插件 nonebot-plugin-docs 的信息如下：\n    name         : nonebot-plugin-docs        \n     version      : 2.0.0                      \n     description  : View NoneBot2 Docs Locally \n    \n    dependencies\n     - nonebot2 &gt;=2.0.0-beta.1,&lt;3.0.0\n插件 nonebot-plugin-docs 依赖的插件如下：\n    \n插件 nonebot_plugin_docs 加载正常：\n    <span class=\"ansi32\">06-19 13:16:11</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 13:16:11</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 13:16:11</span> [<span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">WARNING</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot_plugin_docs</span><span class=\"ansi36\"></span> | Driver none not supported\n    <span class=\"ansi32\">06-19 13:16:11</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_docs</span>\"",
+    "output": "插件 nonebot-plugin-docs 的信息如下：\n    name         : nonebot-plugin-docs        \n     version      : 2.0.0                      \n     description  : View NoneBot2 Docs Locally \n    \n    dependencies\n     - nonebot2 &gt;=2.0.0-beta.1,&lt;3.0.0\n插件 nonebot-plugin-docs 依赖的插件如下：\n    \n插件 nonebot_plugin_docs 加载正常：\n    <span class=\"ansi32\">06-19 13:54:55</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 13:54:55</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 13:54:55</span> [<span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">WARNING</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot_plugin_docs</span><span class=\"ansi36\"></span> | Driver none not supported\n    <span class=\"ansi32\">06-19 13:54:55</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_docs</span>\"",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -130,11 +133,12 @@
       "type": null,
       "supported_adapters": null
     },
-    "current": null
+    "current": null,
+    "time": "2023-06-19 21:54:55"
   },
   "nonebot-plugin-sentry": {
     "run": true,
-    "output": "插件 nonebot-plugin-sentry 的信息如下：\n    name         : nonebot-plugin-sentry             \n     version      : 0.4.1                             \n     description  : Push your bot errors to Sentry.io \n    \n    dependencies\n     - nonebot2 &gt;=2.0.0,&lt;3.0.0\n     - sentry-sdk &gt;=1.0.0,&lt;2.0.0\n插件 nonebot-plugin-sentry 依赖的插件如下：\n    \n插件 nonebot_plugin_sentry 加载正常：\n    <span class=\"ansi32\">06-19 13:16:17</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 13:16:17</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 13:16:17</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_sentry</span>\"",
+    "output": "插件 nonebot-plugin-sentry 的信息如下：\n    name         : nonebot-plugin-sentry             \n     version      : 0.4.1                             \n     description  : Push your bot errors to Sentry.io \n    \n    dependencies\n     - nonebot2 &gt;=2.0.0,&lt;3.0.0\n     - sentry-sdk &gt;=1.0.0,&lt;2.0.0\n插件 nonebot-plugin-sentry 依赖的插件如下：\n    \n插件 nonebot_plugin_sentry 加载正常：\n    <span class=\"ansi32\">06-19 13:55:01</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 13:55:01</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 13:55:02</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_sentry</span>\"",
     "valid": true,
     "metadata": {
       "name": "Sentry日志监控",
@@ -190,11 +194,12 @@
       "is_official": false,
       "type": "application",
       "supported_adapters": null
-    }
+    },
+    "time": "2023-06-19 21:55:02"
   },
   "nonebot-plugin-apscheduler": {
     "run": true,
-    "output": "插件 nonebot-plugin-apscheduler 的信息如下：\n    name         : nonebot-plugin-apscheduler       \n     version      : 0.3.0                            \n     description  : APScheduler Support for NoneBot2 \n    \n    dependencies\n     - apscheduler &gt;=3.7.0,&lt;4.0.0\n     - nonebot2 &gt;=2.0.0,&lt;3.0.0\n插件 nonebot-plugin-apscheduler 依赖的插件如下：\n    \n插件 nonebot_plugin_apscheduler 加载正常：\n    <span class=\"ansi32\">06-19 13:16:23</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 13:16:23</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 13:16:23</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_apscheduler</span>\"",
+    "output": "插件 nonebot-plugin-apscheduler 的信息如下：\n    name         : nonebot-plugin-apscheduler       \n     version      : 0.3.0                            \n     description  : APScheduler Support for NoneBot2 \n    \n    dependencies\n     - apscheduler &gt;=3.7.0,&lt;4.0.0\n     - nonebot2 &gt;=2.0.0,&lt;3.0.0\n插件 nonebot-plugin-apscheduler 依赖的插件如下：\n    \n插件 nonebot_plugin_apscheduler 加载正常：\n    <span class=\"ansi32\">06-19 13:55:09</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 13:55:09</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 13:55:09</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_apscheduler</span>\"",
     "valid": true,
     "metadata": {
       "name": "定时任务",
@@ -240,11 +245,12 @@
       "is_official": false,
       "type": "library",
       "supported_adapters": null
-    }
+    },
+    "time": "2023-06-19 21:55:10"
   },
   "nonebot-plugin-picsearcher": {
     "run": true,
-    "output": "插件 nonebot-plugin-picsearcher 的信息如下：\n    name         : nonebot-plugin-picsearcher      \n     version      : 0.1.10                          \n     description  : A picsearch plugin for nonebot2 \n    \n    dependencies\n     - aiohttp *\n     - lxml *\n     - nonebot-adapter-onebot *\n     - nonebot2 *\n插件 nonebot-plugin-picsearcher 依赖的插件如下：\n    \n插件 nonebot_plugin_picsearcher 加载正常：\n    <span class=\"ansi32\">06-19 13:16:31</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 13:16:31</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 13:16:31</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_picsearcher</span>\"",
+    "output": "插件 nonebot-plugin-picsearcher 的信息如下：\n    name         : nonebot-plugin-picsearcher      \n     version      : 0.1.10                          \n     description  : A picsearch plugin for nonebot2 \n    \n    dependencies\n     - aiohttp *\n     - lxml *\n     - nonebot-adapter-onebot *\n     - nonebot2 *\n插件 nonebot-plugin-picsearcher 依赖的插件如下：\n    \n插件 nonebot_plugin_picsearcher 加载正常：\n    <span class=\"ansi32\">06-19 13:55:19</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 13:55:19</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 13:55:19</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_picsearcher</span>\"",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -261,11 +267,12 @@
       "type": null,
       "supported_adapters": null
     },
-    "current": null
+    "current": null,
+    "time": "2023-06-19 21:55:19"
   },
   "nonebot-plugin-navicat": {
     "run": true,
-    "output": "插件 nonebot-plugin-navicat 的信息如下：\n    name         : nonebot-plugin-navicat                                                                            \n     version      : 0.2.3                                                                                             \n     description  : A batabase manager plugin for nonebot2,provide capability of connection to all kinds of databases \n    \n    dependencies\n     - databases *\n     - nonebot2 *\n插件 nonebot-plugin-navicat 依赖的插件如下：\n    \n插件 nonebot_plugin_navicat 加载正常：\n    <span class=\"ansi32\">06-19 13:16:37</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 13:16:37</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 13:16:38</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_navicat</span>\"",
+    "output": "插件 nonebot-plugin-navicat 的信息如下：\n    name         : nonebot-plugin-navicat                                                                            \n     version      : 0.2.3                                                                                             \n     description  : A batabase manager plugin for nonebot2,provide capability of connection to all kinds of databases \n    \n    dependencies\n     - databases *\n     - nonebot2 *\n插件 nonebot-plugin-navicat 依赖的插件如下：\n    \n插件 nonebot_plugin_navicat 加载正常：\n    <span class=\"ansi32\">06-19 13:55:27</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 13:55:27</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 13:55:27</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_navicat</span>\"",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -282,11 +289,12 @@
       "type": null,
       "supported_adapters": null
     },
-    "current": null
+    "current": null,
+    "time": "2023-06-19 21:55:27"
   },
   "nonebot-plugin-translator": {
     "run": true,
-    "output": "插件 nonebot-plugin-translator 的信息如下：\n    name         : nonebot-plugin-translator                     \n     version      : 2.0.0b4.post0                                 \n     description  : Multi language tanslator worked with nonebot2 \n    \n    dependencies\n     - aiohttp &gt;=3.8.1,&lt;4.0.0\n     - nonebot-adapter-onebot &gt;=2.0.0b1,&lt;3.0.0\n     - nonebot2 &gt;=2.0.0b4,&lt;3.0.0\n     - ujson &gt;=4.3.0,&lt;6.0.0\n插件 nonebot-plugin-translator 依赖的插件如下：\n    \n插件 nonebot_plugin_translator 加载正常：\n    <span class=\"ansi32\">06-19 13:16:45</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 13:16:45</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 13:16:45</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_translator</span>\"",
+    "output": "插件 nonebot-plugin-translator 的信息如下：\n    name         : nonebot-plugin-translator                     \n     version      : 2.0.0b4.post0                                 \n     description  : Multi language tanslator worked with nonebot2 \n    \n    dependencies\n     - aiohttp &gt;=3.8.1,&lt;4.0.0\n     - nonebot-adapter-onebot &gt;=2.0.0b1,&lt;3.0.0\n     - nonebot2 &gt;=2.0.0b4,&lt;3.0.0\n     - ujson &gt;=4.3.0,&lt;6.0.0\n插件 nonebot-plugin-translator 依赖的插件如下：\n    \n插件 nonebot_plugin_translator 加载正常：\n    <span class=\"ansi32\">06-19 13:55:36</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 13:55:36</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 13:55:36</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_translator</span>\"",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -308,11 +316,12 @@
       "type": null,
       "supported_adapters": null
     },
-    "current": null
+    "current": null,
+    "time": "2023-06-19 21:55:36"
   },
   "nonebot-plugin-mqtt": {
     "run": true,
-    "output": "插件 nonebot-plugin-mqtt 的信息如下：\n    name         : nonebot-plugin-mqtt                   \n     version      : 0.1.1                                 \n     description  : The iot plugin for nonebot2 framework \n    \n    dependencies\n     - gmqtt *\n     - nonebot2 *\n插件 nonebot-plugin-mqtt 依赖的插件如下：\n    \n插件 nonebot_plugin_mqtt 加载正常：\n    <span class=\"ansi32\">06-19 13:16:50</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 13:16:50</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 13:16:50</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_mqtt</span>\"",
+    "output": "插件 nonebot-plugin-mqtt 的信息如下：\n    name         : nonebot-plugin-mqtt                   \n     version      : 0.1.1                                 \n     description  : The iot plugin for nonebot2 framework \n    \n    dependencies\n     - gmqtt *\n     - nonebot2 *\n插件 nonebot-plugin-mqtt 依赖的插件如下：\n    \n插件 nonebot_plugin_mqtt 加载正常：\n    <span class=\"ansi32\">06-19 13:55:43</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 13:55:43</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 13:55:43</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_mqtt</span>\"",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -329,6 +338,1186 @@
       "type": null,
       "supported_adapters": null
     },
-    "current": null
+    "current": null,
+    "time": "2023-06-19 21:55:43"
+  },
+  "nonebot-plugin-songpicker2": {
+    "run": true,
+    "output": "插件 nonebot-plugin-songpicker2 的信息如下：\n    name         : nonebot-plugin-songpicker2 \n     version      : 0.2.3                      \n     description  : 点播歌曲，支持候选菜单、热评显示，数据源为网易云   \n    \n    dependencies\n     - build &gt;=0.1.0,&lt;0.2.0\n     - httpx &gt;=0.21.3,&lt;0.22.0\n     - nonebot-adapter-onebot &gt;=2.0.0-beta.1,&lt;3.0.0\n     - nonebot2 &gt;=2.0.0-beta.1,&lt;3.0.0\n     - twine &gt;=3.3.0,&lt;4.0.0\n插件 nonebot-plugin-songpicker2 依赖的插件如下：\n    \n插件 nonebot_plugin_songpicker2 加载正常：\n    <span class=\"ansi32\">06-19 13:55:54</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 13:55:54</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 13:55:55</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_songpicker2</span>\"",
+    "valid": false,
+    "metadata": null,
+    "validation_message": "缺少元数据",
+    "validation_raw_data": null,
+    "previous": {
+      "module_name": "nonebot_plugin_songpicker2",
+      "project_link": "nonebot-plugin-songpicker2",
+      "author": "maxesisn",
+      "desc": "点播歌曲，支持候选菜单、热评显示，数据源为网易云",
+      "name": "songpicker2",
+      "homepage": "https://github.com/maxesisn/nonebot_plugin_songpicker2",
+      "tags": [],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 21:55:55"
+  },
+  "nonebot-plugin-strman": {
+    "run": true,
+    "output": "插件 nonebot-plugin-strman 的信息如下：\n    name         : nonebot-plugin-strman                  \n     version      : 1.2.0                                  \n     description  : A string management tool for NoneBot 2 \n    \n    dependencies\n     - nonebot2 &gt;=2.0.0-rc.1,&lt;3.0.0\n插件 nonebot-plugin-strman 依赖的插件如下：\n    \n插件 nonebot_plugin_strman 加载正常：\n    <span class=\"ansi32\">06-19 13:56:02</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 13:56:02</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 13:56:02</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot_plugin_strman</span><span class=\"ansi36\"></span> | Plugin loaded: &lt;b&gt;NoneBot String Manager v1.2.0&lt;/b&gt;\n    <span class=\"ansi32\">06-19 13:56:02</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_strman</span>\"",
+    "valid": false,
+    "metadata": null,
+    "validation_message": "缺少元数据",
+    "validation_raw_data": null,
+    "previous": {
+      "module_name": "nonebot_plugin_strman",
+      "project_link": "nonebot-plugin-strman",
+      "author": "echobot-dev",
+      "desc": "通过字符串标签在文件中集中管理字符串",
+      "name": "字符串管理工具",
+      "homepage": "https://github.com/echobot-dev/nonebot-plugin-strman",
+      "tags": [],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 21:56:02"
+  },
+  "nonebot-bison": {
+    "run": true,
+    "output": "插件 nonebot-bison 的信息如下：\n    name         : nonebot-bison                        \n     version      : 0.7.3                                \n     description  : Subscribe message from social medias \n    \n    dependencies\n     - bs4 &gt;=0.0.1,&lt;0.0.2\n     - expiringdict &gt;=1.2.1,&lt;2.0.0\n     - feedparser &gt;=6.0.2,&lt;7.0.0\n     - httpx &gt;=0.16.1\n     - nonebot-adapter-onebot &gt;=2.0.0-beta.1,&lt;3.0.0\n     - nonebot-plugin-apscheduler &gt;=0.2.0,&lt;0.3.0\n     - nonebot-plugin-datastore &gt;=0.6.2,&lt;0.7.0\n     - nonebot-plugin-htmlrender &gt;=0.2.0\n     - nonebot2 &gt;=2.0.0-rc.4,&lt;3.0.0\n     - pillow &gt;=8.1,&lt;10.0\n     - pyjwt &gt;=2.1.0,&lt;3.0.0\n     - python-socketio &gt;=5.4.0,&lt;6.0.0\n     - tinydb &gt;=4.3.0,&lt;5.0.0\n插件 nonebot-bison 依赖的插件如下：\n    nonebot_plugin_apscheduler, nonebot_plugin_datastore, nonebot_plugin_htmlrender, nonebot_plugin_localstore\n插件 nonebot_bison 加载正常：\n    <span class=\"ansi32\">06-19 13:56:28</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 13:56:28</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 13:56:28</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_apscheduler</span>\"\n    <span class=\"ansi32\">06-19 13:56:28</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_localstore</span>\"\n    <span class=\"ansi32\">06-19 13:56:29</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_datastore</span>\"\n    <span class=\"ansi32\">06-19 13:56:30</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_htmlrender</span>\"\n    <span class=\"ansi32\">06-19 13:56:30</span> [<span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">WARNING</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot_bison</span><span class=\"ansi36\"></span> | your driver is not fastapi, webui feature will be disabled\n    <span class=\"ansi32\">06-19 13:56:30</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_bison</span>\"",
+    "valid": false,
+    "metadata": {
+      "name": "Bison",
+      "description": "通用订阅推送插件",
+      "usage": "本bot可以提供b站、微博等社交媒体的消息订阅，详情请查看本bot文档，或者at本bot发送“添加订阅”订阅第一个帐号，发送“查询订阅”或“删除订阅”管理订阅",
+      "type": null,
+      "homepage": null,
+      "supported_adapters": null
+    },
+    "validation_message": "2 validation errors for PluginPublishInfo\nhomepage\n  none is not an allowed value (type=type_error.none.not_allowed)\ntype\n  ⚠️ 插件类型不能为空。&lt;dt&gt;请确保填写插件类型。&lt;/dt&gt; (type=value_error)",
+    "validation_raw_data": {
+      "module_name": "nonebot_bison",
+      "project_link": "nonebot-bison",
+      "name": "Bison",
+      "desc": "通用订阅推送插件",
+      "author": "felinae98",
+      "homepage": null,
+      "tags": "[{\"label\": \"a:onebot\", \"color\": \"#000000\"}]",
+      "plugin_test_result": true,
+      "type": null,
+      "supported_adapters": null
+    },
+    "previous": {
+      "module_name": "nonebot_bison",
+      "project_link": "nonebot-bison",
+      "author": "felinae98",
+      "desc": "订阅来自微博，B站，网易云，RSS以及各种网站的动态，转发到QQ群中",
+      "name": "Bison",
+      "homepage": "https://github.com/felinae98/nonebot-bison",
+      "tags": [
+        {
+          "label": "a:onebot",
+          "color": "#000000"
+        }
+      ],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 21:56:31"
+  },
+  "nonebot-plugin-ncm": {
+    "run": false,
+    "output": "插件 nonebot-plugin-ncm 的信息如下：\n    name         : nonebot-plugin-ncm               \n     version      : 1.5.5                            \n     description  : 基于go-cqhttp与nonebot2的 网易云 无损音乐下载 \n    \n    dependencies\n     - aiofile &gt;=3.7.4,&lt;4.0.0\n     - httpx &gt;=0.23.1,&lt;0.24.0\n     - nonebot-adapter-onebot &gt;=2.1.5,&lt;3.0.0\n     - nonebot2 &gt;=2.0.0rc2,&lt;3.0.0\n     - Pillow &gt;=9.3.0,&lt;10.0.0\n     - pyncm &gt;=1.6.8.3,&lt;2.0.0.0\n     - qrcode &gt;=7.3.1,&lt;8.0.0\n     - tinydb &gt;=4.7.0,&lt;5.0.0\n插件 nonebot-plugin-ncm 依赖的插件如下：\n    \n插件 nonebot-plugin-ncm 加载出错：\n    <span class=\"ansi32\">06-19 13:56:41</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 13:56:41</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 13:56:41</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot-plugin-ncm</span><span class=\"ansi36\"></span> | ncm音乐库创建成功\n    <span class=\"ansi32\">06-19 13:56:41</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot-plugin-ncm</span><span class=\"ansi36\"></span> | ncm数据库目录创建成功\n    <span class=\"ansi32\">06-19 13:56:41</span> [<span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">WARNING</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot-plugin-ncm</span><span class=\"ansi36\"></span> | 您未填写账号,自动进入二维码登录模式\n    <span class=\"ansi32\">06-19 13:56:42</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot-plugin-ncm</span><span class=\"ansi36\"></span> | 二维码已经保存在当前目录下的ncm.png，请使用手机网易云客户端扫码登录。\n    <span class=\"ansi32\">06-19 14:01:43</span> [<span class=\"ansi31\"></span><span class=\"ansi1 ansi31\">ERROR</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | <span class=\"ansi31\"></span><span class=\"ansi31 ansi48-248187208\">Failed to import \"nonebot-plugin-ncm\"</span><span class=\"ansi31\"></span>\n    <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Traceback (most recent call last):</span>\n      File \"<span class=\"ansi32\">/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-ncm-test/</span><span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">runner.py</span>\", line <span class=\"ansi33\">15</span>, in <span class=\"ansi35\">&lt;module&gt;</span>\n        <span class=\"ansi1\">plugin</span> <span class=\"ansi35\"></span><span class=\"ansi1 ansi35\">=</span> <span class=\"ansi1\">load_plugin</span><span class=\"ansi1\">(</span><span class=\"ansi36\">\"nonebot-plugin-ncm\"</span><span class=\"ansi1\">)</span>\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    &gt; File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"&lt;frozen importlib._bootstrap&gt;\", line 1050, in _gcd_import\n      File \"&lt;frozen importlib._bootstrap&gt;\", line 1027, in _find_and_load\n      File \"&lt;frozen importlib._bootstrap&gt;\", line 1006, in _find_and_load_unlocked\n      File \"&lt;frozen importlib._bootstrap&gt;\", line 688, in _load_unlocked\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"&lt;frozen importlib._bootstrap_external&gt;\", line 883, in exec_module\n      File \"&lt;frozen importlib._bootstrap&gt;\", line 241, in _call_with_frames_removed\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot-plugin-ncm/__init__.py\", line 17, in &lt;module&gt;\n        from .data_source import nncm, ncm_config, setting, Q, cmd\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot-plugin-ncm/data_source.py\", line 294, in &lt;module&gt;\n        nncm.get_qrcode()\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot-plugin-ncm/data_source.py\", line 127, in get_qrcode\n        self.api.login.WriteLoginInfo(st)\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/pyncm/apis/login.py\", line 32, in WriteLoginInfo\n        sess.csrf_token = cookie[\"__csrf\"]\n    <span class=\"ansi31\"></span><span class=\"ansi1 ansi31\">KeyError</span>:<span class=\"ansi1\"> '__csrf'</span>",
+    "valid": false,
+    "metadata": null,
+    "validation_message": "缺少元数据",
+    "validation_raw_data": null,
+    "previous": {
+      "module_name": "nonebot-plugin-ncm",
+      "project_link": "nonebot-plugin-ncm",
+      "author": "kitUIN",
+      "desc": "网易云 无损音乐 点歌/下载",
+      "name": "网易云无损音乐下载",
+      "homepage": "https://github.com/kitUIN/nonebot-plugin-ncm",
+      "tags": [
+        {
+          "label": "a:onebot",
+          "color": "#000000"
+        },
+        {
+          "label": "a:cqhttp",
+          "color": "#000000"
+        },
+        {
+          "label": "t:Netease",
+          "color": "#ec4141"
+        }
+      ],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 22:01:43"
+  },
+  "nonebot-plugin-cocdicer": {
+    "run": true,
+    "output": "插件 nonebot-plugin-cocdicer 的信息如下：\n    name         : nonebot-plugin-cocdicer        \n     version      : 0.4.0                          \n     description  : A COC dice plugin for Nonebot2 \n    \n    dependencies\n     - diro-py &gt;=0.1,&lt;0.2\n     - nonebot-adapter-onebot &gt;=2.0.0-beta.1,&lt;3.0.0\n     - nonebot2 &gt;=2.0.0-beta.1,&lt;3.0.0\n     - ujson &gt;=4.0.0\n插件 nonebot-plugin-cocdicer 依赖的插件如下：\n    \n插件 nonebot_plugin_cocdicer 加载正常：\n    <span class=\"ansi32\">06-19 14:01:51</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 14:01:51</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 14:01:51</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_cocdicer</span>\"",
+    "valid": false,
+    "metadata": null,
+    "validation_message": "缺少元数据",
+    "validation_raw_data": null,
+    "previous": {
+      "module_name": "nonebot_plugin_cocdicer",
+      "project_link": "nonebot-plugin-cocdicer",
+      "author": "abrahum",
+      "desc": "COC跑团骰子娘",
+      "name": "nonebot-plugin-cocdicer",
+      "homepage": "https://github.com/abrahum/nonebot_plugin_cocdicer",
+      "tags": [],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 22:01:51"
+  },
+  "nonebot-plugin-trpglogger": {
+    "run": true,
+    "output": "插件 nonebot-plugin-trpglogger 的信息如下：\n    name         : nonebot-plugin-trpglogger \n     version      : 0.4.1                     \n     description  : a logger for TRPG         \n    \n    dependencies\n     - aiofiles &gt;=0.8.0,&lt;0.9.0\n     - httpx &gt;=0.23.1,&lt;1.0.0\n     - nonebot-adapter-onebot &gt;=2.0.0rc1,&lt;3.0.0\n     - nonebot2 &gt;=2.0.0rc1,&lt;3.0.0\n插件 nonebot-plugin-trpglogger 依赖的插件如下：\n    \n插件 nonebot_plugin_trpglogger 加载正常：\n    <span class=\"ansi32\">06-19 14:02:00</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 14:02:00</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 14:02:00</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_trpglogger</span>\"",
+    "valid": false,
+    "metadata": null,
+    "validation_message": "缺少元数据",
+    "validation_raw_data": null,
+    "previous": {
+      "module_name": "nonebot_plugin_trpglogger",
+      "project_link": "nonebot-plugin-trpglogger",
+      "author": "j1g5awi",
+      "desc": "记录跑团记录并上传",
+      "name": "跑团记录记录器",
+      "homepage": "https://github.com/thereisnodice/TRPGLogger",
+      "tags": [
+        {
+          "label": "t:TRPG",
+          "color": "#80070B"
+        }
+      ],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 22:02:00"
+  },
+  "nonebot-plugin-guess": {
+    "run": true,
+    "output": "插件 nonebot-plugin-guess 的信息如下：\n    name         : nonebot-plugin-guess \n     version      : 0.1.9                \n     description  : nobebot2插件《猜猜看》      \n    \n    dependencies\n     - joblib &gt;=1.0.1,&lt;2.0.0\n     - logzero &gt;=1.6.3,&lt;2.0.0\n     - nonebot-adapter-onebot &gt;=2.0.0-beta.1,&lt;3.0.0\n     - nonebot2 &gt;=2.0.0-beta.2,&lt;3.0.0\n     - pydantic &gt;=1.8.1,&lt;2.0.0\n     - pyquery &gt;=1.4.3,&lt;2.0.0\n     - pytz &gt;=2021.1,&lt;2022.0\n插件 nonebot-plugin-guess 依赖的插件如下：\n    \n插件 nonebot_plugin_guess 加载正常：\n    <span class=\"ansi32\">06-19 14:02:10</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 14:02:10</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 14:02:10</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_guess</span>\"\n    [I 230619 14:02:10 config:73] env_prefix: guess_, env_file: .env\n    [W 230619 14:02:10 config:53] This entry [] is empty: probably not what you want, but we let it pass.\n    [I 230619 14:02:10 guess:37] loading /home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot_plugin_guess/guess.py",
+    "valid": false,
+    "metadata": null,
+    "validation_message": "缺少元数据",
+    "validation_raw_data": null,
+    "previous": {
+      "module_name": "nonebot_plugin_guess",
+      "project_link": "nonebot-plugin-guess",
+      "author": "ffreemt",
+      "desc": "多次互动猜名字游戏，自带猜城市名，可定制",
+      "name": "猜猜看",
+      "homepage": "https://github.com/ffreemt/nonebot-plugin-guess-game",
+      "tags": [],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 22:02:10"
+  },
+  "nonebot-plugin-abbrreply": {
+    "run": true,
+    "output": "插件 nonebot-plugin-abbrreply 的信息如下：\n    name         : nonebot-plugin-abbrreply \n     version      : 1.1.3                    \n     description  : 缩写查询器                    \n    \n    dependencies\n     - aiohttp *\n     - nonebot-adapter-onebot &gt;=2.0.0-beta.1,&lt;3.0.0\n     - nonebot2 &gt;=2.0.0-beta.1,&lt;3.0.0\n插件 nonebot-plugin-abbrreply 依赖的插件如下：\n    \n插件 nonebot_plugin_abbrreply 加载正常：\n    <span class=\"ansi32\">06-19 14:02:18</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 14:02:18</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 14:02:18</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_abbrreply</span>\"",
+    "valid": false,
+    "metadata": null,
+    "validation_message": "缺少元数据",
+    "validation_raw_data": null,
+    "previous": {
+      "module_name": "nonebot_plugin_abbrreply",
+      "project_link": "nonebot-plugin-abbrreply",
+      "author": "anlen123",
+      "desc": "输入拼音首字母，猜测文字",
+      "name": "缩写查询器",
+      "homepage": "https://github.com/anlen123/nonebot_plugin_abbrreply",
+      "tags": [],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 22:02:18"
+  },
+  "nonebot-plugin-biliav": {
+    "run": true,
+    "output": "插件 nonebot-plugin-biliav 的信息如下：\n    name         : nonebot-plugin-biliav  \n     version      : 1.0.11                 \n     description  : NoneBot biliav小程序 查看插件 \n    \n    dependencies\n     - httpx &gt;=0.18.0,&lt;1.0.0\n     - nonebot-adapter-onebot &gt;=2.0.0-beta.1,&lt;3.0.0\n     - nonebot2 &gt;=2.0.0-beta.1,&lt;3.0.0\n插件 nonebot-plugin-biliav 依赖的插件如下：\n    \n插件 nonebot_plugin_biliav 加载正常：\n    <span class=\"ansi32\">06-19 14:02:25</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 14:02:25</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 14:02:26</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_biliav</span>\"",
+    "valid": false,
+    "metadata": null,
+    "validation_message": "缺少元数据",
+    "validation_raw_data": null,
+    "previous": {
+      "module_name": "nonebot_plugin_biliav",
+      "project_link": "nonebot-plugin-biliav",
+      "author": "knva",
+      "desc": "将用户发的av号或者bv号转成小程序返回",
+      "name": "biliav小程序转换器",
+      "homepage": "https://github.com/knva/nonebot_plugin_biliav",
+      "tags": [],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 22:02:26"
+  },
+  "nonebot-plugin-manager": {
+    "run": true,
+    "output": "插件 nonebot-plugin-manager 的信息如下：\n    name         : nonebot-plugin-manager                     \n     version      : 0.5.14                                     \n     description  : Nonebot Plugin Manager base on import hook \n    \n    dependencies\n     - httpx &gt;=0.23.1,&lt;1.0.0\n     - nonebot-adapter-onebot &gt;=2.0.0-rc.1,&lt;3.0.0\n     - nonebot2 &gt;=2.0.0-rc.1,&lt;3.0.0\n插件 nonebot-plugin-manager 依赖的插件如下：\n    \n插件 nonebot_plugin_manager 加载正常：\n    <span class=\"ansi32\">06-19 14:02:33</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 14:02:33</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 14:02:33</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_manager</span>\"",
+    "valid": false,
+    "metadata": null,
+    "validation_message": "缺少元数据",
+    "validation_raw_data": null,
+    "previous": {
+      "module_name": "nonebot_plugin_manager",
+      "project_link": "nonebot-plugin-manager",
+      "name": "插件管理器",
+      "desc": "基于 import hook 的插件管理",
+      "author": "j1g5awi",
+      "homepage": "https://github.com/nonepkg/nonebot-plugin-manager",
+      "tags": [
+        {
+          "label": "t:PluginManager",
+          "color": "#80070B"
+        }
+      ],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 22:02:33"
+  },
+  "nonebot-plugin-analysis-bilibili": {
+    "run": true,
+    "output": "插件 nonebot-plugin-analysis-bilibili 的信息如下：\n    name         : nonebot-plugin-analysis-bilibili \n     version      : 2.5.0                            \n     description  : nonebot2解析bilibili插件             \n    \n    dependencies\n     - aiohttp &gt;=3.7,&lt;4.0\n     - nonebot-adapter-onebot &gt;=2.0.0-beta.1,&lt;3.0.0\n     - nonebot2 &gt;=2.0.0rc4,&lt;3.0.0\n插件 nonebot-plugin-analysis-bilibili 依赖的插件如下：\n    \n插件 nonebot_plugin_analysis_bilibili 加载正常：\n    <span class=\"ansi32\">06-19 14:02:41</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 14:02:41</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 14:02:41</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_analysis_bilibili</span>\"",
+    "valid": false,
+    "metadata": null,
+    "validation_message": "缺少元数据",
+    "validation_raw_data": null,
+    "previous": {
+      "module_name": "nonebot_plugin_analysis_bilibili",
+      "project_link": "nonebot-plugin-analysis-bilibili",
+      "name": "bilibili视频、番剧解析",
+      "desc": "自动解析bilibili视频、番剧解析",
+      "author": "mengshouer",
+      "homepage": "https://github.com/mengshouer/nonebot_plugin_analysis_bilibili",
+      "tags": [],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 22:02:41"
+  },
+  "nonebot-plugin-localstore": {
+    "run": true,
+    "output": "插件 nonebot-plugin-localstore 的信息如下：\n    name         : nonebot-plugin-localstore          \n     version      : 0.5.0                              \n     description  : Local Storage Support for NoneBot2 \n    \n    dependencies\n     - nonebot2 &gt;=2.0.0,&lt;3.0.0\n     - typing-extensions &gt;=4.0.0\n插件 nonebot-plugin-localstore 依赖的插件如下：\n    \n插件 nonebot_plugin_localstore 加载正常：\n    <span class=\"ansi32\">06-19 14:02:49</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 14:02:49</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 14:02:49</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_localstore</span>\"",
+    "valid": true,
+    "metadata": {
+      "name": "本地数据存储",
+      "description": "存储插件数据至本地文件",
+      "usage": "声明依赖: `require(\"nonebot_plugin_localstore\")`\n导入所需文件夹:\n  `cache_dir = store.get_cache_dir(\"plugin_name\")`\n  `cache_file = store.get_cache_file(\"plugin_name\", \"file_name\")`\n  `data_dir = store.get_data_dir(\"plugin_name\")`\n  `data_file = store.get_data_file(\"plugin_name\", \"file_name\")`\n  `config_dir = store.get_config_dir(\"plugin_name\")`\n  `config_file = store.get_config_file(\"plugin_name\", \"file_name\")`",
+      "type": "library",
+      "homepage": "https://github.com/nonebot/plugin-localstore",
+      "supported_adapters": null
+    },
+    "validation_message": "",
+    "validation_raw_data": {
+      "module_name": "nonebot_plugin_localstore",
+      "project_link": "nonebot-plugin-localstore",
+      "name": "本地数据存储",
+      "desc": "存储插件数据至本地文件",
+      "author": "yanyongyu",
+      "homepage": "https://github.com/nonebot/plugin-localstore",
+      "tags": "[]",
+      "plugin_test_result": true,
+      "type": "library",
+      "supported_adapters": null
+    },
+    "previous": {
+      "module_name": "nonebot_plugin_localstore",
+      "project_link": "nonebot-plugin-localstore",
+      "name": "本地数据存储",
+      "desc": "存储插件数据至本地文件",
+      "author": "yanyongyu",
+      "homepage": "https://github.com/nonebot/plugin-localstore",
+      "tags": [],
+      "is_official": true,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": {
+      "module_name": "nonebot_plugin_localstore",
+      "project_link": "nonebot-plugin-localstore",
+      "name": "本地数据存储",
+      "desc": "存储插件数据至本地文件",
+      "author": "yanyongyu",
+      "homepage": "https://github.com/nonebot/plugin-localstore",
+      "tags": [],
+      "is_official": false,
+      "type": "library",
+      "supported_adapters": null
+    },
+    "time": "2023-06-19 22:02:50"
+  },
+  "nonebot-plugin-mcstatus": {
+    "run": true,
+    "output": "插件 nonebot-plugin-mcstatus 的信息如下：\n    name         : nonebot-plugin-mcstatus       \n     version      : 0.1.8                         \n     description  : Check Minecraft server status \n    \n    dependencies\n     - mcstatus &gt;=10.0.1,&lt;11.0.0\n     - nonebot-adapter-onebot &gt;=2.2.2,&lt;3.0.0\n     - nonebot-plugin-apscheduler &gt;=0.3.0,&lt;1.0.0\n     - nonebot2 &gt;=2.0.0,&lt;3.0.0\n插件 nonebot-plugin-mcstatus 依赖的插件如下：\n    nonebot_plugin_apscheduler\n插件 nonebot_plugin_mcstatus 加载正常：\n    <span class=\"ansi32\">06-19 14:02:59</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 14:02:59</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 14:03:00</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_apscheduler</span>\"\n    <span class=\"ansi32\">06-19 14:03:00</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_mcstatus</span>\"",
+    "valid": false,
+    "metadata": {
+      "name": "Minecraft 服务器状态查询",
+      "description": "顾名思义",
+      "usage": "mc list 查看当前会话（群/私聊）的关注服务器列表\nmc add server address 添加服务器到当前会话（群/私聊）的关注服务器列表\nmc remove server 从当前会话（群/私聊）的关注服务器列表移除服务器\nmc check address 查看指定地址的服务器状态（一次性）",
+      "type": "application",
+      "homepage": "https://github.com/nonepkg/plugin-mcstatus",
+      "supported_adapters": [
+        "~onebot.v11"
+      ]
+    },
+    "validation_message": "1 validation error for PluginPublishInfo\ntags -&gt; 0 -&gt; label\n  标签名称过长&lt;dt&gt;请确保标签名称不超过 10 个字符。&lt;/dt&gt; (type=value_error)",
+    "validation_raw_data": {
+      "module_name": "nonebot_plugin_mcstatus",
+      "project_link": "nonebot-plugin-mcstatus",
+      "name": "Minecraft 服务器状态查询",
+      "desc": "顾名思义",
+      "author": "j1g5awi",
+      "homepage": "https://github.com/nonepkg/plugin-mcstatus",
+      "tags": "[{\"label\": \"t:Minecraft\", \"color\": \"#80070B\"}]",
+      "plugin_test_result": true,
+      "type": "application",
+      "supported_adapters": [
+        "~onebot.v11"
+      ]
+    },
+    "previous": {
+      "module_name": "nonebot_plugin_mcstatus",
+      "project_link": "nonebot-plugin-mcstatus",
+      "name": "Minecraft 服务器状态查询",
+      "desc": "顾名思义",
+      "author": "j1g5awi",
+      "homepage": "https://github.com/nonepkg/nonebot-plugin-mcstatus",
+      "tags": [
+        {
+          "label": "t:Minecraft",
+          "color": "#80070B"
+        }
+      ],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 22:03:01"
+  },
+  "nonebot-plugin-help": {
+    "run": true,
+    "output": "插件 nonebot-plugin-help 的信息如下：\n    name         : nonebot-plugin-help                        \n     version      : 0.5.0                                      \n     description  : A general help lister for nonebot2 plugins \n    \n    dependencies\n     - nonebot2 &gt;=2.0.0,&lt;3.0.0\n插件 nonebot-plugin-help 依赖的插件如下：\n    \n插件 nonebot_plugin_help 加载正常：\n    <span class=\"ansi32\">06-19 14:03:08</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 14:03:08</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 14:03:08</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_help</span>\"",
+    "valid": false,
+    "metadata": {
+      "name": "Nonebot2 Help Menu",
+      "description": "Nonebot2轻量级帮助插件",
+      "usage": "欢迎使用Nonebot2 Help Menu\n本插件提供公共帮助菜单能力\n此Bot配置的命令前缀：/\n\n/help  # 获取本插件帮助\n/help list  # 展示已加载插件列表\n/help <插件名>  # 调取目标插件帮助信息\n",
+      "type": null,
+      "homepage": null,
+      "supported_adapters": null
+    },
+    "validation_message": "2 validation errors for PluginPublishInfo\nhomepage\n  none is not an allowed value (type=type_error.none.not_allowed)\ntype\n  ⚠️ 插件类型不能为空。&lt;dt&gt;请确保填写插件类型。&lt;/dt&gt; (type=value_error)",
+    "validation_raw_data": {
+      "module_name": "nonebot_plugin_help",
+      "project_link": "nonebot-plugin-help",
+      "name": "Nonebot2 Help Menu",
+      "desc": "Nonebot2轻量级帮助插件",
+      "author": "XZhouQD",
+      "homepage": null,
+      "tags": "[]",
+      "plugin_test_result": true,
+      "type": null,
+      "supported_adapters": null
+    },
+    "previous": {
+      "module_name": "nonebot_plugin_help",
+      "project_link": "nonebot-plugin-help",
+      "name": "Nonebot2插件轻量帮助列表",
+      "desc": "读取并提供已加载Nonebot2插件开发者提供的帮助信息（用途）",
+      "author": "XZhouQD",
+      "homepage": "https://github.com/XZhouQD/nonebot-plugin-help",
+      "tags": [],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 22:03:08"
+  },
+  "nonebot-plugin-alias": {
+    "run": true,
+    "output": "插件 nonebot-plugin-alias 的信息如下：\n    name         : nonebot-plugin-alias                                   \n     version      : 0.3.2                                                  \n     description  : A simple plugin for adding aliases for Nonebot command \n    \n    dependencies\n     - expandvars &gt;=0.7.0,&lt;0.8.0\n     - nonebot-adapter-onebot &gt;=2.0.0-beta.1,&lt;3.0.0\n     - nonebot2 &gt;=2.0.0-beta.4,&lt;3.0.0\n插件 nonebot-plugin-alias 依赖的插件如下：\n    \n插件 nonebot_plugin_alias 加载正常：\n    <span class=\"ansi32\">06-19 14:03:16</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 14:03:16</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 14:03:16</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_alias</span>\"",
+    "valid": false,
+    "metadata": {
+      "name": "命令别名",
+      "description": "为机器人指令创建别名",
+      "usage": "添加别名：alias {name}={command}\n查看别名：alias {name}\n别名列表：alias -p\n删除别名：unalias {name}\n清空别名：unalias -a",
+      "type": null,
+      "homepage": null,
+      "supported_adapters": null
+    },
+    "validation_message": "2 validation errors for PluginPublishInfo\nhomepage\n  none is not an allowed value (type=type_error.none.not_allowed)\ntype\n  ⚠️ 插件类型不能为空。&lt;dt&gt;请确保填写插件类型。&lt;/dt&gt; (type=value_error)",
+    "validation_raw_data": {
+      "module_name": "nonebot_plugin_alias",
+      "project_link": "nonebot-plugin-alias",
+      "name": "命令别名",
+      "desc": "为机器人指令创建别名",
+      "author": "MeetWq",
+      "homepage": null,
+      "tags": "[]",
+      "plugin_test_result": true,
+      "type": null,
+      "supported_adapters": null
+    },
+    "previous": {
+      "module_name": "nonebot_plugin_alias",
+      "project_link": "nonebot-plugin-alias",
+      "name": "alias命令别名",
+      "desc": "为复杂的命令创建别名",
+      "author": "MeetWq",
+      "homepage": "https://github.com/MeetWq/nonebot-plugin-alias",
+      "tags": [],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 22:03:16"
+  },
+  "nonebot-plugin-withdraw": {
+    "run": true,
+    "output": "插件 nonebot-plugin-withdraw 的信息如下：\n    name         : nonebot-plugin-withdraw               \n     version      : 0.2.3                                 \n     description  : A simple withdraw plugin for Nonebot2 \n    \n    dependencies\n     - nonebot-adapter-onebot &gt;=2.0.0-beta.1,&lt;3.0.0\n     - nonebot2 &gt;=2.0.0-beta.4,&lt;3.0.0\n插件 nonebot-plugin-withdraw 依赖的插件如下：\n    \n插件 nonebot_plugin_withdraw 加载正常：\n    <span class=\"ansi32\">06-19 14:03:23</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 14:03:23</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 14:03:23</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_withdraw</span>\"",
+    "valid": false,
+    "metadata": {
+      "name": "撤回",
+      "description": "自助撤回机器人发出的消息",
+      "usage": "1、@我 撤回 [num1][-num2]，num 为机器人发的倒数第几条消息，从 0 开始，默认为 0\n2、回复需要撤回的消息，回复“撤回”",
+      "type": null,
+      "homepage": null,
+      "supported_adapters": null
+    },
+    "validation_message": "2 validation errors for PluginPublishInfo\nhomepage\n  none is not an allowed value (type=type_error.none.not_allowed)\ntype\n  ⚠️ 插件类型不能为空。&lt;dt&gt;请确保填写插件类型。&lt;/dt&gt; (type=value_error)",
+    "validation_raw_data": {
+      "module_name": "nonebot_plugin_withdraw",
+      "project_link": "nonebot-plugin-withdraw",
+      "name": "撤回",
+      "desc": "自助撤回机器人发出的消息",
+      "author": "MeetWq",
+      "homepage": null,
+      "tags": "[]",
+      "plugin_test_result": true,
+      "type": null,
+      "supported_adapters": null
+    },
+    "previous": {
+      "module_name": "nonebot_plugin_withdraw",
+      "project_link": "nonebot-plugin-withdraw",
+      "name": "Nonebot2 消息撤回插件",
+      "desc": "用于让机器人撤回自己发出的消息",
+      "author": "MeetWq",
+      "homepage": "https://github.com/MeetWq/nonebot-plugin-withdraw",
+      "tags": [],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 22:03:24"
+  },
+  "nonebot-plugin-pixivrank-search": {
+    "run": false,
+    "output": "插件 nonebot-plugin-pixivrank-search 的信息如下：\n    name         : nonebot-plugin-pixivrank-search \n     version      : 0.6                             \n     description  : 基于RSSHUB阅读器实现的获取P站排行和P站搜图       \n    \n    dependencies\n     - aiofiles &gt;=0.8.0,&lt;0.9.0\n     - aiohttp &gt;=3.8.1,&lt;4.0.0\n     - beautifulsoup4 &gt;=4.10.0,&lt;5.0.0\n     - feedparser &gt;=6.0.8,&lt;7.0.0\n     - lxml &gt;=4.7.1,&lt;5.0.0\n     - nonebot-adapter-onebot &gt;=2.0.0-beta.1,&lt;3.0.0\n     - nonebot2 &gt;=2.0.0-beta.2,&lt;3.0.0\n插件 nonebot-plugin-pixivrank-search 依赖的插件如下：\n    \n插件 nonebot_plugin_pixivrank_search 加载出错：\n    <span class=\"ansi32\">06-19 14:03:32</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 14:03:32</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 14:03:32</span> [<span class=\"ansi31\"></span><span class=\"ansi1 ansi31\">ERROR</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | <span class=\"ansi31\"></span><span class=\"ansi31 ansi48-248187208\">Failed to import \"nonebot_plugin_pixivrank_search\"</span><span class=\"ansi31\"></span>\n    <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Traceback (most recent call last):</span>\n      File \"<span class=\"ansi32\">/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-pixivrank-search-test/</span><span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">runner.py</span>\", line <span class=\"ansi33\">15</span>, in <span class=\"ansi35\">&lt;module&gt;</span>\n        <span class=\"ansi1\">plugin</span> <span class=\"ansi35\"></span><span class=\"ansi1 ansi35\">=</span> <span class=\"ansi1\">load_plugin</span><span class=\"ansi1\">(</span><span class=\"ansi36\">\"nonebot_plugin_pixivrank_search\"</span><span class=\"ansi1\">)</span>\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    &gt; File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"&lt;frozen importlib._bootstrap&gt;\", line 1050, in _gcd_import\n      File \"&lt;frozen importlib._bootstrap&gt;\", line 1027, in _find_and_load\n      File \"&lt;frozen importlib._bootstrap&gt;\", line 1006, in _find_and_load_unlocked\n      File \"&lt;frozen importlib._bootstrap&gt;\", line 688, in _load_unlocked\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"&lt;frozen importlib._bootstrap_external&gt;\", line 883, in exec_module\n      File \"&lt;frozen importlib._bootstrap&gt;\", line 241, in _call_with_frames_removed\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot_plugin_pixivrank_search/__init__.py\", line 5, in &lt;module&gt;\n        from .data_source import get_pixiv_urls, download_pixiv_imgs, search_pixiv_urls\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot_plugin_pixivrank_search/data_source.py\", line 5, in &lt;module&gt;\n        from .config import config\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot_plugin_pixivrank_search/config.py\", line 10, in &lt;module&gt;\n        config = Config.parse_obj(get_driver().config)\n      File \"<span class=\"ansi32\">pydantic/</span><span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">main.py</span>\", line <span class=\"ansi33\">526</span>, in <span class=\"ansi35\">pydantic.main.BaseModel.parse_obj</span>\n        <span class=\"ansi35\"></span><span class=\"ansi1 ansi35\">return</span> <span class=\"ansi1\">cls</span><span class=\"ansi1\">(</span><span class=\"ansi35\"></span><span class=\"ansi1 ansi35\">**</span><span class=\"ansi1\">obj</span><span class=\"ansi1\">)</span>\n      File \"<span class=\"ansi32\">pydantic/</span><span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">main.py</span>\", line <span class=\"ansi33\">341</span>, in <span class=\"ansi35\">pydantic.main.BaseModel.__init__</span>\n        <span class=\"ansi35\"></span><span class=\"ansi1 ansi35\">raise</span> <span class=\"ansi1\">validation_error</span>\n    <span class=\"ansi31\"></span><span class=\"ansi1 ansi31\">pydantic.error_wrappers.ValidationError</span>:<span class=\"ansi1\"> 1 validation error for Config\n    local_proxy\n      field required (type=value_error.missing)</span>",
+    "valid": false,
+    "metadata": null,
+    "validation_message": "缺少元数据",
+    "validation_raw_data": null,
+    "previous": {
+      "module_name": "nonebot_plugin_pixivrank_search",
+      "project_link": "nonebot-plugin-pixivrank-search",
+      "name": "nonebot_plugin_pixivrank_search",
+      "desc": "基于RSSHUB阅读器的P站排行和P站搜图",
+      "author": "HibiKier",
+      "homepage": "https://github.com/HibiKier/nonebot_plugin_pixivrank_search",
+      "tags": [],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 22:03:32"
+  },
+  "nonebot-plugin-russian": {
+    "run": true,
+    "output": "插件 nonebot-plugin-russian 的信息如下：\n    name         : nonebot-plugin-russian \n     version      : 0.2.5                  \n     description  : Nonebot2插件 俄罗斯轮盘       \n    \n    dependencies\n     - nonebot-adapter-onebot &gt;=2.2.0,&lt;3.0.0\n     - nonebot-plugin-apscheduler &gt;=0.2.0,&lt;0.3.0\n     - nonebot2 &gt;=2.0.0-rc.2,&lt;3.0.0\n     - ujson &gt;=4.0.0\n插件 nonebot-plugin-russian 依赖的插件如下：\n    nonebot_plugin_apscheduler\n插件 nonebot_plugin_russian 加载正常：\n    <span class=\"ansi32\">06-19 14:03:41</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 14:03:41</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 14:03:41</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_apscheduler</span>\"\n    <span class=\"ansi32\">06-19 14:03:41</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_russian</span>\"",
+    "valid": false,
+    "metadata": null,
+    "validation_message": "缺少元数据",
+    "validation_raw_data": null,
+    "previous": {
+      "module_name": "nonebot_plugin_russian",
+      "project_link": "nonebot-plugin-russian",
+      "name": "nonebot_plugin_russian",
+      "desc": "群内小游戏，使用金币赌注的俄罗斯轮盘",
+      "author": "HibiKier",
+      "homepage": "https://github.com/HibiKier/nonebot_plugin_russian",
+      "tags": [],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 22:03:41"
+  },
+  "nonebot-plugin-setu": {
+    "run": false,
+    "output": "插件 nonebot-plugin-setu 的信息如下：\n    name         : nonebot-plugin-setu \n     version      : 1.1.11              \n     description  : 基于lolicon api的涩图插件  \n    \n    dependencies\n     - httpx &gt;=0.23.0,&lt;0.24.0\n     - httpx-socks &gt;=0.7.3,&lt;0.8.0\n     - nonebot-adapter-onebot &gt;=2.0.0b1,&lt;3.0.0\n     - nonebot2 &gt;=2.0.0b2,&lt;3.0.0\n     - tqdm &gt;=4.61.0,&lt;5.0.0\n插件 nonebot-plugin-setu 依赖的插件如下：\n    \n插件 nonebot_plugin_setu 加载出错：\n    <span class=\"ansi32\">06-19 14:03:50</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 14:03:50</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 14:03:50</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot_plugin_setu</span><span class=\"ansi36\"></span> | 未配置代理\n    <span class=\"ansi32\">06-19 14:03:51</span> [<span class=\"ansi31\"></span><span class=\"ansi1 ansi31\">ERROR</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | <span class=\"ansi31\"></span><span class=\"ansi31 ansi48-248187208\">Failed to import \"nonebot_plugin_setu\"</span><span class=\"ansi31\"></span>\n    <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Traceback (most recent call last):</span>\n      File \"<span class=\"ansi32\">/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-setu-test/</span><span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">runner.py</span>\", line <span class=\"ansi33\">15</span>, in <span class=\"ansi35\">&lt;module&gt;</span>\n        <span class=\"ansi1\">plugin</span> <span class=\"ansi35\"></span><span class=\"ansi1 ansi35\">=</span> <span class=\"ansi1\">load_plugin</span><span class=\"ansi1\">(</span><span class=\"ansi36\">\"nonebot_plugin_setu\"</span><span class=\"ansi1\">)</span>\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    &gt; File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"&lt;frozen importlib._bootstrap&gt;\", line 1050, in _gcd_import\n      File \"&lt;frozen importlib._bootstrap&gt;\", line 1027, in _find_and_load\n      File \"&lt;frozen importlib._bootstrap&gt;\", line 1006, in _find_and_load_unlocked\n      File \"&lt;frozen importlib._bootstrap&gt;\", line 688, in _load_unlocked\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"&lt;frozen importlib._bootstrap_external&gt;\", line 883, in exec_module\n      File \"&lt;frozen importlib._bootstrap&gt;\", line 241, in _call_with_frames_removed\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot_plugin_setu/__init__.py\", line 38, in &lt;module&gt;\n        driver.server_app.mount('/setu', setu_api, name='setu_plugin')\n    <span class=\"ansi31\"></span><span class=\"ansi1 ansi31\">AttributeError</span>:<span class=\"ansi1\"> 'Driver' object has no attribute 'server_app'</span>",
+    "valid": false,
+    "metadata": null,
+    "validation_message": "缺少元数据",
+    "validation_raw_data": null,
+    "previous": {
+      "module_name": "nonebot_plugin_setu",
+      "project_link": "nonebot-plugin-setu",
+      "name": "nonebot_plugin_setu",
+      "desc": "基于loliconImage Api的涩图插件，内置涩图CD",
+      "author": "ayanamiblhx",
+      "homepage": "https://github.com/ayanamiblhx/nonebot_plugin_setu",
+      "tags": [],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 22:03:51"
+  },
+  "nonebot-plugin-heweather": {
+    "run": false,
+    "output": "插件 nonebot-plugin-heweather 的信息如下：\n    name         : nonebot-plugin-heweather                          \n     version      : 0.6.6                                             \n     description  : Get Heweather information and convert to pictures \n    \n    dependencies\n     - httpx &gt;=0.18.0,&lt;1.0.0\n     - nonebot-adapter-onebot &gt;=2.0.0-beta.1\n     - nonebot-plugin-htmlrender &gt;=0.0.4.3\n     - nonebot2 &gt;=2.0.0rc1\n     - pydantic &gt;=1.5.0\n插件 nonebot-plugin-heweather 依赖的插件如下：\n    nonebot_plugin_htmlrender\n插件 nonebot_plugin_heweather 加载出错：\n    <span class=\"ansi32\">06-19 14:04:01</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 14:04:01</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 14:04:01</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_htmlrender</span>\"\n    <span class=\"ansi32\">06-19 14:04:01</span> [<span class=\"ansi31\"></span><span class=\"ansi1 ansi31\">ERROR</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | <span class=\"ansi31\"></span><span class=\"ansi31 ansi48-248187208\">Failed to import \"nonebot_plugin_heweather\"</span><span class=\"ansi31\"></span>\n    <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Traceback (most recent call last):</span>\n      File \"<span class=\"ansi32\">/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-heweather-test/</span><span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">runner.py</span>\", line <span class=\"ansi33\">15</span>, in <span class=\"ansi35\">&lt;module&gt;</span>\n        <span class=\"ansi1\">plugin</span> <span class=\"ansi35\"></span><span class=\"ansi1 ansi35\">=</span> <span class=\"ansi1\">load_plugin</span><span class=\"ansi1\">(</span><span class=\"ansi36\">\"nonebot_plugin_heweather\"</span><span class=\"ansi1\">)</span>\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    &gt; File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"&lt;frozen importlib._bootstrap&gt;\", line 1050, in _gcd_import\n      File \"&lt;frozen importlib._bootstrap&gt;\", line 1027, in _find_and_load\n      File \"&lt;frozen importlib._bootstrap&gt;\", line 1006, in _find_and_load_unlocked\n      File \"&lt;frozen importlib._bootstrap&gt;\", line 688, in _load_unlocked\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"&lt;frozen importlib._bootstrap_external&gt;\", line 883, in exec_module\n      File \"&lt;frozen importlib._bootstrap&gt;\", line 241, in _call_with_frames_removed\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot_plugin_heweather/__init__.py\", line 18, in &lt;module&gt;\n        raise ConfigError(\"请设置 qweather_apikey 和 qweather_apitype\")\n    <span class=\"ansi31\"></span><span class=\"ansi1 ansi31\">nonebot_plugin_heweather.weather_data.ConfigError</span>:<span class=\"ansi1\"> 请设置 qweather_apikey 和 qweather_apitype</span>",
+    "valid": false,
+    "metadata": null,
+    "validation_message": "缺少元数据",
+    "validation_raw_data": null,
+    "previous": {
+      "module_name": "nonebot_plugin_heweather",
+      "project_link": "nonebot-plugin-heweather",
+      "name": "和风天气",
+      "desc": "获取和风天气信息并转换为图片",
+      "author": "kexue-z",
+      "homepage": "https://github.com/kexue-z/nonebot-plugin-heweather",
+      "tags": [
+        {
+          "label": "a:onebot",
+          "color": "#000000"
+        }
+      ],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 22:04:01"
+  },
+  "nonebot-plugin-autohelp": {
+    "run": true,
+    "output": "插件 nonebot-plugin-autohelp 的信息如下：\n    name         : nonebot-plugin-autohelp                                        \n     version      : 0.1.7                                                          \n     description  : nonebot2 plugin 自动生成载入插件的帮助信息，响应 /help !help help 菜单 caidan /i \n    \n    dependencies\n     - logzero &gt;=1.7.0,&lt;2.0.0\n     - nonebot-adapter-onebot &gt;=2.0.0-beta.1,&lt;3.0.0\n     - nonebot2 &gt;=2.0.0-alpha.16,&lt;3.0.0\n插件 nonebot-plugin-autohelp 依赖的插件如下：\n    \n插件 nonebot_plugin_autohelp 加载正常：\n    <span class=\"ansi32\">06-19 14:04:09</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 14:04:09</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 14:04:09</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_autohelp</span>\"\n    [I 230619 14:04:09 nonebot_plugin_autohelp:45] Loaded plugins: ['nonebot_plugin_autohelp']",
+    "valid": false,
+    "metadata": null,
+    "validation_message": "缺少元数据",
+    "validation_raw_data": null,
+    "previous": {
+      "module_name": "nonebot_plugin_autohelp",
+      "project_link": "nonebot-plugin-autohelp",
+      "name": "nonebot-plugin-autohelp",
+      "desc": "响应help/菜单/帮助(群消息或私信)并提供已载入插件的帮助信息（如命令名，aliases，模块文档）",
+      "author": "ffreemt",
+      "homepage": "https://github.com/ffreemt/nonebot-plugin-autohelp",
+      "tags": [],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 22:04:09"
+  },
+  "nonebot-plugin-flexperm": {
+    "run": true,
+    "output": "插件 nonebot-plugin-flexperm 的信息如下：\n    name         : nonebot-plugin-flexperm \n     version      : 0.7.0                   \n     description  : 精细化的 NoneBot 权限管理插件     \n    \n    dependencies\n     - nonebot-plugin-apscheduler &gt;=0.2.0,&lt;0.3.0\n     - nonebot2 &gt;=2.0.0,&lt;3.0.0\n     - ruamel.yaml &gt;=0.17.10,&lt;0.18.0\n插件 nonebot-plugin-flexperm 依赖的插件如下：\n    nonebot_plugin_apscheduler\n插件 nonebot_plugin_flexperm 加载正常：\n    <span class=\"ansi32\">06-19 14:04:17</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 14:04:17</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 14:04:17</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_apscheduler</span>\"\n    <span class=\"ansi32\">06-19 14:04:17</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_flexperm</span>\"",
+    "valid": false,
+    "metadata": null,
+    "validation_message": "缺少元数据",
+    "validation_raw_data": null,
+    "previous": {
+      "module_name": "nonebot_plugin_flexperm",
+      "project_link": "nonebot-plugin-flexperm",
+      "name": "nonebot-plugin-flexperm",
+      "desc": "精细化的 NoneBot 权限管理插件",
+      "author": "rmuchan",
+      "homepage": "https://github.com/rmuchan/nonebot-plugin-flexperm",
+      "tags": [],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 22:04:18"
+  },
+  "nonebot-plugin-epicfree": {
+    "run": true,
+    "output": "插件 nonebot-plugin-epicfree 的信息如下：\n    name         : nonebot-plugin-epicfree                                 \n     version      : 0.2.5                                                   \n     description  : EpicGameStore free games promotions plugin for NoneBot2 \n    \n    dependencies\n     - httpx &gt;=0.20.0,&lt;1.0.0\n     - nonebot-adapter-onebot &gt;=2.0.0b1\n     - nonebot-plugin-apscheduler &gt;=0.1.0\n     - nonebot2 &gt;=2.0.0b3\n     - pytz *\n插件 nonebot-plugin-epicfree 依赖的插件如下：\n    nonebot_plugin_apscheduler\n插件 nonebot_plugin_epicfree 加载正常：\n    <span class=\"ansi32\">06-19 14:04:26</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 14:04:26</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 14:04:26</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_apscheduler</span>\"\n    <span class=\"ansi32\">06-19 14:04:26</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_epicfree</span>\"",
+    "valid": false,
+    "metadata": null,
+    "validation_message": "缺少元数据",
+    "validation_raw_data": null,
+    "previous": {
+      "module_name": "nonebot_plugin_epicfree",
+      "project_link": "nonebot-plugin-epicfree",
+      "name": "Epic 限免游戏资讯",
+      "desc": "EpicGameStore 喜加一资讯插件，发送「喜加一」逝世看吧！",
+      "author": "monsterxcn",
+      "homepage": "https://github.com/monsterxcn/nonebot_plugin_epicfree",
+      "tags": [],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 22:04:26"
+  },
+  "ELF-RSS": {
+    "run": true,
+    "output": "插件 ELF-RSS 的信息如下：\n    name         : elf-rss                       \n     version      : 2.6.19                        \n     description  : QQ机器人 RSS订阅 插件，订阅源建议选择 RSSHub \n    \n    dependencies\n     - aiohttp &gt;=3.8.4,&lt;4.0.0\n     - arrow &gt;=1.2.3,&lt;2.0.0\n     - async-timeout &gt;=4.0.2,&lt;5.0.0\n     - bbcode &gt;=1.1.0,&lt;2.0.0\n     - cachetools &gt;=5.3.0,&lt;6.0.0\n     - deep-translator &gt;=1.10.1,&lt;2.0.0\n     - emoji &gt;=2.2.0,&lt;3.0.0\n     - feedparser &gt;=6.0.10,&lt;7.0.0\n     - ImageHash &gt;=4.3.1,&lt;5.0.0\n     - magneturi &gt;=1.3,&lt;2.0\n     - nonebot-adapter-onebot &gt;=2.2.3,&lt;3.0.0\n     - nonebot-plugin-apscheduler &gt;=0.2.0,&lt;0.3.0\n     - nonebot-plugin-guild-patch &gt;=0.2.3,&lt;0.3.0\n     - nonebot2 &gt;=2.0.0-rc.4,&lt;3.0.0\n     - pikpakapi &gt;=0.1.1,&lt;0.2.0\n     - Pillow &gt;=9.5.0,&lt;10.0.0\n     - pydantic &gt;=1.10.7,&lt;2.0.0\n     - pyquery &gt;=2.0.0,&lt;3.0.0\n     - python-qbittorrent &gt;=0.4.3,&lt;0.5.0\n     - tenacity &gt;=8.2.2,&lt;9.0.0\n     - tinydb &gt;=4.7.1,&lt;5.0.0\n     - yarl &gt;=1.9.2,&lt;2.0.0\n插件 ELF-RSS 依赖的插件如下：\n    nonebot_plugin_apscheduler, nonebot_plugin_guild_patch\n插件 ELF_RSS2 加载正常：\n    <span class=\"ansi32\">06-19 14:04:56</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 14:04:56</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 14:04:57</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_apscheduler</span>\"\n    <span class=\"ansi32\">06-19 14:04:57</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_guild_patch</span>\"\n    <span class=\"ansi32\">06-19 14:04:58</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">ELF_RSS2</span>\"",
+    "valid": false,
+    "metadata": {
+      "name": "ELF_RSS",
+      "description": "QQ机器人 RSS订阅 插件，订阅源建议选择 RSSHub",
+      "usage": "https://github.com/Quan666/ELF_RSS",
+      "type": null,
+      "homepage": null,
+      "supported_adapters": null
+    },
+    "validation_message": "2 validation errors for PluginPublishInfo\nhomepage\n  none is not an allowed value (type=type_error.none.not_allowed)\ntype\n  ⚠️ 插件类型不能为空。&lt;dt&gt;请确保填写插件类型。&lt;/dt&gt; (type=value_error)",
+    "validation_raw_data": {
+      "module_name": "ELF_RSS2",
+      "project_link": "ELF-RSS",
+      "name": "ELF_RSS",
+      "desc": "QQ机器人 RSS订阅 插件，订阅源建议选择 RSSHub",
+      "author": "Quan666",
+      "homepage": null,
+      "tags": "[]",
+      "plugin_test_result": true,
+      "type": null,
+      "supported_adapters": null
+    },
+    "previous": {
+      "module_name": "ELF_RSS2",
+      "project_link": "ELF-RSS",
+      "name": "ELF_RSS",
+      "desc": "QQ机器人 RSS订阅 插件，订阅源建议选择 RSSHub",
+      "author": "Quan666",
+      "homepage": "https://github.com/Quan666/ELF_RSS",
+      "tags": [],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 22:04:58"
+  },
+  "nonebot-plugin-simplemusic": {
+    "run": true,
+    "output": "插件 nonebot-plugin-simplemusic 的信息如下：\n    name         : nonebot-plugin-simplemusic \n     version      : 0.1.7                      \n     description  : 适用于 Nonebot2 的点歌插件         \n    \n    dependencies\n     - httpx &gt;=0.19.0\n     - nonebot-adapter-onebot &gt;=2.0.0-beta.1,&lt;3.0.0\n     - nonebot2 &gt;=2.0.0-beta.4,&lt;3.0.0\n插件 nonebot-plugin-simplemusic 依赖的插件如下：\n    \n插件 nonebot_plugin_simplemusic 加载正常：\n    <span class=\"ansi32\">06-19 14:05:08</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 14:05:08</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 14:05:08</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_simplemusic</span>\"",
+    "valid": false,
+    "metadata": {
+      "name": "点歌",
+      "description": "点歌，支持qq、网易云等来源",
+      "usage": "点歌/qq点歌/网易点歌/酷我点歌/酷狗点歌/咪咕点歌/b站点歌 + 关键词",
+      "type": null,
+      "homepage": null,
+      "supported_adapters": null
+    },
+    "validation_message": "2 validation errors for PluginPublishInfo\nhomepage\n  none is not an allowed value (type=type_error.none.not_allowed)\ntype\n  ⚠️ 插件类型不能为空。&lt;dt&gt;请确保填写插件类型。&lt;/dt&gt; (type=value_error)",
+    "validation_raw_data": {
+      "module_name": "nonebot_plugin_simplemusic",
+      "project_link": "nonebot-plugin-simplemusic",
+      "name": "点歌",
+      "desc": "点歌，支持qq、网易云等来源",
+      "author": "MeetWq",
+      "homepage": null,
+      "tags": "[{\"label\": \"a:onebot\", \"color\": \"#000000\"}]",
+      "plugin_test_result": true,
+      "type": null,
+      "supported_adapters": null
+    },
+    "previous": {
+      "module_name": "nonebot_plugin_simplemusic",
+      "project_link": "nonebot-plugin-simplemusic",
+      "name": "SimpleMusic",
+      "desc": "最简Q群点歌插件，支持QQ音乐、网易云、酷我、酷狗、咪咕、B站音频区",
+      "author": "MeetWq",
+      "homepage": "https://github.com/MeetWq/nonebot-plugin-simplemusic",
+      "tags": [
+        {
+          "label": "a:onebot",
+          "color": "#000000"
+        }
+      ],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 22:05:09"
+  },
+  "nonebot-plugin-phlogo": {
+    "run": false,
+    "output": "插件 nonebot-plugin-phlogo 的信息如下：\n    name         : nonebot-plugin-phlogo \n     version      : 0.0.3                 \n     description  : 生成ph风格logo            \n    \n    dependencies\n     - nonebot2 &gt;=2.0.0-beta.1\n     - Pillow &gt;=8.3.1\n插件 nonebot-plugin-phlogo 依赖的插件如下：\n    \n插件 nonebot_plugin_phlogo 加载出错：\n    <span class=\"ansi32\">06-19 14:05:18</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 14:05:18</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 14:05:18</span> [<span class=\"ansi31\"></span><span class=\"ansi1 ansi31\">ERROR</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | <span class=\"ansi31\"></span><span class=\"ansi31 ansi48-248187208\">Failed to import \"nonebot_plugin_phlogo\"</span><span class=\"ansi31\"></span>\n    <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Traceback (most recent call last):</span>\n      File \"<span class=\"ansi32\">/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-phlogo-test/</span><span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">runner.py</span>\", line <span class=\"ansi33\">15</span>, in <span class=\"ansi35\">&lt;module&gt;</span>\n        <span class=\"ansi1\">plugin</span> <span class=\"ansi35\"></span><span class=\"ansi1 ansi35\">=</span> <span class=\"ansi1\">load_plugin</span><span class=\"ansi1\">(</span><span class=\"ansi36\">\"nonebot_plugin_phlogo\"</span><span class=\"ansi1\">)</span>\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    &gt; File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"&lt;frozen importlib._bootstrap&gt;\", line 1050, in _gcd_import\n      File \"&lt;frozen importlib._bootstrap&gt;\", line 1027, in _find_and_load\n      File \"&lt;frozen importlib._bootstrap&gt;\", line 1006, in _find_and_load_unlocked\n      File \"&lt;frozen importlib._bootstrap&gt;\", line 688, in _load_unlocked\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"&lt;frozen importlib._bootstrap_external&gt;\", line 883, in exec_module\n      File \"&lt;frozen importlib._bootstrap&gt;\", line 241, in _call_with_frames_removed\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot_plugin_phlogo/__init__.py\", line 8, in &lt;module&gt;\n        from .logo import make_logo\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot_plugin_phlogo/logo.py\", line 7, in &lt;module&gt;\n        FONT_DIR = nonebot.get_driver().config.PHLOGO_FONT\n    <span class=\"ansi31\"></span><span class=\"ansi1 ansi31\">AttributeError</span>:<span class=\"ansi1\"> 'Config' object has no attribute 'PHLOGO_FONT'</span>",
+    "valid": false,
+    "metadata": null,
+    "validation_message": "缺少元数据",
+    "validation_raw_data": null,
+    "previous": {
+      "module_name": "nonebot_plugin_phlogo",
+      "project_link": "nonebot-plugin-phlogo",
+      "name": "pornhub风格图标生成",
+      "desc": "生成pornhub风格logo",
+      "author": "kexue-z",
+      "homepage": "https://github.com/kexue-z/nonebot-plugin-phlogo",
+      "tags": [],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 22:05:18"
+  },
+  "nb2chan": {
+    "run": false,
+    "output": "插件 nb2chan 的信息如下：\n    name         : nb2chan                          \n     version      : 0.1.1                            \n     description  : nb2chan push service Nonebot2酱推送 \n    \n    dependencies\n     - aiocqhttp &gt;=1.4.2,&lt;2.0.0\n     - logzero &gt;=1.7.0,&lt;2.0.0\n     - nonebot-adapter-onebot &gt;=2.0.0-beta.1,&lt;3.0.0\n     - nonebot2 &gt;=2.0.0-alpha.16,&lt;3.0.0\n     - pendulum &gt;=2.1.2,&lt;3.0.0\n插件 nb2chan 依赖的插件如下：\n    \n插件 nb2chan 加载出错：\n    <span class=\"ansi32\">06-19 14:05:31</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 14:05:31</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 14:05:31</span> [<span class=\"ansi31\"></span><span class=\"ansi1 ansi31\">ERROR</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | <span class=\"ansi31\"></span><span class=\"ansi31 ansi48-248187208\">Failed to import \"nb2chan\"</span><span class=\"ansi31\"></span>\n    <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Traceback (most recent call last):</span>\n      File \"<span class=\"ansi32\">/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nb2chan-test/</span><span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">runner.py</span>\", line <span class=\"ansi33\">15</span>, in <span class=\"ansi35\">&lt;module&gt;</span>\n        <span class=\"ansi1\">plugin</span> <span class=\"ansi35\"></span><span class=\"ansi1 ansi35\">=</span> <span class=\"ansi1\">load_plugin</span><span class=\"ansi1\">(</span><span class=\"ansi36\">\"nb2chan\"</span><span class=\"ansi1\">)</span>\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    &gt; File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"&lt;frozen importlib._bootstrap&gt;\", line 1050, in _gcd_import\n      File \"&lt;frozen importlib._bootstrap&gt;\", line 1027, in _find_and_load\n      File \"&lt;frozen importlib._bootstrap&gt;\", line 1006, in _find_and_load_unlocked\n      File \"&lt;frozen importlib._bootstrap&gt;\", line 688, in _load_unlocked\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"&lt;frozen importlib._bootstrap_external&gt;\", line 883, in exec_module\n      File \"&lt;frozen importlib._bootstrap&gt;\", line 241, in _call_with_frames_removed\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nb2chan/__init__.py\", line 3, in &lt;module&gt;\n        from .nb2chan import nb2chan, app\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nb2chan/nb2chan.py\", line 28, in &lt;module&gt;\n        app = nonebot.get_asgi()\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot/__init__.py\", line 172, in get_asgi\n        assert isinstance(\n    <span class=\"ansi31\"></span><span class=\"ansi1 ansi31\">AssertionError</span>:<span class=\"ansi1\"> asgi object is only available for reverse driver</span>\n    [I 230619 14:05:31 config:54] env_prefix: nb2chan_, env_file: .env.nb2chan",
+    "valid": false,
+    "metadata": null,
+    "validation_message": "缺少元数据",
+    "validation_raw_data": null,
+    "previous": {
+      "module_name": "nb2chan",
+      "project_link": "nb2chan",
+      "name": "nb2chan",
+      "desc": "Nonebot2酱推送",
+      "author": "yucongo",
+      "homepage": "https://github.com/ffreemt/nb2chan",
+      "tags": [],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 22:05:31"
+  },
+  "nonebot-plugin-setu-now": {
+    "run": true,
+    "output": "插件 nonebot-plugin-setu-now 的信息如下：\n    name         : nonebot-plugin-setu-now \n     version      : 0.4.4                   \n     description  : 另一个色图插件                 \n    \n    dependencies\n     - httpx &gt;=0.18.0,&lt;1.0.0\n     - nonebot-adapter-onebot &gt;=2.0.0-beta.1,&lt;3.0.0\n     - nonebot-plugin-apscheduler &gt;=0.2.0,&lt;0.3.0\n     - nonebot2 &gt;=2.0.0-beta.4\n     - pillow &gt;=8.0.0\n     - pydantic &gt;=1.5.0,&lt;2.0.0\n     - webdav4 &gt;=0.9.3,&lt;0.10.0\n插件 nonebot-plugin-setu-now 依赖的插件如下：\n    nonebot_plugin_apscheduler\n插件 nonebot_plugin_setu_now 加载正常：\n    <span class=\"ansi32\">06-19 14:05:39</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 14:05:39</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 14:05:40</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_apscheduler</span>\"\n    <span class=\"ansi32\">06-19 14:05:40</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_setu_now</span>\"",
+    "valid": false,
+    "metadata": null,
+    "validation_message": "缺少元数据",
+    "validation_raw_data": null,
+    "previous": {
+      "module_name": "nonebot_plugin_setu_now",
+      "project_link": "nonebot-plugin-setu-now",
+      "name": "nonebot-plugin-setu-now",
+      "desc": "另一个色图插件，即时下载并保存，可选WebDAV。可选特殊色图",
+      "author": "kexue-z",
+      "homepage": "https://github.com/kexue-z/nonebot-plugin-setu-now",
+      "tags": [
+        {
+          "label": "a:onebot",
+          "color": "#000000"
+        }
+      ],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 22:05:40"
+  },
+  "nonebot-plugin-leetcode": {
+    "run": true,
+    "output": "插件 nonebot-plugin-leetcode 的信息如下：\n    name         : nonebot-plugin-leetcode                                                                         \n     version      : 0.2                                                                                             \n     description  : one plugin used in nonebot , can send leetcode question to your qq friends and groups every day \n    \n    dependencies\n     - nonebot-adapter-cqhttp &gt;=2.0.0a16\n     - nonebot-plugin-apscheduler &gt;=0.1.2\n     - nonebot2 &gt;=2.0.0a16\n     - requests &gt;=2.26.0\n插件 nonebot-plugin-leetcode 依赖的插件如下：\n    nonebot_plugin_apscheduler\n插件 leetcode 加载正常：\n    <span class=\"ansi32\">06-19 14:05:50</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 14:05:50</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 14:05:50</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">leetcode</span><span class=\"ansi36\"></span> | global_config:driver='~none' host=IPv4Address('127.0.0.1') port=8080 log_level='INFO' api_timeout=30.0 superusers=set() nickname=set() command_start={'/'} command_sep={'.'} session_expire_timeout=datetime.timedelta(seconds=120) loguru_colorize=False\n    <span class=\"ansi32\">06-19 14:05:50</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">leetcode</span><span class=\"ansi36\"></span> | plugin_config:plugin_setting='default' leetcode_qq_friends=[] leetcode_qq_groups=[] leetcode_inform_time=[] superusers=set() nickname=set() session_expire_timeout=datetime.timedelta(seconds=120) log_level='INFO' command_sep={'.'} loguru_colorize=False api_timeout=30.0 port=8080 host=IPv4Address('127.0.0.1') driver='~none' command_start={'/'}\n    <span class=\"ansi32\">06-19 14:05:50</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_apscheduler</span>\"\n    <span class=\"ansi32\">06-19 14:05:50</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">leetcode</span>\"\n    /home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/leetcode/config.py:4: FutureWarning: aliases are no longer used by BaseSettings to define which environment variables to read. Instead use the \"env\" field setting. See https://pydantic-docs.helpmanual.io/usage/settings/#environment-variable-names\n      class Time(BaseSettings):",
+    "valid": false,
+    "metadata": null,
+    "validation_message": "缺少元数据",
+    "validation_raw_data": null,
+    "previous": {
+      "module_name": "leetcode",
+      "project_link": "nonebot-plugin-leetcode",
+      "name": "leetcode提醒机器人",
+      "desc": " 安装该插件后能往指定qq和指定qq群定时发送leetcode每日一题",
+      "author": "zxz0415",
+      "homepage": "https://github.com/zxz0415/leetcode",
+      "tags": [],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 22:05:50"
+  },
+  "nonebot-plugin-youthstudy": {
+    "run": true,
+    "output": "插件 nonebot-plugin-youthstudy 的信息如下：\n    name         : nonebot-plugin-youthstudy \n     version      : 1.1.8                     \n     description  : 基于nonebot2的青年大学习插件        \n    \n    dependencies\n     - beautifulsoup4 &gt;=4.10.0,&lt;5.0.0\n     - httpx &gt;=0.23.0,&lt;0.24.0\n     - lxml &gt;=4.7,&lt;5.0\n     - nonebot-adapter-onebot &gt;=2.0.0b1,&lt;3.0.0\n     - nonebot-plugin-apscheduler &gt;=0.2.0,&lt;0.3.0\n     - nonebot2 &gt;=2.0.0b2\n     - Pillow &gt;=9.0.1,&lt;10.0.0\n插件 nonebot-plugin-youthstudy 依赖的插件如下：\n    nonebot_plugin_apscheduler\n插件 nonebot_plugin_youthstudy 加载正常：\n    <span class=\"ansi32\">06-19 14:06:01</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 14:06:01</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 14:06:02</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_apscheduler</span>\"\n    <span class=\"ansi32\">06-19 14:06:02</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_youthstudy</span>\"",
+    "valid": false,
+    "metadata": null,
+    "validation_message": "缺少元数据",
+    "validation_raw_data": null,
+    "previous": {
+      "module_name": "nonebot_plugin_youthstudy",
+      "project_link": "nonebot-plugin-youthstudy",
+      "name": "nonebot_plugin_youthstudy",
+      "desc": "基于nonebot的青年大学习插件，用来获取最新一期的青年大学习答案",
+      "author": "ayanamiblhx",
+      "homepage": "https://github.com/ayanamiblhx/nonebot_plugin_youthstudy",
+      "tags": [],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 22:06:02"
+  },
+  "nonebot-plugin-asoulcnki": {
+    "run": false,
+    "output": "插件 nonebot-plugin-asoulcnki 的信息如下：\n    name         : nonebot-plugin-asoulcnki      \n     version      : 0.2.1                         \n     description  : ASoulCnki plugin for Nonebot2 \n    \n    dependencies\n     - httpx &gt;=0.19.0\n     - Jinja2 &gt;=3.0.0,&lt;4.0.0\n     - nonebot-adapter-onebot &gt;=2.0.0-beta.1,&lt;3.0.0\n     - nonebot-plugin-htmlrender &gt;=0.0.4\n     - nonebot2 &gt;=2.0.0-beta.4,&lt;3.0.0\n插件 nonebot-plugin-asoulcnki 依赖的插件如下：\n    nonebot_plugin_htmlrender\n插件 nonebot_plugin_asoulcnki 加载出错：\n    <span class=\"ansi32\">06-19 14:06:12</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 14:06:12</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 14:06:12</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_asoulcnki</span>\"\n    <span class=\"ansi32\">06-19 14:06:12</span> [<span class=\"ansi31\"></span><span class=\"ansi1 ansi31\">ERROR</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | <span class=\"ansi31\"></span><span class=\"ansi31 ansi48-248187208\">Failed to import \"nonebot_plugin_htmlrender\"</span><span class=\"ansi31\"></span>\n    <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Traceback (most recent call last):</span>\n      File \"<span class=\"ansi32\">/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-asoulcnki-test/</span><span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">runner.py</span>\", line <span class=\"ansi33\">30</span>, in <span class=\"ansi35\">&lt;module&gt;</span>\n        <span class=\"ansi1\">require</span><span class=\"ansi1\">(</span><span class=\"ansi36\">'nonebot_plugin_htmlrender'</span><span class=\"ansi1\">)</span>\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 174, in require\n        plugin = load_plugin(name)\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    &gt; File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 154, in load_plugin\n        raise RuntimeError(\n    <span class=\"ansi31\"></span><span class=\"ansi1 ansi31\">RuntimeError</span>:<span class=\"ansi1\"> Module nonebot_plugin_htmlrender is not loaded as a plugin! Make sure not to import it before loading.</span>\n    Traceback (most recent call last):\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-asoulcnki-test/runner.py\", line 30, in &lt;module&gt;\n        require('nonebot_plugin_htmlrender')\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 178, in require\n        raise RuntimeError(f'Cannot load plugin \"{name}\"!')\n    RuntimeError: Cannot load plugin \"nonebot_plugin_htmlrender\"!",
+    "valid": false,
+    "metadata": {
+      "name": "枝网查重",
+      "description": "查询发病小作文重复率",
+      "usage": "1、查重 xxx 或 回复内容“查重”\n2、小作文 [keyword]，随机小作文",
+      "type": null,
+      "homepage": null,
+      "supported_adapters": null
+    },
+    "validation_message": "3 validation errors for PluginPublishInfo\nhomepage\n  none is not an allowed value (type=type_error.none.not_allowed)\nplugin_test_result\n  ⚠️ 插件加载测试未通过。&lt;details&gt;&lt;summary&gt;测试输出&lt;/summary&gt;&lt;/details&gt; (type=value_error)\ntype\n  ⚠️ 插件类型不能为空。&lt;dt&gt;请确保填写插件类型。&lt;/dt&gt; (type=value_error)",
+    "validation_raw_data": {
+      "module_name": "nonebot_plugin_asoulcnki",
+      "project_link": "nonebot-plugin-asoulcnki",
+      "name": "枝网查重",
+      "desc": "查询发病小作文重复率",
+      "author": "MeetWq",
+      "homepage": null,
+      "tags": "[]",
+      "plugin_test_result": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "previous": {
+      "module_name": "nonebot_plugin_asoulcnki",
+      "project_link": "nonebot-plugin-asoulcnki",
+      "name": "枝网查重",
+      "desc": "随机小作文；查询发病小作文复制比",
+      "author": "MeetWq",
+      "homepage": "https://github.com/MeetWq/nonebot-plugin-asoulcnki",
+      "tags": [],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 22:06:12"
+  },
+  "nonebot-plugin-petpet": {
+    "run": true,
+    "output": "插件 nonebot-plugin-petpet 的信息如下：\n    name         : nonebot-plugin-petpet                   \n     version      : 0.3.21                                  \n     description  : Nonebot2 plugin for making fun pictures \n    \n    dependencies\n     - httpx &gt;=0.19.0\n     - nonebot-adapter-onebot &gt;=2.1.1,&lt;3.0.0\n     - nonebot-plugin-imageutils &gt;=0.1.14,&lt;0.2.0\n     - nonebot2 &gt;=2.0.0-rc.1,&lt;3.0.0\n     - Pillow &gt;=9.0.0,&lt;10.0.0\n插件 nonebot-plugin-petpet 依赖的插件如下：\n    nonebot_plugin_imageutils\n插件 nonebot_plugin_petpet 加载正常：\n    06-19 14:06:29 [SUCCESS] nonebot | NoneBot is initializing...\n    06-19 14:06:29 [INFO] nonebot | Current Env: prod\n    06-19 14:06:30 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_imageutils\"\n    06-19 14:06:31 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_petpet\"",
+    "valid": false,
+    "metadata": {
+      "name": "头像表情包",
+      "description": "摸头等头像相关表情制作",
+      "usage": "触发方式：指令 + @user/qq/自己/图片\n发送“头像表情包”查看支持的指令",
+      "type": null,
+      "homepage": null,
+      "supported_adapters": null
+    },
+    "validation_message": "2 validation errors for PluginPublishInfo\nhomepage\n  none is not an allowed value (type=type_error.none.not_allowed)\ntype\n  ⚠️ 插件类型不能为空。&lt;dt&gt;请确保填写插件类型。&lt;/dt&gt; (type=value_error)",
+    "validation_raw_data": {
+      "module_name": "nonebot_plugin_petpet",
+      "project_link": "nonebot-plugin-petpet",
+      "name": "头像表情包",
+      "desc": "摸头等头像相关表情制作",
+      "author": "MeetWq",
+      "homepage": null,
+      "tags": "[]",
+      "plugin_test_result": true,
+      "type": null,
+      "supported_adapters": null
+    },
+    "previous": {
+      "module_name": "nonebot_plugin_petpet",
+      "project_link": "nonebot-plugin-petpet",
+      "name": "头像表情包",
+      "desc": "制作摸头等头像相关沙雕表情包",
+      "author": "MeetWq",
+      "homepage": "https://github.com/MeetWq/nonebot-plugin-petpet",
+      "tags": [],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 22:06:32"
+  },
+  "nonebot-plugin-shindan": {
+    "run": true,
+    "output": "插件 nonebot-plugin-shindan 的信息如下：\n    name         : nonebot-plugin-shindan                 \n     version      : 0.3.4                                  \n     description  : Nonebot2 plugin for using ShindanMaker \n    \n    dependencies\n     - beautifulsoup4 &gt;=4.0.0,&lt;5.0.0\n     - httpx &gt;=0.19.0\n     - Jinja2 &gt;=3.0.0,&lt;4.0.0\n     - lxml &gt;=4.0.0,&lt;5.0.0\n     - nonebot-adapter-onebot &gt;=2.2.0,&lt;3.0.0\n     - nonebot-plugin-datastore &gt;=0.6.0a1,&lt;0.7.0\n     - nonebot-plugin-htmlrender &gt;=0.0.4\n     - nonebot2 &gt;=2.0.0-rc.1,&lt;3.0.0\n插件 nonebot-plugin-shindan 依赖的插件如下：\n    nonebot_plugin_datastore, nonebot_plugin_htmlrender, nonebot_plugin_localstore\n插件 nonebot_plugin_shindan 加载正常：\n    <span class=\"ansi32\">06-19 14:06:44</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 14:06:44</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 14:06:44</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_localstore</span>\"\n    <span class=\"ansi32\">06-19 14:06:44</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_datastore</span>\"\n    <span class=\"ansi32\">06-19 14:06:44</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_htmlrender</span>\"\n    <span class=\"ansi32\">06-19 14:06:44</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_shindan</span>\"",
+    "valid": false,
+    "metadata": {
+      "name": "趣味占卜",
+      "description": "使用ShindanMaker网站的趣味占卜",
+      "usage": "发送“占卜列表”查看可用占卜\n发送“{占卜名} {名字}”使用占卜",
+      "type": null,
+      "homepage": null,
+      "supported_adapters": null
+    },
+    "validation_message": "2 validation errors for PluginPublishInfo\nhomepage\n  none is not an allowed value (type=type_error.none.not_allowed)\ntype\n  ⚠️ 插件类型不能为空。&lt;dt&gt;请确保填写插件类型。&lt;/dt&gt; (type=value_error)",
+    "validation_raw_data": {
+      "module_name": "nonebot_plugin_shindan",
+      "project_link": "nonebot-plugin-shindan",
+      "name": "趣味占卜",
+      "desc": "使用ShindanMaker网站的趣味占卜",
+      "author": "MeetWq",
+      "homepage": null,
+      "tags": "[]",
+      "plugin_test_result": true,
+      "type": null,
+      "supported_adapters": null
+    },
+    "previous": {
+      "module_name": "nonebot_plugin_shindan",
+      "project_link": "nonebot-plugin-shindan",
+      "name": "ShindanMaker",
+      "desc": "使用 ShindanMaker 网站的趣味占卜",
+      "author": "MeetWq",
+      "homepage": "https://github.com/MeetWq/nonebot-plugin-shindan",
+      "tags": [],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 22:06:45"
+  },
+  "nonebot-plugin-code": {
+    "run": true,
+    "output": "插件 nonebot-plugin-code 的信息如下：\n    name         : nonebot-plugin-code             \n     version      : 0.0.5                           \n     description  : nonebot2 plugin run code online \n    \n    dependencies\n     - httpx &gt;=0.19.0\n     - nonebot-adapter-onebot &gt;=2.0.0-beta.1,&lt;3.0.0\n     - nonebot2 &gt;=2.0.0-beta.1,&lt;3.0.0\n插件 nonebot-plugin-code 依赖的插件如下：\n    \n插件 nonebot_plugin_code 加载正常：\n    <span class=\"ansi32\">06-19 14:06:52</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 14:06:52</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 14:06:53</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_code</span>\"",
+    "valid": false,
+    "metadata": null,
+    "validation_message": "缺少元数据",
+    "validation_raw_data": null,
+    "previous": {
+      "module_name": "nonebot_plugin_code",
+      "project_link": "nonebot-plugin-code",
+      "name": "在线运行代码",
+      "desc": "在线运行代码插件，支持输入",
+      "author": "yzyyz1387",
+      "homepage": "https://github.com/yzyyz1387/nonebot_plugin_code",
+      "tags": [
+        {
+          "label": "t:func",
+          "color": "#dcdcaa"
+        }
+      ],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 22:06:53"
+  },
+  "nonebot-plugin-heisi": {
+    "run": false,
+    "output": "插件 nonebot-plugin-heisi 的信息如下：\n    name         : nonebot-plugin-heisi  \n     version      : 0.3.1                 \n     description  : nonebot2 plugin heisi \n    \n    dependencies\n     - httpx *\n     - nonebot-adapter-onebot &gt;=2.0.0-beta.1\n     - nonebot2 &gt;=2.0.0-beta.1\n插件 nonebot-plugin-heisi 依赖的插件如下：\n    \n插件 nonebot_plugin_heisi 加载出错：\n    <span class=\"ansi32\">06-19 14:07:01</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 14:07:01</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 14:07:01</span> [<span class=\"ansi31\"></span><span class=\"ansi1 ansi31\">ERROR</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | <span class=\"ansi31\"></span><span class=\"ansi31 ansi48-248187208\">Failed to import \"nonebot_plugin_heisi\"</span><span class=\"ansi31\"></span>\n    <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Traceback (most recent call last):</span>\n      File \"<span class=\"ansi32\">/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-heisi-test/</span><span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">runner.py</span>\", line <span class=\"ansi33\">15</span>, in <span class=\"ansi35\">&lt;module&gt;</span>\n        <span class=\"ansi1\">plugin</span> <span class=\"ansi35\"></span><span class=\"ansi1 ansi35\">=</span> <span class=\"ansi1\">load_plugin</span><span class=\"ansi1\">(</span><span class=\"ansi36\">\"nonebot_plugin_heisi\"</span><span class=\"ansi1\">)</span>\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    &gt; File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"&lt;frozen importlib._bootstrap&gt;\", line 1050, in _gcd_import\n      File \"&lt;frozen importlib._bootstrap&gt;\", line 1027, in _find_and_load\n      File \"&lt;frozen importlib._bootstrap&gt;\", line 1006, in _find_and_load_unlocked\n      File \"&lt;frozen importlib._bootstrap&gt;\", line 688, in _load_unlocked\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"&lt;frozen importlib._bootstrap_external&gt;\", line 883, in exec_module\n      File \"&lt;frozen importlib._bootstrap&gt;\", line 241, in _call_with_frames_removed\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot_plugin_heisi/__init__.py\", line 18, in &lt;module&gt;\n        heisi_group = nonebot.get_driver().config.heisi_group\n    <span class=\"ansi31\"></span><span class=\"ansi1 ansi31\">AttributeError</span>:<span class=\"ansi1\"> 'Config' object has no attribute 'heisi_group'</span>",
+    "valid": false,
+    "metadata": null,
+    "validation_message": "缺少元数据",
+    "validation_raw_data": null,
+    "previous": {
+      "module_name": "nonebot_plugin_heisi",
+      "project_link": "nonebot-plugin-heisi",
+      "name": "随机黑丝",
+      "desc": "发送一张黑丝涩图，内置CD",
+      "author": "yzyyz1387",
+      "homepage": "https://github.com/yzyyz1387/nonebot_plugin_heisi",
+      "tags": [],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 22:07:01"
+  },
+  "nonebot-plugin-picsbank": {
+    "run": false,
+    "output": "项目 nonebot-plugin-picsbank 创建失败：\n    The current project's Python requirement (&gt;=3.10,&lt;4.0) is not compatible with some of the required packages Python requirement:\n      - nonebot-plugin-picsbank requires Python &gt;=3.8,&lt;3.11, so it will not be satisfied for Python &gt;=3.11,&lt;4.0\n    \n    Because no versions of nonebot-plugin-picsbank match &gt;0.2.0,&lt;0.3.0\n     and nonebot-plugin-picsbank (0.2.0) requires Python &gt;=3.8,&lt;3.11, nonebot-plugin-picsbank is forbidden.\n    So, because nonebot-plugin-picsbank-test depends on nonebot-plugin-picsbank (^0.2.0), version solving failed.\n    \n      • Check your dependencies Python requirement: The Python requirement can be specified via the `python` or `markers` properties\n        \n        For nonebot-plugin-picsbank, a possible solution would be to set the `python` property to \"&gt;=3.10,&lt;3.11\"\n    \n        https://python-poetry.org/docs/dependency-specification/#python-restricted-dependencies,\n        https://python-poetry.org/docs/dependency-specification/#using-environment-markers",
+    "valid": false,
+    "metadata": null,
+    "validation_message": "缺少元数据",
+    "validation_raw_data": null,
+    "previous": {
+      "module_name": "nonebot_plugin_picsbank",
+      "project_link": "nonebot-plugin-picsbank",
+      "name": "picsbank",
+      "desc": "匹配图片进行回答",
+      "author": "Diaosi1111",
+      "homepage": "https://github.com/Diaosi1111/nonebot_plugin_picsbank",
+      "tags": [],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 22:07:03"
+  },
+  "nonebot-plugin-tvseries": {
+    "run": false,
+    "output": "插件 nonebot-plugin-tvseries 的信息如下：\n    name         : nonebot-plugin-tvseries \n     version      : 0.0.2.3                 \n     description  :                         \n    \n    dependencies\n     - httpx &gt;=0.21.3,&lt;0.22.0\n     - lxml &gt;=4.6.4,&lt;5.0.0\n     - nonebot-adapter-onebot 2.0.0-beta.1\n     - nonebot-plugin-htmlrender &gt;=0.0.4.2,&lt;0.0.5.0\n     - nonebot2 2.0.0-beta.1\n插件 nonebot-plugin-tvseries 依赖的插件如下：\n    nonebot_plugin_htmlrender\n插件 nonebot_plugin_tvseries 加载出错：\n    <span class=\"ansi32\">06-19 14:07:26</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 14:07:26</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    Traceback (most recent call last):\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-tvseries-test/runner.py\", line 14, in &lt;module&gt;\n        init()\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot/__init__.py\", line 273, in init\n        DriverClass: Type[Driver] = _resolve_combine_expr(config.driver)\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot/__init__.py\", line 215, in _resolve_combine_expr\n        DriverClass = _resolve_dot_notation(\n      File \"/home/runner/.cache/pypoetry/virtualenvs/noneflow-MsW1cbgV-py3.10/lib/python3.10/site-packages/nonebot/__init__.py\", line 204, in _resolve_dot_notation\n        module = importlib.import_module(modulename)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"&lt;frozen importlib._bootstrap&gt;\", line 1050, in _gcd_import\n      File \"&lt;frozen importlib._bootstrap&gt;\", line 1027, in _find_and_load\n      File \"&lt;frozen importlib._bootstrap&gt;\", line 1004, in _find_and_load_unlocked\n    ModuleNotFoundError: No module named 'nonebot.drivers.none'",
+    "valid": false,
+    "metadata": null,
+    "validation_message": "缺少元数据",
+    "validation_raw_data": null,
+    "previous": {
+      "module_name": "nonebot_plugin_tvseries",
+      "project_link": "nonebot-plugin-tvseries",
+      "name": "剧集更新列表",
+      "desc": "获取聚集更新",
+      "author": "kexue-z",
+      "homepage": "https://github.com/kexue-z/nonebot-plugin-tvseries",
+      "tags": [
+        {
+          "label": "a:onebot",
+          "color": "#000000"
+        }
+      ],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 22:07:26"
+  },
+  "nonebot-plugin-lolmatch": {
+    "run": true,
+    "output": "插件 nonebot-plugin-lolmatch 的信息如下：\n    name         : nonebot-plugin-lolmatch \n     version      : 0.3.0.2                 \n     description  :                         \n    \n    dependencies\n     - aiohttp &gt;=3,&lt;4\n     - nonebot-adapter-onebot &gt;=2,&lt;3\n     - nonebot_plugin_apscheduler &gt;=0.2,&lt;0.3\n     - nonebot_plugin_htmlrender &gt;=0.2,&lt;0.3\n     - nonebot_plugin_tortoise_orm &gt;=0.0.1a3,&lt;0.0.2\n     - nonebot2 &gt;=2.0.0b5,&lt;3.0.0\n     - pillow &gt;=9,&lt;10\n     - ujson &gt;=5,&lt;6\n插件 nonebot-plugin-lolmatch 依赖的插件如下：\n    nonebot_plugin_apscheduler, nonebot_plugin_htmlrender, nonebot_plugin_tortoise_orm\n插件 nonebot_plugin_lolmatch 加载正常：\n    <span class=\"ansi32\">06-19 14:07:39</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 14:07:39</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 14:07:39</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_htmlrender</span>\"\n    <span class=\"ansi32\">06-19 14:07:39</span> [<span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">WARNING</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot_plugin_tortoise_orm</span><span class=\"ansi36\"></span> | <span class=\"ansi33\">没有数据库地址, 将会初始化数据库到 db.sqlite3</span>\n    <span class=\"ansi32\">06-19 14:07:39</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_tortoise_orm</span>\"\n    <span class=\"ansi32\">06-19 14:07:39</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot_plugin_tortoise_orm</span><span class=\"ansi36\"></span> | <span class=\"ansi33\">数据库: 添加模型</span>: <span class=\"ansi31\">nonebot_plugin_lolmatch.model</span>\n    <span class=\"ansi32\">06-19 14:07:39</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_apscheduler</span>\"\n    <span class=\"ansi32\">06-19 14:07:40</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_lolmatch</span>\"",
+    "valid": false,
+    "metadata": {
+      "name": "LOLMatch",
+      "description": "查询英雄联盟的联赛和比赛信息",
+      "usage": "\n    主命令 lol 查看今日比赛信息\n        附带命令 本周 查看本周比赛信息\n        附带命令 详情 [matchID] 查询指定比赛详细信息\n        附带命令 订阅 [tournamentID] 订阅相关系列赛 每晚检查当日结果和第二天赛程\n        附带命令 取消订阅 [tournamentID] 订阅相关系列赛 每晚检查当日结果和第二天赛程\n        附带命令 联赛 查看所有即将进行或正在进行的赛事以获取 [tournamentID]\n        附带命令 联赛详情 [tournamentID] 查看所选联赛近期已完成的赛事获取 [matchID]\n",
+      "type": null,
+      "homepage": null,
+      "supported_adapters": null
+    },
+    "validation_message": "2 validation errors for PluginPublishInfo\nhomepage\n  none is not an allowed value (type=type_error.none.not_allowed)\ntype\n  ⚠️ 插件类型不能为空。&lt;dt&gt;请确保填写插件类型。&lt;/dt&gt; (type=value_error)",
+    "validation_raw_data": {
+      "module_name": "nonebot_plugin_lolmatch",
+      "project_link": "nonebot-plugin-lolmatch",
+      "name": "LOLMatch",
+      "desc": "查询英雄联盟的联赛和比赛信息",
+      "author": "Diaosi1111",
+      "homepage": null,
+      "tags": "[]",
+      "plugin_test_result": true,
+      "type": null,
+      "supported_adapters": null
+    },
+    "previous": {
+      "module_name": "nonebot_plugin_lolmatch",
+      "project_link": "nonebot-plugin-lolmatch",
+      "name": "lol比赛信息",
+      "desc": "简单的lol比赛信息插件，订阅后会定时推送当日比赛结果",
+      "author": "Diaosi1111",
+      "homepage": "https://github.com/Diaosi1111/nonebot_plugin_lolmatch",
+      "tags": [],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 22:07:40"
+  },
+  "olivos.nb2": {
+    "run": true,
+    "output": "插件 olivos.nb2 的信息如下：\n    name         : olivos-nb2                     \n     version      : 0.2.1                          \n     description  : Load OlivOS plugin in NoneBot2 \n    \n    dependencies\n     - nonebot2 &gt;=2.0.0rc1,&lt;3.0.0\n     - olivos &gt;=0.10.2,&lt;0.11.0\n插件 olivos.nb2 依赖的插件如下：\n    \n插件 OlivOS.nonebot 加载正常：\n    <span class=\"ansi32\">06-19 14:07:54</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 14:07:54</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 14:07:55</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot</span>\" from \"<span class=\"ansi35\">OlivOS.nonebot</span>\"",
+    "valid": false,
+    "metadata": null,
+    "validation_message": "缺少元数据",
+    "validation_raw_data": null,
+    "previous": {
+      "module_name": "OlivOS.nonebot",
+      "project_link": "olivos.nb2",
+      "name": "OlivOS.nb2",
+      "desc": "在 NoneBot2 中加载 OlivOS 插件",
+      "author": "j1g5awi",
+      "homepage": "https://github.com/nonepkg/OlivOS.nb2",
+      "tags": [
+        {
+          "label": "t:OlivOS",
+          "color": "#00a0ea"
+        }
+      ],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 22:07:55"
+  },
+  "nonebot-plugin-htmlrender": {
+    "run": true,
+    "output": "插件 nonebot-plugin-htmlrender 的信息如下：\n    name         : nonebot-plugin-htmlrender \n     version      : 0.2.0.3                   \n     description  : 通过浏览器渲染图片                 \n    \n    dependencies\n     - aiofiles &gt;=0.8.0\n     - jinja2 &gt;=3.0.3\n     - markdown &gt;=3.3.6\n     - nonebot2 &gt;=2.0.0-beta.1\n     - playwright &gt;=1.17.2\n     - Pygments &gt;=2.10.0\n     - pymdown-extensions &gt;=9.1\n     - python-markdown-math &gt;=0.8\n插件 nonebot-plugin-htmlrender 依赖的插件如下：\n    \n插件 nonebot_plugin_htmlrender 加载正常：\n    <span class=\"ansi32\">06-19 14:08:03</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-19 14:08:03</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-19 14:08:03</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_htmlrender</span>\"",
+    "valid": false,
+    "metadata": null,
+    "validation_message": "缺少元数据",
+    "validation_raw_data": null,
+    "previous": {
+      "module_name": "nonebot_plugin_htmlrender",
+      "project_link": "nonebot-plugin-htmlrender",
+      "name": "通过浏览器来生成图片",
+      "desc": "通过playwright加一点点前端知识来简单的生成图片",
+      "author": "kexue-z",
+      "homepage": "https://github.com/kexue-z/nonebot-plugin-htmlrender",
+      "tags": [
+        {
+          "label": "a:onebot",
+          "color": "#000000"
+        }
+      ],
+      "is_official": false,
+      "type": null,
+      "supported_adapters": null
+    },
+    "current": null,
+    "time": "2023-06-19 22:08:03"
   }
 }
