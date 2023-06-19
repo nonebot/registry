@@ -1,0 +1,61 @@
+name: 'NoneBot Store Test'
+
+on:
+  workflow_dispatch:
+    inputs:
+      offset:
+        description: 'Offset'
+        required: false
+        default: '0'
+      limit:
+        description: 'Limit'
+        required: false
+        default: '1'
+
+jobs:
+  plugin_test:
+    runs-on: ubuntu-latest
+    name: nonebot2 plugin test
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          repository: nonebot/noneflow
+          ref: feat/store-test
+      - name: Install poetry
+        run: pipx install poetry
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+      - name: Test Plugin
+        id: plugin-test
+        run: |
+          poetry install
+          poetry run python plugin_test.py --store --offset ${{ github.event.inputs.offset }} --limit ${{ github.event.inputs.limit }}
+      - name: Upload results
+        uses: actions/upload-artifact@v3
+        with:
+          name: results
+          path: |
+            ${{ github.workspace }}/plugin_test/index.html
+            ${{ github.workspace }}/plugin_test/results.json
+  upload_results:
+    runs-on: ubuntu-latest
+    name: Upload results
+    needs: plugin_test
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Download results
+        uses: actions/download-artifact@v3
+        with:
+          name: results
+      - name: Push results
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email github-actions[bot]@users.noreply.github.com
+          git add .
+          git diff-index --quiet HEAD || git commit -m "chore: update test results"
+          git push
