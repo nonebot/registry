@@ -22,6 +22,32 @@
       rel="stylesheet"
       href="https://unpkg.com/bootstrap-table@1.22.0/dist/bootstrap-table.min.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css" rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      .ok {
+          color: rgb(9, 231, 39);
+          font-size: 1.5em;
+      }
+      .err {
+          color: red;
+          font-size: 1.5em;
+      }
+      .show-log {
+          color: rgb(42, 95, 243);
+          font-size: 1.5em;
+      }
+      .package {
+          color: rgb(151, 151, 151);
+          font-size: 0.95em;
+      }
+      .account {
+          color: rgb(151, 151, 151);
+          font-size: 1.5em;
+      }
+    </style>
   </head>
 
   <body>
@@ -37,8 +63,8 @@
       >
         <thead>
           <tr>
-            <th data-field="project_link" data-sortable="true">PyPI 项目名</th>
-            <th data-field="module_name" data-sortable="true">包名</th>
+            <th data-field="project_link" data-sortable="true">PyPI 项目名<br><span class="mdi mdi-package package">包名</span></th>
+            <!--th data-field="module_name" data-sortable="true">包名</th-->
             <th data-field="author" data-sortable="true">作者</th>
             <th data-field="run" data-formatter="runFormatter" data-sortable="true">加载结果</th>
             <th data-field="valid" data-formatter="validFormatter" data-sortable="true">验证结果</th>
@@ -62,6 +88,9 @@
     <script src="https://unpkg.com/bootstrap-table@1.22.0/dist/extensions/mobile/bootstrap-table-mobile.min.js"></script>
 
     <script>
+      const check_pass = `<span class="mdi mdi-check-circle-outline ok"></span>`
+      const check_fail = `<span class="mdi mdi-close-circle-outline err"></span>`
+      const show_log = `<span class="mdi mdi-package-variant show-log"></span>`
       $.getJSON(
         "https://raw.githubusercontent.com/he0119/nonebot-store-test/main/results/results.json",
         function (data) {
@@ -72,8 +101,8 @@
               project_link: val.previous.project_link,
               module_name: val.previous.module_name,
               author: val.previous.author,
-              run: val.run ? "成功" : "失败",
-              valid: val.valid ? "通过" : "未通过",
+              run: val.run ? check_pass : check_fail,
+              valid: val.valid ? check_pass : check_fail,
               metadata: val.metadata,
               output: val.output,
               validation_message: val.validation_message,
@@ -123,7 +152,7 @@
       }
       function metadataFormatter(value, row, index) {
         return [
-          `<button class="btn btn-link" type="button" data-bs-toggle="modal" data-bs-target="#${row.project_link}-matadata">显示</button>`,
+          `<button class="btn btn-link" type="button" data-bs-toggle="modal" data-bs-target="#${row.project_link}-matadata">${show_log}</button>`,
           `<div class="modal fade" id="${row.project_link}-matadata" tabindex="-1">`,
           '<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">',
           '<div class="modal-content">',
