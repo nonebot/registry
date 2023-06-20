@@ -192,7 +192,7 @@
       function metadataFormatter(value, row, index) {
         return `<button class="btn btn-link" type="button" data-bs-toggle="modal" data-bs-target="#${
           row.project_link
-        }-matadata">${row.metadata === null? show_metadata: empty_metadata}</button>
+        }-matadata">${row.metadata !== null? show_metadata: empty_metadata}</button>
           <div class="modal fade" id="${
             row.project_link
           }-matadata" tabindex="-1">
