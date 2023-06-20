@@ -22,10 +22,6 @@
       rel="stylesheet"
       href="https://unpkg.com/bootstrap-table@1.22.0/dist/bootstrap-table.min.css"
     />
-    <link
-      href="https://unpkg.com/bootstrap-table@1.22.0/dist/extensions/sticky-header/bootstrap-table-sticky-header.css"
-      rel="stylesheet"
-    />
   </head>
 
   <body>
@@ -64,7 +60,6 @@
 
     <script src="https://unpkg.com/bootstrap-table@1.22.0/dist/bootstrap-table.min.js"></script>
     <script src="https://unpkg.com/bootstrap-table@1.22.0/dist/extensions/mobile/bootstrap-table-mobile.min.js"></script>
-    <script src="https://unpkg.com/bootstrap-table@1.22.0/dist/extensions/sticky-header/bootstrap-table-sticky-header.min.js"></script>
 
     <script>
       $.getJSON(
@@ -87,7 +82,6 @@
 
           $("#table").bootstrapTable({
             data: items,
-            stickyHeader: true,
           });
         }
       );
