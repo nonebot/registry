@@ -8700,7 +8700,7 @@
   },
   "nonebot-plugin-yuanshen-notice:nonebot_plugin_yuanshen_notice": {
     "run": true,
-    "output": "插件 nonebot-plugin-yuanshen-notice 的信息如下：\n    name         : nonebot-plugin-yuanshen-notice \n     version      : 0.1.7                          \n     description  : 一个基于nonebot实现原神公告实时展示的插件       \n    \n    dependencies\n     - httpx >=0.23.0,<0.24.0\n     - nonebot-adapter-onebot >=2.1.5,<3.0.0\n     - nonebot2 >=2.0.0rc1,<3.0.0\n插件 nonebot-plugin-yuanshen-notice 依赖的插件如下：\n    \n插件 nonebot_plugin_yuanshen_notice 加载正常：\n    06-20 07:15:26 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 07:15:26 [INFO] nonebot | Current Env: prod\n    06-20 07:15:26 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_yuanshen_notice\"",
+    "output": "插件 nonebot-plugin-yuanshen-notice 的信息如下：\n    name         : nonebot-plugin-yuanshen-notice \n     version      : 0.1.7                          \n     description  : 一个基于nonebot实现原神公告实时展示的插件       \n    \n    dependencies\n     - httpx >=0.23.0,<0.24.0\n     - nonebot-adapter-onebot >=2.1.5,<3.0.0\n     - nonebot2 >=2.0.0rc1,<3.0.0\n插件 nonebot-plugin-yuanshen-notice 依赖的插件如下：\n    \n插件 nonebot_plugin_yuanshen_notice 加载正常：\n    06-20 08:30:32 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 08:30:32 [INFO] nonebot | Current Env: prod\n    06-20 08:30:32 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_yuanshen_notice\"",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -8727,11 +8727,11 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-20 15:15:26"
+    "time": "2023-06-20 16:30:36"
   },
   "nonebot-plugin-bilibili-yuan:nonebot_plugin_bilibili_yuan": {
     "run": false,
-    "output": "插件 nonebot-plugin-bilibili-yuan 的信息如下：\n    name         : nonebot-plugin-bilibili-yuan \n     version      : 0.1.0                        \n     description  : 一个基于nonebot的哔哩哔哩登录插件         \n    \n    dependencies\n     - httpx 0.23.0\n     - nonebot-adapter-onebot 2.1.5\n     - nonebot2 2.0.0rc1\n     - Pillow 9.3.0\n     - qrcode 7.3.1\n插件 nonebot-plugin-bilibili-yuan 依赖的插件如下：\n    \n插件 nonebot_plugin_bilibili_yuan 加载出错：\n    06-20 08:00:23 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 08:00:23 [INFO] nonebot | Current Env: prod\n    Traceback (most recent call last):\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-bilibili-yuan-test/runner.py\", line 14, in <module>\n        init()\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-bilibili-yuan-test/.venv/lib/python3.10/site-packages/nonebot/__init__.py\", line 256, in init\n        DriverClass = _resolve_combine_expr(config.driver)\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-bilibili-yuan-test/.venv/lib/python3.10/site-packages/nonebot/__init__.py\", line 197, in _resolve_combine_expr\n        DriverClass = _resolve_dot_notation(\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-bilibili-yuan-test/.venv/lib/python3.10/site-packages/nonebot/__init__.py\", line 186, in _resolve_dot_notation\n        module = importlib.import_module(modulename)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1004, in _find_and_load_unlocked\n    ModuleNotFoundError: No module named 'nonebot.drivers.none'",
+    "output": "插件 nonebot-plugin-bilibili-yuan 的信息如下：\n    name         : nonebot-plugin-bilibili-yuan \n     version      : 0.1.0                        \n     description  : 一个基于nonebot的哔哩哔哩登录插件         \n    \n    dependencies\n     - httpx 0.23.0\n     - nonebot-adapter-onebot 2.1.5\n     - nonebot2 2.0.0rc1\n     - Pillow 9.3.0\n     - qrcode 7.3.1\n插件 nonebot-plugin-bilibili-yuan 依赖的插件如下：\n    \n插件 nonebot_plugin_bilibili_yuan 加载出错：\n    06-20 08:30:44 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 08:30:44 [INFO] nonebot | Current Env: prod\n    Traceback (most recent call last):\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-bilibili-yuan-nonebot_plugin_bilibili_yuan-test/runner.py\", line 14, in <module>\n        init()\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-bilibili-yuan-nonebot_plugin_bilibili_yuan-test/.venv/lib/python3.10/site-packages/nonebot/__init__.py\", line 256, in init\n        DriverClass = _resolve_combine_expr(config.driver)\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-bilibili-yuan-nonebot_plugin_bilibili_yuan-test/.venv/lib/python3.10/site-packages/nonebot/__init__.py\", line 197, in _resolve_combine_expr\n        DriverClass = _resolve_dot_notation(\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-bilibili-yuan-nonebot_plugin_bilibili_yuan-test/.venv/lib/python3.10/site-packages/nonebot/__init__.py\", line 186, in _resolve_dot_notation\n        module = importlib.import_module(modulename)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1004, in _find_and_load_unlocked\n    ModuleNotFoundError: No module named 'nonebot.drivers.none'",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -8754,7 +8754,7 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-20 16:00:27"
+    "time": "2023-06-20 16:30:44"
   },
   "nonebot-plugin-easy-translate:nonebot_plugin_easy_translate": {
     "run": true,
