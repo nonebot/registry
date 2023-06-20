@@ -23,29 +23,34 @@
       href="https://unpkg.com/bootstrap-table@1.22.0/dist/bootstrap-table.min.css"
     />
     <link
-      href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css" rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css"
+      rel="stylesheet"
       type="text/css"
     />
     <style>
       .ok {
-          color: rgb(9, 231, 39);
-          font-size: 1.5em;
+        color: rgb(9, 231, 39);
+        font-size: 1.5em;
       }
+
       .err {
-          color: red;
-          font-size: 1.5em;
+        color: red;
+        font-size: 1.5em;
       }
+
       .show-log {
-          color: rgb(42, 95, 243);
-          font-size: 1.5em;
+        color: rgb(42, 95, 243);
+        font-size: 1.5em;
       }
+
       .package {
-          color: rgb(151, 151, 151);
-          font-size: 0.95em;
+        color: rgb(151, 151, 151);
+        font-size: 0.95em;
       }
+
       .account {
-          color: rgb(151, 151, 151);
-          font-size: 1.5em;
+        color: rgb(151, 151, 151);
+        font-size: 1.5em;
       }
     </style>
   </head>
@@ -63,11 +68,24 @@
       >
         <thead>
           <tr>
-            <th data-field="project_link" data-sortable="true">PyPI 项目名<br><span class="mdi mdi-package package">包名</span></th>
-            <!--th data-field="module_name" data-sortable="true">包名</th-->
+            <th data-field="project_link" data-formatter="projectFormatter" data-sortable="true">
+              PyPI 项目名<br /><span class="mdi mdi-package package">包名</span>
+            </th>
             <th data-field="author" data-sortable="true">作者</th>
-            <th data-field="run" data-formatter="runFormatter" data-sortable="true">加载结果</th>
-            <th data-field="valid" data-formatter="validFormatter" data-sortable="true">验证结果</th>
+            <th
+              data-field="run"
+              data-formatter="runFormatter"
+              data-sortable="true"
+            >
+              加载结果
+            </th>
+            <th
+              data-field="valid"
+              data-formatter="validFormatter"
+              data-sortable="true"
+            >
+              验证结果
+            </th>
             <th data-field="metadata" data-formatter="metadataFormatter">
               元数据
             </th>
@@ -88,9 +106,9 @@
     <script src="https://unpkg.com/bootstrap-table@1.22.0/dist/extensions/mobile/bootstrap-table-mobile.min.js"></script>
 
     <script>
-      const check_pass = `<span class="mdi mdi-check-circle-outline ok"></span>`
-      const check_fail = `<span class="mdi mdi-close-circle-outline err"></span>`
-      const show_log = `<span class="mdi mdi-package-variant show-log"></span>`
+      const check_pass = `<span class="mdi mdi-check-circle-outline ok"></span>`;
+      const check_fail = `<span class="mdi mdi-close-circle-outline err"></span>`;
+      const show_log = `<span class="mdi mdi-package-variant show-log"></span>`;
       $.getJSON(
         "https://raw.githubusercontent.com/he0119/nonebot-store-test/main/results/results.json",
         function (data) {
@@ -114,61 +132,80 @@
           });
         }
       );
+      function projectFormatter(value, row, index) {
+        return `${value}<br /><span class="mdi mdi-package package">${row.module_name}</span>`;
+      }
       function runFormatter(value, row, index) {
-        return [
-          `<button class="btn btn-link" type="button" data-bs-toggle="modal" data-bs-target="#${row.project_link}-output">${value}</button>`,
-          `<div class="modal fade" id="${row.project_link}-output" tabindex="-1">`,
-          '<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">',
-          '<div class="modal-content">',
-          '<div class="modal-header">',
-          `<h5 class="modal-title" id="exampleModalLabel">${row.project_link} 加载日志</h5>`,
-          '<button type="button" class="btn-close" data-bs-dismiss="modal"></button>',
-          "</div>",
-          '<div class="modal-body">',
-          row.output.replace(/\n/g, "<br>"),
-          "</div>",
-          "</div>",
-          "</div>",
-          `</div>`,
-        ].join("");
+        return `<button class="btn btn-link" type="button" data-bs-toggle="modal" data-bs-target="#${
+          row.project_link
+        }-output">${value}</button>
+          <div class="modal fade" id="${row.project_link}-output" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">${
+                    row.project_link
+                  } 加载日志</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                  ${row.output.replace(/\n/g, "<br>")}
+                </div>
+              </div>
+            </div>
+          </div>
+          `;
       }
       function validFormatter(value, row, index) {
-        return [
-          `<button class="btn btn-link" type="button" data-bs-toggle="modal" data-bs-target="#${row.project_link}-valid">${value}</button>`,
-          `<div class="modal fade" id="${row.project_link}-valid" tabindex="-1">`,
-          '<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">',
-          '<div class="modal-content">',
-          '<div class="modal-header">',
-          `<h5 class="modal-title" id="exampleModalLabel">${row.project_link} 验证日志</h5>`,
-          '<button type="button" class="btn-close" data-bs-dismiss="modal"></button>',
-          "</div>",
-          '<div class="modal-body">',
-          row.validation_message.replace(/\n/g, "<br>"),
-          "</div>",
-          "</div>",
-          "</div>",
-          `</div>`,
-        ].join("");
+        return `<button class="btn btn-link" type="button" data-bs-toggle="modal" data-bs-target="#${
+          row.project_link
+        }-valid">${value}</button>
+          <div class="modal fade" id="${row.project_link}-valid" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">${
+                    row.project_link
+                  } 验证日志</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                  ${row.validation_message.replace(/\n/g, "<br>")}
+                </div>
+              </div>
+            </div>
+          </div>
+          `;
       }
       function metadataFormatter(value, row, index) {
-        return [
-          `<button class="btn btn-link" type="button" data-bs-toggle="modal" data-bs-target="#${row.project_link}-matadata">${show_log}</button>`,
-          `<div class="modal fade" id="${row.project_link}-matadata" tabindex="-1">`,
-          '<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">',
-          '<div class="modal-content">',
-          '<div class="modal-header">',
-          `<h5 class="modal-title" id="exampleModalLabel">${row.project_link} 验证日志</h5>`,
-          '<button type="button" class="btn-close" data-bs-dismiss="modal"></button>',
-          "</div>",
-          '<div class="modal-body">',
-          row.metadata !== null
-            ? JSON.stringify(row.metadata, null, "  ").replace(/\n/g, "<br>")
-            : "无",
-          "</div>",
-          "</div>",
-          "</div>",
-          `</div>`,
-        ].join("");
+        return `<button class="btn btn-link" type="button" data-bs-toggle="modal" data-bs-target="#${
+          row.project_link
+        }-matadata">${show_log}</button>
+          <div class="modal fade" id="${
+            row.project_link
+          }-matadata" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">${
+                    row.project_link
+                  } 元数据</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                  ${
+                    row.metadata !== null
+                      ? JSON.stringify(row.metadata, null, "  ").replace(
+                          /\n/g,
+                          "<br>"
+                        )
+                      : "无"
+                  }
+                </div>
+              </div>
+            </div>
+          </div>
+          `;
       }
     </script>
   </body>
