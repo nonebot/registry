@@ -148,7 +148,8 @@
               author: val.previous.author,
               run: val.run ? check_pass : check_fail,
               valid: val.valid ? check_pass : check_fail,
-              metadata: val.metadata,
+              metadata: val.metadata !== null ? show_metadata : empty_metadata,
+              metadata_value: val.metadata,
               output: val.output,
               validation_message: val.validation_message,
               homepage: val.previous.homepage,
@@ -211,9 +212,7 @@
       function metadataFormatter(value, row, index) {
         return `<button class="btn btn-link" type="button" data-bs-toggle="modal" data-bs-target="#${
           row.project_link
-        }-matadata">${
-          row.metadata !== null ? show_metadata : empty_metadata
-        }</button>
+        }-matadata">${value}</button>
           <div class="modal fade" id="${
             row.project_link
           }-matadata" tabindex="-1">
@@ -227,8 +226,8 @@
                 </div>
                 <div class="modal-body">
                   ${
-                    row.metadata !== null
-                      ? JSON.stringify(row.metadata, null, "  ").replace(
+                    row.metadata_value !== null
+                      ? JSON.stringify(row.metadata_value, null, "  ").replace(
                           /\n/g,
                           "<br>"
                         )
