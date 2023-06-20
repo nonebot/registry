@@ -1,7 +1,7 @@
 {
   "nonebot-plugin-status": {
     "run": true,
-    "output": "插件 nonebot-plugin-status 的信息如下：\n    name         : nonebot-plugin-status                                          \n     version      : 0.7.1                                                          \n     description  : Check your server status (CPU, Memory, Disk Usage) via nonebot \n    \n    dependencies\n     - humanize &gt;=4.0.0,&lt;5.0.0\n     - Jinja2 &gt;=3.0.0,&lt;4.0.0\n     - nonebot2 &gt;=2.0.0,&lt;3.0.0\n     - psutil &gt;=5.7.2,&lt;6.0.0\n插件 nonebot-plugin-status 依赖的插件如下：\n    \n插件 nonebot_plugin_status 加载正常：\n    <span class=\"ansi32\">06-20 06:15:42</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | NoneBot is initializing...\n    <span class=\"ansi32\">06-20 06:15:42</span> [<span class=\"ansi1\">INFO</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Current <span class=\"ansi33\"></span><span class=\"ansi1 ansi33\">Env: prod</span><span class=\"ansi33\"></span>\n    <span class=\"ansi32\">06-20 06:15:42</span> [<span class=\"ansi32\"></span><span class=\"ansi1 ansi32\">SUCCESS</span>] <span class=\"ansi36\"></span><span class=\"ansi4 ansi36\">nonebot</span><span class=\"ansi36\"></span> | Succeeded to load plugin \"<span class=\"ansi33\">nonebot_plugin_status</span>\"",
+    "output": "插件 nonebot-plugin-status 的信息如下：\n    name         : nonebot-plugin-status                                          \n     version      : 0.7.1                                                          \n     description  : Check your server status (CPU, Memory, Disk Usage) via nonebot \n    \n    dependencies\n     - humanize >=4.0.0,<5.0.0\n     - Jinja2 >=3.0.0,<4.0.0\n     - nonebot2 >=2.0.0,<3.0.0\n     - psutil >=5.7.2,<6.0.0\n插件 nonebot-plugin-status 依赖的插件如下：\n    \n插件 nonebot_plugin_status 加载正常：\n    06-20 06:24:34 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 06:24:34 [INFO] nonebot | Current Env: prod\n    06-20 06:24:34 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_status\"",
     "valid": true,
     "metadata": {
       "name": "服务器状态查看",
@@ -58,7 +58,7 @@
       "type": "application",
       "supported_adapters": null
     },
-    "time": "2023-06-20 14:15:48"
+    "time": "2023-06-20 14:24:40"
   },
   "haruka-bot": {
     "run": false,
