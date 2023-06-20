@@ -161,6 +161,12 @@
           });
         }
       );
+      
+      function projectKey(row) {
+        // 替换 . 为 -，否则会导致 modal 无法正常显示
+        return `${row.project_link}-${row.module_name}`.replace(/\./g, "-");
+      }
+      
       function projectFormatter(value, row, index) {
         return `<a class="text-decoration-none text-reset" href="${row.homepage}">${value}</a><br /><span class="mdi mdi-package package">${row.module_name}</span>`;
       }
@@ -169,9 +175,9 @@
       }
       function runFormatter(value, row, index) {
         return `<button class="btn btn-link" type="button" data-bs-toggle="modal" data-bs-target="#${
-          row.project_link
+          projectKey(row)
         }-output">${value}</button>
-          <div class="modal fade" id="${row.project_link}-output" tabindex="-1">
+          <div class="modal fade" id="${projectKey(row)}-output" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
@@ -190,9 +196,9 @@
       }
       function validFormatter(value, row, index) {
         return `<button class="btn btn-link" type="button" data-bs-toggle="modal" data-bs-target="#${
-          row.project_link
+          projectKey(row)
         }-valid">${value}</button>
-          <div class="modal fade" id="${row.project_link}-valid" tabindex="-1">
+          <div class="modal fade" id="${projectKey(row)}-valid" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
@@ -211,10 +217,10 @@
       }
       function metadataFormatter(value, row, index) {
         return `<button class="btn btn-link" type="button" data-bs-toggle="modal" data-bs-target="#${
-          row.project_link
+          projectKey(row)
         }-matadata">${value}</button>
           <div class="modal fade" id="${
-            row.project_link
+            projectKey(row)
           }-matadata" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
               <div class="modal-content">
