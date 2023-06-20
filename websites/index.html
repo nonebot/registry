@@ -71,7 +71,7 @@
             <th data-field="project_link" data-formatter="projectFormatter" data-sortable="true">
               PyPI 项目名<br /><span class="mdi mdi-package package">包名</span>
             </th>
-            <th data-field="author" data-sortable="true">作者</th>
+            <th data-field="author" data-formatter="authorFormatter" data-sortable="true">作者</th>
             <th
               data-field="run"
               data-formatter="runFormatter"
@@ -124,6 +124,7 @@
               metadata: val.metadata,
               output: val.output,
               validation_message: val.validation_message,
+              homepage: val.previous.homepage,
             });
           });
 
@@ -133,7 +134,10 @@
         }
       );
       function projectFormatter(value, row, index) {
-        return `${value}<br /><span class="mdi mdi-package package">${row.module_name}</span>`;
+        return `<a href="${row.homepage}">${value}</a><br /><span class="mdi mdi-package package">${row.module_name}</span>`;
+      }
+      function authorFormatter(value, row, index) {
+        return `<a href="https://github.com/${row.author}">${value}</a>`;
       }
       function runFormatter(value, row, index) {
         return `<button class="btn btn-link" type="button" data-bs-toggle="modal" data-bs-target="#${
