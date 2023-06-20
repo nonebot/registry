@@ -73,14 +73,15 @@
       >
         <thead>
           <tr>
-            <th data-field="project_link" data-formatter="projectFormatter" data-sortable="true">
+            <th data-field="project_link" data-formatter="projectFormatter" data-sortable="true" class="align-middle">
               PyPI 项目名<br /><span class="mdi mdi-package package">包名</span>
             </th>
-            <th data-field="author" data-formatter="authorFormatter" data-sortable="true">作者</th>
+            <th data-field="author" data-formatter="authorFormatter" data-sortable="true" class="align-middle">作者</th>
             <th
               data-field="run"
               data-formatter="runFormatter"
               data-sortable="true"
+              class="align-middle"
             >
               加载结果
             </th>
@@ -88,13 +89,14 @@
               data-field="valid"
               data-formatter="validFormatter"
               data-sortable="true"
+              class="align-middle"
             >
               验证结果
             </th>
-            <th data-field="metadata" data-formatter="metadataFormatter">
+            <th data-field="metadata" data-formatter="metadataFormatter" class="align-middle">
               元数据
             </th>
-            <th data-field="time" data-sortable="true">测试时间</th>
+            <th data-field="time" data-sortable="true" class="align-middle">测试时间</th>
           </tr>
         </thead>
       </table>
@@ -140,10 +142,10 @@
         }
       );
       function projectFormatter(value, row, index) {
-        return `<a href="${row.homepage}">${value}</a><br /><span class="mdi mdi-package package">${row.module_name}</span>`;
+        return `<a class="text-decoration-none text-reset" href="${row.homepage}">${value}</a><br /><span class="mdi mdi-package package">${row.module_name}</span>`;
       }
       function authorFormatter(value, row, index) {
-        return `<a href="https://github.com/${row.author}">${value}</a>`;
+        return `<a class="text-decoration-none text-reset" href="https://github.com/${row.author}">${value}</a>`;
       }
       function runFormatter(value, row, index) {
         return `<button class="btn btn-link" type="button" data-bs-toggle="modal" data-bs-target="#${
