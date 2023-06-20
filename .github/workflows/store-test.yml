@@ -37,7 +37,6 @@ jobs:
         with:
           name: results
           path: |
-            ${{ github.workspace }}/plugin_test/index.html
             ${{ github.workspace }}/plugin_test/results.json
   upload_results:
     runs-on: ubuntu-latest
