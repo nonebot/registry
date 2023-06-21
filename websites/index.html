@@ -25,9 +25,16 @@
     <link
       href="https://unpkg.com/@mdi/font@7.2.96/css/materialdesignicons.min.css"
       rel="stylesheet"
-      type="text/css"
     />
+    <link
+      href="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/styles/github-dark.min.css"
+      rel="stylesheet"
+    />
+
     <style>
+      .hljs {
+        background: none;
+      }
       .ok {
         color: rgb(9, 231, 39);
         font-size: 1.5em;
@@ -132,6 +139,8 @@
     <script src="https://unpkg.com/bootstrap-table@1.22.0/dist/locale/bootstrap-table-zh-CN.min.js"></script>
     <script src="https://unpkg.com/bootstrap-table@1.22.0/dist/extensions/mobile/bootstrap-table-mobile.min.js"></script>
 
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/highlight.min.js"></script>
+
     <script src="color-modes.js"></script>
 
     <script>
@@ -234,15 +243,18 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                  <pre>${
+                  <pre><code class="language-json">${
                     row.metadata_value !== null
                       ? JSON.stringify(row.metadata_value, null, "  ")
                       : "无"
-                  }</pre>
+                  }
+                    </code>
+                  </pre>
                 </div>
               </div>
             </div>
           </div>
+          \<script\>hljs.highlightAll();\<\/script\>
           `;
       }
     </script>
