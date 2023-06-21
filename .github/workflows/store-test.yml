@@ -12,7 +12,7 @@ on:
         required: false
         default: '1'
   schedule:
-    - cron: "0 */2 * * *"
+    - cron: "0 */6 * * *"
 
 concurrency:
   group: "store-test"
@@ -37,7 +37,7 @@ jobs:
         id: plugin-test
         run: |
           poetry install
-          poetry run python plugin_test.py --store --offset ${{ github.event.inputs.offset || 0 }} --limit ${{ github.event.inputs.limit || 30 }}
+          poetry run python plugin_test.py --store --offset ${{ github.event.inputs.offset || 0 }} --limit ${{ github.event.inputs.limit || 50 }}
       - name: Upload results
         uses: actions/upload-artifact@v3
         with:
