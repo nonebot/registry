@@ -142,6 +142,7 @@
     <script src="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/highlight.min.js"></script>
 
     <script src="color-modes.js"></script>
+    <script src="ansi_up.js"></script>
 
     <script>
       const check_pass = `<span class="mdi mdi-check-circle-outline ok"></span>`;
@@ -199,7 +200,7 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                  <pre>${row.output}</pre>
+                  <pre>${log_to_html(row.output)}</pre>
                 </div>
               </div>
             </div>
@@ -256,6 +257,10 @@
           </div>
           \<script\>hljs.highlightAll();\<\/script\>
           `;
+      }
+      let ansi_up = new AnsiUp;
+      function log_to_html(ansi_text) {
+        return ansi_up.ansi_to_html(ansi_text);
       }
     </script>
   </body>
