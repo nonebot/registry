@@ -2,6 +2,10 @@ name: Site Deploy(Preview)
 
 on:
   pull_request_target:
+    branches:
+      - "main"
+    paths:
+      - "websites/**"
 
 permissions:
   contents: read
