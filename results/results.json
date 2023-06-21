@@ -1,7 +1,7 @@
 {
   "nonebot-plugin-status:nonebot_plugin_status": {
     "run": true,
-    "output": "插件 nonebot-plugin-status 的信息如下：\n    name         : nonebot-plugin-status                                          \n     version      : 0.7.1                                                          \n     description  : Check your server status (CPU, Memory, Disk Usage) via nonebot \n    \n    dependencies\n     - humanize >=4.0.0,<5.0.0\n     - Jinja2 >=3.0.0,<4.0.0\n     - nonebot2 >=2.0.0,<3.0.0\n     - psutil >=5.7.2,<6.0.0\n插件 nonebot-plugin-status 依赖的插件如下：\n    \n插件 nonebot_plugin_status 加载正常：\n    06-21 05:11:06 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 05:11:06 [INFO] nonebot | Current Env: prod\n    06-21 05:11:06 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_status\"",
+    "output": "插件 nonebot-plugin-status 的信息如下：\n    name         : nonebot-plugin-status                                          \n     version      : 0.7.1                                                          \n     description  : Check your server status (CPU, Memory, Disk Usage) via nonebot \n    \n    dependencies\n     - humanize >=4.0.0,<5.0.0\n     - Jinja2 >=3.0.0,<4.0.0\n     - nonebot2 >=2.0.0,<3.0.0\n     - psutil >=5.7.2,<6.0.0\n插件 nonebot-plugin-status 依赖的插件如下：\n    \n插件 nonebot_plugin_status 加载正常：\n    06-21 05:14:35 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 05:14:35 [INFO] nonebot | Current Env: prod\n    06-21 05:14:35 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_status\"",
     "valid": true,
     "metadata": {
       "name": "服务器状态查看",
@@ -58,12 +58,12 @@
       "type": "application",
       "supported_adapters": null
     },
-    "time": "2023-06-21 13:11:11",
+    "time": "2023-06-21 13:14:40",
     "version": "0.7.1"
   },
   "haruka-bot:haruka_bot": {
     "run": false,
-    "output": "插件 haruka-bot 的信息如下：\n    name         : haruka-bot                                                                  \n     version      : 1.5.4                                                                       \n     description  : Push dynamics and live informations from bilibili to QQ. Based on nonebot2. \n    \n    dependencies\n     - bilireq >=0.2.5\n     - click >=8.1.3\n     - httpx >=0.24.0\n     - msvc-runtime >=14.34.31931\n     - nonebot-adapter-onebot >=2.2.3\n     - nonebot-plugin-apscheduler >=0.2.0\n     - nonebot-plugin-guild-patch >=0.2.3\n     - nonebot2 >=2.0.0rc4\n     - packaging >=23.1\n     - playwright >=1.33.0\n     - pydantic >=1.10.7\n     - python-dotenv >=1.0.0\n     - tortoise-orm >=0.19.3\n插件 haruka-bot 依赖的插件如下：\n    nonebot_plugin_apscheduler, nonebot_plugin_guild_patch\n插件 haruka_bot 加载出错：\n    06-21 05:11:23 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 05:11:23 [INFO] nonebot | Current Env: prod\n    06-21 05:11:23 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_apscheduler\"\n    06-21 05:11:24 [INFO] haruka_bot | 检查 Chromium 更新\n    Downloading Chromium 115.0.5790.24 (playwright build v1067) from https://npmmirror.com/mirrors/playwright//builds/chromium/1067/chromium-linux.zip\n    |                                                                                |   0% of 146.4 Mb\n    |■■■■■■■■                                                                        |  10% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■                                                                |  20% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 146.4 Mb\n    Chromium 115.0.5790.24 (playwright build v1067) downloaded to /home/runner/.cache/ms-playwright/chromium-1067\n    Downloading FFMPEG playwright build v1009 from https://npmmirror.com/mirrors/playwright//builds/ffmpeg/1009/ffmpeg-linux.zip\n    |                                                                                |   0% of 2.6 Mb\n    |■■■■■■■■                                                                        |  10% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■                                                                |  20% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 2.6 Mb\n    FFMPEG playwright build v1009 downloaded to /home/runner/.cache/ms-playwright/ffmpeg-1009\n    06-21 05:11:43 [INFO] haruka_bot | 检查 Playwright 依赖\n    06-21 05:11:45 [SUCCESS] nonebot | Succeeded to load plugin \"haruka_bot\"\n    06-21 05:11:45 [ERROR] nonebot | Failed to import \"nonebot_plugin_guild_patch\"\n    Traceback (most recent call last):\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/haruka-bot-haruka_bot-test/runner.py\", line 31, in <module>\n        require('nonebot_plugin_guild_patch')\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/haruka-bot-haruka_bot-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 174, in require\n        plugin = load_plugin(name)\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/haruka-bot-haruka_bot-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/haruka-bot-haruka_bot-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 154, in load_plugin\n        raise RuntimeError(\n    RuntimeError: Module nonebot_plugin_guild_patch is not loaded as a plugin! Make sure not to import it before loading.\n    Traceback (most recent call last):\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/haruka-bot-haruka_bot-test/runner.py\", line 31, in <module>\n        require('nonebot_plugin_guild_patch')\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/haruka-bot-haruka_bot-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 178, in require\n        raise RuntimeError(f'Cannot load plugin \"{name}\"!')\n    RuntimeError: Cannot load plugin \"nonebot_plugin_guild_patch\"!",
+    "output": "插件 haruka-bot 的信息如下：\n    name         : haruka-bot                                                                  \n     version      : 1.5.4                                                                       \n     description  : Push dynamics and live informations from bilibili to QQ. Based on nonebot2. \n    \n    dependencies\n     - bilireq >=0.2.5\n     - click >=8.1.3\n     - httpx >=0.24.0\n     - msvc-runtime >=14.34.31931\n     - nonebot-adapter-onebot >=2.2.3\n     - nonebot-plugin-apscheduler >=0.2.0\n     - nonebot-plugin-guild-patch >=0.2.3\n     - nonebot2 >=2.0.0rc4\n     - packaging >=23.1\n     - playwright >=1.33.0\n     - pydantic >=1.10.7\n     - python-dotenv >=1.0.0\n     - tortoise-orm >=0.19.3\n插件 haruka-bot 依赖的插件如下：\n    nonebot_plugin_apscheduler, nonebot_plugin_guild_patch\n插件 haruka_bot 加载出错：\n    06-21 05:14:51 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 05:14:51 [INFO] nonebot | Current Env: prod\n    06-21 05:14:51 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_apscheduler\"\n    06-21 05:14:52 [INFO] haruka_bot | 检查 Chromium 更新\n    Downloading Chromium 115.0.5790.24 (playwright build v1067) from https://npmmirror.com/mirrors/playwright//builds/chromium/1067/chromium-linux.zip\n    |                                                                                |   0% of 146.4 Mb\n    |■■■■■■■■                                                                        |  10% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■                                                                |  20% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 146.4 Mb\n    Chromium 115.0.5790.24 (playwright build v1067) downloaded to /home/runner/.cache/ms-playwright/chromium-1067\n    Downloading FFMPEG playwright build v1009 from https://npmmirror.com/mirrors/playwright//builds/ffmpeg/1009/ffmpeg-linux.zip\n    |                                                                                |   0% of 2.6 Mb\n    |■■■■■■■■                                                                        |  10% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■                                                                |  20% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 2.6 Mb\n    FFMPEG playwright build v1009 downloaded to /home/runner/.cache/ms-playwright/ffmpeg-1009\n    06-21 05:15:03 [INFO] haruka_bot | 检查 Playwright 依赖\n    06-21 05:15:06 [SUCCESS] nonebot | Succeeded to load plugin \"haruka_bot\"\n    06-21 05:15:06 [ERROR] nonebot | Failed to import \"nonebot_plugin_guild_patch\"\n    Traceback (most recent call last):\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/haruka-bot-haruka_bot-test/runner.py\", line 31, in <module>\n        require('nonebot_plugin_guild_patch')\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/haruka-bot-haruka_bot-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 174, in require\n        plugin = load_plugin(name)\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/haruka-bot-haruka_bot-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/haruka-bot-haruka_bot-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 154, in load_plugin\n        raise RuntimeError(\n    RuntimeError: Module nonebot_plugin_guild_patch is not loaded as a plugin! Make sure not to import it before loading.\n    Traceback (most recent call last):\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/haruka-bot-haruka_bot-test/runner.py\", line 31, in <module>\n        require('nonebot_plugin_guild_patch')\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/haruka-bot-haruka_bot-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 178, in require\n        raise RuntimeError(f'Cannot load plugin \"{name}\"!')\n    RuntimeError: Cannot load plugin \"nonebot_plugin_guild_patch\"!",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -86,12 +86,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 13:11:45",
+    "time": "2023-06-21 13:15:06",
     "version": "1.5.4"
   },
   "nonebot-plugin-rauthman:nonebot_plugin_rauthman": {
     "run": true,
-    "output": "插件 nonebot-plugin-rauthman 的信息如下：\n    name         : nonebot-plugin-rauthman                               \n     version      : 2.0.0rc1.post1                                        \n     description  : Rule-based authorization manager worked with nonebot2 \n    \n    dependencies\n     - nonebot-adapter-onebot >=2.1.3,<3.0.0\n     - nonebot-plugin-apscheduler >=0.2.0,<0.3.0\n     - nonebot2 >=2.0.0rc1,<3.0.0\n     - ujson >=4.0.2,<6.0.0\n插件 nonebot-plugin-rauthman 依赖的插件如下：\n    nonebot_plugin_apscheduler\n插件 nonebot_plugin_rauthman 加载正常：\n    06-21 05:11:53 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 05:11:53 [INFO] nonebot | Current Env: prod\n    06-21 05:11:54 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_apscheduler\"\n    06-21 05:11:54 [WARNING] nonebot_plugin_rauthman | File /home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-rauthman-nonebot_plugin_rauthman-test/global.json not found\n    06-21 05:11:54 [WARNING] nonebot | RAM | RAM data not exist. Try converting from legacy automatically.\n    06-21 05:11:54 [WARNING] nonebot_plugin_rauthman | File /home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-rauthman-nonebot_plugin_rauthman-test/auth.json not found\n    06-21 05:11:54 [WARNING] nonebot | RAM | Legacy data not vanilla, skip converting.\n    06-21 05:11:54 [SUCCESS] nonebot | RAM | Initialized: global.json\n    06-21 05:11:54 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_rauthman\"",
+    "output": "插件 nonebot-plugin-rauthman 的信息如下：\n    name         : nonebot-plugin-rauthman                               \n     version      : 2.0.0rc1.post1                                        \n     description  : Rule-based authorization manager worked with nonebot2 \n    \n    dependencies\n     - nonebot-adapter-onebot >=2.1.3,<3.0.0\n     - nonebot-plugin-apscheduler >=0.2.0,<0.3.0\n     - nonebot2 >=2.0.0rc1,<3.0.0\n     - ujson >=4.0.2,<6.0.0\n插件 nonebot-plugin-rauthman 依赖的插件如下：\n    nonebot_plugin_apscheduler\n插件 nonebot_plugin_rauthman 加载正常：\n    06-21 05:15:14 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 05:15:14 [INFO] nonebot | Current Env: prod\n    06-21 05:15:14 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_apscheduler\"\n    06-21 05:15:14 [WARNING] nonebot_plugin_rauthman | File /home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-rauthman-nonebot_plugin_rauthman-test/global.json not found\n    06-21 05:15:14 [WARNING] nonebot | RAM | RAM data not exist. Try converting from legacy automatically.\n    06-21 05:15:14 [WARNING] nonebot_plugin_rauthman | File /home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-rauthman-nonebot_plugin_rauthman-test/auth.json not found\n    06-21 05:15:14 [WARNING] nonebot | RAM | Legacy data not vanilla, skip converting.\n    06-21 05:15:14 [SUCCESS] nonebot | RAM | Initialized: global.json\n    06-21 05:15:14 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_rauthman\"",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -114,12 +114,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 13:11:54",
+    "time": "2023-06-21 13:15:14",
     "version": "2.0.0rc1.post1"
   },
   "nonebot-plugin-docs:nonebot_plugin_docs": {
     "run": true,
-    "output": "插件 nonebot-plugin-docs 的信息如下：\n    name         : nonebot-plugin-docs        \n     version      : 2.0.0                      \n     description  : View NoneBot2 Docs Locally \n    \n    dependencies\n     - nonebot2 >=2.0.0-beta.1,<3.0.0\n插件 nonebot-plugin-docs 依赖的插件如下：\n    \n插件 nonebot_plugin_docs 加载正常：\n    06-21 05:12:00 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 05:12:00 [INFO] nonebot | Current Env: prod\n    06-21 05:12:00 [WARNING] nonebot_plugin_docs | Driver none not supported\n    06-21 05:12:00 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_docs\"",
+    "output": "插件 nonebot-plugin-docs 的信息如下：\n    name         : nonebot-plugin-docs        \n     version      : 2.0.0                      \n     description  : View NoneBot2 Docs Locally \n    \n    dependencies\n     - nonebot2 >=2.0.0-beta.1,<3.0.0\n插件 nonebot-plugin-docs 依赖的插件如下：\n    \n插件 nonebot_plugin_docs 加载正常：\n    06-21 05:15:19 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 05:15:19 [INFO] nonebot | Current Env: prod\n    06-21 05:15:19 [WARNING] nonebot_plugin_docs | Driver none not supported\n    06-21 05:15:19 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_docs\"",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -137,12 +137,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 13:12:00",
+    "time": "2023-06-21 13:15:19",
     "version": "2.0.0"
   },
   "nonebot-plugin-sentry:nonebot_plugin_sentry": {
     "run": true,
-    "output": "插件 nonebot-plugin-sentry 的信息如下：\n    name         : nonebot-plugin-sentry             \n     version      : 0.4.1                             \n     description  : Push your bot errors to Sentry.io \n    \n    dependencies\n     - nonebot2 >=2.0.0,<3.0.0\n     - sentry-sdk >=1.0.0,<2.0.0\n插件 nonebot-plugin-sentry 依赖的插件如下：\n    \n插件 nonebot_plugin_sentry 加载正常：\n    06-21 05:12:05 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 05:12:05 [INFO] nonebot | Current Env: prod\n    06-21 05:12:05 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_sentry\"",
+    "output": "插件 nonebot-plugin-sentry 的信息如下：\n    name         : nonebot-plugin-sentry             \n     version      : 0.4.1                             \n     description  : Push your bot errors to Sentry.io \n    \n    dependencies\n     - nonebot2 >=2.0.0,<3.0.0\n     - sentry-sdk >=1.0.0,<2.0.0\n插件 nonebot-plugin-sentry 依赖的插件如下：\n    \n插件 nonebot_plugin_sentry 加载正常：\n    06-21 05:15:25 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 05:15:25 [INFO] nonebot | Current Env: prod\n    06-21 05:15:25 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_sentry\"",
     "valid": true,
     "metadata": {
       "name": "Sentry日志监控",
@@ -199,12 +199,12 @@
       "type": "application",
       "supported_adapters": null
     },
-    "time": "2023-06-21 13:12:06",
+    "time": "2023-06-21 13:15:25",
     "version": "0.4.1"
   },
   "nonebot-plugin-apscheduler:nonebot_plugin_apscheduler": {
     "run": true,
-    "output": "插件 nonebot-plugin-apscheduler 的信息如下：\n    name         : nonebot-plugin-apscheduler       \n     version      : 0.3.0                            \n     description  : APScheduler Support for NoneBot2 \n    \n    dependencies\n     - apscheduler >=3.7.0,<4.0.0\n     - nonebot2 >=2.0.0,<3.0.0\n插件 nonebot-plugin-apscheduler 依赖的插件如下：\n    \n插件 nonebot_plugin_apscheduler 加载正常：\n    06-21 05:12:12 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 05:12:12 [INFO] nonebot | Current Env: prod\n    06-21 05:12:12 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_apscheduler\"",
+    "output": "插件 nonebot-plugin-apscheduler 的信息如下：\n    name         : nonebot-plugin-apscheduler       \n     version      : 0.3.0                            \n     description  : APScheduler Support for NoneBot2 \n    \n    dependencies\n     - apscheduler >=3.7.0,<4.0.0\n     - nonebot2 >=2.0.0,<3.0.0\n插件 nonebot-plugin-apscheduler 依赖的插件如下：\n    \n插件 nonebot_plugin_apscheduler 加载正常：\n    06-21 05:15:31 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 05:15:31 [INFO] nonebot | Current Env: prod\n    06-21 05:15:31 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_apscheduler\"",
     "valid": true,
     "metadata": {
       "name": "定时任务",
@@ -251,12 +251,12 @@
       "type": "library",
       "supported_adapters": null
     },
-    "time": "2023-06-21 13:12:13",
+    "time": "2023-06-21 13:15:32",
     "version": "0.3.0"
   },
   "nonebot-plugin-picsearcher:nonebot_plugin_picsearcher": {
     "run": true,
-    "output": "插件 nonebot-plugin-picsearcher 的信息如下：\n    name         : nonebot-plugin-picsearcher      \n     version      : 0.1.10                          \n     description  : A picsearch plugin for nonebot2 \n    \n    dependencies\n     - aiohttp *\n     - lxml *\n     - nonebot-adapter-onebot *\n     - nonebot2 *\n插件 nonebot-plugin-picsearcher 依赖的插件如下：\n    \n插件 nonebot_plugin_picsearcher 加载正常：\n    06-21 05:12:19 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 05:12:19 [INFO] nonebot | Current Env: prod\n    06-21 05:12:20 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_picsearcher\"",
+    "output": "插件 nonebot-plugin-picsearcher 的信息如下：\n    name         : nonebot-plugin-picsearcher      \n     version      : 0.1.10                          \n     description  : A picsearch plugin for nonebot2 \n    \n    dependencies\n     - aiohttp *\n     - lxml *\n     - nonebot-adapter-onebot *\n     - nonebot2 *\n插件 nonebot-plugin-picsearcher 依赖的插件如下：\n    \n插件 nonebot_plugin_picsearcher 加载正常：\n    06-21 05:15:38 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 05:15:38 [INFO] nonebot | Current Env: prod\n    06-21 05:15:39 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_picsearcher\"",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -274,12 +274,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 13:12:20",
+    "time": "2023-06-21 13:15:39",
     "version": "0.1.10"
   },
   "nonebot-plugin-navicat:nonebot_plugin_navicat": {
     "run": true,
-    "output": "插件 nonebot-plugin-navicat 的信息如下：\n    name         : nonebot-plugin-navicat                                                                            \n     version      : 0.2.3                                                                                             \n     description  : A batabase manager plugin for nonebot2,provide capability of connection to all kinds of databases \n    \n    dependencies\n     - databases *\n     - nonebot2 *\n插件 nonebot-plugin-navicat 依赖的插件如下：\n    \n插件 nonebot_plugin_navicat 加载正常：\n    06-21 05:12:26 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 05:12:26 [INFO] nonebot | Current Env: prod\n    06-21 05:12:26 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_navicat\"",
+    "output": "插件 nonebot-plugin-navicat 的信息如下：\n    name         : nonebot-plugin-navicat                                                                            \n     version      : 0.2.3                                                                                             \n     description  : A batabase manager plugin for nonebot2,provide capability of connection to all kinds of databases \n    \n    dependencies\n     - databases *\n     - nonebot2 *\n插件 nonebot-plugin-navicat 依赖的插件如下：\n    \n插件 nonebot_plugin_navicat 加载正常：\n    06-21 05:15:44 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 05:15:44 [INFO] nonebot | Current Env: prod\n    06-21 05:15:45 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_navicat\"",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -297,12 +297,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 13:12:26",
+    "time": "2023-06-21 13:15:45",
     "version": "0.2.3"
   },
   "nonebot-plugin-translator:nonebot_plugin_translator": {
     "run": true,
-    "output": "插件 nonebot-plugin-translator 的信息如下：\n    name         : nonebot-plugin-translator                     \n     version      : 2.0.0b4.post0                                 \n     description  : Multi language tanslator worked with nonebot2 \n    \n    dependencies\n     - aiohttp >=3.8.1,<4.0.0\n     - nonebot-adapter-onebot >=2.0.0b1,<3.0.0\n     - nonebot2 >=2.0.0b4,<3.0.0\n     - ujson >=4.3.0,<6.0.0\n插件 nonebot-plugin-translator 依赖的插件如下：\n    \n插件 nonebot_plugin_translator 加载正常：\n    06-21 05:12:33 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 05:12:33 [INFO] nonebot | Current Env: prod\n    06-21 05:12:33 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_translator\"",
+    "output": "插件 nonebot-plugin-translator 的信息如下：\n    name         : nonebot-plugin-translator                     \n     version      : 2.0.0b4.post0                                 \n     description  : Multi language tanslator worked with nonebot2 \n    \n    dependencies\n     - aiohttp >=3.8.1,<4.0.0\n     - nonebot-adapter-onebot >=2.0.0b1,<3.0.0\n     - nonebot2 >=2.0.0b4,<3.0.0\n     - ujson >=4.3.0,<6.0.0\n插件 nonebot-plugin-translator 依赖的插件如下：\n    \n插件 nonebot_plugin_translator 加载正常：\n    06-21 05:15:51 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 05:15:51 [INFO] nonebot | Current Env: prod\n    06-21 05:15:52 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_translator\"",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -325,12 +325,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 13:12:33",
+    "time": "2023-06-21 13:15:52",
     "version": "2.0.0b4.post0"
   },
   "nonebot-plugin-mqtt:nonebot_plugin_mqtt": {
     "run": true,
-    "output": "插件 nonebot-plugin-mqtt 的信息如下：\n    name         : nonebot-plugin-mqtt                   \n     version      : 0.1.1                                 \n     description  : The iot plugin for nonebot2 framework \n    \n    dependencies\n     - gmqtt *\n     - nonebot2 *\n插件 nonebot-plugin-mqtt 依赖的插件如下：\n    \n插件 nonebot_plugin_mqtt 加载正常：\n    06-21 05:12:38 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 05:12:38 [INFO] nonebot | Current Env: prod\n    06-21 05:12:38 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_mqtt\"",
+    "output": "插件 nonebot-plugin-mqtt 的信息如下：\n    name         : nonebot-plugin-mqtt                   \n     version      : 0.1.1                                 \n     description  : The iot plugin for nonebot2 framework \n    \n    dependencies\n     - gmqtt *\n     - nonebot2 *\n插件 nonebot-plugin-mqtt 依赖的插件如下：\n    \n插件 nonebot_plugin_mqtt 加载正常：\n    06-21 05:15:56 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 05:15:56 [INFO] nonebot | Current Env: prod\n    06-21 05:15:57 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_mqtt\"",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -348,7 +348,7 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 13:12:38",
+    "time": "2023-06-21 13:15:57",
     "version": "0.1.1"
   },
   "nonebot-plugin-songpicker2:nonebot_plugin_songpicker2": {
