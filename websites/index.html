@@ -154,7 +154,7 @@
               metadata: val.metadata !== null ? show_metadata : empty_metadata,
               metadata_value: val.metadata,
               output: val.output,
-              validation_message: val.validation_message,
+              validation_message: val.valid ? "通过" : val.validation_message,
               homepage: val.previous.homepage,
             });
           });
@@ -207,7 +207,7 @@
                 <div class="modal-header">
                   <h5 class="modal-title" id="exampleModalLabel">${
                     row.project_link
-                  } 验证日志</h5>
+                  } 验证结果</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
