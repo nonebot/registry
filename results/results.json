@@ -15142,7 +15142,7 @@
   },
   "nonebot-plugin-warthunder-player-check:nonebot_plugin_warthunder_player_check": {
     "run": true,
-    "output": "插件 nonebot-plugin-warthunder-player-check 的信息如下：\n    name         : nonebot-plugin-warthunder-player-check \n     version      : 0.1.2                                  \n     description  : nonebot2 plugin                        \n    \n    dependencies\n     - beautifulsoup4 *\n     - nonebot_adapter_onebot >=2.2.3\n     - nonebot2 >=2.0.0\n     - pillow *\n     - selenium >=4.10.0\n     - undetected_chromedriver >=3.5.0\n插件 nonebot-plugin-warthunder-player-check 依赖的插件如下：\n    \n插件 nonebot_plugin_warthunder_player_check 加载正常：\n    06-20 20:26:38 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 20:26:38 [INFO] nonebot | Current Env: prod\n    06-20 20:26:39 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_warthunder_player_check\"",
+    "output": "插件 nonebot-plugin-warthunder-player-check 的信息如下：\n    name         : nonebot-plugin-warthunder-player-check \n     version      : 0.1.2                                  \n     description  : nonebot2 plugin                        \n    \n    dependencies\n     - beautifulsoup4 *\n     - nonebot_adapter_onebot >=2.2.3\n     - nonebot2 >=2.0.0\n     - pillow *\n     - selenium >=4.10.0\n     - undetected_chromedriver >=3.5.0\n插件 nonebot-plugin-warthunder-player-check 依赖的插件如下：\n    \n插件 nonebot_plugin_warthunder_player_check 加载正常：\n    06-21 10:11:12 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 10:11:12 [INFO] nonebot | Current Env: prod\n    06-21 10:11:13 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_warthunder_player_check\"",
     "valid": true,
     "metadata": {
       "name": "战雷查水表",
@@ -15207,11 +15207,12 @@
         "nonebot.adapters.onebot.v11"
       ]
     },
-    "time": "2023-06-21 04:26:40"
+    "time": "2023-06-21 18:11:15",
+    "version": "0.1.2"
   },
   "nonebot-plugin-follow-withdraw:nonebot_plugin_follow_withdraw": {
     "run": true,
-    "output": "插件 nonebot-plugin-follow-withdraw 的信息如下：\n    name         : nonebot-plugin-follow-withdraw                                       \n     version      : 0.2.0                                                                \n     description  : A plugin for nonebot2 that follows the user's withdraw of a command. \n    \n    dependencies\n     - nonebot-plugin-datastore >=1.0.0,<2.0.0\n     - nonebot2 >=2.0.0,<3.0.0\n插件 nonebot-plugin-follow-withdraw 依赖的插件如下：\n    nonebot_plugin_datastore, nonebot_plugin_localstore\n插件 nonebot_plugin_follow_withdraw 加载正常：\n    06-20 20:26:46 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 20:26:46 [INFO] nonebot | Current Env: prod\n    06-20 20:26:47 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_localstore\"\n    06-20 20:26:47 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_datastore\"\n    06-20 20:26:47 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_follow_withdraw\"",
+    "output": "插件 nonebot-plugin-follow-withdraw 的信息如下：\n    name         : nonebot-plugin-follow-withdraw                                       \n     version      : 0.2.0                                                                \n     description  : A plugin for nonebot2 that follows the user's withdraw of a command. \n    \n    dependencies\n     - nonebot-plugin-datastore >=1.0.0,<2.0.0\n     - nonebot2 >=2.0.0,<3.0.0\n插件 nonebot-plugin-follow-withdraw 依赖的插件如下：\n    nonebot_plugin_datastore, nonebot_plugin_localstore\n插件 nonebot_plugin_follow_withdraw 加载正常：\n    06-21 10:11:21 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 10:11:21 [INFO] nonebot | Current Env: prod\n    06-21 10:11:22 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_localstore\"\n    06-21 10:11:23 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_datastore\"\n    06-21 10:11:23 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_follow_withdraw\"",
     "valid": true,
     "metadata": {
       "name": "follow_withdraw",
@@ -15220,10 +15221,10 @@
       "type": "application",
       "homepage": "https://github.com/CMHopeSunshine/nonebot-plugin-follow-withdraw",
       "supported_adapters": [
+        "~onebot.v12",
         "~qqguild",
-        "~kaiheila",
         "~onebot.v11",
-        "~onebot.v12"
+        "~kaiheila"
       ]
     },
     "validation_message": "",
@@ -15238,10 +15239,10 @@
       "plugin_test_result": true,
       "type": "application",
       "supported_adapters": [
+        "~onebot.v12",
         "~qqguild",
-        "~kaiheila",
         "~onebot.v11",
-        "~onebot.v12"
+        "~kaiheila"
       ]
     },
     "previous": {
@@ -15272,12 +15273,13 @@
       "is_official": false,
       "type": "application",
       "supported_adapters": [
-        "nonebot.adapters.kaiheila",
-        "nonebot.adapters.onebot.v12",
         "nonebot.adapters.qqguild",
+        "nonebot.adapters.onebot.v12",
+        "nonebot.adapters.kaiheila",
         "nonebot.adapters.onebot.v11"
       ]
     },
-    "time": "2023-06-21 04:26:48"
+    "time": "2023-06-21 18:11:23",
+    "version": "0.2.0"
   }
 }
