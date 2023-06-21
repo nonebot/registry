@@ -3,6 +3,10 @@ name: Site Deploy(Preview)
 on:
   pull_request_target:
 
+permissions:
+  contents: read
+  pull-requests: write
+
 concurrency:
   group: pull-request-preview-${{ github.event.number }}
   cancel-in-progress: true
