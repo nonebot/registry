@@ -1,16 +1,16 @@
-name: 'NoneBot Store Test'
+name: "NoneBot Store Test"
 
 on:
   workflow_dispatch:
     inputs:
       offset:
-        description: 'Offset'
+        description: "Offset"
         required: false
-        default: '0'
+        default: "0"
       limit:
-        description: 'Limit'
+        description: "Limit"
         required: false
-        default: '1'
+        default: "1"
   schedule:
     - cron: "0 */6 * * *"
 
@@ -21,7 +21,7 @@ concurrency:
 jobs:
   store_test:
     runs-on: ubuntu-latest
-    name: nonebot2 plugin test
+    name: NoneBot2 plugin test
     steps:
       - name: Checkout
         uses: actions/checkout@v3
