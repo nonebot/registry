@@ -27,7 +27,6 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: nonebot/noneflow
-          ref: feat/store-test
       - name: Install poetry
         run: pipx install poetry
       - uses: actions/setup-python@v4
