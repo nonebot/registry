@@ -37,7 +37,7 @@ jobs:
         id: plugin-test
         run: |
           poetry install
-          poetry run python plugin_test.py --store --offset ${{ github.event.inputs.offset || 0 }} --limit ${{ github.event.inputs.limit || 50 }}
+          poetry run python -m src.utils.store_test --offset ${{ github.event.inputs.offset || 0 }} --limit ${{ github.event.inputs.limit || 50 }}
       - name: Upload results
         uses: actions/upload-artifact@v3
         with:
