@@ -957,28 +957,32 @@
   },
   "nonebot-plugin-heweather:nonebot_plugin_heweather": {
     "run": true,
-    "output": "插件 nonebot-plugin-heweather 的信息如下：\n    name         : nonebot-plugin-heweather                          \n     version      : 0.6.7                                             \n     description  : Get Heweather information and convert to pictures \n    \n    dependencies\n     - httpx >=0.18.0,<1.0.0\n     - nonebot-adapter-onebot >=2.0.0\n     - nonebot-plugin-htmlrender >=0.0.4.3\n     - nonebot2 >=2.0.0\n     - pydantic >=1.5.0\n插件 nonebot-plugin-heweather 依赖的插件如下：\n    nonebot_plugin_htmlrender\n插件 nonebot_plugin_heweather 加载正常：\n    06-21 08:12:35 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 08:12:35 [INFO] nonebot | Current Env: prod\n    06-21 08:12:36 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_htmlrender\"\n    06-21 08:12:36 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_heweather\"",
-    "valid": false,
+    "output": "插件 nonebot-plugin-heweather 的信息如下：\n    name         : nonebot-plugin-heweather                          \n     version      : 0.6.8                                             \n     description  : Get Heweather information and convert to pictures \n    \n    dependencies\n     - httpx >=0.18.0,<1.0.0\n     - nonebot-adapter-onebot >=2.0.0\n     - nonebot-plugin-htmlrender >=0.0.4.3\n     - nonebot2 >=2.0.0\n     - pydantic >=1.5.0\n插件 nonebot-plugin-heweather 依赖的插件如下：\n    nonebot_plugin_htmlrender\n插件 nonebot_plugin_heweather 加载正常：\n    06-21 09:27:14 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:27:14 [INFO] nonebot | Current Env: prod\n    06-21 09:27:14 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_htmlrender\"\n    06-21 09:27:15 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_heweather\"",
+    "valid": true,
     "metadata": {
       "name": "nonebot-plugin-heweather",
       "description": "和风天气图片显示插件",
       "usage": "天气地名 / 地名天气",
       "type": "application",
-      "homepage": null,
-      "supported_adapters": null
+      "homepage": "https://github.com/kexue-z/nonebot-plugin-heweather",
+      "supported_adapters": [
+        "~onebot.v11"
+      ]
     },
-    "validation_message": "1 validation error for PluginPublishInfo\nhomepage\n  none is not an allowed value (type=type_error.none.not_allowed)",
+    "validation_message": "",
     "validation_raw_data": {
       "module_name": "nonebot_plugin_heweather",
       "project_link": "nonebot-plugin-heweather",
       "name": "nonebot-plugin-heweather",
       "desc": "和风天气图片显示插件",
       "author": "kexue-z",
-      "homepage": null,
+      "homepage": "https://github.com/kexue-z/nonebot-plugin-heweather",
       "tags": "[{\"label\": \"a:onebot\", \"color\": \"#000000\"}]",
       "plugin_test_result": true,
       "type": "application",
-      "supported_adapters": null
+      "supported_adapters": [
+        "~onebot.v11"
+      ]
     },
     "previous": {
       "module_name": "nonebot_plugin_heweather",
@@ -997,9 +1001,27 @@
       "type": null,
       "supported_adapters": null
     },
-    "current": null,
-    "time": "2023-06-21 16:12:40",
-    "version": "0.6.7"
+    "current": {
+      "module_name": "nonebot_plugin_heweather",
+      "project_link": "nonebot-plugin-heweather",
+      "name": "nonebot-plugin-heweather",
+      "desc": "和风天气图片显示插件",
+      "author": "kexue-z",
+      "homepage": "https://github.com/kexue-z/nonebot-plugin-heweather",
+      "tags": [
+        {
+          "label": "a:onebot",
+          "color": "#000000"
+        }
+      ],
+      "is_official": false,
+      "type": "application",
+      "supported_adapters": [
+        "nonebot.adapters.onebot.v11"
+      ]
+    },
+    "time": "2023-06-21 17:27:21",
+    "version": "0.6.8"
   },
   "nonebot-plugin-autohelp:nonebot_plugin_autohelp": {
     "run": true,
@@ -2388,7 +2410,7 @@
   },
   "nonebot-plugin-wordcloud:nonebot_plugin_wordcloud": {
     "run": true,
-    "output": "插件 nonebot-plugin-wordcloud 的信息如下：\n    name         : nonebot-plugin-wordcloud \n     version      : 0.4.8                    \n     description  : 适用于 NoneBot2 的词云插件       \n    \n    dependencies\n     - emoji >=1.6.3,<3.0.0\n     - jieba >=0.42.1,<0.43.0\n     - nonebot-adapter-onebot >=2.2.0,<3.0.0\n     - nonebot-plugin-apscheduler >=0.2.0,<0.3.0\n     - nonebot-plugin-chatrecorder >=0.2.3,<0.3.0\n     - nonebot-plugin-datastore >=0.6.0a2,<0.7.0\n     - nonebot2 >=2.0.0-rc.1,<3.0.0\n     - tzdata *\n     - wordcloud >=1.8.1,<2.0.0\n插件 nonebot-plugin-wordcloud 依赖的插件如下：\n    nonebot_plugin_apscheduler, nonebot_plugin_chatrecorder, nonebot_plugin_datastore, nonebot_plugin_localstore\n插件 nonebot_plugin_wordcloud 加载正常：\n    06-20 19:29:49 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:29:49 [INFO] nonebot | Current Env: prod\n    06-20 19:29:49 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_apscheduler\"\n    06-20 19:29:49 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_localstore\"\n    06-20 19:29:50 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_datastore\"\n    06-20 19:29:50 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_chatrecorder\"\n    06-20 19:29:53 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_wordcloud\"",
+    "output": "插件 nonebot-plugin-wordcloud 的信息如下：\n    name         : nonebot-plugin-wordcloud \n     version      : 0.4.8                    \n     description  : 适用于 NoneBot2 的词云插件       \n    \n    dependencies\n     - emoji >=1.6.3,<3.0.0\n     - jieba >=0.42.1,<0.43.0\n     - nonebot-adapter-onebot >=2.2.0,<3.0.0\n     - nonebot-plugin-apscheduler >=0.2.0,<0.3.0\n     - nonebot-plugin-chatrecorder >=0.2.3,<0.3.0\n     - nonebot-plugin-datastore >=0.6.0a2,<0.7.0\n     - nonebot2 >=2.0.0-rc.1,<3.0.0\n     - tzdata *\n     - wordcloud >=1.8.1,<2.0.0\n插件 nonebot-plugin-wordcloud 依赖的插件如下：\n    nonebot_plugin_apscheduler, nonebot_plugin_chatrecorder, nonebot_plugin_datastore, nonebot_plugin_localstore\n插件 nonebot_plugin_wordcloud 加载正常：\n    06-21 09:28:08 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:28:08 [INFO] nonebot | Current Env: prod\n    06-21 09:28:08 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_apscheduler\"\n    06-21 09:28:08 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_localstore\"\n    06-21 09:28:09 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_datastore\"\n    06-21 09:28:09 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_chatrecorder\"\n    06-21 09:28:13 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_wordcloud\"",
     "valid": false,
     "metadata": {
       "name": "词云",
@@ -2424,11 +2446,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:29:54"
+    "time": "2023-06-21 17:28:13",
+    "version": "0.4.8"
   },
   "nonebot-plugin-chatrecorder:nonebot_plugin_chatrecorder": {
     "run": true,
-    "output": "插件 nonebot-plugin-chatrecorder 的信息如下：\n    name         : nonebot-plugin-chatrecorder \n     version      : 0.2.3                       \n     description  : 适用于 Nonebot2 的聊天记录插件        \n    \n    dependencies\n     - nonebot-adapter-onebot >=2.2.0,<3.0.0\n     - nonebot-plugin-datastore >=0.6.0a0,<0.7.0\n     - nonebot2 >=2.0.0-rc.1,<3.0.0\n插件 nonebot-plugin-chatrecorder 依赖的插件如下：\n    nonebot_plugin_datastore, nonebot_plugin_localstore\n插件 nonebot_plugin_chatrecorder 加载正常：\n    06-20 19:30:00 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:30:00 [INFO] nonebot | Current Env: prod\n    06-20 19:30:00 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_localstore\"\n    06-20 19:30:01 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_datastore\"\n    06-20 19:30:01 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_chatrecorder\"",
+    "output": "插件 nonebot-plugin-chatrecorder 的信息如下：\n    name         : nonebot-plugin-chatrecorder \n     version      : 0.2.3                       \n     description  : 适用于 Nonebot2 的聊天记录插件        \n    \n    dependencies\n     - nonebot-adapter-onebot >=2.2.0,<3.0.0\n     - nonebot-plugin-datastore >=0.6.0a0,<0.7.0\n     - nonebot2 >=2.0.0-rc.1,<3.0.0\n插件 nonebot-plugin-chatrecorder 依赖的插件如下：\n    nonebot_plugin_datastore, nonebot_plugin_localstore\n插件 nonebot_plugin_chatrecorder 加载正常：\n    06-21 09:28:22 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:28:22 [INFO] nonebot | Current Env: prod\n    06-21 09:28:23 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_localstore\"\n    06-21 09:28:24 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_datastore\"\n    06-21 09:28:24 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_chatrecorder\"",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -2451,11 +2474,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:30:02"
+    "time": "2023-06-21 17:28:24",
+    "version": "0.2.3"
   },
   "nonebot-plugin-antiflash:nonebot_plugin_antiflash": {
     "run": true,
-    "output": "插件 nonebot-plugin-antiflash 的信息如下：\n    name         : nonebot-plugin-antiflash      \n     version      : 0.2.3                         \n     description  : Anti flash pictures in groups \n    \n    dependencies\n     - nonebot-adapter-onebot >=2.0.0-beta.1,<3.0.0\n     - nonebot2 >=2.0.0-beta.2,<3.0.0\n插件 nonebot-plugin-antiflash 依赖的插件如下：\n    \n插件 nonebot_plugin_antiflash 加载正常：\n    06-20 19:30:07 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:30:07 [INFO] nonebot | Current Env: prod\n    06-20 19:30:07 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_antiflash\"",
+    "output": "插件 nonebot-plugin-antiflash 的信息如下：\n    name         : nonebot-plugin-antiflash      \n     version      : 0.2.3                         \n     description  : Anti flash pictures in groups \n    \n    dependencies\n     - nonebot-adapter-onebot >=2.0.0-beta.1,<3.0.0\n     - nonebot2 >=2.0.0-beta.2,<3.0.0\n插件 nonebot-plugin-antiflash 依赖的插件如下：\n    \n插件 nonebot_plugin_antiflash 加载正常：\n    06-21 09:28:31 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:28:31 [INFO] nonebot | Current Env: prod\n    06-21 09:28:31 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_antiflash\"",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -2478,11 +2502,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:30:07"
+    "time": "2023-06-21 17:28:31",
+    "version": "0.2.3"
   },
   "nonebot-plugin-word-bank2:nonebot_plugin_word_bank2": {
     "run": true,
-    "output": "插件 nonebot-plugin-word-bank2 的信息如下：\n    name         : nonebot-plugin-word-bank2 \n     version      : 0.1.8                     \n     description  : 无数据问答插件                   \n    \n    dependencies\n     - httpx >=0.18.0,<1.0.0\n     - nonebot-adapter-onebot >=2.0.0-beta.1\n     - nonebot2 >=2.0.0\n插件 nonebot-plugin-word-bank2 依赖的插件如下：\n    \n插件 nonebot_plugin_word_bank2 加载正常：\n    06-20 19:30:12 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:30:12 [INFO] nonebot | Current Env: prod\n    06-20 19:30:12 [SUCCESS] nonebot_plugin_word_bank2 | 创建词库位于 /home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-word-bank2-nonebot_plugin_word_bank2-test/data/word_bank/bank.json\n    06-20 19:30:12 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_word_bank2\"",
+    "output": "插件 nonebot-plugin-word-bank2 的信息如下：\n    name         : nonebot-plugin-word-bank2 \n     version      : 0.1.8                     \n     description  : 无数据问答插件                   \n    \n    dependencies\n     - httpx >=0.18.0,<1.0.0\n     - nonebot-adapter-onebot >=2.0.0-beta.1\n     - nonebot2 >=2.0.0\n插件 nonebot-plugin-word-bank2 依赖的插件如下：\n    \n插件 nonebot_plugin_word_bank2 加载正常：\n    06-21 09:28:39 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:28:39 [INFO] nonebot | Current Env: prod\n    06-21 09:28:39 [SUCCESS] nonebot_plugin_word_bank2 | 创建词库位于 /home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-word-bank2-nonebot_plugin_word_bank2-test/data/word_bank/bank.json\n    06-21 09:28:39 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_word_bank2\"",
     "valid": true,
     "metadata": {
       "name": "nonebot-plugin-word-bank2",
@@ -2553,11 +2578,12 @@
         "nonebot.adapters.onebot.v11"
       ]
     },
-    "time": "2023-06-21 03:30:13"
+    "time": "2023-06-21 17:28:40",
+    "version": "0.1.8"
   },
   "nonebot-plugin-txt2img:nonebot_plugin_txt2img": {
     "run": true,
-    "output": "插件 nonebot-plugin-txt2img 的信息如下：\n    name         : nonebot-plugin-txt2img \n     version      : 0.3.2                  \n     description  : 轻量文字转图片插件              \n    \n    dependencies\n     - httpx >=0.22.0,<0.23.0\n     - nonebot-plugin-send-anything-anywhere >=0.2.7,<0.3.0\n     - nonebot2 >=2.0.0,<3.0.0\n     - pillow >=9.0.0,<10.0.0\n插件 nonebot-plugin-txt2img 依赖的插件如下：\n    nonebot_plugin_saa\n插件 nonebot_plugin_txt2img 加载正常：\n    06-20 19:30:20 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:30:20 [INFO] nonebot | Current Env: prod\n    06-20 19:30:20 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_saa\"\n    06-20 19:30:20 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_txt2img\"",
+    "output": "插件 nonebot-plugin-txt2img 的信息如下：\n    name         : nonebot-plugin-txt2img \n     version      : 0.3.2                  \n     description  : 轻量文字转图片插件              \n    \n    dependencies\n     - httpx >=0.22.0,<0.23.0\n     - nonebot-plugin-send-anything-anywhere >=0.2.7,<0.3.0\n     - nonebot2 >=2.0.0,<3.0.0\n     - pillow >=9.0.0,<10.0.0\n插件 nonebot-plugin-txt2img 依赖的插件如下：\n    nonebot_plugin_saa\n插件 nonebot_plugin_txt2img 加载正常：\n    06-21 09:28:50 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:28:50 [INFO] nonebot | Current Env: prod\n    06-21 09:28:50 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_saa\"\n    06-21 09:28:50 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_txt2img\"",
     "valid": true,
     "metadata": {
       "name": "文字转图片",
@@ -2566,11 +2592,11 @@
       "type": "library",
       "homepage": "https://github.com/mobyw/nonebot-plugin-txt2img",
       "supported_adapters": [
-        "~onebot.v11",
-        "~qqguild",
         "~onebot.v12",
-        "~kaiheila",
-        "~telegram"
+        "~qqguild",
+        "~telegram",
+        "~onebot.v11",
+        "~kaiheila"
       ]
     },
     "validation_message": "",
@@ -2585,11 +2611,11 @@
       "plugin_test_result": true,
       "type": "library",
       "supported_adapters": [
-        "~onebot.v11",
-        "~qqguild",
         "~onebot.v12",
-        "~kaiheila",
-        "~telegram"
+        "~qqguild",
+        "~telegram",
+        "~onebot.v11",
+        "~kaiheila"
       ]
     },
     "previous": {
@@ -2625,18 +2651,19 @@
       "is_official": false,
       "type": "library",
       "supported_adapters": [
-        "nonebot.adapters.qqguild",
-        "nonebot.adapters.kaiheila",
-        "nonebot.adapters.telegram",
         "nonebot.adapters.onebot.v12",
+        "nonebot.adapters.telegram",
+        "nonebot.adapters.kaiheila",
+        "nonebot.adapters.qqguild",
         "nonebot.adapters.onebot.v11"
       ]
     },
-    "time": "2023-06-21 03:30:21"
+    "time": "2023-06-21 17:28:52",
+    "version": "0.3.2"
   },
   "nonebot-plugin-morning:nonebot_plugin_morning": {
     "run": true,
-    "output": "插件 nonebot-plugin-morning 的信息如下：\n    name         : nonebot-plugin-morning     \n     version      : 0.3.2                      \n     description  : Good morning & good night! \n    \n    dependencies\n     - nonebot-adapter-onebot >=2.1.3,<3.0.0\n     - nonebot-plugin-apscheduler >=0.2.0,<0.3.0\n     - nonebot2 >=2.0.0rc1,<3.0.0\n插件 nonebot-plugin-morning 依赖的插件如下：\n    nonebot_plugin_apscheduler\n插件 nonebot_plugin_morning 加载正常：\n    06-20 19:30:28 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:30:28 [INFO] nonebot | Current Env: prod\n    06-20 19:30:28 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_apscheduler\"\n    06-20 19:30:28 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_morning\"",
+    "output": "插件 nonebot-plugin-morning 的信息如下：\n    name         : nonebot-plugin-morning     \n     version      : 0.3.2                      \n     description  : Good morning & good night! \n    \n    dependencies\n     - nonebot-adapter-onebot >=2.1.3,<3.0.0\n     - nonebot-plugin-apscheduler >=0.2.0,<0.3.0\n     - nonebot2 >=2.0.0rc1,<3.0.0\n插件 nonebot-plugin-morning 依赖的插件如下：\n    nonebot_plugin_apscheduler\n插件 nonebot_plugin_morning 加载正常：\n    06-21 09:29:01 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:29:01 [INFO] nonebot | Current Env: prod\n    06-21 09:29:01 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_apscheduler\"\n    06-21 09:29:01 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_morning\"",
     "valid": false,
     "metadata": {
       "name": "おはよう！",
@@ -2681,11 +2708,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:30:28"
+    "time": "2023-06-21 17:29:01",
+    "version": "0.3.2"
   },
   "nonebot-plugin-pixiv:nonebot_plugin_pixiv": {
     "run": true,
-    "output": "插件 nonebot-plugin-pixiv 的信息如下：\n    name         : nonebot-plugin-pixiv   \n     version      : 1.1.5                  \n     description  : pixiv.net 查询图片，支持动图和多图 \n    \n    dependencies\n     - aiohttp *\n     - nonebot-adapter-onebot >=2.0.0-beta.1,<3.0.0\n     - nonebot2 >=2.0.0-beta.1,<3.0.0\n     - opencv-python *\n插件 nonebot-plugin-pixiv 依赖的插件如下：\n    \n插件 nonebot_plugin_pixiv 加载正常：\n    06-20 19:30:38 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:30:38 [INFO] nonebot | Current Env: prod\n    06-20 19:30:38 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_pixiv\"",
+    "output": "插件 nonebot-plugin-pixiv 的信息如下：\n    name         : nonebot-plugin-pixiv   \n     version      : 1.1.5                  \n     description  : pixiv.net 查询图片，支持动图和多图 \n    \n    dependencies\n     - aiohttp *\n     - nonebot-adapter-onebot >=2.0.0-beta.1,<3.0.0\n     - nonebot2 >=2.0.0-beta.1,<3.0.0\n     - opencv-python *\n插件 nonebot-plugin-pixiv 依赖的插件如下：\n    \n插件 nonebot_plugin_pixiv 加载正常：\n    06-21 09:29:15 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:29:15 [INFO] nonebot | Current Env: prod\n    06-21 09:29:16 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_pixiv\"",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -2712,11 +2740,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:30:38"
+    "time": "2023-06-21 17:29:16",
+    "version": "1.1.5"
   },
   "yetanotherpicsearch:YetAnotherPicSearch": {
     "run": false,
-    "output": "插件 yetanotherpicsearch 的信息如下：\n    name         : yetanotherpicsearch                       \n     version      : 1.9.3                                     \n     description  : Yet Another Picture Search Nonebot Plugin \n    \n    dependencies\n     - arrow >=1.2.3,<2.0.0\n     - cachetools >=5.3.1,<6.0.0\n     - httpx >=0.24.1,<0.25.0\n     - lxml >=4.9.2,<5.0.0\n     - nonebot-adapter-onebot >=2.2.3,<3.0.0\n     - nonebot2 >=2.0.0,<3.0.0\n     - PicImageSearch >=3.9.2,<4.0.0\n     - pydantic >=1.10.8,<2.0.0\n     - pyquery >=2.0.0,<3.0.0\n     - shelved-cache >=0.3.1,<0.4.0\n     - tenacity >=8.2.2,<9.0.0\n插件 yetanotherpicsearch 依赖的插件如下：\n    \n插件 YetAnotherPicSearch 加载出错：\n    06-20 19:30:45 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:30:45 [INFO] nonebot | Current Env: prod\n    06-20 19:30:45 [ERROR] nonebot | Failed to import \"YetAnotherPicSearch\"\n    Traceback (most recent call last):\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/yetanotherpicsearch-YetAnotherPicSearch-test/runner.py\", line 15, in <module>\n        plugin = load_plugin(\"YetAnotherPicSearch\")\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/yetanotherpicsearch-YetAnotherPicSearch-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/yetanotherpicsearch-YetAnotherPicSearch-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/yetanotherpicsearch-YetAnotherPicSearch-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/yetanotherpicsearch-YetAnotherPicSearch-test/.venv/lib/python3.10/site-packages/YetAnotherPicSearch/__init__.py\", line 23, in <module>\n        from .ascii2d import ascii2d_search\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/yetanotherpicsearch-YetAnotherPicSearch-test/.venv/lib/python3.10/site-packages/YetAnotherPicSearch/ascii2d.py\", line 7, in <module>\n        from .config import config\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/yetanotherpicsearch-YetAnotherPicSearch-test/.venv/lib/python3.10/site-packages/YetAnotherPicSearch/config.py\", line 66, in <module>\n        config = Config(**get_driver().config.dict())\n      File \"pydantic/env_settings.py\", line 39, in pydantic.env_settings.BaseSettings.__init__\n        super().__init__(\n      File \"pydantic/main.py\", line 341, in pydantic.main.BaseModel.__init__\n        raise validation_error\n    pydantic.error_wrappers.ValidationError: 1 validation error for Config\n    saucenao_api_key\n      field required (type=value_error.missing)",
+    "output": "插件 yetanotherpicsearch 的信息如下：\n    name         : yetanotherpicsearch                       \n     version      : 1.9.3                                     \n     description  : Yet Another Picture Search Nonebot Plugin \n    \n    dependencies\n     - arrow >=1.2.3,<2.0.0\n     - cachetools >=5.3.1,<6.0.0\n     - httpx >=0.24.1,<0.25.0\n     - lxml >=4.9.2,<5.0.0\n     - nonebot-adapter-onebot >=2.2.3,<3.0.0\n     - nonebot2 >=2.0.0,<3.0.0\n     - PicImageSearch >=3.9.2,<4.0.0\n     - pydantic >=1.10.8,<2.0.0\n     - pyquery >=2.0.0,<3.0.0\n     - shelved-cache >=0.3.1,<0.4.0\n     - tenacity >=8.2.2,<9.0.0\n插件 yetanotherpicsearch 依赖的插件如下：\n    \n插件 YetAnotherPicSearch 加载出错：\n    06-21 09:29:25 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:29:25 [INFO] nonebot | Current Env: prod\n    06-21 09:29:26 [ERROR] nonebot | Failed to import \"YetAnotherPicSearch\"\n    Traceback (most recent call last):\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/yetanotherpicsearch-YetAnotherPicSearch-test/runner.py\", line 15, in <module>\n        plugin = load_plugin(\"YetAnotherPicSearch\")\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/yetanotherpicsearch-YetAnotherPicSearch-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/yetanotherpicsearch-YetAnotherPicSearch-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/yetanotherpicsearch-YetAnotherPicSearch-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/yetanotherpicsearch-YetAnotherPicSearch-test/.venv/lib/python3.10/site-packages/YetAnotherPicSearch/__init__.py\", line 23, in <module>\n        from .ascii2d import ascii2d_search\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/yetanotherpicsearch-YetAnotherPicSearch-test/.venv/lib/python3.10/site-packages/YetAnotherPicSearch/ascii2d.py\", line 7, in <module>\n        from .config import config\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/yetanotherpicsearch-YetAnotherPicSearch-test/.venv/lib/python3.10/site-packages/YetAnotherPicSearch/config.py\", line 66, in <module>\n        config = Config(**get_driver().config.dict())\n      File \"pydantic/env_settings.py\", line 39, in pydantic.env_settings.BaseSettings.__init__\n        super().__init__(\n      File \"pydantic/main.py\", line 341, in pydantic.main.BaseModel.__init__\n        raise validation_error\n    pydantic.error_wrappers.ValidationError: 1 validation error for Config\n    saucenao_api_key\n      field required (type=value_error.missing)",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -2739,11 +2768,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:30:45"
+    "time": "2023-06-21 17:29:26",
+    "version": "1.9.3"
   },
   "nonebot-plugin-gachalogs:nonebot_plugin_gachalogs": {
     "run": true,
-    "output": "插件 nonebot-plugin-gachalogs 的信息如下：\n    name         : nonebot-plugin-gachalogs                           \n     version      : 0.2.12                                             \n     description  : Genshin gacha history analysis plugin for NoneBot2 \n    \n    dependencies\n     - httpx >=0.20.0,<1.0.0\n     - matplotlib >=3.5.1\n     - nonebot-adapter-onebot >=2.0.0b1\n     - nonebot2 >=2.0.0a16\n     - xlsxwriter >=3.0.2\n插件 nonebot-plugin-gachalogs 依赖的插件如下：\n    \n插件 nonebot_plugin_gachalogs 加载正常：\n    06-20 19:30:53 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:30:53 [INFO] nonebot | Current Env: prod\n    06-20 19:31:15 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_gachalogs\"",
+    "output": "插件 nonebot-plugin-gachalogs 的信息如下：\n    name         : nonebot-plugin-gachalogs                           \n     version      : 0.2.12                                             \n     description  : Genshin gacha history analysis plugin for NoneBot2 \n    \n    dependencies\n     - httpx >=0.20.0,<1.0.0\n     - matplotlib >=3.5.1\n     - nonebot-adapter-onebot >=2.0.0b1\n     - nonebot2 >=2.0.0a16\n     - xlsxwriter >=3.0.2\n插件 nonebot-plugin-gachalogs 依赖的插件如下：\n    \n插件 nonebot_plugin_gachalogs 加载正常：\n    06-21 09:29:37 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:29:37 [INFO] nonebot | Current Env: prod\n    06-21 09:29:58 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_gachalogs\"",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -2766,11 +2796,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:31:15"
+    "time": "2023-06-21 17:29:59",
+    "version": "0.2.12"
   },
   "nonebot-plugin-everyday-en:nonebot_plugin_everyday_en": {
     "run": true,
-    "output": "插件 nonebot-plugin-everyday-en 的信息如下：\n    name         : nonebot-plugin-everyday-en                              \n     version      : 1.1.5                                                   \n     description  : 每日一句英文句子。完整帮助文档，可选搭配软依赖nonebot_plugin_apscheduler实现定时发送 \n    \n    dependencies\n     - aiofiles >=0.7.0\n     - httpx >=0.19.0\n     - nonebot-adapter-onebot >=2.0.0-beta.1\n     - nonebot2 >=2.0.0-beta.1\n插件 nonebot-plugin-everyday-en 依赖的插件如下：\n    \n插件 nonebot_plugin_everyday_en 加载正常：\n    06-20 19:31:20 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:31:20 [INFO] nonebot | Current Env: prod\n    06-20 19:31:20 [ERROR] nonebot | Failed to import \"nonebot_plugin_apscheduler\"\n    Traceback (most recent call last):\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-everyday-en-nonebot_plugin_everyday_en-test/runner.py\", line 15, in <module>\n        plugin = load_plugin(\"nonebot_plugin_everyday_en\")\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-everyday-en-nonebot_plugin_everyday_en-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-everyday-en-nonebot_plugin_everyday_en-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-everyday-en-nonebot_plugin_everyday_en-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-everyday-en-nonebot_plugin_everyday_en-test/.venv/lib/python3.10/site-packages/nonebot_plugin_everyday_en/__init__.py\", line 53, in <module>\n        scheduler = require(\"nonebot_plugin_apscheduler\").scheduler\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-everyday-en-nonebot_plugin_everyday_en-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 174, in require\n        plugin = load_plugin(name)\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-everyday-en-nonebot_plugin_everyday_en-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-everyday-en-nonebot_plugin_everyday_en-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1004, in _find_and_load_unlocked\n    ModuleNotFoundError: No module named 'nonebot_plugin_apscheduler'\n    06-20 19:31:20 [INFO] nonebot_plugin_everyday_en | 未检测到软依赖nonebot_plugin_apscheduler，禁用定时任务功能\n    06-20 19:31:20 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_everyday_en\"",
+    "output": "插件 nonebot-plugin-everyday-en 的信息如下：\n    name         : nonebot-plugin-everyday-en                              \n     version      : 1.1.5                                                   \n     description  : 每日一句英文句子。完整帮助文档，可选搭配软依赖nonebot_plugin_apscheduler实现定时发送 \n    \n    dependencies\n     - aiofiles >=0.7.0\n     - httpx >=0.19.0\n     - nonebot-adapter-onebot >=2.0.0-beta.1\n     - nonebot2 >=2.0.0-beta.1\n插件 nonebot-plugin-everyday-en 依赖的插件如下：\n    \n插件 nonebot_plugin_everyday_en 加载正常：\n    06-21 09:30:06 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:30:06 [INFO] nonebot | Current Env: prod\n    06-21 09:30:06 [ERROR] nonebot | Failed to import \"nonebot_plugin_apscheduler\"\n    Traceback (most recent call last):\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-everyday-en-nonebot_plugin_everyday_en-test/runner.py\", line 15, in <module>\n        plugin = load_plugin(\"nonebot_plugin_everyday_en\")\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-everyday-en-nonebot_plugin_everyday_en-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-everyday-en-nonebot_plugin_everyday_en-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-everyday-en-nonebot_plugin_everyday_en-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-everyday-en-nonebot_plugin_everyday_en-test/.venv/lib/python3.10/site-packages/nonebot_plugin_everyday_en/__init__.py\", line 53, in <module>\n        scheduler = require(\"nonebot_plugin_apscheduler\").scheduler\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-everyday-en-nonebot_plugin_everyday_en-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 174, in require\n        plugin = load_plugin(name)\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-everyday-en-nonebot_plugin_everyday_en-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-everyday-en-nonebot_plugin_everyday_en-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1004, in _find_and_load_unlocked\n    ModuleNotFoundError: No module named 'nonebot_plugin_apscheduler'\n    06-21 09:30:06 [INFO] nonebot_plugin_everyday_en | 未检测到软依赖nonebot_plugin_apscheduler，禁用定时任务功能\n    06-21 09:30:07 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_everyday_en\"",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -2797,11 +2828,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:31:21"
+    "time": "2023-06-21 17:30:07",
+    "version": "1.1.5"
   },
   "nonebot-plugin-fire:nonebot_plugin_fire": {
     "run": true,
-    "output": "插件 nonebot-plugin-fire 的信息如下：\n    name         : nonebot-plugin-fire  \n     version      : 1.0.3                \n     description  : nonebot2 plugin fire \n    \n    dependencies\n     - nonebot-adapter-onebot >=2.0.0b1\n     - nonebot-plugin-apscheduler >=0.1.2\n     - nonebot2 >=2.0.0-beta.2\n插件 nonebot-plugin-fire 依赖的插件如下：\n    nonebot_plugin_apscheduler\n插件 nonebot_plugin_fire 加载正常：\n    06-20 19:31:27 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:31:27 [INFO] nonebot | Current Env: prod\n    06-20 19:31:27 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_apscheduler\"\n    06-20 19:31:27 [INFO] nonebot_plugin_fire | 已检测到软依赖nonebot_plugin_apscheduler, 开启定时任务功能\n    06-20 19:31:27 [ERROR] nonebot_plugin_fire | ValueError:'Config' object has no attribute 'fire_user_id'\n    06-20 19:31:27 [ERROR] nonebot_plugin_fire | 请配置fire_user_id\n    06-20 19:31:27 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_fire\"",
+    "output": "插件 nonebot-plugin-fire 的信息如下：\n    name         : nonebot-plugin-fire  \n     version      : 1.0.3                \n     description  : nonebot2 plugin fire \n    \n    dependencies\n     - nonebot-adapter-onebot >=2.0.0b1\n     - nonebot-plugin-apscheduler >=0.1.2\n     - nonebot2 >=2.0.0-beta.2\n插件 nonebot-plugin-fire 依赖的插件如下：\n    nonebot_plugin_apscheduler\n插件 nonebot_plugin_fire 加载正常：\n    06-21 09:30:16 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:30:16 [INFO] nonebot | Current Env: prod\n    06-21 09:30:16 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_apscheduler\"\n    06-21 09:30:16 [INFO] nonebot_plugin_fire | 已检测到软依赖nonebot_plugin_apscheduler, 开启定时任务功能\n    06-21 09:30:16 [ERROR] nonebot_plugin_fire | ValueError:'Config' object has no attribute 'fire_user_id'\n    06-21 09:30:16 [ERROR] nonebot_plugin_fire | 请配置fire_user_id\n    06-21 09:30:16 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_fire\"",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -2819,11 +2851,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:31:27"
+    "time": "2023-06-21 17:30:16",
+    "version": "1.0.3"
   },
   "nonebot-plugin-qrcode:nonebot_plugin_qrcode": {
     "run": false,
-    "output": "插件 nonebot-plugin-qrcode 的信息如下：\n    name         : nonebot-plugin-qrcode \n     version      : 0.0.6                 \n     description  : qq聊天二维码插件             \n    \n    dependencies\n     - httpx >=0.18.0,<1.0.0\n     - nonebot-adapter-onebot >=2.0.0.beta.1,<3.0.0\n     - nonebot2 >=2.0.0.beta.1,<3.0.0\n     - pillow >=8\n     - pyzbar-x >=0.2.1,<0.3.0\n     - qrcode >=7.0,<8.0\n插件 nonebot-plugin-qrcode 依赖的插件如下：\n    \n插件 nonebot_plugin_qrcode 加载出错：\n    06-20 19:31:33 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:31:33 [INFO] nonebot | Current Env: prod\n    06-20 19:31:33 [ERROR] nonebot | Failed to import \"nonebot_plugin_qrcode\"\n    Traceback (most recent call last):\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-qrcode-nonebot_plugin_qrcode-test/runner.py\", line 15, in <module>\n        plugin = load_plugin(\"nonebot_plugin_qrcode\")\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-qrcode-nonebot_plugin_qrcode-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-qrcode-nonebot_plugin_qrcode-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-qrcode-nonebot_plugin_qrcode-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-qrcode-nonebot_plugin_qrcode-test/.venv/lib/python3.10/site-packages/nonebot_plugin_qrcode/__init__.py\", line 17, in <module>\n        from pyzbar.pyzbar import decode\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-qrcode-nonebot_plugin_qrcode-test/.venv/lib/python3.10/site-packages/pyzbar/pyzbar.py\", line 7, in <module>\n        from .wrapper import (\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-qrcode-nonebot_plugin_qrcode-test/.venv/lib/python3.10/site-packages/pyzbar/wrapper.py\", line 149, in <module>\n        zbar_version = zbar_function(\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-qrcode-nonebot_plugin_qrcode-test/.venv/lib/python3.10/site-packages/pyzbar/wrapper.py\", line 146, in zbar_function\n        return prototype((fname, load_libzbar()))\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-qrcode-nonebot_plugin_qrcode-test/.venv/lib/python3.10/site-packages/pyzbar/wrapper.py\", line 125, in load_libzbar\n        libzbar, dependencies = zbar_library.load()\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-qrcode-nonebot_plugin_qrcode-test/.venv/lib/python3.10/site-packages/pyzbar/zbar_library.py\", line 65, in load\n        raise ImportError('Unable to find zbar shared library')\n    ImportError: Unable to find zbar shared library",
+    "output": "插件 nonebot-plugin-qrcode 的信息如下：\n    name         : nonebot-plugin-qrcode \n     version      : 0.0.6                 \n     description  : qq聊天二维码插件             \n    \n    dependencies\n     - httpx >=0.18.0,<1.0.0\n     - nonebot-adapter-onebot >=2.0.0.beta.1,<3.0.0\n     - nonebot2 >=2.0.0.beta.1,<3.0.0\n     - pillow >=8\n     - pyzbar-x >=0.2.1,<0.3.0\n     - qrcode >=7.0,<8.0\n插件 nonebot-plugin-qrcode 依赖的插件如下：\n    \n插件 nonebot_plugin_qrcode 加载出错：\n    06-21 09:30:25 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:30:25 [INFO] nonebot | Current Env: prod\n    06-21 09:30:25 [ERROR] nonebot | Failed to import \"nonebot_plugin_qrcode\"\n    Traceback (most recent call last):\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-qrcode-nonebot_plugin_qrcode-test/runner.py\", line 15, in <module>\n        plugin = load_plugin(\"nonebot_plugin_qrcode\")\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-qrcode-nonebot_plugin_qrcode-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-qrcode-nonebot_plugin_qrcode-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-qrcode-nonebot_plugin_qrcode-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-qrcode-nonebot_plugin_qrcode-test/.venv/lib/python3.10/site-packages/nonebot_plugin_qrcode/__init__.py\", line 17, in <module>\n        from pyzbar.pyzbar import decode\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-qrcode-nonebot_plugin_qrcode-test/.venv/lib/python3.10/site-packages/pyzbar/pyzbar.py\", line 7, in <module>\n        from .wrapper import (\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-qrcode-nonebot_plugin_qrcode-test/.venv/lib/python3.10/site-packages/pyzbar/wrapper.py\", line 149, in <module>\n        zbar_version = zbar_function(\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-qrcode-nonebot_plugin_qrcode-test/.venv/lib/python3.10/site-packages/pyzbar/wrapper.py\", line 146, in zbar_function\n        return prototype((fname, load_libzbar()))\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-qrcode-nonebot_plugin_qrcode-test/.venv/lib/python3.10/site-packages/pyzbar/wrapper.py\", line 125, in load_libzbar\n        libzbar, dependencies = zbar_library.load()\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-qrcode-nonebot_plugin_qrcode-test/.venv/lib/python3.10/site-packages/pyzbar/zbar_library.py\", line 65, in load\n        raise ImportError('Unable to find zbar shared library')\n    ImportError: Unable to find zbar shared library",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -2850,11 +2883,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:31:34"
+    "time": "2023-06-21 17:30:25",
+    "version": "0.0.6"
   },
   "nonebot-plugin-ygo:nonebot_plugin_ygo": {
     "run": true,
-    "output": "插件 nonebot-plugin-ygo 的信息如下：\n    name         : nonebot-plugin-ygo \n     version      : 1.0.2              \n     description  : nonebot的游戏王卡查插件    \n    \n    dependencies\n     - aiohttp *\n     - nonebot-adapter-onebot >=2.0.0-beta.1,<3.0.0\n     - nonebot2 >=2.0.0-beta.1,<3.0.0\n插件 nonebot-plugin-ygo 依赖的插件如下：\n    \n插件 nonebot_plugin_ygo 加载正常：\n    06-20 19:31:39 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:31:39 [INFO] nonebot | Current Env: prod\n    06-20 19:31:40 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_ygo\"",
+    "output": "插件 nonebot-plugin-ygo 的信息如下：\n    name         : nonebot-plugin-ygo \n     version      : 1.0.2              \n     description  : nonebot的游戏王卡查插件    \n    \n    dependencies\n     - aiohttp *\n     - nonebot-adapter-onebot >=2.0.0-beta.1,<3.0.0\n     - nonebot2 >=2.0.0-beta.1,<3.0.0\n插件 nonebot-plugin-ygo 依赖的插件如下：\n    \n插件 nonebot_plugin_ygo 加载正常：\n    06-21 09:30:33 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:30:33 [INFO] nonebot | Current Env: prod\n    06-21 09:30:33 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_ygo\"",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -2885,11 +2919,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:31:40"
+    "time": "2023-06-21 17:30:33",
+    "version": "1.0.2"
   },
   "nonebot-plugin-bilibilibot:nonebot_plugin_bilibilibot": {
     "run": true,
-    "output": "插件 nonebot-plugin-bilibilibot 的信息如下：\n    name         : nonebot-plugin-bilibilibot                       \n     version      : 2.3.2                                            \n     description  : 基于Nonebot的bilibili通知插件，可将up主，主播以及番剧的更新/直播动态推送到QQ \n    \n    dependencies\n     - httpx *\n     - nonebot-adapter-onebot *\n     - nonebot-plugin-apscheduler *\n插件 nonebot-plugin-bilibilibot 依赖的插件如下：\n    nonebot_plugin_apscheduler\n插件 nonebot_plugin_bilibilibot 加载正常：\n    06-20 19:31:46 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:31:46 [INFO] nonebot | Current Env: prod\n    06-20 19:31:47 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_apscheduler\"\n    06-20 19:31:47 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_bilibilibot\"",
+    "output": "插件 nonebot-plugin-bilibilibot 的信息如下：\n    name         : nonebot-plugin-bilibilibot                       \n     version      : 2.3.2                                            \n     description  : 基于Nonebot的bilibili通知插件，可将up主，主播以及番剧的更新/直播动态推送到QQ \n    \n    dependencies\n     - httpx *\n     - nonebot-adapter-onebot *\n     - nonebot-plugin-apscheduler *\n插件 nonebot-plugin-bilibilibot 依赖的插件如下：\n    nonebot_plugin_apscheduler\n插件 nonebot_plugin_bilibilibot 加载正常：\n    06-21 09:30:42 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:30:42 [INFO] nonebot | Current Env: prod\n    06-21 09:30:43 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_apscheduler\"\n    06-21 09:30:43 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_bilibilibot\"",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -2916,11 +2951,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:31:47"
+    "time": "2023-06-21 17:30:43",
+    "version": "2.3.2"
   },
   "nonebot-plugin-color:nonebot_plugin_color": {
     "run": true,
-    "output": "插件 nonebot-plugin-color 的信息如下：\n    name         : nonebot-plugin-color                           \n     version      : 0.1.1                                          \n     description  : A specified color image generator for Nonebot2 \n    \n    dependencies\n     - nonebot-adapter-onebot >=2.0.0b1\n     - nonebot2 >=2.0.0a14\n     - Pillow >=8.2.0\n插件 nonebot-plugin-color 依赖的插件如下：\n    \n插件 nonebot_plugin_color 加载正常：\n    06-20 19:31:52 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:31:52 [INFO] nonebot | Current Env: prod\n    06-20 19:31:53 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_color\"",
+    "output": "插件 nonebot-plugin-color 的信息如下：\n    name         : nonebot-plugin-color                           \n     version      : 0.1.1                                          \n     description  : A specified color image generator for Nonebot2 \n    \n    dependencies\n     - nonebot-adapter-onebot >=2.0.0b1\n     - nonebot2 >=2.0.0a14\n     - Pillow >=8.2.0\n插件 nonebot-plugin-color 依赖的插件如下：\n    \n插件 nonebot_plugin_color 加载正常：\n    06-21 09:30:51 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:30:51 [INFO] nonebot | Current Env: prod\n    06-21 09:30:51 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_color\"",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -2943,11 +2979,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:31:53"
+    "time": "2023-06-21 17:30:51",
+    "version": "0.1.1"
   },
   "nonebot-plugin-blackjack:nonebot_plugin_blackjack": {
     "run": true,
-    "output": "插件 nonebot-plugin-blackjack 的信息如下：\n    name         : nonebot-plugin-blackjack \n     version      : 0.0.5                    \n     description  : nonebot2 21点插件           \n    \n    dependencies\n     - httpx >=0.19.0\n     - nonebot-adapter-onebot >=2.0.0-beta.1,<3.0.0\n     - nonebot2 >=2.0.0-beta.1,<3.0.0\n插件 nonebot-plugin-blackjack 依赖的插件如下：\n    \n插件 nonebot_plugin_blackjack 加载正常：\n    06-20 19:31:58 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:31:58 [INFO] nonebot | Current Env: prod\n    06-20 19:31:58 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_blackjack\"",
+    "output": "插件 nonebot-plugin-blackjack 的信息如下：\n    name         : nonebot-plugin-blackjack \n     version      : 0.0.5                    \n     description  : nonebot2 21点插件           \n    \n    dependencies\n     - httpx >=0.19.0\n     - nonebot-adapter-onebot >=2.0.0-beta.1,<3.0.0\n     - nonebot2 >=2.0.0-beta.1,<3.0.0\n插件 nonebot-plugin-blackjack 依赖的插件如下：\n    \n插件 nonebot_plugin_blackjack 加载正常：\n    06-21 09:30:58 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:30:58 [INFO] nonebot | Current Env: prod\n    06-21 09:30:59 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_blackjack\"",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -2965,11 +3002,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:31:58"
+    "time": "2023-06-21 17:30:59",
+    "version": "0.0.5"
   },
   "nonebot-plugin-arcaeabot:nonebot_plugin_arcaeabot": {
     "run": false,
-    "output": "插件 nonebot-plugin-arcaeabot 的信息如下：\n    name         : nonebot-plugin-arcaeabot                                                        \n     version      : 3.1.19                                                                          \n     description  : An arcaea plugin for nonebot2. ( A cross platform Python async bot framework. ) \n    \n    dependencies\n     - httpx >=0.20.0,<1.0.0\n     - nonebot-adapter-onebot >=2.1.1,<3.0.0\n     - nonebot2 >=2.0.0-beta.4,<3.0.0\n     - peewee >=3.14.4\n     - Pillow >=9.3.0\n     - ruamel.yaml >=0.17.2,<0.18.0\n     - tqdm >=4.1.0,<5.0.0\n插件 nonebot-plugin-arcaeabot 依赖的插件如下：\n    \n插件 nonebot_plugin_arcaeabot 加载出错：\n    06-20 19:32:22 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:32:22 [INFO] nonebot | Current Env: prod\n    06-20 19:32:22 [INFO] nonebot_plugin_arcaeabot | 创建数据库于 /home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-arcaeabot-nonebot_plugin_arcaeabot-test/data/arcaea/user_data.db\n    06-20 19:32:22 [ERROR] nonebot | Failed to import \"nonebot_plugin_arcaeabot\"\n    Traceback (most recent call last):\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-arcaeabot-nonebot_plugin_arcaeabot-test/runner.py\", line 15, in <module>\n        plugin = load_plugin(\"nonebot_plugin_arcaeabot\")\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-arcaeabot-nonebot_plugin_arcaeabot-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-arcaeabot-nonebot_plugin_arcaeabot-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-arcaeabot-nonebot_plugin_arcaeabot-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-arcaeabot-nonebot_plugin_arcaeabot-test/.venv/lib/python3.10/site-packages/nonebot_plugin_arcaeabot/__init__.py\", line 2, in <module>\n        from .handler import (\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-arcaeabot-nonebot_plugin_arcaeabot-test/.venv/lib/python3.10/site-packages/nonebot_plugin_arcaeabot/handler/__init__.py\", line 13, in <module>\n        from .ai import (\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-arcaeabot-nonebot_plugin_arcaeabot-test/.venv/lib/python3.10/site-packages/nonebot_plugin_arcaeabot/handler/ai.py\", line 11, in <module>\n        from apscheduler.schedulers.background import BackgroundScheduler\n    ModuleNotFoundError: No module named 'apscheduler'",
+    "output": "插件 nonebot-plugin-arcaeabot 的信息如下：\n    name         : nonebot-plugin-arcaeabot                                                        \n     version      : 3.1.19                                                                          \n     description  : An arcaea plugin for nonebot2. ( A cross platform Python async bot framework. ) \n    \n    dependencies\n     - httpx >=0.20.0,<1.0.0\n     - nonebot-adapter-onebot >=2.1.1,<3.0.0\n     - nonebot2 >=2.0.0-beta.4,<3.0.0\n     - peewee >=3.14.4\n     - Pillow >=9.3.0\n     - ruamel.yaml >=0.17.2,<0.18.0\n     - tqdm >=4.1.0,<5.0.0\n插件 nonebot-plugin-arcaeabot 依赖的插件如下：\n    \n插件 nonebot_plugin_arcaeabot 加载出错：\n    06-21 09:31:32 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:31:32 [INFO] nonebot | Current Env: prod\n    06-21 09:31:32 [INFO] nonebot_plugin_arcaeabot | 创建数据库于 /home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-arcaeabot-nonebot_plugin_arcaeabot-test/data/arcaea/user_data.db\n    06-21 09:31:32 [ERROR] nonebot | Failed to import \"nonebot_plugin_arcaeabot\"\n    Traceback (most recent call last):\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-arcaeabot-nonebot_plugin_arcaeabot-test/runner.py\", line 15, in <module>\n        plugin = load_plugin(\"nonebot_plugin_arcaeabot\")\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-arcaeabot-nonebot_plugin_arcaeabot-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-arcaeabot-nonebot_plugin_arcaeabot-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-arcaeabot-nonebot_plugin_arcaeabot-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-arcaeabot-nonebot_plugin_arcaeabot-test/.venv/lib/python3.10/site-packages/nonebot_plugin_arcaeabot/__init__.py\", line 2, in <module>\n        from .handler import (\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-arcaeabot-nonebot_plugin_arcaeabot-test/.venv/lib/python3.10/site-packages/nonebot_plugin_arcaeabot/handler/__init__.py\", line 13, in <module>\n        from .ai import (\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-arcaeabot-nonebot_plugin_arcaeabot-test/.venv/lib/python3.10/site-packages/nonebot_plugin_arcaeabot/handler/ai.py\", line 11, in <module>\n        from apscheduler.schedulers.background import BackgroundScheduler\n    ModuleNotFoundError: No module named 'apscheduler'",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -2996,32 +3034,45 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:32:22"
+    "time": "2023-06-21 17:31:33",
+    "version": "3.1.19"
   },
   "nonebot-plugin-ddcheck:nonebot_plugin_ddcheck": {
     "run": true,
-    "output": "插件 nonebot-plugin-ddcheck 的信息如下：\n    name         : nonebot-plugin-ddcheck \n     version      : 0.2.2                  \n     description  : Nonebot2 成分姬插件         \n    \n    dependencies\n     - httpx >=0.19.0\n     - Jinja2 >=3.0.0,<4.0.0\n     - nonebot-adapter-onebot >=2.2.0,<3.0.0\n     - nonebot-plugin-apscheduler >=0.2.0,<0.3.0\n     - nonebot-plugin-htmlrender >=0.0.4\n     - nonebot-plugin-localstore >=0.4.0,<0.5.0\n     - nonebot2 >=2.0.0-rc.1,<3.0.0\n插件 nonebot-plugin-ddcheck 依赖的插件如下：\n    nonebot_plugin_apscheduler, nonebot_plugin_htmlrender, nonebot_plugin_localstore\n插件 nonebot_plugin_ddcheck 加载正常：\n    06-20 19:32:32 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:32:32 [INFO] nonebot | Current Env: prod\n    06-20 19:32:32 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_apscheduler\"\n    06-20 19:32:32 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_htmlrender\"\n    06-20 19:32:32 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_localstore\"\n    06-20 19:32:32 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_ddcheck\"",
-    "valid": false,
+    "output": "插件 nonebot-plugin-ddcheck 的信息如下：\n    name         : nonebot-plugin-ddcheck \n     version      : 0.3.0                  \n     description  : Nonebot2 成分姬插件         \n    \n    dependencies\n     - httpx >=0.19.0,<1.0.0\n     - Jinja2 >=3.0.0,<4.0.0\n     - nonebot-plugin-apscheduler >=0.3.0,<0.4.0\n     - nonebot-plugin-htmlrender >=0.2.0,<0.3.0\n     - nonebot-plugin-localstore >=0.5.0,<0.6.0\n     - nonebot-plugin-send-anything-anywhere >=0.2.7,<0.3.0\n     - nonebot2 >=2.0.0,<3.0.0\n插件 nonebot-plugin-ddcheck 依赖的插件如下：\n    nonebot_plugin_apscheduler, nonebot_plugin_htmlrender, nonebot_plugin_localstore, nonebot_plugin_saa\n插件 nonebot_plugin_ddcheck 加载正常：\n    06-21 09:31:45 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:31:45 [INFO] nonebot | Current Env: prod\n    06-21 09:31:45 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_apscheduler\"\n    06-21 09:31:46 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_htmlrender\"\n    06-21 09:31:46 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_localstore\"\n    06-21 09:31:46 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_saa\"\n    06-21 09:31:46 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_ddcheck\"",
+    "valid": true,
     "metadata": {
       "name": "成分姬",
       "description": "查询B站用户关注的VTuber成分",
       "usage": "查成分 B站用户名/UID",
-      "type": null,
-      "homepage": null,
-      "supported_adapters": null
+      "type": "application",
+      "homepage": "https://github.com/noneplugin/nonebot-plugin-ddcheck",
+      "supported_adapters": [
+        "~qqguild",
+        "~telegram",
+        "~kaiheila",
+        "~onebot.v11",
+        "~onebot.v12"
+      ]
     },
-    "validation_message": "2 validation errors for PluginPublishInfo\nhomepage\n  none is not an allowed value (type=type_error.none.not_allowed)\ntype\n  ⚠️ 插件类型不能为空。<dt>请确保填写插件类型。</dt> (type=value_error)",
+    "validation_message": "",
     "validation_raw_data": {
       "module_name": "nonebot_plugin_ddcheck",
       "project_link": "nonebot-plugin-ddcheck",
       "name": "成分姬",
       "desc": "查询B站用户关注的VTuber成分",
       "author": "MeetWq",
-      "homepage": null,
+      "homepage": "https://github.com/noneplugin/nonebot-plugin-ddcheck",
       "tags": "[{\"label\": \"a:onebot\", \"color\": \"#000000\"}]",
       "plugin_test_result": true,
-      "type": null,
-      "supported_adapters": null
+      "type": "application",
+      "supported_adapters": [
+        "~qqguild",
+        "~telegram",
+        "~kaiheila",
+        "~onebot.v11",
+        "~onebot.v12"
+      ]
     },
     "previous": {
       "module_name": "nonebot_plugin_ddcheck",
@@ -3040,12 +3091,35 @@
       "type": null,
       "supported_adapters": null
     },
-    "current": null,
-    "time": "2023-06-21 03:32:33"
+    "current": {
+      "module_name": "nonebot_plugin_ddcheck",
+      "project_link": "nonebot-plugin-ddcheck",
+      "name": "成分姬",
+      "desc": "查询B站用户关注的VTuber成分",
+      "author": "MeetWq",
+      "homepage": "https://github.com/noneplugin/nonebot-plugin-ddcheck",
+      "tags": [
+        {
+          "label": "a:onebot",
+          "color": "#000000"
+        }
+      ],
+      "is_official": false,
+      "type": "application",
+      "supported_adapters": [
+        "nonebot.adapters.onebot.v12",
+        "nonebot.adapters.onebot.v11",
+        "nonebot.adapters.telegram",
+        "nonebot.adapters.qqguild",
+        "nonebot.adapters.kaiheila"
+      ]
+    },
+    "time": "2023-06-21 17:31:47",
+    "version": "0.3.0"
   },
   "nonebot-plugin-leetcode2:nonebot_plugin_leetcode2": {
     "run": false,
-    "output": "插件 nonebot-plugin-leetcode2 的信息如下：\n    name         : nonebot-plugin-leetcode2 \n     version      : 1.1.3                    \n     description  : 基于nonebot2的leetcode查询插件。 \n    \n    dependencies\n     - httpx >=0.20.0\n     - nonebot-adapter-onebot >=2.0.0-beta.1\n     - nonebot-plugin-apscheduler >=0.1.2\n     - nonebot-plugin-htmlrender >=0.2.0.1\n     - nonebot2 >=2.0.0-beta.2\n插件 nonebot-plugin-leetcode2 依赖的插件如下：\n    nonebot_plugin_apscheduler, nonebot_plugin_htmlrender\n插件 nonebot_plugin_leetcode2 加载出错：\n    06-20 19:32:42 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:32:42 [INFO] nonebot | Current Env: prod\n    06-20 19:32:43 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_apscheduler\"\n    06-20 19:32:43 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_leetcode2\"\n    06-20 19:32:43 [ERROR] nonebot | Failed to import \"nonebot_plugin_htmlrender\"\n    Traceback (most recent call last):\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-leetcode2-nonebot_plugin_leetcode2-test/runner.py\", line 31, in <module>\n        require('nonebot_plugin_htmlrender')\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-leetcode2-nonebot_plugin_leetcode2-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 174, in require\n        plugin = load_plugin(name)\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-leetcode2-nonebot_plugin_leetcode2-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-leetcode2-nonebot_plugin_leetcode2-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 154, in load_plugin\n        raise RuntimeError(\n    RuntimeError: Module nonebot_plugin_htmlrender is not loaded as a plugin! Make sure not to import it before loading.\n    Traceback (most recent call last):\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-leetcode2-nonebot_plugin_leetcode2-test/runner.py\", line 31, in <module>\n        require('nonebot_plugin_htmlrender')\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-leetcode2-nonebot_plugin_leetcode2-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 178, in require\n        raise RuntimeError(f'Cannot load plugin \"{name}\"!')\n    RuntimeError: Cannot load plugin \"nonebot_plugin_htmlrender\"!",
+    "output": "插件 nonebot-plugin-leetcode2 的信息如下：\n    name         : nonebot-plugin-leetcode2 \n     version      : 1.1.3                    \n     description  : 基于nonebot2的leetcode查询插件。 \n    \n    dependencies\n     - httpx >=0.20.0\n     - nonebot-adapter-onebot >=2.0.0-beta.1\n     - nonebot-plugin-apscheduler >=0.1.2\n     - nonebot-plugin-htmlrender >=0.2.0.1\n     - nonebot2 >=2.0.0-beta.2\n插件 nonebot-plugin-leetcode2 依赖的插件如下：\n    nonebot_plugin_apscheduler, nonebot_plugin_htmlrender\n插件 nonebot_plugin_leetcode2 加载出错：\n    06-21 09:32:00 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:32:00 [INFO] nonebot | Current Env: prod\n    06-21 09:32:01 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_apscheduler\"\n    06-21 09:32:01 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_leetcode2\"\n    06-21 09:32:01 [ERROR] nonebot | Failed to import \"nonebot_plugin_htmlrender\"\n    Traceback (most recent call last):\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-leetcode2-nonebot_plugin_leetcode2-test/runner.py\", line 31, in <module>\n        require('nonebot_plugin_htmlrender')\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-leetcode2-nonebot_plugin_leetcode2-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 174, in require\n        plugin = load_plugin(name)\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-leetcode2-nonebot_plugin_leetcode2-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-leetcode2-nonebot_plugin_leetcode2-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 154, in load_plugin\n        raise RuntimeError(\n    RuntimeError: Module nonebot_plugin_htmlrender is not loaded as a plugin! Make sure not to import it before loading.\n    Traceback (most recent call last):\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-leetcode2-nonebot_plugin_leetcode2-test/runner.py\", line 31, in <module>\n        require('nonebot_plugin_htmlrender')\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-leetcode2-nonebot_plugin_leetcode2-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 178, in require\n        raise RuntimeError(f'Cannot load plugin \"{name}\"!')\n    RuntimeError: Cannot load plugin \"nonebot_plugin_htmlrender\"!",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -3063,11 +3137,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:32:43"
+    "time": "2023-06-21 17:32:02",
+    "version": "1.1.3"
   },
   "nonebot-plugin-hikarisearch:nonebot_plugin_hikarisearch": {
     "run": true,
-    "output": "插件 nonebot-plugin-hikarisearch 的信息如下：\n    name         : nonebot-plugin-hikarisearch        \n     version      : 0.1.7                              \n     description  : 基于 HikariSearch 的又一个 Nonebot2 搜图插件 \n    \n    dependencies\n     - httpx >=0.19.0\n     - nonebot-adapter-onebot >=2.0.0-beta.1,<3.0.0\n     - nonebot2 >=2.0.0-beta.4,<3.0.0\n插件 nonebot-plugin-hikarisearch 依赖的插件如下：\n    \n插件 nonebot_plugin_hikarisearch 加载正常：\n    06-20 19:32:49 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:32:49 [INFO] nonebot | Current Env: prod\n    06-20 19:32:49 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_hikarisearch\"",
+    "output": "插件 nonebot-plugin-hikarisearch 的信息如下：\n    name         : nonebot-plugin-hikarisearch        \n     version      : 0.1.7                              \n     description  : 基于 HikariSearch 的又一个 Nonebot2 搜图插件 \n    \n    dependencies\n     - httpx >=0.19.0\n     - nonebot-adapter-onebot >=2.0.0-beta.1,<3.0.0\n     - nonebot2 >=2.0.0-beta.4,<3.0.0\n插件 nonebot-plugin-hikarisearch 依赖的插件如下：\n    \n插件 nonebot_plugin_hikarisearch 加载正常：\n    06-21 09:32:09 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:32:09 [INFO] nonebot | Current Env: prod\n    06-21 09:32:10 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_hikarisearch\"",
     "valid": false,
     "metadata": {
       "name": "搜图",
@@ -3108,11 +3183,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:32:49"
+    "time": "2023-06-21 17:32:10",
+    "version": "0.1.7"
   },
   "nonebot-plugin-mediawiki:nonebot_plugin_mediawiki": {
     "run": true,
-    "output": "插件 nonebot-plugin-mediawiki 的信息如下：\n    name         : nonebot-plugin-mediawiki \n     version      : 1.0.1                    \n     description  : nonebot2 mediawiki 查询插件  \n    \n    dependencies\n     - aiohttp >=3.7.4.post0\n     - beautifulsoup4 >=4.11.1,<5.0.0\n     - nonebot-adapter-onebot >=2.1.3,<2.2.0\n     - nonebot2 >=2.0.0b5,<2.1.0\n插件 nonebot-plugin-mediawiki 依赖的插件如下：\n    \n插件 nonebot_plugin_mediawiki 加载正常：\n    06-20 19:32:55 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:32:55 [INFO] nonebot | Current Env: prod\n    06-20 19:32:56 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_mediawiki\"",
+    "output": "插件 nonebot-plugin-mediawiki 的信息如下：\n    name         : nonebot-plugin-mediawiki \n     version      : 1.0.1                    \n     description  : nonebot2 mediawiki 查询插件  \n    \n    dependencies\n     - aiohttp >=3.7.4.post0\n     - beautifulsoup4 >=4.11.1,<5.0.0\n     - nonebot-adapter-onebot >=2.1.3,<2.2.0\n     - nonebot2 >=2.0.0b5,<2.1.0\n插件 nonebot-plugin-mediawiki 依赖的插件如下：\n    \n插件 nonebot_plugin_mediawiki 加载正常：\n    06-21 09:32:18 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:32:18 [INFO] nonebot | Current Env: prod\n    06-21 09:32:19 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_mediawiki\"",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -3139,32 +3215,45 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:32:56"
+    "time": "2023-06-21 17:32:19",
+    "version": "1.0.1"
   },
   "nonebot-plugin-wordle:nonebot_plugin_wordle": {
     "run": true,
-    "output": "插件 nonebot-plugin-wordle 的信息如下：\n    name         : nonebot-plugin-wordle \n     version      : 0.2.1                 \n     description  : Nonebot2 wordle猜单词插件  \n    \n    dependencies\n     - nonebot-adapter-onebot >=2.2.0,<3.0.0\n     - nonebot2 >=2.0.0-rc.1,<3.0.0\n     - Pillow >=9.0.0,<10.0.0\n     - pyspellchecker >=0.7.0,<0.8.0\n插件 nonebot-plugin-wordle 依赖的插件如下：\n    \n插件 nonebot_plugin_wordle 加载正常：\n    06-20 19:33:03 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:33:03 [INFO] nonebot | Current Env: prod\n    06-20 19:33:03 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_wordle\"",
-    "valid": false,
+    "output": "插件 nonebot-plugin-wordle 的信息如下：\n    name         : nonebot-plugin-wordle \n     version      : 0.3.1                 \n     description  : Nonebot2 wordle猜单词插件  \n    \n    dependencies\n     - nonebot-plugin-send-anything-anywhere >=0.2.7,<0.3.0\n     - nonebot-plugin-session >=0.0.5,<0.1.0\n     - nonebot2 >=2.0.0,<3.0.0\n     - Pillow >=9.0.0,<10.0.0\n     - pyspellchecker >=0.7.0,<0.8.0\n插件 nonebot-plugin-wordle 依赖的插件如下：\n    nonebot_plugin_saa, nonebot_plugin_session\n插件 nonebot_plugin_wordle 加载正常：\n    06-21 09:32:28 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:32:28 [INFO] nonebot | Current Env: prod\n    06-21 09:32:28 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_saa\"\n    06-21 09:32:28 [ERROR] nonebot | Failed to import \"nonebot_plugin_datastore\"\n    Traceback (most recent call last):\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-wordle-nonebot_plugin_wordle-test/runner.py\", line 15, in <module>\n        plugin = load_plugin(\"nonebot_plugin_wordle\")\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-wordle-nonebot_plugin_wordle-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-wordle-nonebot_plugin_wordle-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-wordle-nonebot_plugin_wordle-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-wordle-nonebot_plugin_wordle-test/.venv/lib/python3.10/site-packages/nonebot_plugin_wordle/__init__.py\", line 25, in <module>\n        require(\"nonebot_plugin_session\")\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-wordle-nonebot_plugin_wordle-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 174, in require\n        plugin = load_plugin(name)\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-wordle-nonebot_plugin_wordle-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-wordle-nonebot_plugin_wordle-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-wordle-nonebot_plugin_wordle-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-wordle-nonebot_plugin_wordle-test/.venv/lib/python3.10/site-packages/nonebot_plugin_session/__init__.py\", line 3, in <module>\n        from . import adapters, model, saa\n      File \"<frozen importlib._bootstrap>\", line 1078, in _handle_fromlist\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n      File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-wordle-nonebot_plugin_wordle-test/.venv/lib/python3.10/site-packages/nonebot_plugin_session/model.py\", line 8, in <module>\n        require(\"nonebot_plugin_datastore\")\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-wordle-nonebot_plugin_wordle-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 174, in require\n        plugin = load_plugin(name)\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-wordle-nonebot_plugin_wordle-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-wordle-nonebot_plugin_wordle-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1004, in _find_and_load_unlocked\n    ModuleNotFoundError: No module named 'nonebot_plugin_datastore'\n    06-21 09:32:28 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_session\"\n    06-21 09:32:29 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_wordle\"",
+    "valid": true,
     "metadata": {
       "name": "猜单词",
       "description": "wordle猜单词游戏",
       "usage": "@我 + “猜单词”开始游戏；\n答案为指定长度单词，发送对应长度单词即可；\n绿色块代表此单词中有此字母且位置正确；\n黄色块代表此单词中有此字母，但该字母所处位置不对；\n灰色块代表此单词中没有此字母；\n猜出单词或用光次数则游戏结束；\n发送“结束”结束游戏；发送“提示”查看提示；\n可使用 -l/--length 指定单词长度，默认为5；\n可使用 -d/--dic 指定词典，默认为CET4\n支持的词典：CET6、GMAT、考研、SAT、CET4、专八、专四、GRE、IELTS、TOEFL",
-      "type": null,
-      "homepage": null,
-      "supported_adapters": null
+      "type": "application",
+      "homepage": "https://github.com/noneplugin/nonebot-plugin-wordle",
+      "supported_adapters": [
+        "~onebot.v11",
+        "~kaiheila",
+        "~qqguild",
+        "~onebot.v12",
+        "~telegram"
+      ]
     },
-    "validation_message": "2 validation errors for PluginPublishInfo\nhomepage\n  none is not an allowed value (type=type_error.none.not_allowed)\ntype\n  ⚠️ 插件类型不能为空。<dt>请确保填写插件类型。</dt> (type=value_error)",
+    "validation_message": "",
     "validation_raw_data": {
       "module_name": "nonebot_plugin_wordle",
       "project_link": "nonebot-plugin-wordle",
       "name": "猜单词",
       "desc": "wordle猜单词游戏",
       "author": "MeetWq",
-      "homepage": null,
+      "homepage": "https://github.com/noneplugin/nonebot-plugin-wordle",
       "tags": "[{\"label\": \"a:onebot\", \"color\": \"#000000\"}]",
       "plugin_test_result": true,
-      "type": null,
-      "supported_adapters": null
+      "type": "application",
+      "supported_adapters": [
+        "~onebot.v11",
+        "~kaiheila",
+        "~qqguild",
+        "~onebot.v12",
+        "~telegram"
+      ]
     },
     "previous": {
       "module_name": "nonebot_plugin_wordle",
@@ -3183,12 +3272,35 @@
       "type": null,
       "supported_adapters": null
     },
-    "current": null,
-    "time": "2023-06-21 03:33:03"
+    "current": {
+      "module_name": "nonebot_plugin_wordle",
+      "project_link": "nonebot-plugin-wordle",
+      "name": "猜单词",
+      "desc": "wordle猜单词游戏",
+      "author": "MeetWq",
+      "homepage": "https://github.com/noneplugin/nonebot-plugin-wordle",
+      "tags": [
+        {
+          "label": "a:onebot",
+          "color": "#000000"
+        }
+      ],
+      "is_official": false,
+      "type": "application",
+      "supported_adapters": [
+        "nonebot.adapters.onebot.v12",
+        "nonebot.adapters.telegram",
+        "nonebot.adapters.kaiheila",
+        "nonebot.adapters.qqguild",
+        "nonebot.adapters.onebot.v11"
+      ]
+    },
+    "time": "2023-06-21 17:32:30",
+    "version": "0.3.1"
   },
   "nonebot-plugin-giyf:nonebot_plugin_giyf": {
     "run": true,
-    "output": "插件 nonebot-plugin-giyf 的信息如下：\n    name         : nonebot-plugin-giyf   \n     version      : 0.1.3                 \n     description  : nonebot2 群聊快速生成搜索引擎链接 \n    \n    dependencies\n     - nonebot-adapter-onebot >=2.1.0,<2.2.0\n     - nonebot2 >=2.0.0b2,<2.1.0\n插件 nonebot-plugin-giyf 依赖的插件如下：\n    \n插件 nonebot_plugin_giyf 加载正常：\n    06-20 19:33:09 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:33:09 [INFO] nonebot | Current Env: prod\n    06-20 19:33:09 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_giyf\"",
+    "output": "插件 nonebot-plugin-giyf 的信息如下：\n    name         : nonebot-plugin-giyf   \n     version      : 0.1.3                 \n     description  : nonebot2 群聊快速生成搜索引擎链接 \n    \n    dependencies\n     - nonebot-adapter-onebot >=2.1.0,<2.2.0\n     - nonebot2 >=2.0.0b2,<2.1.0\n插件 nonebot-plugin-giyf 依赖的插件如下：\n    \n插件 nonebot_plugin_giyf 加载正常：\n    06-21 09:32:37 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:32:37 [INFO] nonebot | Current Env: prod\n    06-21 09:32:37 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_giyf\"",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -3211,11 +3323,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:33:09"
+    "time": "2023-06-21 17:32:37",
+    "version": "0.1.3"
   },
   "nonebot-plugin-abstract:nonebot_plugin_abstract": {
     "run": true,
-    "output": "插件 nonebot-plugin-abstract 的信息如下：\n    name         : nonebot-plugin-abstract                       \n     version      : 1.0.6                                         \n     description  : Plugin for nonebot2 that abstracts statements \n    \n    dependencies\n     - jieba 0.42.1\n     - nonebot-adapter-onebot >=2.0.0-beta.1,<3.0.0\n     - nonebot2 >=2.0.0-beta.1,<3.0.0\n     - pinyin 0.4.0\n插件 nonebot-plugin-abstract 依赖的插件如下：\n    \n插件 nonebot_plugin_abstract 加载正常：\n    06-20 19:33:24 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:33:24 [INFO] nonebot | Current Env: prod\n    06-20 19:33:24 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_abstract\"",
+    "output": "插件 nonebot-plugin-abstract 的信息如下：\n    name         : nonebot-plugin-abstract                       \n     version      : 1.0.6                                         \n     description  : Plugin for nonebot2 that abstracts statements \n    \n    dependencies\n     - jieba 0.42.1\n     - nonebot-adapter-onebot >=2.0.0-beta.1,<3.0.0\n     - nonebot2 >=2.0.0-beta.1,<3.0.0\n     - pinyin 0.4.0\n插件 nonebot-plugin-abstract 依赖的插件如下：\n    \n插件 nonebot_plugin_abstract 加载正常：\n    06-21 09:32:57 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:32:57 [INFO] nonebot | Current Env: prod\n    06-21 09:32:58 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_abstract\"",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -3233,11 +3346,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:33:24"
+    "time": "2023-06-21 17:32:58",
+    "version": "1.0.6"
   },
   "nonebot-plugin-params:nonebot_plugin_params": {
     "run": true,
-    "output": "插件 nonebot-plugin-params 的信息如下：\n    name         : nonebot-plugin-params \n     version      : 0.1.1                 \n     description  : 提供协议适配时常用的注入函数        \n    \n    dependencies\n     - nonebot2 >=2.0.0b1\n     - typing-extensions >=3.10.0,<5.0.0\n插件 nonebot-plugin-params 依赖的插件如下：\n    \n插件 nonebot_plugin_params 加载正常：\n    06-20 19:33:29 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:33:29 [INFO] nonebot | Current Env: prod\n    06-20 19:33:29 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_params\"",
+    "output": "插件 nonebot-plugin-params 的信息如下：\n    name         : nonebot-plugin-params \n     version      : 0.1.1                 \n     description  : 提供协议适配时常用的注入函数        \n    \n    dependencies\n     - nonebot2 >=2.0.0b1\n     - typing-extensions >=3.10.0,<5.0.0\n插件 nonebot-plugin-params 依赖的插件如下：\n    \n插件 nonebot_plugin_params 加载正常：\n    06-21 09:33:05 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:33:05 [INFO] nonebot | Current Env: prod\n    06-21 09:33:05 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_params\"",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -3260,32 +3374,45 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:33:29"
+    "time": "2023-06-21 17:33:05",
+    "version": "0.1.1"
   },
   "nonebot-plugin-handle:nonebot_plugin_handle": {
     "run": true,
-    "output": "插件 nonebot-plugin-handle 的信息如下：\n    name         : nonebot-plugin-handle \n     version      : 0.2.0                 \n     description  : Nonebot2 汉字Wordle 插件  \n    \n    dependencies\n     - nonebot-adapter-onebot >=2.2.0,<3.0.0\n     - nonebot2 >=2.0.0-rc.1,<3.0.0\n     - Pillow >=9.0.0,<10.0.0\n     - pypinyin >=0.40.0\n插件 nonebot-plugin-handle 依赖的插件如下：\n    \n插件 nonebot_plugin_handle 加载正常：\n    06-20 19:33:36 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:33:36 [INFO] nonebot | Current Env: prod\n    06-20 19:33:38 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_handle\"",
-    "valid": false,
+    "output": "插件 nonebot-plugin-handle 的信息如下：\n    name         : nonebot-plugin-handle \n     version      : 0.3.0                 \n     description  : Nonebot2 汉字Wordle 插件  \n    \n    dependencies\n     - nonebot-plugin-send-anything-anywhere >=0.2.7,<0.3.0\n     - nonebot-plugin-session >=0.0.5,<0.1.0\n     - nonebot2 >=2.0.0,<3.0.0\n     - Pillow >=9.0.0,<10.0.0\n     - pypinyin >=0.40.0,<1.0.0\n插件 nonebot-plugin-handle 依赖的插件如下：\n    nonebot_plugin_saa, nonebot_plugin_session\n插件 nonebot_plugin_handle 加载正常：\n    06-21 09:33:15 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:33:15 [INFO] nonebot | Current Env: prod\n    06-21 09:33:15 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_saa\"\n    06-21 09:33:15 [ERROR] nonebot | Failed to import \"nonebot_plugin_datastore\"\n    Traceback (most recent call last):\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-handle-nonebot_plugin_handle-test/runner.py\", line 15, in <module>\n        plugin = load_plugin(\"nonebot_plugin_handle\")\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-handle-nonebot_plugin_handle-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-handle-nonebot_plugin_handle-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-handle-nonebot_plugin_handle-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-handle-nonebot_plugin_handle-test/.venv/lib/python3.10/site-packages/nonebot_plugin_handle/__init__.py\", line 25, in <module>\n        require(\"nonebot_plugin_session\")\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-handle-nonebot_plugin_handle-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 174, in require\n        plugin = load_plugin(name)\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-handle-nonebot_plugin_handle-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-handle-nonebot_plugin_handle-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-handle-nonebot_plugin_handle-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-handle-nonebot_plugin_handle-test/.venv/lib/python3.10/site-packages/nonebot_plugin_session/__init__.py\", line 3, in <module>\n        from . import adapters, model, saa\n      File \"<frozen importlib._bootstrap>\", line 1078, in _handle_fromlist\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n      File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-handle-nonebot_plugin_handle-test/.venv/lib/python3.10/site-packages/nonebot_plugin_session/model.py\", line 8, in <module>\n        require(\"nonebot_plugin_datastore\")\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-handle-nonebot_plugin_handle-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 174, in require\n        plugin = load_plugin(name)\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-handle-nonebot_plugin_handle-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-handle-nonebot_plugin_handle-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1004, in _find_and_load_unlocked\n    ModuleNotFoundError: No module named 'nonebot_plugin_datastore'\n    06-21 09:33:15 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_session\"\n    06-21 09:33:17 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_handle\"",
+    "valid": true,
     "metadata": {
       "name": "猜成语",
       "description": "汉字Wordle 猜成语",
       "usage": "@我 + “猜成语”开始游戏；\n你有十次的机会猜一个四字词语；\n每次猜测后，汉字与拼音的颜色将会标识其与正确答案的区别；\n青色 表示其出现在答案中且在正确的位置；\n橙色 表示其出现在答案中但不在正确的位置；\n每个格子的 汉字、声母、韵母、声调 都会独立进行颜色的指示。\n当四个格子都为青色时，你便赢得了游戏！\n可发送“结束”结束游戏；可发送“提示”查看提示。\n使用 --strict 选项开启成语检查，即猜测的短语必须是成语，如：@我 猜成语 --strict",
-      "type": null,
-      "homepage": null,
-      "supported_adapters": null
+      "type": "application",
+      "homepage": "https://github.com/noneplugin/nonebot-plugin-handle",
+      "supported_adapters": [
+        "~qqguild",
+        "~onebot.v12",
+        "~kaiheila",
+        "~telegram",
+        "~onebot.v11"
+      ]
     },
-    "validation_message": "2 validation errors for PluginPublishInfo\nhomepage\n  none is not an allowed value (type=type_error.none.not_allowed)\ntype\n  ⚠️ 插件类型不能为空。<dt>请确保填写插件类型。</dt> (type=value_error)",
+    "validation_message": "",
     "validation_raw_data": {
       "module_name": "nonebot_plugin_handle",
       "project_link": "nonebot-plugin-handle",
       "name": "猜成语",
       "desc": "汉字Wordle 猜成语",
       "author": "MeetWq",
-      "homepage": null,
+      "homepage": "https://github.com/noneplugin/nonebot-plugin-handle",
       "tags": "[{\"label\": \"a:onebot\", \"color\": \"#000000\"}]",
       "plugin_test_result": true,
-      "type": null,
-      "supported_adapters": null
+      "type": "application",
+      "supported_adapters": [
+        "~qqguild",
+        "~onebot.v12",
+        "~kaiheila",
+        "~telegram",
+        "~onebot.v11"
+      ]
     },
     "previous": {
       "module_name": "nonebot_plugin_handle",
@@ -3304,12 +3431,35 @@
       "type": null,
       "supported_adapters": null
     },
-    "current": null,
-    "time": "2023-06-21 03:33:38"
+    "current": {
+      "module_name": "nonebot_plugin_handle",
+      "project_link": "nonebot-plugin-handle",
+      "name": "猜成语",
+      "desc": "汉字Wordle 猜成语",
+      "author": "MeetWq",
+      "homepage": "https://github.com/noneplugin/nonebot-plugin-handle",
+      "tags": [
+        {
+          "label": "a:onebot",
+          "color": "#000000"
+        }
+      ],
+      "is_official": false,
+      "type": "application",
+      "supported_adapters": [
+        "nonebot.adapters.onebot.v12",
+        "nonebot.adapters.onebot.v11",
+        "nonebot.adapters.telegram",
+        "nonebot.adapters.qqguild",
+        "nonebot.adapters.kaiheila"
+      ]
+    },
+    "time": "2023-06-21 17:33:18",
+    "version": "0.3.0"
   },
   "nonebot-plugin-minesweeper:nonebot_plugin_minesweeper": {
     "run": true,
-    "output": "插件 nonebot-plugin-minesweeper 的信息如下：\n    name         : nonebot-plugin-minesweeper \n     version      : 0.2.0                      \n     description  : Nonebot2 扫雷插件              \n    \n    dependencies\n     - nonebot-adapter-onebot >=2.2.0,<3.0.0\n     - nonebot2 >=2.0.0-rc.1,<3.0.0\n     - Pillow >=9.0.0,<10.0.0\n插件 nonebot-plugin-minesweeper 依赖的插件如下：\n    \n插件 nonebot_plugin_minesweeper 加载正常：\n    06-20 19:33:45 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:33:45 [INFO] nonebot | Current Env: prod\n    06-20 19:33:45 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_minesweeper\"",
+    "output": "插件 nonebot-plugin-minesweeper 的信息如下：\n    name         : nonebot-plugin-minesweeper \n     version      : 0.2.0                      \n     description  : Nonebot2 扫雷插件              \n    \n    dependencies\n     - nonebot-adapter-onebot >=2.2.0,<3.0.0\n     - nonebot2 >=2.0.0-rc.1,<3.0.0\n     - Pillow >=9.0.0,<10.0.0\n插件 nonebot-plugin-minesweeper 依赖的插件如下：\n    \n插件 nonebot_plugin_minesweeper 加载正常：\n    06-21 09:33:27 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:33:27 [INFO] nonebot | Current Env: prod\n    06-21 09:33:27 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_minesweeper\"",
     "valid": false,
     "metadata": {
       "name": "扫雷",
@@ -3350,11 +3500,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:33:45"
+    "time": "2023-06-21 17:33:28",
+    "version": "0.2.0"
   },
   "nonebot_plugin_draw:nonebot_plugin_draw": {
     "run": true,
-    "output": "插件 nonebot_plugin_draw 的信息如下：\n    name         : nonebot-plugin-draw \n     version      : 0.1.2               \n     description  : draw lots           \n    \n    dependencies\n     - nonebot2 >=2.0.0b1\n插件 nonebot_plugin_draw 依赖的插件如下：\n    \n插件 nonebot_plugin_draw 加载正常：\n    06-20 19:33:50 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:33:50 [INFO] nonebot | Current Env: prod\n    06-20 19:33:50 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_draw\"",
+    "output": "插件 nonebot_plugin_draw 的信息如下：\n    name         : nonebot-plugin-draw \n     version      : 0.1.2               \n     description  : draw lots           \n    \n    dependencies\n     - nonebot2 >=2.0.0b1\n插件 nonebot_plugin_draw 依赖的插件如下：\n    \n插件 nonebot_plugin_draw 加载正常：\n    06-21 09:33:35 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:33:35 [INFO] nonebot | Current Env: prod\n    06-21 09:33:35 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_draw\"",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -3372,11 +3523,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:33:50"
+    "time": "2023-06-21 17:33:35",
+    "version": "0.1.2"
   },
   "nonebot-plugin-randomtkk:nonebot_plugin_randomtkk": {
     "run": true,
-    "output": "插件 nonebot-plugin-randomtkk 的信息如下：\n    name         : nonebot-plugin-randomtkk \n     version      : 0.1.5.post1              \n     description  : Find Tan Kuku!           \n    \n    dependencies\n     - aiofiles >=0.8.0,<0.9.0\n     - httpx >=0.23.0,<0.24.0\n     - nonebot-adapter-onebot >=2.1.1,<3.0.0\n     - nonebot2 >=2.0.0b3,<3.0.0\n     - pillow >=9.0.1,<10.0.0\n插件 nonebot-plugin-randomtkk 依赖的插件如下：\n    \n插件 nonebot_plugin_randomtkk 加载正常：\n    06-20 19:33:57 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:33:57 [INFO] nonebot | Current Env: prod\n    06-20 19:33:57 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_randomtkk\"",
+    "output": "插件 nonebot-plugin-randomtkk 的信息如下：\n    name         : nonebot-plugin-randomtkk \n     version      : 0.1.5.post1              \n     description  : Find Tan Kuku!           \n    \n    dependencies\n     - aiofiles >=0.8.0,<0.9.0\n     - httpx >=0.23.0,<0.24.0\n     - nonebot-adapter-onebot >=2.1.1,<3.0.0\n     - nonebot2 >=2.0.0b3,<3.0.0\n     - pillow >=9.0.1,<10.0.0\n插件 nonebot-plugin-randomtkk 依赖的插件如下：\n    \n插件 nonebot_plugin_randomtkk 加载正常：\n    06-21 09:33:44 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:33:44 [INFO] nonebot | Current Env: prod\n    06-21 09:33:45 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_randomtkk\"",
     "valid": false,
     "metadata": {
       "name": "随机唐可可",
@@ -3425,11 +3577,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:33:57"
+    "time": "2023-06-21 17:33:45",
+    "version": "0.1.5.post1"
   },
   "nonebot-plugin-dida:nonebot_plugin_dida": {
     "run": false,
-    "output": "插件 nonebot-plugin-dida 的信息如下：\n    name         : nonebot-plugin-dida                   \n     version      : 2.0.0.1                               \n     description  : 基于Nonebot的滴答清单插件,可创建普通任务/子任务,按照条件查询任务 \n    \n    dependencies\n     - nonebot-plugin-apscheduler *\n     - requests *\n插件 nonebot-plugin-dida 依赖的插件如下：\n    nonebot_plugin_apscheduler\n插件 nonebot_plugin_dida 加载出错：\n    06-20 19:34:04 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:34:04 [INFO] nonebot | Current Env: prod\n    06-20 19:34:04 [ERROR] nonebot | Failed to import \"nonebot_plugin_dida\"\n    Traceback (most recent call last):\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-dida-nonebot_plugin_dida-test/runner.py\", line 15, in <module>\n        plugin = load_plugin(\"nonebot_plugin_dida\")\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-dida-nonebot_plugin_dida-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-dida-nonebot_plugin_dida-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-dida-nonebot_plugin_dida-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-dida-nonebot_plugin_dida-test/.venv/lib/python3.10/site-packages/nonebot_plugin_dida/__init__.py\", line 11, in <module>\n        config = Config.parse_obj(global_config)\n      File \"pydantic/main.py\", line 526, in pydantic.main.BaseModel.parse_obj\n        return cls(**obj)\n      File \"pydantic/env_settings.py\", line 39, in pydantic.env_settings.BaseSettings.__init__\n        super().__init__(\n      File \"pydantic/main.py\", line 341, in pydantic.main.BaseModel.__init__\n        raise validation_error\n    pydantic.error_wrappers.ValidationError: 2 validation errors for Config\n    dida_phone\n      field required (type=value_error.missing)\n    dida_password\n      field required (type=value_error.missing)",
+    "output": "插件 nonebot-plugin-dida 的信息如下：\n    name         : nonebot-plugin-dida                   \n     version      : 2.0.0.1                               \n     description  : 基于Nonebot的滴答清单插件,可创建普通任务/子任务,按照条件查询任务 \n    \n    dependencies\n     - nonebot-plugin-apscheduler *\n     - requests *\n插件 nonebot-plugin-dida 依赖的插件如下：\n    nonebot_plugin_apscheduler\n插件 nonebot_plugin_dida 加载出错：\n    06-21 09:33:54 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:33:54 [INFO] nonebot | Current Env: prod\n    06-21 09:33:54 [ERROR] nonebot | Failed to import \"nonebot_plugin_dida\"\n    Traceback (most recent call last):\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-dida-nonebot_plugin_dida-test/runner.py\", line 15, in <module>\n        plugin = load_plugin(\"nonebot_plugin_dida\")\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-dida-nonebot_plugin_dida-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-dida-nonebot_plugin_dida-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-dida-nonebot_plugin_dida-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-dida-nonebot_plugin_dida-test/.venv/lib/python3.10/site-packages/nonebot_plugin_dida/__init__.py\", line 11, in <module>\n        config = Config.parse_obj(global_config)\n      File \"pydantic/main.py\", line 526, in pydantic.main.BaseModel.parse_obj\n        return cls(**obj)\n      File \"pydantic/env_settings.py\", line 39, in pydantic.env_settings.BaseSettings.__init__\n        super().__init__(\n      File \"pydantic/main.py\", line 341, in pydantic.main.BaseModel.__init__\n        raise validation_error\n    pydantic.error_wrappers.ValidationError: 2 validation errors for Config\n    dida_phone\n      field required (type=value_error.missing)\n    dida_password\n      field required (type=value_error.missing)",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -3452,11 +3605,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:34:04"
+    "time": "2023-06-21 17:33:54",
+    "version": "2.0.0.1"
   },
   "nonebot-plugin-alipayvoice:nonebot_plugin_alipayvoice": {
     "run": true,
-    "output": "插件 nonebot-plugin-alipayvoice 的信息如下：\n    name         : nonebot-plugin-alipayvoice          \n     version      : 0.5.0                               \n     description  : An alipay voice plugin for NoneBot2 \n    \n    dependencies\n     - cn2an >=0.5.17\n     - nonebot-adapter-onebot >=2.0.0b1\n     - nonebot2 >=2.0.0b2\n插件 nonebot-plugin-alipayvoice 依赖的插件如下：\n    \n插件 nonebot_plugin_alipayvoice 加载正常：\n    06-20 19:34:11 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:34:11 [INFO] nonebot | Current Env: prod\n    06-20 19:34:11 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_alipayvoice\"",
+    "output": "插件 nonebot-plugin-alipayvoice 的信息如下：\n    name         : nonebot-plugin-alipayvoice          \n     version      : 0.5.0                               \n     description  : An alipay voice plugin for NoneBot2 \n    \n    dependencies\n     - cn2an >=0.5.17\n     - nonebot-adapter-onebot >=2.0.0b1\n     - nonebot2 >=2.0.0b2\n插件 nonebot-plugin-alipayvoice 依赖的插件如下：\n    \n插件 nonebot_plugin_alipayvoice 加载正常：\n    06-21 09:34:04 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:34:04 [INFO] nonebot | Current Env: prod\n    06-21 09:34:04 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_alipayvoice\"",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -3474,11 +3628,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:34:11"
+    "time": "2023-06-21 17:34:04",
+    "version": "0.5.0"
   },
   "nonebot-plugin-answersbook:nonebot_plugin_answersbook": {
     "run": true,
-    "output": "插件 nonebot-plugin-answersbook 的信息如下：\n    name         : nonebot-plugin-answersbook       \n     version      : 0.2.0                            \n     description  : The Book of Answers for NoneBot2 \n    \n    dependencies\n     - nonebot-adapter-onebot >=2.0.0b1\n     - nonebot2 >=2.0.0b2\n插件 nonebot-plugin-answersbook 依赖的插件如下：\n    \n插件 nonebot_plugin_answersbook 加载正常：\n    06-20 19:34:17 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:34:17 [INFO] nonebot | Current Env: prod\n    06-20 19:34:17 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_answersbook\"",
+    "output": "插件 nonebot-plugin-answersbook 的信息如下：\n    name         : nonebot-plugin-answersbook       \n     version      : 0.2.0                            \n     description  : The Book of Answers for NoneBot2 \n    \n    dependencies\n     - nonebot-adapter-onebot >=2.0.0b1\n     - nonebot2 >=2.0.0b2\n插件 nonebot-plugin-answersbook 依赖的插件如下：\n    \n插件 nonebot_plugin_answersbook 加载正常：\n    06-21 09:34:11 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:34:11 [INFO] nonebot | Current Env: prod\n    06-21 09:34:12 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_answersbook\"",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -3496,11 +3651,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:34:17"
+    "time": "2023-06-21 17:34:12",
+    "version": "0.2.0"
   },
   "nonebot-plugin-hitokoto:nonebot_plugin_hitokoto": {
     "run": true,
-    "output": "插件 nonebot-plugin-hitokoto 的信息如下：\n    name         : nonebot-plugin-hitokoto        \n     version      : 0.2.1                          \n     description  : One sentence a day in Nonebot2 \n    \n    dependencies\n     - httpx >=0.23.1\n     - nonebot-adapter-onebot >=2.0.0b1\n     - nonebot2 >=2.0.0b2\n插件 nonebot-plugin-hitokoto 依赖的插件如下：\n    \n插件 nonebot_plugin_hitokoto 加载正常：\n    06-20 19:34:22 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:34:22 [INFO] nonebot | Current Env: prod\n    06-20 19:34:22 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_hitokoto\"",
+    "output": "插件 nonebot-plugin-hitokoto 的信息如下：\n    name         : nonebot-plugin-hitokoto        \n     version      : 0.2.1                          \n     description  : One sentence a day in Nonebot2 \n    \n    dependencies\n     - httpx >=0.23.1\n     - nonebot-adapter-onebot >=2.0.0b1\n     - nonebot2 >=2.0.0b2\n插件 nonebot-plugin-hitokoto 依赖的插件如下：\n    \n插件 nonebot_plugin_hitokoto 加载正常：\n    06-21 09:34:19 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:34:19 [INFO] nonebot | Current Env: prod\n    06-21 09:34:19 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_hitokoto\"",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -3518,11 +3674,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:34:22"
+    "time": "2023-06-21 17:34:19",
+    "version": "0.2.1"
   },
   "nonebot-plugin-bilicover:nonebot_plugin_bilicover": {
     "run": true,
-    "output": "插件 nonebot-plugin-bilicover 的信息如下：\n    name         : nonebot-plugin-bilicover                              \n     version      : 0.2.2                                                 \n     description  : A plugin to get the bilibili video cover for NoneBot2 \n    \n    dependencies\n     - httpx >=0.23.1\n     - nonebot-adapter-onebot >=2.0.0b1\n     - nonebot2 >=2.0.0b2\n插件 nonebot-plugin-bilicover 依赖的插件如下：\n    \n插件 nonebot_plugin_bilicover 加载正常：\n    06-20 19:34:28 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:34:28 [INFO] nonebot | Current Env: prod\n    06-20 19:34:28 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_bilicover\"",
+    "output": "插件 nonebot-plugin-bilicover 的信息如下：\n    name         : nonebot-plugin-bilicover                              \n     version      : 0.2.2                                                 \n     description  : A plugin to get the bilibili video cover for NoneBot2 \n    \n    dependencies\n     - httpx >=0.23.1\n     - nonebot-adapter-onebot >=2.0.0b1\n     - nonebot2 >=2.0.0b2\n插件 nonebot-plugin-bilicover 依赖的插件如下：\n    \n插件 nonebot_plugin_bilicover 加载正常：\n    06-21 09:34:27 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:34:27 [INFO] nonebot | Current Env: prod\n    06-21 09:34:27 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_bilicover\"",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -3540,11 +3697,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:34:28"
+    "time": "2023-06-21 17:34:27",
+    "version": "0.2.2"
   },
   "nonebot-plugin-cchess:nonebot_plugin_cchess": {
     "run": true,
-    "output": "插件 nonebot-plugin-cchess 的信息如下：\n    name         : nonebot-plugin-cchess \n     version      : 0.2.2                 \n     description  : Nonebot2 象棋插件         \n    \n    dependencies\n     - nonebot-adapter-onebot >=2.2.0,<3.0.0\n     - nonebot-plugin-datastore >=0.6.0a1,<0.7.0\n     - nonebot2 >=2.0.0-rc.1,<3.0.0\n     - Pillow >=9.0.0,<10.0.0\n插件 nonebot-plugin-cchess 依赖的插件如下：\n    nonebot_plugin_datastore, nonebot_plugin_localstore\n插件 nonebot_plugin_cchess 加载正常：\n    06-20 19:34:36 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:34:36 [INFO] nonebot | Current Env: prod\n    06-20 19:34:36 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_localstore\"\n    06-20 19:34:37 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_datastore\"\n    06-20 19:34:38 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_cchess\"",
+    "output": "插件 nonebot-plugin-cchess 的信息如下：\n    name         : nonebot-plugin-cchess \n     version      : 0.2.2                 \n     description  : Nonebot2 象棋插件         \n    \n    dependencies\n     - nonebot-adapter-onebot >=2.2.0,<3.0.0\n     - nonebot-plugin-datastore >=0.6.0a1,<0.7.0\n     - nonebot2 >=2.0.0-rc.1,<3.0.0\n     - Pillow >=9.0.0,<10.0.0\n插件 nonebot-plugin-cchess 依赖的插件如下：\n    nonebot_plugin_datastore, nonebot_plugin_localstore\n插件 nonebot_plugin_cchess 加载正常：\n    06-21 09:34:38 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:34:38 [INFO] nonebot | Current Env: prod\n    06-21 09:34:38 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_localstore\"\n    06-21 09:34:39 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_datastore\"\n    06-21 09:34:40 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_cchess\"",
     "valid": false,
     "metadata": {
       "name": "象棋",
@@ -3585,11 +3743,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:34:38"
+    "time": "2023-06-21 17:34:40",
+    "version": "0.2.2"
   },
   "nonebot-plugin-chess:nonebot_plugin_chess": {
     "run": true,
-    "output": "插件 nonebot-plugin-chess 的信息如下：\n    name         : nonebot-plugin-chess \n     version      : 0.3.1                \n     description  : Nonebot2 国际象棋插件      \n    \n    dependencies\n     - chess >=1.9.0,<2.0.0\n     - nonebot-adapter-onebot >=2.2.0,<3.0.0\n     - nonebot-plugin-datastore >=0.6.0a1,<0.7.0\n     - nonebot-plugin-htmlrender >=0.0.4\n     - nonebot2 >=2.0.0-rc.1,<3.0.0\n插件 nonebot-plugin-chess 依赖的插件如下：\n    nonebot_plugin_datastore, nonebot_plugin_htmlrender, nonebot_plugin_localstore\n插件 nonebot_plugin_chess 加载正常：\n    06-20 19:34:47 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:34:47 [INFO] nonebot | Current Env: prod\n    06-20 19:34:48 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_htmlrender\"\n    06-20 19:34:48 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_localstore\"\n    06-20 19:34:49 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_datastore\"\n    06-20 19:34:49 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_chess\"",
+    "output": "插件 nonebot-plugin-chess 的信息如下：\n    name         : nonebot-plugin-chess \n     version      : 0.3.1                \n     description  : Nonebot2 国际象棋插件      \n    \n    dependencies\n     - chess >=1.9.0,<2.0.0\n     - nonebot-adapter-onebot >=2.2.0,<3.0.0\n     - nonebot-plugin-datastore >=0.6.0a1,<0.7.0\n     - nonebot-plugin-htmlrender >=0.0.4\n     - nonebot2 >=2.0.0-rc.1,<3.0.0\n插件 nonebot-plugin-chess 依赖的插件如下：\n    nonebot_plugin_datastore, nonebot_plugin_htmlrender, nonebot_plugin_localstore\n插件 nonebot_plugin_chess 加载正常：\n    06-21 09:34:52 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:34:52 [INFO] nonebot | Current Env: prod\n    06-21 09:34:53 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_htmlrender\"\n    06-21 09:34:53 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_localstore\"\n    06-21 09:34:54 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_datastore\"\n    06-21 09:34:55 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_chess\"",
     "valid": false,
     "metadata": {
       "name": "国际象棋",
@@ -3630,11 +3789,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:34:49"
+    "time": "2023-06-21 17:34:55",
+    "version": "0.3.1"
   },
   "nonebot-plugin-charpic:nonebot_plugin_charpic": {
     "run": true,
-    "output": "插件 nonebot-plugin-charpic 的信息如下：\n    name         : nonebot-plugin-charpic                \n     version      : 0.0.4                                 \n     description  : Generate picture(or GIF) by character \n    \n    dependencies\n     - aiohttp *\n     - imageio >=2.9.0\n     - nonebot-adapter-onebot >=2.0.0b1\n     - nonebot2 >=2.0.0rc1\n     - pillow >=8.4.0\n插件 nonebot-plugin-charpic 依赖的插件如下：\n    \n插件 nonebot_plugin_charpic 加载正常：\n    06-20 19:34:56 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:34:56 [INFO] nonebot | Current Env: prod\n    06-20 19:34:57 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_charpic\"",
+    "output": "插件 nonebot-plugin-charpic 的信息如下：\n    name         : nonebot-plugin-charpic                \n     version      : 0.0.4                                 \n     description  : Generate picture(or GIF) by character \n    \n    dependencies\n     - aiohttp *\n     - imageio >=2.9.0\n     - nonebot-adapter-onebot >=2.0.0b1\n     - nonebot2 >=2.0.0rc1\n     - pillow >=8.4.0\n插件 nonebot-plugin-charpic 依赖的插件如下：\n    \n插件 nonebot_plugin_charpic 加载正常：\n    06-21 09:35:04 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:35:04 [INFO] nonebot | Current Env: prod\n    06-21 09:35:05 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_charpic\"",
     "valid": false,
     "metadata": {
       "name": "charpic",
@@ -3670,11 +3830,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:34:57"
+    "time": "2023-06-21 17:35:05",
+    "version": "0.0.4"
   },
   "nonebot-plugin-miragetank:nonebot_plugin_miragetank": {
     "run": true,
-    "output": "插件 nonebot-plugin-miragetank 的信息如下：\n    name         : nonebot-plugin-miragetank            \n     version      : 0.1.3                                \n     description  : Generate/Seperate miragetank picture \n    \n    dependencies\n     - aiohttp *\n     - nonebot-adapter-onebot >=2.0.0b1\n     - nonebot2 >=2.0.0rc1\n     - numpy *\n     - pillow >=8.4.0\n插件 nonebot-plugin-miragetank 依赖的插件如下：\n    \n插件 nonebot_plugin_miragetank 加载正常：\n    06-20 19:35:04 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:35:04 [INFO] nonebot | Current Env: prod\n    06-20 19:35:05 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_miragetank\"",
+    "output": "插件 nonebot-plugin-miragetank 的信息如下：\n    name         : nonebot-plugin-miragetank            \n     version      : 0.1.3                                \n     description  : Generate/Seperate miragetank picture \n    \n    dependencies\n     - aiohttp *\n     - nonebot-adapter-onebot >=2.0.0b1\n     - nonebot2 >=2.0.0rc1\n     - numpy *\n     - pillow >=8.4.0\n插件 nonebot-plugin-miragetank 依赖的插件如下：\n    \n插件 nonebot_plugin_miragetank 加载正常：\n    06-21 09:35:14 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:35:14 [INFO] nonebot | Current Env: prod\n    06-21 09:35:15 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_miragetank\"",
     "valid": false,
     "metadata": {
       "name": "miragetank",
@@ -3710,7 +3871,8 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:35:05"
+    "time": "2023-06-21 17:35:16",
+    "version": "0.1.3"
   },
   "nonebot-plugin-covid:nonebot_plugin_covid": {
     "run": false,
@@ -3736,7 +3898,7 @@
   },
   "nonebot-plugin-yulu:nonebot_plugin_yulu": {
     "run": true,
-    "output": "插件 nonebot-plugin-yulu 的信息如下：\n    name         : nonebot-plugin-yulu \n     version      : 3.0                 \n     description  : 语录娱乐小插件             \n    \n    dependencies\n     - beautifulsoup4 >=4.11.1\n     - bs4 >=0.0.1\n     - httpx 0.23.1\n     - nonebot-adapter-onebot >=2.0.0b1\n     - nonebot2 >=2.0.0b2\n插件 nonebot-plugin-yulu 依赖的插件如下：\n    \n插件 nonebot_plugin_yulu 加载正常：\n    06-20 19:35:13 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:35:13 [INFO] nonebot | Current Env: prod\n    06-20 19:35:13 [WARNING] nonebot_plugin_yulu | yulu:未配置开启群号 默认[]\n    06-20 19:35:13 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_yulu\"",
+    "output": "插件 nonebot-plugin-yulu 的信息如下：\n    name         : nonebot-plugin-yulu \n     version      : 3.0                 \n     description  : 语录娱乐小插件             \n    \n    dependencies\n     - beautifulsoup4 >=4.11.1\n     - bs4 >=0.0.1\n     - httpx 0.23.1\n     - nonebot-adapter-onebot >=2.0.0b1\n     - nonebot2 >=2.0.0b2\n插件 nonebot-plugin-yulu 依赖的插件如下：\n    \n插件 nonebot_plugin_yulu 加载正常：\n    06-21 09:35:25 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:35:25 [INFO] nonebot | Current Env: prod\n    06-21 09:35:26 [WARNING] nonebot_plugin_yulu | yulu:未配置开启群号 默认[]\n    06-21 09:35:26 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_yulu\"",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -3754,11 +3916,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:35:13"
+    "time": "2023-06-21 17:35:26",
+    "version": "3.0"
   },
   "nonebot-plugin-maze:nonebot_plugin_maze": {
     "run": true,
-    "output": "插件 nonebot-plugin-maze 的信息如下：\n    name         : nonebot-plugin-maze \n     version      : 0.2.4               \n     description  : NoneBot2交互式走迷宫插件    \n    \n    dependencies\n     - asyncer >=0.0.1\n     - nonebot-adapter-onebot >=2.1.0\n     - nonebot2 >=2.0.0-beta.2\n     - numpy >=1.24.0\n     - pillow >=9.0.0\n插件 nonebot-plugin-maze 依赖的插件如下：\n    \n插件 nonebot_plugin_maze 加载正常：\n    06-20 19:35:20 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:35:20 [INFO] nonebot | Current Env: prod\n    06-20 19:35:20 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_maze\"",
+    "output": "插件 nonebot-plugin-maze 的信息如下：\n    name         : nonebot-plugin-maze \n     version      : 0.2.4               \n     description  : NoneBot2交互式走迷宫插件    \n    \n    dependencies\n     - asyncer >=0.0.1\n     - nonebot-adapter-onebot >=2.1.0\n     - nonebot2 >=2.0.0-beta.2\n     - numpy >=1.24.0\n     - pillow >=9.0.0\n插件 nonebot-plugin-maze 依赖的插件如下：\n    \n插件 nonebot_plugin_maze 加载正常：\n    06-21 09:35:34 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:35:34 [INFO] nonebot | Current Env: prod\n    06-21 09:35:35 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_maze\"",
     "valid": false,
     "metadata": {
       "name": "走迷宫",
@@ -3799,11 +3962,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:35:20"
+    "time": "2023-06-21 17:35:35",
+    "version": "0.2.4"
   },
   "nonebot-plugin-moyu:nonebot_plugin_moyu": {
     "run": true,
-    "output": "插件 nonebot-plugin-moyu 的信息如下：\n    name         : nonebot-plugin-moyu                 \n     version      : 0.3.3                               \n     description  : View your moyu calendar in NoneBot2 \n    \n    dependencies\n     - httpx >=0.23.0\n     - nonebot-adapter-onebot >=2.0.0b1\n     - nonebot-plugin-apscheduler >=0.1.2\n     - nonebot2 >=2.0.0b2\n插件 nonebot-plugin-moyu 依赖的插件如下：\n    nonebot_plugin_apscheduler\n插件 nonebot_plugin_moyu 加载正常：\n    06-20 19:35:27 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:35:27 [INFO] nonebot | Current Env: prod\n    06-20 19:35:28 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_apscheduler\"\n    06-20 19:35:28 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_moyu\"",
+    "output": "插件 nonebot-plugin-moyu 的信息如下：\n    name         : nonebot-plugin-moyu                 \n     version      : 0.3.3                               \n     description  : View your moyu calendar in NoneBot2 \n    \n    dependencies\n     - httpx >=0.23.0\n     - nonebot-adapter-onebot >=2.0.0b1\n     - nonebot-plugin-apscheduler >=0.1.2\n     - nonebot2 >=2.0.0b2\n插件 nonebot-plugin-moyu 依赖的插件如下：\n    nonebot_plugin_apscheduler\n插件 nonebot_plugin_moyu 加载正常：\n    06-21 09:35:45 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:35:45 [INFO] nonebot | Current Env: prod\n    06-21 09:35:46 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_apscheduler\"\n    06-21 09:35:46 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_moyu\"",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -3821,11 +3985,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:35:28"
+    "time": "2023-06-21 17:35:46",
+    "version": "0.3.3"
   },
   "nonebot-plugin-imageutils:nonebot_plugin_imageutils": {
     "run": true,
-    "output": "插件 nonebot-plugin-imageutils 的信息如下：\n    name         : nonebot-plugin-imageutils \n     version      : 0.1.17                    \n     description  : Nonebot2 PIL工具插件          \n    \n    dependencies\n     - bbcode >=1.1.0,<2.0.0\n     - fonttools >=4.0.0,<5.0.0\n     - httpx >=0.19.0\n     - loguru >=0.6.0,<0.7.0\n     - matplotlib >=3.0.0,<4.0.0\n     - nonebot2 >=2.0.0-rc.1,<3.0.0\n     - numpy >=1.20.0,<2.0.0\n     - opencv-python-headless >=4.0.0,<5.0.0\n     - Pillow >=9.0.0,<10.0.0\n插件 nonebot-plugin-imageutils 依赖的插件如下：\n    \n插件 nonebot_plugin_imageutils 加载正常：\n    06-20 19:35:39 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:35:39 [INFO] nonebot | Current Env: prod\n    06-20 19:35:40 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_imageutils\"",
+    "output": "插件 nonebot-plugin-imageutils 的信息如下：\n    name         : nonebot-plugin-imageutils \n     version      : 0.1.17                    \n     description  : Nonebot2 PIL工具插件          \n    \n    dependencies\n     - bbcode >=1.1.0,<2.0.0\n     - fonttools >=4.0.0,<5.0.0\n     - httpx >=0.19.0\n     - loguru >=0.6.0,<0.7.0\n     - matplotlib >=3.0.0,<4.0.0\n     - nonebot2 >=2.0.0-rc.1,<3.0.0\n     - numpy >=1.20.0,<2.0.0\n     - opencv-python-headless >=4.0.0,<5.0.0\n     - Pillow >=9.0.0,<10.0.0\n插件 nonebot-plugin-imageutils 依赖的插件如下：\n    \n插件 nonebot_plugin_imageutils 加载正常：\n    06-21 09:36:01 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:36:01 [INFO] nonebot | Current Env: prod\n    06-21 09:36:03 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_imageutils\"",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -3843,7 +4008,8 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:35:40"
+    "time": "2023-06-21 17:36:03",
+    "version": "0.1.17"
   },
   "nonebot-plugin-mockingbird:nonebot_plugin_mockingbird": {
     "run": false,
@@ -3870,11 +4036,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:35:42"
+    "time": "2023-06-21 17:36:06",
+    "version": null
   },
   "nonebot-plugin-baidutranslate:nonebot_plugin_baidutranslate": {
     "run": true,
-    "output": "插件 nonebot-plugin-baidutranslate 的信息如下：\n    name         : nonebot-plugin-baidutranslate                            \n     version      : 0.3.2                                                    \n     description  : 基于 OneBot 适配器的 NoneBot2 百度翻译插件, 可以调用百度翻译 API 实现常用语种之间的互译 \n    \n    dependencies\n     - httpx >=0.22.0\n     - nonebot-adapter-onebot >=2.2.1\n     - nonebot2 >=2.0.0rc3\n插件 nonebot-plugin-baidutranslate 依赖的插件如下：\n    \n插件 nonebot_plugin_baidutranslate 加载正常：\n    06-20 19:35:48 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:35:48 [INFO] nonebot | Current Env: prod\n    06-20 19:35:48 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_baidutranslate\"",
+    "output": "插件 nonebot-plugin-baidutranslate 的信息如下：\n    name         : nonebot-plugin-baidutranslate                            \n     version      : 0.3.2                                                    \n     description  : 基于 OneBot 适配器的 NoneBot2 百度翻译插件, 可以调用百度翻译 API 实现常用语种之间的互译 \n    \n    dependencies\n     - httpx >=0.22.0\n     - nonebot-adapter-onebot >=2.2.1\n     - nonebot2 >=2.0.0rc3\n插件 nonebot-plugin-baidutranslate 依赖的插件如下：\n    \n插件 nonebot_plugin_baidutranslate 加载正常：\n    06-21 09:36:14 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:36:14 [INFO] nonebot | Current Env: prod\n    06-21 09:36:14 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_baidutranslate\"",
     "valid": false,
     "metadata": {
       "name": "百度翻译",
@@ -3910,11 +4077,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:35:48"
+    "time": "2023-06-21 17:36:14",
+    "version": "0.3.2"
   },
   "nonebot-plugin-tortoise-orm:nonebot_plugin_tortoise_orm": {
     "run": true,
-    "output": "插件 nonebot-plugin-tortoise-orm 的信息如下：\n    name         : nonebot-plugin-tortoise-orm \n     version      : 0.1.0                       \n     description  : 一个通用数据库连接插件                 \n    \n    dependencies\n     - nonebot-plugin-localstore >=0.5.0\n     - nonebot2 >=2.0.0\n     - tortoise-orm >=0.19.3\n插件 nonebot-plugin-tortoise-orm 依赖的插件如下：\n    nonebot_plugin_localstore\n插件 nonebot_plugin_tortoise_orm 加载正常：\n    06-20 19:35:55 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:35:55 [INFO] nonebot | Current Env: prod\n    06-20 19:35:55 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_localstore\"\n    06-20 19:35:55 [WARNING] nonebot_plugin_tortoise_orm | 没有设置数据库地址, 使用 sqlite:////home/runner/.local/share/nonebot2/db.sqlite3\n    06-20 19:35:55 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_tortoise_orm\"",
+    "output": "插件 nonebot-plugin-tortoise-orm 的信息如下：\n    name         : nonebot-plugin-tortoise-orm \n     version      : 0.1.0                       \n     description  : 一个通用数据库连接插件                 \n    \n    dependencies\n     - nonebot-plugin-localstore >=0.5.0\n     - nonebot2 >=2.0.0\n     - tortoise-orm >=0.19.3\n插件 nonebot-plugin-tortoise-orm 依赖的插件如下：\n    nonebot_plugin_localstore\n插件 nonebot_plugin_tortoise_orm 加载正常：\n    06-21 09:36:24 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:36:24 [INFO] nonebot | Current Env: prod\n    06-21 09:36:24 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_localstore\"\n    06-21 09:36:24 [WARNING] nonebot_plugin_tortoise_orm | 没有设置数据库地址, 使用 sqlite:////home/runner/.local/share/nonebot2/db.sqlite3\n    06-21 09:36:24 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_tortoise_orm\"",
     "valid": true,
     "metadata": {
       "name": "nonebot_plugin_tortoise_orm",
@@ -3961,11 +4129,12 @@
       "type": "library",
       "supported_adapters": null
     },
-    "time": "2023-06-21 03:35:56"
+    "time": "2023-06-21 17:36:25",
+    "version": "0.1.0"
   },
   "nonebot-plugin-dailysign:nonebot_plugin_dailysign": {
     "run": false,
-    "output": "插件 nonebot-plugin-dailysign 的信息如下：\n    name         : nonebot-plugin-dailysign \n     version      : 0.0.2                    \n     description  : 一个简单的每日签到插件              \n    \n    dependencies\n     - nonebot-adapter-onebot >=2.0.0-beta.1,<3.0.0\n     - nonebot-plugin-tortoise-orm >=0.0.1-alpha.2,<0.0.2\n     - nonebot2 >=2.0.0-beta.1,<3.0.0\n插件 nonebot-plugin-dailysign 依赖的插件如下：\n    nonebot_plugin_tortoise_orm\n插件 nonebot_plugin_dailysign 加载出错：\n    06-20 19:36:01 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:36:01 [INFO] nonebot | Current Env: prod\n    06-20 19:36:02 [WARNING] nonebot_plugin_tortoise_orm | 没有数据库地址, 将会初始化数据库到 db.sqlite3\n    06-20 19:36:02 [SUCCESS] nonebot_plugin_tortoise_orm | 数据库: 添加模型: nonebot_plugin_dailysign.models\n    06-20 19:36:02 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_dailysign\"\n    06-20 19:36:02 [ERROR] nonebot | Failed to import \"nonebot_plugin_tortoise_orm\"\n    Traceback (most recent call last):\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-dailysign-nonebot_plugin_dailysign-test/runner.py\", line 30, in <module>\n        require('nonebot_plugin_tortoise_orm')\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-dailysign-nonebot_plugin_dailysign-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 174, in require\n        plugin = load_plugin(name)\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-dailysign-nonebot_plugin_dailysign-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-dailysign-nonebot_plugin_dailysign-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 154, in load_plugin\n        raise RuntimeError(\n    RuntimeError: Module nonebot_plugin_tortoise_orm is not loaded as a plugin! Make sure not to import it before loading.\n    Traceback (most recent call last):\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-dailysign-nonebot_plugin_dailysign-test/runner.py\", line 30, in <module>\n        require('nonebot_plugin_tortoise_orm')\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-dailysign-nonebot_plugin_dailysign-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 178, in require\n        raise RuntimeError(f'Cannot load plugin \"{name}\"!')\n    RuntimeError: Cannot load plugin \"nonebot_plugin_tortoise_orm\"!",
+    "output": "插件 nonebot-plugin-dailysign 的信息如下：\n    name         : nonebot-plugin-dailysign \n     version      : 0.0.2                    \n     description  : 一个简单的每日签到插件              \n    \n    dependencies\n     - nonebot-adapter-onebot >=2.0.0-beta.1,<3.0.0\n     - nonebot-plugin-tortoise-orm >=0.0.1-alpha.2,<0.0.2\n     - nonebot2 >=2.0.0-beta.1,<3.0.0\n插件 nonebot-plugin-dailysign 依赖的插件如下：\n    nonebot_plugin_tortoise_orm\n插件 nonebot_plugin_dailysign 加载出错：\n    06-21 09:36:32 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:36:32 [INFO] nonebot | Current Env: prod\n    06-21 09:36:33 [WARNING] nonebot_plugin_tortoise_orm | 没有数据库地址, 将会初始化数据库到 db.sqlite3\n    06-21 09:36:33 [SUCCESS] nonebot_plugin_tortoise_orm | 数据库: 添加模型: nonebot_plugin_dailysign.models\n    06-21 09:36:33 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_dailysign\"\n    06-21 09:36:33 [ERROR] nonebot | Failed to import \"nonebot_plugin_tortoise_orm\"\n    Traceback (most recent call last):\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-dailysign-nonebot_plugin_dailysign-test/runner.py\", line 30, in <module>\n        require('nonebot_plugin_tortoise_orm')\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-dailysign-nonebot_plugin_dailysign-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 174, in require\n        plugin = load_plugin(name)\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-dailysign-nonebot_plugin_dailysign-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-dailysign-nonebot_plugin_dailysign-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 154, in load_plugin\n        raise RuntimeError(\n    RuntimeError: Module nonebot_plugin_tortoise_orm is not loaded as a plugin! Make sure not to import it before loading.\n    Traceback (most recent call last):\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-dailysign-nonebot_plugin_dailysign-test/runner.py\", line 30, in <module>\n        require('nonebot_plugin_tortoise_orm')\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-dailysign-nonebot_plugin_dailysign-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 178, in require\n        raise RuntimeError(f'Cannot load plugin \"{name}\"!')\n    RuntimeError: Cannot load plugin \"nonebot_plugin_tortoise_orm\"!",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -3988,11 +4157,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:36:02"
+    "time": "2023-06-21 17:36:33",
+    "version": "0.0.2"
   },
   "nonebot-plugin-tetris-stats:nonebot_plugin_tetris_stats": {
     "run": true,
-    "output": "插件 nonebot-plugin-tetris-stats 的信息如下：\n    name         : nonebot-plugin-tetris-stats        \n     version      : 0.4.1.post1                        \n     description  : 一个基于nonebot2的用于查询TETRIS相关游戏玩家数据的插件 \n    \n    dependencies\n     - aiohttp >=3.8.1,<4.0.0\n     - asyncio >=3.4.3,<4.0.0\n     - Brotli >=1.0.9,<2.0.0\n     - lxml >=4.9.1,<5.0.0\n     - nonebot-adapter-onebot >=2.0.0-beta.1,<3.0.0\n     - nonebot2 >=2.0.0-beta.3,<3.0.0\n     - pandas >=1.4.3,<2.0.0\n     - playwright >=1.24.1,<2.0.0\n     - ujson >=5.4.0,<6.0.0\n插件 nonebot-plugin-tetris-stats 依赖的插件如下：\n    \n插件 nonebot_plugin_tetris_stats 加载正常：\n    06-20 19:36:11 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:36:11 [INFO] nonebot | Current Env: prod\n    06-20 19:36:13 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_tetris_stats\"",
+    "output": "插件 nonebot-plugin-tetris-stats 的信息如下：\n    name         : nonebot-plugin-tetris-stats        \n     version      : 0.4.1.post1                        \n     description  : 一个基于nonebot2的用于查询TETRIS相关游戏玩家数据的插件 \n    \n    dependencies\n     - aiohttp >=3.8.1,<4.0.0\n     - asyncio >=3.4.3,<4.0.0\n     - Brotli >=1.0.9,<2.0.0\n     - lxml >=4.9.1,<5.0.0\n     - nonebot-adapter-onebot >=2.0.0-beta.1,<3.0.0\n     - nonebot2 >=2.0.0-beta.3,<3.0.0\n     - pandas >=1.4.3,<2.0.0\n     - playwright >=1.24.1,<2.0.0\n     - ujson >=5.4.0,<6.0.0\n插件 nonebot-plugin-tetris-stats 依赖的插件如下：\n    \n插件 nonebot_plugin_tetris_stats 加载正常：\n    06-21 09:36:46 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:36:46 [INFO] nonebot | Current Env: prod\n    06-21 09:36:48 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_tetris_stats\"",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -4015,11 +4185,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:36:13"
+    "time": "2023-06-21 17:36:49",
+    "version": "0.4.1.post1"
   },
   "nonebot_plugin_bilibili_viode:nonebot_plugin_bilibili_viode": {
     "run": false,
-    "output": "插件 nonebot_plugin_bilibili_viode 的信息如下：\n    name         : nonebot-plugin-bilibili-viode \n     version      : 1.0.1                         \n     description  : 一个nonebot2插件，用于获取哔哩哔哩伪分享卡片    \n    \n    dependencies\n     - httpx >=0.23.3,<0.24.0\n     - nonebot-plugin-guild-patch >=0.2.3,<0.3.0\n     - nonebot2 >=2.0.0rc3,<3.0.0\n     - pillow >=9.4.0,<10.0.0\n     - pyyaml >=6.0,<7.0\n     - qrcode >=7.4.2,<8.0.0\n插件 nonebot_plugin_bilibili_viode 依赖的插件如下：\n    nonebot_plugin_guild_patch\n插件 nonebot_plugin_bilibili_viode 加载出错：\n    06-20 19:36:22 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:36:22 [INFO] nonebot | Current Env: prod\n    06-20 19:36:22 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_bilibili_viode\"\n    06-20 19:36:22 [ERROR] nonebot | Failed to import \"nonebot_plugin_guild_patch\"\n    Traceback (most recent call last):\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot_plugin_bilibili_viode-nonebot_plugin_bilibili_viode-test/runner.py\", line 30, in <module>\n        require('nonebot_plugin_guild_patch')\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot_plugin_bilibili_viode-nonebot_plugin_bilibili_viode-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 174, in require\n        plugin = load_plugin(name)\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot_plugin_bilibili_viode-nonebot_plugin_bilibili_viode-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot_plugin_bilibili_viode-nonebot_plugin_bilibili_viode-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 154, in load_plugin\n        raise RuntimeError(\n    RuntimeError: Module nonebot_plugin_guild_patch is not loaded as a plugin! Make sure not to import it before loading.\n    Traceback (most recent call last):\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot_plugin_bilibili_viode-nonebot_plugin_bilibili_viode-test/runner.py\", line 30, in <module>\n        require('nonebot_plugin_guild_patch')\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot_plugin_bilibili_viode-nonebot_plugin_bilibili_viode-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 178, in require\n        raise RuntimeError(f'Cannot load plugin \"{name}\"!')\n    RuntimeError: Cannot load plugin \"nonebot_plugin_guild_patch\"!",
+    "output": "插件 nonebot_plugin_bilibili_viode 的信息如下：\n    name         : nonebot-plugin-bilibili-viode \n     version      : 1.0.1                         \n     description  : 一个nonebot2插件，用于获取哔哩哔哩伪分享卡片    \n    \n    dependencies\n     - httpx >=0.23.3,<0.24.0\n     - nonebot-plugin-guild-patch >=0.2.3,<0.3.0\n     - nonebot2 >=2.0.0rc3,<3.0.0\n     - pillow >=9.4.0,<10.0.0\n     - pyyaml >=6.0,<7.0\n     - qrcode >=7.4.2,<8.0.0\n插件 nonebot_plugin_bilibili_viode 依赖的插件如下：\n    nonebot_plugin_guild_patch\n插件 nonebot_plugin_bilibili_viode 加载出错：\n    06-21 09:37:00 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:37:00 [INFO] nonebot | Current Env: prod\n    06-21 09:37:01 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_bilibili_viode\"\n    06-21 09:37:01 [ERROR] nonebot | Failed to import \"nonebot_plugin_guild_patch\"\n    Traceback (most recent call last):\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot_plugin_bilibili_viode-nonebot_plugin_bilibili_viode-test/runner.py\", line 30, in <module>\n        require('nonebot_plugin_guild_patch')\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot_plugin_bilibili_viode-nonebot_plugin_bilibili_viode-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 174, in require\n        plugin = load_plugin(name)\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot_plugin_bilibili_viode-nonebot_plugin_bilibili_viode-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot_plugin_bilibili_viode-nonebot_plugin_bilibili_viode-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 154, in load_plugin\n        raise RuntimeError(\n    RuntimeError: Module nonebot_plugin_guild_patch is not loaded as a plugin! Make sure not to import it before loading.\n    Traceback (most recent call last):\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot_plugin_bilibili_viode-nonebot_plugin_bilibili_viode-test/runner.py\", line 30, in <module>\n        require('nonebot_plugin_guild_patch')\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot_plugin_bilibili_viode-nonebot_plugin_bilibili_viode-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 178, in require\n        raise RuntimeError(f'Cannot load plugin \"{name}\"!')\n    RuntimeError: Cannot load plugin \"nonebot_plugin_guild_patch\"!",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -4037,11 +4208,12 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:36:23"
+    "time": "2023-06-21 17:37:01",
+    "version": "1.0.1"
   },
   "nonebot-plugin-imagetools:nonebot_plugin_imagetools": {
     "run": true,
-    "output": "插件 nonebot-plugin-imagetools 的信息如下：\n    name         : nonebot-plugin-imagetools \n     version      : 0.2.1                     \n     description  : Nonebot2 简单图片操作插件         \n    \n    dependencies\n     - httpx >=0.19.0\n     - nonebot-adapter-onebot >=2.2.0,<3.0.0\n     - nonebot2 >=2.0.0-rc.1,<3.0.0\n     - pil-utils >=0.1.0,<0.2.0\n     - Pillow >=9.0.0,<10.0.0\n插件 nonebot-plugin-imagetools 依赖的插件如下：\n    \n插件 nonebot_plugin_imagetools 加载正常：\n    06-20 19:36:34 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 19:36:34 [INFO] nonebot | Current Env: prod\n    06-20 19:36:35 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_imagetools\"",
+    "output": "插件 nonebot-plugin-imagetools 的信息如下：\n    name         : nonebot-plugin-imagetools \n     version      : 0.2.1                     \n     description  : Nonebot2 简单图片操作插件         \n    \n    dependencies\n     - httpx >=0.19.0\n     - nonebot-adapter-onebot >=2.2.0,<3.0.0\n     - nonebot2 >=2.0.0-rc.1,<3.0.0\n     - pil-utils >=0.1.0,<0.2.0\n     - Pillow >=9.0.0,<10.0.0\n插件 nonebot-plugin-imagetools 依赖的插件如下：\n    \n插件 nonebot_plugin_imagetools 加载正常：\n    06-21 09:37:16 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 09:37:16 [INFO] nonebot | Current Env: prod\n    06-21 09:37:18 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_imagetools\"",
     "valid": false,
     "metadata": {
       "name": "图片操作",
@@ -4082,7 +4254,8 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-21 03:36:36"
+    "time": "2023-06-21 17:37:18",
+    "version": "0.2.1"
   },
   "nonebot-plugin-warframe-clock:nonebot_plugin_warframe_clock": {
     "run": false,
