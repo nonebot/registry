@@ -190,7 +190,7 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                  ${row.output.replace(/\n/g, "<br>")}
+                  <pre>${row.output}</pre>
                 </div>
               </div>
             </div>
@@ -211,7 +211,7 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                  ${row.validation_message.replace(/\n/g, "<br>")}
+                  <pre>${row.validation_message}</pre>
                 </div>
               </div>
             </div>
@@ -234,14 +234,11 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                  ${
+                  <pre>${
                     row.metadata_value !== null
-                      ? JSON.stringify(row.metadata_value, null, "  ").replace(
-                          /\n/g,
-                          "<br>"
-                        )
+                      ? JSON.stringify(row.metadata_value, null, "  ")
                       : "无"
-                  }
+                  }</pre>
                 </div>
               </div>
             </div>
