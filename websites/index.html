@@ -65,6 +65,14 @@
   </head>
 
   <body>
+    <script data-href="https://github.com/he0119/nonebot-store-test" data-target="_blank"
+      src="https://unpkg.com/github-corners/dist/embed.min.js"></script>
+    <style>
+      body .github-corner>svg {
+        fill: black;
+        color: white;
+      }
+    </style>
     <div class="container">
       <h1 class="text-center">商店测试结果</h1>
       <table
@@ -178,7 +186,7 @@
       }
 
       function projectFormatter(value, row, index) {
-        return `<a class="text-decoration-none text-reset" href="${row.homepage}">${value}</a><br /><span class="mdi mdi-package package">${row.module_name}</span>`;
+        return `<a class="text-decoration-none text-reset" href="${row.homepage}">${value}</a><br /><span class="mdi mdi-package"><a class="text-decoration-none text-reset" href="https://pypi.org/project/${value}" target="_blank">${row.module_name}</a></span>`;
       }
       function authorFormatter(value, row, index) {
         return `<a class="text-decoration-none text-reset" href="https://github.com/${row.author}">${value}</a>`;
