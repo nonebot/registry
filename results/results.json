@@ -11302,34 +11302,12 @@
     "time": "2023-06-21 04:12:43"
   },
   "teenstudy:TeenStudy": {
-    "run": true,
-    "output": "插件 teenstudy 的信息如下：\n    name         : teenstudy                                                                \n     version      : 0.2.1                                                                    \n     description  : 基于nonebot2异步框架的青年大学自动提交插件基于nonebot2的青年大学习自动提交插件，用于自动完成大学习，在后台留下记录，返回完成截图 \n    \n    dependencies\n     - amis-python >=1.0.8,<2.0.0\n     - anti-useragent >=1.0.10,<2.0.0\n     - beautifulsoup4 >=4.11.2,<5.0.0\n     - bs4 >=0.0.1,<0.0.2\n     - ddddocr >=1.4.7,<2.0.0\n     - fastapi >=0.95.0,<0.96.0\n     - httpx >=0.24.0,<0.25.0\n     - Jinja2 >=3.1.2,<4.0.0\n     - lxml >=4.9.2,<5.0.0\n     - nonebot-adapter-onebot >=2.2.3,<3.0.0\n     - nonebot-plugin-apscheduler >=0.3.0,<0.4.0\n     - nonebot2 >=2.0.0,<3.0.0\n     - psutil >=5.9.4,<6.0.0\n     - pycryptodome >=3.17,<4.0\n     - python-jose >=3.3.0,<4.0.0\n     - qrcode >=7.4.2,<8.0.0\n     - tortoise-orm >=0.19.3,<0.20.0\n     - ujson >=5.7.0,<6.0.0\n     - uvicorn >=0.21.0,<0.22.0\n插件 teenstudy 依赖的插件如下：\n    nonebot_plugin_apscheduler\n插件 TeenStudy 加载正常：\n    06-20 20:13:00 [SUCCESS] nonebot | NoneBot is initializing...\n    06-20 20:13:00 [INFO] nonebot | Current Env: prod\n    06-20 20:13:01 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_apscheduler\"\n    06-20 20:13:03 [SUCCESS] nonebot | Succeeded to load plugin \"TeenStudy\"",
-    "valid": true,
-    "metadata": {
-      "name": "TeenStudy",
-      "description": "一个可以自动提交青年大学习的插件",
-      "usage": "添加大学习",
-      "type": "application",
-      "homepage": "https://github.com/ZM25XC/TeenStudy",
-      "supported_adapters": [
-        "~onebot.v11"
-      ]
-    },
-    "validation_message": "",
-    "validation_raw_data": {
-      "module_name": "TeenStudy",
-      "project_link": "teenstudy",
-      "name": "TeenStudy",
-      "desc": "一个可以自动提交青年大学习的插件",
-      "author": "ZM25XC",
-      "homepage": "https://github.com/ZM25XC/TeenStudy",
-      "tags": "[{\"label\": \"\\u9752\\u5e74\\u5927\\u5b66\\u4e60\", \"color\": \"#e5ea52\"}, {\"label\": \"httpx\", \"color\": \"#52ea5f\"}, {\"label\": \"Web UI\", \"color\": \"#5295ea\"}]",
-      "plugin_test_result": true,
-      "type": "application",
-      "supported_adapters": [
-        "~onebot.v11"
-      ]
-    },
+    "run": false,
+    "output": "项目 teenstudy 创建失败：\n    Creating virtualenv teenstudy-teenstudy-test in /home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/teenstudy-TeenStudy-test/.venv",
+    "valid": false,
+    "metadata": null,
+    "validation_message": "缺少元数据",
+    "validation_raw_data": null,
     "previous": {
       "module_name": "TeenStudy",
       "project_link": "teenstudy",
@@ -11355,34 +11333,9 @@
       "type": null,
       "supported_adapters": null
     },
-    "current": {
-      "module_name": "TeenStudy",
-      "project_link": "teenstudy",
-      "name": "TeenStudy",
-      "desc": "一个可以自动提交青年大学习的插件",
-      "author": "ZM25XC",
-      "homepage": "https://github.com/ZM25XC/TeenStudy",
-      "tags": [
-        {
-          "label": "青年大学习",
-          "color": "#e5ea52"
-        },
-        {
-          "label": "httpx",
-          "color": "#52ea5f"
-        },
-        {
-          "label": "Web UI",
-          "color": "#5295ea"
-        }
-      ],
-      "is_official": false,
-      "type": "application",
-      "supported_adapters": [
-        "nonebot.adapters.onebot.v11"
-      ]
-    },
-    "time": "2023-06-21 04:13:05"
+    "current": null,
+    "time": "2023-06-22 10:08:03",
+    "version": null
   },
   "nonebot-plugin-auto-teenstudy:nonebot_plugin_auto_teenstudy": {
     "run": true,
