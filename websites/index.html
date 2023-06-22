@@ -65,8 +65,50 @@
   </head>
 
   <body>
+    <nav class="navbar bg-body-tertiary sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="https://nonebot.dev/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+          商店测试结果
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#result-statistics" aria-controls="result-statistics" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="bi bi-bar-chart-line"></span>
+        </button>
+      </div>
+    </nav>
+    <div class="collapse" id="result-statistics" data-bs-theme="dark">
+      <div class="bg-dark p-4">
+        <h5 class="text-body-emphasis h4 lh-base">
+          <span class="mdi mdi-chart-box-outline">
+            测试统计
+          </span></h5>
+        <div class="fw-semibold">
+          <span class="mdi mdi-check-decagram-outline">
+            验证通过
+          </span>
+          <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 5px;">
+            <div class="progress-bar bg-success"></div>
+          </div>
+        </div>
+        <div class="text-body-secondary">
+          <span class="mdi mdi-puzzle-check-outline">
+            加载通过
+          </span>
+          <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 3px;">
+            <div class="progress-bar bg-success"></div>
+          </div>
+        </div>
+        <div class="text-body-secondary">
+          <span class="mdi mdi-package-variant-closed-check">
+            元数据存在
+          </span>
+          <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 3px;">
+            <div class="progress-bar bg-success"></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container">
-      <h1 class="text-center">商店测试结果</h1>
       <table
         id="table"
         data-show-columns="true"
