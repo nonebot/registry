@@ -56,11 +56,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          ref: results
       - name: Download results
         uses: actions/download-artifact@v3
         with:
           name: results
-          path: ${{ github.workspace }}/results
+          path: ${{ github.workspace }}
       - name: Push results
         run: |
           git config user.name github-actions[bot]
