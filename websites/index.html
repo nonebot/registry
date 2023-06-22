@@ -192,10 +192,10 @@
       }
 
       function projectFormatter(value, row, index) {
-        return `<a class="text-decoration-none text-reset" href="${row.homepage}">${value}</a><br /><span class="mdi mdi-package package"><a class="text-decoration-none text-reset" href="https://pypi.org/project/${value}" target="_blank">${row.module_name}</a></span>`;
+        return `<a class="text-decoration-none text-reset" href="${row.homepage}" target="_blank">${value}</a><br /><span class="mdi mdi-package package"><a class="text-decoration-none text-reset" href="https://pypi.org/project/${value}" target="_blank">${row.module_name}</a></span>`;
       }
       function authorFormatter(value, row, index) {
-        return `<a class="text-decoration-none text-reset" href="https://github.com/${row.author}">${value}</a>`;
+        return `<a class="text-decoration-none text-reset" href="https://github.com/${row.author}" target="_blank">${value}</a>`;
       }
       function runFormatter(value, row, index) {
         return `<button class="btn btn-link" type="button" data-bs-toggle="modal" data-bs-target="#${projectKey(
