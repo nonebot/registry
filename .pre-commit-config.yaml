@@ -1,0 +1,13 @@
+ci:
+  autofix_commit_msg: "style: auto fix by pre-commit hooks"
+  autofix_prs: true
+  autoupdate_branch: main
+  autoupdate_schedule: monthly
+  autoupdate_commit_msg: "chore(deps): auto update by pre-commit hooks"
+repos:
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v3.0.0-alpha.9-for-vscode
+    hooks:
+      - id: prettier
+        types_or: [html, css, javascript, jsx, ts, tsx, markdown, yaml]
+        stages: [commit]
