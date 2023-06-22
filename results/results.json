@@ -1,7 +1,7 @@
 {
   "nonebot-plugin-status:nonebot_plugin_status": {
     "run": true,
-    "output": "插件 nonebot-plugin-status 的信息如下：\n    name         : nonebot-plugin-status                                          \n     version      : 0.7.1                                                          \n     description  : Check your server status (CPU, Memory, Disk Usage) via nonebot \n    \n    dependencies\n     - humanize >=4.0.0,<5.0.0\n     - Jinja2 >=3.0.0,<4.0.0\n     - nonebot2 >=2.0.0,<3.0.0\n     - psutil >=5.7.2,<6.0.0\n插件 nonebot-plugin-status 依赖的插件如下：\n    \n插件 nonebot_plugin_status 加载正常：\n    06-21 05:14:35 [SUCCESS] nonebot | NoneBot is initializing...\n    06-21 05:14:35 [INFO] nonebot | Current Env: prod\n    06-21 05:14:35 [SUCCESS] nonebot | Succeeded to load plugin \"nonebot_plugin_status\"",
+    "output": "插件 nonebot-plugin-status 的信息如下：\n     name         : nonebot-plugin-status                                          \n     version      : 0.7.1                                                          \n     description  : Check your server status (CPU, Memory, Disk Usage) via nonebot \n    \n    dependencies\n     - humanize >=4.0.0,<5.0.0\n     - Jinja2 >=3.0.0,<4.0.0\n     - nonebot2 >=2.0.0,<3.0.0\n     - psutil >=5.7.2,<6.0.0\n插件 nonebot-plugin-status 依赖的插件如下：\n    \n插件 nonebot_plugin_status 加载正常：\n    \u001b[32m06-22 03:12:31\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-22 03:12:31\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-22 03:12:31\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_status\u001b[0m\"",
     "valid": true,
     "metadata": {
       "name": "服务器状态查看",
@@ -11,7 +11,7 @@
       "homepage": "https://github.com/cscs181/QQ-GitHub-Bot/tree/master/src/plugins/nonebot_plugin_status",
       "supported_adapters": null
     },
-    "validation_message": "",
+    "validation_message": "通过",
     "validation_raw_data": {
       "module_name": "nonebot_plugin_status",
       "project_link": "nonebot-plugin-status",
@@ -58,7 +58,7 @@
       "type": "application",
       "supported_adapters": null
     },
-    "time": "2023-06-21 13:14:40",
+    "time": "2023-06-22 11:12:32",
     "version": "0.7.1"
   },
   "haruka-bot:haruka_bot": {
