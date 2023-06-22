@@ -4134,7 +4134,7 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-22 12:04:34",
+    "time": "2023-06-22 14:18:03",
     "version": null
   },
   "nonebot-plugin-baidutranslate:nonebot_plugin_baidutranslate": {
@@ -13301,7 +13301,7 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-22 12:48:10",
+    "time": "2023-06-22 14:18:26",
     "version": null
   },
   "tatarubot2:tatarubot2": {
@@ -14081,7 +14081,7 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-22 12:50:04",
+    "time": "2023-06-22 14:18:30",
     "version": null
   },
   "nonebot-plugin-wordle-help:nonebot_plugin_wordle_help": {
@@ -15781,5 +15781,81 @@
     },
     "time": "2023-06-22 12:55:22",
     "version": "0.2.0"
+  },
+  "nonebot-plugin-error-alert:nonebot_plugin_error_alert": {
+    "run": true,
+    "output": "插件 nonebot-plugin-error-alert 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-error-alert\u001b[39m \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.1.2\u001b[39;22m                      \n     \u001b[34mdescription\u001b[39m  :                            \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mnonebot-plugin-apscheduler\u001b[39m \u001b[39;1m>=0.2.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-datastore\u001b[39m \u001b[39;1m>=0.6.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-send-anything-anywhere\u001b[39m \u001b[39;1m>=0.2,<0.3\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0,<3.0.0\u001b[39;22m\n插件 nonebot-plugin-error-alert 依赖的插件如下：\n    nonebot_plugin_apscheduler, nonebot_plugin_datastore, nonebot_plugin_localstore, nonebot_plugin_saa\n插件 nonebot_plugin_error_alert 加载正常：\n    \u001b[32m06-22 06:18:41\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-22 06:18:41\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-22 06:18:41\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_apscheduler\u001b[0m\"\n    \u001b[32m06-22 06:18:41\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_saa\u001b[0m\"\n    \u001b[32m06-22 06:18:41\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_localstore\u001b[0m\"\n    \u001b[32m06-22 06:18:42\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_datastore\u001b[0m\"\n    \u001b[32m06-22 06:18:42\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_error_alert\u001b[0m\"",
+    "valid": true,
+    "metadata": {
+      "name": "错误告警",
+      "description": "当Bot发生运行错误时发送消息提醒",
+      "usage": "/error_alert subscribe：订阅错误告警。发生错误时立即发送消息提醒至本账号。\n/error_alert subscribe --cron <cron>：订阅错误告警。但不会在发生错误时立即发送消息提醒，而是在满足cron表达式的时间点统一发送该时间段发生的错误告警。\n/error_alert unsubscribe：取消订阅错误告警。\n/error_alert show：查看本账号订阅的错误告警。",
+      "type": "application",
+      "homepage": "https://github.com/bot-ssttkkl/nonebot-plugin-error-alert",
+      "supported_adapters": [
+        "~onebot.v12",
+        "~qqguild",
+        "~onebot.v11",
+        "~kaiheila",
+        "~telegram"
+      ]
+    },
+    "validation_message": "通过",
+    "validation_raw_data": {
+      "module_name": "nonebot_plugin_error_alert",
+      "project_link": "nonebot-plugin-error-alert",
+      "name": "错误告警",
+      "desc": "当Bot发生运行错误时发送消息提醒",
+      "author": "ssttkkl",
+      "homepage": "https://github.com/bot-ssttkkl/nonebot-plugin-error-alert",
+      "tags": "[]",
+      "plugin_test_result": true,
+      "type": "application",
+      "supported_adapters": [
+        "~onebot.v12",
+        "~qqguild",
+        "~onebot.v11",
+        "~kaiheila",
+        "~telegram"
+      ]
+    },
+    "previous": {
+      "module_name": "nonebot_plugin_error_alert",
+      "project_link": "nonebot-plugin-error-alert",
+      "name": "错误告警",
+      "desc": "当Bot发生运行错误时发送消息提醒",
+      "author": "ssttkkl",
+      "homepage": "https://github.com/bot-ssttkkl/nonebot-plugin-error-alert",
+      "tags": [],
+      "is_official": false,
+      "type": "application",
+      "supported_adapters": [
+        "nonebot.adapters.onebot.v12",
+        "nonebot.adapters.telegram",
+        "nonebot.adapters.qqguild",
+        "nonebot.adapters.kaiheila",
+        "nonebot.adapters.onebot.v11"
+      ]
+    },
+    "current": {
+      "module_name": "nonebot_plugin_error_alert",
+      "project_link": "nonebot-plugin-error-alert",
+      "name": "错误告警",
+      "desc": "当Bot发生运行错误时发送消息提醒",
+      "author": "ssttkkl",
+      "homepage": "https://github.com/bot-ssttkkl/nonebot-plugin-error-alert",
+      "tags": [],
+      "is_official": false,
+      "type": "application",
+      "supported_adapters": [
+        "nonebot.adapters.telegram",
+        "nonebot.adapters.onebot.v11",
+        "nonebot.adapters.onebot.v12",
+        "nonebot.adapters.kaiheila",
+        "nonebot.adapters.qqguild"
+      ]
+    },
+    "time": "2023-06-22 14:18:43",
+    "version": "0.1.2"
   }
 }
