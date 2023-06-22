@@ -242,15 +242,17 @@
                 </div>
                 <div class="modal-body">
                   <pre><code class="language-json">${
-                    row.metadata_value !== null
-                      ? JSON.stringify(row.metadata_value, null, "  ")
-                      : "无"
+                    hljs.highlight(
+                      row.metadata_value !== null
+                        ? JSON.stringify(row.metadata_value, null, "  ")
+                        : "无",
+                      { language: "json" }
+                    ).value
                   }</code></pre>
                 </div>
               </div>
             </div>
           </div>
-          \<script\>hljs.highlightAll();\<\/script\>
           `;
       }
       let ansi_up = new AnsiUp();
