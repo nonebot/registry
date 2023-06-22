@@ -159,7 +159,12 @@
             >
               元数据
             </th>
-            <th data-field="time" data-sortable="true" class="align-middle">
+            <th 
+              data-field="time" 
+              data-formatter="timeFormatter"
+              data-sortable="true" 
+              class="align-middle"
+            >
               测试时间
             </th>
           </tr>
@@ -188,6 +193,8 @@
       const check_fail = `<span class="mdi mdi-close-circle-outline err"></span>`;
       const show_metadata = `<span class="mdi mdi-package-variant show-metadata"></span>`;
       const empty_metadata = `<span class="mdi mdi-package-variant-remove empty-metadata"></span>`;
+
+      const now_time = (new Date()).getTime();
 
       $.getJSON(
         "https://raw.githubusercontent.com/he0119/nonebot-store-test/results/results.json",
@@ -222,6 +229,12 @@
       function projectKey(row) {
         // 替换 . 为 -，否则会导致 modal 无法正常显示
         return `${row.project_link}-${row.module_name}`.replace(/\./g, "-");
+      }
+      
+      function timeFormatter(value, row, index) {
+        let check_time = (new Date(value)).getTime();
+        const time_diff = now_time - check_time;
+        return `<span class="mdi mdi-clock-outline ${time_color(time_diff)}">${value}</span>`;
       }
 
       function projectFormatter(value, row, index) {
@@ -336,6 +349,18 @@
           return "bg-warning";
         } else {
           return "bg-danger";
+        }
+      }
+
+      function time_color(time_diff) {
+        if (time_diff <= 3600000) { // 1 小时内更新是红色
+          return "text-danger";
+        } else if (time_diff <= 7200000) { // 2 小时内更新是黄色
+          return "text-warning";
+        } else if (time_diff >= 2592000) { // 30 天以上更新是灰色
+          return "text-secondary";
+        } else { // 2 小时以上更新是正常
+          return "";
         }
       }
 
