@@ -4134,7 +4134,7 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-22 20:29:00",
+    "time": "2023-06-23 00:17:33",
     "version": null
   },
   "nonebot-plugin-baidutranslate:nonebot_plugin_baidutranslate": {
@@ -9803,7 +9803,7 @@
   },
   "nonebot-plugin-alconna:nonebot_plugin_alconna": {
     "run": true,
-    "output": "插件 nonebot-plugin-alconna 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-alconna\u001b[39m      \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.7.0\u001b[39;22m                       \n     \u001b[34mdescription\u001b[39m  : Alconna Adapter for Nonebot \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36marclet-alconna\u001b[39m \u001b[39;1m>=1.7.7,<2.0.0\u001b[39;22m\n     - \u001b[36marclet-alconna-tools\u001b[39m \u001b[39;1m>=0.6.1,<0.7.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0rc4\u001b[39;22m\n插件 nonebot-plugin-alconna 依赖的插件如下：\n    \n插件 nonebot_plugin_alconna 加载正常：\n    \u001b[32m06-22 04:35:51\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-22 04:35:51\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-22 04:35:52\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_alconna\u001b[0m\"",
+    "output": "插件 nonebot-plugin-alconna 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-alconna\u001b[39m      \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.8.0\u001b[39;22m                       \n     \u001b[34mdescription\u001b[39m  : Alconna Adapter for Nonebot \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36marclet-alconna\u001b[39m \u001b[39;1m>=1.7.7,<2.0.0\u001b[39;22m\n     - \u001b[36marclet-alconna-tools\u001b[39m \u001b[39;1m>=0.6.1,<0.7.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0rc4\u001b[39;22m\n插件 nonebot-plugin-alconna 依赖的插件如下：\n    \n插件 nonebot_plugin_alconna 加载正常：\n    \u001b[32m06-22 16:18:10\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-22 16:18:10\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-22 16:18:10\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_alconna\u001b[0m\"",
     "valid": true,
     "metadata": {
       "name": "Alconna 插件",
@@ -9876,8 +9876,8 @@
       "type": "library",
       "supported_adapters": null
     },
-    "time": "2023-06-22 12:35:52",
-    "version": "0.7.0"
+    "time": "2023-06-23 00:18:11",
+    "version": "0.8.0"
   },
   "nonebot-plugin-mcport:nonebot-plugin-mcport": {
     "run": false,
@@ -13010,7 +13010,7 @@
   },
   "nonebot-plugin-bilichat:nonebot_plugin_bilichat": {
     "run": true,
-    "output": "插件 nonebot-plugin-bilichat 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-bilichat\u001b[39m  \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m2.8.0\u001b[39;22m                    \n     \u001b[34mdescription\u001b[39m  : 一个通过 OpenAI 来对b站视频进行总结插件 \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mbilireq\u001b[39m \u001b[39;1m>=0.2.4\u001b[39;22m\n     - \u001b[36mlxml\u001b[39m \u001b[39;1m>=4.9.2\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.2.2\u001b[39;22m\n     - \u001b[36mnonebot-plugin-localstore\u001b[39m \u001b[39;1m>=0.4.1\u001b[39;22m\n     - \u001b[36mnonebot-plugin-segbuilder\u001b[39m \u001b[39;1m>=0.2.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0\u001b[39;22m\n     - \u001b[36mpillow\u001b[39m \u001b[39;1m>=9.5.0\u001b[39;22m\n     - \u001b[36mqrcode\u001b[39m \u001b[39;1m>=7.4.2\u001b[39;22m\n插件 nonebot-plugin-bilichat 依赖的插件如下：\n    nonebot_plugin_localstore, nonebot_plugin_segbuilder\n插件 nonebot_plugin_bilichat 加载正常：\n    \u001b[32m06-22 12:30:06\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-22 12:30:06\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-22 12:30:06\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_localstore\u001b[0m\"\n    \u001b[32m06-22 12:30:06\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_bilichat\u001b[0m\u001b[36m\u001b[0m | Cache folder for nonebot_plugin_bilichat is located at /home/runner/.cache/nonebot2/nonebot_plugin_bilichat\n    \u001b[32m06-22 12:30:06\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_bilichat\u001b[0m\u001b[36m\u001b[0m | Data folder for nonebot_plugin_bilichat is located at /home/runner/.local/share/nonebot2/nonebot_plugin_bilichat\n    \u001b[32m06-22 12:30:06\u001b[0m [\u001b[33m\u001b[1mWARNING\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_bilichat\u001b[0m\u001b[36m\u001b[0m | sentry_sdk is not installed\n    \u001b[32m06-22 12:30:06\u001b[0m [\u001b[33m\u001b[1mWARNING\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_bilichat\u001b[0m\u001b[36m\u001b[0m | font file does not exist. Trying to download\n    \u001b[32m06-22 12:30:13\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_segbuilder\u001b[0m\u001b[36m\u001b[0m | The adapter mirai2 is loaded successfully\n    \u001b[32m06-22 12:30:13\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_segbuilder\u001b[0m\u001b[36m\u001b[0m | The adapter OneBot V11 is loaded successfully\n    \u001b[32m06-22 12:30:13\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_segbuilder\u001b[0m\u001b[36m\u001b[0m | The adapter OneBot V12 is loaded successfully\n    \u001b[32m06-22 12:30:13\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_segbuilder\u001b[0m\u001b[36m\u001b[0m | The adapter QQ Guild is loaded successfully\n    \u001b[32m06-22 12:30:13\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_segbuilder\u001b[0m\"\n    \u001b[32m06-22 12:30:13\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_bilichat\u001b[0m\"",
+    "output": "插件 nonebot-plugin-bilichat 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-bilichat\u001b[39m  \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m2.8.1\u001b[39;22m                    \n     \u001b[34mdescription\u001b[39m  : 一个通过 OpenAI 来对b站视频进行总结插件 \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mbilireq\u001b[39m \u001b[39;1m>=0.2.4\u001b[39;22m\n     - \u001b[36mlxml\u001b[39m \u001b[39;1m>=4.9.2\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.2.2\u001b[39;22m\n     - \u001b[36mnonebot-plugin-localstore\u001b[39m \u001b[39;1m>=0.4.1\u001b[39;22m\n     - \u001b[36mnonebot-plugin-segbuilder\u001b[39m \u001b[39;1m>=0.2.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0\u001b[39;22m\n     - \u001b[36mpillow\u001b[39m \u001b[39;1m>=9.5.0\u001b[39;22m\n     - \u001b[36mqrcode\u001b[39m \u001b[39;1m>=7.4.2\u001b[39;22m\n插件 nonebot-plugin-bilichat 依赖的插件如下：\n    nonebot_plugin_localstore, nonebot_plugin_segbuilder\n插件 nonebot_plugin_bilichat 加载正常：\n    \u001b[32m06-22 16:18:38\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-22 16:18:38\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-22 16:18:39\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_localstore\u001b[0m\"\n    \u001b[32m06-22 16:18:39\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_bilichat\u001b[0m\u001b[36m\u001b[0m | Cache folder for nonebot_plugin_bilichat is located at /home/runner/.cache/nonebot2/nonebot_plugin_bilichat\n    \u001b[32m06-22 16:18:39\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_bilichat\u001b[0m\u001b[36m\u001b[0m | Data folder for nonebot_plugin_bilichat is located at /home/runner/.local/share/nonebot2/nonebot_plugin_bilichat\n    \u001b[32m06-22 16:18:39\u001b[0m [\u001b[33m\u001b[1mWARNING\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_bilichat\u001b[0m\u001b[36m\u001b[0m | sentry_sdk is not installed\n    \u001b[32m06-22 16:18:39\u001b[0m [\u001b[33m\u001b[1mWARNING\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_bilichat\u001b[0m\u001b[36m\u001b[0m | font file does not exist. Trying to download\n    \u001b[32m06-22 16:18:44\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_segbuilder\u001b[0m\u001b[36m\u001b[0m | The adapter mirai2 is loaded successfully\n    \u001b[32m06-22 16:18:44\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_segbuilder\u001b[0m\u001b[36m\u001b[0m | The adapter OneBot V11 is loaded successfully\n    \u001b[32m06-22 16:18:44\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_segbuilder\u001b[0m\u001b[36m\u001b[0m | The adapter OneBot V12 is loaded successfully\n    \u001b[32m06-22 16:18:44\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_segbuilder\u001b[0m\u001b[36m\u001b[0m | The adapter QQ Guild is loaded successfully\n    \u001b[32m06-22 16:18:44\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_segbuilder\u001b[0m\"\n    \u001b[32m06-22 16:18:44\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_bilichat\u001b[0m\"",
     "valid": true,
     "metadata": {
       "name": "nonebot-plugin-bilichat",
@@ -13019,10 +13019,10 @@
       "type": "application",
       "homepage": "https://github.com/Aunly/nonebot-plugin-bilichat",
       "supported_adapters": [
-        "~qqguild",
         "~onebot.v12",
+        "~mirai2",
         "~onebot.v11",
-        "~mirai2"
+        "~qqguild"
       ]
     },
     "validation_message": "通过",
@@ -13037,10 +13037,10 @@
       "plugin_test_result": true,
       "type": "application",
       "supported_adapters": [
-        "~qqguild",
         "~onebot.v12",
+        "~mirai2",
         "~onebot.v11",
-        "~mirai2"
+        "~qqguild"
       ]
     },
     "previous": {
@@ -13092,14 +13092,14 @@
       "is_official": false,
       "type": "application",
       "supported_adapters": [
-        "nonebot.adapters.onebot.v11",
         "nonebot.adapters.onebot.v12",
         "nonebot.adapters.qqguild",
-        "nonebot.adapters.mirai2"
+        "nonebot.adapters.mirai2",
+        "nonebot.adapters.onebot.v11"
       ]
     },
-    "time": "2023-06-22 20:30:14",
-    "version": "2.8.0"
+    "time": "2023-06-23 00:18:45",
+    "version": "2.8.1"
   },
   "nonebot-plugin-genshinuid:GenshinUID": {
     "run": true,
@@ -13301,7 +13301,7 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-22 20:30:18",
+    "time": "2023-06-23 00:18:52",
     "version": null
   },
   "tatarubot2:tatarubot2": {
@@ -14081,7 +14081,7 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-22 20:30:22",
+    "time": "2023-06-23 00:18:58",
     "version": null
   },
   "nonebot-plugin-wordle-help:nonebot_plugin_wordle_help": {
