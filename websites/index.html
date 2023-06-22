@@ -26,10 +26,7 @@
       href="https://unpkg.com/@mdi/font@7.2.96/css/materialdesignicons.min.css"
       rel="stylesheet"
     />
-    <link
-      href="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/styles/github-dark.min.css"
-      rel="stylesheet"
-    />
+    <link href="highlight.css" rel="stylesheet" />
 
     <style>
       .hljs {
@@ -256,7 +253,7 @@
           \<script\>hljs.highlightAll();\<\/script\>
           `;
       }
-      let ansi_up = new AnsiUp;
+      let ansi_up = new AnsiUp();
       function log_to_html(ansi_text) {
         return ansi_up.ansi_to_html(ansi_text);
       }
