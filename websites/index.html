@@ -154,6 +154,14 @@
         <thead>
           <tr>
             <th
+              data-field="id"
+              data-sortable="true"
+              data-visible="false"
+              class="align-middle"
+            >
+              序号
+            </th>
+            <th
               data-field="project_link"
               data-formatter="projectFormatter"
               data-sortable="true"
@@ -233,9 +241,11 @@
       $.getJSON(
         "https://raw.githubusercontent.com/he0119/nonebot-store-test/results/results.json",
         function (data) {
-          var items = [];
+          let items = [];
+          let id = 1;
           $.each(data, function (key, val) {
             items.push({
+              id: id++,
               time: val.time,
               project_link: val.previous.project_link,
               module_name: val.previous.module_name,
