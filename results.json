@@ -4134,7 +4134,7 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-24 00:20:03",
+    "time": "2023-06-24 04:16:00",
     "version": null
   },
   "nonebot-plugin-baidutranslate:nonebot_plugin_baidutranslate": {
@@ -5167,12 +5167,12 @@
   },
   "nonebot-plugin-bawiki:nonebot_plugin_bawiki": {
     "run": true,
-    "output": "插件 nonebot-plugin-bawiki 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-bawiki\u001b[39m               \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.7.10\u001b[39;22m                              \n     \u001b[34mdescription\u001b[39m  : A nonebot2 plugin for Blue Archive. \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36maiohttp\u001b[39m \u001b[39;1m>=3.8.3\u001b[39;22m\n     - \u001b[36mbeautifulsoup4\u001b[39m \u001b[39;1m>=4.11.1\u001b[39;22m\n     - \u001b[36mlxml\u001b[39m \u001b[39;1m>=4.9.1\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.1.1\u001b[39;22m\n     - \u001b[36mnonebot-plugin-apscheduler\u001b[39m \u001b[39;1m>=0.2.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-htmlrender\u001b[39m \u001b[39;1m>=0.2.0.1\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0\u001b[39;22m\n     - \u001b[36mpil-utils\u001b[39m \u001b[39;1m>=0.1.4\u001b[39;22m\n插件 nonebot-plugin-bawiki 依赖的插件如下：\n    nonebot_plugin_apscheduler, nonebot_plugin_htmlrender\n插件 nonebot_plugin_bawiki 加载正常：\n    \u001b[32m06-22 04:08:31\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-22 04:08:31\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-22 04:08:31\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_apscheduler\u001b[0m\"\n    \u001b[32m06-22 04:08:31\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_htmlrender\u001b[0m\"\n    \u001b[32m06-22 04:08:33\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_bawiki\u001b[0m\"",
+    "output": "插件 nonebot-plugin-bawiki 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-bawiki\u001b[39m               \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.8.0\u001b[39;22m                               \n     \u001b[34mdescription\u001b[39m  : A nonebot2 plugin for Blue Archive. \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mbeautifulsoup4\u001b[39m \u001b[39;1m>=4.11.1\u001b[39;22m\n     - \u001b[36mhttpx\u001b[39m \u001b[39;1m>=0.24.1\u001b[39;22m\n     - \u001b[36mlxml\u001b[39m \u001b[39;1m>=4.9.1\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.1.1\u001b[39;22m\n     - \u001b[36mnonebot-plugin-apscheduler\u001b[39m \u001b[39;1m>=0.2.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-htmlrender\u001b[39m \u001b[39;1m>=0.2.0.1\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0\u001b[39;22m\n     - \u001b[36mpil-utils\u001b[39m \u001b[39;1m>=0.1.4\u001b[39;22m\n     - \u001b[36mpypinyin\u001b[39m \u001b[39;1m>=0.49.0\u001b[39;22m\n插件 nonebot-plugin-bawiki 依赖的插件如下：\n    nonebot_plugin_apscheduler, nonebot_plugin_htmlrender\n插件 nonebot_plugin_bawiki 加载正常：\n    \u001b[32m06-23 20:16:20\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-23 20:16:20\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-23 20:16:20\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_apscheduler\u001b[0m\"\n    \u001b[32m06-23 20:16:21\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_htmlrender\u001b[0m\"\n    \u001b[32m06-23 20:16:25\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_bawiki\u001b[0m\"",
     "valid": true,
     "metadata": {
       "name": "BAWiki",
       "description": "碧蓝档案Wiki插件",
-      "usage": "装载 PicMenu 插件即可查看本插件详细菜单",
+      "usage": "使用指令 `ba帮助` 查询插件功能帮助",
       "type": "application",
       "homepage": "https://github.com/lgc-NB2Dev/nonebot-plugin-bawiki",
       "supported_adapters": [
@@ -5238,8 +5238,8 @@
         "nonebot.adapters.onebot.v11"
       ]
     },
-    "time": "2023-06-22 12:08:34",
-    "version": "0.7.10"
+    "time": "2023-06-24 04:16:26",
+    "version": "0.8.0"
   },
   "nonebot-plugin-mcqq:nonebot_plugin_mcqq": {
     "run": false,
@@ -6450,7 +6450,7 @@
   },
   "nonebot-plugin-picstatus:nonebot_plugin_picstatus": {
     "run": true,
-    "output": "插件 nonebot-plugin-picstatus 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-picstatus\u001b[39m                                                       \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.5.0\u001b[39;22m                                                                          \n     \u001b[34mdescription\u001b[39m  : A NoneBot2 plugin generates a picture which shows the status of current device \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36manyio\u001b[39m \u001b[39;1m>=3.7.0\u001b[39;22m\n     - \u001b[36mhttpx\u001b[39m \u001b[39;1m>=0.24.1\u001b[39;22m\n     - \u001b[36mnonebot-plugin-send-anything-anywhere\u001b[39m \u001b[39;1m>=0.2.4\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0\u001b[39;22m\n     - \u001b[36mpil-utils\u001b[39m \u001b[39;1m>=0.1.7\u001b[39;22m\n     - \u001b[36mPillow\u001b[39m \u001b[39;1m>=9.2.0,<10.0.0\u001b[39;22m\n     - \u001b[36mpsutil\u001b[39m \u001b[39;1m>=5.9.2,<6.0.0\u001b[39;22m\n插件 nonebot-plugin-picstatus 依赖的插件如下：\n    nonebot_plugin_saa\n插件 nonebot_plugin_picstatus 加载正常：\n    \u001b[32m06-22 04:24:05\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-22 04:24:05\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-22 04:24:05\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_saa\u001b[0m\"\n    \u001b[32m06-22 04:24:06\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_picstatus\u001b[0m\"",
+    "output": "插件 nonebot-plugin-picstatus 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-picstatus\u001b[39m                                                       \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.5.1\u001b[39;22m                                                                          \n     \u001b[34mdescription\u001b[39m  : A NoneBot2 plugin generates a picture which shows the status of current device \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36manyio\u001b[39m \u001b[39;1m>=3.7.0\u001b[39;22m\n     - \u001b[36mhttpx\u001b[39m \u001b[39;1m>=0.24.1\u001b[39;22m\n     - \u001b[36mnonebot-plugin-send-anything-anywhere\u001b[39m \u001b[39;1m>=0.2.5\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0\u001b[39;22m\n     - \u001b[36mpil-utils\u001b[39m \u001b[39;1m>=0.1.7\u001b[39;22m\n     - \u001b[36mPillow\u001b[39m \u001b[39;1m>=9.2.0,<10.0.0\u001b[39;22m\n     - \u001b[36mpsutil\u001b[39m \u001b[39;1m>=5.9.2,<6.0.0\u001b[39;22m\n插件 nonebot-plugin-picstatus 依赖的插件如下：\n    nonebot_plugin_saa\n插件 nonebot_plugin_picstatus 加载正常：\n    \u001b[32m06-23 20:16:40\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-23 20:16:40\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-23 20:16:40\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_saa\u001b[0m\"\n    \u001b[32m06-23 20:16:41\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_picstatus\u001b[0m\"",
     "valid": true,
     "metadata": {
       "name": "PicStatus",
@@ -6459,11 +6459,11 @@
       "type": "application",
       "homepage": "https://github.com/lgc-NB2Dev/nonebot-plugin-picstatus",
       "supported_adapters": [
-        "~onebot.v11",
         "~telegram",
+        "~kaiheila",
+        "~onebot.v11",
         "~qqguild",
-        "~onebot.v12",
-        "~kaiheila"
+        "~onebot.v12"
       ]
     },
     "validation_message": "通过",
@@ -6478,11 +6478,11 @@
       "plugin_test_result": true,
       "type": "application",
       "supported_adapters": [
-        "~onebot.v11",
         "~telegram",
+        "~kaiheila",
+        "~onebot.v11",
         "~qqguild",
-        "~onebot.v12",
-        "~kaiheila"
+        "~onebot.v12"
       ]
     },
     "previous": {
@@ -6526,15 +6526,15 @@
       "is_official": false,
       "type": "application",
       "supported_adapters": [
-        "nonebot.adapters.kaiheila",
-        "nonebot.adapters.qqguild",
-        "nonebot.adapters.onebot.v11",
         "nonebot.adapters.telegram",
-        "nonebot.adapters.onebot.v12"
+        "nonebot.adapters.onebot.v12",
+        "nonebot.adapters.onebot.v11",
+        "nonebot.adapters.qqguild",
+        "nonebot.adapters.kaiheila"
       ]
     },
-    "time": "2023-06-22 12:24:07",
-    "version": "0.5.0"
+    "time": "2023-06-24 04:16:42",
+    "version": "0.5.1"
   },
   "nonebot-plugin-tuling:nonebot_plugin_tuling": {
     "run": true,
@@ -13314,7 +13314,7 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-24 00:20:41",
+    "time": "2023-06-24 04:17:04",
     "version": null
   },
   "tatarubot2:tatarubot2": {
@@ -14094,7 +14094,7 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-24 00:20:45",
+    "time": "2023-06-24 04:17:07",
     "version": null
   },
   "nonebot-plugin-wordle-help:nonebot_plugin_wordle_help": {
@@ -14257,7 +14257,7 @@
   },
   "nonebot-plugin-callapi:nonebot_plugin_callapi": {
     "run": true,
-    "output": "插件 nonebot-plugin-callapi 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-callapi\u001b[39m          \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.1.2\u001b[39;22m                           \n     \u001b[34mdescription\u001b[39m  : Use bot command to call its API \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.2.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-send-anything-anywhere\u001b[39m \u001b[39;1m>=0.2.4\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0\u001b[39;22m\n     - \u001b[36mpil-utils\u001b[39m \u001b[39;1m>=0.1.7\u001b[39;22m\n     - \u001b[36mpydantic\u001b[39m \u001b[39;1m>=1.10.4\u001b[39;22m\n     - \u001b[36mPygments\u001b[39m \u001b[39;1m>=2.15.1\u001b[39;22m\n插件 nonebot-plugin-callapi 依赖的插件如下：\n    nonebot_plugin_saa\n插件 nonebot_plugin_callapi 加载正常：\n    \u001b[32m06-22 04:50:33\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-22 04:50:33\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-22 04:50:34\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_saa\u001b[0m\"\n    \u001b[32m06-22 04:50:34\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_callapi\u001b[0m\"",
+    "output": "插件 nonebot-plugin-callapi 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-callapi\u001b[39m          \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.1.3\u001b[39;22m                           \n     \u001b[34mdescription\u001b[39m  : Use bot command to call its API \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.2.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-send-anything-anywhere\u001b[39m \u001b[39;1m>=0.2.5\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0\u001b[39;22m\n     - \u001b[36mpil-utils\u001b[39m \u001b[39;1m>=0.1.7\u001b[39;22m\n     - \u001b[36mpydantic\u001b[39m \u001b[39;1m>=1.10.4\u001b[39;22m\n     - \u001b[36mPygments\u001b[39m \u001b[39;1m>=2.15.1\u001b[39;22m\n插件 nonebot-plugin-callapi 依赖的插件如下：\n    nonebot_plugin_saa\n插件 nonebot_plugin_callapi 加载正常：\n    \u001b[32m06-23 20:17:17\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-23 20:17:17\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-23 20:17:17\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_saa\u001b[0m\"\n    \u001b[32m06-23 20:17:18\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_callapi\u001b[0m\"",
     "valid": true,
     "metadata": {
       "name": "CallAPI",
@@ -14304,8 +14304,8 @@
       "type": "application",
       "supported_adapters": null
     },
-    "time": "2023-06-22 12:50:35",
-    "version": "0.1.2"
+    "time": "2023-06-24 04:17:19",
+    "version": "0.1.3"
   },
   "nonebot-plugin-penguin:nonebot_plugin_penguin": {
     "run": true,
