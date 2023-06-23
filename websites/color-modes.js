@@ -21,6 +21,9 @@
       : "light";
   };
 
+  const themeButton = document.getElementById("theme-toggle-btn");
+  const themeIcon = document.getElementById("theme-toggle-icon");
+
   const setTheme = (theme) => {
     if (
       theme === "auto" &&
@@ -34,35 +37,17 @@
 
   setTheme(getPreferredTheme());
 
-  const showActiveTheme = (theme, focus = false) => {
-    const themeSwitcher = document.querySelector("#bd-theme");
-
-    if (!themeSwitcher) {
-      return;
-    }
-
-    const themeSwitcherText = document.querySelector("#bd-theme-text");
-    const activeThemeIcon = document.querySelector(".theme-icon-active use");
-    const btnToActive = document.querySelector(
-      `[data-bs-theme-value="${theme}"]`,
-    );
-    const svgOfActiveBtn = btnToActive
-      .querySelector("svg use")
-      .getAttribute("href");
-
-    document.querySelectorAll("[data-bs-theme-value]").forEach((element) => {
-      element.classList.remove("active");
-      element.setAttribute("aria-pressed", "false");
+  const showActiveTheme = (theme) => {
+    themeIcon.classList.forEach(className => {
+      themeIcon.classList.remove(className);
     });
-
-    btnToActive.classList.add("active");
-    btnToActive.setAttribute("aria-pressed", "true");
-    activeThemeIcon.setAttribute("href", svgOfActiveBtn);
-    const themeSwitcherLabel = `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`;
-    themeSwitcher.setAttribute("aria-label", themeSwitcherLabel);
-
-    if (focus) {
-      themeSwitcher.focus();
+    themeIcon.classList.add("mdi");
+    if (theme === "dark") {
+      themeIcon.classList.add("mdi-weather-night");
+      themeButton.setAttribute("data-bs-theme-value", "dark");
+    } else {
+      themeIcon.classList.add("mdi-weather-sunny");
+      themeButton.setAttribute("data-bs-theme-value", "light");
     }
   };
 
@@ -78,13 +63,15 @@
   window.addEventListener("DOMContentLoaded", () => {
     showActiveTheme(getPreferredTheme());
 
-    document.querySelectorAll("[data-bs-theme-value]").forEach((toggle) => {
-      toggle.addEventListener("click", () => {
-        const theme = toggle.getAttribute("data-bs-theme-value");
-        setStoredTheme(theme);
-        setTheme(theme);
-        showActiveTheme(theme, true);
-      });
+    themeButton.addEventListener("click", () => {
+      const theme = themeButton.getAttribute("data-bs-theme-value");
+      let new_theme = "dark";
+      if (theme === "dark" || theme === "auto") {
+        new_theme = "light";
+      }
+      setStoredTheme(new_theme);
+      setTheme(new_theme);
+      showActiveTheme(new_theme);
     });
   });
 })();

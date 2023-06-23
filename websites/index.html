@@ -96,9 +96,9 @@
             type="button"
             id="theme-toggle-btn"
             title="Toggle theme"
-            onclick="toggleTheme()"
+            data-bs-theme-value="auto"
           >
-            <span id="theme_icon" class="mdi mdi-theme-light-dark"></span>
+            <span id="theme-toggle-icon" class="mdi mdi-theme-light-dark"></span>
           </button>
           <button
             class="navbar-toggler"
@@ -446,21 +446,6 @@
       let ansi_up = new AnsiUp();
       function log_to_html(ansi_text) {
         return ansi_up.ansi_to_html(ansi_text);
-      }
-
-      function toggleTheme() {
-        let themeIcon = document.getElementById("theme_icon");
-        if (document.documentElement.getAttribute("data-bs-theme") == "light") {
-          document.documentElement.setAttribute("data-bs-theme", "dark");
-          themeIcon.classList.remove("mdi-theme-light-dark");
-          themeIcon.classList.remove("mdi-weather-sunny");
-          themeIcon.classList.add("mdi-weather-night");
-        } else {
-          document.documentElement.setAttribute("data-bs-theme", "light");
-          themeIcon.classList.remove("mdi-theme-light-dark");
-          themeIcon.classList.remove("mdi-weather-night");
-          themeIcon.classList.add("mdi-weather-sunny");
-        }
       }
 
       function scrollToTop() {
