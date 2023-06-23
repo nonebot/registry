@@ -110,7 +110,8 @@ code.hljs {
   background-color: #ffeef0;
 }
 
-@media (prefers-color-scheme: dark) {
+html[data-bs-theme="dark"] {
+
   /*!
   Theme: GitHub Dark
   Description: Dark theme as seen on github.com
