@@ -47,6 +47,16 @@
       color: rgb(151, 151, 151);
       font-size: 1.5em;
     }
+
+    .back-to-top {
+      position: fixed;
+      font-size: 32px;
+      bottom: 20px;
+      right: 20px;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      z-index: 9999;
+    }
   </style>
 </head>
 
@@ -135,6 +145,10 @@
       </thead>
     </table>
   </div>
+
+  <a href="#" class="back-to-top">
+    <span class="mdi mdi-arrow-up-circle-outline"></span>
+  </a>
 
   <script src="https://unpkg.com/jquery@3.7.0/dist/jquery.min.js"></script>
   <script src="https://unpkg.com/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
@@ -348,6 +362,15 @@
         themeIcon.classList.add('mdi-weather-sunny');
       }
     }
+
+    window.addEventListener('scroll', function() {
+      var backToTopBtn = document.querySelector('.back-to-top');
+      if (window.pageYOffset > (document.documentElement.scrollHeight / 10)) {
+        backToTopBtn.style.opacity = '1';
+      } else {
+        backToTopBtn.style.opacity = '0';
+      }
+    });
   </script>
 </body>
 
