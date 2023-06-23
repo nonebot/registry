@@ -4134,7 +4134,7 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-23 04:16:19",
+    "time": "2023-06-23 09:25:20",
     "version": null
   },
   "nonebot-plugin-baidutranslate:nonebot_plugin_baidutranslate": {
@@ -5981,10 +5981,10 @@
   },
   "nonebot-plugin-mystool:nonebot_plugin_mystool": {
     "run": false,
-    "output": "插件 nonebot-plugin-mystool 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-mystool\u001b[39m                          \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.2.9\u001b[39;22m                                           \n     \u001b[34mdescription\u001b[39m  : NoneBot2插件|米游社工具-每日米游币任务、游戏签到、商品兑换、免抓包登录、原神树脂提醒 \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mhttpx\u001b[39m \u001b[39;1m>=0.24.0,<0.25.0\u001b[39;22m\n     - \u001b[36mnonebot_adapter_onebot\u001b[39m \u001b[39;1m>=2.2.3,<3.0.0\u001b[39;22m\n     - \u001b[36mnonebot_plugin_apscheduler\u001b[39m \u001b[39;1m>=0.2.0\u001b[39;22m\n     - \u001b[36mntplib\u001b[39m \u001b[39;1m>=0.4.0,<0.5.0\u001b[39;22m\n     - \u001b[36mPillow\u001b[39m \u001b[39;1m>=9.5.0,<10.0.0\u001b[39;22m\n     - \u001b[36mrequests\u001b[39m \u001b[39;1m>=2.30.0,<3.0.0\u001b[39;22m\n     - \u001b[36mtenacity\u001b[39m \u001b[39;1m>=8.2.2,<9.0.0\u001b[39;22m\n插件 nonebot-plugin-mystool 依赖的插件如下：\n    nonebot_plugin_apscheduler\n插件 nonebot_plugin_mystool 加载出错：\n    \u001b[32m06-22 04:12:09\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-22 04:12:09\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-22 04:12:09\u001b[0m [\u001b[33m\u001b[1mWARNING\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_mystool\u001b[0m\u001b[36m\u001b[0m | 用户数据文件不存在，将重新生成...\n    \u001b[32m06-22 04:12:10\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_mystool\u001b[0m\"\n    \u001b[32m06-22 04:12:10\u001b[0m [\u001b[31m\u001b[1mERROR\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | \u001b[31m\u001b[48;2;248;187;208mFailed to import \"nonebot_plugin_apscheduler\"\u001b[0m\u001b[31m\u001b[0m\n    \u001b[33m\u001b[1mTraceback (most recent call last):\u001b[0m\n      File \"\u001b[32m/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-mystool-nonebot_plugin_mystool-test/\u001b[0m\u001b[32m\u001b[1mrunner.py\u001b[0m\", line \u001b[33m30\u001b[0m, in \u001b[35m<module>\u001b[0m\n        \u001b[1mrequire\u001b[0m\u001b[1m(\u001b[0m\u001b[36m'nonebot_plugin_apscheduler'\u001b[0m\u001b[1m)\u001b[0m\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-mystool-nonebot_plugin_mystool-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 174, in require\n        plugin = load_plugin(name)\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-mystool-nonebot_plugin_mystool-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-mystool-nonebot_plugin_mystool-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 154, in load_plugin\n        raise RuntimeError(\n    \u001b[31m\u001b[1mRuntimeError\u001b[0m:\u001b[1m Module nonebot_plugin_apscheduler is not loaded as a plugin! Make sure not to import it before loading.\u001b[0m\n    Traceback (most recent call last):\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-mystool-nonebot_plugin_mystool-test/runner.py\", line 30, in <module>\n        require('nonebot_plugin_apscheduler')\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-mystool-nonebot_plugin_mystool-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 178, in require\n        raise RuntimeError(f'Cannot load plugin \"{name}\"!')\n    RuntimeError: Cannot load plugin \"nonebot_plugin_apscheduler\"!",
+    "output": "插件 nonebot-plugin-mystool 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-mystool\u001b[39m                          \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m1.0.0\u001b[39;22m                                           \n     \u001b[34mdescription\u001b[39m  : NoneBot2插件|米游社工具-每日米游币任务、游戏签到、商品兑换、免抓包登录、原神树脂提醒 \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mhttpx\u001b[39m \u001b[39;1m>=0.24.1,<0.25.0\u001b[39;22m\n     - \u001b[36mnonebot_adapter_onebot\u001b[39m \u001b[39;1m>=2.2.3,<3.0.0\u001b[39;22m\n     - \u001b[36mnonebot_plugin_apscheduler\u001b[39m \u001b[39;1m>=0.2.0\u001b[39;22m\n     - \u001b[36mntplib\u001b[39m \u001b[39;1m>=0.4.0,<0.5.0\u001b[39;22m\n     - \u001b[36mPillow\u001b[39m \u001b[39;1m>=9.5.0,<10.0.0\u001b[39;22m\n     - \u001b[36mrequests\u001b[39m \u001b[39;1m>=2.31.0,<3.0.0\u001b[39;22m\n     - \u001b[36mtenacity\u001b[39m \u001b[39;1m>=8.2.2,<9.0.0\u001b[39;22m\n插件 nonebot-plugin-mystool 依赖的插件如下：\n    nonebot_plugin_apscheduler\n插件 nonebot_plugin_mystool 加载出错：\n    \u001b[32m06-23 01:25:34\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-23 01:25:34\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-23 01:25:34\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_mystool\u001b[0m\u001b[36m\u001b[0m | 插件数据文件 /home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-mystool-nonebot_plugin_mystool-test/data/nonebot-plugin-mystool/plugin_data.json 不存在，已创建默认插件数据文件。\n    \u001b[32m06-23 01:25:35\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_mystool\u001b[0m\"\n    \u001b[32m06-23 01:25:35\u001b[0m [\u001b[31m\u001b[1mERROR\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | \u001b[31m\u001b[48;2;248;187;208mFailed to import \"nonebot_plugin_apscheduler\"\u001b[0m\u001b[31m\u001b[0m\n    \u001b[33m\u001b[1mTraceback (most recent call last):\u001b[0m\n      File \"\u001b[32m/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-mystool-nonebot_plugin_mystool-test/\u001b[0m\u001b[32m\u001b[1mrunner.py\u001b[0m\", line \u001b[33m30\u001b[0m, in \u001b[35m<module>\u001b[0m\n        \u001b[1mrequire\u001b[0m\u001b[1m(\u001b[0m\u001b[36m'nonebot_plugin_apscheduler'\u001b[0m\u001b[1m)\u001b[0m\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-mystool-nonebot_plugin_mystool-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 174, in require\n        plugin = load_plugin(name)\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-mystool-nonebot_plugin_mystool-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-mystool-nonebot_plugin_mystool-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 154, in load_plugin\n        raise RuntimeError(\n    \u001b[31m\u001b[1mRuntimeError\u001b[0m:\u001b[1m Module nonebot_plugin_apscheduler is not loaded as a plugin! Make sure not to import it before loading.\u001b[0m\n    Traceback (most recent call last):\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-mystool-nonebot_plugin_mystool-test/runner.py\", line 30, in <module>\n        require('nonebot_plugin_apscheduler')\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-mystool-nonebot_plugin_mystool-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 178, in require\n        raise RuntimeError(f'Cannot load plugin \"{name}\"!')\n    RuntimeError: Cannot load plugin \"nonebot_plugin_apscheduler\"!",
     "valid": false,
     "metadata": {
-      "name": "❖米游社小助手插件❖\n版本 - v0.2.9\n",
+      "name": "❖米游社小助手插件❖\n版本 - v1.0.0\n",
       "description": "米游社工具-每日米游币任务、游戏签到、商品兑换、免抓包登录\n",
       "usage": "🔐 {HEAD}登录 ➢ 登录绑定米游社账户    \n📦 {HEAD}地址 ➢ 设置收货地址ID    \n🗓️ {HEAD}签到 ➢ 手动进行游戏签到    \n📅 {HEAD}任务 ➢ 手动执行米游币任务    \n🛒 {HEAD}兑换 ➢ 米游币商品兑换相关    \n🎁 {HEAD}商品 ➢ 查看米游币商品信息(商品ID)    \n📊 {HEAD}便笺 ➢ 查看原神实时便笺(原神树脂、洞天财瓮等)    \n⚙️ {HEAD}设置 ➢ 设置是否开启通知、每日任务等相关选项    \n🔑 {HEAD}账号设置 ➢ 设置设备平台、是否开启每日计划任务、频道任务    \n🔔 {HEAD}通知设置 ➢ 设置是否开启每日米游币任务、游戏签到的结果通知    \n🖨️ {HEAD}导出Cookies ➢ 导出绑定的米游社账号的Cookies数据    \n📖 {HEAD}帮助 ➢ 查看帮助信息    \n🔍 {HEAD}帮助 <功能名> ➢ 查看目标功能详细说明    \n⚠️你的数据将经过机器人服务器，请确定你信任服务器所有者再使用。    \n\n🔗项目地址：https://github.com/Ljzd-PRO/nonebot-plugin-mystool    \n🔗详细使用说明：https://github.com/Ljzd-PRO/nonebot-plugin-mystool/wiki",
       "type": null,
@@ -5995,7 +5995,7 @@
     "validation_raw_data": {
       "module_name": "nonebot_plugin_mystool",
       "project_link": "nonebot-plugin-mystool",
-      "name": "❖米游社小助手插件❖\n版本 - v0.2.9\n",
+      "name": "❖米游社小助手插件❖\n版本 - v1.0.0\n",
       "desc": "米游社工具-每日米游币任务、游戏签到、商品兑换、免抓包登录\n",
       "author": "Ljzd-PRO",
       "homepage": null,
@@ -6030,8 +6030,8 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-22 12:12:10",
-    "version": "0.2.9"
+    "time": "2023-06-23 09:25:35",
+    "version": "1.0.0"
   },
   "nonebot-plugin-warframe:nonebot_plugin_warframe": {
     "run": true,
@@ -13301,7 +13301,7 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-23 04:17:08",
+    "time": "2023-06-23 09:25:58",
     "version": null
   },
   "tatarubot2:tatarubot2": {
@@ -14081,7 +14081,7 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-23 04:17:11",
+    "time": "2023-06-23 09:26:01",
     "version": null
   },
   "nonebot-plugin-wordle-help:nonebot_plugin_wordle_help": {
