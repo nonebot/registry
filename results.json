@@ -4134,7 +4134,7 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-23 16:19:05",
+    "time": "2023-06-23 20:29:49",
     "version": null
   },
   "nonebot-plugin-baidutranslate:nonebot_plugin_baidutranslate": {
@@ -8014,7 +8014,7 @@
   },
   "nonebot-plugin-access-control:nonebot_plugin_access_control": {
     "run": true,
-    "output": "插件 nonebot-plugin-access-control 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-access-control\u001b[39m \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.5.7\u001b[39;22m                         \n     \u001b[34mdescription\u001b[39m  :                               \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mnonebot-plugin-apscheduler\u001b[39m \u001b[39;1m>=0.2.0,<0.3.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-datastore\u001b[39m \u001b[39;1m>=1.0.0,<2.0.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-session\u001b[39m \u001b[39;1m>=0.0.4\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0,<3.0.0\u001b[39;22m\n     - \u001b[36mshortuuid\u001b[39m \u001b[39;1m>=1.0.11,<2.0.0\u001b[39;22m\n插件 nonebot-plugin-access-control 依赖的插件如下：\n    nonebot_plugin_apscheduler, nonebot_plugin_datastore, nonebot_plugin_localstore, nonebot_plugin_session\n插件 nonebot_plugin_access_control 加载正常：\n    \u001b[32m06-23 04:19:06\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-23 04:19:06\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-23 04:19:06\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_localstore\u001b[0m\"\n    \u001b[32m06-23 04:19:07\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_datastore\u001b[0m\"\n    \u001b[32m06-23 04:19:07\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_apscheduler\u001b[0m\"\n    \u001b[32m06-23 04:19:07\u001b[0m [\u001b[31m\u001b[1mERROR\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | \u001b[31m\u001b[48;2;248;187;208mFailed to import \"nonebot_plugin_saa\"\u001b[0m\u001b[31m\u001b[0m\n    \u001b[33m\u001b[1mTraceback (most recent call last):\u001b[0m\n      File \"\u001b[32m/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-access-control-nonebot_plugin_access_control-test/\u001b[0m\u001b[32m\u001b[1mrunner.py\u001b[0m\", line \u001b[33m15\u001b[0m, in \u001b[35m<module>\u001b[0m\n        \u001b[1mplugin\u001b[0m \u001b[35m\u001b[1m=\u001b[0m \u001b[1mload_plugin\u001b[0m\u001b[1m(\u001b[0m\u001b[36m\"nonebot_plugin_access_control\"\u001b[0m\u001b[1m)\u001b[0m\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-access-control-nonebot_plugin_access_control-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-access-control-nonebot_plugin_access_control-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-access-control-nonebot_plugin_access_control-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-access-control-nonebot_plugin_access_control-test/.venv/lib/python3.10/site-packages/nonebot_plugin_access_control/__init__.py\", line 58, in <module>\n        require(\"nonebot_plugin_session\")\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-access-control-nonebot_plugin_access_control-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 174, in require\n        plugin = load_plugin(name)\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-access-control-nonebot_plugin_access_control-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-access-control-nonebot_plugin_access_control-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-access-control-nonebot_plugin_access_control-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-access-control-nonebot_plugin_access_control-test/.venv/lib/python3.10/site-packages/nonebot_plugin_session/__init__.py\", line 3, in <module>\n        from . import adapters, model, saa\n      File \"<frozen importlib._bootstrap>\", line 1078, in _handle_fromlist\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n      File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-access-control-nonebot_plugin_access_control-test/.venv/lib/python3.10/site-packages/nonebot_plugin_session/saa.py\", line 9, in <module>\n        require(\"nonebot_plugin_saa\")\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-access-control-nonebot_plugin_access_control-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 174, in require\n        plugin = load_plugin(name)\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-access-control-nonebot_plugin_access_control-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-access-control-nonebot_plugin_access_control-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1004, in _find_and_load_unlocked\n    \u001b[31m\u001b[1mModuleNotFoundError\u001b[0m:\u001b[1m No module named 'nonebot_plugin_saa'\u001b[0m\n    \u001b[32m06-23 04:19:07\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_session\u001b[0m\"\n    \u001b[32m06-23 04:19:08\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_access_control\u001b[0m\"",
+    "output": "插件 nonebot-plugin-access-control 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-access-control\u001b[39m \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.5.7.post1\u001b[39;22m                   \n     \u001b[34mdescription\u001b[39m  :                               \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mnonebot-plugin-apscheduler\u001b[39m \u001b[39;1m>=0.2.0,<0.3.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-datastore\u001b[39m \u001b[39;1m>=1.0.0,<2.0.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-session\u001b[39m \u001b[39;1m>=0.0.4\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0,<3.0.0\u001b[39;22m\n     - \u001b[36mshortuuid\u001b[39m \u001b[39;1m>=1.0.11,<2.0.0\u001b[39;22m\n插件 nonebot-plugin-access-control 依赖的插件如下：\n    nonebot_plugin_apscheduler, nonebot_plugin_datastore, nonebot_plugin_localstore, nonebot_plugin_session\n插件 nonebot_plugin_access_control 加载正常：\n    \u001b[32m06-23 12:30:10\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-23 12:30:10\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-23 12:30:10\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_localstore\u001b[0m\"\n    \u001b[32m06-23 12:30:11\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_datastore\u001b[0m\"\n    \u001b[32m06-23 12:30:11\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_apscheduler\u001b[0m\"\n    \u001b[32m06-23 12:30:11\u001b[0m [\u001b[31m\u001b[1mERROR\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | \u001b[31m\u001b[48;2;248;187;208mFailed to import \"nonebot_plugin_saa\"\u001b[0m\u001b[31m\u001b[0m\n    \u001b[33m\u001b[1mTraceback (most recent call last):\u001b[0m\n      File \"\u001b[32m/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-access-control-nonebot_plugin_access_control-test/\u001b[0m\u001b[32m\u001b[1mrunner.py\u001b[0m\", line \u001b[33m15\u001b[0m, in \u001b[35m<module>\u001b[0m\n        \u001b[1mplugin\u001b[0m \u001b[35m\u001b[1m=\u001b[0m \u001b[1mload_plugin\u001b[0m\u001b[1m(\u001b[0m\u001b[36m\"nonebot_plugin_access_control\"\u001b[0m\u001b[1m)\u001b[0m\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-access-control-nonebot_plugin_access_control-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-access-control-nonebot_plugin_access_control-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-access-control-nonebot_plugin_access_control-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-access-control-nonebot_plugin_access_control-test/.venv/lib/python3.10/site-packages/nonebot_plugin_access_control/__init__.py\", line 58, in <module>\n        require(\"nonebot_plugin_session\")\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-access-control-nonebot_plugin_access_control-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 174, in require\n        plugin = load_plugin(name)\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-access-control-nonebot_plugin_access_control-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-access-control-nonebot_plugin_access_control-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-access-control-nonebot_plugin_access_control-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-access-control-nonebot_plugin_access_control-test/.venv/lib/python3.10/site-packages/nonebot_plugin_session/__init__.py\", line 3, in <module>\n        from . import adapters, model, saa\n      File \"<frozen importlib._bootstrap>\", line 1078, in _handle_fromlist\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n      File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-access-control-nonebot_plugin_access_control-test/.venv/lib/python3.10/site-packages/nonebot_plugin_session/saa.py\", line 9, in <module>\n        require(\"nonebot_plugin_saa\")\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-access-control-nonebot_plugin_access_control-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 174, in require\n        plugin = load_plugin(name)\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-access-control-nonebot_plugin_access_control-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-access-control-nonebot_plugin_access_control-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1004, in _find_and_load_unlocked\n    \u001b[31m\u001b[1mModuleNotFoundError\u001b[0m:\u001b[1m No module named 'nonebot_plugin_saa'\u001b[0m\n    \u001b[32m06-23 12:30:11\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_session\u001b[0m\"\n    \u001b[32m06-23 12:30:11\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_access_control\u001b[0m\"",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -8037,8 +8037,8 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-23 12:19:08",
-    "version": "0.5.7"
+    "time": "2023-06-23 20:30:12",
+    "version": "0.5.7.post1"
   },
   "nonebot-plugin-colormind:nonebot_plugin_colormind": {
     "run": true,
@@ -13336,7 +13336,7 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-23 16:20:38",
+    "time": "2023-06-23 20:30:30",
     "version": null
   },
   "tatarubot2:tatarubot2": {
@@ -14116,7 +14116,7 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-23 16:20:43",
+    "time": "2023-06-23 20:30:34",
     "version": null
   },
   "nonebot-plugin-wordle-help:nonebot_plugin_wordle_help": {
@@ -14556,25 +14556,26 @@
   },
   "nonebot-plugin-msgbuf:nonebot_plugin_msgbuf": {
     "run": true,
-    "output": "插件 nonebot-plugin-msgbuf 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-msgbuf\u001b[39m    \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.3.2\u001b[39;22m                    \n     \u001b[34mdescription\u001b[39m  : 适用于 NoneBot2 插件的被动消息构造集成 \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0b1\u001b[39;22m\n插件 nonebot-plugin-msgbuf 依赖的插件如下：\n    \n插件 nonebot_plugin_msgbuf 加载正常：\n    \u001b[32m06-22 04:51:38\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-22 04:51:38\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-22 04:51:38\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_msgbuf\u001b[0m\"",
+    "output": "插件 nonebot-plugin-msgbuf 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-msgbuf\u001b[39m    \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.4.1\u001b[39;22m                    \n     \u001b[34mdescription\u001b[39m  : 适用于 NoneBot2 插件的被动消息构造集成 \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0b1\u001b[39;22m\n插件 nonebot-plugin-msgbuf 依赖的插件如下：\n    \n插件 nonebot_plugin_msgbuf 加载正常：\n    \u001b[32m06-23 12:30:39\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-23 12:30:39\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-23 12:30:39\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_msgbuf\u001b[0m\"",
     "valid": true,
     "metadata": {
-      "name": "信鸽巴夫",
+      "name": "雅信达",
       "description": "适用于 NoneBot2 插件的被动消息构造集成",
       "usage": "无",
       "type": "library",
       "homepage": "https://github.com/NCBM/nonebot-plugin-msgbuf",
       "supported_adapters": [
-        "~qqguild",
         "~onebot.v11",
-        "~onebot.v12"
+        "~qqguild",
+        "~onebot.v12",
+        "~telegram"
       ]
     },
     "validation_message": "通过",
     "validation_raw_data": {
       "module_name": "nonebot_plugin_msgbuf",
       "project_link": "nonebot-plugin-msgbuf",
-      "name": "信鸽巴夫",
+      "name": "雅信达",
       "desc": "适用于 NoneBot2 插件的被动消息构造集成",
       "author": "NCBM",
       "homepage": "https://github.com/NCBM/nonebot-plugin-msgbuf",
@@ -14582,9 +14583,10 @@
       "plugin_test_result": true,
       "type": "library",
       "supported_adapters": [
-        "~qqguild",
         "~onebot.v11",
-        "~onebot.v12"
+        "~qqguild",
+        "~onebot.v12",
+        "~telegram"
       ]
     },
     "previous": {
@@ -14607,7 +14609,7 @@
     "current": {
       "module_name": "nonebot_plugin_msgbuf",
       "project_link": "nonebot-plugin-msgbuf",
-      "name": "信鸽巴夫",
+      "name": "雅信达",
       "desc": "适用于 NoneBot2 插件的被动消息构造集成",
       "author": "NCBM",
       "homepage": "https://github.com/NCBM/nonebot-plugin-msgbuf",
@@ -14620,13 +14622,14 @@
       "is_official": false,
       "type": "library",
       "supported_adapters": [
-        "nonebot.adapters.onebot.v11",
+        "nonebot.adapters.qqguild",
         "nonebot.adapters.onebot.v12",
-        "nonebot.adapters.qqguild"
+        "nonebot.adapters.onebot.v11",
+        "nonebot.adapters.telegram"
       ]
     },
-    "time": "2023-06-22 12:51:39",
-    "version": "0.3.2"
+    "time": "2023-06-23 20:30:40",
+    "version": "0.4.1"
   },
   "nonebot-plugin-og:nonebot_plugin_og": {
     "run": true,
