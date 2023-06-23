@@ -98,7 +98,10 @@
             title="Toggle theme"
             data-bs-theme-value="auto"
           >
-            <span id="theme-toggle-icon" class="mdi mdi-theme-light-dark"></span>
+            <span
+              id="theme-toggle-icon"
+              class="mdi mdi-theme-light-dark"
+            ></span>
           </button>
           <button
             class="navbar-toggler"
@@ -240,7 +243,10 @@
       </table>
     </div>
 
-    <button class="btn btn-light btn-rounded back-to-top" onclick="scrollToTop()">
+    <button
+      class="btn btn-light btn-rounded back-to-top"
+      onclick="scrollToTop()"
+    >
       <span class="mdi mdi-rocket text-primary"></span>
     </button>
 
@@ -449,7 +455,7 @@
       }
 
       function scrollToTop() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        window.scrollTo({ top: 0, behavior: "smooth" });
       }
 
       window.addEventListener("scroll", function () {

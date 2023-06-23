@@ -38,7 +38,7 @@
   setTheme(getPreferredTheme());
 
   const showActiveTheme = (theme) => {
-    themeIcon.classList.forEach(className => {
+    themeIcon.classList.forEach((className) => {
       themeIcon.classList.remove(className);
     });
     themeIcon.classList.add("mdi");
