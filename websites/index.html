@@ -69,6 +69,8 @@
         bottom: 20px;
         right: 20px;
         opacity: 0;
+        border-width: 2px;
+        background-color: transparent;
         transition: opacity 0.3s ease-in-out;
         z-index: 9999;
       }
@@ -238,9 +240,9 @@
       </table>
     </div>
 
-    <a href="#" class="back-to-top">
-      <span class="mdi mdi-arrow-up-circle-outline"></span>
-    </a>
+    <button class="btn btn-light btn-rounded back-to-top" onclick="scrollToTop()">
+      <span class="mdi mdi-rocket text-primary"></span>
+    </button>
 
     <script src="https://unpkg.com/jquery@3.7.0/dist/jquery.min.js"></script>
     <script
@@ -447,7 +449,7 @@
       }
 
       function toggleTheme() {
-        var themeIcon = document.getElementById("theme_icon");
+        let themeIcon = document.getElementById("theme_icon");
         if (document.documentElement.getAttribute("data-bs-theme") == "light") {
           document.documentElement.setAttribute("data-bs-theme", "dark");
           themeIcon.classList.remove("mdi-theme-light-dark");
@@ -461,10 +463,14 @@
         }
       }
 
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
       window.addEventListener("scroll", function () {
-        var backToTopBtn = document.querySelector(".back-to-top");
+        let backToTopBtn = document.querySelector(".back-to-top");
         if (window.pageYOffset > document.documentElement.scrollHeight / 10) {
-          backToTopBtn.style.opacity = "1";
+          backToTopBtn.style.opacity = "0.7";
         } else {
           backToTopBtn.style.opacity = "0";
         }
