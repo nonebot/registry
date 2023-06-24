@@ -37,9 +37,7 @@
   setTheme(getPreferredTheme());
 
   const showActiveTheme = (theme) => {
-    themeIcon.classList.remove("mdi-theme-light-dark");
-    themeIcon.classList.remove("mdi-weather-sunny");
-    themeIcon.classList.remove("mdi-weather-night");
+    themeIcon.setAttribute("class", "mdi")
     if (theme === "dark") {
       themeIcon.classList.add("mdi-weather-night");
     } else if (theme === "light") {
