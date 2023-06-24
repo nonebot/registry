@@ -4134,7 +4134,7 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-24 18:19:25",
+    "time": "2023-06-24 20:28:20",
     "version": null
   },
   "nonebot-plugin-baidutranslate:nonebot_plugin_baidutranslate": {
@@ -4490,28 +4490,32 @@
   },
   "nonebot-plugin-reboot:nonebot_plugin_reboot": {
     "run": true,
-    "output": "插件 nonebot-plugin-reboot 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-reboot\u001b[39m            \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.1.3\u001b[39;22m                            \n     \u001b[34mdescription\u001b[39m  : Reboot your bot by using command \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.1.0,<3.0.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0-beta.2,<3.0.0\u001b[39;22m\n插件 nonebot-plugin-reboot 依赖的插件如下：\n    \n插件 nonebot_plugin_reboot 加载正常：\n    \u001b[32m06-22 04:06:01\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-22 04:06:01\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-22 04:06:01\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_reboot\u001b[0m\"",
-    "valid": false,
+    "output": "插件 nonebot-plugin-reboot 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-reboot\u001b[39m            \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.1.4\u001b[39;22m                            \n     \u001b[34mdescription\u001b[39m  : Reboot your bot by using command \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.1.0,<3.0.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0-beta.2,<3.0.0\u001b[39;22m\n插件 nonebot-plugin-reboot 依赖的插件如下：\n    \n插件 nonebot_plugin_reboot 加载正常：\n    \u001b[32m06-24 12:28:28\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-24 12:28:28\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-24 12:28:28\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_reboot\u001b[0m\"",
+    "valid": true,
     "metadata": {
       "name": "nonebot_plugin_reboot [重启 bot]",
       "description": "用命令重启机器人",
       "usage": "",
-      "type": null,
-      "homepage": null,
-      "supported_adapters": null
+      "type": "application",
+      "homepage": "https://github.com/18870/nonebot-plugin-reboot",
+      "supported_adapters": [
+        "~onebot.v11"
+      ]
     },
-    "validation_message": "2 validation errors for PluginPublishInfo\nhomepage\n  none is not an allowed value (type=type_error.none.not_allowed)\ntype\n  ⚠️ 插件类型不能为空。<dt>请确保填写插件类型。</dt> (type=value_error)",
+    "validation_message": "通过",
     "validation_raw_data": {
       "module_name": "nonebot_plugin_reboot",
       "project_link": "nonebot-plugin-reboot",
       "name": "nonebot_plugin_reboot [重启 bot]",
       "desc": "用命令重启机器人",
       "author": "18870",
-      "homepage": null,
+      "homepage": "https://github.com/18870/nonebot-plugin-reboot",
       "tags": "[]",
       "plugin_test_result": true,
-      "type": null,
-      "supported_adapters": null
+      "type": "application",
+      "supported_adapters": [
+        "~onebot.v11"
+      ]
     },
     "previous": {
       "module_name": "nonebot_plugin_reboot",
@@ -4525,9 +4529,22 @@
       "type": null,
       "supported_adapters": null
     },
-    "current": null,
-    "time": "2023-06-22 12:06:01",
-    "version": "0.1.3"
+    "current": {
+      "module_name": "nonebot_plugin_reboot",
+      "project_link": "nonebot-plugin-reboot",
+      "name": "nonebot_plugin_reboot [重启 bot]",
+      "desc": "用命令重启机器人",
+      "author": "18870",
+      "homepage": "https://github.com/18870/nonebot-plugin-reboot",
+      "tags": [],
+      "is_official": false,
+      "type": "application",
+      "supported_adapters": [
+        "nonebot.adapters.onebot.v11"
+      ]
+    },
+    "time": "2023-06-24 20:28:29",
+    "version": "0.1.4"
   },
   "nonebot-plugin-setu4:nonebot_plugin_setu4": {
     "run": true,
@@ -10673,7 +10690,7 @@
   },
   "nonebot-plugin-maimai:nonebot_plugin_maimai": {
     "run": false,
-    "output": "插件 nonebot-plugin-maimai 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-maimai\u001b[39m        \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.2.1\u001b[39;22m                        \n     \u001b[34mdescription\u001b[39m  : Maimai DX plugin for NoneBot \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36maiohttp\u001b[39m \u001b[39;1m>=3.8.3,<4.0.0\u001b[39;22m\n     - \u001b[36mbs4\u001b[39m \u001b[39;1m>=0.0.1,<0.0.2\u001b[39;22m\n     - \u001b[36mhttpx\u001b[39m \u001b[39;1m>=0.22.0\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.1.3\u001b[39;22m\n     - \u001b[36mnonebot-plugin-txt2img\u001b[39m \u001b[39;1m>=0.3.0,<0.4.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0,<3.0.0\u001b[39;22m\n     - \u001b[36mpillow\u001b[39m \u001b[39;1m>=9.3.0\u001b[39;22m\n插件 nonebot-plugin-maimai 依赖的插件如下：\n    nonebot_plugin_saa, nonebot_plugin_txt2img\n插件 nonebot_plugin_maimai 加载出错：\n    \u001b[32m06-23 16:20:30\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-23 16:20:30\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-23 16:20:30\u001b[0m [\u001b[31m\u001b[1mERROR\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | \u001b[31m\u001b[48;2;248;187;208mFailed to import \"nonebot_plugin_maimai\"\u001b[0m\u001b[31m\u001b[0m\n    \u001b[33m\u001b[1mTraceback (most recent call last):\u001b[0m\n      File \"\u001b[32m/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-maimai-nonebot_plugin_maimai-test/\u001b[0m\u001b[32m\u001b[1mrunner.py\u001b[0m\", line \u001b[33m15\u001b[0m, in \u001b[35m<module>\u001b[0m\n        \u001b[1mplugin\u001b[0m \u001b[35m\u001b[1m=\u001b[0m \u001b[1mload_plugin\u001b[0m\u001b[1m(\u001b[0m\u001b[36m\"nonebot_plugin_maimai\"\u001b[0m\u001b[1m)\u001b[0m\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-maimai-nonebot_plugin_maimai-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-maimai-nonebot_plugin_maimai-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-maimai-nonebot_plugin_maimai-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"<frozen importlib._bootstrap_external>\", line 879, in exec_module\n      File \"<frozen importlib._bootstrap_external>\", line 1017, in get_code\n      File \"<frozen importlib._bootstrap_external>\", line 947, in source_to_code\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"/home/runner/work/nonebot-store-test/nonebot-store-test/plugin_test/nonebot-plugin-maimai-nonebot_plugin_maimai-test/.venv/lib/python3.10/site-packages/nonebot_plugin_maimai/__init__.py\", line 70\n        usage='指令：舞萌帮助',\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    \u001b[31m\u001b[1mSyntaxError\u001b[0m:\u001b[1m keyword argument repeated: usage\u001b[0m",
+    "output": "插件 nonebot-plugin-maimai 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-maimai\u001b[39m        \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.2.2\u001b[39;22m                        \n     \u001b[34mdescription\u001b[39m  : Maimai DX plugin for NoneBot \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36maiohttp\u001b[39m \u001b[39;1m>=3.8.3,<4.0.0\u001b[39;22m\n     - \u001b[36mbs4\u001b[39m \u001b[39;1m>=0.0.1,<0.0.2\u001b[39;22m\n     - \u001b[36mhttpx\u001b[39m \u001b[39;1m>=0.22.0\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.1.3\u001b[39;22m\n     - \u001b[36mnonebot-plugin-txt2img\u001b[39m \u001b[39;1m>=0.3.0,<0.4.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0,<3.0.0\u001b[39;22m\n     - \u001b[36mpillow\u001b[39m \u001b[39;1m>=9.3.0\u001b[39;22m\n插件 nonebot-plugin-maimai 依赖的插件如下：\n    nonebot_plugin_saa, nonebot_plugin_txt2img\n插件 nonebot_plugin_maimai 加载出错：\n    \u001b[32m06-24 12:29:05\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-24 12:29:05\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-24 12:29:05\u001b[0m [\u001b[31m\u001b[1mERROR\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | \u001b[31m\u001b[48;2;248;187;208mFailed to import \"nonebot_plugin_htmlrender\"\u001b[0m\u001b[31m\u001b[0m\n    \u001b[33m\u001b[1mTraceback (most recent call last):\u001b[0m\n      File \"\u001b[32m/home/runner/work/registry/registry/plugin_test/nonebot-plugin-maimai-nonebot_plugin_maimai-test/\u001b[0m\u001b[32m\u001b[1mrunner.py\u001b[0m\", line \u001b[33m15\u001b[0m, in \u001b[35m<module>\u001b[0m\n        \u001b[1mplugin\u001b[0m \u001b[35m\u001b[1m=\u001b[0m \u001b[1mload_plugin\u001b[0m\u001b[1m(\u001b[0m\u001b[36m\"nonebot_plugin_maimai\"\u001b[0m\u001b[1m)\u001b[0m\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-maimai-nonebot_plugin_maimai-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-maimai-nonebot_plugin_maimai-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-maimai-nonebot_plugin_maimai-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-maimai-nonebot_plugin_maimai-test/.venv/lib/python3.10/site-packages/nonebot_plugin_maimai/__init__.py\", line 2, in <module>\n        require('nonebot_plugin_htmlrender')\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-maimai-nonebot_plugin_maimai-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 174, in require\n        plugin = load_plugin(name)\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-maimai-nonebot_plugin_maimai-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-maimai-nonebot_plugin_maimai-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1004, in _find_and_load_unlocked\n    \u001b[31m\u001b[1mModuleNotFoundError\u001b[0m:\u001b[1m No module named 'nonebot_plugin_htmlrender'\u001b[0m\n    \u001b[32m06-24 12:29:05\u001b[0m [\u001b[31m\u001b[1mERROR\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | \u001b[31m\u001b[48;2;248;187;208mFailed to import \"nonebot_plugin_maimai\"\u001b[0m\u001b[31m\u001b[0m\n    \u001b[33m\u001b[1mTraceback (most recent call last):\u001b[0m\n      File \"\u001b[32m/home/runner/work/registry/registry/plugin_test/nonebot-plugin-maimai-nonebot_plugin_maimai-test/\u001b[0m\u001b[32m\u001b[1mrunner.py\u001b[0m\", line \u001b[33m15\u001b[0m, in \u001b[35m<module>\u001b[0m\n        \u001b[1mplugin\u001b[0m \u001b[35m\u001b[1m=\u001b[0m \u001b[1mload_plugin\u001b[0m\u001b[1m(\u001b[0m\u001b[36m\"nonebot_plugin_maimai\"\u001b[0m\u001b[1m)\u001b[0m\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-maimai-nonebot_plugin_maimai-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-maimai-nonebot_plugin_maimai-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-maimai-nonebot_plugin_maimai-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-maimai-nonebot_plugin_maimai-test/.venv/lib/python3.10/site-packages/nonebot_plugin_maimai/__init__.py\", line 2, in <module>\n        require('nonebot_plugin_htmlrender')\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-maimai-nonebot_plugin_maimai-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 178, in require\n        raise RuntimeError(f'Cannot load plugin \"{name}\"!')\n    \u001b[31m\u001b[1mRuntimeError\u001b[0m:\u001b[1m Cannot load plugin \"nonebot_plugin_htmlrender\"!\u001b[0m",
     "valid": false,
     "metadata": null,
     "validation_message": "缺少元数据",
@@ -10696,8 +10713,8 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-24 00:20:30",
-    "version": "0.2.1"
+    "time": "2023-06-24 20:29:06",
+    "version": "0.2.2"
   },
   "nonebot-plugin-all4one:nonebot_plugin_all4one": {
     "run": true,
@@ -13063,7 +13080,7 @@
   },
   "nonebot-plugin-bilichat:nonebot_plugin_bilichat": {
     "run": true,
-    "output": "插件 nonebot-plugin-bilichat 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-bilichat\u001b[39m  \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m2.8.1\u001b[39;22m                    \n     \u001b[34mdescription\u001b[39m  : 一个通过 OpenAI 来对b站视频进行总结插件 \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mbilireq\u001b[39m \u001b[39;1m>=0.2.4\u001b[39;22m\n     - \u001b[36mlxml\u001b[39m \u001b[39;1m>=4.9.2\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.2.2\u001b[39;22m\n     - \u001b[36mnonebot-plugin-localstore\u001b[39m \u001b[39;1m>=0.4.1\u001b[39;22m\n     - \u001b[36mnonebot-plugin-segbuilder\u001b[39m \u001b[39;1m>=0.2.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0\u001b[39;22m\n     - \u001b[36mpillow\u001b[39m \u001b[39;1m>=9.5.0\u001b[39;22m\n     - \u001b[36mqrcode\u001b[39m \u001b[39;1m>=7.4.2\u001b[39;22m\n插件 nonebot-plugin-bilichat 依赖的插件如下：\n    nonebot_plugin_localstore, nonebot_plugin_segbuilder\n插件 nonebot_plugin_bilichat 加载正常：\n    \u001b[32m06-22 16:18:38\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-22 16:18:38\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-22 16:18:39\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_localstore\u001b[0m\"\n    \u001b[32m06-22 16:18:39\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_bilichat\u001b[0m\u001b[36m\u001b[0m | Cache folder for nonebot_plugin_bilichat is located at /home/runner/.cache/nonebot2/nonebot_plugin_bilichat\n    \u001b[32m06-22 16:18:39\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_bilichat\u001b[0m\u001b[36m\u001b[0m | Data folder for nonebot_plugin_bilichat is located at /home/runner/.local/share/nonebot2/nonebot_plugin_bilichat\n    \u001b[32m06-22 16:18:39\u001b[0m [\u001b[33m\u001b[1mWARNING\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_bilichat\u001b[0m\u001b[36m\u001b[0m | sentry_sdk is not installed\n    \u001b[32m06-22 16:18:39\u001b[0m [\u001b[33m\u001b[1mWARNING\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_bilichat\u001b[0m\u001b[36m\u001b[0m | font file does not exist. Trying to download\n    \u001b[32m06-22 16:18:44\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_segbuilder\u001b[0m\u001b[36m\u001b[0m | The adapter mirai2 is loaded successfully\n    \u001b[32m06-22 16:18:44\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_segbuilder\u001b[0m\u001b[36m\u001b[0m | The adapter OneBot V11 is loaded successfully\n    \u001b[32m06-22 16:18:44\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_segbuilder\u001b[0m\u001b[36m\u001b[0m | The adapter OneBot V12 is loaded successfully\n    \u001b[32m06-22 16:18:44\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_segbuilder\u001b[0m\u001b[36m\u001b[0m | The adapter QQ Guild is loaded successfully\n    \u001b[32m06-22 16:18:44\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_segbuilder\u001b[0m\"\n    \u001b[32m06-22 16:18:44\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_bilichat\u001b[0m\"",
+    "output": "插件 nonebot-plugin-bilichat 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-bilichat\u001b[39m  \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m2.8.2\u001b[39;22m                    \n     \u001b[34mdescription\u001b[39m  : 一个通过 OpenAI 来对b站视频进行总结插件 \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mbilireq\u001b[39m \u001b[39;1m>=0.2.4\u001b[39;22m\n     - \u001b[36mlxml\u001b[39m \u001b[39;1m>=4.9.2\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.2.2\u001b[39;22m\n     - \u001b[36mnonebot-plugin-localstore\u001b[39m \u001b[39;1m>=0.4.1\u001b[39;22m\n     - \u001b[36mnonebot-plugin-segbuilder\u001b[39m \u001b[39;1m>=0.2.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0\u001b[39;22m\n     - \u001b[36mpillow\u001b[39m \u001b[39;1m>=9.5.0\u001b[39;22m\n     - \u001b[36mqrcode\u001b[39m \u001b[39;1m>=7.4.2\u001b[39;22m\n插件 nonebot-plugin-bilichat 依赖的插件如下：\n    nonebot_plugin_localstore, nonebot_plugin_segbuilder\n插件 nonebot_plugin_bilichat 加载正常：\n    \u001b[32m06-24 12:29:24\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-24 12:29:24\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-24 12:29:24\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_localstore\u001b[0m\"\n    \u001b[32m06-24 12:29:24\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_bilichat\u001b[0m\u001b[36m\u001b[0m | Cache folder for nonebot_plugin_bilichat is located at /home/runner/.cache/nonebot2/nonebot_plugin_bilichat\n    \u001b[32m06-24 12:29:24\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_bilichat\u001b[0m\u001b[36m\u001b[0m | Data folder for nonebot_plugin_bilichat is located at /home/runner/.local/share/nonebot2/nonebot_plugin_bilichat\n    \u001b[32m06-24 12:29:24\u001b[0m [\u001b[33m\u001b[1mWARNING\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_bilichat\u001b[0m\u001b[36m\u001b[0m | sentry_sdk is not installed\n    \u001b[32m06-24 12:29:25\u001b[0m [\u001b[33m\u001b[1mWARNING\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_bilichat\u001b[0m\u001b[36m\u001b[0m | font file does not exist. Trying to download\n    \u001b[32m06-24 12:29:30\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_segbuilder\u001b[0m\u001b[36m\u001b[0m | The adapter mirai2 is loaded successfully\n    \u001b[32m06-24 12:29:30\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_segbuilder\u001b[0m\u001b[36m\u001b[0m | The adapter OneBot V11 is loaded successfully\n    \u001b[32m06-24 12:29:30\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_segbuilder\u001b[0m\u001b[36m\u001b[0m | The adapter OneBot V12 is loaded successfully\n    \u001b[32m06-24 12:29:30\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_segbuilder\u001b[0m\u001b[36m\u001b[0m | The adapter QQ Guild is loaded successfully\n    \u001b[32m06-24 12:29:30\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_segbuilder\u001b[0m\"\n    \u001b[32m06-24 12:29:30\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_bilichat\u001b[0m\"",
     "valid": true,
     "metadata": {
       "name": "nonebot-plugin-bilichat",
@@ -13072,10 +13089,10 @@
       "type": "application",
       "homepage": "https://github.com/Aunly/nonebot-plugin-bilichat",
       "supported_adapters": [
-        "~onebot.v12",
-        "~mirai2",
         "~onebot.v11",
-        "~qqguild"
+        "~qqguild",
+        "~onebot.v12",
+        "~mirai2"
       ]
     },
     "validation_message": "通过",
@@ -13090,10 +13107,10 @@
       "plugin_test_result": true,
       "type": "application",
       "supported_adapters": [
-        "~onebot.v12",
-        "~mirai2",
         "~onebot.v11",
-        "~qqguild"
+        "~qqguild",
+        "~onebot.v12",
+        "~mirai2"
       ]
     },
     "previous": {
@@ -13151,8 +13168,8 @@
         "nonebot.adapters.onebot.v11"
       ]
     },
-    "time": "2023-06-23 00:18:45",
-    "version": "2.8.1"
+    "time": "2023-06-24 20:29:31",
+    "version": "2.8.2"
   },
   "nonebot-plugin-genshinuid:GenshinUID": {
     "run": true,
@@ -13354,7 +13371,7 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-24 18:19:59",
+    "time": "2023-06-24 20:29:36",
     "version": null
   },
   "tatarubot2:tatarubot2": {
@@ -14134,7 +14151,7 @@
       "supported_adapters": null
     },
     "current": null,
-    "time": "2023-06-24 18:20:02",
+    "time": "2023-06-24 20:29:41",
     "version": null
   },
   "nonebot-plugin-wordle-help:nonebot_plugin_wordle_help": {
