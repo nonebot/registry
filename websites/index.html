@@ -63,6 +63,10 @@
         font-size: 1.5em;
       }
 
+      .nav-item {
+        margin-left: 5px;
+      }
+
       .back-to-top {
         position: fixed;
         font-size: 20px;
@@ -102,8 +106,17 @@
             </button>
           </li>
           <li class="nav-item">
-            <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
-            <hr class="d-lg-none my-2 text-white-50" />
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#result-statistics"
+              aria-controls="result-statistics"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="bi bi-bar-chart-line"></span>
+            </button>
           </li>
           <li class="nav-item" style="position: relative">
             <button
@@ -161,23 +174,6 @@
                 </button>
               </li>
             </ul>
-          </li>
-          <li class="nav-item">
-            <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
-            <hr class="d-lg-none my-2 text-white-50" />
-          </li>
-          <li class="nav-item">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#result-statistics"
-              aria-controls="result-statistics"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="bi bi-bar-chart-line"></span>
-            </button>
           </li>
         </ul>
       </div>
