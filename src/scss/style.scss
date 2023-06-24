@@ -1,0 +1,49 @@
+@import "bootstrap/scss/bootstrap";
+
+.hljs {
+  background: none;
+}
+
+.ok {
+  color: rgb(9, 231, 39);
+  font-size: 1.5em;
+}
+
+.err {
+  color: red;
+  font-size: 1.5em;
+}
+
+.show-metadata {
+  color: rgb(42, 95, 243);
+  font-size: 1.5em;
+}
+
+.empty-metadata {
+  color: rgb(236, 194, 5);
+  font-size: 1.5em;
+}
+
+.package {
+  color: rgb(151, 151, 151);
+  font-size: 0.95em;
+}
+
+.account {
+  color: rgb(151, 151, 151);
+  font-size: 1.5em;
+}
+
+.nav-item {
+  margin-left: 5px;
+}
+
+.back-to-top {
+  position: fixed;
+  font-size: 20px;
+  bottom: 55px;
+  right: 20px;
+  opacity: 0;
+  background-color: rgba(64, 64, 64, 0.1);
+  transition: opacity 0.3s ease-in-out;
+}

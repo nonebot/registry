@@ -1,0 +1,36 @@
+{
+  "name": "nonebot-registry",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint",
+    "prettier": "prettier --config ./.prettierrc",
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.0",
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "@types/bootstrap": "^5.2.6",
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "@typescript-eslint/parser": "^5.60.0",
+    "@vitejs/plugin-vue": "^4.1.0",
+    "eslint": "^8.43.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.8",
+    "sass": "^1.63.6",
+    "sass-loader": "^13.3.2",
+    "stylelint": "^15.9.0",
+    "stylelint-config-standard": "^33.0.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.9",
+    "vue-tsc": "^1.4.2"
+  }
+}
