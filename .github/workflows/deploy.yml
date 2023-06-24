@@ -9,6 +9,7 @@ on:
 
 permissions:
   contents: read
+  deployments: write
 
 concurrency:
   group: website-deploy-${{ github.ref }}
