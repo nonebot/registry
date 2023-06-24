@@ -65,13 +65,11 @@
 
       .back-to-top {
         position: fixed;
-        font-size: 32px;
-        bottom: 48px;
-        right: 32px;
+        font-size: 20px;
+        bottom: 55px;
+        right: 20px;
         opacity: 0;
-        border-width: 1.5px;
-        border-color: gray;
-        background-color: transparent;
+        background-color: rgba(64, 64, 64, 0.1);
         transition: opacity 0.3s ease-in-out;
       }
     </style>
@@ -296,7 +294,8 @@
 
     <button
       type="button"
-      class="btn btn-light btn-rounded back-to-top"
+      title="Scroll To Top"
+      class="btn btn-light back-to-top"
       onclick="scrollToTop()"
     >
       <span class="mdi mdi-rocket text-primary"></span>
