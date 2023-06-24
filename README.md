@@ -1,6 +1,18 @@
+<!-- markdownlint-disable MD033 MD041 -->
+<p align="center">
+  <a href="https://registry.nonebot.dev/"><img src="public/logo.png" width="200" height="200" alt="nonebot"></a>
+</p>
+
+<div align="center">
+
 # NoneBot 插件商店测试
 
-定期测试 NoneBot 插件商店内的插件。
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable-next-line MD036 -->
+_✨ 定期测试 NoneBot 插件商店内的插件 ✨_
+<!-- prettier-ignore-end -->
+
+</div>
 
 ## 查看
 
