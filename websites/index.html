@@ -66,13 +66,13 @@
       .back-to-top {
         position: fixed;
         font-size: 32px;
-        bottom: 20px;
-        right: 20px;
+        bottom: 48px;
+        right: 32px;
         opacity: 0;
-        border-width: 2px;
+        border-width: 1.5px;
+        border-color: gray;
         background-color: transparent;
         transition: opacity 0.3s ease-in-out;
-        z-index: 9999;
       }
     </style>
   </head>
@@ -117,7 +117,6 @@
                   data-bs-theme-value="light"
                 >
                   <span
-                    id="theme-toggle-icon"
                     class="mdi mdi-weather-sunny"
                   ></span>
                   Light
@@ -130,7 +129,6 @@
                   data-bs-theme-value="dark"
                 >
                   <span
-                    id="theme-toggle-icon"
                     class="mdi mdi-weather-night"
                   ></span>
                   Dark
@@ -143,7 +141,6 @@
                   data-bs-theme-value="auto"
                 >
                   <span
-                    id="theme-toggle-icon"
                     class="mdi mdi-theme-light-dark"
                   ></span>
                   Auto
@@ -298,6 +295,7 @@
     </div>
 
     <button
+      type="button"
       class="btn btn-light btn-rounded back-to-top"
       onclick="scrollToTop()"
     >
