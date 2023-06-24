@@ -90,31 +90,62 @@
           />
           商店测试结果
         </a>
-        <div class="text-end">
-          <button
-            class="navbar-toggler"
-            type="button"
-            id="theme-toggle-btn"
-            title="Toggle theme"
-            data-bs-theme-value="auto"
-          >
-            <span
-              id="theme-toggle-icon"
-              class="mdi mdi-theme-light-dark"
-            ></span>
-          </button>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#result-statistics"
-            aria-controls="result-statistics"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="bi bi-bar-chart-line"></span>
-          </button>
-        </div>
+        <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+          <li class="nav-item" style="position: relative;">
+            <button class="navbar-toggler dropdown-toggle align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Theme">
+              <span
+                id="theme-toggle-icon"
+                class="mdi mdi-theme-light-dark"
+              ></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" style="position: absolute; min-width: 5rem;">
+              <li>
+                <button type="button" class="dropdown-item" data-bs-theme-value="light">
+                  <span
+                      id="theme-toggle-icon"
+                      class="mdi mdi-weather-sunny"
+                    ></span>
+                    Light
+                </button>
+              </li>
+              <li>
+                <button type="button" class="dropdown-item" data-bs-theme-value="dark">
+                  <span
+                      id="theme-toggle-icon"
+                      class="mdi mdi-weather-night"
+                    ></span>
+                    Dark
+                </button>
+              </li>
+              <li>
+                <button type="button" class="dropdown-item" data-bs-theme-value="auto">
+                  <span
+                      id="theme-toggle-icon"
+                      class="mdi mdi-theme-light-dark"
+                    ></span>
+                    Auto
+                </button>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
+            <hr class="d-lg-none my-2 text-white-50">
+          </li>
+          <li class="nav-item">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#result-statistics"
+              aria-controls="result-statistics"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="bi bi-bar-chart-line"></span>
+            </button>
+          </li>
+        </ul>
       </div>
       <div class="container">
         <div class="collapse" id="result-statistics" style="width: 100%">

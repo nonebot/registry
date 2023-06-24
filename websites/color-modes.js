@@ -21,7 +21,6 @@
       : "light";
   };
 
-  const themeButton = document.getElementById("theme-toggle-btn");
   const themeIcon = document.getElementById("theme-toggle-icon");
 
   const setTheme = (theme) => {
@@ -38,16 +37,15 @@
   setTheme(getPreferredTheme());
 
   const showActiveTheme = (theme) => {
-    themeIcon.classList.forEach((className) => {
-      themeIcon.classList.remove(className);
-    });
-    themeIcon.classList.add("mdi");
+    themeIcon.classList.remove("mdi-theme-light-dark");
+    themeIcon.classList.remove("mdi-weather-sunny");
+    themeIcon.classList.remove("mdi-weather-night");
     if (theme === "dark") {
       themeIcon.classList.add("mdi-weather-night");
-      themeButton.setAttribute("data-bs-theme-value", "dark");
-    } else {
+    } else if (theme === "light") {
       themeIcon.classList.add("mdi-weather-sunny");
-      themeButton.setAttribute("data-bs-theme-value", "light");
+    } else {
+      themeIcon.classList.add("mdi-theme-light-dark");
     }
   };
 
@@ -63,15 +61,13 @@
   window.addEventListener("DOMContentLoaded", () => {
     showActiveTheme(getPreferredTheme());
 
-    themeButton.addEventListener("click", () => {
-      const theme = themeButton.getAttribute("data-bs-theme-value");
-      let new_theme = "dark";
-      if (theme === "dark" || theme === "auto") {
-        new_theme = "light";
-      }
-      setStoredTheme(new_theme);
-      setTheme(new_theme);
-      showActiveTheme(new_theme);
+    document.querySelectorAll("[data-bs-theme-value]").forEach((toggle) => {
+      toggle.addEventListener("click", () => {
+        const theme = toggle.getAttribute("data-bs-theme-value");
+        setStoredTheme(theme);
+        setTheme(theme);
+        showActiveTheme(theme, true);
+      });
     });
   });
 })();
