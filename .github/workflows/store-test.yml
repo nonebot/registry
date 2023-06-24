@@ -70,3 +70,33 @@ jobs:
           git add .
           git diff-index --quiet HEAD || git commit -m "chore: update test results"
           git push
+  upload_results_netlify:
+    runs-on: ubuntu-latest
+    name: Upload results to netlify
+    needs: store_test
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          ref: main
+      - name: Download results
+        uses: actions/download-artifact@v3
+        with:
+          name: results
+          path: ${{ github.workspace }}/websites
+      - name: Get Branch Name
+        run: echo "BRANCH_NAME=$(echo ${GITHUB_REF#refs/heads/})" >> $GITHUB_ENV
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v2
+        with:
+          publish-dir: "./websites"
+          production-deploy: true
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          deploy-message: "Deploy ${{ env.BRANCH_NAME }}@${{ github.sha }}"
+          enable-commit-comment: false
+          alias: ${{ env.BRANCH_NAME }}
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
