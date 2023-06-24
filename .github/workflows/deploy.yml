@@ -20,6 +20,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Get results
+        run: |
+          git fetch origin
+          git checkout origin/results results.json
+          mv results.json websites/results.json
       - name: Get Branch Name
         run: echo "BRANCH_NAME=$(echo ${GITHUB_REF#refs/heads/})" >> $GITHUB_ENV
       - name: Deploy to Netlify

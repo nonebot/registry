@@ -25,6 +25,7 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
       - name: Get results
         run: |
+          git fetch origin
           git checkout origin/results results.json
           mv results.json websites/results.json
       - name: Get Deploy Name
