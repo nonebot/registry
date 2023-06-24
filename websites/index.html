@@ -238,36 +238,33 @@
 
       const now_time = new Date().getTime();
 
-      $.getJSON(
-        "/results.json",
-        function (data) {
-          let items = [];
-          let id = 1;
-          $.each(data, function (key, val) {
-            items.push({
-              id: id++,
-              time: val.time,
-              project_link: val.previous.project_link,
-              module_name: val.previous.module_name,
-              author: val.previous.author,
-              run: val.run ? check_pass : check_fail,
-              valid: val.valid ? check_pass : check_fail,
-              metadata: val.metadata !== null ? show_metadata : empty_metadata,
-              metadata_value: val.metadata,
-              output: val.output,
-              validation_message: val.valid ? "通过" : val.validation_message,
-              homepage: val.previous.homepage,
-            });
+      $.getJSON("/results.json", function (data) {
+        let items = [];
+        let id = 1;
+        $.each(data, function (key, val) {
+          items.push({
+            id: id++,
+            time: val.time,
+            project_link: val.previous.project_link,
+            module_name: val.previous.module_name,
+            author: val.previous.author,
+            run: val.run ? check_pass : check_fail,
+            valid: val.valid ? check_pass : check_fail,
+            metadata: val.metadata !== null ? show_metadata : empty_metadata,
+            metadata_value: val.metadata,
+            output: val.output,
+            validation_message: val.valid ? "通过" : val.validation_message,
+            homepage: val.previous.homepage,
           });
+        });
 
-          $("#table").bootstrapTable({
-            data: items,
-          });
+        $("#table").bootstrapTable({
+          data: items,
+        });
 
-          let $table = $("#table");
-          statistics($table);
-        },
-      );
+        let $table = $("#table");
+        statistics($table);
+      });
 
       function projectKey(row) {
         // 替换 . 为 -，否则会导致 modal 无法正常显示
