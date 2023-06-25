@@ -24,8 +24,8 @@ jobs:
       - name: Get results
         run: |
           git fetch origin
-          git checkout origin/results results.json
-          mv results.json websites/results.json
+          git checkout origin/results results.json bots.json adapters.json
+          mv -t websites results.json bots.json adapters.json
       - name: Get Branch Name
         run: echo "BRANCH_NAME=$(echo ${GITHUB_REF#refs/heads/})" >> $GITHUB_ENV
       - name: Deploy to Netlify
