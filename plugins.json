@@ -817,7 +817,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 11:56:12"
+    "time": "2023-06-25 09:57:53"
   },
   {
     "module_name": "nonebot_plugin_logo",
@@ -831,7 +831,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 11:56:22"
+    "time": "2023-06-25 09:58:06"
   },
   {
     "module_name": "nonebot_plugin_memes",
@@ -845,7 +845,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 11:56:44"
+    "time": "2023-06-25 09:58:34"
   },
   {
     "module_name": "nonebot_plugin_repeater",
@@ -859,7 +859,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 11:56:49"
+    "time": "2023-06-25 09:58:39"
   },
   {
     "module_name": "nonebot_plugin_directlinker",
@@ -878,7 +878,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 11:56:54"
+    "time": "2023-06-25 09:58:45"
   },
   {
     "module_name": "nonebot_plugin_forwarder",
@@ -892,7 +892,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 11:56:59"
+    "time": "2023-06-25 09:58:50"
   },
   {
     "module_name": "nonebot_plugin_roll",
@@ -911,7 +911,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 11:57:04"
+    "time": "2023-06-25 09:58:55"
   },
   {
     "module_name": "nonebot_plugin_crazy_thursday",
@@ -930,7 +930,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 11:57:10"
+    "time": "2023-06-25 09:59:01"
   },
   {
     "module_name": "nonebot_plugin_covid19_news",
@@ -944,7 +944,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 11:57:19"
+    "time": "2023-06-25 09:59:11"
   },
   {
     "module_name": "nonebot_plugin_remake",
@@ -967,7 +967,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 11:57:24"
+    "time": "2023-06-25 09:59:16"
   },
   {
     "module_name": "nonebot_plugin_caiyunai",
@@ -990,7 +990,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 11:57:36"
+    "time": "2023-06-25 09:59:29"
   },
   {
     "module_name": "nonebot_plugin_weather_lite",
@@ -1009,7 +1009,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 11:57:41"
+    "time": "2023-06-25 09:59:34"
   },
   {
     "module_name": "nonebot_plugin_fortune",
@@ -1032,7 +1032,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 11:57:51"
+    "time": "2023-06-25 09:59:43"
   },
   {
     "module_name": "nonebot_plugin_tarot",
@@ -1055,7 +1055,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 11:57:56"
+    "time": "2023-06-25 09:59:50"
   },
   {
     "module_name": "nonebot_plugin_emojimix",
@@ -1073,14 +1073,14 @@
     "is_official": false,
     "type": "application",
     "supported_adapters": [
-      "nonebot.adapters.kaiheila",
-      "nonebot.adapters.qqguild",
-      "nonebot.adapters.onebot.v11",
       "nonebot.adapters.telegram",
-      "nonebot.adapters.onebot.v12"
+      "nonebot.adapters.onebot.v11",
+      "nonebot.adapters.kaiheila",
+      "nonebot.adapters.onebot.v12",
+      "nonebot.adapters.qqguild"
     ],
     "valid": true,
-    "time": "2023-06-22 11:58:04"
+    "time": "2023-06-25 09:59:59"
   },
   {
     "module_name": "nonebot_plugin_what2eat",
@@ -1103,7 +1103,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 11:58:11"
+    "time": "2023-06-25 10:00:06"
   },
   {
     "module_name": "nonebot_plugin_datastore",
@@ -1117,7 +1117,7 @@
     "type": "library",
     "supported_adapters": null,
     "valid": true,
-    "time": "2023-06-22 11:58:18"
+    "time": "2023-06-25 10:00:15"
   },
   {
     "module_name": "nonebot_plugin_gocqhttp",
@@ -1140,7 +1140,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 11:58:26"
+    "time": "2023-06-25 10:00:24"
   },
   {
     "module_name": "nonebot_plugin_guild_patch",
@@ -1163,7 +1163,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 11:58:31"
+    "time": "2023-06-25 10:00:29"
   },
   {
     "module_name": "nonebot_plugin_boardgame",
@@ -1182,7 +1182,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 11:58:41"
+    "time": "2023-06-25 10:00:40"
   },
   {
     "module_name": "nonebot_plugin_wordcloud",
@@ -1196,7 +1196,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 11:58:58"
+    "time": "2023-06-25 10:00:57"
   },
   {
     "module_name": "nonebot_plugin_chatrecorder",
@@ -1215,7 +1215,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 11:59:06"
+    "time": "2023-06-25 10:01:05"
   },
   {
     "module_name": "nonebot_plugin_antiflash",
@@ -1234,7 +1234,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 11:59:11"
+    "time": "2023-06-25 10:01:11"
   },
   {
     "module_name": "nonebot_plugin_word_bank2",
@@ -1259,7 +1259,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-22 11:59:17"
+    "time": "2023-06-25 10:01:17"
   },
   {
     "module_name": "nonebot_plugin_txt2img",
@@ -1277,14 +1277,14 @@
     "is_official": false,
     "type": "library",
     "supported_adapters": [
-      "nonebot.adapters.kaiheila",
-      "nonebot.adapters.qqguild",
-      "nonebot.adapters.onebot.v11",
       "nonebot.adapters.telegram",
-      "nonebot.adapters.onebot.v12"
+      "nonebot.adapters.onebot.v11",
+      "nonebot.adapters.kaiheila",
+      "nonebot.adapters.onebot.v12",
+      "nonebot.adapters.qqguild"
     ],
     "valid": true,
-    "time": "2023-06-22 11:59:25"
+    "time": "2023-06-25 10:01:26"
   },
   {
     "module_name": "nonebot_plugin_morning",
@@ -1307,7 +1307,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 11:59:32"
+    "time": "2023-06-25 10:01:33"
   },
   {
     "module_name": "nonebot_plugin_pixiv",
@@ -1330,7 +1330,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 11:59:41"
+    "time": "2023-06-25 10:01:44"
   },
   {
     "module_name": "YetAnotherPicSearch",
@@ -1349,7 +1349,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 11:59:48"
+    "time": "2023-06-25 10:01:52"
   },
   {
     "module_name": "nonebot_plugin_gachalogs",
@@ -1368,7 +1368,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:00:16"
+    "time": "2023-06-25 10:02:25"
   },
   {
     "module_name": "nonebot_plugin_everyday_en",
@@ -1391,7 +1391,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:00:21"
+    "time": "2023-06-25 10:02:30"
   },
   {
     "module_name": "nonebot_plugin_fire",
@@ -1405,7 +1405,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:00:27"
+    "time": "2023-06-25 10:02:37"
   },
   {
     "module_name": "nonebot_plugin_qrcode",
@@ -1428,7 +1428,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:00:33"
+    "time": "2023-06-25 10:02:44"
   },
   {
     "module_name": "nonebot_plugin_ygo",
@@ -1455,7 +1455,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:00:39"
+    "time": "2023-06-25 10:02:50"
   },
   {
     "module_name": "nonebot_plugin_bilibilibot",
@@ -1478,7 +1478,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:00:46"
+    "time": "2023-06-25 10:02:57"
   },
   {
     "module_name": "nonebot_plugin_color",
@@ -1497,7 +1497,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:00:52"
+    "time": "2023-06-25 10:03:03"
   },
   {
     "module_name": "nonebot_plugin_blackjack",
@@ -1511,7 +1511,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:00:57"
+    "time": "2023-06-25 10:03:08"
   },
   {
     "module_name": "nonebot_plugin_arcaeabot",
@@ -1534,7 +1534,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:01:22"
+    "time": "2023-06-25 10:03:36"
   },
   {
     "module_name": "nonebot_plugin_ddcheck",
@@ -1552,14 +1552,14 @@
     "is_official": false,
     "type": "application",
     "supported_adapters": [
-      "nonebot.adapters.kaiheila",
-      "nonebot.adapters.qqguild",
-      "nonebot.adapters.onebot.v11",
       "nonebot.adapters.telegram",
-      "nonebot.adapters.onebot.v12"
+      "nonebot.adapters.onebot.v11",
+      "nonebot.adapters.kaiheila",
+      "nonebot.adapters.onebot.v12",
+      "nonebot.adapters.qqguild"
     ],
     "valid": true,
-    "time": "2023-06-22 12:01:33"
+    "time": "2023-06-25 10:03:47"
   },
   {
     "module_name": "nonebot_plugin_leetcode2",
@@ -1573,7 +1573,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:01:43"
+    "time": "2023-06-25 10:03:58"
   },
   {
     "module_name": "nonebot_plugin_hikarisearch",
@@ -1592,7 +1592,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:01:48"
+    "time": "2023-06-25 10:04:04"
   },
   {
     "module_name": "nonebot_plugin_mediawiki",
@@ -1615,7 +1615,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:01:55"
+    "time": "2023-06-25 10:04:11"
   },
   {
     "module_name": "nonebot_plugin_wordle",
@@ -1633,14 +1633,14 @@
     "is_official": false,
     "type": "application",
     "supported_adapters": [
-      "nonebot.adapters.kaiheila",
-      "nonebot.adapters.qqguild",
-      "nonebot.adapters.onebot.v11",
       "nonebot.adapters.telegram",
-      "nonebot.adapters.onebot.v12"
+      "nonebot.adapters.onebot.v11",
+      "nonebot.adapters.kaiheila",
+      "nonebot.adapters.onebot.v12",
+      "nonebot.adapters.qqguild"
     ],
     "valid": true,
-    "time": "2023-06-22 12:02:02"
+    "time": "2023-06-25 10:04:19"
   },
   {
     "module_name": "nonebot_plugin_giyf",
@@ -1659,7 +1659,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:02:07"
+    "time": "2023-06-25 10:04:25"
   },
   {
     "module_name": "nonebot_plugin_abstract",
@@ -1673,7 +1673,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:02:22"
+    "time": "2023-06-25 10:04:40"
   },
   {
     "module_name": "nonebot_plugin_params",
@@ -1692,7 +1692,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:02:27"
+    "time": "2023-06-25 10:04:45"
   },
   {
     "module_name": "nonebot_plugin_handle",
@@ -1710,14 +1710,14 @@
     "is_official": false,
     "type": "application",
     "supported_adapters": [
-      "nonebot.adapters.kaiheila",
-      "nonebot.adapters.qqguild",
-      "nonebot.adapters.onebot.v11",
       "nonebot.adapters.telegram",
-      "nonebot.adapters.onebot.v12"
+      "nonebot.adapters.onebot.v11",
+      "nonebot.adapters.kaiheila",
+      "nonebot.adapters.onebot.v12",
+      "nonebot.adapters.qqguild"
     ],
     "valid": true,
-    "time": "2023-06-22 12:02:36"
+    "time": "2023-06-25 10:04:56"
   },
   {
     "module_name": "nonebot_plugin_minesweeper",
@@ -1735,14 +1735,14 @@
     "is_official": false,
     "type": "application",
     "supported_adapters": [
-      "nonebot.adapters.kaiheila",
-      "nonebot.adapters.qqguild",
-      "nonebot.adapters.onebot.v11",
       "nonebot.adapters.telegram",
-      "nonebot.adapters.onebot.v12"
+      "nonebot.adapters.onebot.v11",
+      "nonebot.adapters.kaiheila",
+      "nonebot.adapters.onebot.v12",
+      "nonebot.adapters.qqguild"
     ],
     "valid": true,
-    "time": "2023-06-22 12:02:43"
+    "time": "2023-06-25 10:05:03"
   },
   {
     "module_name": "nonebot_plugin_draw",
@@ -1756,7 +1756,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:02:48"
+    "time": "2023-06-25 10:05:09"
   },
   {
     "module_name": "nonebot_plugin_randomtkk",
@@ -1783,7 +1783,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:02:55"
+    "time": "2023-06-25 10:05:17"
   },
   {
     "module_name": "nonebot_plugin_dida",
@@ -1802,7 +1802,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:03:02"
+    "time": "2023-06-25 10:05:24"
   },
   {
     "module_name": "nonebot_plugin_alipayvoice",
@@ -1816,7 +1816,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:03:08"
+    "time": "2023-06-25 10:05:31"
   },
   {
     "module_name": "nonebot_plugin_answersbook",
@@ -1830,7 +1830,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:03:13"
+    "time": "2023-06-25 10:05:36"
   },
   {
     "module_name": "nonebot_plugin_hitokoto",
@@ -1844,7 +1844,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:03:19"
+    "time": "2023-06-25 10:05:42"
   },
   {
     "module_name": "nonebot_plugin_bilicover",
@@ -1858,7 +1858,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:03:24"
+    "time": "2023-06-25 10:05:47"
   },
   {
     "module_name": "nonebot_plugin_cchess",
@@ -1877,7 +1877,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:03:33"
+    "time": "2023-06-25 10:05:57"
   },
   {
     "module_name": "nonebot_plugin_chess",
@@ -1896,7 +1896,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:03:44"
+    "time": "2023-06-25 10:06:08"
   },
   {
     "module_name": "nonebot_plugin_charpic",
@@ -1910,7 +1910,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:03:51"
+    "time": "2023-06-25 10:06:16"
   },
   {
     "module_name": "nonebot_plugin_miragetank",
@@ -1924,7 +1924,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:03:59"
+    "time": "2023-06-25 10:06:23"
   },
   {
     "module_name": "nonebot_plugin_covid",
@@ -1938,7 +1938,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:04:01"
+    "time": "2023-06-25 10:06:25"
   },
   {
     "module_name": "nonebot_plugin_yulu",
@@ -1952,7 +1952,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:04:07"
+    "time": "2023-06-25 10:06:33"
   },
   {
     "module_name": "nonebot_plugin_maze",
@@ -1971,7 +1971,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:04:13"
+    "time": "2023-06-25 10:06:40"
   },
   {
     "module_name": "nonebot_plugin_moyu",
@@ -1985,7 +1985,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:04:20"
+    "time": "2023-06-25 10:06:47"
   },
   {
     "module_name": "nonebot_plugin_imageutils",
@@ -1999,7 +1999,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:04:32"
+    "time": "2023-06-25 10:06:59"
   },
   {
     "module_name": "nonebot_plugin_mockingbird",
@@ -2018,7 +2018,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-25 08:20:10"
+    "time": "2023-06-25 10:07:01"
   },
   {
     "module_name": "nonebot_plugin_baidutranslate",
@@ -2032,7 +2032,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:04:40"
+    "time": "2023-06-25 10:07:07"
   },
   {
     "module_name": "nonebot_plugin_tortoise_orm",
@@ -2046,7 +2046,7 @@
     "type": "library",
     "supported_adapters": null,
     "valid": true,
-    "time": "2023-06-22 12:04:47"
+    "time": "2023-06-25 10:07:15"
   },
   {
     "module_name": "nonebot_plugin_dailysign",
@@ -2065,7 +2065,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:04:53"
+    "time": "2023-06-25 10:07:21"
   },
   {
     "module_name": "nonebot_plugin_tetris_stats",
@@ -2084,7 +2084,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:05:04"
+    "time": "2023-06-25 10:07:33"
   },
   {
     "module_name": "nonebot_plugin_bilibili_viode",
@@ -2098,7 +2098,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:05:13"
+    "time": "2023-06-25 10:07:46"
   },
   {
     "module_name": "nonebot_plugin_imagetools",
@@ -2117,7 +2117,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:05:26"
+    "time": "2023-06-25 10:07:59"
   },
   {
     "module_name": "nonebot_plugin_warframe_clock",
@@ -2140,7 +2140,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:05:34"
+    "time": "2023-06-25 10:08:08"
   },
   {
     "module_name": "hikari_bot",
@@ -2154,7 +2154,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:05:45"
+    "time": "2023-06-25 10:08:20"
   },
   {
     "module_name": "nonebot_plugin_who_at_me",
@@ -2177,7 +2177,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:05:50"
+    "time": "2023-06-25 10:08:25"
   },
   {
     "module_name": "nonebot_plugin_covid_19_by",
@@ -2196,7 +2196,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:05:56"
+    "time": "2023-06-25 10:08:32"
   },
   {
     "module_name": "nonebot_plugin_reboot",
@@ -2212,7 +2212,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-24 20:28:29"
+    "time": "2023-06-25 10:08:38"
   },
   {
     "module_name": "nonebot_plugin_setu4",
@@ -2228,7 +2228,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-22 12:06:10"
+    "time": "2023-06-25 10:08:47"
   },
   {
     "module_name": "nonebot_plugin_smart_reply",
@@ -2244,7 +2244,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-22 12:06:21"
+    "time": "2023-06-25 10:08:59"
   },
   {
     "module_name": "nonebot_plugin_today_in_history",
@@ -2258,7 +2258,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:06:31"
+    "time": "2023-06-25 10:09:09"
   },
   {
     "module_name": "nonebot_plugin_BitTorrent",
@@ -2274,7 +2274,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-22 12:06:38"
+    "time": "2023-06-25 10:09:16"
   },
   {
     "module_name": "nonebot_plugin_namelist",
@@ -2288,7 +2288,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:06:42"
+    "time": "2023-06-25 10:09:21"
   },
   {
     "module_name": "nonebot_plugin_bread_shop",
@@ -2302,7 +2302,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:06:48"
+    "time": "2023-06-25 10:09:26"
   },
   {
     "module_name": "nonebot_plugin_PicMenu",
@@ -2325,7 +2325,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:06:54"
+    "time": "2023-06-25 10:09:33"
   },
   {
     "module_name": "nonebot_plugin_horserace",
@@ -2339,7 +2339,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:07:05"
+    "time": "2023-06-25 10:09:45"
   },
   {
     "module_name": "nonebot_plugin_firexN",
@@ -2353,7 +2353,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:07:12"
+    "time": "2023-06-25 10:09:52"
   },
   {
     "module_name": "nonebot_plugin_bfinfo",
@@ -2367,7 +2367,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:07:22"
+    "time": "2023-06-25 10:10:03"
   },
   {
     "module_name": "nonebot_plugin_osubot",
@@ -2390,7 +2390,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-23 04:16:37"
+    "time": "2023-06-25 10:10:20"
   },
   {
     "module_name": "nonebot_plugin_acc_calculate",
@@ -2404,7 +2404,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:07:41"
+    "time": "2023-06-25 10:10:25"
   },
   {
     "module_name": "nonebot_plugin_kawaii_robot",
@@ -2418,7 +2418,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:07:46"
+    "time": "2023-06-25 10:10:30"
   },
   {
     "module_name": "nonebot_plugin_addFriend",
@@ -2432,7 +2432,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:07:51"
+    "time": "2023-06-25 10:10:35"
   },
   {
     "module_name": "nonebot_plugin_date_name",
@@ -2455,7 +2455,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:07:58"
+    "time": "2023-06-25 10:10:43"
   },
   {
     "module_name": "nonebot_plugin_easyCommand",
@@ -2469,7 +2469,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:08:07"
+    "time": "2023-06-25 10:10:52"
   },
   {
     "module_name": "nonebot_plugin_report",
@@ -2492,7 +2492,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:08:11"
+    "time": "2023-06-25 10:10:57"
   },
   {
     "module_name": "nonebot_plugin_hammer_nbnhhsh",
@@ -2515,7 +2515,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:08:17"
+    "time": "2023-06-25 10:11:03"
   },
   {
     "module_name": "nonebot_plugin_bawiki",
@@ -2540,7 +2540,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-24 04:16:26"
+    "time": "2023-06-25 10:11:24"
   },
   {
     "module_name": "nonebot_plugin_mcqq",
@@ -2563,7 +2563,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-25 00:04:57"
+    "time": "2023-06-25 10:11:30"
   },
   {
     "module_name": "nonebot_plugin_covid_19_by_guild",
@@ -2586,7 +2586,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:08:48"
+    "time": "2023-06-25 10:11:37"
   },
   {
     "module_name": "nonebot_plugin_wiki",
@@ -2600,7 +2600,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:08:54"
+    "time": "2023-06-25 10:11:42"
   },
   {
     "module_name": "nonebot_plugin_groupmanager",
@@ -2623,7 +2623,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:09:20"
+    "time": "2023-06-25 10:12:13"
   },
   {
     "module_name": "nonebot_plugin_game_collection",
@@ -2637,7 +2637,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-25 08:20:38"
+    "time": "2023-06-25 10:12:26"
   },
   {
     "module_name": "nonebot_plugin_drawer",
@@ -2651,7 +2651,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:09:42"
+    "time": "2023-06-25 10:12:31"
   },
   {
     "module_name": "nonebot_plugin_jrrp-n",
@@ -2674,7 +2674,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:09:47"
+    "time": "2023-06-25 10:12:37"
   },
   {
     "module_name": "nonebot_plugin_moegoe",
@@ -2688,7 +2688,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:09:53"
+    "time": "2023-06-25 10:12:43"
   },
   {
     "module_name": "nonebot_plugin_pixivbot",
@@ -2702,7 +2702,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:10:07"
+    "time": "2023-06-25 10:12:57"
   },
   {
     "module_name": "nonebot_plugin_workscore",
@@ -2721,7 +2721,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:10:12"
+    "time": "2023-06-25 10:13:03"
   },
   {
     "module_name": "nonebot_plugin_treehelp",
@@ -2735,7 +2735,7 @@
     "type": "application",
     "supported_adapters": null,
     "valid": true,
-    "time": "2023-06-22 12:10:18"
+    "time": "2023-06-25 10:13:09"
   },
   {
     "module_name": "cqsat",
@@ -2762,7 +2762,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:10:28"
+    "time": "2023-06-25 10:13:18"
   },
   {
     "module_name": "nonebot_plugin_course",
@@ -2781,7 +2781,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:10:35"
+    "time": "2023-06-25 10:13:26"
   },
   {
     "module_name": "nonebot_plugin_dialectlist",
@@ -2795,7 +2795,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:10:46"
+    "time": "2023-06-25 10:13:37"
   },
   {
     "module_name": "nonebot_plugin_offline_mahjong_helper",
@@ -2822,7 +2822,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:10:56"
+    "time": "2023-06-25 10:13:48"
   },
   {
     "module_name": "nonebot_plugin_send",
@@ -2849,7 +2849,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:11:02"
+    "time": "2023-06-25 10:13:54"
   },
   {
     "module_name": "nonebot_plugin_todo_nlp",
@@ -2872,7 +2872,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:11:28"
+    "time": "2023-06-25 10:14:24"
   },
   {
     "module_name": "nonebot_plugin_wordsnorote",
@@ -2891,7 +2891,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:11:35"
+    "time": "2023-06-25 10:14:32"
   },
   {
     "module_name": "nonebot_plugin_CyberSensoji",
@@ -2910,7 +2910,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:11:41"
+    "time": "2023-06-25 10:14:38"
   },
   {
     "module_name": "nonebot_plugin_gspanel",
@@ -2929,7 +2929,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:11:52"
+    "time": "2023-06-25 10:14:49"
   },
   {
     "module_name": "nonebot_plugin_gsmaterial",
@@ -2948,7 +2948,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:12:02"
+    "time": "2023-06-25 10:14:58"
   },
   {
     "module_name": "nonebot_plugin_mystool",
@@ -2975,7 +2975,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-23 09:25:35"
+    "time": "2023-06-25 10:15:07"
   },
   {
     "module_name": "nonebot_plugin_warframe",
@@ -2998,7 +2998,7 @@
     "type": "application",
     "supported_adapters": null,
     "valid": true,
-    "time": "2023-06-22 12:12:16"
+    "time": "2023-06-25 10:15:13"
   },
   {
     "module_name": "nonebot_plugin_mcqq_server",
@@ -3021,7 +3021,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:20:53"
+    "time": "2023-06-25 10:23:50"
   },
   {
     "module_name": "nonebot_plugin_RealESRGAN",
@@ -3040,7 +3040,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:21:01"
+    "time": "2023-06-25 10:23:58"
   },
   {
     "module_name": "nonebot-plugin-wolf-kill",
@@ -3054,7 +3054,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:21:06"
+    "time": "2023-06-25 10:24:03"
   },
   {
     "module_name": "iot",
@@ -3081,7 +3081,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:21:11"
+    "time": "2023-06-25 10:24:08"
   },
   {
     "module_name": "nonebot_plugin_bwiki_navigator",
@@ -3106,7 +3106,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-22 12:21:18"
+    "time": "2023-06-25 10:24:15"
   },
   {
     "module_name": "nonebot_plugin_bottle",
@@ -3127,7 +3127,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-22 12:21:28"
+    "time": "2023-06-25 10:24:25"
   },
   {
     "module_name": "nonebot_plugin_tts_gal",
@@ -3146,7 +3146,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:23:43"
+    "time": "2023-06-25 10:26:43"
   },
   {
     "module_name": "nonebot_plugin_alicdk_get",
@@ -3173,7 +3173,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:23:54"
+    "time": "2023-06-25 10:26:55"
   },
   {
     "module_name": "nonebot_plugin_picstatus",
@@ -3196,13 +3196,13 @@
     "type": "application",
     "supported_adapters": [
       "nonebot.adapters.telegram",
-      "nonebot.adapters.onebot.v12",
       "nonebot.adapters.onebot.v11",
-      "nonebot.adapters.qqguild",
-      "nonebot.adapters.kaiheila"
+      "nonebot.adapters.kaiheila",
+      "nonebot.adapters.onebot.v12",
+      "nonebot.adapters.qqguild"
     ],
     "valid": true,
-    "time": "2023-06-24 04:16:42"
+    "time": "2023-06-25 10:27:09"
   },
   {
     "module_name": "nonebot_plugin_tuling",
@@ -3216,7 +3216,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:24:13"
+    "time": "2023-06-25 10:27:15"
   },
   {
     "module_name": "nonebot_plugin_makemidi",
@@ -3235,7 +3235,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:24:28"
+    "time": "2023-06-25 10:27:32"
   },
   {
     "module_name": "nonebot_plugin_ocr",
@@ -3254,7 +3254,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:24:34"
+    "time": "2023-06-25 10:27:39"
   },
   {
     "module_name": "nonebot_plugin_listener",
@@ -3268,7 +3268,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:24:40"
+    "time": "2023-06-25 10:27:46"
   },
   {
     "module_name": "nonebot_plugin_BiliRequestAll",
@@ -3291,7 +3291,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:24:45"
+    "time": "2023-06-25 10:27:52"
   },
   {
     "module_name": "nonebot_plugin_russian_ban",
@@ -3305,7 +3305,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:24:50"
+    "time": "2023-06-25 10:27:57"
   },
   {
     "module_name": "nonebot_plugin_ygo_trade",
@@ -3332,7 +3332,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:24:57"
+    "time": "2023-06-25 10:28:05"
   },
   {
     "module_name": "nonebot_plugin_novelai",
@@ -3359,7 +3359,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:25:04"
+    "time": "2023-06-25 10:28:13"
   },
   {
     "module_name": "ayaka_games",
@@ -3382,7 +3382,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:25:10"
+    "time": "2023-06-25 10:28:19"
   },
   {
     "module_name": "ayaka_timezone",
@@ -3409,7 +3409,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:25:16"
+    "time": "2023-06-25 10:28:26"
   },
   {
     "module_name": "ayaka_prevent_bad_words",
@@ -3436,7 +3436,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:25:25"
+    "time": "2023-06-25 10:28:34"
   },
   {
     "module_name": "nonebot_plugin_savor",
@@ -3450,7 +3450,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:25:30"
+    "time": "2023-06-25 10:28:41"
   },
   {
     "module_name": "nonebot_plugin_kfcrazy",
@@ -3477,7 +3477,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:25:37"
+    "time": "2023-06-25 10:28:48"
   },
   {
     "module_name": "nonebot-plugin-random",
@@ -3491,7 +3491,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:25:42"
+    "time": "2023-06-25 10:28:54"
   },
   {
     "module_name": "nonebot_plugin_sqlalchemy",
@@ -3510,7 +3510,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:25:48"
+    "time": "2023-06-25 10:29:01"
   },
   {
     "module_name": "nonebot_plugin_blacklist",
@@ -3524,7 +3524,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:25:54"
+    "time": "2023-06-25 10:29:07"
   },
   {
     "module_name": "nonebot_plugin_antiinsult",
@@ -3547,7 +3547,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:25:59"
+    "time": "2023-06-25 10:29:12"
   },
   {
     "module_name": "nonebot_plugin_oddtext",
@@ -3566,7 +3566,7 @@
     "type": "application",
     "supported_adapters": null,
     "valid": true,
-    "time": "2023-06-22 12:26:14"
+    "time": "2023-06-25 10:29:29"
   },
   {
     "module_name": "nonebot_plugin_mahjong_scoreboard",
@@ -3589,7 +3589,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:26:25"
+    "time": "2023-06-25 10:29:41"
   },
   {
     "module_name": "nonebot_plugin_cartoon",
@@ -3603,7 +3603,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:26:31"
+    "time": "2023-06-25 10:29:47"
   },
   {
     "module_name": "nonebot_plugin_mahjong_utils",
@@ -3622,7 +3622,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:26:46"
+    "time": "2023-06-25 10:30:03"
   },
   {
     "module_name": "nonebot_plugin_animeres",
@@ -3645,7 +3645,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:26:52"
+    "time": "2023-06-25 10:30:10"
   },
   {
     "module_name": "nonebot-plugin-person",
@@ -3659,7 +3659,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:26:57"
+    "time": "2023-06-25 10:30:15"
   },
   {
     "module_name": "nonebot_plugin_apex_api_query",
@@ -3675,7 +3675,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-23 16:19:31"
+    "time": "2023-06-25 10:30:25"
   },
   {
     "module_name": "nonebot_plugin_reborn",
@@ -3689,7 +3689,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:27:14"
+    "time": "2023-06-25 10:30:33"
   },
   {
     "module_name": "nonebot_plugin_searchBiliInfo",
@@ -3708,7 +3708,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:27:25"
+    "time": "2023-06-25 10:30:44"
   },
   {
     "module_name": "nonebot_plugin_colab_novelai",
@@ -3731,7 +3731,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:27:37"
+    "time": "2023-06-25 10:30:57"
   },
   {
     "module_name": "nonebot_plugin_sky",
@@ -3754,7 +3754,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:27:47"
+    "time": "2023-06-25 10:31:08"
   },
   {
     "module_name": "nonebot_plugin_zyk_novelai",
@@ -3781,7 +3781,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:27:54"
+    "time": "2023-06-25 10:31:15"
   },
   {
     "module_name": "nonebot_plugin_repeep",
@@ -3800,7 +3800,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:28:00"
+    "time": "2023-06-25 10:31:22"
   },
   {
     "module_name": "nonebot_plugin_gscode",
@@ -3819,7 +3819,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:28:06"
+    "time": "2023-06-25 10:31:28"
   },
   {
     "module_name": "nonebot_plugin_note",
@@ -3833,7 +3833,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:28:13"
+    "time": "2023-06-25 10:31:35"
   },
   {
     "module_name": "nonebot-plugin-bilibili-image",
@@ -3847,7 +3847,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:28:19"
+    "time": "2023-06-25 10:31:41"
   },
   {
     "module_name": "nonebot_plugin_trace_moe",
@@ -3874,7 +3874,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:28:25"
+    "time": "2023-06-25 10:31:47"
   },
   {
     "module_name": "nonebot_plugin_zyk_music",
@@ -3901,7 +3901,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:28:31"
+    "time": "2023-06-25 10:31:54"
   },
   {
     "module_name": "nonebot_plugin_chatgpt",
@@ -3915,7 +3915,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:28:40"
+    "time": "2023-06-25 10:32:04"
   },
   {
     "module_name": "nonebot_plugin_majsoul",
@@ -3934,7 +3934,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:29:02"
+    "time": "2023-06-25 10:32:26"
   },
   {
     "module_name": "nonebot_plugin_remove_bg",
@@ -3961,7 +3961,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:29:08"
+    "time": "2023-06-25 10:32:32"
   },
   {
     "module_name": "nonebot_plugin_broadcast",
@@ -3975,7 +3975,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:29:13"
+    "time": "2023-06-25 10:32:38"
   },
   {
     "module_name": "nonebot_plugin_exchangerate",
@@ -3989,7 +3989,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:29:19"
+    "time": "2023-06-25 10:32:45"
   },
   {
     "module_name": "nonebot_plugin_access_control",
@@ -4008,7 +4008,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-23 20:30:12"
+    "time": "2023-06-25 10:32:55"
   },
   {
     "module_name": "nonebot_plugin_colormind",
@@ -4035,7 +4035,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:29:37"
+    "time": "2023-06-25 10:33:03"
   },
   {
     "module_name": "nonebot_plugin_abstain_diary",
@@ -4058,7 +4058,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:29:42"
+    "time": "2023-06-25 10:33:09"
   },
   {
     "module_name": "nonebot_plugin_backup",
@@ -4072,7 +4072,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:29:48"
+    "time": "2023-06-25 10:33:15"
   },
   {
     "module_name": "nonebot_plugin_kuma_san",
@@ -4086,7 +4086,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:29:53"
+    "time": "2023-06-25 10:33:21"
   },
   {
     "module_name": "nonebot_plugin_gpt3",
@@ -4100,7 +4100,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:30:03"
+    "time": "2023-06-25 10:33:31"
   },
   {
     "module_name": "nonebot_plugin_ikun_evolution",
@@ -4114,7 +4114,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:30:13"
+    "time": "2023-06-25 10:33:41"
   },
   {
     "module_name": "nonebot_plugin_random_ban",
@@ -4141,7 +4141,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:30:18"
+    "time": "2023-06-25 10:33:47"
   },
   {
     "module_name": "nonebot_plugin_antirecall",
@@ -4155,7 +4155,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:30:23"
+    "time": "2023-06-25 10:33:52"
   },
   {
     "module_name": "nonebot_plugin_mc_server_status",
@@ -4174,7 +4174,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:30:29"
+    "time": "2023-06-25 10:33:59"
   },
   {
     "module_name": "nonebot_plugin_no_repeat",
@@ -4188,7 +4188,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:30:33"
+    "time": "2023-06-25 10:34:04"
   },
   {
     "module_name": "nonebot_plugin_bfchat",
@@ -4202,7 +4202,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:30:41"
+    "time": "2023-06-25 10:34:12"
   },
   {
     "module_name": "nonebot_plugin_summon",
@@ -4216,7 +4216,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:30:47"
+    "time": "2023-06-25 10:34:18"
   },
   {
     "module_name": "nonebot_plugin_ping",
@@ -4230,7 +4230,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:30:53"
+    "time": "2023-06-25 10:34:25"
   },
   {
     "module_name": "nonebot_plugin_face2cartoonpic",
@@ -4253,7 +4253,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:31:00"
+    "time": "2023-06-25 10:34:32"
   },
   {
     "module_name": "nonebot_plugin_servicestate",
@@ -4280,7 +4280,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:31:06"
+    "time": "2023-06-25 10:34:38"
   },
   {
     "module_name": "nonebot_plugin_animalVoice",
@@ -4307,7 +4307,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:31:12"
+    "time": "2023-06-25 10:34:45"
   },
   {
     "module_name": "nonebot_plugin_ayaka_scan_cmd",
@@ -4330,7 +4330,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:31:18"
+    "time": "2023-06-25 10:34:52"
   },
   {
     "module_name": "nonebot_plugin_HttpCat",
@@ -4353,7 +4353,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:31:25"
+    "time": "2023-06-25 10:34:59"
   },
   {
     "module_name": "nonebot_plugin_revoke",
@@ -4376,7 +4376,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:31:30"
+    "time": "2023-06-25 10:35:04"
   },
   {
     "module_name": "nonebot_plugin_setu_customization",
@@ -4395,7 +4395,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:31:38"
+    "time": "2023-06-25 10:35:14"
   },
   {
     "module_name": "nonebot_plugin_l4d2_server",
@@ -4416,7 +4416,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-23 16:20:12"
+    "time": "2023-06-25 10:35:36"
   },
   {
     "module_name": "nonebot_plugin_learning_chat",
@@ -4437,7 +4437,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-22 12:32:12"
+    "time": "2023-06-25 10:35:51"
   },
   {
     "module_name": "nonebot_plugin_couplets",
@@ -4451,7 +4451,7 @@
     "type": "application",
     "supported_adapters": null,
     "valid": true,
-    "time": "2023-06-22 12:32:18"
+    "time": "2023-06-25 10:35:57"
   },
   {
     "module_name": "nonebot_plugin_Imagelabels",
@@ -4474,7 +4474,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:33:04"
+    "time": "2023-06-25 10:36:45"
   },
   {
     "module_name": "nonebot_plugin_cloudsignx",
@@ -4497,7 +4497,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:33:09"
+    "time": "2023-06-25 10:36:51"
   },
   {
     "module_name": "nonebot_plugin_imgexploration",
@@ -4520,7 +4520,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:33:16"
+    "time": "2023-06-25 10:36:58"
   },
   {
     "module_name": "nonebot_plugin_hypixel",
@@ -4547,7 +4547,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:33:22"
+    "time": "2023-06-25 10:37:04"
   },
   {
     "module_name": "nonebot_plugin_nowtime",
@@ -4572,7 +4572,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-22 12:33:30"
+    "time": "2023-06-25 10:37:13"
   },
   {
     "module_name": "nonebot_plugin_cave",
@@ -4586,7 +4586,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:33:37"
+    "time": "2023-06-25 10:37:20"
   },
   {
     "module_name": "nonebot_plugin_xingzuo",
@@ -4600,7 +4600,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:33:41"
+    "time": "2023-06-25 10:37:25"
   },
   {
     "module_name": "nonebot_plugin_BingImage",
@@ -4627,7 +4627,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:33:50"
+    "time": "2023-06-25 10:37:35"
   },
   {
     "module_name": "nonebot_plugin_soup",
@@ -4654,7 +4654,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:33:56"
+    "time": "2023-06-25 10:37:40"
   },
   {
     "module_name": "nonebot_plugin_yuanshen_notice",
@@ -4677,7 +4677,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:34:01"
+    "time": "2023-06-25 10:37:46"
   },
   {
     "module_name": "nonebot_plugin_bilibili_yuan",
@@ -4696,7 +4696,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:34:10"
+    "time": "2023-06-25 10:37:55"
   },
   {
     "module_name": "nonebot_plugin_easy_translate",
@@ -4715,7 +4715,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-25 00:05:13"
+    "time": "2023-06-25 10:38:00"
   },
   {
     "module_name": "nonebot_plugin_orangedice",
@@ -4738,7 +4738,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:34:22"
+    "time": "2023-06-25 10:38:07"
   },
   {
     "module_name": "nonebot_plugin_record",
@@ -4765,7 +4765,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:34:37"
+    "time": "2023-06-25 10:38:23"
   },
   {
     "module_name": "nonebot_plugin_nya_cook_menu",
@@ -4784,7 +4784,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:34:43"
+    "time": "2023-06-25 10:38:29"
   },
   {
     "module_name": "criminal_dance",
@@ -4807,7 +4807,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:34:48"
+    "time": "2023-06-25 10:38:34"
   },
   {
     "module_name": "nonebot_plugin_picmcstat",
@@ -4828,7 +4828,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-22 12:35:00"
+    "time": "2023-06-25 10:38:47"
   },
   {
     "module_name": "nonebot_plugin_wantwords",
@@ -4842,7 +4842,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:35:06"
+    "time": "2023-06-25 10:38:52"
   },
   {
     "module_name": "nonebot_plugin_pvz",
@@ -4856,7 +4856,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:35:14"
+    "time": "2023-06-25 10:39:03"
   },
   {
     "module_name": "nonebot_plugin_molar_mass",
@@ -4870,7 +4870,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:35:20"
+    "time": "2023-06-25 10:39:09"
   },
   {
     "module_name": "nonebot_plugin_report_manager",
@@ -4889,7 +4889,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:35:25"
+    "time": "2023-06-25 10:39:15"
   },
   {
     "module_name": "qinglan_bot",
@@ -4908,7 +4908,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:35:34"
+    "time": "2023-06-25 10:39:24"
   },
   {
     "module_name": "nonebot_plugin_easy_group_manager",
@@ -4931,7 +4931,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:35:40"
+    "time": "2023-06-25 10:39:30"
   },
   {
     "module_name": "nonebot_plugin_group_link_guild",
@@ -4958,7 +4958,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:35:46"
+    "time": "2023-06-25 10:39:36"
   },
   {
     "module_name": "nonebot_plugin_alconna",
@@ -4985,7 +4985,7 @@
     "type": "library",
     "supported_adapters": null,
     "valid": true,
-    "time": "2023-06-23 04:16:55"
+    "time": "2023-06-25 10:39:43"
   },
   {
     "module_name": "nonebot-plugin-mcport",
@@ -4999,7 +4999,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:36:10"
+    "time": "2023-06-25 10:40:01"
   },
   {
     "module_name": "nonebot_plugin_xdu_support",
@@ -5018,7 +5018,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:36:37"
+    "time": "2023-06-25 10:40:28"
   },
   {
     "module_name": "nonebot_plugin_zyk_lightNVL",
@@ -5037,7 +5037,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:36:47"
+    "time": "2023-06-25 10:40:38"
   },
   {
     "module_name": "nonebot_plugin_dog",
@@ -5056,7 +5056,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:36:52"
+    "time": "2023-06-25 10:40:44"
   },
   {
     "module_name": "nonebot_plugin_uuid",
@@ -5075,7 +5075,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:36:57"
+    "time": "2023-06-25 10:40:49"
   },
   {
     "module_name": "nonebot_plugin_naturel_gpt",
@@ -5098,7 +5098,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:37:10"
+    "time": "2023-06-25 10:41:02"
   },
   {
     "module_name": "nonebot_plugin_impact",
@@ -5114,7 +5114,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-22 12:37:16"
+    "time": "2023-06-25 10:41:09"
   },
   {
     "module_name": "nonebot_plugin_mcping",
@@ -5137,7 +5137,7 @@
     "type": "application",
     "supported_adapters": null,
     "valid": true,
-    "time": "2023-06-22 12:37:23"
+    "time": "2023-06-25 10:41:16"
   },
   {
     "module_name": "nonebot_plugin_b23",
@@ -5160,7 +5160,7 @@
     "type": "application",
     "supported_adapters": null,
     "valid": true,
-    "time": "2023-06-22 12:37:29"
+    "time": "2023-06-25 10:41:22"
   },
   {
     "module_name": "nonebot_plugin_autoreply",
@@ -5181,7 +5181,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-22 12:37:35"
+    "time": "2023-06-25 10:41:29"
   },
   {
     "module_name": "nonebot_plugin_setu_collection",
@@ -5204,7 +5204,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:37:41"
+    "time": "2023-06-25 10:41:34"
   },
   {
     "module_name": "nonebot_plugin_groupmate_waifu",
@@ -5223,7 +5223,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:37:54"
+    "time": "2023-06-25 10:41:48"
   },
   {
     "module_name": "nonebot_plugin_jrrp2",
@@ -5250,7 +5250,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:38:00"
+    "time": "2023-06-25 10:41:54"
   },
   {
     "module_name": "nonebot_plugin_dicky_pk",
@@ -5273,7 +5273,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:38:06"
+    "time": "2023-06-25 10:42:00"
   },
   {
     "module_name": "nonebot_plugin_eventmonitor",
@@ -5292,7 +5292,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:38:11"
+    "time": "2023-06-25 10:42:06"
   },
   {
     "module_name": "nonebot_plugin_whateat_pic",
@@ -5317,7 +5317,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-22 12:38:21"
+    "time": "2023-06-25 10:42:15"
   },
   {
     "module_name": "nonebot_plugin_matcher_block",
@@ -5336,7 +5336,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:38:26"
+    "time": "2023-06-25 10:42:20"
   },
   {
     "module_name": "nonebot_plugin_acm_reminder",
@@ -5355,7 +5355,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:38:35"
+    "time": "2023-06-25 10:42:30"
   },
   {
     "module_name": "nonebot_plugin_maimai",
@@ -5376,7 +5376,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-25 00:05:32"
+    "time": "2023-06-25 10:42:44"
   },
   {
     "module_name": "nonebot_plugin_all4one",
@@ -5399,7 +5399,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:38:55"
+    "time": "2023-06-25 10:42:52"
   },
   {
     "module_name": "nonebot_plugin_gsabyss",
@@ -5418,7 +5418,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:39:16"
+    "time": "2023-06-25 10:43:17"
   },
   {
     "module_name": "nonebot_plugin_arktools",
@@ -5445,7 +5445,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:39:33"
+    "time": "2023-06-25 10:43:44"
   },
   {
     "module_name": "gartic_room",
@@ -5464,7 +5464,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:39:42"
+    "time": "2023-06-25 10:43:53"
   },
   {
     "module_name": "nonebot-plugin-resolver",
@@ -5491,7 +5491,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:39:50"
+    "time": "2023-06-25 10:44:02"
   },
   {
     "module_name": "nonebot_plugin_bing_chat",
@@ -5505,7 +5505,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:39:58"
+    "time": "2023-06-25 10:44:13"
   },
   {
     "module_name": "nonebot_plugin_saa",
@@ -5518,14 +5518,14 @@
     "is_official": false,
     "type": "library",
     "supported_adapters": [
-      "nonebot.adapters.kaiheila",
-      "nonebot.adapters.qqguild",
-      "nonebot.adapters.onebot.v11",
       "nonebot.adapters.telegram",
-      "nonebot.adapters.onebot.v12"
+      "nonebot.adapters.onebot.v11",
+      "nonebot.adapters.kaiheila",
+      "nonebot.adapters.onebot.v12",
+      "nonebot.adapters.qqguild"
     ],
     "valid": true,
-    "time": "2023-06-22 12:40:04"
+    "time": "2023-06-25 10:44:20"
   },
   {
     "module_name": "nonebot_plugin_random_stereotypes",
@@ -5544,7 +5544,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:40:09"
+    "time": "2023-06-25 10:44:26"
   },
   {
     "module_name": "nonebot_plugin_xiuxian_2",
@@ -5567,7 +5567,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:40:27"
+    "time": "2023-06-25 10:44:45"
   },
   {
     "module_name": "nonebot_plugin_h2e",
@@ -5594,7 +5594,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:40:34"
+    "time": "2023-06-25 10:44:52"
   },
   {
     "module_name": "nonebot_plugin_oachat",
@@ -5621,7 +5621,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:40:41"
+    "time": "2023-06-25 10:45:01"
   },
   {
     "module_name": "nonebot_plugin_warframe_mode",
@@ -5644,7 +5644,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:40:47"
+    "time": "2023-06-25 10:45:07"
   },
   {
     "module_name": "nonebot_plugin_bf1_groptools",
@@ -5663,7 +5663,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:40:52"
+    "time": "2023-06-25 10:45:13"
   },
   {
     "module_name": "nonebot_plugin_afd",
@@ -5688,7 +5688,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-22 12:40:59"
+    "time": "2023-06-25 10:45:19"
   },
   {
     "module_name": "nonebot_plugin_eventdone",
@@ -5707,7 +5707,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:41:04"
+    "time": "2023-06-25 10:45:25"
   },
   {
     "module_name": "nonebot_plugin_ncm_saying",
@@ -5721,7 +5721,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:41:09"
+    "time": "2023-06-25 10:45:30"
   },
   {
     "module_name": "TeenStudy",
@@ -5750,7 +5750,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-22 12:41:30"
+    "time": "2023-06-25 10:45:53"
   },
   {
     "module_name": "nonebot_plugin_auto_teenstudy",
@@ -5775,7 +5775,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-22 12:41:41"
+    "time": "2023-06-25 10:46:04"
   },
   {
     "module_name": "nonebot_plugin_60s",
@@ -5789,7 +5789,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:41:48"
+    "time": "2023-06-25 10:46:11"
   },
   {
     "module_name": "nonebot_plugin_AutoRepeater",
@@ -5803,7 +5803,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:41:55"
+    "time": "2023-06-25 10:46:19"
   },
   {
     "module_name": "nonebot_plugin_ai_timetable",
@@ -5819,7 +5819,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-22 12:42:06"
+    "time": "2023-06-25 10:46:29"
   },
   {
     "module_name": "nonebot_plugin_sanae",
@@ -5833,7 +5833,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:42:12"
+    "time": "2023-06-25 10:46:36"
   },
   {
     "module_name": "nonebot_plugin_arkrecord",
@@ -5860,7 +5860,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:42:26"
+    "time": "2023-06-25 10:46:48"
   },
   {
     "module_name": "nonebot_plugin_chatgpt_turbo",
@@ -5883,7 +5883,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:42:32"
+    "time": "2023-06-25 10:46:55"
   },
   {
     "module_name": "nonebot_plugin_chatgpt_on_qq",
@@ -5897,7 +5897,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:42:40"
+    "time": "2023-06-25 10:47:03"
   },
   {
     "module_name": "nonebot_plugin_tuan_chatgpt",
@@ -5920,7 +5920,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:42:47"
+    "time": "2023-06-25 10:47:11"
   },
   {
     "module_name": "nonebot_plugin_chatpdf",
@@ -5943,7 +5943,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:42:57"
+    "time": "2023-06-25 10:47:22"
   },
   {
     "module_name": "nonebot_plugin_rimofun",
@@ -5968,7 +5968,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-22 12:43:14"
+    "time": "2023-06-25 10:47:39"
   },
   {
     "module_name": "nonebot_plugin_customemote",
@@ -5982,7 +5982,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:43:19"
+    "time": "2023-06-25 10:47:45"
   },
   {
     "module_name": "nonebot_plugin_justsix",
@@ -5996,7 +5996,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:43:27"
+    "time": "2023-06-25 10:47:53"
   },
   {
     "module_name": "nonebot_plugin_simulator_xiuxian",
@@ -6019,7 +6019,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:43:34"
+    "time": "2023-06-25 10:48:01"
   },
   {
     "module_name": "nonebot_plugin_bracket",
@@ -6033,7 +6033,7 @@
     "type": "application",
     "supported_adapters": null,
     "valid": true,
-    "time": "2023-06-22 12:43:40"
+    "time": "2023-06-25 10:48:08"
   },
   {
     "module_name": "nonebot_plugin_gshisbanner",
@@ -6058,7 +6058,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-22 12:43:47"
+    "time": "2023-06-25 10:48:14"
   },
   {
     "module_name": "nonebot_plugin_unoconv",
@@ -6081,7 +6081,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:43:53"
+    "time": "2023-06-25 10:48:21"
   },
   {
     "module_name": "nonebot_plugin_apexranklookup",
@@ -6095,7 +6095,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:44:00"
+    "time": "2023-06-25 10:48:28"
   },
   {
     "module_name": "nonebot_plugin_randomnana",
@@ -6109,7 +6109,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:44:07"
+    "time": "2023-06-25 10:48:35"
   },
   {
     "module_name": "nonebot_plugin_quote",
@@ -6132,7 +6132,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:44:13"
+    "time": "2023-06-25 10:48:41"
   },
   {
     "module_name": "nonebot_plugin_memes_api",
@@ -6146,7 +6146,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:44:21"
+    "time": "2023-06-25 10:48:50"
   },
   {
     "module_name": "nonebot_plugin_rrc",
@@ -6169,7 +6169,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:44:26"
+    "time": "2023-06-25 10:48:55"
   },
   {
     "module_name": "nonebot_plugin_hotsearch",
@@ -6183,7 +6183,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:44:32"
+    "time": "2023-06-25 10:49:01"
   },
   {
     "module_name": "nonebot_plugin_ai_interviewer",
@@ -6206,7 +6206,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:44:38"
+    "time": "2023-06-25 10:49:08"
   },
   {
     "module_name": "nonebot_plugin_chatglm",
@@ -6229,7 +6229,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:45:10"
+    "time": "2023-06-25 10:49:39"
   },
   {
     "module_name": "nonebot_plugin_chatglm6b",
@@ -6252,7 +6252,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:45:19"
+    "time": "2023-06-25 10:49:47"
   },
   {
     "module_name": "nonebot_plugin_nya_music",
@@ -6275,7 +6275,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:45:25"
+    "time": "2023-06-25 10:49:55"
   },
   {
     "module_name": "nonebot_plugin_helloworld",
@@ -6294,7 +6294,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:45:30"
+    "time": "2023-06-25 10:50:00"
   },
   {
     "module_name": "nonebot_plugin_overbracket",
@@ -6317,7 +6317,7 @@
     "type": "application",
     "supported_adapters": null,
     "valid": true,
-    "time": "2023-06-22 12:45:35"
+    "time": "2023-06-25 10:50:06"
   },
   {
     "module_name": "nonebot_plugin_miao",
@@ -6331,7 +6331,7 @@
     "type": "application",
     "supported_adapters": null,
     "valid": true,
-    "time": "2023-06-22 12:45:41"
+    "time": "2023-06-25 10:50:11"
   },
   {
     "module_name": "nonebot_plugin_questionmark",
@@ -6345,7 +6345,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:45:45"
+    "time": "2023-06-25 10:50:16"
   },
   {
     "module_name": "nonebot_plugin_genshin_cos",
@@ -6372,7 +6372,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:45:54"
+    "time": "2023-06-25 10:50:25"
   },
   {
     "module_name": "nonebot_plugin_chatgpt_plus",
@@ -6395,7 +6395,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:46:03"
+    "time": "2023-06-25 10:50:34"
   },
   {
     "module_name": "nonebot_plugin_sayoroll",
@@ -6409,7 +6409,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:46:08"
+    "time": "2023-06-25 10:50:40"
   },
   {
     "module_name": "nonebot_plugin_gw2",
@@ -6430,7 +6430,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-24 18:19:53"
+    "time": "2023-06-25 10:50:47"
   },
   {
     "module_name": "nonebot_plugin_today_waifu",
@@ -6453,7 +6453,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:46:19"
+    "time": "2023-06-25 10:50:53"
   },
   {
     "module_name": "nonebot_plugin_sleep",
@@ -6467,7 +6467,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:46:24"
+    "time": "2023-06-25 10:50:59"
   },
   {
     "module_name": "nonebot_api_paddle",
@@ -6481,7 +6481,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:46:40"
+    "time": "2023-06-25 10:51:16"
   },
   {
     "module_name": "nonebot_plugin_chatppt",
@@ -6500,7 +6500,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:46:51"
+    "time": "2023-06-25 10:51:27"
   },
   {
     "module_name": "nonebot_plugin_steam_game_status",
@@ -6521,7 +6521,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-22 12:46:59"
+    "time": "2023-06-25 10:51:36"
   },
   {
     "module_name": "nonebot_plugin_bilichat",
@@ -6549,11 +6549,11 @@
     "supported_adapters": [
       "nonebot.adapters.onebot.v12",
       "nonebot.adapters.qqguild",
-      "nonebot.adapters.mirai2",
-      "nonebot.adapters.onebot.v11"
+      "nonebot.adapters.onebot.v11",
+      "nonebot.adapters.mirai2"
     ],
     "valid": true,
-    "time": "2023-06-24 20:29:31"
+    "time": "2023-06-25 10:51:52"
   },
   {
     "module_name": "GenshinUID",
@@ -6580,7 +6580,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:47:20"
+    "time": "2023-06-25 10:51:59"
   },
   {
     "module_name": "nonebot_plugin_blive_danmaku",
@@ -6599,7 +6599,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-25 00:06:03"
+    "time": "2023-06-25 10:52:23"
   },
   {
     "module_name": "nonebot_plugin_clock",
@@ -6618,7 +6618,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:47:50"
+    "time": "2023-06-25 10:52:31"
   },
   {
     "module_name": "nonebot_plugin_SDGPT",
@@ -6645,13 +6645,13 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:48:00"
+    "time": "2023-06-25 10:52:42"
   },
   {
     "module_name": "nonebot_plugin_fuckyou",
     "project_link": "nonebot-plugin-fuckyou",
     "name": "FuckYou",
-    "desc": "赶紧闭嘴吧，你嘴巴直通脑子，一说话我都能看见汪洋大海。",
+    "desc": "以前我还可以纵容你，但是在辣鸡分类后你只能呆这了。",
     "author": "lgc2333",
     "homepage": "https://github.com/lgc-NB2Dev/nonebot-plugin-fuckyou",
     "tags": [],
@@ -6659,7 +6659,7 @@
     "type": "application",
     "supported_adapters": null,
     "valid": true,
-    "time": "2023-06-22 12:48:06"
+    "time": "2023-06-25 10:52:47"
   },
   {
     "module_name": "nonebot_plugin_pokemonfusion",
@@ -6673,7 +6673,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-25 08:21:24"
+    "time": "2023-06-25 10:52:52"
   },
   {
     "module_name": "tatarubot2",
@@ -6692,7 +6692,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:48:19"
+    "time": "2023-06-25 10:53:01"
   },
   {
     "module_name": "nonebot_plugin_talk_with_chatgpt",
@@ -6711,7 +6711,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:48:26"
+    "time": "2023-06-25 10:53:08"
   },
   {
     "module_name": "nonebot_plugin_osuverify",
@@ -6730,7 +6730,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:48:32"
+    "time": "2023-06-25 10:53:14"
   },
   {
     "module_name": "nonebot_plugin_bilifan",
@@ -6751,7 +6751,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-22 12:48:41"
+    "time": "2023-06-25 10:53:24"
   },
   {
     "module_name": "nonebot_plugin_akinator",
@@ -6776,7 +6776,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-22 12:48:53"
+    "time": "2023-06-25 10:53:37"
   },
   {
     "module_name": "nonebot_plugin_rename",
@@ -6801,7 +6801,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-22 12:49:02"
+    "time": "2023-06-25 10:53:46"
   },
   {
     "module_name": "nonebot_plugin_appinsights",
@@ -6815,7 +6815,7 @@
     "type": "application",
     "supported_adapters": null,
     "valid": true,
-    "time": "2023-06-22 12:49:12"
+    "time": "2023-06-25 10:53:57"
   },
   {
     "module_name": "nonebot_plugin_mixin",
@@ -6838,7 +6838,7 @@
     "type": "library",
     "supported_adapters": null,
     "valid": true,
-    "time": "2023-06-22 12:49:17"
+    "time": "2023-06-25 10:54:02"
   },
   {
     "module_name": "nonebot_plugin_brainfuck",
@@ -6861,7 +6861,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:49:24"
+    "time": "2023-06-25 10:54:09"
   },
   {
     "module_name": "nonebot-plugin-coderun",
@@ -6875,7 +6875,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:49:30"
+    "time": "2023-06-25 10:54:16"
   },
   {
     "module_name": "nonebot_plugin_abot_place",
@@ -6898,7 +6898,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:49:43"
+    "time": "2023-06-25 10:54:29"
   },
   {
     "module_name": "nonebot_plugin_megumin",
@@ -6921,7 +6921,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:49:48"
+    "time": "2023-06-25 10:54:34"
   },
   {
     "module_name": "nonebot_plugin_manga_translator",
@@ -6950,7 +6950,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-22 12:49:55"
+    "time": "2023-06-25 10:54:41"
   },
   {
     "module_name": "nonebot_plugin_watermarker",
@@ -6973,7 +6973,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:50:01"
+    "time": "2023-06-25 10:54:48"
   },
   {
     "module_name": "nonebot_plugin_starrail_calendar",
@@ -6987,7 +6987,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-25 08:21:30"
+    "time": "2023-06-25 10:54:50"
   },
   {
     "module_name": "nonebot_plugin_wordle_help",
@@ -7003,7 +7003,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-22 12:50:09"
+    "time": "2023-06-25 10:54:56"
   },
   {
     "module_name": "nonebot-plugin-csgo-case-simulator",
@@ -7026,7 +7026,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:50:16"
+    "time": "2023-06-25 10:55:04"
   },
   {
     "module_name": "nonebot_plugin_grouplock",
@@ -7047,7 +7047,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-22 12:50:23"
+    "time": "2023-06-25 10:55:11"
   },
   {
     "module_name": "nonebot_plugin_callapi",
@@ -7061,7 +7061,7 @@
     "type": "application",
     "supported_adapters": null,
     "valid": true,
-    "time": "2023-06-24 04:17:19"
+    "time": "2023-06-25 10:55:22"
   },
   {
     "module_name": "nonebot_plugin_penguin",
@@ -7075,7 +7075,7 @@
     "type": "application",
     "supported_adapters": null,
     "valid": true,
-    "time": "2023-06-22 12:50:46"
+    "time": "2023-06-25 10:55:34"
   },
   {
     "module_name": "nonebot_plugin_spark_gpt",
@@ -7102,7 +7102,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-25 00:06:26"
+    "time": "2023-06-25 10:55:48"
   },
   {
     "module_name": "nonebot_plugin_logpile",
@@ -7116,7 +7116,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:51:06"
+    "time": "2023-06-25 10:55:53"
   },
   {
     "module_name": "nonebot_plugin_segbuilder",
@@ -7143,7 +7143,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:51:11"
+    "time": "2023-06-25 10:55:59"
   },
   {
     "module_name": "nonebot_plugin_arkgacha",
@@ -7170,7 +7170,7 @@
     "type": "application",
     "supported_adapters": null,
     "valid": true,
-    "time": "2023-06-22 12:51:33"
+    "time": "2023-06-25 10:56:27"
   },
   {
     "module_name": "nonebot_plugin_msgbuf",
@@ -7188,13 +7188,13 @@
     "is_official": false,
     "type": "library",
     "supported_adapters": [
-      "nonebot.adapters.qqguild",
+      "nonebot.adapters.telegram",
       "nonebot.adapters.onebot.v12",
-      "nonebot.adapters.onebot.v11",
-      "nonebot.adapters.telegram"
+      "nonebot.adapters.qqguild",
+      "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-23 20:30:40"
+    "time": "2023-06-25 10:56:32"
   },
   {
     "module_name": "nonebot_plugin_og",
@@ -7208,7 +7208,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:51:45"
+    "time": "2023-06-25 10:56:39"
   },
   {
     "module_name": "nonebot_plugin_hoshino_sign",
@@ -7231,7 +7231,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:52:03"
+    "time": "2023-06-25 10:56:55"
   },
   {
     "module_name": "nonebot_plugin_multincm",
@@ -7254,7 +7254,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:52:15"
+    "time": "2023-06-25 10:57:08"
   },
   {
     "module_name": "nonebot_plugin_smallapi",
@@ -7277,7 +7277,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:52:31"
+    "time": "2023-06-25 10:57:25"
   },
   {
     "module_name": "nonebot_plugin_p5generator",
@@ -7291,7 +7291,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:52:37"
+    "time": "2023-06-25 10:57:30"
   },
   {
     "module_name": "nonebot_plugin_sd_webui",
@@ -7310,7 +7310,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:52:43"
+    "time": "2023-06-25 10:57:37"
   },
   {
     "module_name": "nonebot_plugin_session",
@@ -7323,15 +7323,15 @@
     "is_official": false,
     "type": "library",
     "supported_adapters": [
-      "nonebot.adapters.kaiheila",
-      "nonebot.adapters.qqguild",
-      "nonebot.adapters.onebot.v11",
       "nonebot.adapters.telegram",
+      "nonebot.adapters.onebot.v11",
+      "nonebot.adapters.kaiheila",
       "nonebot.adapters.console",
-      "nonebot.adapters.onebot.v12"
+      "nonebot.adapters.onebot.v12",
+      "nonebot.adapters.qqguild"
     ],
     "valid": true,
-    "time": "2023-06-22 12:52:49"
+    "time": "2023-06-25 10:57:44"
   },
   {
     "module_name": "nonebot_plugin_pluginupdatecheck",
@@ -7350,7 +7350,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:52:55"
+    "time": "2023-06-25 10:57:50"
   },
   {
     "module_name": "nonebot_plugin_stockhelper",
@@ -7369,7 +7369,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:53:06"
+    "time": "2023-06-25 10:58:02"
   },
   {
     "module_name": "nonebot_plugin_githubcard",
@@ -7392,7 +7392,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:53:12"
+    "time": "2023-06-25 10:58:08"
   },
   {
     "module_name": "nonebot_plugin_lua",
@@ -7406,7 +7406,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:53:17"
+    "time": "2023-06-25 10:58:14"
   },
   {
     "module_name": "nonebot_plugin_cube",
@@ -7429,7 +7429,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:53:24"
+    "time": "2023-06-25 10:58:20"
   },
   {
     "module_name": "nonebot_plugin_homo_mathematician",
@@ -7445,7 +7445,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-22 12:53:33"
+    "time": "2023-06-25 10:58:29"
   },
   {
     "module_name": "nonebot_plugin_puzzle",
@@ -7472,7 +7472,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:53:39"
+    "time": "2023-06-25 10:58:35"
   },
   {
     "module_name": "nonebot_plugin_herocard",
@@ -7499,7 +7499,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:53:43"
+    "time": "2023-06-25 10:58:40"
   },
   {
     "module_name": "nonebot_plugin_nagabus",
@@ -7518,7 +7518,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:53:59"
+    "time": "2023-06-25 10:58:57"
   },
   {
     "module_name": "nonebot_plugin_random_draw",
@@ -7541,7 +7541,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:54:04"
+    "time": "2023-06-25 10:59:03"
   },
   {
     "module_name": "nonebot_plugin_stable_diffusion_diao",
@@ -7564,7 +7564,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-22 12:54:13"
+    "time": "2023-06-25 10:59:12"
   },
   {
     "module_name": "nonebot_plugin_al",
@@ -7585,7 +7585,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-24 00:21:22"
+    "time": "2023-06-25 10:59:28"
   },
   {
     "module_name": "nonebot_plugin_escape_url",
@@ -7607,11 +7607,11 @@
     "is_official": false,
     "type": "application",
     "supported_adapters": [
-      "nonebot.adapters.onebot.v11",
-      "nonebot.adapters.qqguild"
+      "nonebot.adapters.qqguild",
+      "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-22 12:54:31"
+    "time": "2023-06-25 10:59:34"
   },
   {
     "module_name": "nonebot_plugin_twitter",
@@ -7632,7 +7632,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-22 12:54:39"
+    "time": "2023-06-25 10:59:43"
   },
   {
     "module_name": "nonebot_plugin_pcrjjc",
@@ -7657,7 +7657,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-22 12:54:48"
+    "time": "2023-06-25 10:59:53"
   },
   {
     "module_name": "nonebot_plugin_audiocraft",
@@ -7678,7 +7678,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-22 12:54:56"
+    "time": "2023-06-25 11:00:01"
   },
   {
     "module_name": "nonebot_plugin_bili_push",
@@ -7699,7 +7699,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": false,
-    "time": "2023-06-24 18:04:26"
+    "time": "2023-06-25 11:00:09"
   },
   {
     "module_name": "nonebot_plugin_warthunder_player_check",
@@ -7720,7 +7720,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-22 20:42:30"
+    "time": "2023-06-25 11:00:20"
   },
   {
     "module_name": "nonebot_plugin_follow_withdraw",
@@ -7733,13 +7733,13 @@
     "is_official": false,
     "type": "application",
     "supported_adapters": [
-      "nonebot.adapters.onebot.v11",
-      "nonebot.adapters.kaiheila",
+      "nonebot.adapters.qqguild",
       "nonebot.adapters.onebot.v12",
-      "nonebot.adapters.qqguild"
+      "nonebot.adapters.kaiheila",
+      "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-22 12:55:22"
+    "time": "2023-06-25 11:00:28"
   },
   {
     "module_name": "nonebot_plugin_error_alert",
@@ -7754,12 +7754,12 @@
     "supported_adapters": [
       "nonebot.adapters.telegram",
       "nonebot.adapters.onebot.v11",
-      "nonebot.adapters.onebot.v12",
       "nonebot.adapters.kaiheila",
+      "nonebot.adapters.onebot.v12",
       "nonebot.adapters.qqguild"
     ],
     "valid": true,
-    "time": "2023-06-22 14:18:43"
+    "time": "2023-06-25 11:00:38"
   },
   {
     "module_name": "nonebot_plugin_ocgbot_v2",
@@ -7784,6 +7784,6 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-24 16:19:55"
+    "time": "2023-06-25 11:00:52"
   }
 ]
