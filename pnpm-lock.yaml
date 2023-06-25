@@ -16,9 +16,6 @@ dependencies:
     version: 5.2.0
 
 devDependencies:
-  '@types/bootstrap':
-    specifier: ^5.2.6
-    version: 5.2.6
   '@typescript-eslint/eslint-plugin':
     specifier: ^5.60.0
     version: 5.60.0(@typescript-eslint/parser@5.60.0)(eslint@8.43.0)(typescript@5.0.2)
@@ -516,16 +513,6 @@ packages:
       open: 9.1.0
       picocolors: 1.0.0
       tslib: 2.5.3
-    dev: true
-
-  /@popperjs/core@2.11.8:
-    resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
-    dev: true
-
-  /@types/bootstrap@5.2.6:
-    resolution: {integrity: sha512-BlAc3YATdasbHoxMoBWODrSF6qwQO/E9X8wVxCCSa6rWjnaZfpkr2N6pUMCY6jj2+wf0muUtLySbvU9etX6YqA==}
-    dependencies:
-      '@popperjs/core': 2.11.8
     dev: true
 
   /@types/eslint-scope@3.7.4:

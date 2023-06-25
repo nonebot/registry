@@ -1,4 +1,4 @@
 module.exports = {
-  "*.{js,jsx,ts,tsx,cjs,mjs,vue}": ["pnpm lint:js:fix"],
-  "*.{css,scss}": ["pnpm lint:style:fix"],
+  "*.{js,jsx,ts,tsx,cjs,mjs,vue}": ["pnpm eslint:fix"],
+  "*.{css,scss}": ["pnpm stylelint:fix"],
 };
