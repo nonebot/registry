@@ -42,6 +42,7 @@ jobs:
           mkdir -p plugin_test/store
           curl -sSL https://raw.githubusercontent.com/nonebot/nonebot2/master/website/static/plugins.json -o plugin_test/store/plugins.json
           curl -sSL https://raw.githubusercontent.com/nonebot/registry/results/results.json -o plugin_test/store/results.json
+          curl -sSL https://raw.githubusercontent.com/nonebot/registry/main/inputs/configs.json -o plugin_test/store/configs.json
           poetry install
           poetry run python -m src.utils.store_test --offset ${{ github.event.inputs.offset || 0 }} --limit ${{ github.event.inputs.limit || 50 }} ${{ github.event.inputs.args }}
       - name: Upload results
