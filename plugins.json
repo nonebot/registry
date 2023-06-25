@@ -2018,7 +2018,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-25 12:04:52"
+    "time": "2023-06-25 16:05:17"
   },
   {
     "module_name": "nonebot_plugin_baidutranslate",
@@ -2545,7 +2545,7 @@
   {
     "module_name": "nonebot_plugin_mcqq",
     "project_link": "nonebot-plugin-mcqq",
-    "name": "MC_QQ通信",
+    "name": "MC_QQ",
     "desc": "基于NoneBot的与Minecraft Server互通消息的插件",
     "author": "17TheWord",
     "homepage": "https://github.com/17TheWord/nonebot-plugin-mcqq",
@@ -2560,10 +2560,12 @@
       }
     ],
     "is_official": false,
-    "type": null,
-    "supported_adapters": null,
-    "valid": false,
-    "time": "2023-06-25 10:11:30"
+    "type": "application",
+    "supported_adapters": [
+      "nonebot.adapters.onebot.v11"
+    ],
+    "valid": true,
+    "time": "2023-06-25 16:05:31"
   },
   {
     "module_name": "nonebot_plugin_covid_19_by_guild",
@@ -6547,13 +6549,13 @@
     "is_official": false,
     "type": "application",
     "supported_adapters": [
-      "nonebot.adapters.onebot.v12",
       "nonebot.adapters.qqguild",
+      "nonebot.adapters.onebot.v12",
       "nonebot.adapters.onebot.v11",
       "nonebot.adapters.mirai2"
     ],
     "valid": true,
-    "time": "2023-06-25 10:51:52"
+    "time": "2023-06-25 16:06:26"
   },
   {
     "module_name": "GenshinUID",
@@ -6673,7 +6675,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-25 12:05:25"
+    "time": "2023-06-25 16:06:32"
   },
   {
     "module_name": "tatarubot2",
@@ -6987,7 +6989,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-25 12:05:29"
+    "time": "2023-06-25 16:06:37"
   },
   {
     "module_name": "nonebot_plugin_wordle_help",

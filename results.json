@@ -4295,7 +4295,7 @@
     }
   },
   "nonebot-plugin-mockingbird:nonebot_plugin_mockingbird": {
-    "time": "2023-06-25 12:04:52",
+    "time": "2023-06-25 16:05:17",
     "version": null,
     "results": {
       "validation": false,
@@ -5477,17 +5477,26 @@
     }
   },
   "nonebot-plugin-mcqq:nonebot_plugin_mcqq": {
-    "time": "2023-06-25 10:11:30",
-    "version": "1.2.5",
+    "time": "2023-06-25 16:05:31",
+    "version": "1.2.5.post1",
     "results": {
-      "validation": false,
-      "load": false,
-      "metadata": false
+      "validation": true,
+      "load": true,
+      "metadata": true
     },
     "outputs": {
-      "validation": "缺少元数据",
-      "load": "插件 nonebot-plugin-mcqq 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-mcqq\u001b[39m                   \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m1.2.5\u001b[39;22m                                 \n     \u001b[34mdescription\u001b[39m  : 基于NoneBot的QQ群聊与Minecraft Server消息互通插件 \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36maio-mc-rcon\u001b[39m \u001b[39;1m>=3.2.0\u001b[39;22m\n     - \u001b[36mmcqq-tool\u001b[39m \u001b[39;1m>=0.0.5\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.1.1\u001b[39;22m\n     - \u001b[36mnonebot-plugin-guild-patch\u001b[39m \u001b[39;1m>=0.2.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0\u001b[39;22m\n     - \u001b[36mwebsockets\u001b[39m \u001b[39;1m>=10.3\u001b[39;22m\n插件 nonebot-plugin-mcqq 依赖的插件如下：\n    nonebot_plugin_guild_patch\n插件 nonebot_plugin_mcqq 加载出错：\n    \u001b[32m06-25 02:11:30\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-25 02:11:30\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-25 02:11:30\u001b[0m [\u001b[31m\u001b[1mERROR\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | \u001b[31m\u001b[48;2;248;187;208mFailed to import \"nonebot_plugin_guild_patch\"\u001b[0m\u001b[31m\u001b[0m\n    \u001b[33m\u001b[1mTraceback (most recent call last):\u001b[0m\n      File \"\u001b[32m/home/runner/work/registry/registry/plugin_test/nonebot-plugin-mcqq-nonebot_plugin_mcqq-test/\u001b[0m\u001b[32m\u001b[1mrunner.py\u001b[0m\", line \u001b[33m15\u001b[0m, in \u001b[35m<module>\u001b[0m\n        \u001b[1mplugin\u001b[0m \u001b[35m\u001b[1m=\u001b[0m \u001b[1mload_plugin\u001b[0m\u001b[1m(\u001b[0m\u001b[36m\"nonebot_plugin_mcqq\"\u001b[0m\u001b[1m)\u001b[0m\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-mcqq-nonebot_plugin_mcqq-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-mcqq-nonebot_plugin_mcqq-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-mcqq-nonebot_plugin_mcqq-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-mcqq-nonebot_plugin_mcqq-test/.venv/lib/python3.10/site-packages/nonebot_plugin_mcqq/__init__.py\", line 13, in <module>\n        require(\"nonebot_plugin_guild_patch\")\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-mcqq-nonebot_plugin_mcqq-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 174, in require\n        plugin = load_plugin(name)\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-mcqq-nonebot_plugin_mcqq-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-mcqq-nonebot_plugin_mcqq-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 154, in load_plugin\n        raise RuntimeError(\n    \u001b[31m\u001b[1mRuntimeError\u001b[0m:\u001b[1m Module nonebot_plugin_guild_patch is not loaded as a plugin! Make sure not to import it before loading.\u001b[0m\n    \u001b[32m06-25 02:11:30\u001b[0m [\u001b[31m\u001b[1mERROR\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | \u001b[31m\u001b[48;2;248;187;208mFailed to import \"nonebot_plugin_mcqq\"\u001b[0m\u001b[31m\u001b[0m\n    \u001b[33m\u001b[1mTraceback (most recent call last):\u001b[0m\n      File \"\u001b[32m/home/runner/work/registry/registry/plugin_test/nonebot-plugin-mcqq-nonebot_plugin_mcqq-test/\u001b[0m\u001b[32m\u001b[1mrunner.py\u001b[0m\", line \u001b[33m15\u001b[0m, in \u001b[35m<module>\u001b[0m\n        \u001b[1mplugin\u001b[0m \u001b[35m\u001b[1m=\u001b[0m \u001b[1mload_plugin\u001b[0m\u001b[1m(\u001b[0m\u001b[36m\"nonebot_plugin_mcqq\"\u001b[0m\u001b[1m)\u001b[0m\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-mcqq-nonebot_plugin_mcqq-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-mcqq-nonebot_plugin_mcqq-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-mcqq-nonebot_plugin_mcqq-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-mcqq-nonebot_plugin_mcqq-test/.venv/lib/python3.10/site-packages/nonebot_plugin_mcqq/__init__.py\", line 13, in <module>\n        require(\"nonebot_plugin_guild_patch\")\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-mcqq-nonebot_plugin_mcqq-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 178, in require\n        raise RuntimeError(f'Cannot load plugin \"{name}\"!')\n    \u001b[31m\u001b[1mRuntimeError\u001b[0m:\u001b[1m Cannot load plugin \"nonebot_plugin_guild_patch\"!\u001b[0m",
-      "metadata": null
+      "validation": "通过",
+      "load": "插件 nonebot-plugin-mcqq 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-mcqq\u001b[39m                   \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m1.2.5.post1\u001b[39;22m                           \n     \u001b[34mdescription\u001b[39m  : 基于NoneBot的QQ群聊与Minecraft Server消息互通插件 \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36maio-mc-rcon\u001b[39m \u001b[39;1m>=3.2.0\u001b[39;22m\n     - \u001b[36mmcqq-tool\u001b[39m \u001b[39;1m>=0.0.5\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.1.1\u001b[39;22m\n     - \u001b[36mnonebot-plugin-guild-patch\u001b[39m \u001b[39;1m>=0.2.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0\u001b[39;22m\n     - \u001b[36mwebsockets\u001b[39m \u001b[39;1m>=10.3\u001b[39;22m\n插件 nonebot-plugin-mcqq 依赖的插件如下：\n    nonebot_plugin_guild_patch\n插件 nonebot_plugin_mcqq 加载正常：\n    \u001b[32m06-25 08:05:30\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-25 08:05:30\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-25 08:05:30\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_guild_patch\u001b[0m\"\n    \u001b[32m06-25 08:05:30\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_mcqq\u001b[0m\"",
+      "metadata": {
+        "name": "MC_QQ",
+        "description": "基于NoneBot的与Minecraft Server互通消息的插件",
+        "usage": "在群聊发送消息即可同步至 Minecraft 服务器",
+        "type": "application",
+        "homepage": "https://github.com/17TheWord/nonebot-plugin-mcqq",
+        "supported_adapters": [
+          "nonebot.adapters.onebot.v11"
+        ]
+      }
     },
     "plugin": {
       "old": {
@@ -5511,7 +5520,29 @@
         "type": null,
         "supported_adapters": null
       },
-      "new": null
+      "new": {
+        "module_name": "nonebot_plugin_mcqq",
+        "project_link": "nonebot-plugin-mcqq",
+        "name": "MC_QQ",
+        "desc": "基于NoneBot的与Minecraft Server互通消息的插件",
+        "author": "17TheWord",
+        "homepage": "https://github.com/17TheWord/nonebot-plugin-mcqq",
+        "tags": [
+          {
+            "label": "Minecraft",
+            "color": "#52ea6f"
+          },
+          {
+            "label": "消息互通",
+            "color": "#52eadf"
+          }
+        ],
+        "is_official": false,
+        "type": "application",
+        "supported_adapters": [
+          "nonebot.adapters.onebot.v11"
+        ]
+      }
     }
   },
   "nonebot-plugin-covid-19-by-guild:nonebot_plugin_covid_19_by_guild": {
@@ -13548,8 +13579,8 @@
     }
   },
   "nonebot-plugin-bilichat:nonebot_plugin_bilichat": {
-    "time": "2023-06-25 10:51:52",
-    "version": "2.8.2",
+    "time": "2023-06-25 16:06:26",
+    "version": "2.9.0",
     "results": {
       "validation": true,
       "load": true,
@@ -13557,7 +13588,7 @@
     },
     "outputs": {
       "validation": "通过",
-      "load": "插件 nonebot-plugin-bilichat 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-bilichat\u001b[39m  \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m2.8.2\u001b[39;22m                    \n     \u001b[34mdescription\u001b[39m  : 一个通过 OpenAI 来对b站视频进行总结插件 \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mbilireq\u001b[39m \u001b[39;1m>=0.2.4\u001b[39;22m\n     - \u001b[36mlxml\u001b[39m \u001b[39;1m>=4.9.2\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.2.2\u001b[39;22m\n     - \u001b[36mnonebot-plugin-localstore\u001b[39m \u001b[39;1m>=0.4.1\u001b[39;22m\n     - \u001b[36mnonebot-plugin-segbuilder\u001b[39m \u001b[39;1m>=0.2.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0\u001b[39;22m\n     - \u001b[36mpillow\u001b[39m \u001b[39;1m>=9.5.0\u001b[39;22m\n     - \u001b[36mqrcode\u001b[39m \u001b[39;1m>=7.4.2\u001b[39;22m\n插件 nonebot-plugin-bilichat 依赖的插件如下：\n    nonebot_plugin_localstore, nonebot_plugin_segbuilder\n插件 nonebot_plugin_bilichat 加载正常：\n    \u001b[32m06-25 02:51:43\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-25 02:51:43\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-25 02:51:44\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_localstore\u001b[0m\"\n    \u001b[32m06-25 02:51:44\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_bilichat\u001b[0m\u001b[36m\u001b[0m | Cache folder for nonebot_plugin_bilichat is located at /home/runner/.cache/nonebot2/nonebot_plugin_bilichat\n    \u001b[32m06-25 02:51:44\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_bilichat\u001b[0m\u001b[36m\u001b[0m | Data folder for nonebot_plugin_bilichat is located at /home/runner/.local/share/nonebot2/nonebot_plugin_bilichat\n    \u001b[32m06-25 02:51:44\u001b[0m [\u001b[33m\u001b[1mWARNING\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_bilichat\u001b[0m\u001b[36m\u001b[0m | sentry_sdk is not installed\n    \u001b[32m06-25 02:51:44\u001b[0m [\u001b[33m\u001b[1mWARNING\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_bilichat\u001b[0m\u001b[36m\u001b[0m | font file does not exist. Trying to download\n    \u001b[32m06-25 02:51:50\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_segbuilder\u001b[0m\u001b[36m\u001b[0m | The adapter mirai2 is loaded successfully\n    \u001b[32m06-25 02:51:50\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_segbuilder\u001b[0m\u001b[36m\u001b[0m | The adapter OneBot V11 is loaded successfully\n    \u001b[32m06-25 02:51:50\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_segbuilder\u001b[0m\u001b[36m\u001b[0m | The adapter OneBot V12 is loaded successfully\n    \u001b[32m06-25 02:51:50\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_segbuilder\u001b[0m\u001b[36m\u001b[0m | The adapter QQ Guild is loaded successfully\n    \u001b[32m06-25 02:51:50\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_segbuilder\u001b[0m\"\n    \u001b[32m06-25 02:51:50\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_bilichat\u001b[0m\"",
+      "load": "插件 nonebot-plugin-bilichat 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-bilichat\u001b[39m  \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m2.9.0\u001b[39;22m                    \n     \u001b[34mdescription\u001b[39m  : 一个通过 OpenAI 来对b站视频进行总结插件 \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mbilireq\u001b[39m \u001b[39;1m>=0.2.4\u001b[39;22m\n     - \u001b[36mlxml\u001b[39m \u001b[39;1m>=4.9.2\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.2.2\u001b[39;22m\n     - \u001b[36mnonebot-plugin-localstore\u001b[39m \u001b[39;1m>=0.4.1\u001b[39;22m\n     - \u001b[36mnonebot-plugin-segbuilder\u001b[39m \u001b[39;1m>=0.2.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0\u001b[39;22m\n     - \u001b[36mpillow\u001b[39m \u001b[39;1m>=9.5.0\u001b[39;22m\n     - \u001b[36mqrcode\u001b[39m \u001b[39;1m>=7.4.2\u001b[39;22m\n插件 nonebot-plugin-bilichat 依赖的插件如下：\n    nonebot_plugin_localstore, nonebot_plugin_segbuilder\n插件 nonebot_plugin_bilichat 加载正常：\n    \u001b[32m06-25 08:06:18\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-25 08:06:18\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-25 08:06:18\u001b[0m [\u001b[31m\u001b[1mERROR\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | \u001b[31m\u001b[48;2;248;187;208mFailed to import \"nonebot_plugin_htmlrender\"\u001b[0m\u001b[31m\u001b[0m\n    \u001b[33m\u001b[1mTraceback (most recent call last):\u001b[0m\n      File \"\u001b[32m/home/runner/work/registry/registry/plugin_test/nonebot-plugin-bilichat-nonebot_plugin_bilichat-test/\u001b[0m\u001b[32m\u001b[1mrunner.py\u001b[0m\", line \u001b[33m15\u001b[0m, in \u001b[35m<module>\u001b[0m\n        \u001b[1mplugin\u001b[0m \u001b[35m\u001b[1m=\u001b[0m \u001b[1mload_plugin\u001b[0m\u001b[1m(\u001b[0m\u001b[36m\"nonebot_plugin_bilichat\"\u001b[0m\u001b[1m)\u001b[0m\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-bilichat-nonebot_plugin_bilichat-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-bilichat-nonebot_plugin_bilichat-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-bilichat-nonebot_plugin_bilichat-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-bilichat-nonebot_plugin_bilichat-test/.venv/lib/python3.10/site-packages/nonebot_plugin_bilichat/__init__.py\", line 31, in <module>\n        from .config import __version__, plugin_config\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n      File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-bilichat-nonebot_plugin_bilichat-test/.venv/lib/python3.10/site-packages/nonebot_plugin_bilichat/config.py\", line 184, in <module>\n        plugin_config = Config.parse_obj(get_driver().config)\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-bilichat-nonebot_plugin_bilichat-test/.venv/lib/python3.10/site-packages/nonebot_plugin_bilichat/config.py\", line 74, in check_htmlrender\n        require(\"nonebot_plugin_htmlrender\")\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-bilichat-nonebot_plugin_bilichat-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 174, in require\n        plugin = load_plugin(name)\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-bilichat-nonebot_plugin_bilichat-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-bilichat-nonebot_plugin_bilichat-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1004, in _find_and_load_unlocked\n    \u001b[31m\u001b[1mModuleNotFoundError\u001b[0m:\u001b[1m No module named 'nonebot_plugin_htmlrender'\u001b[0m\n    \u001b[32m06-25 08:06:18\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_bilichat\u001b[0m\u001b[36m\u001b[0m | bilichat_use_browser's dependency is not satisfied, disable bilichat_use_browser\n    \u001b[32m06-25 08:06:19\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_localstore\u001b[0m\"\n    \u001b[32m06-25 08:06:19\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_bilichat\u001b[0m\u001b[36m\u001b[0m | Cache folder for nonebot_plugin_bilichat is located at /home/runner/.cache/nonebot2/nonebot_plugin_bilichat\n    \u001b[32m06-25 08:06:19\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_bilichat\u001b[0m\u001b[36m\u001b[0m | Data folder for nonebot_plugin_bilichat is located at /home/runner/.local/share/nonebot2/nonebot_plugin_bilichat\n    \u001b[32m06-25 08:06:19\u001b[0m [\u001b[33m\u001b[1mWARNING\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_bilichat\u001b[0m\u001b[36m\u001b[0m | sentry_sdk is not installed\n    \u001b[32m06-25 08:06:19\u001b[0m [\u001b[33m\u001b[1mWARNING\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_bilichat\u001b[0m\u001b[36m\u001b[0m | font file does not exist. Trying to download\n    \u001b[32m06-25 08:06:25\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_segbuilder\u001b[0m\u001b[36m\u001b[0m | The adapter mirai2 is loaded successfully\n    \u001b[32m06-25 08:06:25\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_segbuilder\u001b[0m\u001b[36m\u001b[0m | The adapter OneBot V11 is loaded successfully\n    \u001b[32m06-25 08:06:25\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_segbuilder\u001b[0m\u001b[36m\u001b[0m | The adapter OneBot V12 is loaded successfully\n    \u001b[32m06-25 08:06:25\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_segbuilder\u001b[0m\u001b[36m\u001b[0m | The adapter QQ Guild is loaded successfully\n    \u001b[32m06-25 08:06:25\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_segbuilder\u001b[0m\"\n    \u001b[32m06-25 08:06:25\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_bilichat\u001b[0m\"",
       "metadata": {
         "name": "nonebot-plugin-bilichat",
         "description": "一个通过 OpenAI 来对b站视频进行总结插件",
@@ -13565,10 +13596,10 @@
         "type": "application",
         "homepage": "https://github.com/Aunly/nonebot-plugin-bilichat",
         "supported_adapters": [
-          "~onebot.v11",
-          "~onebot.v12",
           "~mirai2",
-          "~qqguild"
+          "~onebot.v11",
+          "~qqguild",
+          "~onebot.v12"
         ]
       }
     },
@@ -13622,8 +13653,8 @@
         "is_official": false,
         "type": "application",
         "supported_adapters": [
-          "nonebot.adapters.onebot.v12",
           "nonebot.adapters.qqguild",
+          "nonebot.adapters.onebot.v12",
           "nonebot.adapters.onebot.v11",
           "nonebot.adapters.mirai2"
         ]
@@ -13830,7 +13861,7 @@
     }
   },
   "nonebot-plugin-pokemonfusion:nonebot_plugin_pokemonfusion": {
-    "time": "2023-06-25 12:05:25",
+    "time": "2023-06-25 16:06:32",
     "version": null,
     "results": {
       "validation": false,
@@ -14568,7 +14599,7 @@
     }
   },
   "nonebot-plugin-starrail-calendar:nonebot_plugin_starrail_calendar": {
-    "time": "2023-06-25 12:05:29",
+    "time": "2023-06-25 16:06:37",
     "version": null,
     "results": {
       "validation": false,
