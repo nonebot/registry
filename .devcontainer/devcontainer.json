@@ -1,7 +1,7 @@
 {
   "name": "Default Linux Universal",
   "image": "mcr.microsoft.com/devcontainers/universal:2-linux",
-  "postCreateCommand": "yarn install",
+  "postCreateCommand": "pnpm install",
   "customizations": {
     "vscode": {
       "settings": {
