@@ -1,3 +1,18 @@
+export interface PluginData {
+  module_name: string;
+  project_link: string;
+  name: string;
+  desc: string;
+  author: string;
+  homepage: string;
+  tags: unknown[];
+  is_official: boolean;
+  type: string;
+  supported_adapters: string[];
+  valid: boolean;
+  time: string;
+}
+
 export interface Results {
   [K: string]: {
     time: string;
@@ -6,23 +21,11 @@ export interface Results {
       [K in "validation" | "load" | "metadata"]: string;
     };
     outputs: {
-      [K in "validation" | "load" | "metadata"]: unknown;
+      [K in "validation" | "load" | "metadata"]: string;
     };
     plugin: {
-      [K in "old" | "new"]: {
-        module_name: string;
-        project_link: string;
-        name: string;
-        desc: string;
-        author: string;
-        homepage: string;
-        tags: unknown[];
-        is_official: boolean;
-        type: string;
-        supported_adapters: string[];
-        valid: boolean;
-        time: string;
-      } | null;
+      old: PluginData;
+      new: PluginData | null;
     };
   };
 }
