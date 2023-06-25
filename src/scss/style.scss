@@ -5,7 +5,7 @@
 }
 
 .ok {
-  color: rgb(9, 231, 39);
+  color: rgb(9 231 39);
   font-size: 1.5em;
 }
 
@@ -15,22 +15,22 @@
 }
 
 .show-metadata {
-  color: rgb(42, 95, 243);
+  color: rgb(42 95 243);
   font-size: 1.5em;
 }
 
 .empty-metadata {
-  color: rgb(236, 194, 5);
+  color: rgb(236 194 5);
   font-size: 1.5em;
 }
 
 .package {
-  color: rgb(151, 151, 151);
+  color: rgb(151 151 151);
   font-size: 0.95em;
 }
 
 .account {
-  color: rgb(151, 151, 151);
+  color: rgb(151 151 151);
   font-size: 1.5em;
 }
 
@@ -44,6 +44,6 @@
   bottom: 55px;
   right: 20px;
   opacity: 0;
-  background-color: rgba(64, 64, 64, 0.1);
+  background-color: rgb(64 64 64 / 10%);
   transition: opacity 0.3s ease-in-out;
 }

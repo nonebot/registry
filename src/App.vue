@@ -41,8 +41,8 @@
         </li>
         <li class="nav-item" style="position: relative">
           <button
-            class="navbar-toggler dropdown-toggle align-items-center"
             id="bd-theme"
+            class="navbar-toggler dropdown-toggle align-items-center"
             type="button"
             aria-expanded="false"
             data-bs-toggle="dropdown"
@@ -93,7 +93,7 @@
       </ul>
     </div>
     <div class="container">
-      <div class="collapse" id="result-statistics" style="width: 100%">
+      <div id="result-statistics" class="collapse" style="width: 100%">
         <div class="p-4">
           <h5 class="text-body-emphasis h4 lh-base">
             <span class="mdi mdi-chart-box-outline"> 测试统计 </span>
@@ -110,7 +110,7 @@
               aria-valuemax="100"
               style="height: 5px"
             >
-              <div class="progress-bar" id="check-pass-progress"></div>
+              <div id="check-pass-progress" class="progress-bar"></div>
             </div>
           </div>
           <div class="text-body-secondary">
@@ -125,7 +125,7 @@
               aria-valuemax="100"
               style="height: 3px"
             >
-              <div class="progress-bar" id="load-pass-progress"></div>
+              <div id="load-pass-progress" class="progress-bar"></div>
             </div>
           </div>
           <div class="text-body-secondary">
@@ -140,7 +140,7 @@
               aria-valuemax="100"
               style="height: 3px"
             >
-              <div class="progress-bar" id="metadata-pass-progress"></div>
+              <div id="metadata-pass-progress" class="progress-bar"></div>
             </div>
           </div>
         </div>
