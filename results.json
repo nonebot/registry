@@ -1,6 +1,6 @@
 {
   "nonebot-plugin-status:nonebot_plugin_status": {
-    "time": "2023-06-22 11:43:35",
+    "time": "2023-06-25 09:10:33",
     "version": "0.7.1",
     "results": {
       "validation": true,
@@ -9,7 +9,7 @@
     },
     "outputs": {
       "validation": "通过",
-      "load": "插件 nonebot-plugin-status 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-status\u001b[39m                                          \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.7.1\u001b[39;22m                                                          \n     \u001b[34mdescription\u001b[39m  : Check your server status (CPU, Memory, Disk Usage) via nonebot \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mhumanize\u001b[39m \u001b[39;1m>=4.0.0,<5.0.0\u001b[39;22m\n     - \u001b[36mJinja2\u001b[39m \u001b[39;1m>=3.0.0,<4.0.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0,<3.0.0\u001b[39;22m\n     - \u001b[36mpsutil\u001b[39m \u001b[39;1m>=5.7.2,<6.0.0\u001b[39;22m\n插件 nonebot-plugin-status 依赖的插件如下：\n    \n插件 nonebot_plugin_status 加载正常：\n    \u001b[32m06-22 03:43:34\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-22 03:43:34\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-22 03:43:34\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_status\u001b[0m\"",
+      "load": "插件 nonebot-plugin-status 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-status\u001b[39m                                          \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.7.1\u001b[39;22m                                                          \n     \u001b[34mdescription\u001b[39m  : Check your server status (CPU, Memory, Disk Usage) via nonebot \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mhumanize\u001b[39m \u001b[39;1m>=4.0.0,<5.0.0\u001b[39;22m\n     - \u001b[36mJinja2\u001b[39m \u001b[39;1m>=3.0.0,<4.0.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0,<3.0.0\u001b[39;22m\n     - \u001b[36mpsutil\u001b[39m \u001b[39;1m>=5.7.2,<6.0.0\u001b[39;22m\n插件 nonebot-plugin-status 依赖的插件如下：\n    \n插件 nonebot_plugin_status 加载正常：\n    \u001b[32m06-25 01:10:32\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-25 01:10:32\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-25 01:10:33\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_status\u001b[0m\"",
       "metadata": {
         "name": "服务器状态查看",
         "description": "通过戳一戳获取服务器状态",
@@ -50,7 +50,7 @@
             "color": "#aeeaa8"
           }
         ],
-        "is_official": false,
+        "is_official": true,
         "type": "application",
         "supported_adapters": null
       }
