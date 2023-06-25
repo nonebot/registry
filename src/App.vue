@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import GithubButton from "./components/GithubButton.vue";
+</script>
 
 <template>
   <nav class="navbar bg-body-tertiary sticky-top">
@@ -15,16 +17,7 @@
       </a>
       <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
         <li class="nav-item">
-          <button class="navbar-toggler" type="button" title="GitHub">
-            <a href="https://github.com/nonebot/registry" target="_blank">
-              <span class="mdi mdi-github"></span>
-            </a>
-            <style>
-              a {
-                color: inherit;
-              }
-            </style>
-          </button>
+          <GithubButton />
         </li>
         <li class="nav-item">
           <button
