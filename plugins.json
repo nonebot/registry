@@ -2018,7 +2018,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-25 22:03:31"
+    "time": "2023-06-26 00:04:42"
   },
   {
     "module_name": "nonebot_plugin_baidutranslate",
@@ -4987,7 +4987,7 @@
     "type": "library",
     "supported_adapters": null,
     "valid": true,
-    "time": "2023-06-25 10:39:43"
+    "time": "2023-06-26 00:05:03"
   },
   {
     "module_name": "nonebot-plugin-mcport",
@@ -6675,7 +6675,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-25 22:04:29"
+    "time": "2023-06-26 00:05:16"
   },
   {
     "module_name": "tatarubot2",
@@ -6989,7 +6989,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-25 22:04:32"
+    "time": "2023-06-26 00:05:19"
   },
   {
     "module_name": "nonebot_plugin_wordle_help",
@@ -7787,5 +7787,30 @@
     ],
     "valid": true,
     "time": "2023-06-25 11:00:52"
+  },
+  {
+    "module_name": "nonebot_plugin_helltide",
+    "project_link": "nonebot-plugin-helltide",
+    "name": "Diablo4地狱狂潮boss提醒小助手",
+    "desc": "支持订阅，在D4继续上班",
+    "author": "QBkira",
+    "homepage": "https://github.com/QBkira/nonebot-plugin-helltide",
+    "tags": [
+      {
+        "label": "helltide",
+        "color": "#ff0000"
+      },
+      {
+        "label": "diablo4",
+        "color": "#ff3300"
+      }
+    ],
+    "is_official": false,
+    "type": "application",
+    "supported_adapters": [
+      "nonebot.adapters.onebot.v11"
+    ],
+    "valid": true,
+    "time": "2023-06-26 00:05:33"
   }
 ]
