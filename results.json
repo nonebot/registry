@@ -4302,7 +4302,7 @@
     }
   },
   "nonebot-plugin-mockingbird:nonebot_plugin_mockingbird": {
-    "time": "2023-06-25 20:05:45",
+    "time": "2023-06-25 22:03:31",
     "version": null,
     "results": {
       "validation": false,
@@ -9134,8 +9134,8 @@
     }
   },
   "nonebot-plugin-l4d2-server:nonebot_plugin_l4d2_server": {
-    "time": "2023-06-25 20:06:41",
-    "version": "0.5.7",
+    "time": "2023-06-25 22:04:15",
+    "version": "0.5.7.post1",
     "results": {
       "validation": true,
       "load": true,
@@ -9143,7 +9143,7 @@
     },
     "outputs": {
       "validation": "通过",
-      "load": "插件 nonebot-plugin-l4d2-server 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-l4d2-server\u001b[39m                         \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.5.7\u001b[39;22m                                              \n     \u001b[34mdescription\u001b[39m  : L4D2 server related operations plugin for NoneBot2 \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36maiohttp\u001b[39m \u001b[39;1m>=3.8.4,<4.0.0\u001b[39;22m\n     - \u001b[36mamis-python\u001b[39m \u001b[39;1m>=1.0.6,<2.0.0\u001b[39;22m\n     - \u001b[36masyncio\u001b[39m \u001b[39;1m>=3.4.3\u001b[39;22m\n     - \u001b[36mattrs\u001b[39m \u001b[39;1m>=23.1.0,<24.0.0\u001b[39;22m\n     - \u001b[36mbeautifulsoup4\u001b[39m \u001b[39;1m>=4.8.0\u001b[39;22m\n     - \u001b[36mgitpython\u001b[39m \u001b[39;1m>=3.1.27\u001b[39;22m\n     - \u001b[36mhttpx\u001b[39m \u001b[39;1m>=0.22.0\u001b[39;22m\n     - \u001b[36mjieba\u001b[39m \u001b[39;1m>=0.42.1,<0.43.0\u001b[39;22m\n     - \u001b[36mjinja2\u001b[39m \u001b[39;1m>=3.0.0\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.1.5\u001b[39;22m\n     - \u001b[36mnonebot_plugin_apscheduler\u001b[39m \u001b[39;1m>=0.2.0,<0.3.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-htmlrender\u001b[39m \u001b[39;1m>=0.2.0.3,<0.3.0.0\u001b[39;22m\n     - \u001b[36mnonebot_plugin_txt2img\u001b[39m \u001b[39;1m>=0.3.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0,<3.0.0\u001b[39;22m\n     - \u001b[36mpandas\u001b[39m \u001b[39;1m>=1.5.2\u001b[39;22m\n     - \u001b[36mpatool\u001b[39m \u001b[39;1m>=1.12,<2.0\u001b[39;22m\n     - \u001b[36mpillow\u001b[39m \u001b[39;1m>=9.4.0,<10.0.0\u001b[39;22m\n     - \u001b[36mpython-a2s\u001b[39m \u001b[39;1m>=1.3.0,<2.0.0\u001b[39;22m\n     - \u001b[36mpython-jose\u001b[39m \u001b[39;1m>=3.3.0,<4.0.0\u001b[39;22m\n     - \u001b[36mpyunpack\u001b[39m \u001b[39;1m>=0.3.0,<0.4.0\u001b[39;22m\n     - \u001b[36mrarfile\u001b[39m \u001b[39;1m>=4.0,<5.0\u001b[39;22m\n     - \u001b[36mrcon\u001b[39m \u001b[39;1m>=2.1.0,<3.0.0\u001b[39;22m\n     - \u001b[36mruamel.yaml\u001b[39m \u001b[39;1m>=0.17.21,<0.18.0\u001b[39;22m\n     - \u001b[36msrctools\u001b[39m \u001b[39;1m>=2.3.9,<3.0.0\u001b[39;22m\n插件 nonebot-plugin-l4d2-server 依赖的插件如下：\n    nonebot_plugin_apscheduler, nonebot_plugin_htmlrender, nonebot_plugin_saa, nonebot_plugin_txt2img\n插件 nonebot_plugin_l4d2_server 加载正常：\n    \u001b[32m06-25 12:06:34\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-25 12:06:34\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-25 12:06:35\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_apscheduler\u001b[0m\"\n    \u001b[32m06-25 12:06:35\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_htmlrender\u001b[0m\"\n    \u001b[32m06-25 12:06:35\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_saa\u001b[0m\"\n    \u001b[32m06-25 12:06:35\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_txt2img\u001b[0m\"\n    \u001b[32m06-25 12:06:37\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_l4d2_server\u001b[0m\u001b[36m\u001b[0m | 已连接求生数据库\n    \u001b[32m06-25 12:06:39\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_l4d2_server\u001b[0m\"",
+      "load": "插件 nonebot-plugin-l4d2-server 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-l4d2-server\u001b[39m                         \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.5.7.post1\u001b[39;22m                                        \n     \u001b[34mdescription\u001b[39m  : L4D2 server related operations plugin for NoneBot2 \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36maiohttp\u001b[39m \u001b[39;1m>=3.8.4,<4.0.0\u001b[39;22m\n     - \u001b[36mamis-python\u001b[39m \u001b[39;1m>=1.0.6,<2.0.0\u001b[39;22m\n     - \u001b[36masyncio\u001b[39m \u001b[39;1m>=3.4.3\u001b[39;22m\n     - \u001b[36mattrs\u001b[39m \u001b[39;1m>=23.1.0,<24.0.0\u001b[39;22m\n     - \u001b[36mbeautifulsoup4\u001b[39m \u001b[39;1m>=4.8.0\u001b[39;22m\n     - \u001b[36mgitpython\u001b[39m \u001b[39;1m>=3.1.27\u001b[39;22m\n     - \u001b[36mhttpx\u001b[39m \u001b[39;1m>=0.22.0\u001b[39;22m\n     - \u001b[36mjieba\u001b[39m \u001b[39;1m>=0.42.1,<0.43.0\u001b[39;22m\n     - \u001b[36mjinja2\u001b[39m \u001b[39;1m>=3.0.0\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.1.5\u001b[39;22m\n     - \u001b[36mnonebot_plugin_apscheduler\u001b[39m \u001b[39;1m>=0.2.0,<0.3.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-htmlrender\u001b[39m \u001b[39;1m>=0.2.0.3,<0.3.0.0\u001b[39;22m\n     - \u001b[36mnonebot_plugin_txt2img\u001b[39m \u001b[39;1m>=0.3.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0,<3.0.0\u001b[39;22m\n     - \u001b[36mpandas\u001b[39m \u001b[39;1m>=1.5.2\u001b[39;22m\n     - \u001b[36mpatool\u001b[39m \u001b[39;1m>=1.12,<2.0\u001b[39;22m\n     - \u001b[36mpillow\u001b[39m \u001b[39;1m>=9.4.0,<10.0.0\u001b[39;22m\n     - \u001b[36mpython-a2s\u001b[39m \u001b[39;1m>=1.3.0,<2.0.0\u001b[39;22m\n     - \u001b[36mpython-jose\u001b[39m \u001b[39;1m>=3.3.0,<4.0.0\u001b[39;22m\n     - \u001b[36mpyunpack\u001b[39m \u001b[39;1m>=0.3.0,<0.4.0\u001b[39;22m\n     - \u001b[36mrarfile\u001b[39m \u001b[39;1m>=4.0,<5.0\u001b[39;22m\n     - \u001b[36mrcon\u001b[39m \u001b[39;1m>=2.1.0,<3.0.0\u001b[39;22m\n     - \u001b[36mruamel.yaml\u001b[39m \u001b[39;1m>=0.17.21,<0.18.0\u001b[39;22m\n     - \u001b[36msrctools\u001b[39m \u001b[39;1m>=2.3.9,<3.0.0\u001b[39;22m\n插件 nonebot-plugin-l4d2-server 依赖的插件如下：\n    nonebot_plugin_apscheduler, nonebot_plugin_htmlrender, nonebot_plugin_saa, nonebot_plugin_txt2img\n插件 nonebot_plugin_l4d2_server 加载正常：\n    \u001b[32m06-25 14:04:09\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-25 14:04:09\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-25 14:04:09\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_apscheduler\u001b[0m\"\n    \u001b[32m06-25 14:04:09\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_htmlrender\u001b[0m\"\n    \u001b[32m06-25 14:04:10\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_saa\u001b[0m\"\n    \u001b[32m06-25 14:04:10\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_txt2img\u001b[0m\"\n    \u001b[32m06-25 14:04:11\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_l4d2_server\u001b[0m\u001b[36m\u001b[0m | 已连接求生数据库\n    \u001b[32m06-25 14:04:14\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_l4d2_server\u001b[0m\"",
       "metadata": {
         "name": "求生之路小助手",
         "description": "群内对有关求生之路的查询和操作",
@@ -13868,7 +13868,7 @@
     }
   },
   "nonebot-plugin-pokemonfusion:nonebot_plugin_pokemonfusion": {
-    "time": "2023-06-25 20:06:55",
+    "time": "2023-06-25 22:04:29",
     "version": null,
     "results": {
       "validation": false,
@@ -14606,7 +14606,7 @@
     }
   },
   "nonebot-plugin-starrail-calendar:nonebot_plugin_starrail_calendar": {
-    "time": "2023-06-25 20:06:59",
+    "time": "2023-06-25 22:04:32",
     "version": null,
     "results": {
       "validation": false,
