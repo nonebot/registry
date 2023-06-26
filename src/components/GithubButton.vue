@@ -1,15 +1,17 @@
 <script setup lang="ts">
+import { NButton, NIcon } from "naive-ui";
 import Github from "vue-material-design-icons/Github.vue";
 </script>
 
 <template>
-  <button class="navbar-toggler" type="button" title="GitHub">
-    <a
-      href="https://github.com/nonebot/registry"
-      target="_blank"
-      style="color: inherit"
-    >
+  <n-button
+    style="font-size: 24px"
+    tag="a"
+    href="https://github.com/nonebot/registry"
+    target="_blank"
+  >
+    <n-icon>
       <Github />
-    </a>
-  </button>
+    </n-icon>
+  </n-button>
 </template>
