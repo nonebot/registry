@@ -723,3 +723,5 @@ public/adapters.json
 public/bots.json
 public/plugins.json
 
+# rollup-plugin-visualizer
+stats.html
