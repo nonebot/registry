@@ -8,11 +8,13 @@
   </div>
   <n-modal
     v-model:show="showModal"
+    class="max-w-3/4"
     preset="card"
     :title="`${rowData.plugin.old.project_link} 元数据`"
   >
     <template #default>
       <hljsVuePlugin.component
+        class="max-h-[50vh] overflow-auto"
         language="json"
         :autodetect="false"
         :code="JSON.stringify(props.rowData.outputs.metadata, null, 2)"

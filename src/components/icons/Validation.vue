@@ -6,10 +6,13 @@
   <n-modal
     v-model:show="showModal"
     preset="card"
+    class="max-w-3/4"
     :title="`${rowData.plugin.old.project_link} 验证结果`"
   >
     <template #default>
-      <pre>{{ rowData.outputs.validation }}</pre>
+      <pre class="max-h-[50vh] overflow-auto">{{
+        rowData.outputs.validation
+      }}</pre>
     </template>
   </n-modal>
 </template>
