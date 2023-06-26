@@ -27,8 +27,8 @@ jobs:
       - name: Get results
         run: |
           git fetch origin
-          git checkout origin/results results.json bots.json adapters.json
-          mv -t websites results.json bots.json adapters.json
+          git checkout origin/results results.json adapters.json bots.json plugins.json
+          mv -t websites results.json adapters.json bots.json plugins.json
       - name: Get Deploy Name
         run: echo "DEPLOY_NAME=deploy-preview-${{ github.event.number }}" >> $GITHUB_ENV
       - name: Deploy to Netlify
