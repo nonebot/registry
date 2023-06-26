@@ -1339,16 +1339,16 @@
     }
   },
   "nonebot-plugin-setu-now:nonebot_plugin_setu_now": {
-    "time": "2023-06-25 09:33:20",
-    "version": "0.4.4",
+    "time": "2023-06-26 12:05:08",
+    "version": "0.6.0",
     "results": {
       "validation": false,
-      "load": true,
+      "load": false,
       "metadata": false
     },
     "outputs": {
       "validation": "缺少元数据",
-      "load": "插件 nonebot-plugin-setu-now 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-setu-now\u001b[39m \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.4.4\u001b[39;22m                   \n     \u001b[34mdescription\u001b[39m  : 另一个色图插件                 \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mhttpx\u001b[39m \u001b[39;1m>=0.18.0,<1.0.0\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.0.0-beta.1,<3.0.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-apscheduler\u001b[39m \u001b[39;1m>=0.2.0,<0.3.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0-beta.4\u001b[39;22m\n     - \u001b[36mpillow\u001b[39m \u001b[39;1m>=8.0.0\u001b[39;22m\n     - \u001b[36mpydantic\u001b[39m \u001b[39;1m>=1.5.0,<2.0.0\u001b[39;22m\n     - \u001b[36mwebdav4\u001b[39m \u001b[39;1m>=0.9.3,<0.10.0\u001b[39;22m\n插件 nonebot-plugin-setu-now 依赖的插件如下：\n    nonebot_plugin_apscheduler\n插件 nonebot_plugin_setu_now 加载正常：\n    \u001b[32m06-25 01:33:19\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-25 01:33:19\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-25 01:33:20\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_apscheduler\u001b[0m\"\n    \u001b[32m06-25 01:33:20\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_setu_now\u001b[0m\"",
+      "load": "插件 nonebot-plugin-setu-now 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-setu-now\u001b[39m \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.6.0\u001b[39;22m                   \n     \u001b[34mdescription\u001b[39m  : 另一个色图插件                 \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mhttpx\u001b[39m \u001b[39;1m>=0.18.0,<1.0.0\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.0.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-localstore\u001b[39m \u001b[39;1m>=0.5.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-tortoise-orm\u001b[39m \u001b[39;1m>=0.0.1a3\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0\u001b[39;22m\n     - \u001b[36mpillow\u001b[39m \u001b[39;1m>=8.0.0\u001b[39;22m\n     - \u001b[36mpydantic\u001b[39m \u001b[39;1m>=1.5.0\u001b[39;22m\n插件 nonebot-plugin-setu-now 依赖的插件如下：\n    nonebot_plugin_localstore, nonebot_plugin_tortoise_orm\n插件 nonebot_plugin_setu_now 加载出错：\n    \u001b[32m06-26 04:05:07\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-26 04:05:07\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-26 04:05:08\u001b[0m [\u001b[31m\u001b[1mERROR\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | \u001b[31m\u001b[48;2;248;187;208mFailed to import \"nonebot_plugin_localstore\"\u001b[0m\u001b[31m\u001b[0m\n    \u001b[33m\u001b[1mTraceback (most recent call last):\u001b[0m\n      File \"\u001b[32m/home/runner/work/registry/registry/plugin_test/nonebot-plugin-setu-now-nonebot_plugin_setu_now-test/\u001b[0m\u001b[32m\u001b[1mrunner.py\u001b[0m\", line \u001b[33m15\u001b[0m, in \u001b[35m<module>\u001b[0m\n        \u001b[1mplugin\u001b[0m \u001b[35m\u001b[1m=\u001b[0m \u001b[1mload_plugin\u001b[0m\u001b[1m(\u001b[0m\u001b[36m\"nonebot_plugin_setu_now\"\u001b[0m\u001b[1m)\u001b[0m\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-setu-now-nonebot_plugin_setu_now-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-setu-now-nonebot_plugin_setu_now-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-setu-now-nonebot_plugin_setu_now-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-setu-now-nonebot_plugin_setu_now-test/.venv/lib/python3.10/site-packages/nonebot_plugin_setu_now/__init__.py\", line 48, in <module>\n        require(\"nonebot_plugin_localstore\")\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-setu-now-nonebot_plugin_setu_now-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 174, in require\n        plugin = load_plugin(name)\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-setu-now-nonebot_plugin_setu_now-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-setu-now-nonebot_plugin_setu_now-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 154, in load_plugin\n        raise RuntimeError(\n    \u001b[31m\u001b[1mRuntimeError\u001b[0m:\u001b[1m Module nonebot_plugin_localstore is not loaded as a plugin! Make sure not to import it before loading.\u001b[0m\n    \u001b[32m06-26 04:05:08\u001b[0m [\u001b[31m\u001b[1mERROR\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | \u001b[31m\u001b[48;2;248;187;208mFailed to import \"nonebot_plugin_setu_now\"\u001b[0m\u001b[31m\u001b[0m\n    \u001b[33m\u001b[1mTraceback (most recent call last):\u001b[0m\n      File \"\u001b[32m/home/runner/work/registry/registry/plugin_test/nonebot-plugin-setu-now-nonebot_plugin_setu_now-test/\u001b[0m\u001b[32m\u001b[1mrunner.py\u001b[0m\", line \u001b[33m15\u001b[0m, in \u001b[35m<module>\u001b[0m\n        \u001b[1mplugin\u001b[0m \u001b[35m\u001b[1m=\u001b[0m \u001b[1mload_plugin\u001b[0m\u001b[1m(\u001b[0m\u001b[36m\"nonebot_plugin_setu_now\"\u001b[0m\u001b[1m)\u001b[0m\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-setu-now-nonebot_plugin_setu_now-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-setu-now-nonebot_plugin_setu_now-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-setu-now-nonebot_plugin_setu_now-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-setu-now-nonebot_plugin_setu_now-test/.venv/lib/python3.10/site-packages/nonebot_plugin_setu_now/__init__.py\", line 48, in <module>\n        require(\"nonebot_plugin_localstore\")\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-setu-now-nonebot_plugin_setu_now-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 178, in require\n        raise RuntimeError(f'Cannot load plugin \"{name}\"!')\n    \u001b[31m\u001b[1mRuntimeError\u001b[0m:\u001b[1m Cannot load plugin \"nonebot_plugin_localstore\"!\u001b[0m",
       "metadata": null
     },
     "plugin": {
@@ -1787,17 +1787,24 @@
     }
   },
   "nonebot-plugin-htmlrender:nonebot_plugin_htmlrender": {
-    "time": "2023-06-25 09:35:27",
-    "version": "0.2.0.3",
+    "time": "2023-06-26 12:05:21",
+    "version": "0.2.1",
     "results": {
-      "validation": false,
+      "validation": true,
       "load": true,
-      "metadata": false
+      "metadata": true
     },
     "outputs": {
-      "validation": "缺少元数据",
-      "load": "插件 nonebot-plugin-htmlrender 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-htmlrender\u001b[39m \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.2.0.3\u001b[39;22m                   \n     \u001b[34mdescription\u001b[39m  : 通过浏览器渲染图片                 \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36maiofiles\u001b[39m \u001b[39;1m>=0.8.0\u001b[39;22m\n     - \u001b[36mjinja2\u001b[39m \u001b[39;1m>=3.0.3\u001b[39;22m\n     - \u001b[36mmarkdown\u001b[39m \u001b[39;1m>=3.3.6\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0-beta.1\u001b[39;22m\n     - \u001b[36mplaywright\u001b[39m \u001b[39;1m>=1.17.2\u001b[39;22m\n     - \u001b[36mPygments\u001b[39m \u001b[39;1m>=2.10.0\u001b[39;22m\n     - \u001b[36mpymdown-extensions\u001b[39m \u001b[39;1m>=9.1\u001b[39;22m\n     - \u001b[36mpython-markdown-math\u001b[39m \u001b[39;1m>=0.8\u001b[39;22m\n插件 nonebot-plugin-htmlrender 依赖的插件如下：\n    \n插件 nonebot_plugin_htmlrender 加载正常：\n    \u001b[32m06-25 01:35:26\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-25 01:35:26\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-25 01:35:27\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_htmlrender\u001b[0m\"",
-      "metadata": null
+      "validation": "通过",
+      "load": "插件 nonebot-plugin-htmlrender 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-htmlrender\u001b[39m \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.2.1\u001b[39;22m                     \n     \u001b[34mdescription\u001b[39m  : 通过浏览器渲染图片                 \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36maiofiles\u001b[39m \u001b[39;1m>=0.8.0\u001b[39;22m\n     - \u001b[36mjinja2\u001b[39m \u001b[39;1m>=3.0.3\u001b[39;22m\n     - \u001b[36mmarkdown\u001b[39m \u001b[39;1m>=3.3.6\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0\u001b[39;22m\n     - \u001b[36mplaywright\u001b[39m \u001b[39;1m>=1.17.2\u001b[39;22m\n     - \u001b[36mPygments\u001b[39m \u001b[39;1m>=2.10.0\u001b[39;22m\n     - \u001b[36mpymdown-extensions\u001b[39m \u001b[39;1m>=9.1\u001b[39;22m\n     - \u001b[36mpython-markdown-math\u001b[39m \u001b[39;1m>=0.8\u001b[39;22m\n插件 nonebot-plugin-htmlrender 依赖的插件如下：\n    \n插件 nonebot_plugin_htmlrender 加载正常：\n    \u001b[32m06-26 04:05:20\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-26 04:05:20\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-26 04:05:20\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_htmlrender\u001b[0m\"",
+      "metadata": {
+        "name": "nonebot-plugin-htmlrender",
+        "description": "通过浏览器渲染图片",
+        "usage": "提供多个易用API md_to_pic html_to_pic text_to_pic template_to_pic capture_element 等",
+        "type": "library",
+        "homepage": "https://github.com/kexue-z/nonebot-plugin-htmlrender",
+        "supported_adapters": null
+      }
     },
     "plugin": {
       "old": {
@@ -1817,7 +1824,23 @@
         "type": null,
         "supported_adapters": null
       },
-      "new": null
+      "new": {
+        "module_name": "nonebot_plugin_htmlrender",
+        "project_link": "nonebot-plugin-htmlrender",
+        "name": "nonebot-plugin-htmlrender",
+        "desc": "通过浏览器渲染图片",
+        "author": "kexue-z",
+        "homepage": "https://github.com/kexue-z/nonebot-plugin-htmlrender",
+        "tags": [
+          {
+            "label": "a:onebot",
+            "color": "#000000"
+          }
+        ],
+        "is_official": false,
+        "type": "library",
+        "supported_adapters": null
+      }
     }
   },
   "nonebot-plugin-admin:nonebot_plugin_admin": {
@@ -4302,7 +4325,7 @@
     }
   },
   "nonebot-plugin-mockingbird:nonebot_plugin_mockingbird": {
-    "time": "2023-06-26 08:19:18",
+    "time": "2023-06-26 12:05:34",
     "version": null,
     "results": {
       "validation": false,
@@ -7641,22 +7664,22 @@
     }
   },
   "nonebot-plugin-animeres:nonebot_plugin_animeres": {
-    "time": "2023-06-25 10:30:10",
-    "version": "1.0.2",
+    "time": "2023-06-26 12:05:55",
+    "version": "1.0.3",
     "results": {
-      "validation": false,
+      "validation": true,
       "load": true,
       "metadata": true
     },
     "outputs": {
-      "validation": "2 validation errors for PluginPublishInfo\nhomepage\n  none is not an allowed value (type=type_error.none.not_allowed)\ntype\n  ⚠️ 插件类型不能为空。<dt>请确保填写插件类型。</dt> (type=value_error)",
-      "load": "插件 nonebot-plugin-animeres 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-animeres\u001b[39m \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m1.0.2\u001b[39;22m                   \n     \u001b[34mdescription\u001b[39m  : 动漫资源获取插件                \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mfake-useragent\u001b[39m \u001b[39;1m>=1.1.3,<2.0.0\u001b[39;22m\n     - \u001b[36mhttpx\u001b[39m \u001b[39;1m>=0.20.0,<1.0.0\u001b[39;22m\n     - \u001b[36mlxml\u001b[39m \u001b[39;1m>=4.9.2,<5.0.0\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.2.3,<3.0.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0rc1,<3.0.0\u001b[39;22m\n插件 nonebot-plugin-animeres 依赖的插件如下：\n    \n插件 nonebot_plugin_animeres 加载正常：\n    \u001b[32m06-25 02:30:09\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-25 02:30:09\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-25 02:30:10\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_animeres\u001b[0m\"",
+      "validation": "通过",
+      "load": "插件 nonebot-plugin-animeres 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-animeres\u001b[39m \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m1.0.3\u001b[39;22m                   \n     \u001b[34mdescription\u001b[39m  : 动漫资源获取插件                \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mfake-useragent\u001b[39m \u001b[39;1m>=1.1.3,<2.0.0\u001b[39;22m\n     - \u001b[36mhttpx\u001b[39m \u001b[39;1m>=0.20.0,<1.0.0\u001b[39;22m\n     - \u001b[36mlxml\u001b[39m \u001b[39;1m>=4.9.2,<5.0.0\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.2.3,<3.0.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0rc1,<3.0.0\u001b[39;22m\n插件 nonebot-plugin-animeres 依赖的插件如下：\n    \n插件 nonebot_plugin_animeres 加载正常：\n    \u001b[32m06-26 04:05:54\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-26 04:05:54\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-26 04:05:55\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_animeres\u001b[0m\"",
       "metadata": {
         "name": "动漫资源插件",
         "description": "根据关键字搜索动漫资源",
-        "usage": "资源 你的名字",
-        "type": null,
-        "homepage": null,
+        "usage": "使用资源命令，然后追加资源的名称，例如：\n资源 你的名字",
+        "type": "application",
+        "homepage": "https://github.com/MelodyKnit/nonebot_plugin_animeres",
         "supported_adapters": null
       }
     },
@@ -7682,7 +7705,27 @@
         "type": null,
         "supported_adapters": null
       },
-      "new": null
+      "new": {
+        "module_name": "nonebot_plugin_animeres",
+        "project_link": "nonebot-plugin-animeres",
+        "name": "动漫资源插件",
+        "desc": "根据关键字搜索动漫资源",
+        "author": "Melodyknit",
+        "homepage": "https://github.com/MelodyKnit/nonebot_plugin_animeres",
+        "tags": [
+          {
+            "label": "a:onebot",
+            "color": "#ec5252"
+          },
+          {
+            "label": "anime",
+            "color": "#ec5252"
+          }
+        ],
+        "is_official": false,
+        "type": "application",
+        "supported_adapters": null
+      }
     }
   },
   "nonebot-plugin-person:nonebot-plugin-person": {
@@ -10145,8 +10188,8 @@
     }
   },
   "qinglan-bot:qinglan_bot": {
-    "time": "2023-06-25 10:39:24",
-    "version": "0.1.0",
+    "time": "2023-06-26 12:06:15",
+    "version": "0.1.2",
     "results": {
       "validation": false,
       "load": false,
@@ -10154,7 +10197,7 @@
     },
     "outputs": {
       "validation": "缺少元数据",
-      "load": "插件 qinglan-bot 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mqinglan-bot\u001b[39m                            \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.1.0\u001b[39;22m                                  \n     \u001b[34mdescription\u001b[39m  : 基于NoneBot的QQ群聊与Minecraft Server消息互通机器人 \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36maio-mc-rcon\u001b[39m \u001b[39;1m>=3.2.0\u001b[39;22m\n     - \u001b[36mclick\u001b[39m \u001b[39;1m>=8.0.4\u001b[39;22m\n     - \u001b[36mmcqq-tool\u001b[39m \u001b[39;1m>=0.0.5\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.1.5\u001b[39;22m\n     - \u001b[36mnonebot-plugin-gocqhttp\u001b[39m \u001b[39;1m>=0.6.3\u001b[39;22m\n     - \u001b[36mnonebot-plugin-guild-patch\u001b[39m \u001b[39;1m>=0.2.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0rc4\u001b[39;22m\n     - \u001b[36mtortoise-orm\u001b[39m \u001b[39;1m>=0.19.3\u001b[39;22m\n     - \u001b[36mwebsockets\u001b[39m \u001b[39;1m>=10.3\u001b[39;22m\n插件 qinglan-bot 依赖的插件如下：\n    nonebot_plugin_gocqhttp, nonebot_plugin_guild_patch\n插件 qinglan_bot 加载出错：\n    \u001b[32m06-25 02:39:21\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-25 02:39:21\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-25 02:39:22\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mqinglan_bot\u001b[0m\"\n    \u001b[32m06-25 02:39:24\u001b[0m [\u001b[31m\u001b[1mERROR\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | \u001b[31m\u001b[48;2;248;187;208mFailed to import \"nonebot_plugin_gocqhttp\"\u001b[0m\u001b[31m\u001b[0m\n    \u001b[33m\u001b[1mTraceback (most recent call last):\u001b[0m\n      File \"\u001b[32m/home/runner/work/registry/registry/plugin_test/qinglan-bot-qinglan_bot-test/\u001b[0m\u001b[32m\u001b[1mrunner.py\u001b[0m\", line \u001b[33m30\u001b[0m, in \u001b[35m<module>\u001b[0m\n        \u001b[1mrequire\u001b[0m\u001b[1m(\u001b[0m\u001b[36m'nonebot_plugin_gocqhttp'\u001b[0m\u001b[1m)\u001b[0m\n      File \"/home/runner/work/registry/registry/plugin_test/qinglan-bot-qinglan_bot-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 174, in require\n        plugin = load_plugin(name)\n      File \"/home/runner/work/registry/registry/plugin_test/qinglan-bot-qinglan_bot-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/registry/registry/plugin_test/qinglan-bot-qinglan_bot-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n      File \"/home/runner/work/registry/registry/plugin_test/qinglan-bot-qinglan_bot-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"/home/runner/work/registry/registry/plugin_test/qinglan-bot-qinglan_bot-test/.venv/lib/python3.10/site-packages/nonebot_plugin_gocqhttp/__init__.py\", line 24, in <module>\n        raise ValueError(f\"Adapter {adapter_name!r} is not registered yet.\")\n    \u001b[31m\u001b[1mValueError\u001b[0m:\u001b[1m Adapter 'OneBot V11' is not registered yet.\u001b[0m\n    Traceback (most recent call last):\n      File \"/home/runner/work/registry/registry/plugin_test/qinglan-bot-qinglan_bot-test/runner.py\", line 30, in <module>\n        require('nonebot_plugin_gocqhttp')\n      File \"/home/runner/work/registry/registry/plugin_test/qinglan-bot-qinglan_bot-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 178, in require\n        raise RuntimeError(f'Cannot load plugin \"{name}\"!')\n    RuntimeError: Cannot load plugin \"nonebot_plugin_gocqhttp\"!",
+      "load": "插件 qinglan-bot 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mqinglan-bot\u001b[39m                            \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.1.2\u001b[39;22m                                  \n     \u001b[34mdescription\u001b[39m  : 基于NoneBot的QQ群聊与Minecraft Server消息互通机器人 \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36maio-mc-rcon\u001b[39m \u001b[39;1m>=3.2.0\u001b[39;22m\n     - \u001b[36mclick\u001b[39m \u001b[39;1m>=8.0.4\u001b[39;22m\n     - \u001b[36mmcqq-tool\u001b[39m \u001b[39;1m0.0.4\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.1.5\u001b[39;22m\n     - \u001b[36mnonebot-plugin-gocqhttp\u001b[39m \u001b[39;1m>=0.6.3\u001b[39;22m\n     - \u001b[36mnonebot-plugin-guild-patch\u001b[39m \u001b[39;1m>=0.2.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0\u001b[39;22m\n     - \u001b[36mtortoise-orm\u001b[39m \u001b[39;1m>=0.19.3\u001b[39;22m\n     - \u001b[36mwebsockets\u001b[39m \u001b[39;1m>=10.3\u001b[39;22m\n插件 qinglan-bot 依赖的插件如下：\n    nonebot_plugin_gocqhttp, nonebot_plugin_guild_patch\n插件 qinglan_bot 加载出错：\n    \u001b[32m06-26 04:06:14\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-26 04:06:14\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-26 04:06:15\u001b[0m [\u001b[31m\u001b[1mERROR\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | \u001b[31m\u001b[48;2;248;187;208mFailed to import \"nonebot_plugin_guild_patch\"\u001b[0m\u001b[31m\u001b[0m\n    \u001b[33m\u001b[1mTraceback (most recent call last):\u001b[0m\n      File \"\u001b[32m/home/runner/work/registry/registry/plugin_test/qinglan-bot-qinglan_bot-test/\u001b[0m\u001b[32m\u001b[1mrunner.py\u001b[0m\", line \u001b[33m15\u001b[0m, in \u001b[35m<module>\u001b[0m\n        \u001b[1mplugin\u001b[0m \u001b[35m\u001b[1m=\u001b[0m \u001b[1mload_plugin\u001b[0m\u001b[1m(\u001b[0m\u001b[36m\"qinglan_bot\"\u001b[0m\u001b[1m)\u001b[0m\n      File \"/home/runner/work/registry/registry/plugin_test/qinglan-bot-qinglan_bot-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n      File \"/home/runner/work/registry/registry/plugin_test/qinglan-bot-qinglan_bot-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n      File \"/home/runner/work/registry/registry/plugin_test/qinglan-bot-qinglan_bot-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"/home/runner/work/registry/registry/plugin_test/qinglan-bot-qinglan_bot-test/.venv/lib/python3.10/site-packages/qinglan_bot/__init__.py\", line 6, in <module>\n        require(\"nonebot_plugin_guild_patch\")\n      File \"/home/runner/work/registry/registry/plugin_test/qinglan-bot-qinglan_bot-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 174, in require\n        plugin = load_plugin(name)\n      File \"/home/runner/work/registry/registry/plugin_test/qinglan-bot-qinglan_bot-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/registry/registry/plugin_test/qinglan-bot-qinglan_bot-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 154, in load_plugin\n        raise RuntimeError(\n    \u001b[31m\u001b[1mRuntimeError\u001b[0m:\u001b[1m Module nonebot_plugin_guild_patch is not loaded as a plugin! Make sure not to import it before loading.\u001b[0m\n    \u001b[32m06-26 04:06:15\u001b[0m [\u001b[31m\u001b[1mERROR\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | \u001b[31m\u001b[48;2;248;187;208mFailed to import \"qinglan_bot\"\u001b[0m\u001b[31m\u001b[0m\n    \u001b[33m\u001b[1mTraceback (most recent call last):\u001b[0m\n      File \"\u001b[32m/home/runner/work/registry/registry/plugin_test/qinglan-bot-qinglan_bot-test/\u001b[0m\u001b[32m\u001b[1mrunner.py\u001b[0m\", line \u001b[33m15\u001b[0m, in \u001b[35m<module>\u001b[0m\n        \u001b[1mplugin\u001b[0m \u001b[35m\u001b[1m=\u001b[0m \u001b[1mload_plugin\u001b[0m\u001b[1m(\u001b[0m\u001b[36m\"qinglan_bot\"\u001b[0m\u001b[1m)\u001b[0m\n      File \"/home/runner/work/registry/registry/plugin_test/qinglan-bot-qinglan_bot-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/registry/registry/plugin_test/qinglan-bot-qinglan_bot-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n      File \"/home/runner/work/registry/registry/plugin_test/qinglan-bot-qinglan_bot-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"/home/runner/work/registry/registry/plugin_test/qinglan-bot-qinglan_bot-test/.venv/lib/python3.10/site-packages/qinglan_bot/__init__.py\", line 6, in <module>\n        require(\"nonebot_plugin_guild_patch\")\n      File \"/home/runner/work/registry/registry/plugin_test/qinglan-bot-qinglan_bot-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 178, in require\n        raise RuntimeError(f'Cannot load plugin \"{name}\"!')\n    \u001b[31m\u001b[1mRuntimeError\u001b[0m:\u001b[1m Cannot load plugin \"nonebot_plugin_guild_patch\"!\u001b[0m",
       "metadata": null
     },
     "plugin": {
@@ -10217,16 +10260,16 @@
     }
   },
   "nonebot-plugin-group-link-guild:nonebot_plugin_group_link_guild": {
-    "time": "2023-06-25 10:39:36",
-    "version": "0.0.5",
+    "time": "2023-06-26 12:06:21",
+    "version": "0.0.6",
     "results": {
-      "validation": false,
-      "load": false,
+      "validation": true,
+      "load": true,
       "metadata": true
     },
     "outputs": {
-      "validation": "1 validation error for PluginPublishInfo\nplugin_test_result\n  ⚠️ 插件加载测试未通过。<details><summary>测试输出</summary></details> (type=value_error)",
-      "load": "插件 nonebot-plugin-group-link-guild 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-group-link-guild\u001b[39m \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.0.5\u001b[39;22m                           \n     \u001b[34mdescription\u001b[39m  : 互通QQ群聊与QQ频道消息的插件                \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.1.1\u001b[39;22m\n     - \u001b[36mnonebot-plugin-guild-patch\u001b[39m \u001b[39;1m>=0.2.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0\u001b[39;22m\n插件 nonebot-plugin-group-link-guild 依赖的插件如下：\n    nonebot_plugin_guild_patch\n插件 nonebot_plugin_group_link_guild 加载出错：\n    \u001b[32m06-25 02:39:35\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-25 02:39:35\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-25 02:39:35\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_group_link_guild\u001b[0m\"\n    \u001b[32m06-25 02:39:35\u001b[0m [\u001b[31m\u001b[1mERROR\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | \u001b[31m\u001b[48;2;248;187;208mFailed to import \"nonebot_plugin_guild_patch\"\u001b[0m\u001b[31m\u001b[0m\n    \u001b[33m\u001b[1mTraceback (most recent call last):\u001b[0m\n      File \"\u001b[32m/home/runner/work/registry/registry/plugin_test/nonebot-plugin-group-link-guild-nonebot_plugin_group_link_guild-test/\u001b[0m\u001b[32m\u001b[1mrunner.py\u001b[0m\", line \u001b[33m30\u001b[0m, in \u001b[35m<module>\u001b[0m\n        \u001b[1mrequire\u001b[0m\u001b[1m(\u001b[0m\u001b[36m'nonebot_plugin_guild_patch'\u001b[0m\u001b[1m)\u001b[0m\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-group-link-guild-nonebot_plugin_group_link_guild-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 174, in require\n        plugin = load_plugin(name)\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-group-link-guild-nonebot_plugin_group_link_guild-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-group-link-guild-nonebot_plugin_group_link_guild-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 154, in load_plugin\n        raise RuntimeError(\n    \u001b[31m\u001b[1mRuntimeError\u001b[0m:\u001b[1m Module nonebot_plugin_guild_patch is not loaded as a plugin! Make sure not to import it before loading.\u001b[0m\n    Traceback (most recent call last):\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-group-link-guild-nonebot_plugin_group_link_guild-test/runner.py\", line 30, in <module>\n        require('nonebot_plugin_guild_patch')\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-group-link-guild-nonebot_plugin_group_link_guild-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 178, in require\n        raise RuntimeError(f'Cannot load plugin \"{name}\"!')\n    RuntimeError: Cannot load plugin \"nonebot_plugin_guild_patch\"!",
+      "validation": "通过",
+      "load": "插件 nonebot-plugin-group-link-guild 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-group-link-guild\u001b[39m \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.0.6\u001b[39;22m                           \n     \u001b[34mdescription\u001b[39m  : 互通QQ群聊与QQ频道消息的插件                \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.1.1\u001b[39;22m\n     - \u001b[36mnonebot-plugin-guild-patch\u001b[39m \u001b[39;1m>=0.2.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0\u001b[39;22m\n插件 nonebot-plugin-group-link-guild 依赖的插件如下：\n    nonebot_plugin_guild_patch\n插件 nonebot_plugin_group_link_guild 加载正常：\n    \u001b[32m06-26 04:06:20\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-26 04:06:20\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-26 04:06:20\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_guild_patch\u001b[0m\"\n    \u001b[32m06-26 04:06:20\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_group_link_guild\u001b[0m\"",
       "metadata": {
         "name": "群频互通",
         "description": "将QQ群与QQ频道的消息互通",
@@ -10264,7 +10307,33 @@
         "type": null,
         "supported_adapters": null
       },
-      "new": null
+      "new": {
+        "module_name": "nonebot_plugin_group_link_guild",
+        "project_link": "nonebot-plugin-group-link-guild",
+        "name": "群频互通",
+        "desc": "将QQ群与QQ频道的消息互通",
+        "author": "17TheWord",
+        "homepage": "https://github.com/17TheWord/nonebot-plugin-group-link-guild",
+        "tags": [
+          {
+            "label": "QQ群",
+            "color": "#ea5252"
+          },
+          {
+            "label": "QQ频道",
+            "color": "#52ead5"
+          },
+          {
+            "label": "消息互通",
+            "color": "#50c545"
+          }
+        ],
+        "is_official": false,
+        "type": "application",
+        "supported_adapters": [
+          "nonebot.adapters.onebot.v11"
+        ]
+      }
     }
   },
   "nonebot-plugin-alconna:nonebot_plugin_alconna": {
@@ -13711,8 +13780,8 @@
     }
   },
   "nonebot-plugin-blive-danmaku:nonebot_plugin_blive_danmaku": {
-    "time": "2023-06-25 10:52:23",
-    "version": "0.3.0",
+    "time": "2023-06-26 12:07:00",
+    "version": "0.3.1",
     "results": {
       "validation": false,
       "load": false,
@@ -13720,7 +13789,7 @@
     },
     "outputs": {
       "validation": "缺少元数据",
-      "load": "插件 nonebot-plugin-blive-danmaku 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-blive-danmaku\u001b[39m  \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.3.0\u001b[39;22m                         \n     \u001b[34mdescription\u001b[39m  : A danmaku plugin for Nonebot2 \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36maerich\u001b[39m \u001b[39;1m0.7.1\u001b[39;22m\n     - \u001b[36maiohttp\u001b[39m \u001b[39;1m3.7.4\u001b[39;22m\n     - \u001b[36mbilireq\u001b[39m \u001b[39;1m>=0.2.6,<0.3.0\u001b[39;22m\n     - \u001b[36mBrotli\u001b[39m \u001b[39;1m1.0.9\u001b[39;22m\n     - \u001b[36mJinja2\u001b[39m \u001b[39;1m>=3.1.2,<4.0.0\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.2.2,<3.0.0\u001b[39;22m\n     - \u001b[36mnonebot_plugin_apscheduler\u001b[39m \u001b[39;1m>=0.2.0,<0.3.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0,<3.0.0\u001b[39;22m\n     - \u001b[36mPillow\u001b[39m \u001b[39;1m>=9.5.0,<10.0.0\u001b[39;22m\n     - \u001b[36mtortoise\u001b[39m \u001b[39;1m>=0.1.1,<0.2.0\u001b[39;22m\n     - \u001b[36mtortoise-orm\u001b[39m \u001b[39;1m>=0.19.3,<0.20.0\u001b[39;22m\n插件 nonebot-plugin-blive-danmaku 依赖的插件如下：\n    nonebot_plugin_apscheduler\n插件 nonebot_plugin_blive_danmaku 加载出错：\n    \u001b[32m06-25 02:52:23\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-25 02:52:23\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-25 02:52:23\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_apscheduler\u001b[0m\"\n    \u001b[32m06-25 02:52:23\u001b[0m [\u001b[31m\u001b[1mERROR\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | \u001b[31m\u001b[48;2;248;187;208mFailed to import \"nonebot_plugin_blive_danmaku\"\u001b[0m\u001b[31m\u001b[0m\n    \u001b[33m\u001b[1mTraceback (most recent call last):\u001b[0m\n      File \"\u001b[32m/home/runner/work/registry/registry/plugin_test/nonebot-plugin-blive-danmaku-nonebot_plugin_blive_danmaku-test/\u001b[0m\u001b[32m\u001b[1mrunner.py\u001b[0m\", line \u001b[33m15\u001b[0m, in \u001b[35m<module>\u001b[0m\n        \u001b[1mplugin\u001b[0m \u001b[35m\u001b[1m=\u001b[0m \u001b[1mload_plugin\u001b[0m\u001b[1m(\u001b[0m\u001b[36m\"nonebot_plugin_blive_danmaku\"\u001b[0m\u001b[1m)\u001b[0m\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-blive-danmaku-nonebot_plugin_blive_danmaku-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-blive-danmaku-nonebot_plugin_blive_danmaku-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-blive-danmaku-nonebot_plugin_blive_danmaku-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-blive-danmaku-nonebot_plugin_blive_danmaku-test/.venv/lib/python3.10/site-packages/nonebot_plugin_blive_danmaku/__init__.py\", line 22, in <module>\n        from . import command, app\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-blive-danmaku-nonebot_plugin_blive_danmaku-test/.venv/lib/python3.10/site-packages/nonebot_plugin_blive_danmaku/command/__init__.py\", line 1, in <module>\n        from .sub import sub_add,sub_delete,sub_list,sub_off,sub_on,sub_open\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-blive-danmaku-nonebot_plugin_blive_danmaku-test/.venv/lib/python3.10/site-packages/nonebot_plugin_blive_danmaku/command/sub/sub_add.py\", line 1, in <module>\n        from ...database import Db as db\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-blive-danmaku-nonebot_plugin_blive_danmaku-test/.venv/lib/python3.10/site-packages/nonebot_plugin_blive_danmaku/database/__init__.py\", line 1, in <module>\n        from .db import Db\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-blive-danmaku-nonebot_plugin_blive_danmaku-test/.venv/lib/python3.10/site-packages/nonebot_plugin_blive_danmaku/database/db.py\", line 7, in <module>\n        from .model import Sub, LiveRoom, Danmaku, Gift, ignore_none\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-blive-danmaku-nonebot_plugin_blive_danmaku-test/.venv/lib/python3.10/site-packages/nonebot_plugin_blive_danmaku/database/model.py\", line 1, in <module>\n        from tortoise.models import Model\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-blive-danmaku-nonebot_plugin_blive_danmaku-test/.venv/lib/python3.10/site-packages/tortoise/models.py\", line 25, in <module>\n        from tortoise import connections\n    \u001b[31m\u001b[1mImportError\u001b[0m:\u001b[1m cannot import name 'connections' from 'tortoise' (/home/runner/work/registry/registry/plugin_test/nonebot-plugin-blive-danmaku-nonebot_plugin_blive_danmaku-test/.venv/lib/python3.10/site-packages/tortoise/__init__.py)\u001b[0m",
+      "load": "插件 nonebot-plugin-blive-danmaku 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-blive-danmaku\u001b[39m  \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.3.1\u001b[39;22m                         \n     \u001b[34mdescription\u001b[39m  : A danmaku plugin for Nonebot2 \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36maerich\u001b[39m \u001b[39;1m0.7.1\u001b[39;22m\n     - \u001b[36maiohttp\u001b[39m \u001b[39;1m3.7.4\u001b[39;22m\n     - \u001b[36mbilireq\u001b[39m \u001b[39;1m>=0.2.6,<0.3.0\u001b[39;22m\n     - \u001b[36mBrotli\u001b[39m \u001b[39;1m1.0.9\u001b[39;22m\n     - \u001b[36mJinja2\u001b[39m \u001b[39;1m>=3.1.2,<4.0.0\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.2.2,<3.0.0\u001b[39;22m\n     - \u001b[36mnonebot_plugin_apscheduler\u001b[39m \u001b[39;1m>=0.2.0,<0.3.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0,<3.0.0\u001b[39;22m\n     - \u001b[36mPillow\u001b[39m \u001b[39;1m>=9.5.0,<10.0.0\u001b[39;22m\n     - \u001b[36mtortoise\u001b[39m \u001b[39;1m>=0.1.1,<0.2.0\u001b[39;22m\n     - \u001b[36mtortoise-orm\u001b[39m \u001b[39;1m>=0.19.3,<0.20.0\u001b[39;22m\n插件 nonebot-plugin-blive-danmaku 依赖的插件如下：\n    nonebot_plugin_apscheduler\n插件 nonebot_plugin_blive_danmaku 加载出错：\n    \u001b[32m06-26 04:06:59\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-26 04:06:59\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-26 04:06:59\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_apscheduler\u001b[0m\"\n    \u001b[32m06-26 04:07:00\u001b[0m [\u001b[31m\u001b[1mERROR\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | \u001b[31m\u001b[48;2;248;187;208mFailed to import \"nonebot_plugin_blive_danmaku\"\u001b[0m\u001b[31m\u001b[0m\n    \u001b[33m\u001b[1mTraceback (most recent call last):\u001b[0m\n      File \"\u001b[32m/home/runner/work/registry/registry/plugin_test/nonebot-plugin-blive-danmaku-nonebot_plugin_blive_danmaku-test/\u001b[0m\u001b[32m\u001b[1mrunner.py\u001b[0m\", line \u001b[33m15\u001b[0m, in \u001b[35m<module>\u001b[0m\n        \u001b[1mplugin\u001b[0m \u001b[35m\u001b[1m=\u001b[0m \u001b[1mload_plugin\u001b[0m\u001b[1m(\u001b[0m\u001b[36m\"nonebot_plugin_blive_danmaku\"\u001b[0m\u001b[1m)\u001b[0m\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-blive-danmaku-nonebot_plugin_blive_danmaku-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-blive-danmaku-nonebot_plugin_blive_danmaku-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-blive-danmaku-nonebot_plugin_blive_danmaku-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-blive-danmaku-nonebot_plugin_blive_danmaku-test/.venv/lib/python3.10/site-packages/nonebot_plugin_blive_danmaku/__init__.py\", line 22, in <module>\n        from . import command, app\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-blive-danmaku-nonebot_plugin_blive_danmaku-test/.venv/lib/python3.10/site-packages/nonebot_plugin_blive_danmaku/command/__init__.py\", line 1, in <module>\n        from .sub import sub_add,sub_delete,sub_list,sub_off,sub_on,sub_open\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-blive-danmaku-nonebot_plugin_blive_danmaku-test/.venv/lib/python3.10/site-packages/nonebot_plugin_blive_danmaku/command/sub/sub_add.py\", line 1, in <module>\n        from ...database import Db as db\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-blive-danmaku-nonebot_plugin_blive_danmaku-test/.venv/lib/python3.10/site-packages/nonebot_plugin_blive_danmaku/database/__init__.py\", line 1, in <module>\n        from .db import Db\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-blive-danmaku-nonebot_plugin_blive_danmaku-test/.venv/lib/python3.10/site-packages/nonebot_plugin_blive_danmaku/database/db.py\", line 7, in <module>\n        from .model import Sub, LiveRoom, Danmaku, Gift, ignore_none\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-blive-danmaku-nonebot_plugin_blive_danmaku-test/.venv/lib/python3.10/site-packages/nonebot_plugin_blive_danmaku/database/model.py\", line 1, in <module>\n        from tortoise.models import Model\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-blive-danmaku-nonebot_plugin_blive_danmaku-test/.venv/lib/python3.10/site-packages/tortoise/models.py\", line 25, in <module>\n        from tortoise import connections\n    \u001b[31m\u001b[1mImportError\u001b[0m:\u001b[1m cannot import name 'connections' from 'tortoise' (/home/runner/work/registry/registry/plugin_test/nonebot-plugin-blive-danmaku-nonebot_plugin_blive_danmaku-test/.venv/lib/python3.10/site-packages/tortoise/__init__.py)\u001b[0m",
       "metadata": null
     },
     "plugin": {
@@ -13868,7 +13937,7 @@
     }
   },
   "nonebot-plugin-pokemonfusion:nonebot_plugin_pokemonfusion": {
-    "time": "2023-06-26 08:19:46",
+    "time": "2023-06-26 12:07:05",
     "version": null,
     "results": {
       "validation": false,
@@ -14606,7 +14675,7 @@
     }
   },
   "nonebot-plugin-starrail-calendar:nonebot_plugin_starrail_calendar": {
-    "time": "2023-06-26 08:19:50",
+    "time": "2023-06-26 12:07:10",
     "version": null,
     "results": {
       "validation": false,
