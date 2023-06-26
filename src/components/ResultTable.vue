@@ -104,6 +104,7 @@ const columns: TableColumns<Results[keyof Results]> = [
     key: "time",
     align: "center",
     titleAlign: "center",
+    render: (rowData) => new Date(rowData.time).toLocaleString(),
     sorter(rowA, rowB) {
       return Date.parse(rowA.time) - Date.parse(rowB.time);
     },
