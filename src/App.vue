@@ -45,7 +45,7 @@ store.initResults();
             </n-gi>
           </n-grid>
         </n-layout-header>
-        <n-layout class="p-4 max-w-[90rem] mx-auto">
+        <n-layout class="mt-2 max-w-[90rem] mx-auto">
           <ResultTable :results="results" />
         </n-layout>
       </n-layout>
