@@ -18,7 +18,7 @@ export interface Results {
     time: string;
     version: string | null;
     results: {
-      [K in "validation" | "load" | "metadata"]: string;
+      [K in "validation" | "load" | "metadata"]: boolean;
     };
     outputs: {
       [K in "validation" | "load" | "metadata"]: string;
