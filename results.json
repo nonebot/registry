@@ -17459,7 +17459,7 @@
       "metadata": null
     },
     "inputs": {
-      "config": ""
+      "config": "bilipush_basepath=\"./\""
     },
     "plugin": {
       "old": {
