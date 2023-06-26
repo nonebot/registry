@@ -1,6 +1,6 @@
 <template>
   <div @click="showModal = true">
-    <CheckCircleOutline v-if="rowData.results.validation" class="ok" />
+    <CheckCircleOutline v-if="rowData.results.load" class="ok" />
     <CheckCloseOutline v-else class="err" />
   </div>
   <n-modal

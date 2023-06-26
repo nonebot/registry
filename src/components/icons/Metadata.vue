@@ -1,7 +1,7 @@
 <template>
   <div @click="showModal = true">
     <PackageVariant
-      v-if="rowData.results.validation"
+      v-if="rowData.results.metadata"
       style="color: rgb(42, 95, 243)"
     />
     <PackageVariantRemove v-else style="color: rgb(236, 194, 5)" />
