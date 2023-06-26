@@ -416,17 +416,24 @@
     }
   },
   "nonebot-plugin-songpicker2:nonebot_plugin_songpicker2": {
-    "time": "2023-06-26T21:55:01.580801+08:00",
-    "version": "0.2.3",
+    "time": "2023-06-27T00:05:14.090364+08:00",
+    "version": "0.2.4",
     "results": {
       "validation": false,
       "load": true,
-      "metadata": false
+      "metadata": true
     },
     "outputs": {
-      "validation": "缺少元数据",
-      "load": "插件 nonebot-plugin-songpicker2 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-songpicker2\u001b[39m \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.2.3\u001b[39;22m                      \n     \u001b[34mdescription\u001b[39m  : 点播歌曲，支持候选菜单、热评显示，数据源为网易云   \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mbuild\u001b[39m \u001b[39;1m>=0.1.0,<0.2.0\u001b[39;22m\n     - \u001b[36mhttpx\u001b[39m \u001b[39;1m>=0.21.3,<0.22.0\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.0.0-beta.1,<3.0.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0-beta.1,<3.0.0\u001b[39;22m\n     - \u001b[36mtwine\u001b[39m \u001b[39;1m>=3.3.0,<4.0.0\u001b[39;22m\n插件 nonebot-plugin-songpicker2 依赖的插件如下：\n    \n插件 nonebot_plugin_songpicker2 加载正常：\n    \u001b[32m06-26 13:55:01\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-26 13:55:01\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-26 13:55:01\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_songpicker2\u001b[0m\"",
-      "metadata": null
+      "validation": "2 validation errors for PluginPublishInfo\nhomepage\n  none is not an allowed value (type=type_error.none.not_allowed)\ntype\n  ⚠️ 插件类型不能为空。<dt>请确保填写插件类型。</dt> (type=value_error)",
+      "load": "插件 nonebot-plugin-songpicker2 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-songpicker2\u001b[39m \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.2.4\u001b[39;22m                      \n     \u001b[34mdescription\u001b[39m  : 点播歌曲，支持候选菜单、热评显示，数据源为网易云   \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mbuild\u001b[39m \u001b[39;1m>=0.1.0,<0.2.0\u001b[39;22m\n     - \u001b[36mhttpx\u001b[39m \u001b[39;1m>=0.21.3,<0.22.0\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.0.0,<3.0.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0,<3.0.0\u001b[39;22m\n     - \u001b[36mtwine\u001b[39m \u001b[39;1m>=3.3.0,<4.0.0\u001b[39;22m\n插件 nonebot-plugin-songpicker2 依赖的插件如下：\n    \n插件 nonebot_plugin_songpicker2 加载正常：\n    \u001b[32m06-26 16:05:13\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-26 16:05:13\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-26 16:05:13\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_songpicker2\u001b[0m\"",
+      "metadata": {
+        "name": "songpicker2",
+        "description": "点播歌曲，支持候选菜单、热评显示，数据源为网易云",
+        "usage": "点歌吧大概",
+        "type": null,
+        "homepage": null,
+        "supported_adapters": null
+      }
     },
     "inputs": {
       "config": ""
@@ -4646,7 +4653,7 @@
     }
   },
   "nonebot-plugin-mockingbird:nonebot_plugin_mockingbird": {
-    "time": "2023-06-26T22:14:52.424955+08:00",
+    "time": "2023-06-27T00:05:27.384184+08:00",
     "version": null,
     "results": {
       "validation": false,
@@ -6107,8 +6114,8 @@
     }
   },
   "nonebot_plugin_game_collection:nonebot_plugin_game_collection": {
-    "time": "2023-06-26T22:20:00.377073+08:00",
-    "version": "2.2.15",
+    "time": "2023-06-27T00:05:46.143692+08:00",
+    "version": "2.2.16",
     "results": {
       "validation": false,
       "load": false,
@@ -6116,7 +6123,7 @@
     },
     "outputs": {
       "validation": "缺少元数据",
-      "load": "插件 nonebot_plugin_game_collection 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-game-collection\u001b[39m                                     \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m2.2.15\u001b[39;22m                                                             \n     \u001b[34mdescription\u001b[39m  : 改自nonebot_plugin_russian合并了nonebot_plugin_horserace还有一些自编玩法的小游戏合集。 \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mfonttools\u001b[39m \u001b[39;1m*\u001b[39;22m\n     - \u001b[36mmplfinance\u001b[39m \u001b[39;1m*\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m*\u001b[39;22m\n     - \u001b[36mnonebot-plugin-apscheduler\u001b[39m \u001b[39;1m*\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m*\u001b[39;22m\n     - \u001b[36mseaborn\u001b[39m \u001b[39;1m*\u001b[39;22m\n插件 nonebot_plugin_game_collection 依赖的插件如下：\n    nonebot_plugin_apscheduler\n插件 nonebot_plugin_game_collection 加载出错：\n    \u001b[32m06-26 14:19:57\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-26 14:19:57\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-26 14:20:00\u001b[0m [\u001b[31m\u001b[1mERROR\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | \u001b[31m\u001b[48;2;248;187;208mFailed to import \"nonebot_plugin_game_collection\"\u001b[0m\u001b[31m\u001b[0m\n    \u001b[33m\u001b[1mTraceback (most recent call last):\u001b[0m\n      File \"\u001b[32m/home/runner/work/registry/registry/plugin_test/nonebot_plugin_game_collection-nonebot_plugin_game_collection-test/\u001b[0m\u001b[32m\u001b[1mrunner.py\u001b[0m\", line \u001b[33m15\u001b[0m, in \u001b[35m<module>\u001b[0m\n        \u001b[1mplugin\u001b[0m \u001b[35m\u001b[1m=\u001b[0m \u001b[1mload_plugin\u001b[0m\u001b[1m(\u001b[0m\u001b[36m\"nonebot_plugin_game_collection\"\u001b[0m\u001b[1m)\u001b[0m\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot_plugin_game_collection-nonebot_plugin_game_collection-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/registry/registry/plugin_test/nonebot_plugin_game_collection-nonebot_plugin_game_collection-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot_plugin_game_collection-nonebot_plugin_game_collection-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot_plugin_game_collection-nonebot_plugin_game_collection-test/.venv/lib/python3.10/site-packages/nonebot_plugin_game_collection/__init__.py\", line 32, in <module>\n        from . import Manager\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot_plugin_game_collection-nonebot_plugin_game_collection-test/.venv/lib/python3.10/site-packages/nonebot_plugin_game_collection/Manager.py\", line 14, in <module>\n        from .utils.chart import linecard_to_png, gini_coef, default_BG\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot_plugin_game_collection-nonebot_plugin_game_collection-test/.venv/lib/python3.10/site-packages/nonebot_plugin_game_collection/utils/chart.py\", line 15, in <module>\n        from .avatar import download_avatar,download_groupavatar\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot_plugin_game_collection-nonebot_plugin_game_collection-test/.venv/lib/python3.10/site-packages/nonebot_plugin_game_collection/utils/avatar.py\", line 1, in <module>\n        import httpx\n    \u001b[31m\u001b[1mModuleNotFoundError\u001b[0m:\u001b[1m No module named 'httpx'\u001b[0m",
+      "load": "插件 nonebot_plugin_game_collection 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-game-collection\u001b[39m                                     \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m2.2.16\u001b[39;22m                                                             \n     \u001b[34mdescription\u001b[39m  : 改自nonebot_plugin_russian合并了nonebot_plugin_horserace还有一些自编玩法的小游戏合集。 \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mfonttools\u001b[39m \u001b[39;1m*\u001b[39;22m\n     - \u001b[36mmplfinance\u001b[39m \u001b[39;1m*\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m*\u001b[39;22m\n     - \u001b[36mnonebot-plugin-apscheduler\u001b[39m \u001b[39;1m*\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m*\u001b[39;22m\n     - \u001b[36mseaborn\u001b[39m \u001b[39;1m*\u001b[39;22m\n插件 nonebot_plugin_game_collection 依赖的插件如下：\n    nonebot_plugin_apscheduler\n插件 nonebot_plugin_game_collection 加载出错：\n    \u001b[32m06-26 16:05:43\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-26 16:05:43\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-26 16:05:45\u001b[0m [\u001b[31m\u001b[1mERROR\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | \u001b[31m\u001b[48;2;248;187;208mFailed to import \"nonebot_plugin_game_collection\"\u001b[0m\u001b[31m\u001b[0m\n    \u001b[33m\u001b[1mTraceback (most recent call last):\u001b[0m\n      File \"\u001b[32m/home/runner/work/registry/registry/plugin_test/nonebot_plugin_game_collection-nonebot_plugin_game_collection-test/\u001b[0m\u001b[32m\u001b[1mrunner.py\u001b[0m\", line \u001b[33m15\u001b[0m, in \u001b[35m<module>\u001b[0m\n        \u001b[1mplugin\u001b[0m \u001b[35m\u001b[1m=\u001b[0m \u001b[1mload_plugin\u001b[0m\u001b[1m(\u001b[0m\u001b[36m\"nonebot_plugin_game_collection\"\u001b[0m\u001b[1m)\u001b[0m\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot_plugin_game_collection-nonebot_plugin_game_collection-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/registry/registry/plugin_test/nonebot_plugin_game_collection-nonebot_plugin_game_collection-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 141, in load_plugin\n        module = importlib.import_module(name)\n      File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n        return _bootstrap._gcd_import(name[level:], package, level)\n      File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n      File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n      File \"<frozen importlib._bootstrap>\", line 1006, in _find_and_load_unlocked\n      File \"<frozen importlib._bootstrap>\", line 688, in _load_unlocked\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot_plugin_game_collection-nonebot_plugin_game_collection-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 241, in exec_module\n        super().exec_module(module)\n      File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n      File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot_plugin_game_collection-nonebot_plugin_game_collection-test/.venv/lib/python3.10/site-packages/nonebot_plugin_game_collection/__init__.py\", line 32, in <module>\n        from . import Manager\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot_plugin_game_collection-nonebot_plugin_game_collection-test/.venv/lib/python3.10/site-packages/nonebot_plugin_game_collection/Manager.py\", line 14, in <module>\n        from .utils.chart import linecard_to_png, gini_coef, default_BG\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot_plugin_game_collection-nonebot_plugin_game_collection-test/.venv/lib/python3.10/site-packages/nonebot_plugin_game_collection/utils/chart.py\", line 15, in <module>\n        from .avatar import download_avatar,download_groupavatar\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot_plugin_game_collection-nonebot_plugin_game_collection-test/.venv/lib/python3.10/site-packages/nonebot_plugin_game_collection/utils/avatar.py\", line 1, in <module>\n        import httpx\n    \u001b[31m\u001b[1mModuleNotFoundError\u001b[0m:\u001b[1m No module named 'httpx'\u001b[0m",
       "metadata": null
     },
     "inputs": {
@@ -11969,8 +11976,8 @@
     }
   },
   "nonebot-plugin-matcher-block:nonebot_plugin_matcher_block": {
-    "time": "2023-06-26T22:49:25.068355+08:00",
-    "version": "0.0.3",
+    "time": "2023-06-27T00:06:05.613440+08:00",
+    "version": "0.0.4",
     "results": {
       "validation": false,
       "load": true,
@@ -11978,7 +11985,7 @@
     },
     "outputs": {
       "validation": "缺少元数据",
-      "load": "插件 nonebot-plugin-matcher-block 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-matcher-block\u001b[39m \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.0.3\u001b[39;22m                        \n     \u001b[34mdescription\u001b[39m  : 通用指令阻断                       \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m*\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m*\u001b[39;22m\n插件 nonebot-plugin-matcher-block 依赖的插件如下：\n    \n插件 nonebot_plugin_matcher_block 加载正常：\n    \u001b[32m06-26 14:49:24\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-26 14:49:24\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-26 14:49:24\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_matcher_block\u001b[0m\"",
+      "load": "插件 nonebot-plugin-matcher-block 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-matcher-block\u001b[39m \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.0.4\u001b[39;22m                        \n     \u001b[34mdescription\u001b[39m  : 通用指令阻断                       \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m*\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m*\u001b[39;22m\n插件 nonebot-plugin-matcher-block 依赖的插件如下：\n    \n插件 nonebot_plugin_matcher_block 加载正常：\n    \u001b[32m06-26 16:06:05\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-26 16:06:05\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-26 16:06:05\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_matcher_block\u001b[0m\"",
       "metadata": null
     },
     "inputs": {
@@ -14987,7 +14994,7 @@
     }
   },
   "nonebot-plugin-pokemonfusion:nonebot_plugin_pokemonfusion": {
-    "time": "2023-06-26T22:59:30.311512+08:00",
+    "time": "2023-06-27T00:06:17.093180+08:00",
     "version": null,
     "results": {
       "validation": false,
@@ -15770,7 +15777,7 @@
     }
   },
   "nonebot-plugin-starrail-calendar:nonebot_plugin_starrail_calendar": {
-    "time": "2023-06-26T23:01:24.392189+08:00",
+    "time": "2023-06-27T00:06:20.817923+08:00",
     "version": null,
     "results": {
       "validation": false,
