@@ -35,7 +35,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-26T21:53:59.545253+08:00"
+    "time": "2023-06-27T20:06:46.136108+08:00"
   },
   {
     "module_name": "nonebot_plugin_rauthman",
@@ -167,16 +167,18 @@
   {
     "module_name": "nonebot_plugin_songpicker2",
     "project_link": "nonebot-plugin-songpicker2",
-    "author": "maxesisn",
-    "desc": "点播歌曲，支持候选菜单、热评显示，数据源为网易云",
     "name": "songpicker2",
+    "desc": "点播歌曲，支持候选菜单、热评显示，数据源为网易云",
+    "author": "maxesisn",
     "homepage": "https://github.com/maxesisn/nonebot_plugin_songpicker2",
     "tags": [],
     "is_official": false,
-    "type": null,
-    "supported_adapters": null,
-    "valid": false,
-    "time": "2023-06-27T00:05:14.090364+08:00"
+    "type": "application",
+    "supported_adapters": [
+      "nonebot.adapters.onebot.v11"
+    ],
+    "valid": true,
+    "time": "2023-06-27T20:06:56.219187+08:00"
   },
   {
     "module_name": "nonebot_plugin_strman",
@@ -579,7 +581,7 @@
     "module_name": "nonebot_plugin_setu_now",
     "project_link": "nonebot-plugin-setu-now",
     "name": "nonebot-plugin-setu-now",
-    "desc": "另一个色图插件，即时下载并保存，可选WebDAV。可选特殊色图",
+    "desc": "另一个色图插件",
     "author": "kexue-z",
     "homepage": "https://github.com/kexue-z/nonebot-plugin-setu-now",
     "tags": [
@@ -589,10 +591,10 @@
       }
     ],
     "is_official": false,
-    "type": null,
+    "type": "application",
     "supported_adapters": null,
-    "valid": false,
-    "time": "2023-06-26T22:03:28.945618+08:00"
+    "valid": true,
+    "time": "2023-06-27T20:07:08.307055+08:00"
   },
   {
     "module_name": "leetcode",
@@ -1155,7 +1157,7 @@
     "module_name": "nonebot_plugin_boardgame",
     "project_link": "nonebot-plugin-boardgame",
     "name": "棋类游戏",
-    "desc": "棋类游戏插件，目前支持 五子棋、黑白棋、围棋",
+    "desc": "五子棋、黑白棋、围棋",
     "author": "MeetWq",
     "homepage": "https://github.com/noneplugin/nonebot-plugin-boardgame",
     "tags": [
@@ -1165,24 +1167,33 @@
       }
     ],
     "is_official": false,
-    "type": null,
-    "supported_adapters": null,
-    "valid": false,
-    "time": "2023-06-26T22:08:42.817386+08:00"
+    "type": "application",
+    "supported_adapters": [
+      "nonebot.adapters.onebot.v12",
+      "nonebot.adapters.telegram",
+      "nonebot.adapters.onebot.v11",
+      "nonebot.adapters.kaiheila",
+      "nonebot.adapters.qqguild"
+    ],
+    "valid": true,
+    "time": "2023-06-27T20:07:25.692536+08:00"
   },
   {
     "module_name": "nonebot_plugin_wordcloud",
     "project_link": "nonebot-plugin-wordcloud",
     "name": "词云",
-    "desc": "根据群内聊天记录生成词云",
+    "desc": "利用群消息生成词云",
     "author": "he0119",
     "homepage": "https://github.com/he0119/nonebot-plugin-wordcloud",
     "tags": [],
     "is_official": false,
-    "type": null,
-    "supported_adapters": null,
-    "valid": false,
-    "time": "2023-06-26T22:09:00.000148+08:00"
+    "type": "application",
+    "supported_adapters": [
+      "nonebot.adapters.onebot.v11",
+      "nonebot.adapters.onebot.v12"
+    ],
+    "valid": true,
+    "time": "2023-06-27T20:07:56.336919+08:00"
   },
   {
     "module_name": "nonebot_plugin_chatrecorder",
@@ -1885,10 +1896,16 @@
       }
     ],
     "is_official": false,
-    "type": null,
-    "supported_adapters": null,
-    "valid": false,
-    "time": "2023-06-26T22:14:00.578367+08:00"
+    "type": "application",
+    "supported_adapters": [
+      "nonebot.adapters.onebot.v12",
+      "nonebot.adapters.telegram",
+      "nonebot.adapters.onebot.v11",
+      "nonebot.adapters.kaiheila",
+      "nonebot.adapters.qqguild"
+    ],
+    "valid": true,
+    "time": "2023-06-27T20:08:12.848239+08:00"
   },
   {
     "module_name": "nonebot_plugin_charpic",
@@ -2010,7 +2027,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-27T16:05:47.784813+08:00"
+    "time": "2023-06-27T20:08:15.979137+08:00"
   },
   {
     "module_name": "nonebot_plugin_baidutranslate",
@@ -6671,7 +6688,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-27T16:06:56.776362+08:00"
+    "time": "2023-06-27T20:08:53.038349+08:00"
   },
   {
     "module_name": "tatarubot2",
@@ -6985,7 +7002,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-27T16:07:00.374115+08:00"
+    "time": "2023-06-27T20:08:57.127729+08:00"
   },
   {
     "module_name": "nonebot_plugin_wordle_help",

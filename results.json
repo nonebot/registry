@@ -60,17 +60,27 @@
     }
   },
   "haruka-bot:haruka_bot": {
-    "time": "2023-06-26T21:53:59.545253+08:00",
-    "version": "1.5.4",
+    "time": "2023-06-27T20:06:46.136108+08:00",
+    "version": "1.6.0.post2",
     "results": {
       "validation": false,
       "load": false,
-      "metadata": false
+      "metadata": true
     },
     "outputs": {
-      "validation": "缺少元数据",
-      "load": "插件 haruka-bot 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mharuka-bot\u001b[39m                                                                  \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m1.5.4\u001b[39;22m                                                                       \n     \u001b[34mdescription\u001b[39m  : Push dynamics and live informations from bilibili to QQ. Based on nonebot2. \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mbilireq\u001b[39m \u001b[39;1m>=0.2.5\u001b[39;22m\n     - \u001b[36mclick\u001b[39m \u001b[39;1m>=8.1.3\u001b[39;22m\n     - \u001b[36mhttpx\u001b[39m \u001b[39;1m>=0.24.0\u001b[39;22m\n     - \u001b[36mmsvc-runtime\u001b[39m \u001b[39;1m>=14.34.31931\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.2.3\u001b[39;22m\n     - \u001b[36mnonebot-plugin-apscheduler\u001b[39m \u001b[39;1m>=0.2.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-guild-patch\u001b[39m \u001b[39;1m>=0.2.3\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0rc4\u001b[39;22m\n     - \u001b[36mpackaging\u001b[39m \u001b[39;1m>=23.1\u001b[39;22m\n     - \u001b[36mplaywright\u001b[39m \u001b[39;1m>=1.33.0\u001b[39;22m\n     - \u001b[36mpydantic\u001b[39m \u001b[39;1m>=1.10.7\u001b[39;22m\n     - \u001b[36mpython-dotenv\u001b[39m \u001b[39;1m>=1.0.0\u001b[39;22m\n     - \u001b[36mtortoise-orm\u001b[39m \u001b[39;1m>=0.19.3\u001b[39;22m\n插件 haruka-bot 依赖的插件如下：\n    nonebot_plugin_apscheduler, nonebot_plugin_guild_patch\n插件 haruka_bot 加载出错：\n    \u001b[32m06-26 13:53:41\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-26 13:53:41\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-26 13:53:41\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_apscheduler\u001b[0m\"\n    \u001b[32m06-26 13:53:42\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mharuka_bot\u001b[0m\u001b[36m\u001b[0m | 检查 Chromium 更新\n    Downloading Chromium 115.0.5790.24 (playwright build v1067) from https://npmmirror.com/mirrors/playwright//builds/chromium/1067/chromium-linux.zip\n    |                                                                                |   0% of 146.4 Mb\n    |■■■■■■■■                                                                        |  10% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■                                                                |  20% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 146.4 Mb\n    Chromium 115.0.5790.24 (playwright build v1067) downloaded to /home/runner/.cache/ms-playwright/chromium-1067\n    Downloading FFMPEG playwright build v1009 from https://npmmirror.com/mirrors/playwright//builds/ffmpeg/1009/ffmpeg-linux.zip\n    |                                                                                |   0% of 2.6 Mb\n    |■■■■■■■■                                                                        |  10% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■                                                                |  20% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 2.6 Mb\n    FFMPEG playwright build v1009 downloaded to /home/runner/.cache/ms-playwright/ffmpeg-1009\n    \u001b[32m06-26 13:53:55\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mharuka_bot\u001b[0m\u001b[36m\u001b[0m | 检查 Playwright 依赖\n    \u001b[32m06-26 13:53:59\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mharuka_bot\u001b[0m\"\n    \u001b[32m06-26 13:53:59\u001b[0m [\u001b[31m\u001b[1mERROR\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | \u001b[31m\u001b[48;2;248;187;208mFailed to import \"nonebot_plugin_guild_patch\"\u001b[0m\u001b[31m\u001b[0m\n    \u001b[33m\u001b[1mTraceback (most recent call last):\u001b[0m\n      File \"\u001b[32m/home/runner/work/registry/registry/plugin_test/haruka-bot-haruka_bot-test/\u001b[0m\u001b[32m\u001b[1mrunner.py\u001b[0m\", line \u001b[33m31\u001b[0m, in \u001b[35m<module>\u001b[0m\n        \u001b[1mrequire\u001b[0m\u001b[1m(\u001b[0m\u001b[36m'nonebot_plugin_guild_patch'\u001b[0m\u001b[1m)\u001b[0m\n      File \"/home/runner/work/registry/registry/plugin_test/haruka-bot-haruka_bot-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 174, in require\n        plugin = load_plugin(name)\n      File \"/home/runner/work/registry/registry/plugin_test/haruka-bot-haruka_bot-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/registry/registry/plugin_test/haruka-bot-haruka_bot-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 154, in load_plugin\n        raise RuntimeError(\n    \u001b[31m\u001b[1mRuntimeError\u001b[0m:\u001b[1m Module nonebot_plugin_guild_patch is not loaded as a plugin! Make sure not to import it before loading.\u001b[0m\n    Traceback (most recent call last):\n      File \"/home/runner/work/registry/registry/plugin_test/haruka-bot-haruka_bot-test/runner.py\", line 31, in <module>\n        require('nonebot_plugin_guild_patch')\n      File \"/home/runner/work/registry/registry/plugin_test/haruka-bot-haruka_bot-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 178, in require\n        raise RuntimeError(f'Cannot load plugin \"{name}\"!')\n    RuntimeError: Cannot load plugin \"nonebot_plugin_guild_patch\"!",
-      "metadata": null
+      "validation": "1 validation error for PluginPublishInfo\nplugin_test_result\n  ⚠️ 插件加载测试未通过。<details><summary>测试输出</summary></details> (type=value_error)",
+      "load": "插件 haruka-bot 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mharuka-bot\u001b[39m                                                                  \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m1.6.0.post2\u001b[39;22m                                                                 \n     \u001b[34mdescription\u001b[39m  : Push dynamics and live informations from bilibili to QQ. Based on nonebot2. \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mbilireq\u001b[39m \u001b[39;1m>=0.2.6\u001b[39;22m\n     - \u001b[36mclick\u001b[39m \u001b[39;1m>=8.1.3\u001b[39;22m\n     - \u001b[36mhttpx\u001b[39m \u001b[39;1m>=0.24.1\u001b[39;22m\n     - \u001b[36mmsvc-runtime\u001b[39m \u001b[39;1m>=14.34.31931\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.2.3\u001b[39;22m\n     - \u001b[36mnonebot-plugin-apscheduler\u001b[39m \u001b[39;1m>=0.3.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-guild-patch\u001b[39m \u001b[39;1m>=0.2.3\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0\u001b[39;22m\n     - \u001b[36mpackaging\u001b[39m \u001b[39;1m>=23.1\u001b[39;22m\n     - \u001b[36mplaywright\u001b[39m \u001b[39;1m>=1.35.0\u001b[39;22m\n     - \u001b[36mpydantic\u001b[39m \u001b[39;1m>=1.10.9\u001b[39;22m\n     - \u001b[36mpython-dotenv\u001b[39m \u001b[39;1m>=1.0.0\u001b[39;22m\n     - \u001b[36mtortoise-orm\u001b[39m \u001b[39;1m>=0.19.3\u001b[39;22m\n插件 haruka-bot 依赖的插件如下：\n    nonebot_plugin_apscheduler, nonebot_plugin_guild_patch\n插件 haruka_bot 加载出错：\n    \u001b[32m06-27 12:06:17\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-27 12:06:17\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-27 12:06:17\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_apscheduler\u001b[0m\"\n    \u001b[32m06-27 12:06:17\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mharuka_bot\u001b[0m\u001b[36m\u001b[0m | 检查 Chromium 更新\n    Downloading Chromium 115.0.5790.24 (playwright build v1067) from https://npmmirror.com/mirrors/playwright//builds/chromium/1067/chromium-linux.zip\n    |                                                                                |   0% of 146.4 Mb\n    |■■■■■■■■                                                                        |  10% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■                                                                |  20% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 146.4 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 146.4 Mb\n    Chromium 115.0.5790.24 (playwright build v1067) downloaded to /home/runner/.cache/ms-playwright/chromium-1067\n    Downloading FFMPEG playwright build v1009 from https://npmmirror.com/mirrors/playwright//builds/ffmpeg/1009/ffmpeg-linux.zip\n    |                                                                                |   0% of 2.6 Mb\n    |■■■■■■■■                                                                        |  10% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■                                                                |  20% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 2.6 Mb\n    |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 2.6 Mb\n    FFMPEG playwright build v1009 downloaded to /home/runner/.cache/ms-playwright/ffmpeg-1009\n    \u001b[32m06-27 12:06:42\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mharuka_bot\u001b[0m\u001b[36m\u001b[0m | 检查 Playwright 依赖\n    \u001b[32m06-27 12:06:44\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mharuka_bot\u001b[0m\"\n    \u001b[32m06-27 12:06:44\u001b[0m [\u001b[31m\u001b[1mERROR\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | \u001b[31m\u001b[48;2;248;187;208mFailed to import \"nonebot_plugin_guild_patch\"\u001b[0m\u001b[31m\u001b[0m\n    \u001b[33m\u001b[1mTraceback (most recent call last):\u001b[0m\n      File \"\u001b[32m/home/runner/work/registry/registry/plugin_test/haruka-bot-haruka_bot-test/\u001b[0m\u001b[32m\u001b[1mrunner.py\u001b[0m\", line \u001b[33m31\u001b[0m, in \u001b[35m<module>\u001b[0m\n        \u001b[1mrequire\u001b[0m\u001b[1m(\u001b[0m\u001b[36m'nonebot_plugin_guild_patch'\u001b[0m\u001b[1m)\u001b[0m\n      File \"/home/runner/work/registry/registry/plugin_test/haruka-bot-haruka_bot-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 174, in require\n        plugin = load_plugin(name)\n      File \"/home/runner/work/registry/registry/plugin_test/haruka-bot-haruka_bot-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/registry/registry/plugin_test/haruka-bot-haruka_bot-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 154, in load_plugin\n        raise RuntimeError(\n    \u001b[31m\u001b[1mRuntimeError\u001b[0m:\u001b[1m Module nonebot_plugin_guild_patch is not loaded as a plugin! Make sure not to import it before loading.\u001b[0m\n    Traceback (most recent call last):\n      File \"/home/runner/work/registry/registry/plugin_test/haruka-bot-haruka_bot-test/runner.py\", line 31, in <module>\n        require('nonebot_plugin_guild_patch')\n      File \"/home/runner/work/registry/registry/plugin_test/haruka-bot-haruka_bot-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 178, in require\n        raise RuntimeError(f'Cannot load plugin \"{name}\"!')\n    RuntimeError: Cannot load plugin \"nonebot_plugin_guild_patch\"!",
+      "metadata": {
+        "name": "haruka_bot",
+        "description": "将B站UP主的动态和直播信息推送至QQ",
+        "usage": "https://haruka-bot.sk415.icu/",
+        "type": "application",
+        "homepage": "https://github.com/SK-415/HarukaBot",
+        "supported_adapters": [
+          "~qqguild",
+          "~onebot.v11"
+        ]
+      }
     },
     "inputs": {
       "config": ""
@@ -416,23 +426,25 @@
     }
   },
   "nonebot-plugin-songpicker2:nonebot_plugin_songpicker2": {
-    "time": "2023-06-27T00:05:14.090364+08:00",
-    "version": "0.2.4",
+    "time": "2023-06-27T20:06:56.219187+08:00",
+    "version": "0.2.6",
     "results": {
-      "validation": false,
+      "validation": true,
       "load": true,
       "metadata": true
     },
     "outputs": {
-      "validation": "2 validation errors for PluginPublishInfo\nhomepage\n  none is not an allowed value (type=type_error.none.not_allowed)\ntype\n  ⚠️ 插件类型不能为空。<dt>请确保填写插件类型。</dt> (type=value_error)",
-      "load": "插件 nonebot-plugin-songpicker2 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-songpicker2\u001b[39m \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.2.4\u001b[39;22m                      \n     \u001b[34mdescription\u001b[39m  : 点播歌曲，支持候选菜单、热评显示，数据源为网易云   \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mbuild\u001b[39m \u001b[39;1m>=0.1.0,<0.2.0\u001b[39;22m\n     - \u001b[36mhttpx\u001b[39m \u001b[39;1m>=0.21.3,<0.22.0\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.0.0,<3.0.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0,<3.0.0\u001b[39;22m\n     - \u001b[36mtwine\u001b[39m \u001b[39;1m>=3.3.0,<4.0.0\u001b[39;22m\n插件 nonebot-plugin-songpicker2 依赖的插件如下：\n    \n插件 nonebot_plugin_songpicker2 加载正常：\n    \u001b[32m06-26 16:05:13\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-26 16:05:13\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-26 16:05:13\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_songpicker2\u001b[0m\"",
+      "validation": "通过",
+      "load": "插件 nonebot-plugin-songpicker2 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-songpicker2\u001b[39m \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.2.6\u001b[39;22m                      \n     \u001b[34mdescription\u001b[39m  : 点播歌曲，支持候选菜单、热评显示，数据源为网易云   \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mbuild\u001b[39m \u001b[39;1m>=0.1.0,<0.2.0\u001b[39;22m\n     - \u001b[36mhttpx\u001b[39m \u001b[39;1m>=0.21.3,<0.22.0\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.0.0,<3.0.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0,<3.0.0\u001b[39;22m\n     - \u001b[36mtwine\u001b[39m \u001b[39;1m>=3.3.0,<4.0.0\u001b[39;22m\n插件 nonebot-plugin-songpicker2 依赖的插件如下：\n    \n插件 nonebot_plugin_songpicker2 加载正常：\n    \u001b[32m06-27 12:06:54\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-27 12:06:54\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-27 12:06:55\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_songpicker2\u001b[0m\"",
       "metadata": {
         "name": "songpicker2",
         "description": "点播歌曲，支持候选菜单、热评显示，数据源为网易云",
         "usage": "点歌吧大概",
-        "type": null,
-        "homepage": null,
-        "supported_adapters": null
+        "type": "application",
+        "homepage": "https://github.com/maxesisn/nonebot_plugin_songpicker2",
+        "supported_adapters": [
+          "~onebot.v11"
+        ]
       }
     },
     "inputs": {
@@ -451,7 +463,20 @@
         "type": null,
         "supported_adapters": null
       },
-      "new": null
+      "new": {
+        "module_name": "nonebot_plugin_songpicker2",
+        "project_link": "nonebot-plugin-songpicker2",
+        "name": "songpicker2",
+        "desc": "点播歌曲，支持候选菜单、热评显示，数据源为网易云",
+        "author": "maxesisn",
+        "homepage": "https://github.com/maxesisn/nonebot_plugin_songpicker2",
+        "tags": [],
+        "is_official": false,
+        "type": "application",
+        "supported_adapters": [
+          "nonebot.adapters.onebot.v11"
+        ]
+      }
     }
   },
   "nonebot-plugin-strman:nonebot_plugin_strman": {
@@ -1432,22 +1457,22 @@
     }
   },
   "nonebot-plugin-setu-now:nonebot_plugin_setu_now": {
-    "time": "2023-06-26T22:03:28.945618+08:00",
-    "version": "0.6.1",
+    "time": "2023-06-27T20:07:08.307055+08:00",
+    "version": "0.6.2",
     "results": {
-      "validation": false,
+      "validation": true,
       "load": true,
       "metadata": true
     },
     "outputs": {
-      "validation": "1 validation error for PluginPublishInfo\nhomepage\n  none is not an allowed value (type=type_error.none.not_allowed)",
-      "load": "插件 nonebot-plugin-setu-now 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-setu-now\u001b[39m \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.6.1\u001b[39;22m                   \n     \u001b[34mdescription\u001b[39m  : 另一个色图插件                 \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mhttpx\u001b[39m \u001b[39;1m>=0.18.0,<1.0.0\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.0.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-localstore\u001b[39m \u001b[39;1m>=0.5.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-tortoise-orm\u001b[39m \u001b[39;1m>=0.0.1a3\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0\u001b[39;22m\n     - \u001b[36mpillow\u001b[39m \u001b[39;1m>=8.0.0\u001b[39;22m\n     - \u001b[36mpydantic\u001b[39m \u001b[39;1m>=1.5.0\u001b[39;22m\n插件 nonebot-plugin-setu-now 依赖的插件如下：\n    nonebot_plugin_localstore, nonebot_plugin_tortoise_orm\n插件 nonebot_plugin_setu_now 加载正常：\n    \u001b[32m06-26 14:03:28\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-26 14:03:28\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-26 14:03:28\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_localstore\u001b[0m\"\n    \u001b[32m06-26 14:03:28\u001b[0m [\u001b[33m\u001b[1mWARNING\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_tortoise_orm\u001b[0m\u001b[36m\u001b[0m | 没有设置数据库地址, 使用 sqlite:////home/runner/.local/share/nonebot2/db.sqlite3\n    \u001b[32m06-26 14:03:28\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_tortoise_orm\u001b[0m\"\n    \u001b[32m06-26 14:03:28\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_tortoise_orm\u001b[0m\u001b[36m\u001b[0m | \u001b[33m数据库: 添加模型\u001b[0m: \u001b[31mnonebot_plugin_setu_now.database\u001b[0m\n    \u001b[32m06-26 14:03:28\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_setu_now\u001b[0m\"",
+      "validation": "通过",
+      "load": "插件 nonebot-plugin-setu-now 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-setu-now\u001b[39m \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.6.2\u001b[39;22m                   \n     \u001b[34mdescription\u001b[39m  : 另一个色图插件                 \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mhttpx\u001b[39m \u001b[39;1m>=0.18.0,<1.0.0\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.0.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-localstore\u001b[39m \u001b[39;1m>=0.5.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-tortoise-orm\u001b[39m \u001b[39;1m>=0.1.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0\u001b[39;22m\n     - \u001b[36mpillow\u001b[39m \u001b[39;1m>=8.0.0\u001b[39;22m\n     - \u001b[36mpydantic\u001b[39m \u001b[39;1m>=1.5.0\u001b[39;22m\n插件 nonebot-plugin-setu-now 依赖的插件如下：\n    nonebot_plugin_localstore, nonebot_plugin_tortoise_orm\n插件 nonebot_plugin_setu_now 加载正常：\n    \u001b[32m06-27 12:07:07\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-27 12:07:07\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-27 12:07:07\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_localstore\u001b[0m\"\n    \u001b[32m06-27 12:07:07\u001b[0m [\u001b[33m\u001b[1mWARNING\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_tortoise_orm\u001b[0m\u001b[36m\u001b[0m | 没有设置数据库地址, 使用 sqlite:////home/runner/.local/share/nonebot2/db.sqlite3\n    \u001b[32m06-27 12:07:07\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_tortoise_orm\u001b[0m\"\n    \u001b[32m06-27 12:07:07\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_tortoise_orm\u001b[0m\u001b[36m\u001b[0m | \u001b[33m数据库: 添加模型\u001b[0m: \u001b[31mnonebot_plugin_setu_now.database\u001b[0m\n    \u001b[32m06-27 12:07:07\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_setu_now\u001b[0m\"",
       "metadata": {
         "name": "nonebot-plugin-setu-now",
         "description": "另一个色图插件",
         "usage": "TL;DR: 色图 或 看文档",
         "type": "application",
-        "homepage": null,
+        "homepage": "https://github.com/kexue-z/nonebot-plugin-setu-now",
         "supported_adapters": null
       }
     },
@@ -1472,7 +1497,23 @@
         "type": null,
         "supported_adapters": null
       },
-      "new": null
+      "new": {
+        "module_name": "nonebot_plugin_setu_now",
+        "project_link": "nonebot-plugin-setu-now",
+        "name": "nonebot-plugin-setu-now",
+        "desc": "另一个色图插件",
+        "author": "kexue-z",
+        "homepage": "https://github.com/kexue-z/nonebot-plugin-setu-now",
+        "tags": [
+          {
+            "label": "a:onebot",
+            "color": "#000000"
+          }
+        ],
+        "is_official": false,
+        "type": "application",
+        "supported_adapters": null
+      }
     }
   },
   "nonebot-plugin-leetcode:leetcode": {
@@ -2781,23 +2822,29 @@
     }
   },
   "nonebot-plugin-boardgame:nonebot_plugin_boardgame": {
-    "time": "2023-06-26T22:08:42.817386+08:00",
-    "version": "0.2.1",
+    "time": "2023-06-27T20:07:25.692536+08:00",
+    "version": "0.3.0",
     "results": {
-      "validation": false,
+      "validation": true,
       "load": true,
       "metadata": true
     },
     "outputs": {
-      "validation": "2 validation errors for PluginPublishInfo\nhomepage\n  none is not an allowed value (type=type_error.none.not_allowed)\ntype\n  ⚠️ 插件类型不能为空。<dt>请确保填写插件类型。</dt> (type=value_error)",
-      "load": "插件 nonebot-plugin-boardgame 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-boardgame\u001b[39m \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.2.1\u001b[39;22m                    \n     \u001b[34mdescription\u001b[39m  : 适用于 Nonebot2 的棋类游戏插件     \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.2.0,<3.0.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-datastore\u001b[39m \u001b[39;1m>=0.6.0a1,<0.7.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-htmlrender\u001b[39m \u001b[39;1m>=0.0.4\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0-rc.1,<3.0.0\u001b[39;22m\n插件 nonebot-plugin-boardgame 依赖的插件如下：\n    nonebot_plugin_datastore, nonebot_plugin_htmlrender, nonebot_plugin_localstore\n插件 nonebot_plugin_boardgame 加载正常：\n    \u001b[32m06-26 14:08:40\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-26 14:08:40\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-26 14:08:40\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_localstore\u001b[0m\"\n    \u001b[32m06-26 14:08:41\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_datastore\u001b[0m\"\n    \u001b[32m06-26 14:08:42\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_htmlrender\u001b[0m\"\n    \u001b[32m06-26 14:08:42\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_boardgame\u001b[0m\"",
+      "validation": "通过",
+      "load": "插件 nonebot-plugin-boardgame 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-boardgame\u001b[39m \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.3.0\u001b[39;22m                    \n     \u001b[34mdescription\u001b[39m  : 适用于 Nonebot2 的棋类游戏插件     \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mnonebot-plugin-datastore\u001b[39m \u001b[39;1m>=1.0.0,<2.0.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-htmlrender\u001b[39m \u001b[39;1m>=0.2.0,<0.3.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-send-anything-anywhere\u001b[39m \u001b[39;1m>=0.2.7,<0.3.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-session\u001b[39m \u001b[39;1m>=0.0.5,<0.1.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-userinfo\u001b[39m \u001b[39;1m>=0.0.1,<0.1.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0,<3.0.0\u001b[39;22m\n插件 nonebot-plugin-boardgame 依赖的插件如下：\n    nonebot_plugin_datastore, nonebot_plugin_htmlrender, nonebot_plugin_localstore, nonebot_plugin_saa, nonebot_plugin_session\n插件 nonebot_plugin_boardgame 加载正常：\n    \u001b[32m06-27 12:07:22\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-27 12:07:22\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-27 12:07:22\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_saa\u001b[0m\"\n    \u001b[32m06-27 12:07:22\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_localstore\u001b[0m\"\n    \u001b[32m06-27 12:07:23\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_datastore\u001b[0m\"\n    \u001b[32m06-27 12:07:23\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_session\u001b[0m\"\n    \u001b[32m06-27 12:07:24\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_userinfo\u001b[0m\"\n    \u001b[32m06-27 12:07:24\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_htmlrender\u001b[0m\"\n    \u001b[32m06-27 12:07:24\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_boardgame\u001b[0m\"",
       "metadata": {
         "name": "棋类游戏",
         "description": "五子棋、黑白棋、围棋",
         "usage": "@我 + “五子棋”、“黑白棋”、“围棋”开始一局游戏;\n再发送“落子 字母+数字”下棋，如“落子 A1”;\n发送“结束下棋”结束当前棋局；发送“显示棋盘”显示当前棋局",
-        "type": null,
-        "homepage": null,
-        "supported_adapters": null
+        "type": "application",
+        "homepage": "https://github.com/noneplugin/nonebot-plugin-boardgame",
+        "supported_adapters": [
+          "~kaiheila",
+          "~onebot.v11",
+          "~qqguild",
+          "~telegram",
+          "~onebot.v12"
+        ]
       }
     },
     "inputs": {
@@ -2821,27 +2868,52 @@
         "type": null,
         "supported_adapters": null
       },
-      "new": null
+      "new": {
+        "module_name": "nonebot_plugin_boardgame",
+        "project_link": "nonebot-plugin-boardgame",
+        "name": "棋类游戏",
+        "desc": "五子棋、黑白棋、围棋",
+        "author": "MeetWq",
+        "homepage": "https://github.com/noneplugin/nonebot-plugin-boardgame",
+        "tags": [
+          {
+            "label": "a:onebot",
+            "color": "#000000"
+          }
+        ],
+        "is_official": false,
+        "type": "application",
+        "supported_adapters": [
+          "nonebot.adapters.onebot.v12",
+          "nonebot.adapters.telegram",
+          "nonebot.adapters.onebot.v11",
+          "nonebot.adapters.kaiheila",
+          "nonebot.adapters.qqguild"
+        ]
+      }
     }
   },
   "nonebot-plugin-wordcloud:nonebot_plugin_wordcloud": {
-    "time": "2023-06-26T22:09:00.000148+08:00",
-    "version": "0.4.8",
+    "time": "2023-06-27T20:07:56.336919+08:00",
+    "version": "0.4.9",
     "results": {
-      "validation": false,
+      "validation": true,
       "load": true,
       "metadata": true
     },
     "outputs": {
-      "validation": "2 validation errors for PluginPublishInfo\nhomepage\n  none is not an allowed value (type=type_error.none.not_allowed)\ntype\n  ⚠️ 插件类型不能为空。<dt>请确保填写插件类型。</dt> (type=value_error)",
-      "load": "插件 nonebot-plugin-wordcloud 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-wordcloud\u001b[39m \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.4.8\u001b[39;22m                    \n     \u001b[34mdescription\u001b[39m  : 适用于 NoneBot2 的词云插件       \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36memoji\u001b[39m \u001b[39;1m>=1.6.3,<3.0.0\u001b[39;22m\n     - \u001b[36mjieba\u001b[39m \u001b[39;1m>=0.42.1,<0.43.0\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.2.0,<3.0.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-apscheduler\u001b[39m \u001b[39;1m>=0.2.0,<0.3.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-chatrecorder\u001b[39m \u001b[39;1m>=0.2.3,<0.3.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-datastore\u001b[39m \u001b[39;1m>=0.6.0a2,<0.7.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0-rc.1,<3.0.0\u001b[39;22m\n     - \u001b[36mtzdata\u001b[39m \u001b[39;1m*\u001b[39;22m\n     - \u001b[36mwordcloud\u001b[39m \u001b[39;1m>=1.8.1,<2.0.0\u001b[39;22m\n插件 nonebot-plugin-wordcloud 依赖的插件如下：\n    nonebot_plugin_apscheduler, nonebot_plugin_chatrecorder, nonebot_plugin_datastore, nonebot_plugin_localstore\n插件 nonebot_plugin_wordcloud 加载正常：\n    \u001b[32m06-26 14:08:54\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-26 14:08:54\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-26 14:08:55\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_apscheduler\u001b[0m\"\n    \u001b[32m06-26 14:08:55\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_localstore\u001b[0m\"\n    \u001b[32m06-26 14:08:56\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_datastore\u001b[0m\"\n    \u001b[32m06-26 14:08:56\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_chatrecorder\u001b[0m\"\n    \u001b[32m06-26 14:08:59\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_wordcloud\u001b[0m\"",
+      "validation": "通过",
+      "load": "插件 nonebot-plugin-wordcloud 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-wordcloud\u001b[39m \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.4.9\u001b[39;22m                    \n     \u001b[34mdescription\u001b[39m  : 适用于 NoneBot2 的词云插件       \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36memoji\u001b[39m \u001b[39;1m>=1.6.3,<3.0.0\u001b[39;22m\n     - \u001b[36mjieba\u001b[39m \u001b[39;1m>=0.42.1,<0.43.0\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.2.0,<3.0.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-apscheduler\u001b[39m \u001b[39;1m>=0.3.0,<0.4.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-chatrecorder\u001b[39m \u001b[39;1m>=0.2.3,<0.3.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-datastore\u001b[39m \u001b[39;1m>=0.6.0,<2.0.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0,<3.0.0\u001b[39;22m\n     - \u001b[36mtzdata\u001b[39m \u001b[39;1m*\u001b[39;22m\n     - \u001b[36mwordcloud\u001b[39m \u001b[39;1m>=1.8.1,<2.0.0\u001b[39;22m\n插件 nonebot-plugin-wordcloud 依赖的插件如下：\n    nonebot_plugin_apscheduler, nonebot_plugin_chatrecorder, nonebot_plugin_datastore, nonebot_plugin_localstore\n插件 nonebot_plugin_wordcloud 加载正常：\n    \u001b[32m06-27 12:07:51\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-27 12:07:51\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-27 12:07:51\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_apscheduler\u001b[0m\"\n    \u001b[32m06-27 12:07:51\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_localstore\u001b[0m\"\n    \u001b[32m06-27 12:07:52\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_datastore\u001b[0m\"\n    \u001b[32m06-27 12:07:52\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_chatrecorder\u001b[0m\"\n    \u001b[32m06-27 12:07:55\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_wordcloud\u001b[0m\"",
       "metadata": {
         "name": "词云",
         "description": "利用群消息生成词云",
         "usage": "获取今天的词云\n/今日词云\n获取昨天的词云\n/昨日词云\n获取本周词云\n/本周词云\n获取本月词云\n/上周词云\n获取上周词云\n/本月词云\n获取年度词云\n/上月词云\n获取上月词云\n/年度词云\n\n历史词云(支持 ISO8601 格式的日期与时间，如 2022-02-22T22:22:22)\n获取某日的词云\n/历史词云 2022-01-01\n获取指定时间段的词云\n/历史词云\n/历史词云 2022-01-01~2022-02-22\n/历史词云 2022-02-22T11:11:11~2022-02-22T22:22:22\n\n如果想要获取自己的发言，可在命令前添加 我的\n/我的今日词云\n\n自定义词云形状\n/设置词云形状\n/删除词云形状\n仅超级用户可设置默认词云形状\n/设置词云默认形状\n/删除词云默认形状\n\n设置定时发送每日词云\n/词云每日定时发送状态\n/开启词云每日定时发送\n/开启词云每日定时发送 23:59\n/关闭词云每日定时发送",
-        "type": null,
-        "homepage": null,
-        "supported_adapters": null
+        "type": "application",
+        "homepage": "https://github.com/he0119/nonebot-plugin-wordcloud",
+        "supported_adapters": [
+          "~onebot.v12",
+          "~onebot.v11"
+        ]
       }
     },
     "inputs": {
@@ -2860,7 +2932,21 @@
         "type": null,
         "supported_adapters": null
       },
-      "new": null
+      "new": {
+        "module_name": "nonebot_plugin_wordcloud",
+        "project_link": "nonebot-plugin-wordcloud",
+        "name": "词云",
+        "desc": "利用群消息生成词云",
+        "author": "he0119",
+        "homepage": "https://github.com/he0119/nonebot-plugin-wordcloud",
+        "tags": [],
+        "is_official": false,
+        "type": "application",
+        "supported_adapters": [
+          "nonebot.adapters.onebot.v11",
+          "nonebot.adapters.onebot.v12"
+        ]
+      }
     }
   },
   "nonebot-plugin-chatrecorder:nonebot_plugin_chatrecorder": {
@@ -4387,23 +4473,29 @@
     }
   },
   "nonebot-plugin-chess:nonebot_plugin_chess": {
-    "time": "2023-06-26T22:14:00.578367+08:00",
-    "version": "0.3.1",
+    "time": "2023-06-27T20:08:12.848239+08:00",
+    "version": "0.4.1",
     "results": {
-      "validation": false,
+      "validation": true,
       "load": true,
       "metadata": true
     },
     "outputs": {
-      "validation": "2 validation errors for PluginPublishInfo\nhomepage\n  none is not an allowed value (type=type_error.none.not_allowed)\ntype\n  ⚠️ 插件类型不能为空。<dt>请确保填写插件类型。</dt> (type=value_error)",
-      "load": "插件 nonebot-plugin-chess 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-chess\u001b[39m \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.3.1\u001b[39;22m                \n     \u001b[34mdescription\u001b[39m  : Nonebot2 国际象棋插件      \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mchess\u001b[39m \u001b[39;1m>=1.9.0,<2.0.0\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.2.0,<3.0.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-datastore\u001b[39m \u001b[39;1m>=0.6.0a1,<0.7.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-htmlrender\u001b[39m \u001b[39;1m>=0.0.4\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0-rc.1,<3.0.0\u001b[39;22m\n插件 nonebot-plugin-chess 依赖的插件如下：\n    nonebot_plugin_datastore, nonebot_plugin_htmlrender, nonebot_plugin_localstore\n插件 nonebot_plugin_chess 加载正常：\n    \u001b[32m06-26 14:13:58\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-26 14:13:58\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-26 14:13:58\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_htmlrender\u001b[0m\"\n    \u001b[32m06-26 14:13:58\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_localstore\u001b[0m\"\n    \u001b[32m06-26 14:13:59\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_datastore\u001b[0m\"\n    \u001b[32m06-26 14:14:00\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_chess\u001b[0m\"",
+      "validation": "通过",
+      "load": "插件 nonebot-plugin-chess 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-chess\u001b[39m \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.4.1\u001b[39;22m                \n     \u001b[34mdescription\u001b[39m  : Nonebot2 国际象棋插件      \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mchess\u001b[39m \u001b[39;1m>=1.9.0,<2.0.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-datastore\u001b[39m \u001b[39;1m>=1.0.0,<2.0.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-htmlrender\u001b[39m \u001b[39;1m>=0.2.0,<0.3.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-send-anything-anywhere\u001b[39m \u001b[39;1m>=0.2.7,<0.3.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-session\u001b[39m \u001b[39;1m>=0.0.5,<0.1.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-userinfo\u001b[39m \u001b[39;1m>=0.0.1,<0.1.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0,<3.0.0\u001b[39;22m\n插件 nonebot-plugin-chess 依赖的插件如下：\n    nonebot_plugin_datastore, nonebot_plugin_htmlrender, nonebot_plugin_localstore, nonebot_plugin_saa, nonebot_plugin_session\n插件 nonebot_plugin_chess 加载正常：\n    \u001b[32m06-27 12:08:09\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-27 12:08:09\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-27 12:08:09\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_saa\u001b[0m\"\n    \u001b[32m06-27 12:08:09\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_localstore\u001b[0m\"\n    \u001b[32m06-27 12:08:10\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_datastore\u001b[0m\"\n    \u001b[32m06-27 12:08:10\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_session\u001b[0m\"\n    \u001b[32m06-27 12:08:11\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_userinfo\u001b[0m\"\n    \u001b[32m06-27 12:08:11\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_htmlrender\u001b[0m\"\n    \u001b[32m06-27 12:08:11\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_chess\u001b[0m\"",
       "metadata": {
         "name": "国际象棋",
         "description": "国际象棋，支持人机和对战",
         "usage": "@我 + “国际象棋人机”或“国际象棋对战”开始一局游戏；\n可使用“lv1~8”指定AI等级，如“国际象棋人机lv5”，默认为“lv4”；\n发送 起始坐标格式，如“e2e4”下棋；\n在坐标后加棋子字母表示升变，如“e7e8q”表示升变为后；\n发送“结束下棋”结束当前棋局；发送“显示棋盘”显示当前棋局",
-        "type": null,
-        "homepage": null,
-        "supported_adapters": null
+        "type": "application",
+        "homepage": "https://github.com/noneplugin/nonebot-plugin-chess",
+        "supported_adapters": [
+          "~qqguild",
+          "~telegram",
+          "~kaiheila",
+          "~onebot.v11",
+          "~onebot.v12"
+        ]
       }
     },
     "inputs": {
@@ -4427,7 +4519,29 @@
         "type": null,
         "supported_adapters": null
       },
-      "new": null
+      "new": {
+        "module_name": "nonebot_plugin_chess",
+        "project_link": "nonebot-plugin-chess",
+        "name": "国际象棋",
+        "desc": "国际象棋，支持人机和对战",
+        "author": "MeetWq",
+        "homepage": "https://github.com/noneplugin/nonebot-plugin-chess",
+        "tags": [
+          {
+            "label": "a:onebot",
+            "color": "#020202"
+          }
+        ],
+        "is_official": false,
+        "type": "application",
+        "supported_adapters": [
+          "nonebot.adapters.onebot.v12",
+          "nonebot.adapters.telegram",
+          "nonebot.adapters.onebot.v11",
+          "nonebot.adapters.kaiheila",
+          "nonebot.adapters.qqguild"
+        ]
+      }
     }
   },
   "nonebot-plugin-charpic:nonebot_plugin_charpic": {
@@ -4681,7 +4795,7 @@
     }
   },
   "nonebot-plugin-mockingbird:nonebot_plugin_mockingbird": {
-    "time": "2023-06-27T16:05:47.784813+08:00",
+    "time": "2023-06-27T20:08:15.979137+08:00",
     "version": null,
     "results": {
       "validation": false,
@@ -15022,7 +15136,7 @@
     }
   },
   "nonebot-plugin-pokemonfusion:nonebot_plugin_pokemonfusion": {
-    "time": "2023-06-27T16:06:56.776362+08:00",
+    "time": "2023-06-27T20:08:53.038349+08:00",
     "version": null,
     "results": {
       "validation": false,
@@ -15805,7 +15919,7 @@
     }
   },
   "nonebot-plugin-starrail-calendar:nonebot_plugin_starrail_calendar": {
-    "time": "2023-06-27T16:07:00.374115+08:00",
+    "time": "2023-06-27T20:08:57.127729+08:00",
     "version": null,
     "results": {
       "validation": false,
