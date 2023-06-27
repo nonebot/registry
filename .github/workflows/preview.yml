@@ -5,12 +5,13 @@ on:
     branches:
       - "main"
     paths:
-      - "websites/**"
+      - "src/**"
 
 permissions:
   contents: read
   pull-requests: write
   deployments: write
+  statuses: write
 
 concurrency:
   group: pull-request-preview-${{ github.event.number }}
@@ -24,17 +25,26 @@ jobs:
         uses: actions/checkout@v3
         with:
           ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Setup Node Environment
+        uses: ./.github/actions/setup-node
+
       - name: Get results
         run: |
           git fetch origin
           git checkout origin/results results.json adapters.json bots.json plugins.json
-          mv -t websites results.json adapters.json bots.json plugins.json
+          mv -t public results.json adapters.json bots.json plugins.json
+
+      - name: Build Website
+        run: pnpm build
+
       - name: Get Deploy Name
         run: echo "DEPLOY_NAME=deploy-preview-${{ github.event.number }}" >> $GITHUB_ENV
+
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v2
         with:
-          publish-dir: "./websites"
+          publish-dir: "./dist"
           production-deploy: false
           github-token: ${{ secrets.GITHUB_TOKEN }}
           deploy-message: "Deploy ${{ env.DEPLOY_NAME }}@${{ github.sha }}"

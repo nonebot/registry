@@ -1,0 +1,19 @@
+@use "sass:meta";
+
+.ok {
+  color: rgb(9 231 39);
+  font-size: 1.5em;
+}
+
+.err {
+  color: red;
+  font-size: 1.5em;
+}
+
+html[class~="dark"] {
+  @include meta.load-css("highlight.js/scss/github-dark");
+}
+
+html:not([class~="dark"]) {
+  @include meta.load-css("highlight.js/scss/github");
+}
