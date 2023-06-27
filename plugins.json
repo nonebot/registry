@@ -1849,7 +1849,7 @@
   {
     "module_name": "nonebot_plugin_cchess",
     "project_link": "nonebot-plugin-cchess",
-    "name": "中国象棋",
+    "name": "象棋",
     "desc": "象棋，支持人机和对战",
     "author": "MeetWq",
     "homepage": "https://github.com/noneplugin/nonebot-plugin-cchess",
@@ -1860,10 +1860,16 @@
       }
     ],
     "is_official": false,
-    "type": null,
-    "supported_adapters": null,
-    "valid": false,
-    "time": "2023-06-26T22:13:49.449466+08:00"
+    "type": "application",
+    "supported_adapters": [
+      "nonebot.adapters.onebot.v12",
+      "nonebot.adapters.qqguild",
+      "nonebot.adapters.telegram",
+      "nonebot.adapters.onebot.v11",
+      "nonebot.adapters.kaiheila"
+    ],
+    "valid": true,
+    "time": "2023-06-27T16:05:44.718801+08:00"
   },
   {
     "module_name": "nonebot_plugin_chess",
@@ -2004,7 +2010,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-27T12:05:35.488729+08:00"
+    "time": "2023-06-27T16:05:47.784813+08:00"
   },
   {
     "module_name": "nonebot_plugin_baidutranslate",
@@ -2625,7 +2631,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-27T00:05:46.143692+08:00"
+    "time": "2023-06-27T16:06:08.733989+08:00"
   },
   {
     "module_name": "nonebot_plugin_drawer",
@@ -3009,7 +3015,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-27T04:05:36.787257+08:00"
+    "time": "2023-06-27T16:06:28.450741+08:00"
   },
   {
     "module_name": "nonebot_plugin_RealESRGAN",
@@ -6087,7 +6093,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-26T22:55:10.635597+08:00"
+    "time": "2023-06-27T16:06:49.512256+08:00"
   },
   {
     "module_name": "nonebot_plugin_randomnana",
@@ -6665,7 +6671,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-27T12:06:20.307858+08:00"
+    "time": "2023-06-27T16:06:56.776362+08:00"
   },
   {
     "module_name": "tatarubot2",
@@ -6979,7 +6985,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-27T12:06:25.379075+08:00"
+    "time": "2023-06-27T16:07:00.374115+08:00"
   },
   {
     "module_name": "nonebot_plugin_wordle_help",
