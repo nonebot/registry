@@ -11,6 +11,7 @@ import { TableColumns } from "naive-ui/es/data-table/src/interface";
 import { usePageStore } from "@/stores/page";
 import { Results } from "@/types/results";
 
+import PluginLink from "./PluginLink.vue";
 import Load from "./icons/Load.vue";
 import Metadata from "./icons/Metadata.vue";
 import Validation from "./icons/Validation.vue";
@@ -44,19 +45,13 @@ const pagination = reactive({
 });
 const columns: TableColumns<Results[keyof Results]> = [
   {
-    title: "PyPI 项目名",
+    title: "PyPI 项目名 / 模块名",
     key: "plugin.old.module_name",
     render: (rowData) =>
-      h(
-        "a",
-        {
-          target: "_blank",
-          href: `https://pypi.org/project/${rowData.plugin.old.module_name}/`,
-          class: "text-inherit no-underline",
-        },
-        rowData.plugin.old.module_name,
-      ),
-
+      h(PluginLink, {
+        moduleName: rowData.plugin.old.module_name,
+        projectLink: rowData.plugin.old.project_link,
+      }),
     align: "center",
     titleAlign: "center",
     sorter(rowA, rowB) {
