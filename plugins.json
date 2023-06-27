@@ -484,7 +484,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-26T22:02:20.357641+08:00"
+    "time": "2023-06-27T12:05:19.499448+08:00"
   },
   {
     "module_name": "nonebot_plugin_autohelp",
@@ -2004,7 +2004,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-27T08:18:18.434725+08:00"
+    "time": "2023-06-27T12:05:35.488729+08:00"
   },
   {
     "module_name": "nonebot_plugin_baidutranslate",
@@ -6665,7 +6665,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-27T08:19:02.881659+08:00"
+    "time": "2023-06-27T12:06:20.307858+08:00"
   },
   {
     "module_name": "tatarubot2",
@@ -6979,7 +6979,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-27T08:19:07.718353+08:00"
+    "time": "2023-06-27T12:06:25.379075+08:00"
   },
   {
     "module_name": "nonebot_plugin_wordle_help",
@@ -7497,9 +7497,9 @@
     "module_name": "nonebot_plugin_nagabus",
     "project_link": "nonebot-plugin-nagabus",
     "name": "NAGA公交车",
-    "desc": "通过指令在NAGA进行雀魂/天凤牌谱解析",
+    "desc": "为群友提供NAGA拼车服务",
     "author": "ssttkkl",
-    "homepage": "https://github.com/ssttkkl/nonebot-plugin-nagabus",
+    "homepage": "https://github.com/bot-ssttkkl/nonebot-plugin-nagabus",
     "tags": [
       {
         "label": "日麻",
@@ -7507,10 +7507,16 @@
       }
     ],
     "is_official": false,
-    "type": null,
-    "supported_adapters": null,
-    "valid": false,
-    "time": "2023-06-26T23:05:20.254844+08:00"
+    "type": "application",
+    "supported_adapters": [
+      "nonebot.adapters.qqguild",
+      "nonebot.adapters.onebot.v11",
+      "nonebot.adapters.kaiheila",
+      "nonebot.adapters.telegram",
+      "nonebot.adapters.onebot.v12"
+    ],
+    "valid": true,
+    "time": "2023-06-27T12:07:04.012080+08:00"
   },
   {
     "module_name": "nonebot_plugin_random_draw",
