@@ -1,6 +1,4 @@
-.hljs {
-  background: none;
-}
+@use "sass:meta";
 
 .ok {
   color: rgb(9 231 39);
@@ -12,36 +10,10 @@
   font-size: 1.5em;
 }
 
-.show-metadata {
-  color: rgb(42 95 243);
-  font-size: 1.5em;
+html[class~="dark"] {
+  @include meta.load-css("highlight.js/scss/github-dark");
 }
 
-.empty-metadata {
-  color: rgb(236 194 5);
-  font-size: 1.5em;
-}
-
-.package {
-  color: rgb(151 151 151);
-  font-size: 0.95em;
-}
-
-.account {
-  color: rgb(151 151 151);
-  font-size: 1.5em;
-}
-
-.nav-item {
-  margin-left: 5px;
-}
-
-.back-to-top {
-  position: fixed;
-  font-size: 20px;
-  bottom: 55px;
-  right: 20px;
-  opacity: 0;
-  background-color: rgb(64 64 64 / 10%);
-  transition: opacity 0.3s ease-in-out;
+html:not([class~="dark"]) {
+  @include meta.load-css("highlight.js/scss/github");
 }

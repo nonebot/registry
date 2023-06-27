@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import { inject } from "vue";
+import { NButton, darkTheme } from "naive-ui";
+import { storeToRefs } from "pinia";
 
-import type { GlobalTheme } from "naive-ui";
-import { NButton, darkTheme, lightTheme } from "naive-ui";
+import { usePageStore } from "@/stores/page";
 
-const { setTheme } = inject("theme") as {
-  setTheme: (value: GlobalTheme | null) => void;
-};
+const store = usePageStore();
+const { theme } = storeToRefs(store);
 </script>
 
 <template>
-  <n-button @click="setTheme(darkTheme)"> 深色 </n-button>
-  <n-button @click="setTheme(lightTheme)"> 浅色 </n-button>
+  <n-button @click="() => store.setTheme(theme === null ? darkTheme : null)">
+    {{ theme === null ? "深色" : "浅色" }}
+  </n-button>
 </template>
