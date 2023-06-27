@@ -51,6 +51,7 @@ const columns: TableColumns<Results[keyof Results]> = [
       h(PluginLink, {
         moduleName: rowData.plugin.old.module_name,
         projectLink: rowData.plugin.old.project_link,
+        homepage: rowData.plugin.old.homepage,
       }),
     align: "center",
     titleAlign: "center",

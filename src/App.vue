@@ -63,7 +63,7 @@ const searchKeyword = ref("");
             type="text"
             placeholder="搜索"
         /></n-layout>
-        <n-layout class="my-3 max-w-[90rem] mx-auto">
+        <n-layout class="my-3 max-w-[90rem] mx-auto min-h-screen">
           <ResultTable :results="results" :search-keyword="searchKeyword" />
         </n-layout>
         <n-layout-footer bordered class="p-4">
