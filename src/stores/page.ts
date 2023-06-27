@@ -1,12 +1,16 @@
 import { ref } from "vue";
 
-import type { GlobalTheme } from "naive-ui";
+import { useDark, useToggle } from "@vueuse/core";
+import { darkTheme, type GlobalTheme } from "naive-ui";
 import { defineStore } from "pinia";
 
 import { Results } from "@/types/results";
 
 export const usePageStore = defineStore("page", () => {
-  const theme = ref(null as GlobalTheme | null);
+  const isDark = useDark();
+  const toggleDark = useToggle(isDark);
+  const theme = ref((isDark.value ? darkTheme : null) as GlobalTheme | null);
+
   const results = ref({} as Results);
   function initResults() {
     fetch("/results.json", { method: "GET" })
@@ -14,9 +18,12 @@ export const usePageStore = defineStore("page", () => {
       .then((data: Results) => (results.value = data))
       .catch(console.error);
   }
+
   function setTheme(toTheme: GlobalTheme | null) {
     theme.value = toTheme;
+    toggleDark();
   }
+
   function filterResults(keyword: string) {
     return Object.entries(results.value).reduce((acc, [key, value]) => {
       if (

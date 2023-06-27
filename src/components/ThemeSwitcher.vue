@@ -9,9 +9,7 @@ const { theme } = storeToRefs(store);
 </script>
 
 <template>
-  <n-button
-    @click="() => store.setTheme(theme?.name === 'light' ? darkTheme : null)"
-  >
-    {{ theme?.name === "light" ? "深色" : "浅色" }}
+  <n-button @click="() => store.setTheme(theme === null ? darkTheme : null)">
+    {{ theme === null ? "深色" : "浅色" }}
   </n-button>
 </template>

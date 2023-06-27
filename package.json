@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "@highlightjs/vue-plugin": "^2.1.0",
+    "@vueuse/core": "^10.2.0",
     "ansi_up": "^5.2.1",
     "highlight.js": "^11.8.0",
     "naive-ui": "^2.34.4",
