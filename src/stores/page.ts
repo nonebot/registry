@@ -18,6 +18,17 @@ export const usePageStore = defineStore("page", () => {
   function setTheme(toTheme: GlobalTheme) {
     theme.value = toTheme;
   }
+  function filterResults(keyword: string) {
+    return Object.entries(results.value).reduce((acc, [key, value]) => {
+      if (
+        key.toLowerCase().includes(keyword.toLowerCase()) ||
+        value.plugin.old.author.toLowerCase().includes(keyword.toLowerCase())
+      ) {
+        acc[key] = value;
+      }
+      return acc;
+    }, {} as Results);
+  }
 
-  return { theme, results, initResults, setTheme };
+  return { theme, results, initResults, setTheme, filterResults };
 });

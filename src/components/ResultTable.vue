@@ -1,32 +1,47 @@
 <template>
-  <n-data-table
-    :data="
-      Object.keys(results).map((name) => {
-        return { name, ...results[name] };
-      })
-    "
-    :pagination="pagination"
-    :columns="columns"
-  />
+  <n-data-table :data="data" :pagination="pagination" :columns="columns" />
 </template>
 
 <script setup lang="ts">
-import { h, ref } from "vue";
+import { computed, h, reactive } from "vue";
 
 import { NDataTable } from "naive-ui";
 import { TableColumns } from "naive-ui/es/data-table/src/interface";
 
+import { usePageStore } from "@/stores/page";
 import { Results } from "@/types/results";
 
 import Load from "./icons/Load.vue";
 import Metadata from "./icons/Metadata.vue";
 import Validation from "./icons/Validation.vue";
 
-defineProps<{
-  results: Results;
-}>();
+const store = usePageStore();
 
-const pagination = ref({ pageSize: 10 });
+const props = defineProps<{
+  results: Results;
+  searchKeyword: string;
+}>();
+const filteredResults = computed(() =>
+  store.filterResults(props.searchKeyword),
+);
+const data = computed(() =>
+  Object.keys(filteredResults.value).map((name) => {
+    return { name, ...filteredResults.value[name] };
+  }),
+);
+const pagination = reactive({
+  page: 1,
+  pageSize: 10,
+  pageSizes: [10, 25, 50, 100],
+  showSizePicker: true,
+  onChange: (page: number) => {
+    pagination.page = page;
+  },
+  onUpdatePageSize: (pageSize: number) => {
+    pagination.pageSize = pageSize;
+    pagination.page = 1;
+  },
+});
 const columns: TableColumns<Results[keyof Results]> = [
   {
     title: "PyPI 项目名",
