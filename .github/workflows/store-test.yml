@@ -112,14 +112,14 @@ jobs:
         with:
           ref: main
 
+      - name: Setup Node Environment
+        uses: ./.github/actions/setup-node
+
       - name: Download results
         uses: actions/download-artifact@v3
         with:
           name: results
           path: ${{ github.workspace }}/public
-
-      - name: Setup Node Environment
-        uses: ./.github/actions/setup-node
 
       - name: Build Website
         run: pnpm build
