@@ -7,9 +7,14 @@ import { defineStore } from "pinia";
 import { Results } from "@/types/results";
 
 export const usePageStore = defineStore("page", () => {
-  const isDark = useDark();
+  const theme = ref(null as GlobalTheme | null);
+  const isDark = useDark({
+    onChanged(dark: boolean) {
+      theme.value = dark ? darkTheme : null;
+    },
+  });
   const toggleDark = useToggle(isDark);
-  const theme = ref((isDark.value ? darkTheme : null) as GlobalTheme | null);
+  theme.value = (isDark.value ? darkTheme : null) as GlobalTheme | null;
 
   const results = ref({} as Results);
   function initResults() {
@@ -17,11 +22,6 @@ export const usePageStore = defineStore("page", () => {
       .then((response) => response.json())
       .then((data: Results) => (results.value = data))
       .catch(console.error);
-  }
-
-  function setTheme(toTheme: GlobalTheme | null) {
-    theme.value = toTheme;
-    toggleDark();
   }
 
   function filterResults(keyword: string) {
@@ -36,5 +36,5 @@ export const usePageStore = defineStore("page", () => {
     }, {} as Results);
   }
 
-  return { theme, results, initResults, setTheme, filterResults };
+  return { theme, results, initResults, toggleDark, filterResults };
 });

@@ -5,12 +5,12 @@ import Github from "vue-material-design-icons/Github.vue";
 
 <template>
   <n-button
-    style="font-size: 24px"
+    text
     tag="a"
     href="https://github.com/nonebot/registry"
     target="_blank"
   >
-    <n-icon>
+    <n-icon size="24">
       <Github />
     </n-icon>
   </n-button>
