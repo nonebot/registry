@@ -57,6 +57,9 @@ jobs:
         run: poetry run python -m src.utils.store_test -k '${{ github.event.client_payload.key }}' -f
         env:
           PLUGIN_CONFIG: ${{ github.event.client_payload.config }}
+      - name: Update registry(Bot, Apdater)
+        if: ${{ contains(fromJSON('["Bot", "Adapter"]'), github.event.client_payload.type) }}
+        run: mv plugin_test/store/results.json plugin_test/results.json
       - name: Upload results
         uses: actions/upload-artifact@v3
         with:
