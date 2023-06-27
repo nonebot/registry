@@ -1,3 +1,20 @@
+<script setup lang="ts">
+import { ref } from "vue";
+
+import AnsiUp from "ansi_up";
+import { NModal } from "naive-ui";
+import CheckCircleOutline from "vue-material-design-icons/CheckCircleOutline.vue";
+import CheckCloseOutline from "vue-material-design-icons/CloseCircleOutline.vue";
+
+import { Results } from "@/types/results";
+
+const ansi_up = new AnsiUp();
+
+defineProps<{ rowData: Results[keyof Results] }>();
+
+const showModal = ref(false);
+</script>
+
 <template>
   <div @click="showModal = true">
     <CheckCircleOutline v-if="rowData.results.load" class="ok" />
@@ -17,20 +34,3 @@
     </template>
   </n-modal>
 </template>
-
-<script setup lang="ts">
-import { ref } from "vue";
-
-import AnsiUp from "ansi_up";
-import { NModal } from "naive-ui";
-import CheckCircleOutline from "vue-material-design-icons/CheckCircleOutline.vue";
-import CheckCloseOutline from "vue-material-design-icons/CloseCircleOutline.vue";
-
-import { Results } from "@/types/results";
-
-const ansi_up = new AnsiUp();
-
-defineProps<{ rowData: Results[keyof Results] }>();
-
-const showModal = ref(false);
-</script>

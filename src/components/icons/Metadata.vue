@@ -1,3 +1,18 @@
+<script setup lang="ts">
+import { ref } from "vue";
+
+import hljsVuePlugin from "@highlightjs/vue-plugin";
+import { NModal } from "naive-ui";
+import PackageVariant from "vue-material-design-icons/PackageVariant.vue";
+import PackageVariantRemove from "vue-material-design-icons/PackageVariantRemove.vue";
+
+import { Results } from "@/types/results";
+
+const props = defineProps<{ rowData: Results[keyof Results] }>();
+
+const showModal = ref(false);
+</script>
+
 <template>
   <div @click="showModal = true">
     <PackageVariant
@@ -22,18 +37,3 @@
     </template>
   </n-modal>
 </template>
-
-<script setup lang="ts">
-import { ref } from "vue";
-
-import hljsVuePlugin from "@highlightjs/vue-plugin";
-import { NModal } from "naive-ui";
-import PackageVariant from "vue-material-design-icons/PackageVariant.vue";
-import PackageVariantRemove from "vue-material-design-icons/PackageVariantRemove.vue";
-
-import { Results } from "@/types/results";
-
-const props = defineProps<{ rowData: Results[keyof Results] }>();
-
-const showModal = ref(false);
-</script>
