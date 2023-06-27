@@ -28,7 +28,6 @@ export default defineConfig({
       output: {
         manualChunks(id) {
           if (id.includes("naive-ui")) return "naive-ui";
-          if (id.includes("highlight.js")) return "highlight-js";
           if (id.includes("node_modules")) return "vendor";
         },
       },

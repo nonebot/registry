@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { NButton, darkTheme, lightTheme } from "naive-ui";
+import { NButton, darkTheme } from "naive-ui";
 import { storeToRefs } from "pinia";
 
 import { usePageStore } from "@/stores/page";
@@ -10,10 +10,8 @@ const { theme } = storeToRefs(store);
 
 <template>
   <n-button
-    @click="
-      () => store.setTheme(theme.name === 'light' ? darkTheme : lightTheme)
-    "
+    @click="() => store.setTheme(theme?.name === 'light' ? darkTheme : null)"
   >
-    {{ theme.name === "light" ? "深色" : "浅色" }}
+    {{ theme?.name === "light" ? "深色" : "浅色" }}
   </n-button>
 </template>

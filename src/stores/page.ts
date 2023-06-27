@@ -1,13 +1,12 @@
 import { ref } from "vue";
 
 import type { GlobalTheme } from "naive-ui";
-import { lightTheme } from "naive-ui";
 import { defineStore } from "pinia";
 
 import { Results } from "@/types/results";
 
 export const usePageStore = defineStore("page", () => {
-  const theme = ref(lightTheme as GlobalTheme);
+  const theme = ref(null as GlobalTheme | null);
   const results = ref({} as Results);
   function initResults() {
     fetch("/results.json", { method: "GET" })
@@ -15,7 +14,7 @@ export const usePageStore = defineStore("page", () => {
       .then((data: Results) => (results.value = data))
       .catch(console.error);
   }
-  function setTheme(toTheme: GlobalTheme) {
+  function setTheme(toTheme: GlobalTheme | null) {
     theme.value = toTheme;
   }
   function filterResults(keyword: string) {
