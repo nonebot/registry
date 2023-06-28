@@ -2,14 +2,17 @@
 import { ref } from "vue";
 
 import hljsVuePlugin from "@highlightjs/vue-plugin";
+import hljs from "highlight.js/lib/core";
+import json from "highlight.js/lib/languages/json";
 import { NModal } from "naive-ui";
 import PackageVariant from "vue-material-design-icons/PackageVariant.vue";
 import PackageVariantRemove from "vue-material-design-icons/PackageVariantRemove.vue";
 
 import { Results } from "@/types/results";
 
-const props = defineProps<{ rowData: Results[keyof Results] }>();
+hljs.registerLanguage("json", json);
 
+const props = defineProps<{ rowData: Results[keyof Results] }>();
 const showModal = ref(false);
 </script>
 
