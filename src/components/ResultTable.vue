@@ -45,12 +45,13 @@ const columns: TableColumns<Results[keyof Results]> = [
     key: "plugin.old.module_name",
     render: (rowData) =>
       h(PluginLink, {
+        author: rowData.plugin.old.author,
         moduleName: rowData.plugin.old.module_name,
         projectLink: rowData.plugin.old.project_link,
         homepage: rowData.plugin.old.homepage,
       }),
-    align: "center",
-    titleAlign: "center",
+    align: "left",
+    titleAlign: "left",
     sorter(rowA, rowB) {
       return rowA.plugin.old.module_name.localeCompare(
         rowB.plugin.old.module_name,
