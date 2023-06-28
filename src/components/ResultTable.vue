@@ -8,9 +8,12 @@ import { usePageStore } from "@/stores/page";
 import { Results } from "@/types/results";
 
 import PluginLink from "./PluginLink.vue";
+import ColorTime from "./icons/ColorTime.vue";
 import Load from "./icons/Load.vue";
 import Metadata from "./icons/Metadata.vue";
 import Validation from "./icons/Validation.vue";
+
+const nowTime = new Date().getTime();
 
 const store = usePageStore();
 
@@ -112,7 +115,11 @@ const columns: TableColumns<Results[keyof Results]> = [
     key: "time",
     align: "center",
     titleAlign: "center",
-    render: (rowData) => new Date(rowData.time).toLocaleString(),
+    render: (rowData) =>
+      h(ColorTime, {
+        checkTime: rowData.time,
+        nowTime: nowTime,
+      }),
     sorter(rowA, rowB) {
       return Date.parse(rowA.time) - Date.parse(rowB.time);
     },
