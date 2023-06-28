@@ -4796,7 +4796,7 @@
   },
   "nonebot-plugin-mockingbird:nonebot_plugin_mockingbird": {
     "time": "2023-06-28T08:18:29.863929+08:00",
-    "version": null,
+    "version": "0.2.1",
     "results": {
       "validation": false,
       "load": false,
@@ -15137,7 +15137,7 @@
   },
   "nonebot-plugin-pokemonfusion:nonebot_plugin_pokemonfusion": {
     "time": "2023-06-28T08:18:58.656665+08:00",
-    "version": null,
+    "version": "1.0.7",
     "results": {
       "validation": false,
       "load": false,
@@ -15920,7 +15920,7 @@
   },
   "nonebot-plugin-starrail-calendar:nonebot_plugin_starrail_calendar": {
     "time": "2023-06-28T08:19:02.112073+08:00",
-    "version": null,
+    "version": "1.0.4",
     "results": {
       "validation": false,
       "load": false,
