@@ -2027,7 +2027,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-28T04:04:58.675143+08:00"
+    "time": "2023-06-28T08:18:29.863929+08:00"
   },
   {
     "module_name": "nonebot_plugin_baidutranslate",
@@ -6688,7 +6688,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-28T04:05:42.225088+08:00"
+    "time": "2023-06-28T08:18:58.656665+08:00"
   },
   {
     "module_name": "tatarubot2",
@@ -7002,7 +7002,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-28T04:05:47.033573+08:00"
+    "time": "2023-06-28T08:19:02.112073+08:00"
   },
   {
     "module_name": "nonebot_plugin_wordle_help",
