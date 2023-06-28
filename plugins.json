@@ -1198,10 +1198,10 @@
   {
     "module_name": "nonebot_plugin_chatrecorder",
     "project_link": "nonebot-plugin-chatrecorder",
-    "name": "聊天记录插件",
+    "name": "聊天记录",
     "desc": "记录机器人收到和发出的消息",
     "author": "MeetWq",
-    "homepage": "https://github.com/MeetWq/nonebot-plugin-chatrecorder",
+    "homepage": "https://github.com/noneplugin/nonebot-plugin-chatrecorder",
     "tags": [
       {
         "label": "a:onebot",
@@ -1209,10 +1209,13 @@
       }
     ],
     "is_official": false,
-    "type": null,
-    "supported_adapters": null,
-    "valid": false,
-    "time": "2023-06-26T22:09:08.173276+08:00"
+    "type": "library",
+    "supported_adapters": [
+      "nonebot.adapters.onebot.v11",
+      "nonebot.adapters.onebot.v12"
+    ],
+    "valid": true,
+    "time": "2023-06-28T12:05:10.291082+08:00"
   },
   {
     "module_name": "nonebot_plugin_antiflash",
@@ -6726,7 +6729,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-26T22:59:46.948095+08:00"
+    "time": "2023-06-28T12:05:53.666846+08:00"
   },
   {
     "module_name": "nonebot_plugin_osuverify",
@@ -6816,7 +6819,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-26T23:00:23.576717+08:00"
+    "time": "2023-06-28T12:06:03.816608+08:00"
   },
   {
     "module_name": "nonebot_plugin_appinsights",

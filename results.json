@@ -2950,17 +2950,27 @@
     }
   },
   "nonebot-plugin-chatrecorder:nonebot_plugin_chatrecorder": {
-    "time": "2023-06-26T22:09:08.173276+08:00",
-    "version": "0.2.3",
+    "time": "2023-06-28T12:05:10.291082+08:00",
+    "version": "0.2.4",
     "results": {
-      "validation": false,
+      "validation": true,
       "load": true,
-      "metadata": false
+      "metadata": true
     },
     "outputs": {
-      "validation": "缺少元数据",
-      "load": "插件 nonebot-plugin-chatrecorder 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-chatrecorder\u001b[39m \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.2.3\u001b[39;22m                       \n     \u001b[34mdescription\u001b[39m  : 适用于 Nonebot2 的聊天记录插件        \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.2.0,<3.0.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-datastore\u001b[39m \u001b[39;1m>=0.6.0a0,<0.7.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0-rc.1,<3.0.0\u001b[39;22m\n插件 nonebot-plugin-chatrecorder 依赖的插件如下：\n    nonebot_plugin_datastore, nonebot_plugin_localstore\n插件 nonebot_plugin_chatrecorder 加载正常：\n    \u001b[32m06-26 14:09:06\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-26 14:09:06\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-26 14:09:06\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_localstore\u001b[0m\"\n    \u001b[32m06-26 14:09:07\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_datastore\u001b[0m\"\n    \u001b[32m06-26 14:09:07\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_chatrecorder\u001b[0m\"",
-      "metadata": null
+      "validation": "通过",
+      "load": "插件 nonebot-plugin-chatrecorder 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-chatrecorder\u001b[39m \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.2.4\u001b[39;22m                       \n     \u001b[34mdescription\u001b[39m  : 适用于 Nonebot2 的聊天记录插件        \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mnonebot-plugin-datastore\u001b[39m \u001b[39;1m>=1.0.0,<2.0.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0,<3.0.0\u001b[39;22m\n插件 nonebot-plugin-chatrecorder 依赖的插件如下：\n    nonebot_plugin_datastore, nonebot_plugin_localstore\n插件 nonebot_plugin_chatrecorder 加载正常：\n    \u001b[32m06-28 04:05:08\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-28 04:05:08\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-28 04:05:08\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_localstore\u001b[0m\"\n    \u001b[32m06-28 04:05:09\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_datastore\u001b[0m\"\n    \u001b[32m06-28 04:05:09\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_chatrecorder\u001b[0m\"",
+      "metadata": {
+        "name": "聊天记录",
+        "description": "记录机器人收到和发出的消息",
+        "usage": "请参考文档",
+        "type": "library",
+        "homepage": "https://github.com/noneplugin/nonebot-plugin-chatrecorder",
+        "supported_adapters": [
+          "~onebot.v11",
+          "~onebot.v12"
+        ]
+      }
     },
     "inputs": {
       "config": ""
@@ -2983,7 +2993,26 @@
         "type": null,
         "supported_adapters": null
       },
-      "new": null
+      "new": {
+        "module_name": "nonebot_plugin_chatrecorder",
+        "project_link": "nonebot-plugin-chatrecorder",
+        "name": "聊天记录",
+        "desc": "记录机器人收到和发出的消息",
+        "author": "MeetWq",
+        "homepage": "https://github.com/noneplugin/nonebot-plugin-chatrecorder",
+        "tags": [
+          {
+            "label": "a:onebot",
+            "color": "#000000"
+          }
+        ],
+        "is_official": false,
+        "type": "library",
+        "supported_adapters": [
+          "nonebot.adapters.onebot.v11",
+          "nonebot.adapters.onebot.v12"
+        ]
+      }
     }
   },
   "nonebot-plugin-antiflash:nonebot_plugin_antiflash": {
@@ -15205,8 +15234,8 @@
     }
   },
   "nonebot-plugin-talk-with-chatgpt:nonebot_plugin_talk_with_chatgpt": {
-    "time": "2023-06-26T22:59:46.948095+08:00",
-    "version": "0.6.0",
+    "time": "2023-06-28T12:05:53.666846+08:00",
+    "version": "0.6.1",
     "results": {
       "validation": false,
       "load": true,
@@ -15214,7 +15243,7 @@
     },
     "outputs": {
       "validation": "2 validation errors for PluginPublishInfo\nhomepage\n  none is not an allowed value (type=type_error.none.not_allowed)\ntype\n  ⚠️ 插件类型不能为空。<dt>请确保填写插件类型。</dt> (type=value_error)",
-      "load": "插件 nonebot-plugin-talk-with-chatgpt 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-talk-with-chatgpt\u001b[39m     \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.6.0\u001b[39;22m                                \n     \u001b[34mdescription\u001b[39m  : Nonebot2 基于accessToken登录的ChatGPT聊天插件 \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mhttpx\u001b[39m \u001b[39;1m>=0.22.0\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.0.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0rc1\u001b[39;22m\n     - \u001b[36mPillow\u001b[39m \u001b[39;1m>=9.0.0\u001b[39;22m\n     - \u001b[36mujson\u001b[39m \u001b[39;1m>=5.0.0\u001b[39;22m\n插件 nonebot-plugin-talk-with-chatgpt 依赖的插件如下：\n    \n插件 nonebot_plugin_talk_with_chatgpt 加载正常：\n    \u001b[32m06-26 14:59:46\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-26 14:59:46\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-26 14:59:46\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_talk_with_chatgpt\u001b[0m\"",
+      "load": "插件 nonebot-plugin-talk-with-chatgpt 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-talk-with-chatgpt\u001b[39m     \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.6.1\u001b[39;22m                                \n     \u001b[34mdescription\u001b[39m  : Nonebot2 基于accessToken登录的ChatGPT聊天插件 \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mhttpx\u001b[39m \u001b[39;1m>=0.22.0\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.0.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0rc1\u001b[39;22m\n     - \u001b[36mPillow\u001b[39m \u001b[39;1m>=9.0.0\u001b[39;22m\n     - \u001b[36mujson\u001b[39m \u001b[39;1m>=5.0.0\u001b[39;22m\n插件 nonebot-plugin-talk-with-chatgpt 依赖的插件如下：\n    \n插件 nonebot_plugin_talk_with_chatgpt 加载正常：\n    \u001b[32m06-28 04:05:52\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-28 04:05:53\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-28 04:05:53\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_talk_with_chatgpt\u001b[0m\"",
       "metadata": {
         "name": "talk with chatgpt",
         "description": "一个简单的基于accessToken验证的ChatGPT对话插件",
@@ -15429,8 +15458,8 @@
     }
   },
   "nonebot-plugin-rename:nonebot_plugin_rename": {
-    "time": "2023-06-26T23:00:23.576717+08:00",
-    "version": "1.5.6",
+    "time": "2023-06-28T12:06:03.816608+08:00",
+    "version": "1.6.0",
     "results": {
       "validation": true,
       "load": true,
@@ -15438,7 +15467,7 @@
     },
     "outputs": {
       "validation": "通过",
-      "load": "插件 nonebot-plugin-rename 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-rename\u001b[39m \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m1.5.6\u001b[39;22m                 \n     \u001b[34mdescription\u001b[39m  : 更改qq机器人的群名片，内置多种有趣名片  \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mhttpx\u001b[39m \u001b[39;1m>=0.20.0,<1.0.0\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.2.2,<3.0.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-apscheduler\u001b[39m \u001b[39;1m>=0.2.0,<0.3.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0,<3.0.0\u001b[39;22m\n     - \u001b[36mpillow\u001b[39m \u001b[39;1m>=9.5.0,<10.0.0\u001b[39;22m\n     - \u001b[36mpsutil\u001b[39m \u001b[39;1m>=5.9.5,<6.0.0\u001b[39;22m\n     - \u001b[36mpyyaml\u001b[39m \u001b[39;1m>=6.0,<7.0\u001b[39;22m\n插件 nonebot-plugin-rename 依赖的插件如下：\n    nonebot_plugin_apscheduler\n插件 nonebot_plugin_rename 加载正常：\n    \u001b[32m06-26 15:00:21\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-26 15:00:21\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-26 15:00:22\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_apscheduler\u001b[0m\"\n    \u001b[32m06-26 15:00:22\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_rename\u001b[0m\"",
+      "load": "插件 nonebot-plugin-rename 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-rename\u001b[39m \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m1.6.0\u001b[39;22m                 \n     \u001b[34mdescription\u001b[39m  : 更改qq机器人的群名片，内置多种有趣名片  \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mhttpx\u001b[39m \u001b[39;1m>=0.20.0,<1.0.0\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.2.2,<3.0.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-apscheduler\u001b[39m \u001b[39;1m>=0.2.0,<0.3.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0,<3.0.0\u001b[39;22m\n     - \u001b[36mpillow\u001b[39m \u001b[39;1m>=9.5.0,<10.0.0\u001b[39;22m\n     - \u001b[36mpsutil\u001b[39m \u001b[39;1m>=5.9.5,<6.0.0\u001b[39;22m\n     - \u001b[36mpyyaml\u001b[39m \u001b[39;1m>=6.0,<7.0\u001b[39;22m\n插件 nonebot-plugin-rename 依赖的插件如下：\n    nonebot_plugin_apscheduler\n插件 nonebot_plugin_rename 加载正常：\n    \u001b[32m06-28 04:06:02\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-28 04:06:02\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-28 04:06:02\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_apscheduler\u001b[0m\"\n    \u001b[32m06-28 04:06:02\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_rename\u001b[0m\"",
       "metadata": {
         "name": "nonebot_plugin_rename",
         "description": "用于更改qq机器人的群名片，内置多种有趣名片",
