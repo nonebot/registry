@@ -5003,7 +5003,7 @@
     "type": "library",
     "supported_adapters": null,
     "valid": true,
-    "time": "2023-06-26T22:46:48.423561+08:00"
+    "time": "2023-06-28T20:06:22.221351+08:00"
   },
   {
     "module_name": "nonebot-plugin-mcport",
@@ -6368,8 +6368,8 @@
   {
     "module_name": "nonebot_plugin_genshin_cos",
     "project_link": "nonebot-plugin-genshin-cos",
-    "name": "原神cos",
-    "desc": "获取米游社cos图片",
+    "name": "米游社cos",
+    "desc": "获取原神coser图片",
     "author": "Cvandia",
     "homepage": "https://github.com/Cvandia/nonebot_plugin_genshin_cos",
     "tags": [
@@ -6387,10 +6387,12 @@
       }
     ],
     "is_official": false,
-    "type": null,
-    "supported_adapters": null,
-    "valid": false,
-    "time": "2023-06-26T22:57:07.840201+08:00"
+    "type": "application",
+    "supported_adapters": [
+      "nonebot.adapters.onebot.v11"
+    ],
+    "valid": true,
+    "time": "2023-06-28T20:06:36.131141+08:00"
   },
   {
     "module_name": "nonebot_plugin_chatgpt_plus",
