@@ -2656,7 +2656,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-27T16:06:08.733989+08:00"
+    "time": "2023-06-30T00:05:11.949550+08:00"
   },
   {
     "module_name": "nonebot_plugin_drawer",
@@ -6578,7 +6578,7 @@
       "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-26T22:58:32.110281+08:00"
+    "time": "2023-06-30T00:05:48.217196+08:00"
   },
   {
     "module_name": "GenshinUID",
@@ -7874,13 +7874,13 @@
     "is_official": false,
     "type": "application",
     "supported_adapters": [
-      "nonebot.adapters.onebot.v12",
-      "nonebot.adapters.kaiheila",
-      "nonebot.adapters.onebot.v11",
       "nonebot.adapters.telegram",
-      "nonebot.adapters.qqguild"
+      "nonebot.adapters.onebot.v11",
+      "nonebot.adapters.kaiheila",
+      "nonebot.adapters.qqguild",
+      "nonebot.adapters.onebot.v12"
     ],
     "valid": true,
-    "time": "2023-06-29T10:28:05.770525+08:00"
+    "time": "2023-06-30T00:06:05.524970+08:00"
   }
 ]
