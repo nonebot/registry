@@ -7857,5 +7857,25 @@
     ],
     "valid": true,
     "time": "2023-06-28T20:24:11.661765+08:00"
+  },
+  {
+    "module_name": "nonebot_plugin_eitherchoice",
+    "project_link": "nonebot-plugin-eitherchoice",
+    "name": "EitherChoice",
+    "desc": "让 AI 帮你对比两件事物",
+    "author": "lgc2333",
+    "homepage": "https://github.com/lgc-NB2Dev/nonebot-plugin-eitherchoice",
+    "tags": [],
+    "is_official": false,
+    "type": "application",
+    "supported_adapters": [
+      "nonebot.adapters.onebot.v12",
+      "nonebot.adapters.kaiheila",
+      "nonebot.adapters.onebot.v11",
+      "nonebot.adapters.telegram",
+      "nonebot.adapters.qqguild"
+    ],
+    "valid": true,
+    "time": "2023-06-29T10:28:05.770525+08:00"
   }
 ]
