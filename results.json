@@ -4950,17 +4950,26 @@
     }
   },
   "nonebot-plugin-dailysign:nonebot_plugin_dailysign": {
-    "time": "2023-06-26T22:15:10.457747+08:00",
-    "version": "0.0.2",
+    "time": "2023-06-29T12:05:26.437868+08:00",
+    "version": "0.1.0.1",
     "results": {
-      "validation": false,
-      "load": false,
-      "metadata": false
+      "validation": true,
+      "load": true,
+      "metadata": true
     },
     "outputs": {
-      "validation": "缺少元数据",
-      "load": "插件 nonebot-plugin-dailysign 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-dailysign\u001b[39m \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.0.2\u001b[39;22m                    \n     \u001b[34mdescription\u001b[39m  : 一个简单的每日签到插件              \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.0.0-beta.1,<3.0.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-tortoise-orm\u001b[39m \u001b[39;1m>=0.0.1-alpha.2,<0.0.2\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0-beta.1,<3.0.0\u001b[39;22m\n插件 nonebot-plugin-dailysign 依赖的插件如下：\n    nonebot_plugin_tortoise_orm\n插件 nonebot_plugin_dailysign 加载出错：\n    \u001b[32m06-26 14:15:10\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-26 14:15:10\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-26 14:15:10\u001b[0m [\u001b[33m\u001b[1mWARNING\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_tortoise_orm\u001b[0m\u001b[36m\u001b[0m | \u001b[33m没有数据库地址, 将会初始化数据库到 db.sqlite3\u001b[0m\n    \u001b[32m06-26 14:15:10\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_tortoise_orm\u001b[0m\u001b[36m\u001b[0m | \u001b[33m数据库: 添加模型\u001b[0m: \u001b[31mnonebot_plugin_dailysign.models\u001b[0m\n    \u001b[32m06-26 14:15:10\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_dailysign\u001b[0m\"\n    \u001b[32m06-26 14:15:10\u001b[0m [\u001b[31m\u001b[1mERROR\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | \u001b[31m\u001b[48;2;248;187;208mFailed to import \"nonebot_plugin_tortoise_orm\"\u001b[0m\u001b[31m\u001b[0m\n    \u001b[33m\u001b[1mTraceback (most recent call last):\u001b[0m\n      File \"\u001b[32m/home/runner/work/registry/registry/plugin_test/nonebot-plugin-dailysign-nonebot_plugin_dailysign-test/\u001b[0m\u001b[32m\u001b[1mrunner.py\u001b[0m\", line \u001b[33m30\u001b[0m, in \u001b[35m<module>\u001b[0m\n        \u001b[1mrequire\u001b[0m\u001b[1m(\u001b[0m\u001b[36m'nonebot_plugin_tortoise_orm'\u001b[0m\u001b[1m)\u001b[0m\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-dailysign-nonebot_plugin_dailysign-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 174, in require\n        plugin = load_plugin(name)\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-dailysign-nonebot_plugin_dailysign-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 37, in load_plugin\n        return manager.load_plugin(module_path)\n    > File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-dailysign-nonebot_plugin_dailysign-test/.venv/lib/python3.10/site-packages/nonebot/plugin/manager.py\", line 154, in load_plugin\n        raise RuntimeError(\n    \u001b[31m\u001b[1mRuntimeError\u001b[0m:\u001b[1m Module nonebot_plugin_tortoise_orm is not loaded as a plugin! Make sure not to import it before loading.\u001b[0m\n    Traceback (most recent call last):\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-dailysign-nonebot_plugin_dailysign-test/runner.py\", line 30, in <module>\n        require('nonebot_plugin_tortoise_orm')\n      File \"/home/runner/work/registry/registry/plugin_test/nonebot-plugin-dailysign-nonebot_plugin_dailysign-test/.venv/lib/python3.10/site-packages/nonebot/plugin/load.py\", line 178, in require\n        raise RuntimeError(f'Cannot load plugin \"{name}\"!')\n    RuntimeError: Cannot load plugin \"nonebot_plugin_tortoise_orm\"!",
-      "metadata": null
+      "validation": "通过",
+      "load": "插件 nonebot-plugin-dailysign 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-dailysign\u001b[39m \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.1.0.1\u001b[39;22m                  \n     \u001b[34mdescription\u001b[39m  : 一个简单的每日签到插件              \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.0.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-tortoise-orm\u001b[39m \u001b[39;1m>=0.1.0\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0\u001b[39;22m\n插件 nonebot-plugin-dailysign 依赖的插件如下：\n    nonebot_plugin_localstore, nonebot_plugin_tortoise_orm\n插件 nonebot_plugin_dailysign 加载正常：\n    \u001b[32m06-29 04:05:24\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-29 04:05:24\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-29 04:05:24\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_localstore\u001b[0m\"\n    \u001b[32m06-29 04:05:25\u001b[0m [\u001b[33m\u001b[1mWARNING\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_tortoise_orm\u001b[0m\u001b[36m\u001b[0m | 没有设置数据库地址, 使用 sqlite:////home/runner/.local/share/nonebot2/db.sqlite3\n    \u001b[32m06-29 04:05:25\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_tortoise_orm\u001b[0m\"\n    \u001b[32m06-29 04:05:25\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot_plugin_tortoise_orm\u001b[0m\u001b[36m\u001b[0m | \u001b[33m数据库: 添加模型\u001b[0m: \u001b[31mnonebot_plugin_dailysign.models\u001b[0m\n    \u001b[32m06-29 04:05:25\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_dailysign\u001b[0m\"",
+      "metadata": {
+        "name": "nonebot_plugin_dailysign",
+        "description": "简单的签到插件",
+        "usage": "发送 签到 即可",
+        "type": "application",
+        "homepage": "https://github.com/kexue-z/nonebot-plugin-dailysign",
+        "supported_adapters": [
+          "~onebot.v11"
+        ]
+      }
     },
     "inputs": {
       "config": ""
@@ -4983,7 +4992,25 @@
         "type": null,
         "supported_adapters": null
       },
-      "new": null
+      "new": {
+        "module_name": "nonebot_plugin_dailysign",
+        "project_link": "nonebot-plugin-dailysign",
+        "name": "nonebot_plugin_dailysign",
+        "desc": "简单的签到插件",
+        "author": "kexue-z",
+        "homepage": "https://github.com/kexue-z/nonebot-plugin-dailysign",
+        "tags": [
+          {
+            "label": "a: onebot",
+            "color": "#000000"
+          }
+        ],
+        "is_official": false,
+        "type": "application",
+        "supported_adapters": [
+          "nonebot.adapters.onebot.v11"
+        ]
+      }
     }
   },
   "nonebot-plugin-tetris-stats:nonebot_plugin_tetris_stats": {

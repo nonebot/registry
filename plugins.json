@@ -2063,8 +2063,8 @@
   {
     "module_name": "nonebot_plugin_dailysign",
     "project_link": "nonebot-plugin-dailysign",
-    "name": "签到插件",
-    "desc": "签到获取金币 别的插件也能用金币balabala",
+    "name": "nonebot_plugin_dailysign",
+    "desc": "简单的签到插件",
     "author": "kexue-z",
     "homepage": "https://github.com/kexue-z/nonebot-plugin-dailysign",
     "tags": [
@@ -2074,10 +2074,12 @@
       }
     ],
     "is_official": false,
-    "type": null,
-    "supported_adapters": null,
-    "valid": false,
-    "time": "2023-06-26T22:15:10.457747+08:00"
+    "type": "application",
+    "supported_adapters": [
+      "nonebot.adapters.onebot.v11"
+    ],
+    "valid": true,
+    "time": "2023-06-29T12:05:26.437868+08:00"
   },
   {
     "module_name": "nonebot_plugin_tetris_stats",
