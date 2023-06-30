@@ -6624,7 +6624,7 @@
     "type": null,
     "supported_adapters": null,
     "valid": false,
-    "time": "2023-06-26T22:59:02.359787+08:00"
+    "time": "2023-06-30T12:05:47.356259+08:00"
   },
   {
     "module_name": "nonebot_plugin_clock",
@@ -7853,15 +7853,15 @@
     "is_official": false,
     "type": "library",
     "supported_adapters": [
-      "nonebot.adapters.onebot.v11",
       "nonebot.adapters.qqguild",
       "nonebot.adapters.onebot.v12",
+      "nonebot.adapters.onebot.v11",
+      "nonebot.adapters.console",
       "nonebot.adapters.telegram",
-      "nonebot.adapters.kaiheila",
-      "nonebot.adapters.console"
+      "nonebot.adapters.kaiheila"
     ],
     "valid": true,
-    "time": "2023-06-28T20:24:11.661765+08:00"
+    "time": "2023-06-30T12:06:02.474226+08:00"
   },
   {
     "module_name": "nonebot_plugin_eitherchoice",
