@@ -7874,13 +7874,13 @@
     "is_official": false,
     "type": "application",
     "supported_adapters": [
-      "nonebot.adapters.telegram",
-      "nonebot.adapters.onebot.v11",
       "nonebot.adapters.kaiheila",
+      "nonebot.adapters.onebot.v12",
+      "nonebot.adapters.telegram",
       "nonebot.adapters.qqguild",
-      "nonebot.adapters.onebot.v12"
+      "nonebot.adapters.onebot.v11"
     ],
     "valid": true,
-    "time": "2023-06-30T00:06:05.524970+08:00"
+    "time": "2023-06-30T20:46:37.784532+08:00"
   }
 ]

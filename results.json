@@ -18190,8 +18190,8 @@
     }
   },
   "nonebot-plugin-eitherchoice:nonebot_plugin_eitherchoice": {
-    "time": "2023-06-30T00:06:05.524970+08:00",
-    "version": "0.1.1",
+    "time": "2023-06-30T20:46:37.784532+08:00",
+    "version": "0.1.2",
     "results": {
       "validation": true,
       "load": true,
@@ -18199,19 +18199,19 @@
     },
     "outputs": {
       "validation": "通过",
-      "load": "插件 nonebot-plugin-eitherchoice 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-eitherchoice\u001b[39m         \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.1.1\u001b[39;22m                               \n     \u001b[34mdescription\u001b[39m  : Let AI help you compare two things. \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mhttpx\u001b[39m \u001b[39;1m>=0.24.1\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.2.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-htmlrender\u001b[39m \u001b[39;1m>=0.2.1\u001b[39;22m\n     - \u001b[36mnonebot-plugin-send-anything-anywhere\u001b[39m \u001b[39;1m>=0.2.7\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0\u001b[39;22m\n     - \u001b[36mpydantic\u001b[39m \u001b[39;1m>=1.10.4\u001b[39;22m\n插件 nonebot-plugin-eitherchoice 依赖的插件如下：\n    nonebot_plugin_htmlrender, nonebot_plugin_saa\n插件 nonebot_plugin_eitherchoice 加载正常：\n    \u001b[32m06-29 16:06:03\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-29 16:06:03\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-29 16:06:04\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_htmlrender\u001b[0m\"\n    \u001b[32m06-29 16:06:04\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_saa\u001b[0m\"\n    \u001b[32m06-29 16:06:04\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_eitherchoice\u001b[0m\"",
+      "load": "插件 nonebot-plugin-eitherchoice 的信息如下：\n     \u001b[34mname\u001b[39m         : \u001b[36mnonebot-plugin-eitherchoice\u001b[39m         \n     \u001b[34mversion\u001b[39m      : \u001b[39;1m0.1.2\u001b[39;22m                               \n     \u001b[34mdescription\u001b[39m  : Let AI help you compare two things. \n    \n    \u001b[34mdependencies\u001b[39m\n     - \u001b[36mhttpx\u001b[39m \u001b[39;1m>=0.24.1\u001b[39;22m\n     - \u001b[36mnonebot-adapter-onebot\u001b[39m \u001b[39;1m>=2.2.0\u001b[39;22m\n     - \u001b[36mnonebot-plugin-htmlrender\u001b[39m \u001b[39;1m>=0.2.1\u001b[39;22m\n     - \u001b[36mnonebot-plugin-send-anything-anywhere\u001b[39m \u001b[39;1m>=0.2.7\u001b[39;22m\n     - \u001b[36mnonebot2\u001b[39m \u001b[39;1m>=2.0.0\u001b[39;22m\n     - \u001b[36mpydantic\u001b[39m \u001b[39;1m>=1.10.4\u001b[39;22m\n插件 nonebot-plugin-eitherchoice 依赖的插件如下：\n    nonebot_plugin_htmlrender, nonebot_plugin_saa\n插件 nonebot_plugin_eitherchoice 加载正常：\n    \u001b[32m06-30 12:46:36\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | NoneBot is initializing...\n    \u001b[32m06-30 12:46:36\u001b[0m [\u001b[1mINFO\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Current \u001b[33m\u001b[1mEnv: prod\u001b[0m\u001b[33m\u001b[0m\n    \u001b[32m06-30 12:46:36\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_htmlrender\u001b[0m\"\n    \u001b[32m06-30 12:46:36\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_saa\u001b[0m\"\n    \u001b[32m06-30 12:46:36\u001b[0m [\u001b[32m\u001b[1mSUCCESS\u001b[0m] \u001b[36m\u001b[4mnonebot\u001b[0m\u001b[36m\u001b[0m | Succeeded to load plugin \"\u001b[33mnonebot_plugin_eitherchoice\u001b[0m\"",
       "metadata": {
         "name": "EitherChoice",
         "description": "让 AI 帮你对比两件事物",
-        "usage": "指令：对比 要顶的事物 和 要踩的事物\n别名：比较、比较一下、锐评、如何评价\n\n例：\n- 对比 Python 和 JavaScript\n- 比较一下 C# 和 Java",
+        "usage": "▶ 指令：对比(下/一下) 要顶的事物 和 要踩的事物▶ 别名：比较、锐评、评价、如何评价▶ 示例：    ▷ 对比 Python 和 JavaScript    ▷ 锐评一下 C# 和 Java    ▷ 比较 “下北泽” 和 东京 (加上引号防止 `下` 或 `一下` 被当做指令的一部分去除)",
         "type": "application",
         "homepage": "https://github.com/lgc-NB2Dev/nonebot-plugin-eitherchoice",
         "supported_adapters": [
+          "~telegram",
           "~onebot.v12",
           "~kaiheila",
           "~qqguild",
-          "~onebot.v11",
-          "~telegram"
+          "~onebot.v11"
         ]
       }
     },
@@ -18248,11 +18248,11 @@
         "is_official": false,
         "type": "application",
         "supported_adapters": [
-          "nonebot.adapters.telegram",
-          "nonebot.adapters.onebot.v11",
           "nonebot.adapters.kaiheila",
+          "nonebot.adapters.onebot.v12",
+          "nonebot.adapters.telegram",
           "nonebot.adapters.qqguild",
-          "nonebot.adapters.onebot.v12"
+          "nonebot.adapters.onebot.v11"
         ]
       }
     }
