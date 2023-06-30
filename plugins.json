@@ -6573,12 +6573,12 @@
     "type": "application",
     "supported_adapters": [
       "nonebot.adapters.mirai2",
-      "nonebot.adapters.qqguild",
       "nonebot.adapters.onebot.v12",
-      "nonebot.adapters.onebot.v11"
+      "nonebot.adapters.onebot.v11",
+      "nonebot.adapters.qqguild"
     ],
     "valid": true,
-    "time": "2023-06-30T00:05:48.217196+08:00"
+    "time": "2023-07-01T00:05:43.063074+08:00"
   },
   {
     "module_name": "GenshinUID",
@@ -7814,8 +7814,8 @@
     "supported_adapters": [
       "nonebot.adapters.onebot.v11"
     ],
-    "valid": true,
-    "time": "2023-06-26T23:07:15.761029+08:00"
+    "valid": false,
+    "time": "2023-07-01T00:06:04.935718+08:00"
   },
   {
     "module_name": "nonebot_plugin_helltide",
@@ -7882,5 +7882,26 @@
     ],
     "valid": true,
     "time": "2023-06-30T20:46:37.784532+08:00"
+  },
+  {
+    "module_name": "nonebot_plugin_poke",
+    "project_link": "nonebot-plugin-poke",
+    "name": "戳一戳事件",
+    "desc": "自定义戳一戳事件",
+    "author": "Agnes4m",
+    "homepage": "https://github.com/Agnes4m/nonebot_plugin_poke",
+    "tags": [
+      {
+        "label": "v11",
+        "color": "#ea5252"
+      }
+    ],
+    "is_official": false,
+    "type": "application",
+    "supported_adapters": [
+      "nonebot.adapters.onebot.v11"
+    ],
+    "valid": true,
+    "time": "2023-07-01T00:06:11.498979+08:00"
   }
 ]
