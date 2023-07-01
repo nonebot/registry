@@ -7,14 +7,14 @@ import ClockOutline from "vue-material-design-icons/ClockOutline.vue";
 const props = defineProps<{ checkTime: string; nowTime: number }>();
 
 function getTimeColor(timeDiff: number) {
-  if (timeDiff <= 3600000) {
-    // 1 小时内更新是红色
+  if (timeDiff <= 3600000 * 4) {
+    // 4 小时内更新是红色
     return "error";
-  } else if (timeDiff <= 3600000 * 3) {
-    // 3 小时内更新是黄色
+  } else if (timeDiff <= 3600000 * 24) {
+    // 24 小时内更新是黄色
     return "warning";
   } else {
-    // 3 小时以上更新是正常
+    // 24 小时以上更新是正常
     return "default";
   }
 }
