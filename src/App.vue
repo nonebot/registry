@@ -4,8 +4,6 @@ import { ref } from "vue";
 import {
   NBackTop,
   NConfigProvider,
-  NGi,
-  NGrid,
   NInput,
   NLayout,
   NLayoutFooter,
@@ -34,10 +32,10 @@ const searchKeyword = ref("");
   <div class="antialiased mx-auto">
     <n-config-provider :theme="theme" :locale="zhCN" :date-locale="dateZhCN">
       <n-layout position="absolute">
-        <n-layout-header class="p-4" bordered>
-          <div class="mx-auto max-w-[90rem]">
-            <n-grid class="" x-gap="12" :cols="4">
-              <n-gi :span="2" class="flex items-center">
+        <n-layout-header class="py-4" bordered>
+          <div class="mx-auto lg:max-w-[90rem] max-w-3xl">
+            <div class="px-4 sm:px-6 md:px-8 flex items-center">
+              <div class="flex-1 flex items-center">
                 <img
                   class="mr-1"
                   src="https://nonebot.dev/logo.png"
@@ -46,17 +44,19 @@ const searchKeyword = ref("");
                   height="30"
                 />
                 <span class="text-lg">商店测试结果</span>
-              </n-gi>
-              <n-gi class="justify-self-end" :span="2">
+              </div>
+              <div class="justify-self-end flex items-center" :span="1">
                 <n-space>
                   <GithubButton />
                   <ThemeSwitcher />
                 </n-space>
-              </n-gi>
-            </n-grid>
+              </div>
+            </div>
           </div>
         </n-layout-header>
-        <n-layout class="my-3 max-w-[90rem] mx-auto flex justify-end">
+        <n-layout
+          class="my-3 lg:max-w-[90rem] max-w-3xl mx-auto flex justify-end px-4 sm:px-6 md:px-8"
+        >
           <n-input
             v-model:value="searchKeyword"
             class="min-w-1/4"
@@ -64,11 +64,13 @@ const searchKeyword = ref("");
             placeholder="搜索"
             clearable
         /></n-layout>
-        <n-layout class="my-3 max-w-[90rem] mx-auto min-h-screen">
+        <n-layout
+          class="my-3 lg:max-w-[90rem] max-w-3xl mx-auto min-h-screen px-4 sm:px-6 md:px-8"
+        >
           <ResultTable :results="results" :search-keyword="searchKeyword" />
         </n-layout>
         <n-layout-footer bordered class="p-4">
-          <div class="flex justify-center max-w-[90rem] mx-auto">
+          <div class="flex justify-center lg:max-w-[90rem] max-w-3xl mx-auto">
             <n-text
               >Copyright &copy; {{ new Date().getFullYear() }} NoneBot. All
               rights reserved.</n-text

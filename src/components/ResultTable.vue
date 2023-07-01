@@ -1,7 +1,3 @@
-<template>
-  <n-data-table :data="data" :pagination="pagination" :columns="columns" />
-</template>
-
 <script setup lang="ts">
 import { computed, h, reactive } from "vue";
 
@@ -122,3 +118,18 @@ const columns: TableColumns<Results[keyof Results]> = [
   },
 ];
 </script>
+
+<template>
+  <n-data-table
+    class="overflow-auto whitespace-nowrap"
+    :data="data"
+    :pagination="pagination"
+    :columns="columns"
+  />
+</template>
+
+<style>
+.n-data-table .n-pagination {
+  @apply overflow-auto;
+}
+</style>
