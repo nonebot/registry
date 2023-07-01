@@ -3,8 +3,8 @@ import { ref } from "vue";
 
 import AnsiUp from "ansi_up";
 import { NModal } from "naive-ui";
-import CheckCircleOutline from "vue-material-design-icons/CheckCircleOutline.vue";
-import CheckCloseOutline from "vue-material-design-icons/CloseCircleOutline.vue";
+import PuzzleCheckOutline from "vue-material-design-icons/PuzzleCheckOutline.vue";
+import PuzzleRemoveOutline from "vue-material-design-icons/PuzzleRemoveOutline.vue";
 
 import { Results } from "@/types/results";
 
@@ -17,8 +17,8 @@ const showModal = ref(false);
 
 <template>
   <div @click="showModal = true">
-    <CheckCircleOutline v-if="rowData.results.load" class="ok" />
-    <CheckCloseOutline v-else class="err" />
+    <PuzzleCheckOutline v-if="rowData.results.load" class="ok" />
+    <PuzzleRemoveOutline v-else class="err" />
   </div>
   <n-modal
     v-model:show="showModal"
