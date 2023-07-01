@@ -2,7 +2,7 @@
 import { ref } from "vue";
 
 import AnsiUp from "ansi_up";
-import { NModal } from "naive-ui";
+import { NModal, NButton } from "naive-ui";
 import PuzzleCheckOutline from "vue-material-design-icons/PuzzleCheckOutline.vue";
 import PuzzleRemoveOutline from "vue-material-design-icons/PuzzleRemoveOutline.vue";
 
@@ -16,10 +16,10 @@ const showModal = ref(false);
 </script>
 
 <template>
-  <div @click="showModal = true">
+  <n-button text @click="showModal = true">
     <PuzzleCheckOutline v-if="rowData.results.load" class="ok" />
     <PuzzleRemoveOutline v-else class="err" />
-  </div>
+  </n-button>
   <n-modal
     v-model:show="showModal"
     class="max-w-3/4"

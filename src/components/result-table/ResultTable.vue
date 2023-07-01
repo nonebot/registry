@@ -7,11 +7,12 @@ import { TableColumns } from "naive-ui/es/data-table/src/interface";
 import { usePageStore } from "@/stores/page";
 import { Results } from "@/types/results";
 
+import Author from "./Author.vue";
+import ColorTime from "./ColorTime.vue";
+import Load from "./Load.vue";
+import Metadata from "./Metadata.vue";
 import PluginLink from "./PluginLink.vue";
-import ColorTime from "./icons/ColorTime.vue";
-import Load from "./icons/Load.vue";
-import Metadata from "./icons/Metadata.vue";
-import Validation from "./icons/Validation.vue";
+import Validation from "./Validation.vue";
 
 const nowTime = new Date().getTime();
 
@@ -48,7 +49,6 @@ const columns: TableColumns<Results[keyof Results]> = [
     key: "plugin.old.module_name",
     render: (rowData) =>
       h(PluginLink, {
-        author: rowData.plugin.old.author,
         moduleName: rowData.plugin.old.module_name,
         projectLink: rowData.plugin.old.project_link,
         homepage: rowData.plugin.old.homepage,
@@ -65,15 +65,9 @@ const columns: TableColumns<Results[keyof Results]> = [
     title: "作者",
     key: "plugin.old.author",
     render: (rowData) =>
-      h(
-        "a",
-        {
-          target: "_blank",
-          href: `https://github.com/${rowData.plugin.old.author}`,
-          class: "text-inherit no-underline",
-        },
-        rowData.plugin.old.author,
-      ),
+      h(Author, {
+        author: rowData.plugin.old.author,
+      }),
     align: "center",
     titleAlign: "center",
     sorter(rowA, rowB) {
