@@ -8,7 +8,7 @@ defineProps<{ author: string }>();
   <n-button
     text
     tag="a"
-    :herf="`https://github.com/${author}/`"
+    :href="`https://github.com/${author}/`"
     target="_blank"
   >
     {{ author }}

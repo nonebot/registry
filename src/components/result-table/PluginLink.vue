@@ -13,7 +13,7 @@ defineProps<{
   <n-button
     text
     tag="a"
-    :herf="`https://pypi.org/project/${projectLink}/`"
+    :href="`https://pypi.org/project/${projectLink}/`"
     target="_blank"
   >
     {{ projectLink }}
