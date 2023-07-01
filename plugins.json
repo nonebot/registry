@@ -7729,8 +7729,8 @@
     "supported_adapters": [
       "nonebot.adapters.onebot.v11"
     ],
-    "valid": false,
-    "time": "2023-07-02T00:05:22.683169+08:00"
+    "valid": true,
+    "time": "2023-07-02T04:05:07.860672+08:00"
   },
   {
     "module_name": "nonebot_plugin_warthunder_player_check",
