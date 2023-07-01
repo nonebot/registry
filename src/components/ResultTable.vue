@@ -8,8 +8,10 @@ import { usePageStore } from "@/stores/page";
 import { Results } from "@/types/results";
 
 import PluginLink from "./PluginLink.vue";
-import StatusGroup from "./StatusGroup.vue";
 import ColorTime from "./icons/ColorTime.vue";
+import Load from "./icons/Load.vue";
+import Metadata from "./icons/Metadata.vue";
+import Validation from "./icons/Validation.vue";
 
 const nowTime = new Date().getTime();
 
@@ -79,14 +81,34 @@ const columns: TableColumns<Results[keyof Results]> = [
     },
   },
   {
-    title: "检查结果",
-    key: "status",
+    title: "验证结果",
+    key: "results.validation",
+    render: (rowData) => h(Validation, { rowData }),
     align: "center",
     titleAlign: "center",
-    render: (rowData) =>
-      h(StatusGroup, {
-        rowData: rowData,
-      }),
+    sorter(rowA, rowB) {
+      return Number(rowA.results.validation) - Number(rowB.results.validation);
+    },
+  },
+  {
+    title: "加载结果",
+    key: "results.load",
+    render: (rowData) => h(Load, { rowData }),
+    align: "center",
+    titleAlign: "center",
+    sorter(rowA, rowB) {
+      return Number(rowA.results.load) - Number(rowB.results.load);
+    },
+  },
+  {
+    title: "元数据",
+    key: "results.metadata",
+    render: (rowData) => h(Metadata, { rowData }),
+    align: "center",
+    titleAlign: "center",
+    sorter(rowA, rowB) {
+      return Number(rowA.results.metadata) - Number(rowB.results.metadata);
+    },
   },
   {
     title: "测试时间",
