@@ -18,8 +18,8 @@ import { storeToRefs } from "pinia";
 import { usePageStore } from "@/stores/page";
 
 import GithubButton from "./components/GithubButton.vue";
-import ResultTable from "./components/ResultTable.vue";
 import ThemeSwitcher from "./components/ThemeSwitcher.vue";
+import ResultTable from "./components/result-table/ResultTable.vue";
 
 const store = usePageStore();
 const { theme, results } = storeToRefs(store);

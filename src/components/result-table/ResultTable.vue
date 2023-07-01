@@ -7,10 +7,14 @@ import { TableColumns } from "naive-ui/es/data-table/src/interface";
 import { usePageStore } from "@/stores/page";
 import { Results } from "@/types/results";
 
+import Author from "./Author.vue";
+import ColorTime from "./ColorTime.vue";
+import Load from "./Load.vue";
+import Metadata from "./Metadata.vue";
 import PluginLink from "./PluginLink.vue";
-import Load from "./icons/Load.vue";
-import Metadata from "./icons/Metadata.vue";
-import Validation from "./icons/Validation.vue";
+import Validation from "./Validation.vue";
+
+const nowTime = new Date().getTime();
 
 const store = usePageStore();
 
@@ -49,8 +53,8 @@ const columns: TableColumns<Results[keyof Results]> = [
         projectLink: rowData.plugin.old.project_link,
         homepage: rowData.plugin.old.homepage,
       }),
-    align: "center",
-    titleAlign: "center",
+    align: "left",
+    titleAlign: "left",
     sorter(rowA, rowB) {
       return rowA.plugin.old.module_name.localeCompare(
         rowB.plugin.old.module_name,
@@ -61,15 +65,9 @@ const columns: TableColumns<Results[keyof Results]> = [
     title: "作者",
     key: "plugin.old.author",
     render: (rowData) =>
-      h(
-        "a",
-        {
-          target: "_blank",
-          href: `https://github.com/${rowData.plugin.old.author}`,
-          class: "text-inherit no-underline",
-        },
-        rowData.plugin.old.author,
-      ),
+      h(Author, {
+        author: rowData.plugin.old.author,
+      }),
     align: "center",
     titleAlign: "center",
     sorter(rowA, rowB) {
@@ -111,7 +109,11 @@ const columns: TableColumns<Results[keyof Results]> = [
     key: "time",
     align: "center",
     titleAlign: "center",
-    render: (rowData) => new Date(rowData.time).toLocaleString(),
+    render: (rowData) =>
+      h(ColorTime, {
+        checkTime: rowData.time,
+        nowTime: nowTime,
+      }),
     sorter(rowA, rowB) {
       return Date.parse(rowA.time) - Date.parse(rowB.time);
     },
