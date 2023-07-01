@@ -10,10 +10,10 @@
   font-size: 1.5em;
 }
 
-html[class~="dark"] {
+html[data-hljs-use-dark="true"] {
   @include meta.load-css("highlight.js/scss/github-dark");
 }
 
-html:not([class~="dark"]) {
+html:not([data-hljs-use-dark="true"]) {
   @include meta.load-css("highlight.js/scss/github");
 }

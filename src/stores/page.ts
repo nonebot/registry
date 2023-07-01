@@ -11,6 +11,8 @@ export const usePageStore = defineStore("page", () => {
   const isDark = useDark({
     onChanged(dark: boolean) {
       theme.value = dark ? darkTheme : null;
+      const el = document.querySelector("html");
+      if (el && el.dataset) el.dataset.hljsUseDark = dark ? "true" : "false";
     },
   });
   const toggleDark = useToggle(isDark);
