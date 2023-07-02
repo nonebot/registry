@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, h, reactive } from "vue";
 
-import { NDataTable } from "naive-ui";
+import { NDataTable, NSpace, NSkeleton, NSpin } from "naive-ui";
 import { TableColumns } from "naive-ui/es/data-table/src/interface";
 
 import { usePageStore } from "@/stores/page";
@@ -24,13 +24,14 @@ const props = defineProps<{
   results: Results;
   searchKeyword: string;
 }>();
+const loading = computed(() => Object.keys(props.plugins).length === 0);
+const loadingResults = computed(() => Object.keys(props.results).length === 0);
 const filteredPlugins = computed(() =>
   store.filterPlugins(props.searchKeyword),
 );
 const data = computed(() =>
   Object.keys(filteredPlugins.value).map((key) => {
     return {
-      key,
       plugin: filteredPlugins.value[key],
       result: props.results[key],
     };
@@ -86,13 +87,16 @@ const columns: TableColumns<{
     title: "验证结果",
     key: "result.results.validation",
     render: (rowData) =>
-      h(Validation, {
-        projectLink: rowData.plugin.project_link,
-        result: rowData.result,
-      }),
+      loadingResults.value
+        ? h(NSpin)
+        : h(Validation, {
+            projectLink: rowData.plugin.project_link,
+            result: rowData.result,
+          }),
     align: "center",
     titleAlign: "center",
     sorter(rowA, rowB) {
+      if (loadingResults.value) return 0;
       return (
         Number(rowA.result.results.validation) -
         Number(rowB.result.results.validation)
@@ -103,13 +107,16 @@ const columns: TableColumns<{
     title: "加载结果",
     key: "result.results.load",
     render: (rowData) =>
-      h(Load, {
-        projectLink: rowData.plugin.project_link,
-        result: rowData.result,
-      }),
+      loadingResults.value
+        ? h(NSpin)
+        : h(Load, {
+            projectLink: rowData.plugin.project_link,
+            result: rowData.result,
+          }),
     align: "center",
     titleAlign: "center",
     sorter(rowA, rowB) {
+      if (loadingResults.value) return 0;
       return (
         Number(rowA.result.results.load) - Number(rowB.result.results.load)
       );
@@ -119,13 +126,16 @@ const columns: TableColumns<{
     title: "元数据",
     key: "result.results.metadata",
     render: (rowData) =>
-      h(Metadata, {
-        projectLink: rowData.plugin.project_link,
-        result: rowData.result,
-      }),
+      loadingResults.value
+        ? h(NSpin)
+        : h(Metadata, {
+            projectLink: rowData.plugin.project_link,
+            result: rowData.result,
+          }),
     align: "center",
     titleAlign: "center",
     sorter(rowA, rowB) {
+      if (loadingResults.value) return 0;
       return (
         Number(rowA.result.results.metadata) -
         Number(rowB.result.results.metadata)
@@ -138,11 +148,14 @@ const columns: TableColumns<{
     align: "center",
     titleAlign: "center",
     render: (rowData) =>
-      h(ColorTime, {
-        checkTime: rowData.result.time,
-        nowTime: nowTime,
-      }),
+      loadingResults.value
+        ? h(NSpin)
+        : h(ColorTime, {
+            checkTime: rowData.result.time,
+            nowTime: nowTime,
+          }),
     sorter(rowA, rowB) {
+      if (loadingResults.value) return 0;
       return Date.parse(rowA.result.time) - Date.parse(rowB.result.time);
     },
   },
@@ -150,7 +163,14 @@ const columns: TableColumns<{
 </script>
 
 <template>
+  <n-space v-if="loading" vertical>
+    <n-skeleton height="40px" width="33%" />
+    <n-skeleton height="40px" width="66%" :sharp="false" />
+    <n-skeleton height="40px" round />
+    <n-skeleton height="40px" circle />
+  </n-space>
   <n-data-table
+    v-else
     class="overflow-auto whitespace-nowrap"
     :data="data"
     :pagination="pagination"
