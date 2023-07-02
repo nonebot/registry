@@ -5,6 +5,7 @@ import { NDataTable } from "naive-ui";
 import { TableColumns } from "naive-ui/es/data-table/src/interface";
 
 import { usePageStore } from "@/stores/page";
+import { Plugins } from "@/types/plugins";
 import { Results } from "@/types/results";
 
 import Author from "./Author.vue";
@@ -19,15 +20,20 @@ const nowTime = new Date().getTime();
 const store = usePageStore();
 
 const props = defineProps<{
+  plugins: Plugins;
   results: Results;
   searchKeyword: string;
 }>();
-const filteredResults = computed(() =>
-  store.filterResults(props.searchKeyword),
+const filteredPlugins = computed(() =>
+  store.filterPlugins(props.searchKeyword),
 );
 const data = computed(() =>
-  Object.keys(filteredResults.value).map((name) => {
-    return { name, ...filteredResults.value[name] };
+  Object.keys(filteredPlugins.value).map((key) => {
+    return {
+      key,
+      plugin: filteredPlugins.value[key],
+      result: props.results[key],
+    };
   }),
 );
 const pagination = reactive({
@@ -43,79 +49,101 @@ const pagination = reactive({
     pagination.page = 1;
   },
 });
-const columns: TableColumns<Results[keyof Results]> = [
+
+const columns: TableColumns<{
+  plugin: Plugins[keyof Plugins];
+  result: Results[keyof Results];
+}> = [
   {
     title: "PyPI 项目名 / 模块名",
-    key: "plugin.old.module_name",
+    key: "plugin.module_name",
     render: (rowData) =>
       h(PluginLink, {
-        moduleName: rowData.plugin.old.module_name,
-        projectLink: rowData.plugin.old.project_link,
-        homepage: rowData.plugin.old.homepage,
+        moduleName: rowData.plugin.module_name,
+        projectLink: rowData.plugin.project_link,
+        homepage: rowData.plugin.homepage,
       }),
     align: "left",
     titleAlign: "left",
     sorter(rowA, rowB) {
-      return rowA.plugin.old.module_name.localeCompare(
-        rowB.plugin.old.module_name,
-      );
+      return rowA.plugin.module_name.localeCompare(rowB.plugin.module_name);
     },
   },
   {
     title: "作者",
-    key: "plugin.old.author",
+    key: "plugin.author",
     render: (rowData) =>
       h(Author, {
-        author: rowData.plugin.old.author,
+        author: rowData.plugin.author,
       }),
     align: "center",
     titleAlign: "center",
     sorter(rowA, rowB) {
-      return rowA.plugin.old.author.localeCompare(rowB.plugin.old.author);
+      return rowA.plugin.author.localeCompare(rowB.plugin.author);
     },
   },
   {
     title: "验证结果",
-    key: "results.validation",
-    render: (rowData) => h(Validation, { rowData }),
+    key: "result.results.validation",
+    render: (rowData) =>
+      h(Validation, {
+        projectLink: rowData.plugin.project_link,
+        result: rowData.result,
+      }),
     align: "center",
     titleAlign: "center",
     sorter(rowA, rowB) {
-      return Number(rowA.results.validation) - Number(rowB.results.validation);
+      return (
+        Number(rowA.result.results.validation) -
+        Number(rowB.result.results.validation)
+      );
     },
   },
   {
     title: "加载结果",
-    key: "results.load",
-    render: (rowData) => h(Load, { rowData }),
+    key: "result.results.load",
+    render: (rowData) =>
+      h(Load, {
+        projectLink: rowData.plugin.project_link,
+        result: rowData.result,
+      }),
     align: "center",
     titleAlign: "center",
     sorter(rowA, rowB) {
-      return Number(rowA.results.load) - Number(rowB.results.load);
+      return (
+        Number(rowA.result.results.load) - Number(rowB.result.results.load)
+      );
     },
   },
   {
     title: "元数据",
-    key: "results.metadata",
-    render: (rowData) => h(Metadata, { rowData }),
+    key: "result.results.metadata",
+    render: (rowData) =>
+      h(Metadata, {
+        projectLink: rowData.plugin.project_link,
+        result: rowData.result,
+      }),
     align: "center",
     titleAlign: "center",
     sorter(rowA, rowB) {
-      return Number(rowA.results.metadata) - Number(rowB.results.metadata);
+      return (
+        Number(rowA.result.results.metadata) -
+        Number(rowB.result.results.metadata)
+      );
     },
   },
   {
     title: "测试时间",
-    key: "time",
+    key: "result.time",
     align: "center",
     titleAlign: "center",
     render: (rowData) =>
       h(ColorTime, {
-        checkTime: rowData.time,
+        checkTime: rowData.result.time,
         nowTime: nowTime,
       }),
     sorter(rowA, rowB) {
-      return Date.parse(rowA.time) - Date.parse(rowB.time);
+      return Date.parse(rowA.result.time) - Date.parse(rowB.result.time);
     },
   },
 ];
