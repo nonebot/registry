@@ -12,14 +12,17 @@ import { Results } from "@/types/results";
 
 hljs.registerLanguage("json", json);
 
-const props = defineProps<{ rowData: Results[keyof Results] }>();
+const props = defineProps<{
+  projectLink: string;
+  result: Results[keyof Results];
+}>();
 const showModal = ref(false);
 </script>
 
 <template>
   <n-button text @click="showModal = true">
     <PackageVariant
-      v-if="rowData.results.metadata"
+      v-if="result.results.metadata"
       style="color: rgb(42, 95, 243)"
     />
     <PackageVariantRemove v-else style="color: rgb(236, 194, 5)" />
@@ -28,14 +31,14 @@ const showModal = ref(false);
     v-model:show="showModal"
     class="max-w-3/4"
     preset="card"
-    :title="`${rowData.plugin.old.project_link} 元数据`"
+    :title="`${projectLink} 元数据`"
   >
     <template #default>
       <hljsVuePlugin.component
         class="max-h-[50vh] overflow-auto"
         language="json"
         :autodetect="false"
-        :code="JSON.stringify(props.rowData.outputs.metadata, null, 2)"
+        :code="JSON.stringify(props.result.outputs.metadata, null, 2)"
       />
     </template>
   </n-modal>

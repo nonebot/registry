@@ -22,8 +22,8 @@ import ThemeSwitcher from "./components/ThemeSwitcher.vue";
 import ResultTable from "./components/result-table/ResultTable.vue";
 
 const store = usePageStore();
-const { theme, results } = storeToRefs(store);
-store.initResults();
+const { theme, plugins, results } = storeToRefs(store);
+store.initData();
 
 const searchKeyword = ref("");
 </script>
@@ -67,7 +67,11 @@ const searchKeyword = ref("");
         <n-layout
           class="my-3 lg:max-w-[90rem] max-w-3xl mx-auto min-h-screen px-4 sm:px-6 md:px-8"
         >
-          <ResultTable :results="results" :search-keyword="searchKeyword" />
+          <ResultTable
+            :plugins="plugins"
+            :results="results"
+            :search-keyword="searchKeyword"
+          />
         </n-layout>
         <n-layout-footer bordered class="p-4">
           <div class="flex justify-center lg:max-w-[90rem] max-w-3xl mx-auto">

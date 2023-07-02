@@ -26,6 +26,10 @@ export default defineConfig({
         target: "https://registry.nonebot.dev",
         changeOrigin: true,
       },
+      "/plugins.json": {
+        target: "https://registry.nonebot.dev",
+        changeOrigin: true,
+      },
     },
   },
   build: {

@@ -7,25 +7,25 @@ import CheckCloseOutline from "vue-material-design-icons/CloseCircleOutline.vue"
 
 import { Results } from "@/types/results";
 
-defineProps<{ rowData: Results[keyof Results] }>();
+defineProps<{ projectLink: string; result: Results[keyof Results] }>();
 
 const showModal = ref(false);
 </script>
 
 <template>
   <n-button text @click="showModal = true">
-    <CheckCircleOutline v-if="rowData.results.validation" class="ok" />
+    <CheckCircleOutline v-if="result.results.validation" class="ok" />
     <CheckCloseOutline v-else class="err" />
   </n-button>
   <n-modal
     v-model:show="showModal"
     preset="card"
     class="max-w-3/4"
-    :title="`${rowData.plugin.old.project_link} 验证结果`"
+    :title="`${projectLink} 验证结果`"
   >
     <template #default>
       <pre class="max-h-[50vh] overflow-auto">{{
-        rowData.outputs.validation
+        result.outputs.validation
       }}</pre>
     </template>
   </n-modal>
