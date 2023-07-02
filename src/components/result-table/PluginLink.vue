@@ -20,7 +20,7 @@ defineProps<{
   </n-button>
   <br />
   <n-button
-    color="#959595"
+    class="color-gray hover:color-[#ea5252] hover:bg-[#ea5252]"
     size="tiny"
     text
     tag="a"

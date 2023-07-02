@@ -2,6 +2,7 @@
 import { ref } from "vue";
 
 import {
+  GlobalThemeOverrides,
   NBackTop,
   NConfigProvider,
   NInput,
@@ -26,11 +27,24 @@ const { theme, plugins, results } = storeToRefs(store);
 store.initData();
 
 const searchKeyword = ref("");
+
+const themeOverrides: GlobalThemeOverrides = {
+  common: {
+    primaryColor: "#ea5252",
+    primaryColorHover: "#ea5252",
+    primaryColorPressed: "#ea5252",
+  },
+};
 </script>
 
 <template>
   <div class="antialiased mx-auto">
-    <n-config-provider :theme="theme" :locale="zhCN" :date-locale="dateZhCN">
+    <n-config-provider
+      :theme="theme"
+      :theme-overrides="themeOverrides"
+      :locale="zhCN"
+      :date-locale="dateZhCN"
+    >
       <n-layout position="absolute">
         <n-layout-header class="py-4" bordered>
           <div class="mx-auto lg:max-w-[90rem] max-w-3xl">
