@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, h, reactive } from "vue";
 
-import { NDataTable, NSpace, NSkeleton, NSpin } from "naive-ui";
+import { NDataTable, NSpace, NSkeleton } from "naive-ui";
 import { TableColumns } from "naive-ui/es/data-table/src/interface";
 
 import { usePageStore } from "@/stores/page";
@@ -88,7 +88,10 @@ const columns: TableColumns<{
     key: "result.results.validation",
     render: (rowData) =>
       loadingResults.value
-        ? h(NSpin)
+        ? h(NSkeleton, {
+            size: "medium",
+            circle: true,
+          })
         : h(Validation, {
             projectLink: rowData.plugin.project_link,
             result: rowData.result,
@@ -108,7 +111,10 @@ const columns: TableColumns<{
     key: "result.results.load",
     render: (rowData) =>
       loadingResults.value
-        ? h(NSpin)
+        ? h(NSkeleton, {
+            size: "medium",
+            circle: true,
+          })
         : h(Load, {
             projectLink: rowData.plugin.project_link,
             result: rowData.result,
@@ -127,7 +133,10 @@ const columns: TableColumns<{
     key: "result.results.metadata",
     render: (rowData) =>
       loadingResults.value
-        ? h(NSpin)
+        ? h(NSkeleton, {
+            size: "medium",
+            circle: true,
+          })
         : h(Metadata, {
             projectLink: rowData.plugin.project_link,
             result: rowData.result,
@@ -149,7 +158,7 @@ const columns: TableColumns<{
     titleAlign: "center",
     render: (rowData) =>
       loadingResults.value
-        ? h(NSpin)
+        ? h(NSkeleton)
         : h(ColorTime, {
             checkTime: rowData.result.time,
             nowTime: nowTime,
@@ -164,10 +173,17 @@ const columns: TableColumns<{
 
 <template>
   <n-space v-if="loading" vertical>
-    <n-skeleton height="40px" width="33%" />
-    <n-skeleton height="40px" width="66%" :sharp="false" />
-    <n-skeleton height="40px" round />
-    <n-skeleton height="40px" circle />
+    <n-skeleton height="48px" />
+    <n-skeleton height="56px" />
+    <n-skeleton height="56px" />
+    <n-skeleton height="56px" />
+    <n-skeleton height="56px" />
+    <n-skeleton height="56px" />
+    <n-skeleton height="56px" />
+    <n-skeleton height="56px" />
+    <n-skeleton height="56px" />
+    <n-skeleton height="56px" />
+    <n-skeleton height="56px" />
   </n-space>
   <n-data-table
     v-else
