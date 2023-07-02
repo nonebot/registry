@@ -19,17 +19,17 @@ export const usePageStore = defineStore("page", () => {
   const toggleDark = useToggle(isDark);
   theme.value = (isDark.value ? darkTheme : null) as GlobalTheme | null;
 
-  const plugins = ref({} as Plugins);
-  const results = ref({} as Results);
+  const plugins = ref<Plugins>({});
+  const results = ref<Results>({});
 
   function initData() {
     fetch("/plugins.json", { method: "GET" })
       .then((response) => response.json())
       .then((data: Plugins[keyof Plugins][]) => {
-        for (const plugin of data) {
+        data.forEach((plugin) => {
           plugins.value[`${plugin.project_link}:${plugin.module_name}`] =
             plugin;
-        }
+        });
       })
       .catch(console.error);
 
