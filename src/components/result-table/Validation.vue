@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-import { NModal, NButton } from "naive-ui";
+import { NModal } from "naive-ui";
 import CheckCircleOutline from "vue-material-design-icons/CheckCircleOutline.vue";
 import CheckCloseOutline from "vue-material-design-icons/CloseCircleOutline.vue";
 
@@ -13,10 +13,16 @@ const showModal = ref(false);
 </script>
 
 <template>
-  <n-button text @click="showModal = true">
-    <CheckCircleOutline v-if="result.results.validation" class="ok" />
-    <CheckCloseOutline v-else class="err" />
-  </n-button>
+  <div
+    class="mr-[15px] flex justify-center align-middle cursor-pointer"
+    @click="showModal = true"
+  >
+    <CheckCircleOutline
+      v-if="result.results.validation"
+      class="ok flex justify-center align-middle"
+    />
+    <CheckCloseOutline v-else class="err flex justify-center align-middle" />
+  </div>
   <n-modal
     v-model:show="showModal"
     preset="card"

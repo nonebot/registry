@@ -25,8 +25,8 @@ const timeType = computed(() =>
 </script>
 
 <template>
-  <span>
-    <n-icon>
+  <span class="flex justify-center items-center align-middle mr-[15px]">
+    <n-icon class="mr-1">
       <ClockOutline />
     </n-icon>
     <n-text :type="timeType">

@@ -8,6 +8,7 @@ defineProps<{ author: string }>();
   <n-button
     text
     tag="a"
+    class="mr-[15px]"
     :href="`https://github.com/${author}/`"
     target="_blank"
   >
