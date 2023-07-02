@@ -18,6 +18,7 @@ import { storeToRefs } from "pinia";
 import { usePageStore } from "@/stores/page";
 
 import GithubButton from "./components/GithubButton.vue";
+import Statistic from "./components/Statistic.vue";
 import ThemeSwitcher from "./components/ThemeSwitcher.vue";
 import ResultTable from "./components/result-table/ResultTable.vue";
 
@@ -61,6 +62,7 @@ const themeOverrides: GlobalThemeOverrides = {
               <div class="justify-self-end flex items-center" :span="1">
                 <div class="flex items-center gap-3">
                   <GithubButton />
+                  <Statistic />
                   <ThemeSwitcher />
                 </div>
               </div>
