@@ -12,6 +12,7 @@ import Author from "./Author.vue";
 import ColorTime from "./ColorTime.vue";
 import Load from "./Load.vue";
 import LoadingCircle from "./LoadingCircle.vue";
+import LoadingTime from "./LoadingTime.vue";
 import Metadata from "./Metadata.vue";
 import PluginLink from "./PluginLink.vue";
 import Validation from "./Validation.vue";
@@ -150,9 +151,7 @@ const columns: TableColumns<{
     titleAlign: "center",
     render: (rowData) =>
       loadingResults.value
-        ? h(NSkeleton, {
-            height: "24px",
-          })
+        ? h(LoadingTime)
         : h(ColorTime, {
             checkTime: rowData.result.time,
             nowTime: nowTime,

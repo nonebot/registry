@@ -4,6 +4,6 @@ import { NSkeleton, NSpace } from "naive-ui";
 
 <template>
   <n-space justify="center">
-    <n-skeleton size="small" circle />
+    <n-skeleton height="24px" width="144px" />
   </n-space>
 </template>
