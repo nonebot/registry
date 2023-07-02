@@ -11,6 +11,7 @@ import { Results } from "@/types/results";
 import Author from "./Author.vue";
 import ColorTime from "./ColorTime.vue";
 import Load from "./Load.vue";
+import LoadingCircle from "./LoadingCircle.vue";
 import Metadata from "./Metadata.vue";
 import PluginLink from "./PluginLink.vue";
 import Validation from "./Validation.vue";
@@ -88,10 +89,7 @@ const columns: TableColumns<{
     key: "result.results.validation",
     render: (rowData) =>
       loadingResults.value
-        ? h(NSkeleton, {
-            size: "medium",
-            circle: true,
-          })
+        ? h(LoadingCircle)
         : h(Validation, {
             projectLink: rowData.plugin.project_link,
             result: rowData.result,
@@ -111,10 +109,7 @@ const columns: TableColumns<{
     key: "result.results.load",
     render: (rowData) =>
       loadingResults.value
-        ? h(NSkeleton, {
-            size: "medium",
-            circle: true,
-          })
+        ? h(LoadingCircle)
         : h(Load, {
             projectLink: rowData.plugin.project_link,
             result: rowData.result,
@@ -133,10 +128,7 @@ const columns: TableColumns<{
     key: "result.results.metadata",
     render: (rowData) =>
       loadingResults.value
-        ? h(NSkeleton, {
-            size: "medium",
-            circle: true,
-          })
+        ? h(LoadingCircle)
         : h(Metadata, {
             projectLink: rowData.plugin.project_link,
             result: rowData.result,
@@ -158,7 +150,9 @@ const columns: TableColumns<{
     titleAlign: "center",
     render: (rowData) =>
       loadingResults.value
-        ? h(NSkeleton)
+        ? h(NSkeleton, {
+            height: "24px",
+          })
         : h(ColorTime, {
             checkTime: rowData.result.time,
             nowTime: nowTime,
