@@ -19,7 +19,7 @@ import ThemeSwitcher from "./components/ThemeSwitcher.vue";
 import Statistic from "./components/statistic/Statistic.vue";
 
 const store = usePageStore();
-const { theme, plugins, results } = storeToRefs(store);
+const { theme } = storeToRefs(store);
 store.initData();
 
 const themeOverrides: GlobalThemeOverrides = {
