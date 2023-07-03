@@ -1,8 +1,8 @@
 <template>
   <n-space vertical>
-    <n-el>
+    <n-el style="justify-items: center">
       <n-progress
-        style="width: 120px; margin: 5px"
+        style="width: 130px; margin: 5px"
         type="multiple-circle"
         :stroke-width="6"
         :circle-gap="0.5"
@@ -20,65 +20,33 @@
         </div>
       </n-progress>
     </n-el>
-    <n-space justify="space-around">
-      <div style="width: 50px">
-        <n-icon color="#66afd3" style="margin-right: 3px; overflow: hidden">
-          <PackageVariantClosedCheck />
-        </n-icon>
-        <n-number-animation :from="0" :to="metadataCount" />
-      </div>
-      <n-divider vertical />
-      <div style="width: 50px">
-        <n-icon color="#5acea7" style="margin-right: 3px; overflow: hidden">
-          <PuzzleCheckOutline />
-        </n-icon>
-        <n-number-animation :from="0" :to="loadCount" />
-      </div>
-    </n-space>
   </n-space>
 </template>
 
 <script setup lang="ts">
 import { ref } from "vue";
 
-import {
-  NProgress,
-  NSpace,
-  NEl,
-  NIcon,
-  NNumberAnimation,
-  NDivider,
-} from "naive-ui";
+import { NProgress, NSpace, NEl, NIcon, NNumberAnimation } from "naive-ui";
 import CheckAll from "vue-material-design-icons/CheckAll.vue";
-import PackageVariantClosedCheck from "vue-material-design-icons/PackageVariantClosedCheck.vue";
-import PuzzleCheckOutline from "vue-material-design-icons/PuzzleCheckOutline.vue";
 
-import { usePageStore } from "@/stores/page";
-import { Results } from "@/types/results";
+const props = defineProps({
+  totalCount: {
+    type: Number,
+    required: true,
+  },
+  passCount: {
+    type: Number,
+    required: true,
+  },
+  percentageList: {
+    type: Array as () => number[],
+    required: true,
+  },
+});
 
-const store = usePageStore();
-let results = store.results as Results;
-
-let totalCount = Object.keys(results).length;
-let passCount = Object.values(results).filter(
-  (result) => result.results.validation,
-).length;
-let loadCount = Object.values(results).filter(
-  (result) => result.results.load,
-).length;
-let metadataCount = Object.values(results).filter(
-  (result) => result.results.metadata,
-).length;
-
-let percentageList = ref([
-  Math.round((passCount / totalCount) * 10000) / 100, // 目的是保留两位小数
-  Math.round((metadataCount / totalCount) * 10000) / 100,
-  Math.round((loadCount / totalCount) * 10000) / 100,
-]);
-
-let colorList = ref(percentageList.value.map(getProgressColor));
+let colorList = ref(props.percentageList.map(getProgressColor));
 let railColorList = ref(
-  percentageList.value.map((percent) => {
+  props.percentageList.map((percent) => {
     return {
       stroke: getProgressColor(percent),
       opacity: 0.3,
