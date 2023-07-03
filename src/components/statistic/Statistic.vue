@@ -1,7 +1,7 @@
 <template>
-  <n-popover trigger="manual" :show="showStat" style="width: 170px">
+  <n-popover trigger="click" style="width: 170px">
     <template #trigger>
-      <n-button text @click="showStat = !showStat">
+      <n-button text>
         <ChartDonutVariant />
       </n-button>
     </template>
@@ -25,7 +25,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref } from "vue";
+import { computed } from "vue";
 
 import { NPopover, NButton, NText, NSpace } from "naive-ui";
 import ChartDonutVariant from "vue-material-design-icons/ChartDonutVariant.vue";
@@ -35,8 +35,6 @@ import { Results } from "@/types/results";
 
 import Details from "./Details.vue";
 import Progress from "./Progress.vue";
-
-let showStat = ref(false);
 
 const store = usePageStore();
 
