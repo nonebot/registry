@@ -15,7 +15,7 @@
     <Progress
       :total-count="stat.totalCount"
       :pass-count="stat.passCount"
-      :percentage-list="stat.percentageList"
+      :percentage-dict="stat.percentageDict"
     />
     <template #footer>
       <Details
@@ -53,18 +53,18 @@ const stat = computed(() => {
     (result) => result.results.metadata,
   ).length;
 
-  let percentageList = [
-    Math.round((passCount / totalCount) * 10000) / 100, // 目的是保留两位小数
-    Math.round((metadataCount / totalCount) * 10000) / 100,
-    Math.round((loadCount / totalCount) * 10000) / 100,
-  ];
+  let percentageDict = {
+    passPer: Math.round((passCount / totalCount) * 10000) / 100, // 目的是保留两位小数
+    metaPer: Math.round((metadataCount / totalCount) * 10000) / 100,
+    loadPer: Math.round((loadCount / totalCount) * 10000) / 100,
+  };
 
   return {
     totalCount,
     passCount,
     loadCount,
     metadataCount,
-    percentageList,
+    percentageDict,
   };
 });
 </script>
