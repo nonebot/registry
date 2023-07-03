@@ -29,6 +29,9 @@ dependencies:
   vue-material-design-icons:
     specifier: ^5.2.0
     version: 5.2.0
+  vue-router:
+    specifier: ^4
+    version: 4.0.0(vue@3.3.4)
 
 devDependencies:
   '@typescript-eslint/eslint-plugin':
@@ -4511,6 +4514,14 @@ packages:
 
   /vue-material-design-icons@5.2.0:
     resolution: {integrity: sha512-fcdcJHQ9fQw2CAytuLAzWSELcxH138sCdMItVhvmO7Lu9afIgojB/UCWv7XHt/lURsnq/n6O+muM4AQgw8yfig==}
+    dev: false
+
+  /vue-router@4.0.0(vue@3.3.4):
+    resolution: {integrity: sha512-RiAsDsSV73TBqppgpAKghb5exHHKsFuTii7hbhj9QHjWJNDE4lBDTr7bVALG9DH9vVcFI+7PUTBGYbytBFsWsQ==}
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      vue: 3.3.4
     dev: false
 
   /vue-template-compiler@2.7.14:
