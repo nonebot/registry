@@ -25,6 +25,7 @@ import Statistic from "./components/statistic/Statistic.vue";
 const store = usePageStore();
 const { theme, plugins, results } = storeToRefs(store);
 store.initData();
+console.log(theme);
 
 const searchKeyword = ref("");
 
