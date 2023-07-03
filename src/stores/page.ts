@@ -10,10 +10,12 @@ import { Results } from "@/types/results";
 export const usePageStore = defineStore("page", () => {
   const theme = ref(null as GlobalTheme | null);
   const isDark = useDark({
-    onChanged(dark: boolean) {
+    onChanged: function (dark: boolean) {
       theme.value = dark ? darkTheme : null;
       const el = document.querySelector("html");
-      if (el && el.dataset) el.dataset.hljsUseDark = dark ? "true" : "false";
+      if (el && el.dataset) {
+        el.dataset.hljsUseDark = dark ? "true" : "false";
+      }
     },
   });
   const toggleDark = useToggle(isDark);
@@ -22,7 +24,7 @@ export const usePageStore = defineStore("page", () => {
   const plugins = ref<Plugins>({});
   const results = ref<Results>({});
 
-  function initData() {
+  const initData = () => {
     fetch("/plugins.json", { method: "GET" })
       .then((response) => response.json())
       .then((data: Plugins[keyof Plugins][]) => {
@@ -37,9 +39,9 @@ export const usePageStore = defineStore("page", () => {
       .then((response) => response.json())
       .then((data: Results) => (results.value = data))
       .catch(console.error);
-  }
+  };
 
-  function filterPlugins(keyword: string) {
+  const filterPlugins = (keyword: string) => {
     return Object.entries(plugins.value).reduce((acc, [key, value]) => {
       if (
         key.toLowerCase().includes(keyword.toLowerCase()) ||
@@ -49,7 +51,7 @@ export const usePageStore = defineStore("page", () => {
       }
       return acc;
     }, {} as Plugins);
-  }
+  };
 
   return {
     theme,
