@@ -9,7 +9,6 @@ import {
   NLayout,
   NLayoutFooter,
   NLayoutHeader,
-  NSpace,
   NText,
   dateZhCN,
   zhCN,
@@ -60,10 +59,10 @@ const themeOverrides: GlobalThemeOverrides = {
                 <span class="text-lg">商店测试结果</span>
               </div>
               <div class="justify-self-end flex items-center" :span="1">
-                <n-space>
+                <div class="flex items-center gap-3">
                   <GithubButton />
                   <ThemeSwitcher />
-                </n-space>
+                </div>
               </div>
             </div>
           </div>
