@@ -25,7 +25,6 @@ import { usePageStore } from "@/stores/page";
 const route = useRoute();
 const store = usePageStore();
 const { theme, plugins, results } = storeToRefs(store);
-store.initData();
 
 const searchKeyword = ref("");
 onBeforeMount(() => {
