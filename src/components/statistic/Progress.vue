@@ -20,16 +20,16 @@
         </div>
       </n-progress>
     </n-el>
-    <n-space justify="center" inline>
-      <div>
-        <n-icon color="#66afd3" style="margin-right: 5px">
+    <n-space justify="space-around">
+      <div style="width: 50px">
+        <n-icon color="#66afd3" style="margin-right: 3px; overflow: hidden">
           <PackageVariantClosedCheck />
         </n-icon>
         <n-number-animation :from="0" :to="metadataCount" />
       </div>
       <n-divider vertical />
-      <div>
-        <n-icon color="#5acea7" style="margin-right: 5px">
+      <div style="width: 50px">
+        <n-icon color="#5acea7" style="margin-right: 3px; overflow: hidden">
           <PuzzleCheckOutline />
         </n-icon>
         <n-number-animation :from="0" :to="loadCount" />
