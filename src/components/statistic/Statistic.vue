@@ -2,7 +2,9 @@
   <n-popover trigger="click" style="width: 170px">
     <template #trigger>
       <n-button text>
-        <ChartDonutVariant />
+        <n-icon size="24">
+          <ChartDonutVariant />
+        </n-icon>
       </n-button>
     </template>
     <template #header>
@@ -27,7 +29,7 @@
 <script setup lang="ts">
 import { computed } from "vue";
 
-import { NPopover, NButton, NText, NSpace } from "naive-ui";
+import { NButton, NIcon, NPopover, NSpace, NText } from "naive-ui";
 import ChartDonutVariant from "vue-material-design-icons/ChartDonutVariant.vue";
 
 import { usePageStore } from "@/stores/page";
@@ -40,7 +42,6 @@ const store = usePageStore();
 
 const stat = computed(() => {
   let results = store.results as Results;
-  console.log(results);
   let totalCount = Object.keys(results).length;
   let passCount = Object.values(results).filter(
     (result) => result.results.validation,
