@@ -156,6 +156,7 @@ const columns: TableColumns<{
             checkTime: rowData.result.time,
             nowTime: nowTime,
           }),
+    defaultSortOrder: "descend",
     sorter(rowA, rowB) {
       if (loadingResults.value) return 0;
       return Date.parse(rowA.result.time) - Date.parse(rowB.result.time);
