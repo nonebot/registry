@@ -15,20 +15,21 @@
           <n-icon color="var(--success-color)">
             <CheckAll />
           </n-icon>
+          <br />
           <n-number-animation :from="0" :to="passCount" />/{{ totalCount }}
         </div>
       </n-progress>
     </n-el>
     <n-space justify="center" inline>
       <div>
-        <n-icon color="var(--success-color)">
+        <n-icon color="#66afd3" style="margin-right: 5px">
           <PackageVariantClosedCheck />
         </n-icon>
         <n-number-animation :from="0" :to="metadataCount" />
       </div>
       <n-divider vertical />
       <div>
-        <n-icon color="var(--success-color)">
+        <n-icon color="#5acea7" style="margin-right: 5px">
           <PuzzleCheckOutline />
         </n-icon>
         <n-number-animation :from="0" :to="loadCount" />
@@ -70,9 +71,9 @@ let metadataCount = Object.values(results).filter(
 ).length;
 
 let percentageList = ref([
-  Math.round((passCount / totalCount) * 100),
-  Math.round((metadataCount / totalCount) * 100),
-  Math.round((loadCount / totalCount) * 100),
+  Math.round((passCount / totalCount) * 10000) / 100, // 目的是保留两位小数
+  Math.round((metadataCount / totalCount) * 10000) / 100,
+  Math.round((loadCount / totalCount) * 10000) / 100,
 ]);
 
 let colorList = ref(percentageList.value.map(getProgressColor));
