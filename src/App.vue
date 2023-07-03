@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { onBeforeMount, ref } from "vue";
 
 import {
   GlobalThemeOverrides,
@@ -27,6 +27,14 @@ const { theme, plugins, results } = storeToRefs(store);
 store.initData();
 
 const searchKeyword = ref("");
+onBeforeMount(() => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const paramValue = urlParams.get("q");
+
+  if (paramValue !== null) {
+    searchKeyword.value = paramValue;
+  }
+});
 
 const themeOverrides: GlobalThemeOverrides = {
   common: {
