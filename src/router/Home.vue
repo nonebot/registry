@@ -19,11 +19,13 @@ import { useRoute } from "vue-router";
 import GithubButton from "@/components/GithubButton.vue";
 import ThemeSwitcher from "@/components/ThemeSwitcher.vue";
 import ResultTable from "@/components/result-table/ResultTable.vue";
+import Statistic from "@/components/statistic/Statistic.vue";
 import { usePageStore } from "@/stores/page";
 
 const route = useRoute();
 const store = usePageStore();
 const { theme, plugins, results } = storeToRefs(store);
+store.initData();
 
 const searchKeyword = ref("");
 onBeforeMount(() => {
@@ -66,6 +68,7 @@ const themeOverrides: GlobalThemeOverrides = {
               <div class="justify-self-end flex items-center" :span="1">
                 <div class="flex items-center gap-3">
                   <GithubButton />
+                  <Statistic />
                   <ThemeSwitcher />
                 </div>
               </div>
