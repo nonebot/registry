@@ -14,7 +14,7 @@ import Header from "@/components/Header.vue";
 import { usePageStore } from "@/stores/page";
 
 const store = usePageStore();
-const { theme, plugins, results } = storeToRefs(store);
+const { theme } = storeToRefs(store);
 
 const themeOverrides: GlobalThemeOverrides = {
   common: {
