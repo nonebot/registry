@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { provide } from "vue";
+
 import {
   GlobalThemeOverrides,
   NBackTop,
@@ -14,8 +16,13 @@ import Header from "@/components/Header.vue";
 import { usePageStore } from "@/stores/page";
 
 const store = usePageStore();
-const { theme } = storeToRefs(store);
+const { theme, plugins, results } = storeToRefs(store);
 store.initData();
+
+provide("store", store);
+provide("theme", theme);
+provide("plugins", plugins);
+provide("results", results);
 
 const themeOverrides: GlobalThemeOverrides = {
   common: {

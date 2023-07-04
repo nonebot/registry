@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from "vue-router";
 
 import Home from "@/router/Home.vue";
 import NotFound from "@/router/NotFound.vue";
+import PluginPage from "@/router/PluginPage.vue";
+import Search from "@/router/Search.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -12,10 +14,15 @@ const router = createRouter({
     },
     {
       path: "/search",
-      component: Home,
+      component: Search,
     },
     {
-      path: "/:notFound",
+      path: "/plugin/:path",
+      component: PluginPage,
+      props: true,
+    },
+    {
+      path: "/:notFound(.*)*",
       component: NotFound,
     },
   ],

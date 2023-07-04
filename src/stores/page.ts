@@ -53,6 +53,10 @@ export const usePageStore = defineStore("page", () => {
     }, {} as Plugins);
   };
 
+  const getPlugin = (pypi: string, module: string) => {
+    return plugins.value[`${pypi}:${module}`] as Plugins[keyof Plugins];
+  };
+
   return {
     theme,
     plugins,
@@ -60,5 +64,6 @@ export const usePageStore = defineStore("page", () => {
     initData,
     toggleDark,
     filterPlugins,
+    getPlugin,
   };
 });
