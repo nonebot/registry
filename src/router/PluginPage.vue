@@ -1,11 +1,13 @@
 <script setup lang="ts">
-import { inject } from "vue";
+import { onBeforeMount, ref } from "vue";
 
 import { NButton, NLayout, NResult } from "naive-ui";
 
 import NotFound from "@/router/NotFound.vue";
+import { usePageStore } from "@/stores/page";
+import { Plugins } from "@/types/plugins";
 
-const store = inject("store");
+const store = usePageStore();
 
 const props = defineProps({
   path: {
@@ -23,9 +25,12 @@ const [pypi, module] = (() => {
   }
 })();
 
-const plugin = (() => {
-  return store.getPlugin(pypi, module);
-})();
+const plugin = ref<Plugins[keyof Plugins]>({} as Plugins[keyof Plugins]);
+
+onBeforeMount(async () => {
+  await store.initDataSync();
+  plugin.value = store.getPlugin(pypi, module);
+});
 </script>
 
 <template>

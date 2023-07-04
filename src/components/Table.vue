@@ -1,9 +1,17 @@
 <script setup lang="ts">
-import { inject, ref, Ref } from "vue";
+import { ref, Ref, onBeforeMount } from "vue";
 
 import { NInput, NLayout } from "naive-ui";
+import { storeToRefs } from "pinia";
 
 import ResultTable from "@/components/result-table/ResultTable.vue";
+import { usePageStore } from "@/stores/page";
+
+const store = usePageStore();
+onBeforeMount(() => {
+  store.initData();
+});
+const { plugins, results } = storeToRefs(store);
 
 const props = defineProps({
   searchKeyword: {
@@ -13,8 +21,6 @@ const props = defineProps({
 });
 
 const searchKeyword = ref(props.searchKeyword) as Ref<string>;
-const plugins = inject("plugins");
-const results = inject("results");
 </script>
 
 <template>

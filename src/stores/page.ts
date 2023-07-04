@@ -41,6 +41,21 @@ export const usePageStore = defineStore("page", () => {
       .catch(console.error);
   };
 
+  const initDataSync = async () => {
+    try {
+      const pluginsResponse = await fetch("/plugins.json", { method: "GET" });
+      const pluginsData = await pluginsResponse.json();
+      pluginsData.forEach((plugin: Plugins[keyof Plugins]) => {
+        plugins.value[`${plugin.project_link}:${plugin.module_name}`] = plugin;
+      });
+
+      const resultsResponse = await fetch("/results.json", { method: "GET" });
+      results.value = await resultsResponse.json();
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   const filterPlugins = (keyword: string) => {
     return Object.entries(plugins.value).reduce((acc, [key, value]) => {
       if (
@@ -65,5 +80,6 @@ export const usePageStore = defineStore("page", () => {
     toggleDark,
     filterPlugins,
     getPlugin,
+    initDataSync,
   };
 });
