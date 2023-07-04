@@ -1,7 +1,7 @@
 name: Lint
 
 on:
-  pull_request:
+  pull_request_target:
     branches: [main]
 
 permissions:
@@ -25,6 +25,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-pr-review # Change reporter.
+          fail_on_error: true
           eslint_flags: "--cache --report-unused-disable-directives \"**/*.{js,jsx,ts,tsx,cjs,mjs,vue}\""
 
   stylelint:
@@ -42,4 +43,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-pr-review # Change reporter.
+          fail_on_error: true
           stylelint_input: "\"**/*.{css,scss}\""
