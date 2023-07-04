@@ -25,7 +25,7 @@
 <script setup lang="ts">
 import { reactive, computed, PropType } from "vue";
 
-import gsap from "gsap";
+import { gsap } from "gsap";
 import { NProgress, NSpace, NEl, NIcon, NNumberAnimation } from "naive-ui";
 import CheckAll from "vue-material-design-icons/CheckAll.vue";
 
