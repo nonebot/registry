@@ -23,7 +23,7 @@ onBeforeMount(() => {
 
 <template>
   <n-layout
-    class="my-3 lg:max-w-[90rem] max-w-3xl mx-auto flex justify-end px-4 sm:px-6 md:px-8"
+    class="lg:max-w-[90rem] max-w-3xl mx-auto flex justify-end px-4 sm:px-6 md:px-8"
   >
     <n-input
       v-model:value="searchKeyword"
@@ -34,7 +34,7 @@ onBeforeMount(() => {
     />
   </n-layout>
   <n-layout
-    class="my-3 lg:max-w-[90rem] max-w-3xl mx-auto min-h-screen px-4 sm:px-6 md:px-8"
+    class="mt-3 lg:max-w-[90rem] max-w-3xl mx-auto px-4 sm:px-6 md:px-8"
   >
     <ResultTable
       :plugins="plugins"
