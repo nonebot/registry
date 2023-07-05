@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { computed } from "vue";
+
 import {
   NButton,
   NCard,
@@ -26,10 +28,10 @@ const { loading } = storeToRefs(store);
 
 const [pypi, module] = props.path
   ? props.path.split(":")
-  : new Array(2).fill("");
+  : new Array<string>(2).fill("");
 
-const plugin = store.getPlugin(pypi, module);
-const result = store.getResult(pypi, module);
+const plugin = computed(() => loading && store.getPlugin(pypi, module));
+const result = computed(() => loading && store.getResult(pypi, module));
 
 function pickTextColor(bgColor: string): string {
   let color = bgColor.charAt(0) === "#" ? bgColor.substring(1, 7) : bgColor;
