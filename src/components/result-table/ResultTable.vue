@@ -56,7 +56,7 @@ const pagination = reactive({
   },
 });
 
-const columns: TableColumns = [
+const columns: TableColumns<RowData> = [
   {
     title: "PyPI 项目名 / 模块名",
     key: "plugin.module_name",
