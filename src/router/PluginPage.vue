@@ -1,7 +1,15 @@
 <script setup lang="ts">
 import { onBeforeMount, ref } from "vue";
 
-import { NButton, NLayout, NResult, NCard, NTag, NPageHeader } from "naive-ui";
+import {
+  NButton,
+  NLayout,
+  NResult,
+  NCard,
+  NTag,
+  NPageHeader,
+  NSkeleton,
+} from "naive-ui";
 import CheckCircle from "vue-material-design-icons/CheckCircle.vue";
 import { RouteLocationPathRaw, useRouter } from "vue-router";
 
@@ -14,7 +22,6 @@ import { Plugins } from "@/types/plugins";
 import { Results } from "@/types/results";
 
 const store = usePageStore();
-
 const router = useRouter();
 
 const props = defineProps({
@@ -35,11 +42,17 @@ const [pypi, module] = (() => {
 
 const plugin = ref<Plugins[keyof Plugins]>({} as Plugins[keyof Plugins]);
 const result = ref<Results[keyof Results]>({} as Results[keyof Results]);
+const loading = ref(true);
 
 onBeforeMount(async () => {
-  await store.initDataSync();
-  plugin.value = store.getPlugin(pypi, module);
-  result.value = store.getResult(pypi, module);
+  await (async () => {
+    await store.initDataSync();
+    plugin.value = store.getPlugin(pypi, module);
+    result.value = store.getResult(pypi, module);
+    loading.value = false;
+  })().finally(() => {
+    loading.value = false;
+  });
 });
 
 function pickTextColor(bgColor: string): string {
@@ -52,7 +65,8 @@ function pickTextColor(bgColor: string): string {
 </script>
 
 <template>
-  <div v-if="pypi && module && plugin && result">
+  <n-skeleton v-if="loading" class="min-h-screen" width="100%" />
+  <div v-else-if="pypi && module && plugin && result">
     <n-page-header
       @back="
         router.push({
@@ -190,7 +204,7 @@ function pickTextColor(bgColor: string): string {
       <n-card>
         <n-result
           status="404"
-          title="插件不存在"
+          title="数据未加载/插件不存在"
           :description="`${pypi}:${module} 不存在`"
         >
           <template #footer>

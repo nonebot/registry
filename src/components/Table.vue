@@ -13,8 +13,9 @@ const router = useRouter();
 
 const { plugins, results } = storeToRefs(store);
 
+store.initData();
+
 onBeforeMount(() => {
-  store.initData();
   router.push({ query: {} });
 });
 
