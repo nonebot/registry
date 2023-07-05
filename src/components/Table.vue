@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, Ref } from "vue";
+import { ref } from "vue";
 
 import { NInput, NLayout } from "naive-ui";
 import { storeToRefs } from "pinia";
@@ -7,20 +7,13 @@ import { storeToRefs } from "pinia";
 import ResultTable from "@/components/result-table/ResultTable.vue";
 import { usePageStore } from "@/stores/page";
 
+const props = defineProps<{ searchKeyword?: string }>();
 const store = usePageStore();
-
 const { plugins, results } = storeToRefs(store);
 
-store.initData();
-
-const props = defineProps({
-  searchKeyword: {
-    type: String,
-    default: "",
-  },
-});
-
-const searchKeyword = ref(props.searchKeyword) as Ref<string>;
+const searchKeyword = ref<string>(
+  props.searchKeyword ? props.searchKeyword : "",
+);
 </script>
 
 <template>

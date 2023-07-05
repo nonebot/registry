@@ -4,10 +4,10 @@ import { createPinia } from "pinia";
 
 import "highlight.js";
 
+import "virtual:uno.css";
+import "./scss/style.scss";
 import App from "./App.vue";
 import router from "./router";
-import "./scss/style.scss";
-import "virtual:uno.css";
 
 const pinia = createPinia();
 const app = createApp(App);

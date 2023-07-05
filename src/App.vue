@@ -15,6 +15,7 @@ import { usePageStore } from "@/stores/page";
 
 const store = usePageStore();
 const { theme } = storeToRefs(store);
+store.initData();
 
 const themeOverrides: GlobalThemeOverrides = {
   common: {
@@ -36,7 +37,7 @@ const themeOverrides: GlobalThemeOverrides = {
       <n-layout position="absolute">
         <Header></Header>
         <n-layout
-          class="my-3 min-h-screen mt-3 lg:max-w-[90rem] max-w-3xl mx-auto px-4 sm:px-6 md:px-8"
+          class="my-3 min-h-screen lg:max-w-[90rem] max-w-3xl mx-auto px-4 sm:px-6 md:px-8"
         >
           <router-view></router-view>
         </n-layout>

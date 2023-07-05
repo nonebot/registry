@@ -1,14 +1,15 @@
 <script setup lang="ts">
 import { computed, ComputedRef, h, reactive } from "vue";
 
-import { NDataTable, NSpace, NSkeleton } from "naive-ui";
-import { TableColumns } from "naive-ui/es/data-table/src/interface";
+import { NDataTable, NSkeleton, NSpace } from "naive-ui";
+import type { TableColumns } from "naive-ui/es/data-table/src/interface";
+import { storeToRefs } from "pinia";
 
 import Detail from "@/components/result-table/Detail.vue";
 import { usePageStore } from "@/stores/page";
-import { Plugins } from "@/types/plugins";
-import { Results } from "@/types/results";
-import { RowData } from "@/types/row";
+import type { Plugins } from "@/types/plugins";
+import type { Results } from "@/types/results";
+import type { RowData } from "@/types/row";
 
 import Author from "./Author.vue";
 import ColorTime from "./ColorTime.vue";
@@ -22,14 +23,13 @@ import ValidationIcon from "./ValidationIcon.vue";
 const nowTime = new Date().getTime();
 
 const store = usePageStore();
+const { loading } = storeToRefs(store);
 
 const props = defineProps<{
   plugins: Plugins;
   results: Results;
   searchKeyword: string;
 }>();
-const loading = computed(() => Object.keys(props.plugins).length === 0);
-const loadingResults = computed(() => Object.keys(props.results).length === 0);
 const filteredPlugins = computed(() =>
   store.filterPlugins(props.searchKeyword),
 );
@@ -89,7 +89,7 @@ const columns: TableColumns<RowData> = [
     title: "验证结果",
     key: "result.results.validation",
     render: (rowData: RowData) =>
-      loadingResults.value
+      loading.value
         ? h(LoadingCircle)
         : h(ValidationIcon, {
             projectLink: rowData.plugin.project_link,
@@ -98,7 +98,7 @@ const columns: TableColumns<RowData> = [
     align: "center",
     titleAlign: "center",
     sorter(rowA: RowData, rowB: RowData) {
-      if (loadingResults.value) return 0;
+      if (loading.value) return 0;
       return (
         Number(rowA.result.results.validation) -
         Number(rowB.result.results.validation)
@@ -109,7 +109,7 @@ const columns: TableColumns<RowData> = [
     title: "加载结果",
     key: "result.results.load",
     render: (rowData: RowData) =>
-      loadingResults.value
+      loading.value
         ? h(LoadingCircle)
         : h(LoadIcon, {
             projectLink: rowData.plugin.project_link,
@@ -118,7 +118,7 @@ const columns: TableColumns<RowData> = [
     align: "center",
     titleAlign: "center",
     sorter(rowA: RowData, rowB: RowData) {
-      if (loadingResults.value) return 0;
+      if (loading.value) return 0;
       return (
         Number(rowA.result.results.load) - Number(rowB.result.results.load)
       );
@@ -128,7 +128,7 @@ const columns: TableColumns<RowData> = [
     title: "元数据",
     key: "result.results.metadata",
     render: (rowData: RowData) =>
-      loadingResults.value
+      loading.value
         ? h(LoadingCircle)
         : h(MetadataIcon, {
             projectLink: rowData.plugin.project_link,
@@ -137,7 +137,7 @@ const columns: TableColumns<RowData> = [
     align: "center",
     titleAlign: "center",
     sorter(rowA: RowData, rowB: RowData) {
-      if (loadingResults.value) return 0;
+      if (loading.value) return 0;
       return (
         Number(rowA.result.results.metadata) -
         Number(rowB.result.results.metadata)
@@ -150,14 +150,14 @@ const columns: TableColumns<RowData> = [
     align: "center",
     titleAlign: "center",
     render: (rowData: RowData) =>
-      loadingResults.value
+      loading.value
         ? h(LoadingTime)
         : h(ColorTime, {
             checkTime: rowData.result.time,
             nowTime: nowTime,
           }),
     sorter(rowA: RowData, rowB: RowData) {
-      if (loadingResults.value) return 0;
+      if (loading.value) return 0;
       return Date.parse(rowA.result.time) - Date.parse(rowB.result.time);
     },
   },
@@ -167,14 +167,14 @@ const columns: TableColumns<RowData> = [
     align: "center",
     titleAlign: "center",
     render: (rowData: RowData) =>
-      loadingResults.value
+      loading.value
         ? h(LoadingTime)
         : h(Detail, {
             pypi: rowData.plugin.project_link,
             module: rowData.plugin.module_name,
           }),
   },
-] as TableColumns<RowData>;
+];
 </script>
 
 <template>

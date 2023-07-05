@@ -1,58 +1,35 @@
 <script setup lang="ts">
-import { ref } from "vue";
-
 import {
   NButton,
-  NLayout,
-  NResult,
   NCard,
-  NTag,
+  NLayout,
   NPageHeader,
+  NResult,
   NSkeleton,
+  NTag,
 } from "naive-ui";
+import { storeToRefs } from "pinia";
 import CheckCircle from "vue-material-design-icons/CheckCircle.vue";
 import { useRouter } from "vue-router";
 
 import Author from "@/components/result-table/Author.vue";
 import Load from "@/components/result-table/Load.vue";
 import Metadata from "@/components/result-table/Metadata.vue";
-import NotFound from "@/router/NotFound.vue";
 import { usePageStore } from "@/stores/page";
-import { Plugins } from "@/types/plugins";
-import { Results } from "@/types/results";
+import NotFound from "@/views/NotFound.vue";
 
-const store = usePageStore();
+const props = defineProps<{ path: string }>();
+
 const router = useRouter();
+const store = usePageStore();
+const { loading } = storeToRefs(store);
 
-const props = defineProps({
-  path: {
-    type: String,
-    required: true,
-    default: "",
-  },
-});
+const [pypi, module] = props.path
+  ? props.path.split(":")
+  : new Array(2).fill("");
 
-const [pypi, module] = (() => {
-  if (props.path) {
-    return props.path.split(":");
-  } else {
-    return ["", ""];
-  }
-})();
-
-const loading = ref(true);
-const plugin = ref<Plugins[keyof Plugins]>({} as Plugins[keyof Plugins]);
-const result = ref<Results[keyof Results]>({} as Results[keyof Results]);
-
-store.initDataSync().finally(() => {
-  plugin.value = store.getPlugin(pypi, module);
-  result.value = store.getResult(pypi, module);
-  loading.value = false;
-});
-
-function check(data: object): boolean {
-  return Object.keys(data).length > 0;
-}
+const plugin = store.getPlugin(pypi, module);
+const result = store.getResult(pypi, module);
 
 function pickTextColor(bgColor: string): string {
   let color = bgColor.charAt(0) === "#" ? bgColor.substring(1, 7) : bgColor;
@@ -65,7 +42,7 @@ function pickTextColor(bgColor: string): string {
 
 <template>
   <n-skeleton v-if="loading" class="min-h-screen" width="100%" />
-  <div v-else-if="pypi && module && check(plugin) && check(result)">
+  <div v-else-if="pypi && module && plugin && result">
     <n-page-header @back="router.back()">
       <template #title>
         <h1>
