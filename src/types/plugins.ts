@@ -1,3 +1,5 @@
+import { Tags } from "@/types/tags";
+
 export interface Plugins {
   [K: string]: {
     module_name: string;
@@ -6,7 +8,7 @@ export interface Plugins {
     desc: string;
     author: string;
     homepage: string;
-    tags: unknown[];
+    tags: Tags;
     is_official: boolean;
     type: string;
     supported_adapters: string[];

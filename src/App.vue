@@ -35,7 +35,9 @@ const themeOverrides: GlobalThemeOverrides = {
     >
       <n-layout position="absolute">
         <Header></Header>
-        <n-layout class="my-3 min-h-screen">
+        <n-layout
+          class="my-3 min-h-screen mt-3 lg:max-w-[90rem] max-w-3xl mx-auto px-4 sm:px-6 md:px-8"
+        >
           <router-view></router-view>
         </n-layout>
         <Footer></Footer>

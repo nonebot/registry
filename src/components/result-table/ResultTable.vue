@@ -1,21 +1,23 @@
 <script setup lang="ts">
-import { computed, h, reactive } from "vue";
+import { computed, ComputedRef, h, reactive } from "vue";
 
 import { NDataTable, NSpace, NSkeleton } from "naive-ui";
 import { TableColumns } from "naive-ui/es/data-table/src/interface";
 
+import Detail from "@/components/result-table/Detail.vue";
 import { usePageStore } from "@/stores/page";
 import { Plugins } from "@/types/plugins";
 import { Results } from "@/types/results";
+import { RowData } from "@/types/row";
 
 import Author from "./Author.vue";
 import ColorTime from "./ColorTime.vue";
-import Load from "./Load.vue";
+import LoadIcon from "./LoadIcon.vue";
 import LoadingCircle from "./LoadingCircle.vue";
 import LoadingTime from "./LoadingTime.vue";
-import Metadata from "./Metadata.vue";
+import MetadataIcon from "./MetadataIcon.vue";
 import PluginLink from "./PluginLink.vue";
-import Validation from "./Validation.vue";
+import ValidationIcon from "./ValidationIcon.vue";
 
 const nowTime = new Date().getTime();
 
@@ -31,7 +33,8 @@ const loadingResults = computed(() => Object.keys(props.results).length === 0);
 const filteredPlugins = computed(() =>
   store.filterPlugins(props.searchKeyword),
 );
-const data = computed(() =>
+
+const data: ComputedRef<RowData[]> = computed(() =>
   Object.keys(filteredPlugins.value).map((key) => {
     return {
       plugin: filteredPlugins.value[key],
@@ -53,14 +56,11 @@ const pagination = reactive({
   },
 });
 
-const columns: TableColumns<{
-  plugin: Plugins[keyof Plugins];
-  result: Results[keyof Results];
-}> = [
+const columns: TableColumns = [
   {
     title: "PyPI 项目名 / 模块名",
     key: "plugin.module_name",
-    render: (rowData) =>
+    render: (rowData: RowData) =>
       h(PluginLink, {
         moduleName: rowData.plugin.module_name,
         projectLink: rowData.plugin.project_link,
@@ -68,36 +68,36 @@ const columns: TableColumns<{
       }),
     align: "left",
     titleAlign: "left",
-    sorter(rowA, rowB) {
+    sorter(rowA: RowData, rowB: RowData) {
       return rowA.plugin.module_name.localeCompare(rowB.plugin.module_name);
     },
   },
   {
     title: "作者",
     key: "plugin.author",
-    render: (rowData) =>
+    render: (rowData: RowData) =>
       h(Author, {
         author: rowData.plugin.author,
       }),
     align: "center",
     titleAlign: "center",
-    sorter(rowA, rowB) {
+    sorter(rowA: RowData, rowB: RowData) {
       return rowA.plugin.author.localeCompare(rowB.plugin.author);
     },
   },
   {
     title: "验证结果",
     key: "result.results.validation",
-    render: (rowData) =>
+    render: (rowData: RowData) =>
       loadingResults.value
         ? h(LoadingCircle)
-        : h(Validation, {
+        : h(ValidationIcon, {
             projectLink: rowData.plugin.project_link,
             result: rowData.result,
           }),
     align: "center",
     titleAlign: "center",
-    sorter(rowA, rowB) {
+    sorter(rowA: RowData, rowB: RowData) {
       if (loadingResults.value) return 0;
       return (
         Number(rowA.result.results.validation) -
@@ -108,16 +108,16 @@ const columns: TableColumns<{
   {
     title: "加载结果",
     key: "result.results.load",
-    render: (rowData) =>
+    render: (rowData: RowData) =>
       loadingResults.value
         ? h(LoadingCircle)
-        : h(Load, {
+        : h(LoadIcon, {
             projectLink: rowData.plugin.project_link,
             result: rowData.result,
           }),
     align: "center",
     titleAlign: "center",
-    sorter(rowA, rowB) {
+    sorter(rowA: RowData, rowB: RowData) {
       if (loadingResults.value) return 0;
       return (
         Number(rowA.result.results.load) - Number(rowB.result.results.load)
@@ -127,16 +127,16 @@ const columns: TableColumns<{
   {
     title: "元数据",
     key: "result.results.metadata",
-    render: (rowData) =>
+    render: (rowData: RowData) =>
       loadingResults.value
         ? h(LoadingCircle)
-        : h(Metadata, {
+        : h(MetadataIcon, {
             projectLink: rowData.plugin.project_link,
             result: rowData.result,
           }),
     align: "center",
     titleAlign: "center",
-    sorter(rowA, rowB) {
+    sorter(rowA: RowData, rowB: RowData) {
       if (loadingResults.value) return 0;
       return (
         Number(rowA.result.results.metadata) -
@@ -149,19 +149,32 @@ const columns: TableColumns<{
     key: "result.time",
     align: "center",
     titleAlign: "center",
-    render: (rowData) =>
+    render: (rowData: RowData) =>
       loadingResults.value
         ? h(LoadingTime)
         : h(ColorTime, {
             checkTime: rowData.result.time,
             nowTime: nowTime,
           }),
-    sorter(rowA, rowB) {
+    sorter(rowA: RowData, rowB: RowData) {
       if (loadingResults.value) return 0;
       return Date.parse(rowA.result.time) - Date.parse(rowB.result.time);
     },
   },
-];
+  {
+    title: "选项",
+    key: "result.detail",
+    align: "center",
+    titleAlign: "center",
+    render: (rowData: RowData) =>
+      loadingResults.value
+        ? h(LoadingTime)
+        : h(Detail, {
+            pypi: rowData.plugin.project_link,
+            module: rowData.plugin.module_name,
+          }),
+  },
+] as TableColumns<RowData>;
 </script>
 
 <template>

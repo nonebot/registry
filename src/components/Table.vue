@@ -3,15 +3,20 @@ import { ref, Ref, onBeforeMount } from "vue";
 
 import { NInput, NLayout } from "naive-ui";
 import { storeToRefs } from "pinia";
+import { useRouter } from "vue-router";
 
 import ResultTable from "@/components/result-table/ResultTable.vue";
 import { usePageStore } from "@/stores/page";
 
 const store = usePageStore();
+const router = useRouter();
+
+const { plugins, results } = storeToRefs(store);
+
 onBeforeMount(() => {
   store.initData();
+  router.push({ query: {} });
 });
-const { plugins, results } = storeToRefs(store);
 
 const props = defineProps({
   searchKeyword: {
@@ -24,9 +29,7 @@ const searchKeyword = ref(props.searchKeyword) as Ref<string>;
 </script>
 
 <template>
-  <n-layout
-    class="lg:max-w-[90rem] max-w-3xl mx-auto flex justify-end px-4 sm:px-6 md:px-8"
-  >
+  <n-layout class="mx-auto flex justify-end">
     <n-input
       v-model:value="searchKeyword"
       class="min-w-1/4"
@@ -35,9 +38,7 @@ const searchKeyword = ref(props.searchKeyword) as Ref<string>;
       clearable
     />
   </n-layout>
-  <n-layout
-    class="mt-3 lg:max-w-[90rem] max-w-3xl mx-auto px-4 sm:px-6 md:px-8"
-  >
+  <n-layout class="mt-3 mx-auto">
     <ResultTable
       :plugins="plugins"
       :results="results"
