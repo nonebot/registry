@@ -6,7 +6,7 @@ import PuzzleCheckOutline from "vue-material-design-icons/PuzzleCheckOutline.vue
 import PuzzleRemoveOutline from "vue-material-design-icons/PuzzleRemoveOutline.vue";
 
 import Load from "@/components/result-table/Load.vue";
-import { Results } from "@/types/results";
+import type { Results } from "@/types/results";
 
 defineProps<{ projectLink: string; result: Results[keyof Results] }>();
 

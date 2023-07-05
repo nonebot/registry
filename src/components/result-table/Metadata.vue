@@ -6,7 +6,7 @@ import hljsVuePlugin from "@highlightjs/vue-plugin";
 import hljs from "highlight.js/lib/core";
 import json from "highlight.js/lib/languages/json";
 
-import { Results } from "@/types/results";
+import type { Results } from "@/types/results";
 
 hljs.registerLanguage("json", json);
 

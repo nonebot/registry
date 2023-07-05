@@ -4,8 +4,8 @@ import { useDark, useToggle } from "@vueuse/core";
 import { darkTheme, type GlobalTheme } from "naive-ui";
 import { defineStore } from "pinia";
 
-import { Plugins } from "@/types/plugins";
-import { Results } from "@/types/results";
+import type { Plugins } from "@/types/plugins";
+import type { Results } from "@/types/results";
 
 export const usePageStore = defineStore("page", () => {
   const theme = ref<GlobalTheme | null>(null);

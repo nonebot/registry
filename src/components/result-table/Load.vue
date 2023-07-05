@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import AnsiUp from "ansi_up";
 
-import { Results } from "@/types/results";
+import type { Results } from "@/types/results";
 
 defineProps<{ result: Results[keyof Results] }>();
 const ansi_up = new AnsiUp();

@@ -6,7 +6,7 @@ import PackageVariant from "vue-material-design-icons/PackageVariant.vue";
 import PackageVariantRemove from "vue-material-design-icons/PackageVariantRemove.vue";
 
 import Metadata from "@/components/result-table/Metadata.vue";
-import { Results } from "@/types/results";
+import type { Results } from "@/types/results";
 
 const props = defineProps<{
   projectLink: string;

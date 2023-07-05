@@ -5,7 +5,7 @@ import { NModal } from "naive-ui";
 import CheckCircleOutline from "vue-material-design-icons/CheckCircleOutline.vue";
 import CheckCloseOutline from "vue-material-design-icons/CloseCircleOutline.vue";
 
-import { Results } from "@/types/results";
+import type { Results } from "@/types/results";
 
 defineProps<{ projectLink: string; result: Results[keyof Results] }>();
 
