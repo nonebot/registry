@@ -17,7 +17,7 @@ const searchKeyword = ref<string>(
 </script>
 
 <template>
-  <n-layout class="mx-auto flex justify-end">
+  <n-layout class="flex justify-end">
     <n-input
       v-model:value="searchKeyword"
       class="min-w-1/4"
@@ -26,7 +26,7 @@ const searchKeyword = ref<string>(
       clearable
     />
   </n-layout>
-  <n-layout class="mt-3 mx-auto">
+  <n-layout class="mt-3">
     <ResultTable
       :plugins="plugins"
       :results="results"

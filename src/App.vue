@@ -42,7 +42,7 @@ const themeOverrides: GlobalThemeOverrides = {
           <router-view></router-view>
         </n-layout>
         <Footer></Footer>
-        <n-back-top :right="100" />
+        <n-back-top />
       </n-layout>
     </n-config-provider>
   </div>
