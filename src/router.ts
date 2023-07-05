@@ -23,8 +23,8 @@ const routes = [
   {
     path: "/:pathMatched(.*)*",
     component: NotFound,
-    props: (route: { params: { pathMatch: string } }) => ({
-      query: route.params.pathMatch,
+    props: (route: { params: { pathMatched: string } }) => ({
+      pathMatched: `/${route.params.pathMatched}`,
     }),
   },
 ];
