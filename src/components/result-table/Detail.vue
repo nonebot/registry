@@ -5,7 +5,7 @@ defineProps<{ pypi: string; module: string }>();
 </script>
 
 <template>
-  <router-link :to="`/plugin/${pypi}:${module}?loaded=true`">
+  <router-link :to="`/plugin/${pypi}:${module}`">
     <n-button> 详情 </n-button>
   </router-link>
 </template>

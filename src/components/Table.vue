@@ -1,23 +1,17 @@
 <script setup lang="ts">
-import { ref, Ref, onBeforeMount } from "vue";
+import { ref, Ref } from "vue";
 
 import { NInput, NLayout } from "naive-ui";
 import { storeToRefs } from "pinia";
-import { useRouter } from "vue-router";
 
 import ResultTable from "@/components/result-table/ResultTable.vue";
 import { usePageStore } from "@/stores/page";
 
 const store = usePageStore();
-const router = useRouter();
 
 const { plugins, results } = storeToRefs(store);
 
 store.initData();
-
-onBeforeMount(() => {
-  router.push({ query: {} });
-});
 
 const props = defineProps({
   searchKeyword: {

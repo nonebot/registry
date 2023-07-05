@@ -11,7 +11,7 @@ import {
   NSkeleton,
 } from "naive-ui";
 import CheckCircle from "vue-material-design-icons/CheckCircle.vue";
-import { RouteLocationPathRaw, useRouter } from "vue-router";
+import { useRouter } from "vue-router";
 
 import Author from "@/components/result-table/Author.vue";
 import Load from "@/components/result-table/Load.vue";
@@ -67,14 +67,7 @@ function pickTextColor(bgColor: string): string {
 <template>
   <n-skeleton v-if="loading" class="min-h-screen" width="100%" />
   <div v-else-if="pypi && module && plugin && result">
-    <n-page-header
-      @back="
-        router.push({
-          path: '/',
-          query: { loaded: 'true' },
-        } as RouteLocationPathRaw)
-      "
-    >
+    <n-page-header @back="router.back()">
       <template #title>
         <h1>
           {{ plugin.name }}
