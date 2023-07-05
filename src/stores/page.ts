@@ -68,12 +68,20 @@ export const usePageStore = defineStore("page", () => {
     }, {} as Plugins);
   };
 
-  const getPlugin = (pypi: string, module: string) => {
-    return plugins.value[`${pypi}:${module}`] as Plugins[keyof Plugins];
+  const getPlugin = (pypi: string, module: string): Plugins[keyof Plugins] => {
+    if (Object.keys(plugins.value).indexOf(`${pypi}:${module}`) !== -1) {
+      return plugins.value[`${pypi}:${module}`] as Plugins[keyof Plugins];
+    } else {
+      return {} as Plugins[keyof Plugins];
+    }
   };
 
-  const getResult = (pypi: string, module: string) => {
-    return results.value[`${pypi}:${module}`] as Results[keyof Results];
+  const getResult = (pypi: string, module: string): Results[keyof Results] => {
+    if (Object.keys(results.value).indexOf(`${pypi}:${module}`) !== -1) {
+      return results.value[`${pypi}:${module}`] as Results[keyof Results];
+    } else {
+      return {} as Results[keyof Results];
+    }
   };
 
   return {

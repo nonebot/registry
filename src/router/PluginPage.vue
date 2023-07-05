@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onBeforeMount, ref } from "vue";
+import { ref } from "vue";
 
 import {
   NButton,
@@ -40,20 +40,19 @@ const [pypi, module] = (() => {
   }
 })();
 
+const loading = ref(true);
 const plugin = ref<Plugins[keyof Plugins]>({} as Plugins[keyof Plugins]);
 const result = ref<Results[keyof Results]>({} as Results[keyof Results]);
-const loading = ref(true);
 
-onBeforeMount(async () => {
-  await (async () => {
-    await store.initDataSync();
-    plugin.value = store.getPlugin(pypi, module);
-    result.value = store.getResult(pypi, module);
-    loading.value = false;
-  })().finally(() => {
-    loading.value = false;
-  });
+store.initDataSync().finally(() => {
+  plugin.value = store.getPlugin(pypi, module);
+  result.value = store.getResult(pypi, module);
+  loading.value = false;
 });
+
+function check(data: object): boolean {
+  return Object.keys(data).length > 0;
+}
 
 function pickTextColor(bgColor: string): string {
   let color = bgColor.charAt(0) === "#" ? bgColor.substring(1, 7) : bgColor;
@@ -66,7 +65,7 @@ function pickTextColor(bgColor: string): string {
 
 <template>
   <n-skeleton v-if="loading" class="min-h-screen" width="100%" />
-  <div v-else-if="pypi && module && plugin && result">
+  <div v-else-if="pypi && module && check(plugin) && check(result)">
     <n-page-header @back="router.back()">
       <template #title>
         <h1>
