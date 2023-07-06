@@ -3,13 +3,16 @@ import AnsiUp from "ansi_up";
 
 import type { Results } from "@/types/results";
 
-defineProps<{ result: Results[keyof Results] }>();
+defineProps<{ result: Results[keyof Results]; dense?: boolean }>();
 const ansi_up = new AnsiUp();
 </script>
 
 <template>
   <pre
-    class="max-h-[50vh] overflow-auto"
+    class="overflow-auto"
+    :class="{
+      'max-h-[50vh]': dense,
+    }"
     v-html="ansi_up.ansi_to_html(result.outputs.load)"
   ></pre>
 </template>

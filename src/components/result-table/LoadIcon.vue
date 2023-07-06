@@ -31,7 +31,7 @@ const showModal = ref(false);
     :title="`${projectLink} 加载日志`"
   >
     <template #default>
-      <Load :result="result" />
+      <Load :result="result" dense />
     </template>
   </n-modal>
 </template>

@@ -78,6 +78,7 @@ const columns: TableColumns<RowData> = [
     render: (rowData: RowData) =>
       h(Author, {
         author: rowData.plugin.author,
+        dense: true,
       }),
     align: "center",
     titleAlign: "center",
