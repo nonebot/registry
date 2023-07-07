@@ -139,6 +139,7 @@ const columns: TableColumns<RowData> = [
     key: "result.time",
     align: "center",
     titleAlign: "center",
+    defaultSortOrder: "descend",
     render: (rowData: RowData) =>
       h(ColorTime, {
         checkTime: rowData.result.time,
