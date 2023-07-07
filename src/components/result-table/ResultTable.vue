@@ -166,7 +166,7 @@ const columns: TableColumns<RowData> = [
 <template>
   <n-space v-if="loading" vertical>
     <n-skeleton height="48px" />
-    <n-skeleton v-for="i in pagination.pageSize" :key="i" height="56px" />
+    <n-skeleton v-for="i in pagination.pageSize" :key="i" height="62px" />
   </n-space>
   <n-data-table
     v-else
