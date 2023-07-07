@@ -73,7 +73,7 @@ function pickTextColor(bgColor: string): string {
             </n-p>
             <n-p
               ><n-h3>加载结果</n-h3>
-              <Load :result="result" />
+              <Load :result="result" class="max-w-[60vw]" />
             </n-p>
           </div>
           <div class="xl:pl-5 pb-5">

@@ -14,8 +14,6 @@ import type { RowData } from "@/types/row";
 import Author from "./Author.vue";
 import ColorTime from "./ColorTime.vue";
 import LoadIcon from "./LoadIcon.vue";
-import LoadingCircle from "./LoadingCircle.vue";
-import LoadingTime from "./LoadingTime.vue";
 import MetadataIcon from "./MetadataIcon.vue";
 import PluginLink from "./PluginLink.vue";
 import ValidationIcon from "./ValidationIcon.vue";
@@ -90,16 +88,13 @@ const columns: TableColumns<RowData> = [
     title: "验证结果",
     key: "result.results.validation",
     render: (rowData: RowData) =>
-      loading.value
-        ? h(LoadingCircle)
-        : h(ValidationIcon, {
-            projectLink: rowData.plugin.project_link,
-            result: rowData.result,
-          }),
+      h(ValidationIcon, {
+        projectLink: rowData.plugin.project_link,
+        result: rowData.result,
+      }),
     align: "center",
     titleAlign: "center",
     sorter(rowA: RowData, rowB: RowData) {
-      if (loading.value) return 0;
       return (
         Number(rowA.result.results.validation) -
         Number(rowB.result.results.validation)
@@ -110,16 +105,13 @@ const columns: TableColumns<RowData> = [
     title: "加载结果",
     key: "result.results.load",
     render: (rowData: RowData) =>
-      loading.value
-        ? h(LoadingCircle)
-        : h(LoadIcon, {
-            projectLink: rowData.plugin.project_link,
-            result: rowData.result,
-          }),
+      h(LoadIcon, {
+        projectLink: rowData.plugin.project_link,
+        result: rowData.result,
+      }),
     align: "center",
     titleAlign: "center",
     sorter(rowA: RowData, rowB: RowData) {
-      if (loading.value) return 0;
       return (
         Number(rowA.result.results.load) - Number(rowB.result.results.load)
       );
@@ -129,16 +121,13 @@ const columns: TableColumns<RowData> = [
     title: "元数据",
     key: "result.results.metadata",
     render: (rowData: RowData) =>
-      loading.value
-        ? h(LoadingCircle)
-        : h(MetadataIcon, {
-            projectLink: rowData.plugin.project_link,
-            result: rowData.result,
-          }),
+      h(MetadataIcon, {
+        projectLink: rowData.plugin.project_link,
+        result: rowData.result,
+      }),
     align: "center",
     titleAlign: "center",
     sorter(rowA: RowData, rowB: RowData) {
-      if (loading.value) return 0;
       return (
         Number(rowA.result.results.metadata) -
         Number(rowB.result.results.metadata)
@@ -151,14 +140,11 @@ const columns: TableColumns<RowData> = [
     align: "center",
     titleAlign: "center",
     render: (rowData: RowData) =>
-      loading.value
-        ? h(LoadingTime)
-        : h(ColorTime, {
-            checkTime: rowData.result.time,
-            nowTime: nowTime,
-          }),
+      h(ColorTime, {
+        checkTime: rowData.result.time,
+        nowTime: nowTime,
+      }),
     sorter(rowA: RowData, rowB: RowData) {
-      if (loading.value) return 0;
       return Date.parse(rowA.result.time) - Date.parse(rowB.result.time);
     },
   },
@@ -168,12 +154,10 @@ const columns: TableColumns<RowData> = [
     align: "center",
     titleAlign: "center",
     render: (rowData: RowData) =>
-      loading.value
-        ? h(LoadingTime)
-        : h(Detail, {
-            pypi: rowData.plugin.project_link,
-            module: rowData.plugin.module_name,
-          }),
+      h(Detail, {
+        pypi: rowData.plugin.project_link,
+        module: rowData.plugin.module_name,
+      }),
   },
 ];
 </script>
