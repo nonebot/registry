@@ -27,12 +27,12 @@ const showModal = ref(false);
     <PackageVariant
       v-if="result.results.metadata"
       class="flex justify-center align-middle"
-      style="color: rgb(42, 95, 243)"
+      style="color: #5784ff"
     />
     <PackageVariantRemove
       v-else
       class="flex justify-center align-middle"
-      style="color: rgb(236, 194, 5)"
+      style="color: #ffcc66"
     />
   </div>
   <n-modal
