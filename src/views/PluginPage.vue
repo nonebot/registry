@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from "vue";
 
-import { mdiCheckCircle, mdiRocketLaunch } from "@mdi/js";
+import { mdiCheckCircle, mdiRocketLaunch, mdiSquareEditOutline } from "@mdi/js";
 import {
   NA,
   NAlert,
@@ -14,6 +14,7 @@ import {
   NResult,
   NSkeleton,
   NTag,
+  NTooltip,
   NText,
 } from "naive-ui";
 import { storeToRefs } from "pinia";
@@ -61,7 +62,15 @@ const result = computed(() => !loading.value && store.getResult(pypi, module));
     <div class="flex flex-col-reverse xl:flex-row justify-between">
       <div class="xl:basis-3/4 xl:max-w-3/4 xl:pr-2">
         <n-p v-if="result.inputs.config">
-          <n-h3>配置项</n-h3>
+          <n-h3
+            >配置项
+            <n-tooltip placement="right-end" trigger="hover">
+              <template #trigger>
+                <n-button text> <Icon :path="mdiSquareEditOutline" /></n-button>
+              </template>
+              <span> 修改配置项 </span>
+            </n-tooltip>
+          </n-h3>
           <pre class="overflow-auto font-mono">{{
             result.inputs.config.trim()
           }}</pre>
