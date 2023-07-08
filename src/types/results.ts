@@ -32,7 +32,7 @@ export interface Metadata {
 export interface Results {
   [K: string]: {
     inputs: {
-      [K in "configs"]: string;
+      [K in "config"]: string;
     };
     outputs: {
       load: string;

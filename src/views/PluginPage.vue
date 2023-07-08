@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from "vue";
 
-import { mdiCheckCircle, mdiRocketLaunch } from "@mdi/js";
+import { mdiCheckCircle, mdiRocketLaunch, mdiSquareEditOutline } from "@mdi/js";
 import {
   NA,
   NAlert,
@@ -14,6 +14,7 @@ import {
   NResult,
   NSkeleton,
   NTag,
+  NTooltip,
   NText,
 } from "naive-ui";
 import { storeToRefs } from "pinia";
@@ -61,6 +62,33 @@ const result = computed(() => !loading.value && store.getResult(pypi, module));
     </n-page-header>
     <div class="flex justify-between flex-col-reverse xl:flex-row">
       <div class="flex-initial min-w-0 xl:max-w-3/4 xl:pr-32">
+        <n-p>
+          <n-h3
+            >配置项
+            <n-tooltip placement="right-end" trigger="hover">
+              <template #trigger>
+                <n-button
+                  text
+                  tag="a"
+                  :href="
+                    encodeURI(
+                      `https://github.com/nonebot/registry/issues/new?template=plugin_config_edit.yml&title=plugin: 修改插件 ${
+                        plugin.name
+                      } 的配置项&pypi=${pypi}&module=${module}&config=${result.inputs.config.trim()}`,
+                    )
+                  "
+                  target="_blank"
+                >
+                  <Icon :path="mdiSquareEditOutline"
+                /></n-button>
+              </template>
+              <span> 修改配置项 </span>
+            </n-tooltip>
+          </n-h3>
+          <pre class="overflow-auto font-mono">{{
+            result.inputs.config.trim() || "无"
+          }}</pre>
+        </n-p>
         <n-p>
           <n-h3>验证结果</n-h3>
           <Validation
