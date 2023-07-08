@@ -66,13 +66,26 @@ const result = computed(() => !loading.value && store.getResult(pypi, module));
             >配置项
             <n-tooltip placement="right-end" trigger="hover">
               <template #trigger>
-                <n-button text> <Icon :path="mdiSquareEditOutline" /></n-button>
+                <n-button
+                  text
+                  tag="a"
+                  :href="
+                    encodeURI(
+                      `https://github.com/nonebot/registry/issues/new?template=plugin_config_edit.yml&title=plugin: 修改插件 ${
+                        plugin.name
+                      } 的配置项&pypi=${pypi}&module=${module}&config=${result.inputs.config.trim()}`,
+                    )
+                  "
+                  target="_blank"
+                >
+                  <Icon :path="mdiSquareEditOutline"
+                /></n-button>
               </template>
               <span> 修改配置项 </span>
             </n-tooltip>
           </n-h3>
           <pre class="overflow-auto font-mono">{{
-            result.inputs.config.trim()
+            result.inputs.config.trim() || "无"
           }}</pre>
         </n-p>
         <n-p>
