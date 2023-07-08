@@ -60,7 +60,7 @@ function pickTextColor(bgColor: string): string {
     <n-tabs animated>
       <n-tab-pane name="overview" tab="总览">
         <div class="flex flex-col-reverse xl:flex-row justify-between">
-          <div class="max-w-[60vw]">
+          <div class="xl:max-w-[60vw]">
             <n-p>
               <n-h3>验证结果</n-h3>
               <pre class="overflow-auto font-mono">{{
