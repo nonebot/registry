@@ -60,6 +60,12 @@ const result = computed(() => !loading.value && store.getResult(pypi, module));
     </n-page-header>
     <div class="flex flex-col-reverse xl:flex-row justify-between">
       <div class="xl:basis-3/4 xl:max-w-3/4 xl:pr-2">
+        <n-p v-if="result.inputs.config">
+          <n-h3>配置项</n-h3>
+          <pre class="overflow-auto font-mono">{{
+            result.inputs.config.trim()
+          }}</pre>
+        </n-p>
         <n-p>
           <n-h3>验证结果</n-h3>
           <Validation
