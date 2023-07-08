@@ -14,12 +14,16 @@ const highlightjs = defineComponent(hljsVuePlugin.component);
 
 const props = defineProps<{
   result: Results[keyof Results];
+  dense?: boolean;
 }>();
 </script>
 
 <template>
   <highlightjs
-    class="max-h-[50vh] overflow-auto"
+    class="overflow-auto"
+    :class="{
+      'max-h-[50vh]': dense,
+    }"
     language="json"
     ignore-illegals
     :autodetect="false"

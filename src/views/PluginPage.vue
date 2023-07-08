@@ -60,7 +60,7 @@ function pickTextColor(bgColor: string): string {
     <n-tabs animated>
       <n-tab-pane name="overview" tab="总览">
         <div class="flex flex-col-reverse xl:flex-row justify-between">
-          <div>
+          <div class="max-w-[60vw]">
             <n-p>
               <n-h3>验证结果</n-h3>
               <pre class="overflow-auto">{{ result.outputs.validation }}</pre>
@@ -71,10 +71,10 @@ function pickTextColor(bgColor: string): string {
             </n-p>
             <n-p
               ><n-h3>加载结果</n-h3>
-              <Load :result="result" class="max-w-[60vw]" />
+              <Load :result="result" />
             </n-p>
           </div>
-          <div class="xl:pl-5 pb-5 shrink-0">
+          <div class="xl:pl-5 pb-5">
             <n-h3>其他信息</n-h3>
             <n-p> 作者：<Author :author="plugin.author" /> </n-p>
             <n-p> 描述：{{ plugin.desc }} </n-p>
