@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { NButton, NIcon } from "naive-ui";
+import { NA, NIcon } from "naive-ui";
 import Package from "vue-material-design-icons/Package.vue";
 
 defineProps<{
@@ -10,20 +10,16 @@ defineProps<{
 </script>
 
 <template>
-  <n-button
-    text
-    tag="a"
+  <n-a
+    class="text-inherit hover:color-[#ea5252] no-underline"
     :href="`https://pypi.org/project/${projectLink}/`"
     target="_blank"
   >
     {{ projectLink }}
-  </n-button>
+  </n-a>
   <br />
-  <n-button
-    class="color-gray hover:color-[#ea5252] hover:bg-[#ea5252]"
-    size="tiny"
-    text
-    tag="a"
+  <n-a
+    class="color-gray hover:color-[#ea5252] no-underline flex items-center"
     :href="homepage"
     target="_blank"
   >
@@ -31,5 +27,5 @@ defineProps<{
       <Package />
     </n-icon>
     {{ moduleName }}
-  </n-button>
+  </n-a>
 </template>

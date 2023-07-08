@@ -53,6 +53,12 @@ module.exports = {
     ],
     "vue/multi-word-component-names": 0,
     "vue/no-v-html": 0,
+    "vue/component-tags-order": [
+      "error",
+      {
+        order: ["script", "template", "style"],
+      },
+    ],
     "import/no-unresolved": ["error", { ignore: ["^virtual:"] }],
     "no-console": ["error", { allow: ["warn", "error"] }],
   },
