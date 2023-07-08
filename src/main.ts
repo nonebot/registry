@@ -2,8 +2,6 @@ import { createApp } from "vue";
 
 import { createPinia } from "pinia";
 
-import "highlight.js";
-
 import "virtual:uno.css";
 import "./scss/style.scss";
 import App from "./App.vue";

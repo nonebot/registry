@@ -9,7 +9,7 @@ const ansi_up = new AnsiUp();
 
 <template>
   <pre
-    class="overflow-auto"
+    class="overflow-auto font-mono"
     :class="{
       'max-h-[50vh]': dense,
     }"

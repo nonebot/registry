@@ -63,7 +63,9 @@ function pickTextColor(bgColor: string): string {
           <div class="max-w-[60vw]">
             <n-p>
               <n-h3>验证结果</n-h3>
-              <pre class="overflow-auto">{{ result.outputs.validation }}</pre>
+              <pre class="overflow-auto font-mono">{{
+                result.outputs.validation
+              }}</pre>
             </n-p>
             <n-p>
               <n-h3>元数据</n-h3>

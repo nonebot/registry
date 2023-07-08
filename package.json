@@ -21,7 +21,6 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@highlightjs/vue-plugin": "^2.1.0",
     "@vueuse/core": "^10.2.1",
     "ansi_up": "^5.2.1",
     "highlight.js": "^11.8.0",

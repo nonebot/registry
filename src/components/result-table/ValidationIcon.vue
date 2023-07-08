@@ -30,7 +30,7 @@ const showModal = ref(false);
     :title="`${projectLink} 验证结果`"
   >
     <template #default>
-      <pre class="max-h-[50vh] overflow-auto">{{
+      <pre class="max-h-[50vh] overflow-auto font-mono">{{
         result.outputs.validation
       }}</pre>
     </template>
