@@ -1,12 +1,14 @@
 <script setup lang="ts">
-import { computed, ComputedRef, h, reactive } from "vue";
+import { computed, ComputedRef, h, provide, reactive } from "vue";
 
-import { NDataTable, NSkeleton, NSpace } from "naive-ui";
+import { useClipboard } from "@vueuse/core";
+import { NDataTable, NSkeleton, NSpace, useMessage } from "naive-ui";
 import type { TableColumns } from "naive-ui/es/data-table/src/interface";
 import { storeToRefs } from "pinia";
 
 import Detail from "@/components/result-table/Detail.vue";
 import { usePageStore } from "@/stores/page";
+import { CopyText } from "@/types/inject";
 import type { Plugins } from "@/types/plugins";
 import type { Results } from "@/types/results";
 import type { RowData } from "@/types/row";
@@ -22,6 +24,16 @@ const nowTime = new Date().getTime();
 
 const store = usePageStore();
 const { loading } = storeToRefs(store);
+
+const message = useMessage();
+const { copy } = useClipboard();
+
+const copyText = (text: string) => {
+  copy(text);
+  message.success(`已复制: ${text}`);
+};
+
+provide(CopyText, copyText);
 
 const props = defineProps<{
   plugins: Plugins;

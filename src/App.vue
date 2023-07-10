@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { ref } from "vue";
-
 import hljs from "highlight.js/lib/core";
 import json from "highlight.js/lib/languages/json";
 hljs.registerLanguage("json", json);
@@ -13,8 +11,8 @@ import {
   dateZhCN,
   zhCN,
 } from "naive-ui";
-import type { MessageProviderProps } from "naive-ui";
 import { storeToRefs } from "pinia";
+
 const store = usePageStore();
 const { theme } = storeToRefs(store);
 store.initData();
@@ -30,9 +28,6 @@ const themeOverrides: GlobalThemeOverrides = {
     primaryColorPressed: "#ea5252",
   },
 };
-
-const placement = ref<MessageProviderProps["placement"]>("top");
-const maxShowNum = ref<MessageProviderProps["max"]>(1);
 </script>
 
 <template>
@@ -44,7 +39,7 @@ const maxShowNum = ref<MessageProviderProps["max"]>(1);
       :date-locale="dateZhCN"
       :hljs="hljs"
     >
-      <n-message-provider :placement="placement" :max="maxShowNum">
+      <n-message-provider placement="top" :max="1">
         <n-layout position="absolute">
           <Header></Header>
           <n-layout

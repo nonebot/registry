@@ -1,16 +1,13 @@
 <script setup lang="ts">
-import { NA, useMessage } from "naive-ui";
-import useClipboard from "vue-clipboard3";
+import { inject } from "vue";
+
+import { NA } from "naive-ui";
+
+import { CopyText } from "@/types/inject";
 
 defineProps<{ author: string; dense?: boolean }>();
 
-const { toClipboard } = useClipboard();
-const message = useMessage();
-
-const copyText = (text: string) => {
-  toClipboard(text);
-  message.success(`已复制: ${text}`);
-};
+const copyText = inject(CopyText, () => undefined);
 </script>
 
 <template>

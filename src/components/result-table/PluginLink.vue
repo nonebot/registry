@@ -1,9 +1,14 @@
 <script setup lang="ts">
-import { NA, NIcon, useMessage } from "naive-ui";
-import useClipboard from "vue-clipboard3";
+import { inject } from "vue";
+
+import { NA, NIcon } from "naive-ui";
 import FolderZip from "vue-material-design-icons/FolderZip.vue";
 import HelpBox from "vue-material-design-icons/HelpBox.vue";
 import Package from "vue-material-design-icons/Package.vue";
+
+import { CopyText } from "@/types/inject";
+
+const copyText = inject(CopyText, () => undefined);
 
 defineProps<{
   moduleName: string;
@@ -11,14 +16,6 @@ defineProps<{
   homepage: string;
   pluginType?: string;
 }>();
-
-const { toClipboard } = useClipboard();
-const message = useMessage();
-
-const copyText = (text: string) => {
-  toClipboard(text);
-  message.success(`已复制: ${text}`);
-};
 </script>
 
 <template>
