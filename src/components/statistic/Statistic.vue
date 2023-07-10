@@ -41,7 +41,7 @@ const stat = computed(() => {
 </script>
 
 <template>
-  <n-popover trigger="click" style="width: 170px">
+  <n-popover trigger="click" class="w-[170px]">
     <template #trigger>
       <n-button text>
         <n-icon size="24">

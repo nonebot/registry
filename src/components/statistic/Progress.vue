@@ -55,9 +55,9 @@ let railColorList = computed(() =>
 </script>
 <template>
   <n-space vertical>
-    <n-el style="justify-items: center">
+    <n-el class="justify-items-center">
       <n-progress
-        style="width: 130px; margin: 5px"
+        class="max-w-[130px] m-[5px]"
         type="multiple-circle"
         :stroke-width="6"
         :circle-gap="0.5"
@@ -65,7 +65,7 @@ let railColorList = computed(() =>
         :color="colorList"
         :rail-style="railColorList"
       >
-        <div style="text-align: center">
+        <div class="text-center">
           <n-icon color="var(--success-color)">
             <CheckAll />
           </n-icon>
