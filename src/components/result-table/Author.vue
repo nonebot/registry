@@ -1,7 +1,16 @@
 <script setup lang="ts">
-import { NA } from "naive-ui";
+import { NA, useMessage } from "naive-ui";
+import useClipboard from "vue-clipboard3";
 
 defineProps<{ author: string; dense?: boolean }>();
+
+const { toClipboard } = useClipboard();
+const message = useMessage();
+
+const copyText = (text: string) => {
+  toClipboard(text);
+  message.success(`已复制: ${text}`);
+};
 </script>
 
 <template>
@@ -12,6 +21,7 @@ defineProps<{ author: string; dense?: boolean }>();
     }"
     :href="`https://github.com/${author}/`"
     target="_blank"
+    @contextmenu.prevent="copyText(author)"
   >
     {{ author }}
   </n-a>

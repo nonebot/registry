@@ -26,6 +26,7 @@ const copyText = (text: string) => {
     class="text-inherit hover:color-[#ea5252] no-underline"
     :href="`https://pypi.org/project/${projectLink}/`"
     target="_blank"
+    @contextmenu.prevent="copyText(projectLink)"
   >
     {{ projectLink }}
   </n-a>
