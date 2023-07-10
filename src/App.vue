@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { ref } from "vue";
+
 import hljs from "highlight.js/lib/core";
 import json from "highlight.js/lib/languages/json";
 hljs.registerLanguage("json", json);
@@ -6,10 +8,12 @@ import {
   GlobalThemeOverrides,
   NBackTop,
   NConfigProvider,
+  NMessageProvider,
   NLayout,
   dateZhCN,
   zhCN,
 } from "naive-ui";
+import type { MessageProviderProps } from "naive-ui";
 import { storeToRefs } from "pinia";
 const store = usePageStore();
 const { theme } = storeToRefs(store);
@@ -26,6 +30,9 @@ const themeOverrides: GlobalThemeOverrides = {
     primaryColorPressed: "#ea5252",
   },
 };
+
+const placement = ref<MessageProviderProps["placement"]>("top");
+const maxShowNum = ref<MessageProviderProps["max"]>(1);
 </script>
 
 <template>
@@ -37,16 +44,18 @@ const themeOverrides: GlobalThemeOverrides = {
       :date-locale="dateZhCN"
       :hljs="hljs"
     >
-      <n-layout position="absolute">
-        <Header></Header>
-        <n-layout
-          class="my-3 min-h-screen lg:max-w-[90rem] max-w-3xl mx-auto px-4 sm:px-6 md:px-8"
-        >
-          <router-view></router-view>
+      <n-message-provider :placement="placement" :max="maxShowNum">
+        <n-layout position="absolute">
+          <Header></Header>
+          <n-layout
+            class="my-3 min-h-screen lg:max-w-[90rem] max-w-3xl mx-auto px-4 sm:px-6 md:px-8"
+          >
+            <router-view></router-view>
+          </n-layout>
+          <Footer></Footer>
+          <n-back-top />
         </n-layout>
-        <Footer></Footer>
-        <n-back-top />
-      </n-layout>
+      </n-message-provider>
     </n-config-provider>
   </div>
 </template>

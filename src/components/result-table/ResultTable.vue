@@ -63,6 +63,7 @@ const columns: TableColumns<RowData> = [
         moduleName: rowData.plugin.module_name,
         projectLink: rowData.plugin.project_link,
         homepage: rowData.plugin.homepage,
+        pluginType: rowData.plugin.type,
       }),
     align: "left",
     titleAlign: "left",
