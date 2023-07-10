@@ -22,34 +22,11 @@ let tweened = reactive({
 });
 
 gsap.to(tweened, {
-  duration: 1.1,
-  ease: "steps(25)",
+  duration: 1.5,
+  ease: "power3.out",
   passCount: props.percentageDict.passPer,
   metaCount: props.percentageDict.metaPer,
   loadCount: props.percentageDict.loadPer,
-});
-
-let percentageList = computed(() => {
-  let plist = [tweened.passCount, tweened.metaCount, tweened.loadCount];
-  return plist;
-});
-
-let colorList = computed(() => {
-  let clist = [
-    getProgressColor(tweened.passCount),
-    getProgressColor(tweened.metaCount),
-    getProgressColor(tweened.loadCount),
-  ];
-  return clist;
-});
-
-let railColorList = computed(() => {
-  let rlist = [
-    { stroke: getProgressColor(tweened.passCount), opacity: 0.3 },
-    { stroke: getProgressColor(tweened.metaCount), opacity: 0.3 },
-    { stroke: getProgressColor(tweened.loadCount), opacity: 0.3 },
-  ];
-  return rlist;
 });
 
 function getProgressColor(percent: number) {
@@ -63,6 +40,18 @@ function getProgressColor(percent: number) {
     return "var(--success-color)";
   }
 }
+
+let percentageList = computed(() => [
+  tweened.passCount,
+  tweened.metaCount,
+  tweened.loadCount,
+]);
+let colorList = computed(() =>
+  percentageList.value.map((percent) => getProgressColor(percent)),
+);
+let railColorList = computed(() =>
+  colorList.value.map((color) => ({ stroke: color, opacity: 0.3 })),
+);
 </script>
 <template>
   <n-space vertical>
@@ -87,3 +76,11 @@ function getProgressColor(percent: number) {
     </n-el>
   </n-space>
 </template>
+<style>
+.n-progress
+  .n-progress-graph
+  .n-progress-graph-circle
+  .n-progress-graph-circle-fill {
+  @apply transition-none!;
+}
+</style>
