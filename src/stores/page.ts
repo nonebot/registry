@@ -4,11 +4,11 @@ import { useDark, useToggle } from "@vueuse/core";
 import { darkTheme, type GlobalTheme } from "naive-ui";
 import { defineStore } from "pinia";
 
-import { Plugins } from "@/types/plugins";
-import { Results } from "@/types/results";
+import type { Plugins } from "@/types/plugins";
+import type { Results } from "@/types/results";
 
 export const usePageStore = defineStore("page", () => {
-  const theme = ref(null as GlobalTheme | null);
+  const theme = ref<GlobalTheme | null>(null);
   const isDark = useDark({
     onChanged: function (dark: boolean) {
       theme.value = dark ? darkTheme : null;
@@ -19,46 +19,62 @@ export const usePageStore = defineStore("page", () => {
     },
   });
   const toggleDark = useToggle(isDark);
-  theme.value = (isDark.value ? darkTheme : null) as GlobalTheme | null;
-
   const plugins = ref<Plugins>({});
   const results = ref<Results>({});
+  const loading = ref(true);
 
   const initData = () => {
-    fetch("/plugins.json", { method: "GET" })
-      .then((response) => response.json())
-      .then((data: Plugins[keyof Plugins][]) => {
-        data.forEach((plugin) => {
-          plugins.value[`${plugin.project_link}:${plugin.module_name}`] =
-            plugin;
-        });
-      })
-      .catch(console.error);
-
-    fetch("/results.json", { method: "GET" })
-      .then((response) => response.json())
-      .then((data: Results) => (results.value = data))
-      .catch(console.error);
+    Promise.all([
+      fetch("/plugins.json", { method: "GET" })
+        .then((response) => response.json())
+        .then((data: Plugins[keyof Plugins][]) => {
+          data.forEach((plugin) => {
+            plugins.value[`${plugin.project_link}:${plugin.module_name}`] =
+              plugin;
+          });
+        })
+        .catch(console.error),
+      fetch("/results.json", { method: "GET" })
+        .then((response) => response.json())
+        .then((data: Results) => (results.value = data))
+        .catch(console.error),
+    ]).then(() => {
+      loading.value = false;
+    });
   };
 
   const filterPlugins = (keyword: string) => {
-    return Object.entries(plugins.value).reduce((acc, [key, value]) => {
-      if (
-        key.toLowerCase().includes(keyword.toLowerCase()) ||
-        value.author.toLowerCase().includes(keyword.toLowerCase())
-      ) {
-        acc[key] = value;
-      }
-      return acc;
-    }, {} as Plugins);
+    return Object.entries(plugins.value).reduce(
+      (acc: Plugins, [key, value]) => {
+        if (
+          key.toLowerCase().includes(keyword.toLowerCase()) ||
+          value.author.toLowerCase().includes(keyword.toLowerCase())
+        ) {
+          acc[key] = value;
+        }
+        return acc;
+      },
+      {},
+    );
+  };
+
+  const getPlugin = (pypi: string, module: string) => {
+    return plugins.value[`${pypi}:${module}`];
+  };
+
+  const getResult = (pypi: string, module: string) => {
+    return results.value[`${pypi}:${module}`];
   };
 
   return {
     theme,
     plugins,
     results,
-    initData,
+    loading,
     toggleDark,
+    initData,
     filterPlugins,
+    getPlugin,
+    getResult,
   };
 });

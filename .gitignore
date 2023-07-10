@@ -721,6 +721,7 @@ $RECYCLE.BIN/
 public/results.json
 public/adapters.json
 public/bots.json
+public/drivers.json
 public/plugins.json
 
 # rollup-plugin-visualizer

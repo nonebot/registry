@@ -51,6 +51,7 @@ jobs:
           curl -sSL https://raw.githubusercontent.com/nonebot/registry/results/plugins.json -o plugin_test/store/previous_plugins.json
           curl -sSL https://raw.githubusercontent.com/nonebot/nonebot2/master/website/static/adapters.json -o plugin_test/store/adapters.json
           curl -sSL https://raw.githubusercontent.com/nonebot/nonebot2/master/website/static/bots.json -o plugin_test/store/bots.json
+          curl -sSL https://raw.githubusercontent.com/nonebot/nonebot2/master/website/static/drivers.json -o plugin_test/store/drivers.json
           curl -sSL https://raw.githubusercontent.com/nonebot/nonebot2/master/website/static/plugins.json -o plugin_test/store/plugins.json
 
       - name: Test plugin
@@ -76,6 +77,7 @@ jobs:
             ${{ github.workspace }}/plugin_test/results.json
             ${{ github.workspace }}/plugin_test/adapters.json
             ${{ github.workspace }}/plugin_test/bots.json
+            ${{ github.workspace }}/plugin_test/drivers.json
             ${{ github.workspace }}/plugin_test/plugins.json
 
   upload_results:

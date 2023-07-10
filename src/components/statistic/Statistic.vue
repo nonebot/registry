@@ -1,3 +1,45 @@
+<script setup lang="ts">
+import { computed } from "vue";
+
+import { NButton, NIcon, NPopover, NSpace, NText } from "naive-ui";
+import ChartDonutVariant from "vue-material-design-icons/ChartDonutVariant.vue";
+
+import { usePageStore } from "@/stores/page";
+
+import Details from "./Details.vue";
+import Progress from "./Progress.vue";
+
+const store = usePageStore();
+
+const stat = computed(() => {
+  let results = store.results;
+  let totalCount = Object.keys(results).length;
+  let passCount = Object.values(results).filter(
+    (result) => result.results.validation,
+  ).length;
+  let loadCount = Object.values(results).filter(
+    (result) => result.results.load,
+  ).length;
+  let metadataCount = Object.values(results).filter(
+    (result) => result.results.metadata,
+  ).length;
+
+  let percentageDict = {
+    passPer: Math.round((passCount / totalCount) * 10000) / 100, // 目的是保留两位小数
+    metaPer: Math.round((metadataCount / totalCount) * 10000) / 100,
+    loadPer: Math.round((loadCount / totalCount) * 10000) / 100,
+  };
+
+  return {
+    totalCount,
+    passCount,
+    loadCount,
+    metadataCount,
+    percentageDict,
+  };
+});
+</script>
+
 <template>
   <n-popover trigger="click" style="width: 170px">
     <template #trigger>
@@ -15,7 +57,7 @@
     <Progress
       :total-count="stat.totalCount"
       :pass-count="stat.passCount"
-      :percentage-list="stat.percentageList"
+      :percentage-dict="stat.percentageDict"
     />
     <template #footer>
       <Details
@@ -25,46 +67,3 @@
     </template>
   </n-popover>
 </template>
-
-<script setup lang="ts">
-import { computed } from "vue";
-
-import { NButton, NIcon, NPopover, NSpace, NText } from "naive-ui";
-import ChartDonutVariant from "vue-material-design-icons/ChartDonutVariant.vue";
-
-import { usePageStore } from "@/stores/page";
-import { Results } from "@/types/results";
-
-import Details from "./Details.vue";
-import Progress from "./Progress.vue";
-
-const store = usePageStore();
-
-const stat = computed(() => {
-  let results = store.results as Results;
-  let totalCount = Object.keys(results).length;
-  let passCount = Object.values(results).filter(
-    (result) => result.results.validation,
-  ).length;
-  let loadCount = Object.values(results).filter(
-    (result) => result.results.load,
-  ).length;
-  let metadataCount = Object.values(results).filter(
-    (result) => result.results.metadata,
-  ).length;
-
-  let percentageList = [
-    Math.round((passCount / totalCount) * 10000) / 100, // 目的是保留两位小数
-    Math.round((metadataCount / totalCount) * 10000) / 100,
-    Math.round((loadCount / totalCount) * 10000) / 100,
-  ];
-
-  return {
-    totalCount,
-    passCount,
-    loadCount,
-    metadataCount,
-    percentageList,
-  };
-});
-</script>
