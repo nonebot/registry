@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { computed, reactive } from "vue";
 
-import { gsap } from "gsap";
 import { NEl, NIcon, NNumberAnimation, NProgress, NSpace } from "naive-ui";
 import CheckAll from "vue-material-design-icons/CheckAll.vue";
 
@@ -20,37 +19,11 @@ let tweened = reactive({
   metaCount: 0,
   loadCount: 0,
 });
-
-gsap.to(tweened, {
-  duration: 1.1,
-  ease: "steps(25)",
-  passCount: props.percentageDict.passPer,
-  metaCount: props.percentageDict.metaPer,
-  loadCount: props.percentageDict.loadPer,
-});
-
-let percentageList = computed(() => {
-  let plist = [tweened.passCount, tweened.metaCount, tweened.loadCount];
-  return plist;
-});
-
-let colorList = computed(() => {
-  let clist = [
-    getProgressColor(tweened.passCount),
-    getProgressColor(tweened.metaCount),
-    getProgressColor(tweened.loadCount),
-  ];
-  return clist;
-});
-
-let railColorList = computed(() => {
-  let rlist = [
-    { stroke: getProgressColor(tweened.passCount), opacity: 0.3 },
-    { stroke: getProgressColor(tweened.metaCount), opacity: 0.3 },
-    { stroke: getProgressColor(tweened.loadCount), opacity: 0.3 },
-  ];
-  return rlist;
-});
+setTimeout(() => {
+  tweened.passCount = props.percentageDict.passPer;
+  tweened.metaCount = props.percentageDict.metaPer;
+  tweened.loadCount = props.percentageDict.loadPer;
+}, 75);
 
 function getProgressColor(percent: number) {
   if (percent < 25) {
@@ -63,6 +36,18 @@ function getProgressColor(percent: number) {
     return "var(--success-color)";
   }
 }
+
+let percentageList = computed(() => [
+  tweened.passCount,
+  tweened.metaCount,
+  tweened.loadCount,
+]);
+let colorList = computed(() =>
+  percentageList.value.map((percent) => getProgressColor(percent)),
+);
+let railColorList = computed(() =>
+  colorList.value.map((color) => ({ stroke: color, opacity: 0.3 })),
+);
 </script>
 <template>
   <n-space vertical>
