@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { reactive, computed } from "vue";
+import { computed, reactive } from "vue";
 
 import { gsap } from "gsap";
-import { NProgress, NSpace, NEl, NIcon, NNumberAnimation } from "naive-ui";
+import { NEl, NIcon, NNumberAnimation, NProgress, NSpace } from "naive-ui";
 import CheckAll from "vue-material-design-icons/CheckAll.vue";
 
 const props = defineProps<{
