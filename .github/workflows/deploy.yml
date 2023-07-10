@@ -29,8 +29,8 @@ jobs:
       - name: Get results
         run: |
           git fetch origin
-          git checkout origin/results results.json adapters.json bots.json plugins.json
-          mv -t public results.json adapters.json bots.json plugins.json
+          git checkout origin/results results.json adapters.json bots.json drivers.json plugins.json
+          mv -t public results.json adapters.json bots.json drivers.json plugins.json
 
       - name: Build Website
         run: pnpm build

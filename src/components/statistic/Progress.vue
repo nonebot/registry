@@ -1,27 +1,3 @@
-<template>
-  <n-space vertical>
-    <n-el style="justify-items: center">
-      <n-progress
-        style="width: 130px; margin: 5px"
-        type="multiple-circle"
-        :stroke-width="6"
-        :circle-gap="0.5"
-        :percentage="percentageList"
-        :color="colorList"
-        :rail-style="railColorList"
-      >
-        <div style="text-align: center">
-          <n-icon color="var(--success-color)">
-            <CheckAll />
-          </n-icon>
-          <br />
-          <n-number-animation :from="0" :to="passCount" />/{{ totalCount }}
-        </div>
-      </n-progress>
-    </n-el>
-  </n-space>
-</template>
-
 <script setup lang="ts">
 import { reactive, computed, PropType } from "vue";
 
@@ -29,24 +5,15 @@ import { gsap } from "gsap";
 import { NProgress, NSpace, NEl, NIcon, NNumberAnimation } from "naive-ui";
 import CheckAll from "vue-material-design-icons/CheckAll.vue";
 
-const props = defineProps({
-  totalCount: {
-    type: Number,
-    required: true,
-  },
-  passCount: {
-    type: Number,
-    required: true,
-  },
+const props = defineProps<{
+  totalCount: number;
+  passCount: number;
   percentageDict: {
-    type: Object as PropType<{
       passPer: number;
       metaPer: number;
       loadPer: number;
-    }>,
-    required: true,
-  },
-});
+    };
+}>();
 
 let tweened = reactive({
   passCount: 0,
@@ -97,3 +64,26 @@ function getProgressColor(percent: number) {
   }
 }
 </script>
+<template>
+  <n-space vertical>
+    <n-el style="justify-items: center">
+      <n-progress
+        style="width: 130px; margin: 5px"
+        type="multiple-circle"
+        :stroke-width="6"
+        :circle-gap="0.5"
+        :percentage="percentageList"
+        :color="colorList"
+        :rail-style="railColorList"
+      >
+        <div style="text-align: center">
+          <n-icon color="var(--success-color)">
+            <CheckAll />
+          </n-icon>
+          <br />
+          <n-number-animation :from="0" :to="passCount" />/{{ totalCount }}
+        </div>
+      </n-progress>
+    </n-el>
+  </n-space>
+</template>

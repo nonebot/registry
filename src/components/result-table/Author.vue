@@ -1,17 +1,18 @@
 <script setup lang="ts">
-import { NButton } from "naive-ui";
+import { NA } from "naive-ui";
 
-defineProps<{ author: string }>();
+defineProps<{ author: string; dense?: boolean }>();
 </script>
 
 <template>
-  <n-button
-    text
-    tag="a"
-    class="mr-[15px]"
+  <n-a
+    class="text-inherit hover:color-[#ea5252] no-underline"
+    :class="{
+      'mr-[15px]': dense,
+    }"
     :href="`https://github.com/${author}/`"
     target="_blank"
   >
     {{ author }}
-  </n-button>
+  </n-a>
 </template>

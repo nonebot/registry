@@ -1,3 +1,11 @@
+<script setup lang="ts">
+import { NSpace, NIcon, NNumberAnimation, NDivider } from "naive-ui";
+import PackageVariantClosedCheck from "vue-material-design-icons/PackageVariantClosedCheck.vue";
+import PuzzleCheckOutline from "vue-material-design-icons/PuzzleCheckOutline.vue";
+
+defineProps<{ loadCount: number; metadataCount: number }>();
+</script>
+
 <template>
   <n-space justify="space-around" inline>
     <div style="width: 50px">
@@ -15,20 +23,3 @@
     </div>
   </n-space>
 </template>
-
-<script setup lang="ts">
-import { NSpace, NIcon, NNumberAnimation, NDivider } from "naive-ui";
-import PackageVariantClosedCheck from "vue-material-design-icons/PackageVariantClosedCheck.vue";
-import PuzzleCheckOutline from "vue-material-design-icons/PuzzleCheckOutline.vue";
-
-defineProps({
-  loadCount: {
-    type: Number,
-    required: true,
-  },
-  metadataCount: {
-    type: Number,
-    required: true,
-  },
-});
-</script>
