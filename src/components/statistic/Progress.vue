@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, reactive } from "vue";
 
+import { gsap } from "gsap";
 import { NEl, NIcon, NNumberAnimation, NProgress, NSpace } from "naive-ui";
 import CheckAll from "vue-material-design-icons/CheckAll.vue";
 
@@ -19,11 +20,14 @@ let tweened = reactive({
   metaCount: 0,
   loadCount: 0,
 });
-setTimeout(() => {
-  tweened.passCount = props.percentageDict.passPer;
-  tweened.metaCount = props.percentageDict.metaPer;
-  tweened.loadCount = props.percentageDict.loadPer;
-}, 75);
+
+gsap.to(tweened, {
+  duration: 1.5,
+  ease: "power3.out",
+  passCount: props.percentageDict.passPer,
+  metaCount: props.percentageDict.metaPer,
+  loadCount: props.percentageDict.loadPer,
+});
 
 function getProgressColor(percent: number) {
   if (percent < 25) {
@@ -72,3 +76,11 @@ let railColorList = computed(() =>
     </n-el>
   </n-space>
 </template>
+<style>
+.n-progress
+  .n-progress-graph
+  .n-progress-graph-circle
+  .n-progress-graph-circle-fill {
+  @apply transition-none!;
+}
+</style>
