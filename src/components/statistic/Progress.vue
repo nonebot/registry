@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { reactive, computed, PropType } from "vue";
+import { reactive, computed } from "vue";
 
 import { gsap } from "gsap";
 import { NProgress, NSpace, NEl, NIcon, NNumberAnimation } from "naive-ui";
@@ -9,10 +9,10 @@ const props = defineProps<{
   totalCount: number;
   passCount: number;
   percentageDict: {
-      passPer: number;
-      metaPer: number;
-      loadPer: number;
-    };
+    passPer: number;
+    metaPer: number;
+    loadPer: number;
+  };
 }>();
 
 let tweened = reactive({
