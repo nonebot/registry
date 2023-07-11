@@ -13,7 +13,7 @@ const copyText = inject(CopyText, () => undefined);
 
 <template>
   <n-a
-    class="text-inherit hover:color-[#ea5252] no-underline flex items-center"
+    class="text-inherit hover:color-[#ea5252] no-underline flex justify-center items-center align-middle mr-[15px]"
     :class="{
       'mr-[15px]': dense,
     }"
