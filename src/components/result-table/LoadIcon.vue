@@ -21,9 +21,10 @@ const showModal = ref(false);
 const copyText = inject(CopyText, () => undefined);
 const screenshotLoadArea = ref<HTMLElement | null>(null);
 const copyImage = inject(CopyImage, () => undefined);
-const screenshotLoadInfo = () => {
+
+const copyTrimLog = () => {
   if (screenshotLoadArea.value) {
-    copyImage(screenshotLoadArea.value, "加载日志");
+    copyText(screenshotLoadArea.value.innerText, "加载日志");
   }
 };
 </script>
@@ -32,7 +33,7 @@ const screenshotLoadInfo = () => {
   <div
     class="mr-[15px] flex justify-center align-middle cursor-pointer"
     @click="showModal = true"
-    @contextmenu.prevent="copyText(result.outputs.load, '加载日志')"
+    @contextmenu.prevent="copyTrimLog"
   >
     <PuzzleCheckOutline
       v-if="result.results.load"
@@ -51,7 +52,7 @@ const screenshotLoadInfo = () => {
         size="small"
         type="tertiary"
         class="mr-[10px]"
-        @click="screenshotLoadInfo"
+        @click="copyImage(screenshotLoadArea, '加载日志')"
       >
         <n-icon>
           <CameraOutline />
@@ -61,7 +62,7 @@ const screenshotLoadInfo = () => {
         size="small"
         type="tertiary"
         class="mr-[10px]"
-        @click="copyText(result.outputs.load, '加载日志')"
+        @click="copyTrimLog"
       >
         <n-icon>
           <FileDocument />

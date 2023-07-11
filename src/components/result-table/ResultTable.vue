@@ -36,7 +36,7 @@ const copyText = (text: string, show?: string) => {
 
 provide(CopyText, copyText);
 
-const copyImage = (screenshotArea: HTMLElement, show?: string) => {
+const copyImage = (screenshotArea: HTMLElement | null, show?: string) => {
   if (screenshotArea) {
     let theme = store.theme ?? "light";
     html2canvas(screenshotArea, {
@@ -62,6 +62,8 @@ const copyImage = (screenshotArea: HTMLElement, show?: string) => {
         );
       });
     });
+  } else {
+    message.error(`截图失败 不存在 ${show ?? "图片"}`);
   }
 };
 

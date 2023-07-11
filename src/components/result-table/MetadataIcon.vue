@@ -20,11 +20,6 @@ const showModal = ref(false);
 const copyText = inject(CopyText, () => undefined);
 const copyImage = inject(CopyImage, () => undefined);
 const screenshotMetadataArea = ref<HTMLElement | null>(null);
-const screenshotMetadataInfo = () => {
-  if (screenshotMetadataArea.value) {
-    copyImage(screenshotMetadataArea.value, "元数据");
-  }
-};
 </script>
 
 <template>
@@ -55,7 +50,7 @@ const screenshotMetadataInfo = () => {
         size="small"
         type="tertiary"
         class="mr-[10px]"
-        @click="screenshotMetadataInfo"
+        @click="copyImage(screenshotMetadataArea, '元数据')"
       >
         <n-icon>
           <CameraOutline />

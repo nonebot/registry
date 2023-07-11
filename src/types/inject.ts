@@ -5,5 +5,5 @@ export const CopyText = Symbol("CopyText") as InjectionKey<
 >;
 
 export const CopyImage = Symbol("CopyImage") as InjectionKey<
-  (element: HTMLElement, show?: string) => void
+  (element: HTMLElement | null, show?: string) => void
 >;
