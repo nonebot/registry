@@ -11,7 +11,7 @@ import Load from "@/components/result-table/Load.vue";
 import { CopyText, CopyImage } from "@/types/inject";
 import type { Results } from "@/types/results";
 
-defineProps<{
+const props = defineProps<{
   projectLink: string;
   result: Results[keyof Results];
 }>();
@@ -25,6 +25,11 @@ const copyImage = inject(CopyImage, () => undefined);
 const copyTrimLog = () => {
   if (screenshotLoadArea.value) {
     copyText(screenshotLoadArea.value.innerText, "加载日志");
+  } else {
+    // eslint-disable-next-line no-control-regex
+    let regex = /\x1b\[\d+(;\d+)?m/g;
+    let trimLog = props.result.outputs.load.replace(regex, "");
+    copyText(trimLog, "加载日志");
   }
 };
 </script>
