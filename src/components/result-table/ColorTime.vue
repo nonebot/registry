@@ -1,8 +1,12 @@
 <script setup lang="ts">
-import { computed } from "vue";
+import { computed, inject } from "vue";
 
 import { NIcon, NText, NTime, NPopover } from "naive-ui";
 import ClockOutline from "vue-material-design-icons/ClockOutline.vue";
+
+import { CopyText } from "@/types/inject";
+
+const copyText = inject(CopyText, () => undefined);
 
 const props = defineProps<{ checkTime: string; nowTime: number }>();
 
@@ -29,7 +33,10 @@ const timeType = computed(() =>
     <n-icon class="mr-1">
       <ClockOutline />
     </n-icon>
-    <n-text :type="timeType">
+    <n-text
+      :type="timeType"
+      @contextmenu.prevent="copyText(new Date(checkTime).toLocaleString())"
+    >
       <n-popover trigger="hover">
         <template #trigger>
           <n-time :time="new Date(checkTime)" :to="nowTime" type="relative" />

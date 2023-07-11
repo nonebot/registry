@@ -28,9 +28,9 @@ const { loading } = storeToRefs(store);
 const message = useMessage();
 const { copy } = useClipboard();
 
-const copyText = (text: string) => {
+const copyText = (text: string, show?: string) => {
   copy(text);
-  message.success(`已复制: ${text}`);
+  message.success(`已复制: ${show ? show : text}`);
 };
 
 provide(CopyText, copyText);
