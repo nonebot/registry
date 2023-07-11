@@ -2,13 +2,12 @@
 import { ref, inject } from "vue";
 
 import { NModal, NButton, NIcon } from "naive-ui";
-import CameraOutline from "vue-material-design-icons/CameraOutline.vue";
 import FileDocument from "vue-material-design-icons/FileDocument.vue";
 import PuzzleCheckOutline from "vue-material-design-icons/PuzzleCheckOutline.vue";
 import PuzzleRemoveOutline from "vue-material-design-icons/PuzzleRemoveOutline.vue";
 
 import Load from "@/components/result-table/Load.vue";
-import { CopyText, CopyImage } from "@/types/inject";
+import { CopyText } from "@/types/inject";
 import type { Results } from "@/types/results";
 
 const props = defineProps<{
@@ -20,7 +19,6 @@ const showModal = ref(false);
 
 const copyText = inject(CopyText, () => undefined);
 const screenshotLoadArea = ref<HTMLElement | null>(null);
-const copyImage = inject(CopyImage, () => undefined);
 
 const copyTrimLog = () => {
   if (screenshotLoadArea.value) {
@@ -53,16 +51,6 @@ const copyTrimLog = () => {
     :title="`${projectLink} 加载日志`"
   >
     <template #header-extra>
-      <n-button
-        size="small"
-        type="tertiary"
-        class="mr-[10px]"
-        @click="copyImage(screenshotLoadArea, '加载日志')"
-      >
-        <n-icon>
-          <CameraOutline />
-        </n-icon>
-      </n-button>
       <n-button
         size="small"
         type="tertiary"

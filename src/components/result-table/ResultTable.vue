@@ -2,14 +2,13 @@
 import { computed, ComputedRef, h, provide, reactive } from "vue";
 
 import { useClipboard } from "@vueuse/core";
-import html2canvas from "html2canvas";
 import { NDataTable, NSkeleton, NSpace, useMessage } from "naive-ui";
 import type { TableColumns } from "naive-ui/es/data-table/src/interface";
 import { storeToRefs } from "pinia";
 
 import Detail from "@/components/result-table/Detail.vue";
 import { usePageStore } from "@/stores/page";
-import { CopyText, CopyImage } from "@/types/inject";
+import { CopyText } from "@/types/inject";
 import type { Plugins } from "@/types/plugins";
 import type { Results } from "@/types/results";
 import type { RowData } from "@/types/row";
@@ -35,39 +34,6 @@ const copyText = (text: string, show?: string) => {
 };
 
 provide(CopyText, copyText);
-
-const copyImage = (screenshotArea: HTMLElement | null, show?: string) => {
-  if (screenshotArea) {
-    let theme = store.theme ?? "light";
-    html2canvas(screenshotArea, {
-      backgroundColor: theme === "light" ? "#ffffffd1" : "#000",
-      scale: 1,
-      // 截取全部的内容
-      windowHeight: screenshotArea.scrollHeight * 10,
-      windowWidth: screenshotArea.scrollWidth * 1.5,
-    }).then((canvas) => {
-      //图片数据存入剪切板
-      canvas.toBlob((blob) => {
-        if (!blob) {
-          return;
-        }
-        const data = [new ClipboardItem({ [blob.type]: blob })];
-        navigator.clipboard.write(data).then(
-          () => {
-            message.success(`已截图 ${show ?? "图片"}`);
-          },
-          () => {
-            message.error(`截图失败 ${show ?? "图片"}`);
-          },
-        );
-      });
-    });
-  } else {
-    message.error(`截图失败 不存在 ${show ?? "图片"}`);
-  }
-};
-
-provide(CopyImage, copyImage);
 
 const props = defineProps<{
   plugins: Plugins;

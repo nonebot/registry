@@ -2,13 +2,12 @@
 import { ref, inject } from "vue";
 
 import { NModal, NButton, NIcon } from "naive-ui";
-import CameraOutline from "vue-material-design-icons/CameraOutline.vue";
 import FileDocument from "vue-material-design-icons/FileDocument.vue";
 import PackageVariant from "vue-material-design-icons/PackageVariant.vue";
 import PackageVariantRemove from "vue-material-design-icons/PackageVariantRemove.vue";
 
 import Metadata from "@/components/result-table/Metadata.vue";
-import { CopyText, CopyImage } from "@/types/inject";
+import { CopyText } from "@/types/inject";
 import type { Results } from "@/types/results";
 
 const props = defineProps<{
@@ -18,8 +17,6 @@ const props = defineProps<{
 const showModal = ref(false);
 
 const copyText = inject(CopyText, () => undefined);
-const copyImage = inject(CopyImage, () => undefined);
-const screenshotMetadataArea = ref<HTMLElement | null>(null);
 </script>
 
 <template>
@@ -46,16 +43,6 @@ const screenshotMetadataArea = ref<HTMLElement | null>(null);
     :title="`${projectLink} 元数据`"
   >
     <template #header-extra>
-      <n-button
-        size="small"
-        type="tertiary"
-        class="mr-[10px]"
-        @click="copyImage(screenshotMetadataArea, '元数据')"
-      >
-        <n-icon>
-          <CameraOutline />
-        </n-icon>
-      </n-button>
       <n-button
         size="small"
         type="tertiary"

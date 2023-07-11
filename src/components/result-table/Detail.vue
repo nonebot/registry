@@ -6,6 +6,6 @@ defineProps<{ pypi: string; module: string }>();
 
 <template>
   <router-link :to="`/plugin/${pypi}:${module}`">
-    <n-button size="tiny"> 详情 </n-button>
+    <n-button size="small"> 详情 </n-button>
   </router-link>
 </template>
