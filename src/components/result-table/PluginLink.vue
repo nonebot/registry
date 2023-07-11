@@ -23,7 +23,6 @@ defineProps<{
     class="text-inherit hover:color-[#ea5252] no-underline"
     :href="`https://pypi.org/project/${projectLink}/`"
     target="_blank"
-    @contextmenu.prevent="copyText(projectLink)"
   >
     {{ projectLink }}
   </n-a>
@@ -32,9 +31,8 @@ defineProps<{
     class="color-gray hover:color-[#ea5252] no-underline flex items-center"
     :href="homepage"
     target="_blank"
-    @contextmenu.prevent="copyText(moduleName)"
   >
-    <n-icon>
+    <n-icon @contextmenu.prevent="copyText(moduleName)">
       <Package v-if="pluginType == 'application'" />
       <FolderZip v-else-if="pluginType == 'library'" />
       <HelpBox v-else />

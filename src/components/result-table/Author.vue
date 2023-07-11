@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { inject } from "vue";
 
-import { NA } from "naive-ui";
+import { NA, NIcon } from "naive-ui";
+import Author from "vue-material-design-icons/AccountOutline.vue";
 
 import { CopyText } from "@/types/inject";
 
@@ -12,14 +13,16 @@ const copyText = inject(CopyText, () => undefined);
 
 <template>
   <n-a
-    class="text-inherit hover:color-[#ea5252] no-underline"
+    class="text-inherit hover:color-[#ea5252] no-underline flex items-center"
     :class="{
       'mr-[15px]': dense,
     }"
     :href="`https://github.com/${author}/`"
     target="_blank"
-    @contextmenu.prevent="copyText(author)"
   >
+    <n-icon @contextmenu.prevent="copyText(author)">
+      <Author />
+    </n-icon>
     {{ author }}
   </n-a>
 </template>
