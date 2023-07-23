@@ -20,7 +20,7 @@ import Statistic from "@/components/statistic/Statistic.vue";
           />
           <span class="text-lg">商店测试结果</span>
         </div>
-        <div class="justify-self-end flex items-center" :span="1">
+        <div class="flex items-center" :span="1">
           <div class="flex items-center gap-3">
             <GithubButton />
             <Statistic />
