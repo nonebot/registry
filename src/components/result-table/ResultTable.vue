@@ -177,8 +177,8 @@ const columns: TableColumns<RowData> = [
   />
 </template>
 
-<style>
-.n-data-table .n-pagination {
+<style scoped>
+.n-data-table :deep(.n-pagination) {
   @apply overflow-auto;
 }
 </style>

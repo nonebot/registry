@@ -76,11 +76,12 @@ let railColorList = computed(() =>
     </n-el>
   </n-space>
 </template>
-<style>
+
+<style scoped>
 .n-progress
-  .n-progress-graph
-  .n-progress-graph-circle
-  .n-progress-graph-circle-fill {
+  :deep(
+    .n-progress-graph .n-progress-graph-circle .n-progress-graph-circle-fill
+  ) {
   @apply transition-none!;
 }
 </style>
