@@ -2,6 +2,7 @@
 import { computed } from "vue";
 
 import {
+  NA,
   NButton,
   NCard,
   NH3,
@@ -60,7 +61,7 @@ function pickTextColor(bgColor: string): string {
     <n-tabs animated>
       <n-tab-pane name="overview" tab="总览">
         <div class="flex flex-col-reverse xl:flex-row justify-between">
-          <div class="flex-1 xl:max-w-[60vw]">
+          <div class="flex-1 xl:max-w-2/3">
             <n-p>
               <n-h3>验证结果</n-h3>
               <pre class="overflow-auto font-mono">{{
@@ -97,20 +98,23 @@ function pickTextColor(bgColor: string): string {
             <n-p> 类型：{{ plugin.type || "未标记" }} </n-p>
             <n-p
               >pypi：
-              <n-button
-                text
-                tag="a"
+              <n-a
+                class="text-inherit hover:color-[#ea5252] no-underline"
                 :href="`https://pypi.org/project/${plugin.project_link}/`"
                 target="_blank"
               >
                 {{ plugin.project_link }}
-              </n-button>
+              </n-a>
             </n-p>
             <n-p
               >主页：
-              <n-button text tag="a" :href="plugin.homepage" target="_blank">
+              <n-a
+                class="text-inherit hover:color-[#ea5252] no-underline"
+                :href="plugin.homepage"
+                target="_blank"
+              >
                 {{ plugin.module_name }}
-              </n-button>
+              </n-a>
             </n-p>
             <n-p
               >适配器支持：
