@@ -37,7 +37,7 @@ const themeOverrides: GlobalThemeOverrides = {
       :date-locale="dateZhCN"
       :hljs="hljs"
     >
-      <n-layout position="absolute">
+      <n-layout position="absolute" :native-scrollbar="false">
         <div class="min-h-screen flex flex-col">
           <Header></Header>
           <n-layout
