@@ -23,11 +23,13 @@ export default defineConfig({
   server: {
     proxy: {
       "/results.json": {
-        target: "https://registry.nonebot.dev",
+        target:
+          "https://ghproxy.com/https://raw.githubusercontent.com/nonebot/registry/results/",
         changeOrigin: true,
       },
       "/plugins.json": {
-        target: "https://registry.nonebot.dev",
+        target:
+          "https://ghproxy.com/https://raw.githubusercontent.com/nonebot/registry/results/",
         changeOrigin: true,
       },
     },
