@@ -38,14 +38,16 @@ const themeOverrides: GlobalThemeOverrides = {
       :hljs="hljs"
     >
       <n-layout position="absolute" :native-scrollbar="false">
-        <Header></Header>
-        <n-layout
-          class="my-3 min-h-screen lg:max-w-[90rem] max-w-3xl mx-auto px-4 sm:px-6 md:px-8"
-        >
-          <router-view></router-view>
-        </n-layout>
-        <Footer></Footer>
-        <n-back-top />
+        <div class="min-h-screen flex flex-col">
+          <Header></Header>
+          <n-layout
+            class="my-3 w-full lg:max-w-[90rem] max-w-3xl mx-auto px-4 sm:px-6 md:px-8"
+          >
+            <router-view></router-view>
+          </n-layout>
+          <Footer></Footer>
+          <n-back-top />
+        </div>
       </n-layout>
     </n-config-provider>
   </div>
