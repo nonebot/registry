@@ -29,14 +29,14 @@ const themeOverrides: GlobalThemeOverrides = {
 </script>
 
 <template>
-  <div class="antialiased mx-auto">
-    <n-config-provider
-      :theme="theme"
-      :theme-overrides="themeOverrides"
-      :locale="zhCN"
-      :date-locale="dateZhCN"
-      :hljs="hljs"
-    >
+  <n-config-provider
+    :theme="theme"
+    :theme-overrides="themeOverrides"
+    :locale="zhCN"
+    :date-locale="dateZhCN"
+    :hljs="hljs"
+  >
+    <div class="antialiased mx-auto">
       <n-layout position="absolute" :native-scrollbar="false">
         <div class="min-h-screen flex flex-col">
           <Header></Header>
@@ -49,8 +49,8 @@ const themeOverrides: GlobalThemeOverrides = {
           <n-back-top />
         </div>
       </n-layout>
-    </n-config-provider>
-  </div>
+    </div>
+  </n-config-provider>
 </template>
 
 <style scoped></style>
