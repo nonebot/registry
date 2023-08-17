@@ -123,7 +123,7 @@ function pickTextColor(bgColor: string): string {
                   '所有/未标记',
                 ]"
                 :key="index"
-                class="mr-1"
+                class="mr-1 mb-1"
                 type="success"
               >
                 {{ adapter.replace("nonebot.adapters.", "") }}
