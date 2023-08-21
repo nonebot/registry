@@ -1,7 +1,8 @@
 <script setup lang="ts">
+import { onMounted } from "vue";
+
 import hljs from "highlight.js/lib/core";
 import json from "highlight.js/lib/languages/json";
-hljs.registerLanguage("json", json);
 import {
   GlobalThemeOverrides,
   NBackTop,
@@ -11,13 +12,18 @@ import {
   zhCN,
 } from "naive-ui";
 import { storeToRefs } from "pinia";
-const store = usePageStore();
-const { theme } = storeToRefs(store);
-store.initData();
 
 import Footer from "@/components/Footer.vue";
 import Header from "@/components/Header.vue";
 import { usePageStore } from "@/stores/page";
+
+hljs.registerLanguage("json", json);
+const store = usePageStore();
+const { theme } = storeToRefs(store);
+
+onMounted(async () => {
+  await store.initData();
+});
 
 const themeOverrides: GlobalThemeOverrides = {
   common: {

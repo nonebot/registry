@@ -23,24 +23,21 @@ export const usePageStore = defineStore("page", () => {
   const results = ref<Results>({});
   const loading = ref(true);
 
-  const initData = () => {
-    Promise.all([
-      fetch("/plugins.json", { method: "GET" })
-        .then((response) => response.json())
-        .then((data: Plugins[keyof Plugins][]) => {
-          data.forEach((plugin) => {
-            plugins.value[`${plugin.project_link}:${plugin.module_name}`] =
-              plugin;
-          });
-        })
-        .catch(console.error),
-      fetch("/results.json", { method: "GET" })
-        .then((response) => response.json())
-        .then((data: Results) => (results.value = data))
-        .catch(console.error),
-    ]).then(() => {
-      loading.value = false;
-    });
+  const initData = async () => {
+    const pluginsData = await (
+      await fetch("/plugins.json", { method: "GET" })
+    ).json();
+    results.value = await (
+      await fetch("/results.json", { method: "GET" })
+    ).json();
+    plugins.value = pluginsData.reduce(
+      (acc: Plugins, plugin: Plugins[keyof Plugins]) => {
+        acc[`${plugin.project_link}:${plugin.module_name}`] = plugin;
+        return acc;
+      },
+      {},
+    );
+    loading.value = false;
   };
 
   const filterPlugins = (keyword: string) => {
