@@ -2,7 +2,7 @@
 import { computed, ComputedRef, h, reactive } from "vue";
 
 import { NDataTable, NSkeleton, NSpace } from "naive-ui";
-import type { TableColumns } from "naive-ui/es/data-table/src/interface";
+import type { DataTableColumns } from "naive-ui";
 import { storeToRefs } from "pinia";
 
 import Detail from "@/components/result-table/Detail.vue";
@@ -54,7 +54,7 @@ const pagination = reactive({
   },
 });
 
-const columns: TableColumns<RowData> = [
+const columns: DataTableColumns<RowData> = [
   {
     title: "PyPI 项目名 / 模块名",
     key: "plugin.module_name",
