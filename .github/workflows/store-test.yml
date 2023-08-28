@@ -64,6 +64,7 @@ jobs:
         run: poetry run python -m src.utils.store_test -k '${{ github.event.client_payload.key }}' -f
         env:
           PLUGIN_CONFIG: ${{ github.event.client_payload.config }}
+          PLUGIN_DATA: ${{ github.event.client_payload.data }}
 
       - name: Update registry(Bot, Apdater)
         if: ${{ contains(fromJSON('["Bot", "Adapter"]'), github.event.client_payload.type) }}
