@@ -22,7 +22,7 @@ import { useRouter } from "vue-router";
 import Author from "@/components/result-table/Author.vue";
 import Load from "@/components/result-table/Load.vue";
 import Metadata from "@/components/result-table/Metadata.vue";
-import ValidationError from "@/components/result-table/ValidationError.vue";
+import Validation from "@/components/result-table/Validation.vue";
 import { usePageStore } from "@/stores/page";
 import NotFound from "@/views/NotFound.vue";
 
@@ -65,10 +65,7 @@ function pickTextColor(bgColor: string): string {
           <div class="xl:basis-3/4 xl:max-w-3/4 xl:pr-2">
             <n-p>
               <n-h3>验证结果</n-h3>
-              <ValidationError
-                v-if="result.outputs.validation"
-                :errors="result.outputs.validation.errors"
-              />
+              <Validation :validation="result.outputs.validation" />
             </n-p>
             <n-p>
               <n-h3>元数据</n-h3>

@@ -4,9 +4,9 @@ import { h } from "vue";
 import { NDataTable, NTag, NCode, NTooltip } from "naive-ui";
 import type { DataTableColumns } from "naive-ui";
 
-import { ValidationError } from "@/types/results";
+import { ValidationError, ValidationResult } from "@/types/results";
 
-const props = defineProps<{ errors: ValidationError[] }>();
+const props = defineProps<{ validation: ValidationResult | null }>();
 
 const columns: DataTableColumns<ValidationError> = [
   {
@@ -59,14 +59,19 @@ const columns: DataTableColumns<ValidationError> = [
     },
   },
 ];
-
-const data = props.errors;
 </script>
 
 <template>
-  <div>
+  <div v-if="props.validation">
     <p>在商店发布验证流程中，该插件发生如下错误：</p>
-    <n-data-table :columns="columns" :data="data" :bordered="false" />
+    <n-data-table
+      :columns="columns"
+      :data="props.validation.errors"
+      :bordered="false"
+    />
+  </div>
+  <div v-else>
+    <p>插件通过商店发布验证流程。</p>
   </div>
 </template>
 
