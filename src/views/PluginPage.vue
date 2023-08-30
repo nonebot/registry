@@ -22,6 +22,7 @@ import { useRouter } from "vue-router";
 import Author from "@/components/result-table/Author.vue";
 import Load from "@/components/result-table/Load.vue";
 import Metadata from "@/components/result-table/Metadata.vue";
+import ValidationError from "@/components/result-table/ValidationError.vue";
 import { usePageStore } from "@/stores/page";
 import NotFound from "@/views/NotFound.vue";
 
@@ -61,12 +62,13 @@ function pickTextColor(bgColor: string): string {
     <n-tabs animated>
       <n-tab-pane name="overview" tab="总览">
         <div class="flex flex-col-reverse xl:flex-row justify-between">
-          <div class="xl:basis-3/4 xl:max-w-3/4">
+          <div class="xl:basis-3/4 xl:max-w-3/4 xl:pr-2">
             <n-p>
               <n-h3>验证结果</n-h3>
-              <pre class="overflow-auto font-mono">{{
-                result.outputs.validation
-              }}</pre>
+              <ValidationError
+                v-if="result.outputs.validation"
+                :errors="result.outputs.validation.errors"
+              />
             </n-p>
             <n-p>
               <n-h3>元数据</n-h3>
@@ -77,7 +79,7 @@ function pickTextColor(bgColor: string): string {
               <Load :result="result" />
             </n-p>
           </div>
-          <div class="pb-4 xl:ml-4 xl:basis-1/4 xl:max-w-1/4">
+          <div class="pb-4 xl:ml-4 xl:basis-1/4 xl:max-w-1/4 xl:pl-2">
             <n-h3>插件信息</n-h3>
             <n-p> 作者：<Author :author="plugin.author" /> </n-p>
             <n-p> 描述：{{ plugin.desc }} </n-p>

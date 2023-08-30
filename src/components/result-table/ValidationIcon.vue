@@ -7,6 +7,8 @@ import CheckCloseOutline from "vue-material-design-icons/CloseCircleOutline.vue"
 
 import type { Results } from "@/types/results";
 
+import ValidationError from "./ValidationError.vue";
+
 defineProps<{ projectLink: string; result: Results[keyof Results] }>();
 
 const showModal = ref(false);
@@ -33,9 +35,10 @@ const showModal = ref(false);
     :title="`${projectLink} 验证结果`"
   >
     <template #default>
-      <pre class="max-h-[50vh] overflow-auto font-mono">{{
-        result.outputs.validation
-      }}</pre>
+      <ValidationError
+        v-if="result.outputs.validation"
+        :errors="result.outputs.validation.errors"
+      />
     </template>
   </n-modal>
 </template>
