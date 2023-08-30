@@ -4,7 +4,7 @@ import { useDark, useToggle } from "@vueuse/core";
 import { darkTheme, type GlobalTheme } from "naive-ui";
 import { defineStore } from "pinia";
 
-import type { Plugins } from "@/types/plugins";
+import type { Plugins, PluginsResponse } from "@/types/plugins";
 import type { Results } from "@/types/results";
 
 export const usePageStore = defineStore("page", () => {
@@ -24,7 +24,7 @@ export const usePageStore = defineStore("page", () => {
   const loading = ref(true);
 
   const initData = async () => {
-    const pluginsData = await (
+    const pluginsData: PluginsResponse = await (
       await fetch("/plugins.json", { method: "GET" })
     ).json();
     results.value = await (
