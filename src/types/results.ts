@@ -1,11 +1,7 @@
 import type { Tag } from "./tag";
 
-export interface ValidationErrorContext {
-  plugin_test_result: boolean;
-}
-
 export interface ValidationError {
-  ctx: ValidationErrorContext & Record<string, unknown>;
+  ctx: Record<string, unknown>;
   loc: string[];
   msg: string;
   type: string;
