@@ -64,11 +64,7 @@ const columns: DataTableColumns<ValidationError> = [
 <template>
   <div v-if="props.validation">
     <p>在商店发布验证流程中，该插件发生如下错误：</p>
-    <n-data-table
-      :columns="columns"
-      :data="props.validation.errors"
-      :bordered="false"
-    />
+    <n-data-table :columns="columns" :data="props.validation.errors" />
   </div>
   <div v-else>
     <p>插件通过商店发布验证流程。</p>
