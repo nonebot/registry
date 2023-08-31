@@ -85,6 +85,7 @@ function pickTextColor(bgColor: string): string {
                 v-for="(tag, index) in plugin.tags"
                 :key="index"
                 class="mr-1 mb-1"
+                :bordered="false"
                 :color="{
                   color: tag.color,
                   textColor: pickTextColor(tag.color),
