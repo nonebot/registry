@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed, ComputedRef, h, reactive } from "vue";
 
-import { NDataTable, NSkeleton, NSpace } from "naive-ui";
 import type { DataTableColumns } from "naive-ui";
+import { NDataTable, NSkeleton, NSpace } from "naive-ui";
 import { storeToRefs } from "pinia";
 
 import Detail from "@/components/result-table/Detail.vue";
@@ -18,7 +18,7 @@ import MetadataIcon from "./MetadataIcon.vue";
 import PluginLink from "./PluginLink.vue";
 import ValidationIcon from "./ValidationIcon.vue";
 
-const nowTime = new Date().getTime();
+const currentTime = new Date().getTime();
 
 const store = usePageStore();
 const { loading } = storeToRefs(store);
@@ -54,106 +54,117 @@ const pagination = reactive({
   },
 });
 
+const createColumnAlign = (align: "left" | "center" | "right") => {
+  return {
+    align: align,
+    titleAlign: align,
+  };
+};
+
+const localeCompareSorter = (field: "module_name" | "author") => {
+  return (rowA: RowData, rowB: RowData) => {
+    return rowA.plugin[field].localeCompare(rowB.plugin.module_name);
+  };
+};
+
+const numberSorter = (field: "validation" | "load" | "metadata") => {
+  return (rowA: RowData, rowB: RowData) => {
+    return (
+      Number(rowA.result.results[field]) - Number(rowB.result.results[field])
+    );
+  };
+};
+
+const timeSorter = (type: "plugin" | "result", field: "time") => {
+  return (rowA: RowData, rowB: RowData) => {
+    return Date.parse(rowA[type][field]) - Date.parse(rowB[type][field]);
+  };
+};
+
 const columns: DataTableColumns<RowData> = [
   {
     title: "PyPI 项目名 / 模块名",
     key: "plugin.module_name",
+    ...createColumnAlign("left"),
     render: (rowData: RowData) =>
       h(PluginLink, {
         moduleName: rowData.plugin.module_name,
         projectLink: rowData.plugin.project_link,
         homepage: rowData.plugin.homepage,
       }),
-    align: "left",
-    titleAlign: "left",
-    sorter(rowA: RowData, rowB: RowData) {
-      return rowA.plugin.module_name.localeCompare(rowB.plugin.module_name);
-    },
+    sorter: localeCompareSorter("module_name"),
   },
   {
     title: "作者",
     key: "plugin.author",
+    ...createColumnAlign("center"),
     render: (rowData: RowData) =>
       h(Author, {
         author: rowData.plugin.author,
         dense: true,
       }),
-    align: "center",
-    titleAlign: "center",
-    sorter(rowA: RowData, rowB: RowData) {
-      return rowA.plugin.author.localeCompare(rowB.plugin.author);
-    },
+    sorter: localeCompareSorter("author"),
   },
   {
     title: "验证结果",
     key: "result.results.validation",
+    ...createColumnAlign("center"),
     render: (rowData: RowData) =>
       h(ValidationIcon, {
         projectLink: rowData.plugin.project_link,
         result: rowData.result,
       }),
-    align: "center",
-    titleAlign: "center",
-    sorter(rowA: RowData, rowB: RowData) {
-      return (
-        Number(rowA.result.results.validation) -
-        Number(rowB.result.results.validation)
-      );
-    },
+    sorter: numberSorter("validation"),
   },
   {
     title: "加载结果",
     key: "result.results.load",
+    ...createColumnAlign("center"),
     render: (rowData: RowData) =>
       h(LoadIcon, {
         projectLink: rowData.plugin.project_link,
         result: rowData.result,
       }),
-    align: "center",
-    titleAlign: "center",
-    sorter(rowA: RowData, rowB: RowData) {
-      return (
-        Number(rowA.result.results.load) - Number(rowB.result.results.load)
-      );
-    },
+    sorter: numberSorter("load"),
   },
   {
     title: "元数据",
     key: "result.results.metadata",
+    ...createColumnAlign("center"),
     render: (rowData: RowData) =>
       h(MetadataIcon, {
         projectLink: rowData.plugin.project_link,
         result: rowData.result,
       }),
-    align: "center",
-    titleAlign: "center",
-    sorter(rowA: RowData, rowB: RowData) {
-      return (
-        Number(rowA.result.results.metadata) -
-        Number(rowB.result.results.metadata)
-      );
-    },
+    sorter: numberSorter("metadata"),
+  },
+  {
+    title: "更新时间",
+    key: "plugin.time",
+    ...createColumnAlign("center"),
+    defaultSortOrder: "descend",
+    render: (rowData: RowData) =>
+      h(ColorTime, {
+        time: rowData.plugin.time,
+        currentTime: currentTime,
+      }),
+    sorter: timeSorter("plugin", "time"),
   },
   {
     title: "测试时间",
     key: "result.time",
-    align: "center",
-    titleAlign: "center",
-    defaultSortOrder: "descend",
+    ...createColumnAlign("center"),
     render: (rowData: RowData) =>
       h(ColorTime, {
-        checkTime: rowData.result.time,
-        nowTime: nowTime,
+        time: rowData.result.time,
+        currentTime: currentTime,
       }),
-    sorter(rowA: RowData, rowB: RowData) {
-      return Date.parse(rowA.result.time) - Date.parse(rowB.result.time);
-    },
+    sorter: timeSorter("result", "time"),
   },
   {
     title: "选项",
     key: "result.detail",
-    align: "center",
-    titleAlign: "center",
+    ...createColumnAlign("center"),
     render: (rowData: RowData) =>
       h(Detail, {
         pypi: rowData.plugin.project_link,
