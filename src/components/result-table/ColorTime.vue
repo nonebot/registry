@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { computed } from "vue";
 
-import { NIcon, NText, NTime, NPopover } from "naive-ui";
+import { NIcon, NPopover, NText, NTime } from "naive-ui";
 import ClockOutline from "vue-material-design-icons/ClockOutline.vue";
 
-const props = defineProps<{ time: string; nowTime: number }>();
+const props = defineProps<{ time: string; currentTime: number }>();
 
 function getTimeColor(timeDiff: number) {
   if (timeDiff <= 3600000 * 4) {
@@ -20,7 +20,7 @@ function getTimeColor(timeDiff: number) {
 }
 
 const timeType = computed(() =>
-  getTimeColor(props.nowTime - Date.parse(props.time)),
+  getTimeColor(props.currentTime - Date.parse(props.time)),
 );
 </script>
 
@@ -32,7 +32,7 @@ const timeType = computed(() =>
     <n-text :type="timeType">
       <n-popover trigger="hover">
         <template #trigger>
-          <n-time :time="new Date(time)" :to="nowTime" type="relative" />
+          <n-time :time="new Date(time)" :to="currentTime" type="relative" />
         </template>
         {{ new Date(time).toLocaleString() }}
       </n-popover>
