@@ -135,14 +135,28 @@ const columns: DataTableColumns<RowData> = [
     },
   },
   {
-    title: "测试时间",
-    key: "result.time",
+    title: "更新时间",
+    key: "plugin.time",
     align: "center",
     titleAlign: "center",
     defaultSortOrder: "descend",
     render: (rowData: RowData) =>
       h(ColorTime, {
-        checkTime: rowData.result.time,
+        time: rowData.plugin.time,
+        nowTime: nowTime,
+      }),
+    sorter(rowA: RowData, rowB: RowData) {
+      return Date.parse(rowA.plugin.time) - Date.parse(rowB.plugin.time);
+    },
+  },
+  {
+    title: "测试时间",
+    key: "result.time",
+    align: "center",
+    titleAlign: "center",
+    render: (rowData: RowData) =>
+      h(ColorTime, {
+        time: rowData.result.time,
         nowTime: nowTime,
       }),
     sorter(rowA: RowData, rowB: RowData) {
