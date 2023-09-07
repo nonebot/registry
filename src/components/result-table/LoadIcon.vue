@@ -3,12 +3,17 @@ import { ref } from "vue";
 
 import { NModal } from "naive-ui";
 import PuzzleCheckOutline from "vue-material-design-icons/PuzzleCheckOutline.vue";
+import PuzzleMinusOutline from "vue-material-design-icons/PuzzleMinusOutline.vue";
 import PuzzleRemoveOutline from "vue-material-design-icons/PuzzleRemoveOutline.vue";
 
 import Load from "@/components/result-table/Load.vue";
 import type { Results } from "@/types/results";
 
-defineProps<{ projectLink: string; result: Results[keyof Results] }>();
+defineProps<{
+  projectLink: string;
+  result: Results[keyof Results];
+  skipTest: boolean;
+}>();
 
 const showModal = ref(false);
 </script>
@@ -18,8 +23,12 @@ const showModal = ref(false);
     class="mr-[15px] flex justify-center align-middle cursor-pointer"
     @click="showModal = true"
   >
+    <PuzzleMinusOutline
+      v-if="skipTest"
+      class="color-[#c4c4c4] text-[1.5em] flex justify-center align-middle"
+    />
     <PuzzleCheckOutline
-      v-if="result.results.load"
+      v-else-if="result.results.load"
       class="color-[#6ae97b] text-[1.5em] flex justify-center align-middle"
     />
     <PuzzleRemoveOutline

@@ -113,6 +113,8 @@ const columns: DataTableColumns<RowData> = [
       h(ValidationIcon, {
         projectLink: rowData.plugin.project_link,
         result: rowData.result,
+        skipTest: rowData.plugin.skip_test,
+        version: rowData.plugin.version,
       }),
     sorter: numberSorter("validation"),
   },
@@ -124,6 +126,7 @@ const columns: DataTableColumns<RowData> = [
       h(LoadIcon, {
         projectLink: rowData.plugin.project_link,
         result: rowData.result,
+        skipTest: rowData.plugin.skip_test,
       }),
     sorter: numberSorter("load"),
   },
@@ -135,6 +138,7 @@ const columns: DataTableColumns<RowData> = [
       h(MetadataIcon, {
         projectLink: rowData.plugin.project_link,
         result: rowData.result,
+        skipTest: rowData.plugin.skip_test,
       }),
     sorter: numberSorter("metadata"),
   },
