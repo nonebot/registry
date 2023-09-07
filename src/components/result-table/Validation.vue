@@ -7,6 +7,11 @@ import type { DataTableColumns } from "naive-ui";
 import { Plugin } from "@/types/plugins";
 import { ValidationError, ValidationResult } from "@/types/results";
 
+interface KV {
+  key: string;
+  value: unknown;
+}
+
 const props = defineProps<{
   validation: ValidationResult | null;
   plugin: Plugin;
@@ -64,7 +69,7 @@ const errColumns: DataTableColumns<ValidationError> = [
   },
 ];
 
-const okColumns: DataTableColumns<{ key: string; value: unknown }> = [
+const okColumns: DataTableColumns<KV> = [
   {
     title: "属性",
     key: "key",
@@ -89,49 +94,82 @@ const pluginData = Object.entries(props.plugin).map(([key, value]) => ({
   value: value,
 }));
 
-const dispatchRender = (row: { key: string; value: unknown }) => {
-  // FIXME: 太丑了，后面再抽一层函数
-  if (row.key === "supported_adapters") {
-    return h(
-      NTag,
-      {
-        type: "success",
-        class: {
-          "mr-1": true,
-          "mb-1": true,
-        },
-      },
-      {
-        default: () =>
-          ((row.value as string[]) ?? ["所有/未标记"]).map((adapter) =>
-            adapter.replace("nonebot.adapters.", ""),
-          ),
-      },
-    );
+const dispatchRender = (row: KV) => {
+  let res = renderByKey(row);
+  if (res) {
+    return res;
+  } else {
+    return renderByValue(row);
   }
+};
+
+const renderByKey = (row: KV) => {
+  switch (row.key) {
+    case "supported_adapters":
+      return h(
+        NTag,
+        {
+          type: "success",
+          class: {
+            "mr-1": true,
+            "mb-1": true,
+          },
+        },
+        {
+          default: () =>
+            ((row.value as string[]) ?? ["所有/未标记"]).map((adapter) =>
+              adapter.replace("nonebot.adapters.", ""),
+            ),
+        },
+      );
+    case "time":
+      return h(
+        NText,
+        {},
+        { default: () => new Date(row.value as string).toLocaleString() },
+      );
+    case "homepage":
+      return h(
+        NA,
+        {
+          class: {
+            "text-inherit": true,
+            "hover:color-[#ea5252]": true,
+            "no-underline": true,
+          },
+          href: row.value as string,
+          target: "_blank",
+        },
+        { default: () => row.value },
+      );
+    case "tags":
+      return (row.value as { label: string; color: string }[]).map((tag) =>
+        h(
+          NTag,
+          {
+            color: {
+              color: `${tag.color}22`,
+              textColor: tag.color,
+              borderColor: `${tag.color}55`,
+            },
+            class: {
+              "mr-1": true,
+              "mb-1": true,
+            },
+          },
+          {
+            default: () => tag.label,
+          },
+        ),
+      );
+    default:
+      return null;
+  }
+};
+
+const renderByValue = (row: KV) => {
   switch (typeof row.value) {
     case "string":
-      if (row.key === "time") {
-        return h(
-          NText,
-          {},
-          { default: () => new Date(row.value as string).toLocaleString() },
-        );
-      } else if (row.key === "homepage") {
-        return h(
-          NA,
-          {
-            class: {
-              "text-inherit": true,
-              "hover:color-[#ea5252]": true,
-              "no-underline": true,
-            },
-            href: row.value as string,
-            target: "_blank",
-          },
-          { default: () => row.value },
-        );
-      }
       return h(NText, {}, { default: () => row.value });
     case "boolean":
       return h(
@@ -142,42 +180,10 @@ const dispatchRender = (row: { key: string; value: unknown }) => {
     case "number":
       return h(NText, {}, { default: () => row.value });
     case "object":
-      if (row.key === "tags") {
-        let tags = (row.value as { label: string; color: string }[]).map(
-          (tag) =>
-            h(
-              NTag,
-              {
-                color: {
-                  color: tag.color,
-                  textColor: pickTextColor(tag.color),
-                },
-                class: {
-                  "mr-1": true,
-                  "mb-1": true,
-                },
-                bordered: false,
-              },
-              {
-                default: () => tag.label,
-              },
-            ),
-        );
-        return tags;
-      } else {
-        return h(NText, {}, { default: () => JSON.stringify(row.value) });
-      }
+      return h(NText, {}, { default: () => JSON.stringify(row.value) });
     default:
       return h(NText, {}, { default: () => JSON.stringify(row.value) });
   }
-};
-
-const pickTextColor = (bgColor: string): string => {
-  let color = bgColor.charAt(0) === "#" ? bgColor.substring(1, 7) : bgColor;
-  let r = parseInt(color.substring(0, 2), 16); // hexToR
-  let g = parseInt(color.substring(2, 4), 16); // hexToG
-  let b = parseInt(color.substring(4, 6), 16); // hexToB
-  return r * 0.299 + g * 0.587 + b * 0.114 > 186 ? "#000" : "#fff";
 };
 </script>
 

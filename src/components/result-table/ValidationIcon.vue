@@ -23,6 +23,7 @@ const icon = computed(() => {
     return {
       show: ProgressCheck,
       color: {
+        color: "#c4c4c411",
         textColor: "#6ae97b",
         borderColor: "#6ae97b55",
       },
@@ -31,6 +32,7 @@ const icon = computed(() => {
     return {
       show: CheckCircleOutline,
       color: {
+        color: "#6ae97b11",
         textColor: "#6ae97b",
         borderColor: "#6ae97b55",
       },
@@ -39,6 +41,7 @@ const icon = computed(() => {
     return {
       show: CheckCloseOutline,
       color: {
+        color: "#ff6c6c11",
         textColor: "#ff6c6c",
         borderColor: "#ff6c6c55",
       },
