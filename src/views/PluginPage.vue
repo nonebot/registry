@@ -5,6 +5,7 @@ import {
   NA,
   NButton,
   NIcon,
+  NText,
   NCard,
   NH3,
   NLayout,
@@ -75,6 +76,19 @@ function pickTextColor(bgColor: string): string {
                 :plugin="plugin"
                 class="w-4/5"
               />
+              <n-alert
+                v-else-if="plugin.skip_test"
+                title="验证通过"
+                type="info"
+                class="w-220px"
+              >
+                <template #icon>
+                  <n-icon>
+                    <RocketLaunch />
+                  </n-icon>
+                </template>
+                <n-text>该插件经人工跳过了测试</n-text>
+              </n-alert>
               <n-alert v-else title="验证通过" type="success" class="w-140px">
                 <template #icon>
                   <n-icon>
@@ -95,6 +109,7 @@ function pickTextColor(bgColor: string): string {
           <div class="pb-4 xl:ml-4 xl:basis-1/4 xl:max-w-1/4 xl:pl-2">
             <n-h3>插件信息</n-h3>
             <n-p> 作者：<Author :author="plugin.author" /> </n-p>
+            <n-p> 版本：{{ plugin.version }} </n-p>
             <n-p> 描述：{{ plugin.desc }} </n-p>
             <n-p>
               标签：<n-tag
