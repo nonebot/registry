@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import { NCode } from "naive-ui";
+import { computed, h } from "vue";
+
+import { NDataTable, DataTableColumns, NText } from "naive-ui";
 
 import type { Results } from "@/types/results";
 
@@ -7,18 +9,46 @@ const props = defineProps<{
   result: Results[keyof Results];
   dense?: boolean;
 }>();
+
+const columns: DataTableColumns<{
+  key: string;
+  value: string | string[] | null;
+}> = [
+  {
+    title: "字段",
+    key: "key",
+    render(row) {
+      return h(NText, { strong: true }, { default: () => row.key });
+    },
+  },
+  {
+    title: "值",
+    key: "value",
+    render(row) {
+      if (typeof row.value === "string") {
+        return h(NText, {}, { default: () => row.value });
+      }
+      return JSON.stringify(row.value);
+    },
+  },
+];
+const data = computed(() => {
+  if (props.result.outputs.metadata) {
+    return Object.entries(props.result.outputs.metadata).map(
+      ([key, value]) => ({
+        key: key,
+        value: value,
+      }),
+    );
+  } else {
+    return null;
+  }
+});
 </script>
 
 <template>
-  <n-code
-    class="overflow-auto"
-    :class="{
-      'max-h-[50vh]': dense,
-    }"
-    :code="JSON.stringify(props.result.outputs.metadata, null, 2)"
-    language="json"
-    word-wrap
-  />
+  <n-data-table v-if="data" :columns="columns" :data="data" />
+  <n-text v-else>无</n-text>
 </template>
 
 <style scoped></style>

@@ -59,6 +59,7 @@ function pickTextColor(bgColor: string): string {
         <h2>
           {{ plugin.name }}
           <CheckCircle v-if="plugin.is_official" class="text-green-600" />
+          <!-- FIXME: 这里的icon和文本不对齐 -->
         </h2>
       </template>
     </n-page-header>
@@ -84,7 +85,7 @@ function pickTextColor(bgColor: string): string {
             </n-p>
             <n-p>
               <n-h3>元数据</n-h3>
-              <Metadata :result="result" />
+              <Metadata :result="result" class="w-4/5" />
             </n-p>
             <n-p
               ><n-h3>加载结果</n-h3>

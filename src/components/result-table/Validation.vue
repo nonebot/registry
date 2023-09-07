@@ -90,6 +90,7 @@ const pluginData = Object.entries(props.plugin).map(([key, value]) => ({
 }));
 
 const dispatchRender = (row: { key: string; value: unknown }) => {
+  // FIXME: 太丑了，后面再抽一层函数
   if (row.key === "supported_adapters") {
     return h(
       NTag,
