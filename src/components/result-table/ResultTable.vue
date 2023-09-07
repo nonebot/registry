@@ -111,10 +111,8 @@ const columns: DataTableColumns<RowData> = [
     ...createColumnAlign("center"),
     render: (rowData: RowData) =>
       h(ValidationIcon, {
-        projectLink: rowData.plugin.project_link,
         result: rowData.result,
-        skipTest: rowData.plugin.skip_test,
-        version: rowData.plugin.version,
+        plugin: rowData.plugin,
       }),
     sorter: numberSorter("validation"),
   },

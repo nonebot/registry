@@ -4,6 +4,7 @@ import { computed } from "vue";
 import {
   NA,
   NButton,
+  NIcon,
   NCard,
   NH3,
   NLayout,
@@ -14,9 +15,11 @@ import {
   NTabPane,
   NTabs,
   NTag,
+  NAlert,
 } from "naive-ui";
 import { storeToRefs } from "pinia";
 import CheckCircle from "vue-material-design-icons/CheckCircle.vue";
+import RocketLaunch from "vue-material-design-icons/RocketLaunch.vue";
 import { useRouter } from "vue-router";
 
 import Author from "@/components/result-table/Author.vue";
@@ -65,7 +68,19 @@ function pickTextColor(bgColor: string): string {
           <div class="xl:basis-3/4 xl:max-w-3/4 xl:pr-2">
             <n-p>
               <n-h3>验证结果</n-h3>
-              <Validation :validation="result.outputs.validation" />
+              <Validation
+                v-if="result.outputs.validation"
+                :validation="result.outputs.validation"
+                :plugin="plugin"
+                class="w-4/5"
+              />
+              <n-alert v-else title="验证通过" type="success" class="w-140px">
+                <template #icon>
+                  <n-icon>
+                    <RocketLaunch />
+                  </n-icon>
+                </template>
+              </n-alert>
             </n-p>
             <n-p>
               <n-h3>元数据</n-h3>

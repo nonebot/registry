@@ -6,21 +6,20 @@ import CheckCircleOutline from "vue-material-design-icons/CheckCircleOutline.vue
 import CheckCloseOutline from "vue-material-design-icons/CloseCircleOutline.vue";
 import ProgressCheck from "vue-material-design-icons/ProgressCheck.vue";
 
+import type { Plugin } from "@/types/plugins";
 import type { Results } from "@/types/results";
 
 import Validation from "./Validation.vue";
 
 const props = defineProps<{
-  projectLink: string;
   result: Results[keyof Results];
-  skipTest: boolean;
-  version: string;
+  plugin: Plugin;
 }>();
 
 const showModal = ref(false);
 
 const icon = computed(() => {
-  if (props.skipTest) {
+  if (props.plugin.skip_test) {
     return {
       show: ProgressCheck,
       color: {
@@ -54,7 +53,7 @@ const icon = computed(() => {
     @click="showModal = true"
   >
     <n-tag round :color="icon.color">
-      {{ `v${version}` }}
+      {{ `v${plugin.version}` }}
       <template #icon>
         <n-icon :component="icon.show" />
       </template>
@@ -64,10 +63,10 @@ const icon = computed(() => {
     v-model:show="showModal"
     preset="card"
     class="max-w-3/4"
-    :title="`${projectLink} 验证结果`"
+    :title="`${plugin.project_link} 验证结果`"
   >
     <template #default>
-      <Validation :validation="result.outputs.validation" />
+      <Validation :validation="result.outputs.validation" :plugin="plugin" />
     </template>
   </n-modal>
 </template>
