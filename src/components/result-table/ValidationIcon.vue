@@ -1,17 +1,37 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-import { NModal } from "naive-ui";
+import { NModal, NTag, NIcon } from "naive-ui";
 import CheckCircleOutline from "vue-material-design-icons/CheckCircleOutline.vue";
 import CheckCloseOutline from "vue-material-design-icons/CloseCircleOutline.vue";
+import ProgressCheck from "vue-material-design-icons/ProgressCheck.vue";
 
+import type { Plugin } from "@/types/plugins";
 import type { Results } from "@/types/results";
 
 import Validation from "./Validation.vue";
 
-defineProps<{ projectLink: string; result: Results[keyof Results] }>();
+const props = defineProps<{
+  result: Results[keyof Results];
+  plugin: Plugin;
+}>();
 
 const showModal = ref(false);
+
+const getTagType = () => {
+  if (props.plugin.skip_test) return "default";
+  return props.result.results.validation ? "success" : "error";
+};
+
+const getTagComponent = () => {
+  if (props.plugin.skip_test) {
+    return ProgressCheck;
+  } else if (props.result.results.validation) {
+    return CheckCircleOutline;
+  } else {
+    return CheckCloseOutline;
+  }
+};
 </script>
 
 <template>
@@ -19,23 +39,21 @@ const showModal = ref(false);
     class="mr-[15px] flex justify-center align-middle cursor-pointer"
     @click="showModal = true"
   >
-    <CheckCircleOutline
-      v-if="result.results.validation"
-      class="color-[#6ae97b] text-[1.5em] flex justify-center align-middle"
-    />
-    <CheckCloseOutline
-      v-else
-      class="color-[#ff6c6c] text-[1.5em] flex justify-center align-middle"
-    />
+    <n-tag round :type="getTagType()">
+      {{ `v${plugin.version}` }}
+      <template #icon>
+        <n-icon :component="getTagComponent()" />
+      </template>
+    </n-tag>
   </div>
   <n-modal
     v-model:show="showModal"
     preset="card"
-    class="max-w-3/4"
-    :title="`${projectLink} 验证结果`"
+    class="lg:max-w-1/2"
+    :title="`${plugin.project_link} 验证结果`"
   >
     <template #default>
-      <Validation :validation="result.outputs.validation" />
+      <Validation :validation="result.outputs.validation" :plugin="plugin" />
     </template>
   </n-modal>
 </template>

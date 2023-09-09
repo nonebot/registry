@@ -20,6 +20,15 @@ export interface ValidationResult {
   errors: Array<ValidationError>;
 }
 
+export interface Metadata {
+  name: string;
+  description: string;
+  usage: string;
+  type: string | null;
+  homepage: string | null;
+  supported_adapters: string[] | null;
+}
+
 export interface Results {
   [K: string]: {
     inputs: {
@@ -27,7 +36,7 @@ export interface Results {
     };
     outputs: {
       load: string;
-      metadata: string | null;
+      metadata: Metadata | null;
       validation: ValidationResult | null;
     };
     results: {

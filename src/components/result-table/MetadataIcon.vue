@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-import { NModal } from "naive-ui";
+import { NEl, NModal } from "naive-ui";
 import PackageVariant from "vue-material-design-icons/PackageVariant.vue";
+import PackageVariantMinus from "vue-material-design-icons/PackageVariantMinus.vue";
 import PackageVariantRemove from "vue-material-design-icons/PackageVariantRemove.vue";
 
 import Metadata from "@/components/result-table/Metadata.vue";
@@ -11,27 +12,34 @@ import type { Results } from "@/types/results";
 const props = defineProps<{
   projectLink: string;
   result: Results[keyof Results];
+  skipTest: boolean;
 }>();
+
 const showModal = ref(false);
 </script>
 
 <template>
-  <div
-    class="mr-[15px] flex justify-center align-middle cursor-pointer"
+  <n-el
+    tag="div"
+    class="mr-[15px] flex justify-center align-middle duration-300 cursor-pointer ease-[--cubic-bezier-ease-in-out]"
     @click="showModal = true"
   >
+    <PackageVariantMinus
+      v-if="skipTest"
+      class="flex justify-center align-middle color-[#c4c4c4]"
+    />
     <PackageVariant
-      v-if="result.results.metadata"
-      class="flex justify-center align-middle color-[#5784ff]"
+      v-else-if="result.results.metadata"
+      class="color-[--info-color] flex justify-center align-middle"
     />
     <PackageVariantRemove
       v-else
-      class="flex justify-center align-middle color-[#ffcc66]"
+      class="color-[--warning-color] flex justify-center align-middle"
     />
-  </div>
+  </n-el>
   <n-modal
     v-model:show="showModal"
-    class="max-w-3/4"
+    class="lg:max-w-1/2"
     preset="card"
     :title="`${projectLink} 元数据`"
   >
