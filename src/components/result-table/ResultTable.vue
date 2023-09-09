@@ -63,7 +63,7 @@ const createColumnAlign = (align: "left" | "center" | "right") => {
 
 const localeCompareSorter = (field: "module_name" | "author") => {
   return (rowA: RowData, rowB: RowData) => {
-    return rowA.plugin[field].localeCompare(rowB.plugin.module_name);
+    return rowA.plugin[field].localeCompare(rowB.plugin[field]);
   };
 };
 
