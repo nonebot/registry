@@ -1,201 +1,62 @@
 <script setup lang="ts">
-import { h } from "vue";
+import { NAlert, NTag, NText } from "naive-ui";
 
-import { NDataTable, NTag, NCode, NTooltip, NText, NA } from "naive-ui";
-import type { DataTableColumns } from "naive-ui";
+import type { Plugin } from "@/types/plugins";
+import type { ValidationResult } from "@/types/results";
+import { pickTextColor } from "@/utils/color";
 
-import { Plugin } from "@/types/plugins";
-import { ValidationError, ValidationResult } from "@/types/results";
-
-interface KV {
-  key: string;
-  value: unknown;
-}
+import HoverTooltip from "../HoverTooltip.vue";
+import TagPill from "../TagPill.vue";
 
 const props = defineProps<{
   validation: ValidationResult | null;
   plugin: Plugin;
 }>();
-
-const errColumns: DataTableColumns<ValidationError> = [
-  {
-    title: "属性",
-    key: "loc",
-    render(row) {
-      const tags = row.loc.map((tagKey) => {
-        return h(
-          NTooltip,
-          {
-            trigger: "hover",
-          },
-          {
-            default: () => row.type,
-            trigger: () =>
-              h(
-                NTag,
-                {
-                  style: {
-                    marginRight: "6px",
-                  },
-                  type: "error",
-                  bordered: false,
-                },
-                {
-                  default: () => tagKey,
-                },
-              ),
-          },
-        );
-      });
-      return tags;
-    },
-  },
-  {
-    title: "信息",
-    key: "msg",
-    render(row) {
-      return h(
-        NTooltip,
-        {
-          trigger: "hover",
-        },
-        {
-          default: () =>
-            h(NCode, { code: JSON.stringify(row.ctx), wordWrap: true }),
-          trigger: () => h("span", row.msg),
-        },
-      );
-    },
-  },
-];
-
-const okColumns: DataTableColumns<KV> = [
-  {
-    title: "属性",
-    key: "key",
-    minWidth: "120px",
-    render(row) {
-      return h(NText, { strong: true }, { default: () => row.key });
-    },
-  },
-  {
-    title: "内容",
-    key: "value",
-    minWidth: "200px",
-    render(row) {
-      return h(
-        NText,
-        { copyable: true },
-        { default: () => dispatchRender(row) },
-      );
-    },
-  },
-];
-const pluginData = Object.entries(props.plugin).map(([key, value]) => ({
-  key: key,
-  value: value,
-}));
-
-const dispatchRender = (row: KV) => {
-  let res = renderByKey(row);
-  if (res) {
-    return res;
-  } else {
-    return renderByValue(row);
-  }
-};
-
-const renderByKey = (row: KV) => {
-  switch (row.key) {
-    case "supported_adapters":
-      return (row.value as string[]).map((adapter) =>
-        h(
-          NTag,
-          {
-            type: "success",
-            class: {
-              "mr-1": true,
-              "mb-1": true,
-            },
-          },
-          {
-            default: () => adapter.replace("nonebot.adapters.", ""),
-          },
-        ),
-      );
-    case "time":
-      return h(
-        NText,
-        {},
-        { default: () => new Date(row.value as string).toLocaleString() },
-      );
-    case "homepage":
-      return h(
-        NA,
-        {
-          class: {
-            "text-inherit": true,
-            "hover:color-[#ea5252]": true,
-            "no-underline": true,
-          },
-          href: row.value as string,
-          target: "_blank",
-        },
-        { default: () => row.value },
-      );
-    case "tags":
-      return (row.value as { label: string; color: string }[]).map((tag) =>
-        h(
-          NTag,
-          {
-            color: {
-              color: `${tag.color}22`,
-              textColor: tag.color,
-              borderColor: `${tag.color}55`,
-            },
-            class: {
-              "mr-1": true,
-              "mb-1": true,
-            },
-          },
-          {
-            default: () => tag.label,
-          },
-        ),
-      );
-    default:
-      return null;
-  }
-};
-
-const renderByValue = (row: KV) => {
-  switch (typeof row.value) {
-    case "string":
-      return h(NText, {}, { default: () => row.value });
-    case "boolean":
-      return h(
-        NTag,
-        { type: row ? "success" : "error" },
-        { default: () => (row ? "True" : "False") },
-      );
-    case "number":
-      return h(NText, {}, { default: () => row.value });
-    case "object":
-      return h(NText, {}, { default: () => JSON.stringify(row.value) });
-    default:
-      return h(NText, {}, { default: () => JSON.stringify(row.value) });
-  }
-};
 </script>
 
 <template>
-  <div v-if="props.validation">
-    <p>在商店发布验证流程中，该插件发生如下错误：</p>
-    <n-data-table :columns="errColumns" :data="props.validation.errors" />
+  <div v-if="props.validation" class="inline-flex flex-col space-y-2">
+    <n-alert
+      v-for="(error, i) in props.validation.errors"
+      :key="i"
+      type="error"
+    >
+      <template #header>
+        <HoverTooltip :source="error.loc.join('&')" :tip="error.type" />
+      </template>
+      <HoverTooltip :source="error.msg" :tip="JSON.stringify(error.ctx)" />
+      <br />
+    </n-alert>
   </div>
-  <div v-else>
+  <div v-else class="inline-block">
     <p>插件通过商店发布验证流程。</p>
-    <n-data-table :columns="okColumns" :data="pluginData" />
+    <TagPill
+      v-for="(value, key) in props.plugin"
+      :key="key"
+      class="text-xs"
+      :label="key"
+    >
+      <template #default>
+        <n-text v-if="['string', 'boolean', 'number'].includes(typeof value)">{{
+          value?.toString()
+        }}</n-text>
+        <n-tag
+          v-for="(tag, index) in props.plugin.tags"
+          v-else-if="key == 'tags'"
+          :key="index"
+          size="small"
+          class="mr-1"
+          :bordered="false"
+          :color="{
+            color: tag.color,
+            textColor: pickTextColor(tag.color),
+          }"
+        >
+          {{ tag.label }}
+        </n-tag>
+        <n-text v-else>{{ JSON.stringify(value) }}</n-text>
+      </template>
+    </TagPill>
   </div>
 </template>
 

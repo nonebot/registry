@@ -21,7 +21,7 @@ const showModal = ref(false);
 <template>
   <n-el
     tag="div"
-    class="mr-[15px] flex justify-center align-middle duration-300 cursor-pointer ease-[var(--cubic-bezier-ease-in-out)]"
+    class="mr-[15px] flex justify-center align-middle duration-300 cursor-pointer ease-[--cubic-bezier-ease-in-out]"
     @click="showModal = true"
   >
     <PackageVariantMinus
@@ -30,16 +30,16 @@ const showModal = ref(false);
     />
     <PackageVariant
       v-else-if="result.results.metadata"
-      class="color-[var(--info-color)] flex justify-center align-middle"
+      class="color-[--info-color] flex justify-center align-middle"
     />
     <PackageVariantRemove
       v-else
-      class="color-[var(--warning-color)] flex justify-center align-middle"
+      class="color-[--warning-color] flex justify-center align-middle"
     />
   </n-el>
   <n-modal
     v-model:show="showModal"
-    class="max-w-3/4"
+    class="max-w-1/2"
     preset="card"
     :title="`${projectLink} 元数据`"
   >
