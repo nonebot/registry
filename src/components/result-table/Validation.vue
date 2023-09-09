@@ -106,21 +106,20 @@ const dispatchRender = (row: KV) => {
 const renderByKey = (row: KV) => {
   switch (row.key) {
     case "supported_adapters":
-      return h(
-        NTag,
-        {
-          type: "success",
-          class: {
-            "mr-1": true,
-            "mb-1": true,
+      return (row.value as string[]).map((adapter) =>
+        h(
+          NTag,
+          {
+            type: "success",
+            class: {
+              "mr-1": true,
+              "mb-1": true,
+            },
           },
-        },
-        {
-          default: () =>
-            ((row.value as string[]) ?? ["所有/未标记"]).map((adapter) =>
-              adapter.replace("nonebot.adapters.", ""),
-            ),
-        },
+          {
+            default: () => adapter.replace("nonebot.adapters.", ""),
+          },
+        ),
       );
     case "time":
       return h(
