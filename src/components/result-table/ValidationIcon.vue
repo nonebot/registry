@@ -49,7 +49,7 @@ const getTagComponent = () => {
   <n-modal
     v-model:show="showModal"
     preset="card"
-    class="max-w-1/2"
+    class="lg:max-w-1/2"
     :title="`${plugin.project_link} 验证结果`"
   >
     <template #default>

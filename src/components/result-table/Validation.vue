@@ -15,10 +15,11 @@ const props = defineProps<{
 </script>
 
 <template>
-  <div v-if="props.validation" class="inline-flex flex-col space-y-2">
+  <div v-if="props.validation" class="xl:inline-flex">
     <n-alert
       v-for="(error, i) in props.validation.errors"
       :key="i"
+      class="mb-2 mr-2"
       type="error"
     >
       <template #header>

@@ -39,7 +39,7 @@ const showModal = ref(false);
   </n-el>
   <n-modal
     v-model:show="showModal"
-    class="max-w-1/2"
+    class="lg:max-w-1/2"
     preset="card"
     :title="`${projectLink} 元数据`"
   >
