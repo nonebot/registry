@@ -38,9 +38,13 @@ const props = defineProps<{
       :label="key"
     >
       <template #default>
-        <n-text v-if="['string', 'boolean', 'number'].includes(typeof value)">{{
-          value?.toString()
-        }}</n-text>
+        <n-text v-if="key == 'time'">
+          {{ new Date(value as string).toLocaleString() }}
+        </n-text>
+        <n-text
+          v-else-if="['string', 'boolean', 'number'].includes(typeof value)"
+          >{{ value?.toString() }}</n-text
+        >
         <n-tag
           v-for="(tag, index) in props.plugin.tags"
           v-else-if="key == 'tags'"
