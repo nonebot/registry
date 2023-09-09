@@ -29,11 +29,11 @@ const showModal = ref(false);
     />
     <PuzzleCheckOutline
       v-else-if="result.results.load"
-      class="color-[#6ae97b] text-[1.5em] flex justify-center align-middle"
+      class="color-[#18a058] text-[1.5em] flex justify-center align-middle"
     />
     <PuzzleRemoveOutline
       v-else
-      class="color-[#ff6c6c] text-[1.5em] flex justify-center align-middle"
+      class="color-[#d03050] text-[1.5em] flex justify-center align-middle"
     />
   </div>
   <n-modal

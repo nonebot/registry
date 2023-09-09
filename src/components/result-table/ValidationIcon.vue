@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref } from "vue";
+import { ref } from "vue";
 
 import { NModal, NTag, NIcon } from "naive-ui";
 import CheckCircleOutline from "vue-material-design-icons/CheckCircleOutline.vue";
@@ -18,36 +18,20 @@ const props = defineProps<{
 
 const showModal = ref(false);
 
-const icon = computed(() => {
+const getTagType = () => {
+  if (props.plugin.skip_test) return "default";
+  return props.result.results.validation ? "success" : "error";
+};
+
+const getTagComponent = () => {
   if (props.plugin.skip_test) {
-    return {
-      show: ProgressCheck,
-      color: {
-        color: "#c4c4c411",
-        textColor: "#6ae97b",
-        borderColor: "#6ae97b55",
-      },
-    };
+    return ProgressCheck;
   } else if (props.result.results.validation) {
-    return {
-      show: CheckCircleOutline,
-      color: {
-        color: "#6ae97b11",
-        textColor: "#6ae97b",
-        borderColor: "#6ae97b55",
-      },
-    };
+    return CheckCircleOutline;
   } else {
-    return {
-      show: CheckCloseOutline,
-      color: {
-        color: "#ff6c6c11",
-        textColor: "#ff6c6c",
-        borderColor: "#ff6c6c55",
-      },
-    };
+    return CheckCloseOutline;
   }
-});
+};
 </script>
 
 <template>
@@ -55,10 +39,10 @@ const icon = computed(() => {
     class="mr-[15px] flex justify-center align-middle cursor-pointer"
     @click="showModal = true"
   >
-    <n-tag round :color="icon.color">
+    <n-tag round :type="getTagType()">
       {{ `v${plugin.version}` }}
       <template #icon>
-        <n-icon :component="icon.show" />
+        <n-icon :component="getTagComponent()" />
       </template>
     </n-tag>
   </div>
