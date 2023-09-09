@@ -10,7 +10,7 @@ defineProps<{
 <template>
   <n-el
     tag="div"
-    class="inline-flex border border-solid border-[--border-color] mr-2 mb-2 rounded"
+    class="inline-flex border border-solid border-[--border-color] mr-2 mb-2 rounded items-center align-middle justify-center"
   >
     <span class="py-1 px-2 whitespace-nowrap">
       <div v-if="label">{{ label }}</div>
