@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-import { NModal } from "naive-ui";
+import { NEl, NModal } from "naive-ui";
 import PackageVariant from "vue-material-design-icons/PackageVariant.vue";
 import PackageVariantMinus from "vue-material-design-icons/PackageVariantMinus.vue";
 import PackageVariantRemove from "vue-material-design-icons/PackageVariantRemove.vue";
@@ -14,12 +14,14 @@ const props = defineProps<{
   result: Results[keyof Results];
   skipTest: boolean;
 }>();
+
 const showModal = ref(false);
 </script>
 
 <template>
-  <div
-    class="mr-[15px] flex justify-center align-middle cursor-pointer"
+  <n-el
+    tag="div"
+    class="mr-[15px] flex justify-center align-middle duration-300 cursor-pointer ease-[var(--cubic-bezier-ease-in-out)]"
     @click="showModal = true"
   >
     <PackageVariantMinus
@@ -28,13 +30,13 @@ const showModal = ref(false);
     />
     <PackageVariant
       v-else-if="result.results.metadata"
-      class="flex justify-center align-middle color-[#2080f0]"
+      class="color-[var(--info-color)] flex justify-center align-middle"
     />
     <PackageVariantRemove
       v-else
-      class="flex justify-center align-middle color-[#f0a020]"
+      class="color-[var(--warning-color)] flex justify-center align-middle"
     />
-  </div>
+  </n-el>
   <n-modal
     v-model:show="showModal"
     class="max-w-3/4"

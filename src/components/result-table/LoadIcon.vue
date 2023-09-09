@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-import { NModal } from "naive-ui";
+import { NEl, NModal } from "naive-ui";
 import PuzzleCheckOutline from "vue-material-design-icons/PuzzleCheckOutline.vue";
 import PuzzleMinusOutline from "vue-material-design-icons/PuzzleMinusOutline.vue";
 import PuzzleRemoveOutline from "vue-material-design-icons/PuzzleRemoveOutline.vue";
@@ -19,8 +19,9 @@ const showModal = ref(false);
 </script>
 
 <template>
-  <div
-    class="mr-[15px] flex justify-center align-middle cursor-pointer"
+  <n-el
+    tag="div"
+    class="mr-[15px] flex justify-center align-middle duration-300 cursor-pointer ease-[var(--cubic-bezier-ease-in-out)]"
     @click="showModal = true"
   >
     <PuzzleMinusOutline
@@ -29,13 +30,13 @@ const showModal = ref(false);
     />
     <PuzzleCheckOutline
       v-else-if="result.results.load"
-      class="color-[#18a058] text-[1.5em] flex justify-center align-middle"
+      class="color-[var(--success-color)] text-[1.5em] flex justify-center align-middle"
     />
     <PuzzleRemoveOutline
       v-else
-      class="color-[#d03050] text-[1.5em] flex justify-center align-middle"
+      class="color-[var(--error-color)] text-[1.5em] flex justify-center align-middle"
     />
-  </div>
+  </n-el>
   <n-modal
     v-model:show="showModal"
     class="max-w-3/4"
