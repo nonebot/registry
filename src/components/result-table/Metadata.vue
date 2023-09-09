@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, h } from "vue";
+import { h } from "vue";
 
 import { NDataTable, DataTableColumns, NText } from "naive-ui";
 
@@ -34,18 +34,12 @@ const columns: DataTableColumns<{
     },
   },
 ];
-const data = computed(() => {
-  if (props.result.outputs.metadata) {
-    return Object.entries(props.result.outputs.metadata).map(
-      ([key, value]) => ({
-        key: key,
-        value: value,
-      }),
-    );
-  } else {
-    return null;
-  }
-});
+const data = props.result.outputs.metadata
+  ? Object.entries(props.result.outputs.metadata).map(([key, value]) => ({
+      key: key,
+      value: value,
+    }))
+  : null;
 </script>
 
 <template>
