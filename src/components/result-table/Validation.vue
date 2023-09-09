@@ -73,6 +73,7 @@ const okColumns: DataTableColumns<KV> = [
   {
     title: "属性",
     key: "key",
+    minWidth: "120px",
     render(row) {
       return h(NText, { strong: true }, { default: () => row.key });
     },
@@ -80,6 +81,7 @@ const okColumns: DataTableColumns<KV> = [
   {
     title: "内容",
     key: "value",
+    minWidth: "200px",
     render(row) {
       return h(
         NText,

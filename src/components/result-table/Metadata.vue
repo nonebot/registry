@@ -17,6 +17,7 @@ const columns: DataTableColumns<{
   {
     title: "字段",
     key: "key",
+    minWidth: "100px",
     render(row) {
       return h(NText, { strong: true }, { default: () => row.key });
     },
@@ -24,6 +25,7 @@ const columns: DataTableColumns<{
   {
     title: "值",
     key: "value",
+    minWidth: "100px",
     render(row) {
       if (typeof row.value === "string") {
         return h(NText, {}, { default: () => row.value });
