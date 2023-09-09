@@ -55,6 +55,16 @@ const props = defineProps<{
         >
           {{ tag.label }}
         </n-tag>
+        <n-tag
+          v-for="adapter in props.plugin.supported_adapters || ['所有/未标记']"
+          v-else-if="key == 'supported_adapters'"
+          :key="adapter"
+          size="small"
+          class="mr-1"
+          type="success"
+        >
+          {{ adapter.replace("nonebot.adapters.", "") }}
+        </n-tag>
         <n-text v-else>{{ JSON.stringify(value) }}</n-text>
       </template>
     </TagPill>
