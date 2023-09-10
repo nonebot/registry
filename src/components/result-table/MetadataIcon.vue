@@ -44,7 +44,7 @@ const showModal = ref(false);
     :title="`${projectLink} 元数据`"
   >
     <template #default>
-      <Metadata :result="props.result" dense />
+      <Metadata :result="props.result" />
     </template>
   </n-modal>
 </template>

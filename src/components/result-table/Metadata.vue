@@ -1,18 +1,17 @@
 <script setup lang="ts">
 import { h } from "vue";
 
-import { NDataTable, DataTableColumns, NText } from "naive-ui";
+import { DataTableColumns, NDataTable, NText } from "naive-ui";
 
-import type { Results } from "@/types/results";
+import type { Metadata, Results } from "@/types/results";
 
 const props = defineProps<{
   result: Results[keyof Results];
-  dense?: boolean;
 }>();
 
 const columns: DataTableColumns<{
-  key: string;
-  value: string | string[] | null;
+  key: keyof Metadata;
+  value: Metadata[keyof Metadata];
 }> = [
   {
     title: "字段",
@@ -27,10 +26,9 @@ const columns: DataTableColumns<{
     key: "value",
     minWidth: "100px",
     render(row) {
-      if (typeof row.value === "string") {
-        return h(NText, {}, { default: () => row.value });
-      }
-      return JSON.stringify(row.value);
+      return typeof row.value === "string"
+        ? h(NText, {}, { default: () => row.value })
+        : JSON.stringify(row.value);
     },
   },
 ];
