@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import { computed } from "vue";
 
-import { NIcon, NPopover, NText, NTime } from "naive-ui";
-import ClockOutline from "vue-material-design-icons/ClockOutline.vue";
+import { mdiClockOutline } from "@mdi/js";
+import { NPopover, NText, NTime } from "naive-ui";
+
+import Icon from "../Icon.vue";
 
 const props = defineProps<{ time: string; currentTime: number }>();
 
@@ -26,9 +28,7 @@ const timeType = computed(() =>
 
 <template>
   <span class="flex justify-center items-center align-middle mr-[15px]">
-    <n-icon class="mr-1">
-      <ClockOutline />
-    </n-icon>
+    <Icon class="mr-1" :path="mdiClockOutline" />
     <n-text :type="timeType">
       <n-popover trigger="hover">
         <template #trigger>

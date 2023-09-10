@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import { computed } from "vue";
 
+import { mdiCheckCircle, mdiRocketLaunch } from "@mdi/js";
 import {
   NA,
   NAlert,
   NButton,
   NCard,
   NH3,
-  NIcon,
   NLayout,
   NP,
   NPageHeader,
@@ -17,10 +17,9 @@ import {
   NText,
 } from "naive-ui";
 import { storeToRefs } from "pinia";
-import CheckCircle from "vue-material-design-icons/CheckCircle.vue";
-import RocketLaunch from "vue-material-design-icons/RocketLaunch.vue";
 import { useRouter } from "vue-router";
 
+import Icon from "@/components/Icon.vue";
 import Author from "@/components/result-table/Author.vue";
 import Load from "@/components/result-table/Load.vue";
 import Metadata from "@/components/result-table/Metadata.vue";
@@ -48,10 +47,14 @@ const result = computed(() => !loading.value && store.getResult(pypi, module));
   <div v-else-if="pypi && module && plugin && result">
     <n-page-header @back="router.back()">
       <template #title>
-        <h2>
+        <h2 class="inline-flex items-center align-middle">
           {{ plugin.name }}
-          <CheckCircle v-if="plugin.is_official" class="text-green-600" />
-          <!-- FIXME: 这里的icon和文本不对齐 -->
+          <Icon
+            v-if="plugin.is_official"
+            :size="24"
+            class="text-green-600 ml-2"
+            :path="mdiCheckCircle"
+          />
         </h2>
       </template>
     </n-page-header>
@@ -68,20 +71,16 @@ const result = computed(() => !loading.value && store.getResult(pypi, module));
             v-else-if="plugin.skip_test"
             title="验证通过"
             type="info"
-            class="w-220px"
+            class="w-[220px]"
           >
             <template #icon>
-              <n-icon>
-                <RocketLaunch />
-              </n-icon>
+              <Icon :path="mdiRocketLaunch" />
             </template>
             <n-text>该插件经人工跳过了测试</n-text>
           </n-alert>
-          <n-alert v-else title="验证通过" type="success" class="w-140px">
+          <n-alert v-else title="验证通过" type="success" class="w-[140px]">
             <template #icon>
-              <n-icon>
-                <RocketLaunch />
-              </n-icon>
+              <Icon :path="mdiRocketLaunch" />
             </template>
           </n-alert>
         </n-p>

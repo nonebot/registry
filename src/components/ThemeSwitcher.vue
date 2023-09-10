@@ -1,10 +1,11 @@
 <script setup lang="ts">
-import { NButton, NIcon } from "naive-ui";
+import { mdiWeatherNight, mdiWeatherSunny } from "@mdi/js";
+import { NButton } from "naive-ui";
 import { storeToRefs } from "pinia";
-import WeatherNight from "vue-material-design-icons/WeatherNight.vue";
-import WeatherSunny from "vue-material-design-icons/WeatherSunny.vue";
 
 import { usePageStore } from "@/stores/page";
+
+import Icon from "./Icon.vue";
 
 const store = usePageStore();
 const { theme } = storeToRefs(store);
@@ -12,9 +13,7 @@ const { theme } = storeToRefs(store);
 
 <template>
   <n-button text @click="store.toggleDark()">
-    <n-icon size="24">
-      <WeatherSunny v-if="theme === null" />
-      <WeatherNight v-else />
-    </n-icon>
+    <Icon v-if="theme" :size="24" :path="mdiWeatherNight" />
+    <Icon v-else :size="24" :path="mdiWeatherSunny" />
   </n-button>
 </template>

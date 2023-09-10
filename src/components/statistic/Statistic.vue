@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import { computed } from "vue";
 
-import { NButton, NIcon, NPopover, NSpace, NText } from "naive-ui";
-import ChartDonutVariant from "vue-material-design-icons/ChartDonutVariant.vue";
+import { mdiChartDonutVariant } from "@mdi/js";
+import { NButton, NPopover, NSpace, NText } from "naive-ui";
 
 import { usePageStore } from "@/stores/page";
+
+import Icon from "../Icon.vue";
 
 import Details from "./Details.vue";
 import Progress from "./Progress.vue";
@@ -44,9 +46,7 @@ const stat = computed(() => {
   <n-popover trigger="click" class="w-[170px]">
     <template #trigger>
       <n-button text>
-        <n-icon size="24">
-          <ChartDonutVariant />
-        </n-icon>
+        <Icon size="24" :path="mdiChartDonutVariant" />
       </n-button>
     </template>
     <template #header>

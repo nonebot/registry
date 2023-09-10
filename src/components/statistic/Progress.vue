@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { computed, reactive } from "vue";
 
+import { mdiCheckAll } from "@mdi/js";
 import { gsap } from "gsap";
-import { NEl, NIcon, NNumberAnimation, NProgress, NSpace } from "naive-ui";
-import CheckAll from "vue-material-design-icons/CheckAll.vue";
+import { NEl, NNumberAnimation, NProgress, NSpace } from "naive-ui";
+
+import Icon from "../Icon.vue";
 
 const props = defineProps<{
   totalCount: number;
@@ -41,15 +43,15 @@ function getProgressColor(percent: number) {
   }
 }
 
-let percentageList = computed(() => [
+const percentageList = computed(() => [
   tweened.passCount,
   tweened.metaCount,
   tweened.loadCount,
 ]);
-let colorList = computed(() =>
+const colorList = computed(() =>
   percentageList.value.map((percent) => getProgressColor(percent)),
 );
-let railColorList = computed(() =>
+const railColorList = computed(() =>
   colorList.value.map((color) => ({ stroke: color, opacity: 0.3 })),
 );
 </script>
@@ -66,9 +68,7 @@ let railColorList = computed(() =>
         :rail-style="railColorList"
       >
         <div class="text-center">
-          <n-icon color="var(--success-color)">
-            <CheckAll />
-          </n-icon>
+          <Icon color="var(--success-color)" :path="mdiCheckAll" />
           <br />
           <n-number-animation :from="0" :to="passCount" />/{{ totalCount }}
         </div>

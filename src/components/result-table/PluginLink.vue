@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import { NA, NIcon } from "naive-ui";
-import Package from "vue-material-design-icons/Package.vue";
+import { mdiPackage } from "@mdi/js";
+import { NA } from "naive-ui";
 
+import Icon from "../Icon.vue";
 defineProps<{
   moduleName: string;
   projectLink: string;
@@ -23,9 +24,7 @@ defineProps<{
     :href="homepage"
     target="_blank"
   >
-    <n-icon>
-      <Package />
-    </n-icon>
+    <Icon :path="mdiPackage" />
     {{ moduleName }}
   </n-a>
 </template>

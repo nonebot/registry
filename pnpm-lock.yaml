@@ -29,9 +29,6 @@ dependencies:
   vue:
     specifier: ^3.3.4
     version: 3.3.4
-  vue-material-design-icons:
-    specifier: ^5.2.0
-    version: 5.2.0
   vue-router:
     specifier: ^4.2.4
     version: 4.2.4(vue@3.3.4)
@@ -4535,10 +4532,6 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
-
-  /vue-material-design-icons@5.2.0:
-    resolution: {integrity: sha512-fcdcJHQ9fQw2CAytuLAzWSELcxH138sCdMItVhvmO7Lu9afIgojB/UCWv7XHt/lURsnq/n6O+muM4AQgw8yfig==}
-    dev: false
 
   /vue-router@4.2.4(vue@3.3.4):
     resolution: {integrity: sha512-9PISkmaCO02OzPVOMq2w82ilty6+xJmQrarYZDkjZBfl4RvYAlt4PKnEX21oW4KTtWfa9OuO/b3qk1Od3AEdCQ==}

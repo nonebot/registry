@@ -1,13 +1,17 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
+import {
+  mdiPackageVariant,
+  mdiPackageVariantMinus,
+  mdiPackageVariantRemove,
+} from "@mdi/js";
 import { NEl, NModal } from "naive-ui";
-import PackageVariant from "vue-material-design-icons/PackageVariant.vue";
-import PackageVariantMinus from "vue-material-design-icons/PackageVariantMinus.vue";
-import PackageVariantRemove from "vue-material-design-icons/PackageVariantRemove.vue";
 
 import Metadata from "@/components/result-table/Metadata.vue";
 import type { Results } from "@/types/results";
+
+import Icon from "../Icon.vue";
 
 const props = defineProps<{
   projectLink: string;
@@ -16,6 +20,10 @@ const props = defineProps<{
 }>();
 
 const showModal = ref(false);
+const iconPath =
+  (props.skipTest && mdiPackageVariantMinus) ||
+  (props.result.results.metadata && mdiPackageVariant) ||
+  mdiPackageVariantRemove;
 </script>
 
 <template>
@@ -24,17 +32,17 @@ const showModal = ref(false);
     class="mr-[15px] flex justify-center align-middle duration-300 cursor-pointer ease-[--cubic-bezier-ease-in-out]"
     @click="showModal = true"
   >
-    <PackageVariantMinus
-      v-if="skipTest"
-      class="flex justify-center align-middle color-[#c4c4c4]"
-    />
-    <PackageVariant
-      v-else-if="result.results.metadata"
-      class="color-[--info-color] flex justify-center align-middle"
-    />
-    <PackageVariantRemove
-      v-else
-      class="color-[--warning-color] flex justify-center align-middle"
+    <Icon
+      :size="24"
+      :path="iconPath"
+      :class="[
+        {
+          'color-[#c4c4c4]': skipTest,
+          'color-[--info-color]': result.results.metadata,
+          'color-[--warning-color]': !skipTest && !result.results.metadata,
+        },
+        'text-[1.5em] flex justify-center align-middle',
+      ]"
     />
   </n-el>
   <n-modal

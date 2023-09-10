@@ -1,6 +1,8 @@
 <script setup lang="ts">
-import { NButton, NIcon } from "naive-ui";
-import Github from "vue-material-design-icons/Github.vue";
+import { mdiGithub } from "@mdi/js";
+import { NButton } from "naive-ui";
+
+import Icon from "./Icon.vue";
 </script>
 
 <template>
@@ -10,8 +12,6 @@ import Github from "vue-material-design-icons/Github.vue";
     href="https://github.com/nonebot/registry"
     target="_blank"
   >
-    <n-icon size="24">
-      <Github />
-    </n-icon>
+    <Icon :size="24" :path="mdiGithub" />
   </n-button>
 </template>

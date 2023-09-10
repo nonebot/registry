@@ -1,13 +1,17 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-import { NModal, NTag, NIcon } from "naive-ui";
-import CheckCircleOutline from "vue-material-design-icons/CheckCircleOutline.vue";
-import CheckCloseOutline from "vue-material-design-icons/CloseCircleOutline.vue";
-import ProgressCheck from "vue-material-design-icons/ProgressCheck.vue";
+import {
+  mdiCheckCircleOutline,
+  mdiCloseCircleOutline,
+  mdiProgressCheck,
+} from "@mdi/js";
+import { NModal, NTag } from "naive-ui";
 
 import type { Plugin } from "@/types/plugins";
 import type { Results } from "@/types/results";
+
+import Icon from "../Icon.vue";
 
 import Validation from "./Validation.vue";
 
@@ -22,16 +26,10 @@ const getTagType = () => {
   if (props.plugin.skip_test) return "default";
   return props.result.results.validation ? "success" : "error";
 };
-
-const getTagComponent = () => {
-  if (props.plugin.skip_test) {
-    return ProgressCheck;
-  } else if (props.result.results.validation) {
-    return CheckCircleOutline;
-  } else {
-    return CheckCloseOutline;
-  }
-};
+const tagPath =
+  (props.plugin.skip_test && mdiProgressCheck) ||
+  (props.result.results.validation && mdiCheckCircleOutline) ||
+  mdiCloseCircleOutline;
 </script>
 
 <template>
@@ -42,7 +40,7 @@ const getTagComponent = () => {
     <n-tag round :type="getTagType()">
       {{ `v${plugin.version}` }}
       <template #icon>
-        <n-icon :component="getTagComponent()" />
+        <Icon :path="tagPath" />
       </template>
     </n-tag>
   </div>
