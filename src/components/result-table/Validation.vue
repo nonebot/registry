@@ -38,8 +38,8 @@ const props = defineProps<{
       :label="key"
     >
       <template #default>
-        <n-text v-if="key == 'time'">
-          {{ new Date(value as string).toLocaleString() }}
+        <n-text v-if="key === 'time'">
+          {{ new Date(props.plugin[key]).toLocaleString() }}
         </n-text>
         <n-text
           v-else-if="['string', 'boolean', 'number'].includes(typeof value)"
@@ -47,7 +47,7 @@ const props = defineProps<{
         >
         <n-tag
           v-for="(tag, index) in props.plugin.tags"
-          v-else-if="key == 'tags'"
+          v-else-if="key === 'tags'"
           :key="index"
           size="small"
           class="mr-1"
@@ -61,7 +61,7 @@ const props = defineProps<{
         </n-tag>
         <n-tag
           v-for="adapter in props.plugin.supported_adapters || ['所有/未标记']"
-          v-else-if="key == 'supported_adapters'"
+          v-else-if="key === 'supported_adapters'"
           :key="adapter"
           size="small"
           class="mr-1"
