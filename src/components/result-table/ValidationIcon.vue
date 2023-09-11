@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { computed, ref } from "vue";
 
 import {
   mdiCheckCircleOutline,
@@ -26,10 +26,12 @@ const getTagType = () => {
   if (props.plugin.skip_test) return "default";
   return props.result.results.validation ? "success" : "error";
 };
-const tagPath =
-  (props.plugin.skip_test && mdiProgressCheck) ||
-  (props.result.results.validation && mdiCheckCircleOutline) ||
-  mdiCloseCircleOutline;
+const tagPath = computed(
+  () =>
+    (props.plugin.skip_test && mdiProgressCheck) ||
+    (props.result.results.validation && mdiCheckCircleOutline) ||
+    mdiCloseCircleOutline,
+);
 </script>
 
 <template>

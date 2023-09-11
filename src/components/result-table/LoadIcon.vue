@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { computed, ref } from "vue";
 
 import {
   mdiPuzzleCheckOutline,
@@ -20,10 +20,12 @@ const props = defineProps<{
 }>();
 
 const showModal = ref(false);
-const iconPath =
-  (props.skipTest && mdiPuzzleMinusOutline) ||
-  (props.result.results.load && mdiPuzzleCheckOutline) ||
-  mdiPuzzleRemoveOutline;
+const iconPath = computed(
+  () =>
+    (props.skipTest && mdiPuzzleMinusOutline) ||
+    (props.result.results.load && mdiPuzzleCheckOutline) ||
+    mdiPuzzleRemoveOutline,
+);
 </script>
 
 <template>

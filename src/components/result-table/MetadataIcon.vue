@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { computed, ref } from "vue";
 
 import {
   mdiPackageVariant,
@@ -20,10 +20,12 @@ const props = defineProps<{
 }>();
 
 const showModal = ref(false);
-const iconPath =
-  (props.skipTest && mdiPackageVariantMinus) ||
-  (props.result.results.metadata && mdiPackageVariant) ||
-  mdiPackageVariantRemove;
+const iconPath = computed(
+  () =>
+    (props.skipTest && mdiPackageVariantMinus) ||
+    (props.result.results.metadata && mdiPackageVariant) ||
+    mdiPackageVariantRemove,
+);
 </script>
 
 <template>
