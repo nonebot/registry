@@ -4,8 +4,9 @@ on:
   push:
     branches:
       - "main"
-    paths:
-      - "src/**"
+    concurrency:
+      group: website-deploy-${{ github.ref }}
+      cancel-in-progress: true
 
 permissions:
   contents: read
