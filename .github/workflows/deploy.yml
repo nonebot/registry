@@ -10,10 +10,6 @@ permissions:
   deployments: write
   statuses: write
 
-concurrency:
-  group: website-deploy-${{ github.ref }}
-  cancel-in-progress: false
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
