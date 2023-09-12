@@ -1,0 +1,10 @@
+/adapters.json
+  Access-Control-Allow-Origin: *
+/bots.json
+  Access-Control-Allow-Origin: *
+/drivers.json
+  Access-Control-Allow-Origin: *
+/plugins.json
+  Access-Control-Allow-Origin: *
+/results.json
+  Access-Control-Allow-Origin: *
