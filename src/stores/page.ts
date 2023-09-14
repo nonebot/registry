@@ -24,19 +24,24 @@ export const usePageStore = defineStore("page", () => {
   const loading = ref(true);
 
   const initData = async () => {
-    const pluginsData: PluginsResponse = await (
-      await fetch("/plugins.json", { method: "GET" })
-    ).json();
-    results.value = await (
-      await fetch("/results.json", { method: "GET" })
-    ).json();
-    plugins.value = pluginsData.reduce(
-      (acc: Plugins, plugin: Plugins[keyof Plugins]) => {
-        acc[`${plugin.project_link}:${plugin.module_name}`] = plugin;
-        return acc;
-      },
-      {},
-    );
+    const requests = [
+      fetch("/plugins.json", { method: "GET" })
+        .then((response) => response.json())
+        .then(
+          (data: PluginsResponse) =>
+            (plugins.value = data.reduce(
+              (acc: Plugins, plugin: Plugins[keyof Plugins]) => {
+                acc[`${plugin.project_link}:${plugin.module_name}`] = plugin;
+                return acc;
+              },
+              {},
+            )),
+        ),
+      fetch("/results.json", { method: "GET" })
+        .then((response) => response.json())
+        .then((data) => (results.value = data)),
+    ];
+    await Promise.all(requests);
     loading.value = false;
   };
 
