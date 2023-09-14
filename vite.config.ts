@@ -1,5 +1,6 @@
 import path from "path";
 
+import { sentryVitePlugin } from "@sentry/vite-plugin";
 import transformerDirectives from "@unocss/transformer-directives";
 import vue from "@vitejs/plugin-vue";
 import { visualizer } from "rollup-plugin-visualizer";
@@ -14,6 +15,12 @@ export default defineConfig({
       transformers: [transformerDirectives()],
     }),
     visualizer({ sourcemap: true }),
+    sentryVitePlugin({
+      org: "nonebot",
+      project: "registry",
+      authToken: process.env.SENTRY_AUTH_TOKEN,
+      telemetry: false,
+    }),
   ],
   resolve: {
     alias: {
@@ -40,6 +47,8 @@ export default defineConfig({
       output: {
         manualChunks(id) {
           if (id.includes("naive-ui")) return "naive-ui";
+          if (id.includes("sentry")) return "sentry";
+          if (id.includes("gsap")) return "gsap";
           if (id.includes("node_modules")) return "vendor";
         },
       },

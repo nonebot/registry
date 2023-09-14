@@ -726,3 +726,6 @@ public/plugins.json
 
 # rollup-plugin-visualizer
 stats.html
+
+# Sentry Auth Token
+.env.sentry-build-plugin
