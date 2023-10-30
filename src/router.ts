@@ -3,7 +3,6 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from "@/views/Home.vue";
 import NotFound from "@/views/NotFound.vue";
 import PluginPage from "@/views/PluginPage.vue";
-import Search from "@/views/Search.vue";
 
 const routes = [
   {
@@ -12,7 +11,7 @@ const routes = [
   },
   {
     path: "/search",
-    component: Search,
+    component: Home,
     props: (route: { query: { q: string } }) => ({ query: route.query.q }),
   },
   {
