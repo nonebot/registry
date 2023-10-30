@@ -3,12 +3,14 @@ import { ref } from "vue";
 
 import { NInput, NLayout } from "naive-ui";
 import { storeToRefs } from "pinia";
+import { useRouter } from "vue-router";
 
 import ResultTable from "@/components/result-table/ResultTable.vue";
 import { usePageStore } from "@/stores/page";
 import { debounce } from "@/utils/wrapper";
 
 const props = defineProps<{ searchKeyword?: string }>();
+const router = useRouter();
 const store = usePageStore();
 const { plugins, results } = storeToRefs(store);
 
@@ -17,9 +19,7 @@ const searchKeyword = ref<string>(
 );
 
 const handleSearch = debounce((v: string) => {
-  const url = new URL(`${window.location.origin}/search`);
-  url.searchParams.append("q", v);
-  window.history.replaceState(null, null, url)
+  router.push({ path: "/search", query: { q: v } });
 }, 600);
 </script>
 
