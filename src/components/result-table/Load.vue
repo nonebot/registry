@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import AnsiUp from "ansi_up";
+import { AnsiUp } from "ansi_up";
 
 import type { Results } from "@/types/results";
 
 defineProps<{ result: Results[keyof Results]; dense?: boolean }>();
+
 const ansi_up = new AnsiUp();
 </script>
 
