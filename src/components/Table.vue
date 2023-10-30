@@ -6,6 +6,7 @@ import { storeToRefs } from "pinia";
 
 import ResultTable from "@/components/result-table/ResultTable.vue";
 import { usePageStore } from "@/stores/page";
+import { debounce } from "@/utils/wrapper";
 
 const props = defineProps<{ searchKeyword?: string }>();
 const store = usePageStore();
@@ -14,6 +15,12 @@ const { plugins, results } = storeToRefs(store);
 const searchKeyword = ref<string>(
   props.searchKeyword ? props.searchKeyword : "",
 );
+
+const handleSearch = debounce((v: string) => {
+  const url = new URL(`${window.location.origin}/search`);
+  url.searchParams.append("q", v);
+  location.replace(url.href);
+}, 600);
 </script>
 
 <template>
@@ -24,6 +31,7 @@ const searchKeyword = ref<string>(
       type="text"
       placeholder="搜索"
       clearable
+      @input="handleSearch"
     />
   </n-layout>
   <n-layout class="mt-3">
