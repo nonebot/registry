@@ -10,7 +10,11 @@ import Statistic from "@/components/statistic/Statistic.vue";
   <n-layout-header class="py-4" bordered>
     <div class="mx-auto lg:max-w-[90rem] max-w-3xl">
       <div class="px-4 sm:px-6 md:px-8 flex items-center">
-        <div class="flex-1 flex items-center">
+        <a
+          class="decoration-inherit no-underline text-inherit flex-1 flex items-center"
+          target="_self"
+          href="/"
+        >
           <img
             class="mr-1"
             src="https://nonebot.dev/logo.png"
@@ -19,7 +23,7 @@ import Statistic from "@/components/statistic/Statistic.vue";
             height="30"
           />
           <span class="text-lg">商店测试结果</span>
-        </div>
+        </a>
         <div class="flex items-center" :span="1">
           <div class="flex items-center gap-3">
             <GithubButton />
