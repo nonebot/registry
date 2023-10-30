@@ -49,7 +49,7 @@ const themeOverrides: GlobalThemeOverrides = {
           <n-layout
             class="my-3 w-full lg:max-w-[90rem] max-w-3xl mx-auto px-4 sm:px-6 md:px-8"
           >
-            <router-view></router-view>
+            <router-view :key="$route.fullPath"></router-view>
           </n-layout>
           <Footer></Footer>
           <n-back-top />

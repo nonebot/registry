@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref, watch } from "vue";
 
 import { NInput, NLayout } from "naive-ui";
 import { storeToRefs } from "pinia";
@@ -17,10 +17,13 @@ const { plugins, results } = storeToRefs(store);
 const searchKeyword = ref<string>(
   props.searchKeyword ? props.searchKeyword : "",
 );
-
 const handleSearch = debounce((v: string) => {
   router.push({ path: "/search", query: { q: v } });
 }, 600);
+
+watch(searchKeyword, async (newValue) => {
+  handleSearch(newValue);
+});
 </script>
 
 <template>
@@ -31,7 +34,6 @@ const handleSearch = debounce((v: string) => {
       type="text"
       placeholder="搜索"
       clearable
-      @input="handleSearch"
     />
   </n-layout>
   <n-layout class="mt-3">
