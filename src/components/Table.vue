@@ -19,7 +19,7 @@ const searchKeyword = ref<string>(
 const handleSearch = debounce((v: string) => {
   const url = new URL(`${window.location.origin}/search`);
   url.searchParams.append("q", v);
-  location.replace(url.href);
+  window.history.replaceState(null, null, url)
 }, 600);
 </script>
 
