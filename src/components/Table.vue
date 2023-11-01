@@ -14,12 +14,12 @@ const router = useRouter();
 const store = usePageStore();
 const { plugins, results } = storeToRefs(store);
 
+const searchKeyword = ref<string>(props.searchKeyword || "");
+const inputInstRef = ref<InputInst | null>(null);
+
 if (props.searchKeyword) {
   nextTick(() => inputInstRef.value?.focus());
 }
-
-const searchKeyword = ref<string>(props.searchKeyword || "");
-const inputInstRef = ref<InputInst | null>(null);
 
 const handleSearch = debounce((v: string) => {
   router.push({ path: "/search", query: { q: v } });
