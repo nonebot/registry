@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { ref, watch } from "vue";
+import { nextTick, ref, watch } from "vue";
 
-import { NInput, NLayout } from "naive-ui";
+import { NInput, NLayout, type InputInst } from "naive-ui";
 import { storeToRefs } from "pinia";
 import { useRouter } from "vue-router";
 
@@ -14,9 +14,13 @@ const router = useRouter();
 const store = usePageStore();
 const { plugins, results } = storeToRefs(store);
 
-const searchKeyword = ref<string>(
-  props.searchKeyword ? props.searchKeyword : "",
-);
+if (props.searchKeyword) {
+  nextTick(() => inputInstRef.value?.focus());
+}
+
+const searchKeyword = ref<string>(props.searchKeyword || "");
+const inputInstRef = ref<InputInst | null>(null);
+
 const handleSearch = debounce((v: string) => {
   router.push({ path: "/search", query: { q: v } });
 }, 600);
@@ -29,6 +33,7 @@ watch(searchKeyword, async (newValue) => {
 <template>
   <n-layout class="flex justify-end">
     <n-input
+      ref="inputInstRef"
       v-model:value="searchKeyword"
       class="min-w-1/4"
       type="text"
