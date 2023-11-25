@@ -31,12 +31,12 @@ export default defineConfig({
     proxy: {
       "/results.json": {
         target:
-          "https://ghproxy.com/https://raw.githubusercontent.com/nonebot/registry/results/",
+          "https://mirror.ghproxy.com/https://raw.githubusercontent.com/nonebot/registry/results/",
         changeOrigin: true,
       },
       "/plugins.json": {
         target:
-          "https://ghproxy.com/https://raw.githubusercontent.com/nonebot/registry/results/",
+          "https://mirror.ghproxy.com/https://raw.githubusercontent.com/nonebot/registry/results/",
         changeOrigin: true,
       },
     },
