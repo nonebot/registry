@@ -71,7 +71,7 @@ jobs:
         run: poetry run python -m src.utils.store_test -l 0
 
       - name: Upload results
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: results
           path: |
