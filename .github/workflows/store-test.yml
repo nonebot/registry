@@ -94,7 +94,7 @@ jobs:
           ref: results
 
       - name: Download results
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: results
           path: ${{ github.workspace }}
@@ -125,7 +125,7 @@ jobs:
         uses: ./.github/actions/setup-node
 
       - name: Download results
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: results
           path: ${{ github.workspace }}/public
