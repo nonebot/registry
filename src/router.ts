@@ -1,27 +1,23 @@
 import { createRouter, createWebHistory } from "vue-router";
 
-import Home from "@/views/Home.vue";
-import NotFound from "@/views/NotFound.vue";
-import PluginPage from "@/views/PluginPage.vue";
-
 const routes = [
   {
     path: "/",
-    component: Home,
+    component: () => import("@/views/Home.vue"),
   },
   {
     path: "/search",
-    component: Home,
+    component: () => import("@/views/Home.vue"),
     props: (route: { query: { q: string } }) => ({ query: route.query.q }),
   },
   {
     path: "/plugin/:path",
-    component: PluginPage,
+    component: () => import("@/views/PluginPage.vue"),
     props: true,
   },
   {
     path: "/:pathMatched(.*)*",
-    component: NotFound,
+    component: () => import("@/views/NotFound.vue"),
     props: (route: { params: { pathMatched: string } }) => ({
       pathMatched: `/${route.params.pathMatched}`,
     }),
