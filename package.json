@@ -19,7 +19,7 @@
     "lint:js:fix": "pnpm eslint:fix \"**/*.{js,jsx,ts,tsx,cjs,mjs,vue}\"",
     "lint:style": "pnpm stylelint \"**/*.{css,scss}\"",
     "lint:style:fix": "pnpm stylelint:fix \"**/*.{css,scss}\"",
-    "prepare": "husky install"
+    "prepare": "node .husky/install.mjs"
   },
   "dependencies": {
     "@mdi/js": "^7.4.47",
