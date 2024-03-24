@@ -15,14 +15,7 @@ if (import.meta.env.MODE == "production" && import.meta.env.VITE_SENTRY_DSN) {
   Sentry.init({
     app,
     dsn: import.meta.env.VITE_SENTRY_DSN,
-    integrations: [
-      // eslint-disable-next-line import/namespace
-      new Sentry.BrowserTracing({
-        routingInstrumentation: Sentry.vueRouterInstrumentation(router),
-      }),
-      // eslint-disable-next-line import/namespace
-      new Sentry.Replay(),
-    ],
+    integrations: [Sentry.browserTracingIntegration({ router })],
 
     // capture 50% of transactions for performance monitoring.
     tracesSampleRate: 0.5,
@@ -30,11 +23,6 @@ if (import.meta.env.MODE == "production" && import.meta.env.VITE_SENTRY_DSN) {
     // Set `tracePropagationTargets` to control for which URLs distributed tracing should be enabled
     // /^\// means requests whose URL starts with a '/' (for example GET /api/v1/users).
     tracePropagationTargets: ["nonebot.dev", /^\//],
-
-    // Capture Replay for 10% of all sessions,
-    // plus for 100% of sessions with an error
-    replaysSessionSampleRate: 0.1,
-    replaysOnErrorSampleRate: 1.0,
 
     /// / START: those errors are found at https://docs.sentry.io/platforms/javascript/#decluttering-sentry
     ignoreErrors: [
