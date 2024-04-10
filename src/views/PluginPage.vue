@@ -58,8 +58,8 @@ const result = computed(() => !loading.value && store.getResult(pypi, module));
         </h2>
       </template>
     </n-page-header>
-    <div class="flex flex-col-reverse xl:flex-row justify-between">
-      <div class="xl:basis-3/4 xl:max-w-3/4 xl:pr-2">
+    <div class="flex flex-col-reverse xl:flex-row">
+      <div class="flex-initial min-w-0 xl:max-w-3/4 xl:pr-32">
         <n-p>
           <n-h3>验证结果</n-h3>
           <Validation
@@ -93,7 +93,7 @@ const result = computed(() => !loading.value && store.getResult(pypi, module));
           <Load :result="result" />
         </n-p>
       </div>
-      <div class="pb-4 xl:ml-4 xl:basis-1/4 xl:max-w-1/4 xl:pl-2">
+      <div class="pb-4 min-w-1/4">
         <n-h3>插件信息</n-h3>
         <n-p> 作者：<Author :author="plugin.author" /> </n-p>
         <n-p> 版本：{{ plugin.version }} </n-p>
