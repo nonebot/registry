@@ -58,7 +58,7 @@ const result = computed(() => !loading.value && store.getResult(pypi, module));
         </h2>
       </template>
     </n-page-header>
-    <div class="flex flex-col-reverse xl:flex-row">
+    <div class="flex flex-col-reverse xl:flex-row justify-between">
       <div class="flex-initial min-w-0 xl:max-w-3/4 xl:pr-32">
         <n-p>
           <n-h3>验证结果</n-h3>
