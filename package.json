@@ -23,21 +23,21 @@
   },
   "dependencies": {
     "@mdi/js": "^7.4.47",
-    "@sentry/vue": "^7.110.0",
+    "@sentry/vue": "^7.111.0",
     "@vueuse/core": "^10.9.0",
     "ansi_up": "^6.0.2",
     "gsap": "^3.12.5",
     "highlight.js": "^11.9.0",
     "naive-ui": "^2.38.1",
     "pinia": "^2.1.7",
-    "vue": "^3.4.21",
-    "vue-router": "^4.3.0"
+    "vue": "^3.4.23",
+    "vue-router": "^4.3.2"
   },
   "devDependencies": {
     "@sentry/vite-plugin": "^2.16.1",
-    "@typescript-eslint/eslint-plugin": "^7.6.0",
-    "@typescript-eslint/parser": "^7.6.0",
-    "@unocss/transformer-directives": "^0.59.2",
+    "@typescript-eslint/eslint-plugin": "^7.7.0",
+    "@typescript-eslint/parser": "^7.7.0",
+    "@unocss/transformer-directives": "^0.59.4",
     "@vitejs/plugin-vue": "^5.0.4",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
@@ -50,14 +50,14 @@
     "prettier": "^3.2.5",
     "rollup-plugin-visualizer": "^5.12.0",
     "sass": "^1.75.0",
-    "sass-loader": "^14.2.0",
+    "sass-loader": "^14.2.1",
     "stylelint": "^16.3.1",
     "stylelint-config-standard": "^36.0.0",
     "stylelint-config-standard-scss": "^13.1.0",
     "stylelint-prettier": "^5.0.0",
     "typescript": "^5.4.5",
-    "unocss": "^0.59.2",
-    "vite": "^5.2.8",
-    "vue-tsc": "^2.0.13"
+    "unocss": "^0.59.4",
+    "vite": "^5.2.10",
+    "vue-tsc": "^2.0.14"
   }
 }
