@@ -39,7 +39,7 @@
     "@typescript-eslint/parser": "^7.8.0",
     "@unocss/transformer-directives": "^0.59.4",
     "@vitejs/plugin-vue": "^5.0.4",
-    "eslint": "^8.57.0",
+    "eslint": "^9.2.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.29.1",
