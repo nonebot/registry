@@ -1,7 +1,7 @@
 {
   "name": "nonebot-registry",
   "license": "MIT",
-  "packageManager": "pnpm@9.1.1",
+  "packageManager": "pnpm@9.1.2",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@mdi/js": "^7.4.47",
-    "@sentry/vue": "^7.114.0",
+    "@sentry/vue": "^7.116.0",
     "@vueuse/core": "^10.9.0",
     "ansi_up": "^6.0.2",
     "gsap": "^3.12.5",
@@ -35,10 +35,10 @@
     "vue-router": "^4.3.2"
   },
   "devDependencies": {
-    "@sentry/vite-plugin": "^2.16.1",
-    "@typescript-eslint/eslint-plugin": "^7.8.0",
-    "@typescript-eslint/parser": "^7.8.0",
-    "@unocss/transformer-directives": "^0.60.2",
+    "@sentry/vite-plugin": "^2.17.0",
+    "@typescript-eslint/eslint-plugin": "^7.10.0",
+    "@typescript-eslint/parser": "^7.10.0",
+    "@unocss/transformer-directives": "^0.60.3",
     "@vitejs/plugin-vue": "^5.0.4",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
@@ -47,18 +47,18 @@
     "eslint-plugin-prettier": "^5.1.3",
     "eslint-plugin-vue": "^9.26.0",
     "husky": "^9.0.11",
-    "lint-staged": "^15.2.2",
+    "lint-staged": "^15.2.5",
     "prettier": "^3.2.5",
     "rollup-plugin-visualizer": "^5.12.0",
-    "sass": "^1.77.1",
+    "sass": "^1.77.2",
     "sass-loader": "^14.2.1",
-    "stylelint": "^16.5.0",
+    "stylelint": "^16.6.0",
     "stylelint-config-standard": "^36.0.0",
     "stylelint-config-standard-scss": "^13.1.0",
     "stylelint-prettier": "^5.0.0",
     "typescript": "^5.4.5",
-    "unocss": "^0.60.2",
+    "unocss": "^0.60.3",
     "vite": "^5.2.11",
-    "vue-tsc": "^2.0.17"
+    "vue-tsc": "^2.0.19"
   }
 }
