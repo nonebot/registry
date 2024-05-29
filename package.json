@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@mdi/js": "^7.4.47",
-    "@sentry/vue": "^7.116.0",
+    "@sentry/vue": "^8.7.0",
     "@vueuse/core": "^10.9.0",
     "ansi_up": "^6.0.2",
     "gsap": "^3.12.5",
