@@ -11,7 +11,7 @@ import Statistic from "@/components/statistic/Statistic.vue";
     <div class="mx-auto lg:max-w-[90rem] max-w-3xl">
       <div class="px-4 sm:px-6 md:px-8 flex items-center">
         <a
-          class="flex items-center decoration-inherit no-underline text-inherit flex-1"
+          class="flex items-center no-underline text-inherit decoration-inherit flex-1"
           target="_self"
           href="/"
         >
