@@ -47,7 +47,7 @@ const themeOverrides: GlobalThemeOverrides = {
         <div class="flex min-h-screen flex-col">
           <Header></Header>
           <n-layout
-            class="mx-auto lg:max-w-[90rem] max-w-3xl my-3 w-full px-4 sm:px-6 md:px-8"
+            class="mx-auto lg:max-w-[90rem] max-w-3xl px-4 sm:px-6 md:px-8 my-3 w-full"
           >
             <router-view :key="$route.fullPath"></router-view>
           </n-layout>
