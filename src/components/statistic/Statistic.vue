@@ -14,22 +14,22 @@ import Progress from "./Progress.vue";
 const store = usePageStore();
 
 const stat = computed(() => {
-  let results = store.results;
-  let totalCount = Object.keys(results).length;
-  let passCount = Object.values(results).filter(
+  const results = store.results;
+  const totalCount = Object.keys(results).length;
+  const passCount = Object.values(results).filter(
     (result) => result.results.validation,
   ).length;
-  let loadCount = Object.values(results).filter(
+  const loadCount = Object.values(results).filter(
     (result) => result.results.load,
   ).length;
-  let metadataCount = Object.values(results).filter(
+  const metadataCount = Object.values(results).filter(
     (result) => result.results.metadata,
   ).length;
 
-  let percentageDict = {
-    passPer: Math.round((passCount / totalCount) * 10000) / 100, // 目的是保留两位小数
-    metaPer: Math.round((metadataCount / totalCount) * 10000) / 100,
-    loadPer: Math.round((loadCount / totalCount) * 10000) / 100,
+  const percentageDict = {
+    passPer: Math.round((passCount / totalCount) * 10_000) / 100, // 目的是保留两位小数
+    metaPer: Math.round((metadataCount / totalCount) * 10_000) / 100,
+    loadPer: Math.round((loadCount / totalCount) * 10_000) / 100,
   };
 
   return {

@@ -42,12 +42,12 @@ const themeOverrides: GlobalThemeOverrides = {
     :date-locale="dateZhCN"
     :hljs="hljs"
   >
-    <div class="antialiased mx-auto">
+    <div class="mx-auto antialiased">
       <n-layout position="absolute" :native-scrollbar="false">
-        <div class="min-h-screen flex flex-col">
+        <div class="flex min-h-screen flex-col">
           <Header></Header>
           <n-layout
-            class="my-3 w-full lg:max-w-[90rem] max-w-3xl mx-auto px-4 sm:px-6 md:px-8"
+            class="mx-auto lg:max-w-[90rem] max-w-3xl my-3 w-full px-4 sm:px-6 md:px-8"
           >
             <router-view :key="$route.fullPath"></router-view>
           </n-layout>

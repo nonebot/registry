@@ -17,7 +17,7 @@ const props = defineProps<{
   };
 }>();
 
-let tweened = reactive({
+const tweened = reactive({
   passCount: 0,
   metaCount: 0,
   loadCount: 0,

@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { computed, ComputedRef, h, reactive } from "vue";
 
-import type { DataTableColumns } from "naive-ui";
 import { NDataTable, NSkeleton, NSpace } from "naive-ui";
 import { storeToRefs } from "pinia";
 
@@ -18,7 +17,9 @@ import MetadataIcon from "./MetadataIcon.vue";
 import PluginLink from "./PluginLink.vue";
 import ValidationIcon from "./ValidationIcon.vue";
 
-const currentTime = new Date().getTime();
+import type { DataTableColumns } from "naive-ui";
+
+const currentTime = Date.now();
 
 const store = usePageStore();
 const { loading } = storeToRefs(store);
@@ -183,7 +184,7 @@ const columns: DataTableColumns<RowData> = [
   </n-space>
   <n-data-table
     v-else
-    class="overflow-auto whitespace-nowrap"
+    class="whitespace-nowrap overflow-auto"
     :data="data"
     :pagination="pagination"
     :columns="columns"

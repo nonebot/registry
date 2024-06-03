@@ -36,7 +36,7 @@ const { loading } = storeToRefs(store);
 
 const [pypi, module] = props.path
   ? props.path.split(":")
-  : new Array<string>(2).fill("");
+  : Array.from({ length: 2 }).fill("");
 
 const plugin = computed(() => !loading.value && store.getPlugin(pypi, module));
 const result = computed(() => !loading.value && store.getResult(pypi, module));
@@ -93,7 +93,7 @@ const result = computed(() => !loading.value && store.getResult(pypi, module));
           <Load :result="result" />
         </n-p>
       </div>
-      <div class="pb-4 min-w-1/4">
+      <div class="min-w-1/4 pb-4">
         <n-h3>插件信息</n-h3>
         <n-p> 作者：<Author :author="plugin.author" /> </n-p>
         <n-p> 版本：{{ plugin.version }} </n-p>
@@ -117,7 +117,7 @@ const result = computed(() => !loading.value && store.getResult(pypi, module));
         <n-p
           >pypi：
           <n-a
-            class="text-inherit hover:color-[#ea5252] no-underline"
+            class="text-inherit no-underline hover:color-[#ea5252]"
             :href="`https://pypi.org/project/${plugin.project_link}/`"
             target="_blank"
           >

@@ -1,3 +1,4 @@
+/* eslint-disable unicorn/no-array-reduce */
 import { ref } from "vue";
 
 import { useDark, useToggle } from "@vueuse/core";

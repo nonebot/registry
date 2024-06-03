@@ -9,10 +9,10 @@ import Icon from "../Icon.vue";
 const props = defineProps<{ time: string; currentTime: number }>();
 
 function getTimeColor(timeDiff: number) {
-  if (timeDiff <= 3600000 * 4) {
+  if (timeDiff <= 3_600_000 * 4) {
     // 4 小时内更新是红色
     return "error";
-  } else if (timeDiff <= 3600000 * 24) {
+  } else if (timeDiff <= 3_600_000 * 24) {
     // 24 小时内更新是黄色
     return "warning";
   } else {

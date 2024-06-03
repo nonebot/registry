@@ -17,7 +17,7 @@ export interface Plugin {
   version: string;
 }
 
-export interface PluginsResponse extends Array<Plugin> {}
+export type PluginsResponse = Array<Plugin>;
 
 export interface Plugins {
   [K: string]: Plugin;

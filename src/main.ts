@@ -55,7 +55,7 @@ if (import.meta.env.MODE == "production" && import.meta.env.VITE_SENTRY_DSN) {
       // Facebook flakiness
       /graph\.facebook\.com/i,
       // Facebook blocked
-      /connect\.facebook\.net\/en_US\/all\.js/i,
+      /connect\.facebook\.net\/en_us\/all\.js/i,
       // Woopra flakiness
       /eatdifferent\.com\.woopra-ns\.com/i,
       /static\.woopra\.com\/js\/woopra\.js/i,

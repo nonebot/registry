@@ -1,7 +1,6 @@
-import path from "path";
+import path from "node:path";
 
 import { sentryVitePlugin } from "@sentry/vite-plugin";
-import transformerDirectives from "@unocss/transformer-directives";
 import vue from "@vitejs/plugin-vue";
 import { visualizer } from "rollup-plugin-visualizer";
 import UnoCSS from "unocss/vite";
@@ -11,9 +10,7 @@ import { defineConfig } from "vite";
 export default defineConfig({
   plugins: [
     vue(),
-    UnoCSS({
-      transformers: [transformerDirectives()],
-    }),
+    UnoCSS(),
     visualizer({ sourcemap: true }),
     sentryVitePlugin({
       org: "nonebot",
@@ -24,7 +21,7 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      "@": path.resolve(import.meta.dirname, "./src"),
     },
   },
   server: {

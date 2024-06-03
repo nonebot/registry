@@ -20,7 +20,7 @@ defineProps<{
   </n-a>
   <br />
   <n-a
-    class="color-gray hover:color-[#ea5252] no-underline flex items-center"
+    class="hover:color-[#ea5252] no-underline flex items-center color-gray"
     :href="homepage"
     target="_blank"
   >

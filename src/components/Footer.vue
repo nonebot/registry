@@ -4,7 +4,7 @@ import { NLayoutFooter, NText } from "naive-ui";
 
 <template>
   <n-layout-footer bordered class="p-4 mt-16">
-    <div class="flex justify-center lg:max-w-[90rem] max-w-3xl mx-auto">
+    <div class="flex lg:max-w-[90rem] max-w-3xl mx-auto justify-center">
       <n-text>
         Copyright &copy; {{ new Date().getFullYear() }} NoneBot. All rights
         reserved.

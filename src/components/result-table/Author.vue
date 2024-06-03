@@ -6,7 +6,7 @@ defineProps<{ author: string; dense?: boolean }>();
 
 <template>
   <n-a
-    class="text-inherit hover:color-[#ea5252] no-underline"
+    class="text-inherit no-underline hover:color-[#ea5252]"
     :class="{
       'mr-[15px]': dense,
     }"
