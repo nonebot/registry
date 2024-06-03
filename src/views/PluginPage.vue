@@ -34,9 +34,10 @@ const router = useRouter();
 const store = usePageStore();
 const { loading } = storeToRefs(store);
 
-const [pypi, module] = props.path
-  ? props.path.split(":")
-  : Array.from({ length: 2 }).fill("");
+let [pypi, module] = ["", ""];
+if (props.path) {
+  [pypi, module] = props.path.split(":");
+}
 
 const plugin = computed(() => !loading.value && store.getPlugin(pypi, module));
 const result = computed(() => !loading.value && store.getResult(pypi, module));
