@@ -25,7 +25,7 @@ const handleSearch = debounce((v: string) => {
   history.pushState({}, "", url);
 }, 300);
 
-watch(searchKeyword, async (newValue) => {
+watch(searchKeyword, (newValue) => {
   handleSearch(newValue);
 });
 </script>

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ComputedRef, h, reactive } from "vue";
 
-import { NDataTable, NSkeleton, NSpace } from "naive-ui";
+import { NDataTable, NSkeleton, NSpace, type DataTableColumns } from "naive-ui";
 import { storeToRefs } from "pinia";
 
 import Detail from "@/components/result-table/Detail.vue";
@@ -16,8 +16,6 @@ import LoadIcon from "./LoadIcon.vue";
 import MetadataIcon from "./MetadataIcon.vue";
 import PluginLink from "./PluginLink.vue";
 import ValidationIcon from "./ValidationIcon.vue";
-
-import type { DataTableColumns } from "naive-ui";
 
 const currentTime = Date.now();
 
@@ -57,7 +55,7 @@ const pagination = reactive({
 
 const createColumnAlign = (align: "left" | "center" | "right") => {
   return {
-    align: align,
+    align,
     titleAlign: align,
   };
 };
@@ -149,7 +147,7 @@ const columns: DataTableColumns<RowData> = [
     render: (rowData: RowData) =>
       h(ColorTime, {
         time: rowData.plugin.time,
-        currentTime: currentTime,
+        currentTime,
       }),
     sorter: timeSorter("plugin", "time"),
   },
@@ -160,7 +158,7 @@ const columns: DataTableColumns<RowData> = [
     render: (rowData: RowData) =>
       h(ColorTime, {
         time: rowData.result.time,
-        currentTime: currentTime,
+        currentTime,
       }),
     sorter: timeSorter("result", "time"),
   },

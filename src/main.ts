@@ -11,7 +11,7 @@ import "./scss/style.scss";
 const pinia = createPinia();
 const app = createApp(App);
 
-if (import.meta.env.MODE == "production" && import.meta.env.VITE_SENTRY_DSN) {
+if (import.meta.env.MODE === "production" && import.meta.env.VITE_SENTRY_DSN) {
   Sentry.init({
     app,
     dsn: import.meta.env.VITE_SENTRY_DSN,

@@ -11,13 +11,13 @@
     "build:preview": "vue-tsc && vite build --mode preview",
     "preview": "vite preview",
     "stylelint": "stylelint",
-    "stylelint:fix": "pnpm stylelint --fix",
-    "lint": "pnpm lint:js && pnpm lint:style",
-    "lint:fix": "pnpm lint:js:fix && pnpm lint:style:fix",
+    "stylelint:fix": "npm run stylelint --fix",
+    "lint": "npm run lint:js && npm run lint:style",
+    "lint:fix": "npm run lint:js:fix && npm run lint:style:fix",
     "lint:js": "eslint \"**/*.{js,jsx,ts,tsx,cjs,mjs,vue}\"",
     "lint:js:fix": "eslint --fix \"**/*.{js,jsx,ts,tsx,cjs,mjs,vue}\"",
-    "lint:style": "pnpm stylelint \"**/*.{css,scss}\"",
-    "lint:style:fix": "pnpm stylelint:fix \"**/*.{css,scss}\"",
+    "lint:style": "npm run stylelint \"**/*.{css,scss}\"",
+    "lint:style:fix": "npm run stylelint:fix \"**/*.{css,scss}\"",
     "prepare": "node .husky/install.mjs"
   },
   "dependencies": {
