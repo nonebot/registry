@@ -23,7 +23,7 @@
   "dependencies": {
     "@mdi/js": "^7.4.47",
     "@sentry/vue": "^8.26.0",
-    "@vueuse/core": "^10.11.1",
+    "@vueuse/core": "^11.0.1",
     "ansi_up": "^6.0.2",
     "gsap": "^3.12.5",
     "highlight.js": "^11.10.0",
