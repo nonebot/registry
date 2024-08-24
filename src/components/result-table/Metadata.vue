@@ -34,8 +34,8 @@ const columns: DataTableColumns<{
 ];
 const data = props.result.outputs.metadata
   ? Object.entries(props.result.outputs.metadata).map(([key, value]) => ({
-      key: key,
-      value: value,
+      key,
+      value,
     }))
   : null;
 </script>

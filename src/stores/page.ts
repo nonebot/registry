@@ -11,7 +11,7 @@ import type { Results } from "@/types/results";
 export const usePageStore = defineStore("page", () => {
   const theme = ref<GlobalTheme | null>(null);
   const isDark = useDark({
-    onChanged: function (dark: boolean) {
+    onChanged(dark: boolean) {
       theme.value = dark ? darkTheme : null;
       const el = document.querySelector("html");
       if (el && el.dataset) {

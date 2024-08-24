@@ -12,7 +12,7 @@ defineProps<{
     tag="div"
     class="items-center justify-center inline-flex align-middle border border-solid border-[--border-color] mr-2 mb-2 rounded"
   >
-    <span class="py-1 px-2 whitespace-nowrap">
+    <span class="whitespace-nowrap py-1 px-2">
       <div v-if="label">{{ label }}</div>
       <slot v-else name="label"></slot>
     </span>

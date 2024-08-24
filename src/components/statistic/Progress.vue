@@ -55,6 +55,7 @@ const railColorList = computed(() =>
   colorList.value.map((color) => ({ stroke: color, opacity: 0.3 })),
 );
 </script>
+
 <template>
   <n-space vertical>
     <n-el class="justify-items-center">
