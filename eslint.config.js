@@ -304,6 +304,7 @@ export const unicorn = [
       "unicorn/no-array-reduce": "warn",
       "unicorn/number-literal-case": "off",
       "unicorn/no-array-for-each": "warn",
+      "unicorn/prefer-global-this": "off",
     },
   },
 ];

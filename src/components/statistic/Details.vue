@@ -8,8 +8,8 @@ defineProps<{ loadCount: number; metadataCount: number }>();
 </script>
 
 <template>
-  <div class="flex items-center justify-between align-middle text-center">
-    <div class="inline-flex items-center align-text-bottom text-sm">
+  <div class="items-center align-middle flex justify-between text-center">
+    <div class="items-center inline-flex align-text-bottom text-sm">
       <Icon
         color="#66afd3"
         class="mx-1 overflow-hidden"
