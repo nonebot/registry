@@ -35,7 +35,7 @@
   "devDependencies": {
     "@eslint/js": "^9.14.0",
     "@sentry/vite-plugin": "^2.22.6",
-    "@types/node": "^20.17.6",
+    "@types/node": "^22.9.0",
     "@unocss/eslint-config": "^0.64.0",
     "@unocss/transformer-directives": "^0.64.0",
     "@vitejs/plugin-vue": "^5.1.5",
