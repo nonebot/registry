@@ -35,34 +35,24 @@ jobs:
           repository: nonebot/noneflow
           fetch-depth: 0
 
-      - name: Install poetry
-        run: pipx install poetry
+      - name: Checkout latest noneflow version
+        run: git checkout `git describe --abbrev=0 --tags`
 
-      - uses: actions/setup-python@v5
+      - name: Install the latest version of uv
+        uses: astral-sh/setup-uv@v3
         with:
-          python-version: "3.x"
-
-      - name: Prepare test
-        run: |
-          git checkout `git describe --abbrev=0 --tags`
-          poetry config virtualenvs.prefer-active-python true
-          poetry install
+          enable-cache: true
 
       - name: Test plugin
         if: ${{ !contains(fromJSON('["Bot", "Adapter", "Plugin"]'), github.event.client_payload.type) }}
         run: |
-          poetry run python -m src.utils.store_test --offset ${{ github.event.inputs.offset || 0 }} --limit ${{ github.event.inputs.limit || 50 }} ${{ github.event.inputs.args }}
+          uv run --no-dev --extra plugin python -m src.providers.store_test plugin-test --offset ${{ github.event.inputs.offset || 0 }} --limit ${{ github.event.inputs.limit || 50 }} ${{ github.event.inputs.args }}
 
-      - name: Update registry(Plugin)
-        if: github.event.client_payload.type == 'Plugin'
-        run: poetry run python -m src.utils.store_test -k '${{ github.event.client_payload.key }}' -f
+      - name: Update registry
+        if: ${{ contains(fromJSON('["Bot", "Adapter", "Plugin"]'), github.event.client_payload.type) }}
+        run: uv run --no-dev --extra plugin python -m src.providers.store_test registry-update
         env:
-          PLUGIN_CONFIG: ${{ github.event.client_payload.config }}
-          PLUGIN_DATA: ${{ github.event.client_payload.data }}
-
-      - name: Update registry(Bot, Apdater)
-        if: ${{ contains(fromJSON('["Bot", "Adapter"]'), github.event.client_payload.type) }}
-        run: poetry run python -m src.utils.store_test -l 0
+          REGISTRY_UPDATE_PAYLOAD: ${{ github.event.client_payload }}
 
       - name: Upload results
         uses: actions/upload-artifact@v4
@@ -74,6 +64,7 @@ jobs:
             ${{ github.workspace }}/plugin_test/bots.json
             ${{ github.workspace }}/plugin_test/drivers.json
             ${{ github.workspace }}/plugin_test/plugins.json
+            ${{ github.workspace }}/plugin_test/plugin_configs.json
 
   upload_results:
     runs-on: ubuntu-latest
