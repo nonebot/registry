@@ -52,7 +52,7 @@ jobs:
         if: ${{ contains(fromJSON('["Bot", "Adapter", "Plugin"]'), github.event.client_payload.type) }}
         run: uv run --no-dev --extra plugin python -m src.providers.store_test registry-update
         env:
-          REGISTRY_UPDATE_PAYLOAD: ${{ github.event.client_payload }}
+          REGISTRY_UPDATE_PAYLOAD: ${{ toJson(github.event.client_payload) }}
 
       - name: Upload results
         uses: actions/upload-artifact@v4
