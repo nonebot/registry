@@ -31,9 +31,7 @@ export interface Metadata {
 
 export interface Results {
   [K: string]: {
-    inputs: {
-      [K in "config"]: string;
-    };
+    config: string;
     outputs: {
       load: string;
       metadata: Metadata | null;

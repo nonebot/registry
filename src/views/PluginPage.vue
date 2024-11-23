@@ -42,6 +42,24 @@ if (props.path) {
 
 const plugin = computed(() => !loading.value && store.getPlugin(pypi, module));
 const result = computed(() => !loading.value && store.getResult(pypi, module));
+
+const params = computed(() => {
+  const pluginValue = plugin.value || { name: "" };
+  const resultValue = result.value || { config: "" };
+
+  return new URLSearchParams({
+    template: "plugin_config_edit.yml",
+    title: `Plugin: 修改插件 ${pluginValue.name || ""} 的配置项`,
+    pypi,
+    module,
+    config: resultValue.config.trim(),
+  });
+});
+
+const editConfigUrl = computed(
+  () =>
+    `https://github.com/nonebot/registry/issues/new?${params.value.toString()}`,
+);
 </script>
 
 <template>
@@ -67,26 +85,15 @@ const result = computed(() => !loading.value && store.getResult(pypi, module));
             >配置项
             <n-tooltip placement="right-end" trigger="hover">
               <template #trigger>
-                <n-button
-                  text
-                  tag="a"
-                  :href="
-                    encodeURI(
-                      `https://github.com/nonebot/registry/issues/new?template=plugin_config_edit.yml&title=plugin: 修改插件 ${
-                        plugin.name
-                      } 的配置项&pypi=${pypi}&module=${module}&config=${result.inputs.config.trim()}`,
-                    )
-                  "
-                  target="_blank"
-                >
-                  <Icon :path="mdiSquareEditOutline"
-                /></n-button>
+                <n-button text tag="a" :href="editConfigUrl" target="_blank">
+                  <Icon :path="mdiSquareEditOutline" />
+                </n-button>
               </template>
               <span> 修改配置项 </span>
             </n-tooltip>
           </n-h3>
           <pre class="overflow-auto font-mono">{{
-            result.inputs.config.trim() || "无"
+            result.config.trim() || "无"
           }}</pre>
         </n-p>
         <n-p>
@@ -124,7 +131,10 @@ const result = computed(() => !loading.value && store.getResult(pypi, module));
       </div>
       <div class="min-w-1/4 pb-4">
         <n-h3>插件信息</n-h3>
-        <n-p> 作者：<Author :author="plugin.author" /> </n-p>
+        <n-p>
+          作者：
+          <Author :author="plugin.author" />
+        </n-p>
         <n-p> 版本：{{ plugin.version }} </n-p>
         <n-p> 描述：{{ plugin.desc }} </n-p>
         <n-p>
