@@ -42,24 +42,19 @@ if (props.path) {
 
 const plugin = computed(() => !loading.value && store.getPlugin(pypi, module));
 const result = computed(() => !loading.value && store.getResult(pypi, module));
+const editConfigUrl = computed(() => {
+  if (!plugin.value || !result.value) return "";
 
-const params = computed(() => {
-  const pluginValue = plugin.value || { name: "" };
-  const resultValue = result.value || { config: "" };
-
-  return new URLSearchParams({
+  const params = new URLSearchParams({
     template: "plugin_config_edit.yml",
-    title: `Plugin: 修改插件 ${pluginValue.name || ""} 的配置项`,
+    title: `Plugin: 修改插件 ${plugin.value.name || ""} 的配置项`,
     pypi,
     module,
-    config: resultValue.config.trim(),
+    config: (result.value.config || "").trim(),
   });
-});
 
-const editConfigUrl = computed(
-  () =>
-    `https://github.com/nonebot/registry/issues/new?${params.value.toString()}`,
-);
+  return `https://github.com/nonebot/registry/issues/new?${params.toString()}`;
+});
 </script>
 
 <template>
