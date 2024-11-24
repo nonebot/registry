@@ -650,5 +650,6 @@
   "nonebot-plugin-auto-sendlike:nonebot-plugin-auto-sendlike": "",
   "nonebot-plugin-kindness-lesson:nonebot_plugin_kindness_lesson": "KINDNESS_LESSON_API_KEY=sd-0d000721\n",
   "nonebot-plugin-manageweb:nonebot_plugin_manageweb": "",
-  "nonebot-plugin-api-scheduler:nonebot_plugin_api_scheduler": ""
+  "nonebot-plugin-api-scheduler:nonebot_plugin_api_scheduler": "",
+  "nonebot-plugin-pam:nonebot_plugin_pam": ""
 }
