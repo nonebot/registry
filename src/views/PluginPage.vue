@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from "vue";
 
-import { mdiCheckCircle, mdiRocketLaunch } from "@mdi/js";
+import { mdiCheckCircle, mdiRocketLaunch, mdiSquareEditOutline } from "@mdi/js";
 import {
   NA,
   NAlert,
@@ -14,6 +14,7 @@ import {
   NResult,
   NSkeleton,
   NTag,
+  NTooltip,
   NText,
 } from "naive-ui";
 import { storeToRefs } from "pinia";
@@ -41,6 +42,19 @@ if (props.path) {
 
 const plugin = computed(() => !loading.value && store.getPlugin(pypi, module));
 const result = computed(() => !loading.value && store.getResult(pypi, module));
+const editConfigUrl = computed(() => {
+  if (!plugin.value || !result.value) return "";
+
+  const params = new URLSearchParams({
+    template: "plugin_config_edit.yml",
+    title: `Plugin: 修改插件 ${plugin.value.name || ""} 的配置项`,
+    pypi,
+    module,
+    config: (result.value.config || "").trim(),
+  });
+
+  return `https://github.com/nonebot/registry/issues/new?${params.toString()}`;
+});
 </script>
 
 <template>
@@ -61,6 +75,22 @@ const result = computed(() => !loading.value && store.getResult(pypi, module));
     </n-page-header>
     <div class="flex justify-between flex-col-reverse xl:flex-row">
       <div class="flex-initial min-w-0 xl:max-w-3/4 xl:pr-32">
+        <n-p>
+          <n-h3
+            >配置项
+            <n-tooltip placement="right-end" trigger="hover">
+              <template #trigger>
+                <n-button text tag="a" :href="editConfigUrl" target="_blank">
+                  <Icon :path="mdiSquareEditOutline" />
+                </n-button>
+              </template>
+              <span> 修改配置项 </span>
+            </n-tooltip>
+          </n-h3>
+          <pre class="overflow-auto font-mono">{{
+            result.config.trim() || "无"
+          }}</pre>
+        </n-p>
         <n-p>
           <n-h3>验证结果</n-h3>
           <Validation
@@ -96,7 +126,10 @@ const result = computed(() => !loading.value && store.getResult(pypi, module));
       </div>
       <div class="min-w-1/4 pb-4">
         <n-h3>插件信息</n-h3>
-        <n-p> 作者：<Author :author="plugin.author" /> </n-p>
+        <n-p>
+          作者：
+          <Author :author="plugin.author" />
+        </n-p>
         <n-p> 版本：{{ plugin.version }} </n-p>
         <n-p> 描述：{{ plugin.desc }} </n-p>
         <n-p>

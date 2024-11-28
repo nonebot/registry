@@ -1,0 +1,75 @@
+name: NoneFlow
+
+on:
+  issues:
+    types: [opened, reopened, edited]
+  pull_request_target:
+    types: [closed]
+  issue_comment:
+    types: [created]
+  pull_request_review:
+    types: [submitted]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.issue.number || github.run_id }}
+  cancel-in-progress: false
+
+jobs:
+  noneflow:
+    runs-on: ubuntu-latest
+    name: noneflow
+    # do not run on forked PRs, do not run on not related issues, do not run on pr comments
+    if: |
+      !(
+        (
+          github.event.pull_request &&
+          (
+            github.event.pull_request.head.repo.fork ||
+            !(
+              contains(github.event.pull_request.labels.*.name, 'Plugin') ||
+              contains(github.event.pull_request.labels.*.name, 'Adapter') ||
+              contains(github.event.pull_request.labels.*.name, 'Bot')
+            )
+          )
+        ) ||
+        (
+          github.event_name == 'issue_comment' && github.event.issue.pull_request
+        )
+      )
+    steps:
+      - name: Generate token
+        id: generate-token
+        uses: tibdex/github-app-token@v2
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_KEY }}
+
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          token: ${{ steps.generate-token.outputs.token }}
+
+      - name: Cache pre-commit hooks
+        uses: actions/cache@v4
+        with:
+          path: .cache/.pre-commit
+          key: noneflow-${{ runner.os }}-${{ hashFiles('.pre-commit-config.yaml') }}
+
+      - name: NoneFlow
+        uses: docker://ghcr.io/nonebot/noneflow:latest
+        with:
+          config: >
+            {
+              "base": "master",
+              "plugin_path": "assets/plugins.json5",
+              "bot_path": "assets/bots.json5",
+              "adapter_path": "assets/adapters.json5",
+              "registry_repository": "nonebot/registry"
+            }
+        env:
+          APP_ID: ${{ secrets.APP_ID }}
+          PRIVATE_KEY: ${{ secrets.APP_KEY }}
+          PRE_COMMIT_HOME: /github/workspace/.cache/.pre-commit
+
+      - name: Fix permission
+        run: sudo chown -R $(whoami):$(id -ng) .cache/.pre-commit
