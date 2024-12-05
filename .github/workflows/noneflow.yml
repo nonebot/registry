@@ -1,0 +1,42 @@
+name: NoneFlow
+
+on:
+  pull_request_target:
+    types: [closed]
+  pull_request_review:
+    types: [submitted]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.run_id }}
+  cancel-in-progress: false
+
+jobs:
+  noneflow:
+    runs-on: ubuntu-latest
+    name: noneflow
+    steps:
+      - name: Generate token
+        id: generate-token
+        uses: tibdex/github-app-token@v2
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_KEY }}
+
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          token: ${{ steps.generate-token.outputs.token }}
+
+      - name: NoneFlow
+        uses: docker://ghcr.io/nonebot/noneflow:latest
+        with:
+          config: >
+            {
+              "base": "master",
+              "plugin_path": "assets/plugins.json5",
+              "bot_path": "assets/bots.json5",
+              "adapter_path": "assets/adapters.json5"
+            }
+        env:
+          APP_ID: ${{ secrets.APP_ID }}
+          PRIVATE_KEY: ${{ secrets.APP_KEY }}
