@@ -45,12 +45,11 @@ jobs:
 
       - name: Test plugin
         if: ${{ !contains(fromJSON('["Bot", "Adapter", "Plugin"]'), github.event.client_payload.type) }}
-        run: |
-          uv run --no-dev --extra plugin python -m src.providers.store_test plugin-test --offset ${{ github.event.inputs.offset || 0 }} --limit ${{ github.event.inputs.limit || 50 }} ${{ github.event.inputs.args }}
+        run: uv run --no-dev -m src.providers.store_test plugin-test --offset ${{ github.event.inputs.offset || 0 }} --limit ${{ github.event.inputs.limit || 50 }} ${{ github.event.inputs.args }}
 
       - name: Update registry
         if: ${{ contains(fromJSON('["Bot", "Adapter", "Plugin"]'), github.event.client_payload.type) }}
-        run: uv run --no-dev --extra plugin python -m src.providers.store_test registry-update
+        run: uv run --no-dev -m src.providers.store_test registry-update
         env:
           REGISTRY_UPDATE_PAYLOAD: ${{ toJson(github.event.client_payload) }}
 
