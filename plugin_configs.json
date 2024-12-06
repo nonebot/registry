@@ -655,5 +655,6 @@
   "nonebot-plugin-zepplife:nonebot_plugin_zepplife": "ZEPPLIFE_USER=\"\"\nZEPPLIFE_PASSWORD=\"\"",
   "nonebot-plugin-hyp:nonebot_plugin_hyp": "",
   "nonebot-plugin-zxwb:nonebot_plugin_zxwb": "zxwb_db_url=None",
-  "nonebot-plugin-resolver2:nonebot_plugin_resolver2": ""
+  "nonebot-plugin-resolver2:nonebot_plugin_resolver2": "",
+  "nonebot-plugin-water-geoup-stats:nonebot_plugin_water_geoup_stats": ""
 }
