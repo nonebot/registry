@@ -659,5 +659,6 @@
   "nonebot-plugin-water-geoup-stats:nonebot_plugin_water_geoup_stats": "",
   "nonebot-plugin-pcr-sign:nonebot_plugin_pcr_sign": "",
   "nonebot-plugin-emojilike:nonebot_plugin_emojilike": "",
-  "nonebot-plugin-multimodal-gemini:nonebot-plugin-multimodal-gemini": ""
+  "nonebot-plugin-multimodal-gemini:nonebot-plugin-multimodal-gemini": "",
+  "nonebot-plugin-csgomarket:nonebot_plugin_csgomarket": ""
 }
