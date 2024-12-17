@@ -662,5 +662,6 @@
   "nonebot-plugin-multimodal-gemini:nonebot-plugin-multimodal-gemini": "",
   "nonebot-plugin-csgomarket:nonebot_plugin_csgomarket": "",
   "nonebot-plugin-nailongmagic:nonebot_plugin_nailongmagic": "",
-  "nonebot-plugin-amitabha:nonebot_plugin_amitabha": "send_interval=5"
+  "nonebot-plugin-amitabha:nonebot_plugin_amitabha": "send_interval=5",
+  "nonebot-plugin-ollama:nonebot_plugin_ollama": ""
 }
