@@ -665,5 +665,6 @@
   "nonebot-plugin-amitabha:nonebot_plugin_amitabha": "send_interval=5",
   "nonebot-plugin-ollama:nonebot_plugin_ollama": "",
   "nonebot-plugin-picstatus-template-zhenxun:nonebot_plugin_picstatus_template_zhenxun": "",
-  "nonebot-plugin-arcaea-sticker:nonebot_plugin_arcaea_sticker": ""
+  "nonebot-plugin-arcaea-sticker:nonebot_plugin_arcaea_sticker": "",
+  "nonebot-plugin-simple-block:nonebot_plugin_simple_block": ""
 }
