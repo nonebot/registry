@@ -669,5 +669,6 @@
   "nonebot-plugin-simple-block:nonebot_plugin_simple_block": "",
   "nonebot-plugin-add-friends:nonebot_plugin_add_friends": "SUPERUSERS=[\"123123123\"]",
   "nonebot-plugin-addons-manager:nonebot_plugin_addons_manager": "",
-  "nonebot-plugin-flo-luck:nonebot_plugin_flo_luck": ""
+  "nonebot-plugin-flo-luck:nonebot_plugin_flo_luck": "",
+  "nonebot-plugin-auto-enter-group:nonebot_plugin_auto_enter_group": ""
 }
