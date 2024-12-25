@@ -671,5 +671,6 @@
   "nonebot-plugin-addons-manager:nonebot_plugin_addons_manager": "",
   "nonebot-plugin-flo-luck:nonebot_plugin_flo_luck": "",
   "nonebot-plugin-auto-enter-group:nonebot_plugin_auto_enter_group": "",
-  "nonebot-plugin-prometheus:nonebot_plugin_prometheus": ""
+  "nonebot-plugin-prometheus:nonebot_plugin_prometheus": "",
+  "nonebot-plugin-pjsekaihelper:nonebot_plugin_pjsekaihelper": ""
 }
