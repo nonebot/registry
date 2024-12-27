@@ -673,5 +673,6 @@
   "nonebot-plugin-auto-enter-group:nonebot_plugin_auto_enter_group": "",
   "nonebot-plugin-prometheus:nonebot_plugin_prometheus": "",
   "nonebot-plugin-pjsekaihelper:nonebot_plugin_pjsekaihelper": "",
-  "nonebot-plugin-quark:nonebot_plugin_quark": ""
+  "nonebot-plugin-quark:nonebot_plugin_quark": "",
+  "nonebot-plugin-zxui:nonebot_plugin_zxui": "zxui_username=\"admin\"\nzxui_password=\"admin\""
 }
