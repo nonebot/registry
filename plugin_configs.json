@@ -675,5 +675,6 @@
   "nonebot-plugin-pjsekaihelper:nonebot_plugin_pjsekaihelper": "",
   "nonebot-plugin-quark:nonebot_plugin_quark": "",
   "nonebot-plugin-zxui:nonebot_plugin_zxui": "zxui_username=\"admin\"\nzxui_password=\"admin\"",
-  "nonebot-plugin-whats-talk-gemini:nonebot_plugin_whats_talk_gemini": "WT_AI_KEYS=[\"xxxxxx\"]"
+  "nonebot-plugin-whats-talk-gemini:nonebot_plugin_whats_talk_gemini": "WT_AI_KEYS=[\"xxxxxx\"]",
+  "nonebot-plugin-liarsbar:nonebot_plugin_liarsbar": ""
 }
