@@ -678,5 +678,6 @@
   "nonebot-plugin-whats-talk-gemini:nonebot_plugin_whats_talk_gemini": "WT_AI_KEYS=[\"xxxxxx\"]",
   "nonebot-plugin-liarsbar:nonebot_plugin_liarsbar": "",
   "nonebot-plugin-number-detection:nonebot_plugin_number_detection": "",
-  "nonebot-plugin-qbittorrent-manager:nonebot_plugin_qbittorrent_manager": "qbm_url=\"http://127.0.0.1:8080\"\nqbm_username=\"username\"\nqbm_password=\"password\""
+  "nonebot-plugin-qbittorrent-manager:nonebot_plugin_qbittorrent_manager": "qbm_url=\"http://127.0.0.1:8080\"\nqbm_username=\"username\"\nqbm_password=\"password\"",
+  "nonebot-plugin-checkbpm:nonebot_plugin_checkbpm": ""
 }
