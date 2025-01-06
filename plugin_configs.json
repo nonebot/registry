@@ -681,5 +681,6 @@
   "nonebot-plugin-qbittorrent-manager:nonebot_plugin_qbittorrent_manager": "qbm_url=\"http://127.0.0.1:8080\"\nqbm_username=\"username\"\nqbm_password=\"password\"",
   "nonebot-plugin-checkbpm:nonebot_plugin_checkbpm": "",
   "nonebot-plugin-apod:nonebot_plugin_apod": "",
-  "nonebot-plugin-envious:nonebot_plugin_envious": ""
+  "nonebot-plugin-envious:nonebot_plugin_envious": "",
+  "nonebot-plugin-emlp-Lightweight:nonebot_plugin_emlp_Lightweight": ""
 }
