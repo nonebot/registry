@@ -682,5 +682,6 @@
   "nonebot-plugin-checkbpm:nonebot_plugin_checkbpm": "",
   "nonebot-plugin-apod:nonebot_plugin_apod": "",
   "nonebot-plugin-envious:nonebot_plugin_envious": "",
-  "nonebot-plugin-emlp-Lightweight:nonebot_plugin_emlp_Lightweight": ""
+  "nonebot-plugin-emlp-Lightweight:nonebot_plugin_emlp_Lightweight": "",
+  "nonebot-plugin-summary-group:nonebot_plugin_summary_group": "GEMINI_KEY=xyz"
 }
