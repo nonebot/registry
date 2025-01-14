@@ -1,0 +1,22 @@
+name: 下架插件
+title: "Plugin: remove {name}"
+description: 将插件从 NoneBot 官方商店下架
+labels: ["Plugin", "Remove"]
+body:
+  - type: input
+    id: pypi
+    attributes:
+      label: PyPI 项目名
+      description: PyPI 项目名
+      placeholder: e.g. nonebot-plugin-xxx
+    validations:
+      required: true
+
+  - type: input
+    id: module
+    attributes:
+      label: import 包名
+      description: import 包名
+      placeholder: e.g. nonebot_plugin_xxx
+    validations:
+      required: true

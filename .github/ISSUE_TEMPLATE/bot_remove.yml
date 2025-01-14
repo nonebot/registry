@@ -1,0 +1,21 @@
+name: 下架机器人
+title: "Bot: remove {name}"
+description: 将机器人从 NoneBot 官方商店下架
+labels: ["Bot", "Remove"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: 机器人名称
+      description: 机器人名称
+    validations:
+      required: true
+
+  - type: input
+    id: homepage
+    attributes:
+      label: 机器人项目仓库/主页链接
+      description: 机器人项目仓库/主页链接
+      placeholder: e.g. https://github.com/xxx/xxx
+    validations:
+      required: true
