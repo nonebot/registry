@@ -1,5 +1,5 @@
 name: 下架适配器
-title: "Plugin: remove {name}"
+title: "Adapter: remove {name}"
 description: 将适配器从 NoneBot 官方商店下架
 labels: ["Adapter", "Remove"]
 body:
