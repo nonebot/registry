@@ -1,0 +1,22 @@
+name: 下架适配器
+title: "Adapter: remove {name}"
+description: 将适配器从 NoneBot 官方商店下架
+labels: ["Adapter", "Remove"]
+body:
+  - type: input
+    id: pypi
+    attributes:
+      label: PyPI 项目名
+      description: PyPI 项目名
+      placeholder: e.g. nonebot-adapter-xxx
+    validations:
+      required: true
+
+  - type: input
+    id: module
+    attributes:
+      label: import 包名
+      description: import 包名
+      placeholder: e.g. nonebot_adapter_xxx
+    validations:
+      required: true
