@@ -3,12 +3,8 @@ name: NoneFlow
 on:
   issues:
     types: [opened, reopened, edited]
-  pull_request_target:
-    types: [closed]
   issue_comment:
     types: [created]
-  pull_request_review:
-    types: [submitted]
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.issue.number || github.run_id }}
@@ -18,24 +14,11 @@ jobs:
   noneflow:
     runs-on: ubuntu-latest
     name: noneflow
-    # do not run on forked PRs, do not run on not related issues, do not run on pr comments
+    # do not run on not related issues
     if: |
-      !(
-        (
-          github.event.pull_request &&
-          (
-            github.event.pull_request.head.repo.fork ||
-            !(
-              contains(github.event.pull_request.labels.*.name, 'Plugin') ||
-              contains(github.event.pull_request.labels.*.name, 'Adapter') ||
-              contains(github.event.pull_request.labels.*.name, 'Bot')
-            )
-          )
-        ) ||
-        (
-          github.event_name == 'issue_comment' && github.event.issue.pull_request
-        )
-      )
+      contains(github.event.issue.labels.*.name, 'Plugin') ||
+      contains(github.event.issue.labels.*.name, 'Adapter') ||
+      contains(github.event.issue.labels.*.name, 'Bot')
     steps:
       - name: Generate token
         id: generate-token
@@ -48,6 +31,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ steps.generate-token.outputs.token }}
+          repository: nonebot/nonebot2
 
       - name: NoneFlow
         uses: docker://ghcr.io/nonebot/noneflow:latest
