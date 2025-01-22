@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.18.0",
-    "@sentry/vite-plugin": "^2.23.0",
+    "@sentry/vite-plugin": "^3.0.0",
     "@types/node": "^22.10.7",
     "@unocss/eslint-config": "^0.65.4",
     "@unocss/transformer-directives": "^0.65.4",
