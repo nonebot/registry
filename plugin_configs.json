@@ -687,5 +687,6 @@
   "nonebot-plugin-palworld:nonebot_plugin_palworld": "",
   "nonebot-plugin-llm-jade:nonebot_plugin_llm_jade": "JADE_FOOT_TOKEN=xxxxxxxx",
   "nonebot-plugin-pictranslator:nonebot_plugin_pictranslator": "",
-  "nonebot-plugin-fortnite:nonebot_plugin_fortnite": ""
+  "nonebot-plugin-fortnite:nonebot_plugin_fortnite": "",
+  "nonebot-plugin-neuro-draw:nonebot_plugin_neuro_draw": ""
 }
