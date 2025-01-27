@@ -40,7 +40,7 @@
     "@unocss/transformer-directives": "^0.65.4",
     "@vitejs/plugin-vue": "^5.2.1",
     "eslint": "^9.19.0",
-    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-import-x": "^4.6.1",
     "eslint-plugin-prettier": "^5.2.3",
     "eslint-plugin-unicorn": "^56.0.1",
