@@ -691,5 +691,6 @@
   "nonebot-plugin-neuro-draw:nonebot_plugin_neuro_draw": "",
   "nonebot-plugin-remind:nonebot_plugin_remind": "",
   "nonebot-plugin-joke:nonebot_plugin_joke": "",
-  "nonebot-plugin-group-file-admin:nonebot_plugin_group_file_admin": ""
+  "nonebot-plugin-group-file-admin:nonebot_plugin_group_file_admin": "",
+  "nonebot-plugin-deepseek:nonebot_plugin_deepseek": ""
 }
