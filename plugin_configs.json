@@ -351,7 +351,7 @@
   "nonebot-plugin-og:nonebot_plugin_og": "",
   "nonebot-plugin-hoshino-sign:nonebot_plugin_hoshino_sign": "",
   "nonebot-plugin-multincm:nonebot_plugin_multincm": "",
-  "nonebot-plugin-smallapi:nonebot_plugin_smallapi": "",
+  "nonebot-plugin-smallapi:nonebot_plugin_smallapi": "smallapi_token=\"\"",
   "nonebot-plugin-p5generator:nonebot_plugin_p5generator": "",
   "nonebot-plugin-sd-webui:nonebot_plugin_sd_webui": "",
   "nonebot_plugin_session:nonebot_plugin_session": "",
