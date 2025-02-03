@@ -36,8 +36,8 @@
     "@eslint/js": "^9.19.0",
     "@sentry/vite-plugin": "^3.1.0",
     "@types/node": "^22.10.10",
-    "@unocss/eslint-config": "^0.65.4",
-    "@unocss/transformer-directives": "^0.65.4",
+    "@unocss/eslint-config": "^65.4.3",
+    "@unocss/transformer-directives": "^65.4.3",
     "@vitejs/plugin-vue": "^5.2.1",
     "eslint": "^9.19.0",
     "eslint-config-prettier": "^10.0.1",
@@ -58,7 +58,7 @@
     "stylelint-prettier": "^5.0.3",
     "typescript": "^5.7.3",
     "typescript-eslint": "8.21.0",
-    "unocss": "^0.65.4",
+    "unocss": "^65.4.3",
     "vite": "^6.0.11",
     "vue-tsc": "^2.2.0"
   }
