@@ -28,6 +28,13 @@ jobs:
           private_key: ${{ secrets.APP_KEY }}
 
       - name: Checkout Code
+        if: contains(github.event.issue.labels.*.name, 'Config')
+        uses: actions/checkout@v4
+        with:
+          token: ${{ steps.generate-token.outputs.token }}
+
+      - name: Checkout Code
+        if: contains(github.event.issue.labels.*.name, 'Remove')
         uses: actions/checkout@v4
         with:
           token: ${{ steps.generate-token.outputs.token }}
