@@ -696,5 +696,6 @@
   "nonebot-plugin-bot-tap:nonebot_plugin_bot_tap": "BOT_TAP_TOKEN=\"abc123456\"",
   "nonebot-plugin-track-anime:nonebot_plugin_track_anime": "",
   "nonebot-plugin-groups-aichat:nonebot_plugin_groups_aichat": "",
-  "nonebot_plugin_ACMD:nonebot_plugin_ACMD": ""
+  "nonebot_plugin_ACMD:nonebot_plugin_ACMD": "",
+  "nonebot-plugin-suggarchat:nonebot_plugin_suggarchat": ""
 }
