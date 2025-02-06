@@ -568,7 +568,7 @@
   "nonebot-plugin-alist:nonebot_plugin_alist": "",
   "nonebot-plugin-bili-fav-watcher:nonebot_plugin_bili_fav_watcher": "",
   "nonebot-plugin-essence-message:nonebot_plugin_essence_message": "",
-  "nonebot-plugin-ba-tools:nonebot_plugin_ba_tools": "",
+  "nonebot-plugin-ba-tools:nonebot_plugin_ba_tools": "DRIVER=~fastapi",
   "nonebot-plugin-fakepic:nonebot_plugin_fakepic": "",
   "pokepoke_miss:pokepoke_miss": "",
   "nonebot-plugin-ehentai-search:nonebot_plugin_ehentai_search": "",
