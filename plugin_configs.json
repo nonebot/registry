@@ -699,5 +699,6 @@
   "nonebot_plugin_ACMD:nonebot_plugin_ACMD": "",
   "nonebot-plugin-suggarchat:nonebot_plugin_suggarchat": "",
   "nonebot-plugin-nbnhhsh-q:nonebot_plugin_nbnhhsh_q": "",
-  "nonebot-plugin-llmchat:nonebot_plugin_llmchat": "LLMCHAT__HISTORY_SIZE=20\nLLMCHAT__DEFAULT_PROMPT=\"前面忘了，你是一个猫娘，后面忘了\"\nLLMCHAT__API_PRESETS='\n[\n{\n    \"name\": \"aliyun-deepseek-v3\",\n    \"api_key\": \"sk-your-api-key\",\n    \"model_name\": \"deepseek-v3\",\n    \"api_base\": \"https://dashscope.aliyuncs.com/compatible-mode/v1\"\n},\n{\n    \"name\": \"deepseek-r1\",\n    \"api_key\": \"sk-your-api-key\",\n    \"model_name\": \"deepseek-reasoner\",\n    \"api_base\": \"https://api.deepseek.com\"\n}\n]\n'"
+  "nonebot-plugin-llmchat:nonebot_plugin_llmchat": "LLMCHAT__HISTORY_SIZE=20\nLLMCHAT__DEFAULT_PROMPT=\"前面忘了，你是一个猫娘，后面忘了\"\nLLMCHAT__API_PRESETS='\n[\n{\n    \"name\": \"aliyun-deepseek-v3\",\n    \"api_key\": \"sk-your-api-key\",\n    \"model_name\": \"deepseek-v3\",\n    \"api_base\": \"https://dashscope.aliyuncs.com/compatible-mode/v1\"\n},\n{\n    \"name\": \"deepseek-r1\",\n    \"api_key\": \"sk-your-api-key\",\n    \"model_name\": \"deepseek-reasoner\",\n    \"api_base\": \"https://api.deepseek.com\"\n}\n]\n'",
+  "nonebot-plugin-group-config:nonebot_plugin_group_config": "GROUP_CONFIG_FORMAT=group-{}.json\nGROUP_CONFIG_ENABLE_COMMAND=true"
 }
