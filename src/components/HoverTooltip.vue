@@ -3,7 +3,7 @@ import { NTooltip } from "naive-ui";
 
 defineProps<{
   source: string;
-  tip: string;
+  tip?: string;
 }>();
 </script>
 

@@ -305,6 +305,7 @@ export const unicorn = [
       "unicorn/number-literal-case": "off",
       "unicorn/no-array-for-each": "warn",
       "unicorn/prefer-global-this": "off",
+      "unicorn/prefer-module": "off",
     },
   },
 ];
