@@ -34,11 +34,15 @@ const props = defineProps<{ path: string }>();
 const router = useRouter();
 const store = usePageStore();
 const { loading } = storeToRefs(store);
+const handleBack = () => {
+  if (window.history.state?.back) {
+    router.back();
+  } else {
+    router.push("/");
+  }
+};
 
-let [pypi, module] = ["", ""];
-if (props.path) {
-  [pypi, module] = props.path.split(":");
-}
+const [pypi, module] = props.path ? props.path.split(":") : ["", ""];
 
 const plugin = computed(() => !loading.value && store.getPlugin(pypi, module));
 const result = computed(() => !loading.value && store.getResult(pypi, module));
@@ -60,7 +64,7 @@ const editConfigUrl = computed(() => {
 <template>
   <n-skeleton v-if="loading" class="min-h-screen" width="100%" />
   <div v-else-if="pypi && module && plugin && result">
-    <n-page-header @back="router.back()">
+    <n-page-header @back="handleBack()">
       <template #title>
         <h2 class="inline-flex items-center align-middle">
           {{ plugin.name }}
@@ -91,6 +95,7 @@ const editConfigUrl = computed(() => {
             result.config.trim() || "无"
           }}</pre>
         </n-p>
+
         <n-p>
           <n-h3>验证结果</n-h3>
           <Validation
@@ -115,15 +120,18 @@ const editConfigUrl = computed(() => {
             </template>
           </n-alert>
         </n-p>
+
         <n-p>
           <n-h3>元数据</n-h3>
           <Metadata :result="result" />
         </n-p>
+
         <n-p
           ><n-h3>加载结果</n-h3>
           <Load :result="result" />
         </n-p>
       </div>
+
       <div class="min-w-1/4 pb-4">
         <n-h3>插件信息</n-h3>
         <n-p>
