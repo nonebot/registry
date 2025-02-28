@@ -221,7 +221,7 @@
   "nonebot-plugin-ayaka-scan-cmd:nonebot_plugin_ayaka_scan_cmd": "",
   "nonebot-plugin-HttpCat:nonebot_plugin_HttpCat": "",
   "nonebot-plugin-revoke:nonebot_plugin_revoke": "",
-  "nonebot_plugin_setu_customization:nonebot_plugin_setu_customization": "",
+  "nonebot_plugin_setu_customization:nonebot_plugin_setu_customization": "# 均为选填项，自己按需求填，不需要的就不要写进配置！\n\n# 机器人的QQ号列表，如果有多个bot连接，会按照填写的list，左边的机器人QQ优先级最高 1234 > 5678 > 6666，会自动切换\n# 如果不填该配置则由第一个连上的bot响应\ntutu_bot_qqnum_list = [1234, 5678, 6666]\n# 图图命令CD时间（秒），防止响应过于频繁\ntutu_cooldown = 3\n# 危险图库，危险图库的图片无法在群聊发送，并且需要在私聊中指定图库才能调用\ntutu_danger_gallery = [\"R18\", \"触手\"]\n# http代理地址，用于访问需要魔法的接口，如 http://127.0.0.1:1234\ntutu_http_proxy = http://127.0.0.1:1234\n# pixiv图片反代地址，自己可以看看哪个快用哪个 如果默认返回的地址够快就不用 https://i.pixiv.re/ 、 https://i.pixiv.cat/ 、 https://i.loli.best/\ntutu_pixiv_proxy = https://i.pixiv.re/\n\n### 防止重名，所以给个参数可以自行修改\n# 本地图片库的路径\ntutu_local_api_path = data/tutu_local_img_lib/\n# 插件数据文件名\ntutu_data_filename = tutu_data.json",
   "nonebot-plugin-l4d2-server:nonebot_plugin_l4d2_server": "",
   "nonebot-plugin-learning-chat:nonebot_plugin_learning_chat": "",
   "nonebot-plugin-couplets:nonebot_plugin_couplets": "",
