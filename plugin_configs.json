@@ -705,5 +705,6 @@
   "nonebot-plugin-vocu:nonebot_plugin_vocu": "",
   "nonebot-plugin-aitalk:nonebot_plugin_aitalk": "AITALK_API_LIST='[{\"name\": \"deepseekr1-14b\",\"api_key\": \"sk-1145141919810\",\"model_name\": \"deepseek-ai/DeepSeek-R1-Distill-Qwen-14B\",\"api_url\": \"https://api.siliconflow.cn/v1\"}]'\nAITALK_AVAILABLE_MEMES='[{\"url\": \"D:/bots/imgs/1.png\",\"desc\": \"很抱歉伤害到你\"}]'",
   "nonebot-plugin-timed-nickname-updater:nonebot_plugin_timed_nickname_updater": "",
-  "nonebot-plugin-meme-stickers:nonebot_plugin_meme_stickers": "LOCALSTORE_USE_CWD=True"
+  "nonebot-plugin-meme-stickers:nonebot_plugin_meme_stickers": "LOCALSTORE_USE_CWD=True",
+  "nonebot-plugin-whois:nonebot_plugin_whois": ""
 }
