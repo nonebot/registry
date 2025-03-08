@@ -708,5 +708,6 @@
   "nonebot-plugin-meme-stickers:nonebot_plugin_meme_stickers": "LOCALSTORE_USE_CWD=True",
   "nonebot-plugin-whois:nonebot_plugin_whois": "",
   "nonebot-plugin-tangkiller:nonebot_plugin_tangkiller": "",
-  "nonebot-plugin-binsearch:nonebot_plugin_binsearch": "BIN_API_KEY=\"12345aba6\""
+  "nonebot-plugin-binsearch:nonebot_plugin_binsearch": "BIN_API_KEY=\"12345aba6\"",
+  "nonebot-plugin-chatgpt-api:nonebot_plugin_chatgpt_api": "CHATGPT_API_KEY=\"XXXXXXXXXXXXXXXX\""
 }
