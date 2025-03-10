@@ -1,3 +1,4 @@
+/* eslint-disable unicorn/no-array-reduce */
 import js from "@eslint/js";
 import unocss from "@unocss/eslint-config/flat";
 import pluginImport from "eslint-plugin-import-x";
@@ -167,12 +168,6 @@ export const typescript = tseslint.config({
 
 const vueCustomRules = {
   "vue/block-order": ["error", { order: ["script", "template", "style"] }],
-  "vue/component-tags-order": [
-    "error",
-    {
-      order: ["script", "template", "style"],
-    },
-  ],
   "vue/custom-event-name-casing": ["error", "camelCase"],
   "vue/dot-notation": "warn",
   "vue/eqeqeq": ["error", "smart"],
@@ -215,9 +210,15 @@ const vueCustomRules = {
 
 const vue3Rules = {
   ...pluginVue.configs.base.rules,
-  ...pluginVue.configs["vue3-essential"].rules,
-  ...pluginVue.configs["vue3-strongly-recommended"].rules,
-  ...pluginVue.configs["vue3-recommended"].rules,
+  ...pluginVue.configs["flat/essential"]
+    .map((c) => c.rules)
+    .reduce((acc, c) => ({ ...acc, ...c }), {}),
+  ...pluginVue.configs["flat/strongly-recommended"]
+    .map((c) => c.rules)
+    .reduce((acc, c) => ({ ...acc, ...c }), {}),
+  ...pluginVue.configs["flat/recommended"]
+    .map((c) => c.rules)
+    .reduce((acc, c) => ({ ...acc, ...c }), {}),
 };
 
 export const vue = [
@@ -230,9 +231,6 @@ export const vue = [
     languageOptions: {
       parser: parserVue,
       parserOptions: {
-        ecmaFeatures: {
-          jsx: true,
-        },
         extraFileExtensions: [".vue"],
         parser: tseslint.parser,
         sourceType: "module",
