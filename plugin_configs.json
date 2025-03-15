@@ -710,5 +710,6 @@
   "nonebot-plugin-tangkiller:nonebot_plugin_tangkiller": "",
   "nonebot-plugin-binsearch:nonebot_plugin_binsearch": "BIN_API_KEY=\"12345aba6\"",
   "nonebot-plugin-chatgpt-api:nonebot_plugin_chatgpt_api": "CHATGPT_API_KEY=\"XXXXXXXXXXXXXXXX\"",
-  "nonebot-plugin-random-reply:nonebot_plugin_random_reply": "ONEAPI_KEY=\"XXXXXXXXXXXXXXX\""
+  "nonebot-plugin-random-reply:nonebot_plugin_random_reply": "ONEAPI_KEY=\"XXXXXXXXXXXXXXX\"",
+  "nonebot-plugin-aiochatllm:nonebot_plugin_aiochatllm": "# 聊天大模型配置\nCHAT__BASE_URL=\"https://api.example.com\"\nCHAT__API_KEY=\"your_chat_api_key_here\"\nCHAT__MODEL_NAME=\"ChatModel\"\nCHAT__PRESETS={\"preset1\": \"value1\", \"preset2\": \"value2\"}\nCHAT__DEFAULT_PRESET=\"default\"\n\n# 摘要大模型配置\nSUMMARY__BASE_URL=\"https://api.example.com\"\nSUMMARY__API_KEY=\"your_summary_api_key_here\"\nSUMMARY__MODEL_NAME=\"SummaryModel\"\n\n# 嵌入模型配置，配置后禁止更改\nEMBED__BASE_URL=\"https://api.example.com\"\nEMBED__API_KEY=\"your_embed_api_key_here\"\nEMBED__MODEL_NAME=\"EmbedModel\"\nEMBED__DIMENSION=1024\n\n# 阿里云内容审核配置\nCENSOR__ACCESS_KEY_ID=\"your_censor_access_key_id_here\"\nCENSOR__ACCESS_KEY_SECRET=\"your_censor_access_key_secret_here\""
 }
