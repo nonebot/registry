@@ -709,5 +709,6 @@
   "nonebot-plugin-whois:nonebot_plugin_whois": "",
   "nonebot-plugin-tangkiller:nonebot_plugin_tangkiller": "",
   "nonebot-plugin-binsearch:nonebot_plugin_binsearch": "BIN_API_KEY=\"12345aba6\"",
-  "nonebot-plugin-chatgpt-api:nonebot_plugin_chatgpt_api": "CHATGPT_API_KEY=\"XXXXXXXXXXXXXXXX\""
+  "nonebot-plugin-chatgpt-api:nonebot_plugin_chatgpt_api": "CHATGPT_API_KEY=\"XXXXXXXXXXXXXXXX\"",
+  "nonebot-plugin-random-reply:nonebot_plugin_random_reply": "ONEAPI_KEY=\"XXXXXXXXXXXXXXX\""
 }
