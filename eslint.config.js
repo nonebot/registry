@@ -269,7 +269,7 @@ export const imports = {
         ],
         pathGroups: [
           { group: "builtin", pattern: "vue", position: "before" },
-          { group: "internal", pattern: "{{@,~}/,#}**" },
+          { group: "internal", pattern: "@/**" },
         ],
         pathGroupsExcludedImportTypes: [],
         "newlines-between": "always",
