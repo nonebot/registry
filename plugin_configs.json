@@ -715,5 +715,6 @@
   "nonebot-plugin-guess-song:nonebot_plugin_guess_song": "",
   "nonebot-plugin-paminet-nodirtymsg:nonebot_plugin_paminet_nodirtymsg": "",
   "nonebot-plugin-suggarex-cf:nonebot_plugin_suggarex_cf": "",
-  "nonebot-plugin-llm-plugins-call:nonebot_plugin_llm_plugins_call": "PLUGINS_CALL_KEY=\"XXXXXXXXXXXXXXX\""
+  "nonebot-plugin-llm-plugins-call:nonebot_plugin_llm_plugins_call": "PLUGINS_CALL_KEY=\"XXXXXXXXXXXXXXX\"",
+  "nonebot-plugin-dingzhen:nonebot_plugin_dingzhen": ""
 }
