@@ -717,5 +717,6 @@
   "nonebot-plugin-suggarex-cf:nonebot_plugin_suggarex_cf": "",
   "nonebot-plugin-llm-plugins-call:nonebot_plugin_llm_plugins_call": "PLUGINS_CALL_KEY=\"XXXXXXXXXXXXXXX\"",
   "nonebot-plugin-dingzhen:nonebot_plugin_dingzhen": "",
-  "nonebot-plugin-gold-price:nonebot_plugin_gold_price": ""
+  "nonebot-plugin-gold-price:nonebot_plugin_gold_price": "",
+  "nonebot-plugin-whoasked:nonebot_plugin_whoasked": "WHOASKED_MAX_MESSAGES=20\nWHOASKED_STORAGE_DAYS=3"
 }
