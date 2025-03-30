@@ -719,5 +719,6 @@
   "nonebot-plugin-dingzhen:nonebot_plugin_dingzhen": "",
   "nonebot-plugin-gold-price:nonebot_plugin_gold_price": "",
   "nonebot-plugin-whoasked:nonebot_plugin_whoasked": "WHOASKED_MAX_MESSAGES=20\nWHOASKED_STORAGE_DAYS=3",
-  "nonebot-plugin-moellmchats:nonebot_plugin_moellmchats": "NICKNAME=[\"bot\",\"机器人\"]\nLOCALSTORE_USE_CWD=True #可选"
+  "nonebot-plugin-moellmchats:nonebot_plugin_moellmchats": "NICKNAME=[\"bot\",\"机器人\"]\nLOCALSTORE_USE_CWD=True #可选",
+  "nonebot-plugin-jmdownloader:nonebot_plugin_jmdownloader": "JMCOMIC_LOG=True\nJMCOMIC_PROXIES=127.0.0.1:10809\nJMCOMIC_THREAD_COUNT=10\nJMCOMIC_USERNAME=testusername\nJMCOMIC_PASSWORD=testpassword\nJMCOMIC_ALLOW_GROUPS=False\nJMCOMIC_USER_LIMITS=5"
 }
