@@ -429,7 +429,7 @@
   "nonebot-plugin-ernie:nonebot_plugin_ernie": "\nWENXIN_AK=\"千帆大模型access key\"\r\nWENXIN_SK=\"千帆大模型secret key\"\r\n",
   "TeenStudy:TeenStudy": "\nDXX_IP=\"\"\r\n",
   "nonebot-plugin-video-api:nonebot_plugin_video_api": "",
-  "nonebot-plugin-ottohzys:nonebot_plugin_ottohzys": "",
+  "nonebot-plugin-ottohzys:nonebot_plugin_ottohzys": "LOCALSTORE_USE_CWD=True",
   "nonebot-plugin-ability:nonebot_plugin_ability": "",
   "nonebot-plugin-agent:nonebot_plugin_agent": "\n\r\n",
   "nonebot-plugin-blockwords:nonebot_plugin_blockwords": "",
