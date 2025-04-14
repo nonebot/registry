@@ -723,5 +723,6 @@
   "nonebot-plugin-jmdownloader:nonebot_plugin_jmdownloader": "JMCOMIC_LOG=True\nJMCOMIC_PROXIES=127.0.0.1:10809\nJMCOMIC_THREAD_COUNT=10\nJMCOMIC_USERNAME=testusername\nJMCOMIC_PASSWORD=testpassword\nJMCOMIC_ALLOW_GROUPS=False\nJMCOMIC_USER_LIMITS=5",
   "nonebot-plugin-jm:nonebot_plugin_jm": "",
   "nonebot-plugin-zssm:nonebot_plugin_zssm": "zssm_ai_text_endpoint=https://api.siliconflow.cn/v1\nzssm_ai_text_token=sk-xxxxxx\nzssm_ai_text_model=deepseek-ai/DeepSeek-R1\n\nzssm_ai_vl_endpoint=https://api.siliconflow.cn/v1\nzssm_ai_vl_token=sk-xxxxxx\nzssm_ai_vl_model=Qwen/Qwen2.5-VL-72B-Instruct\n\nzssm_browser_proxy=http://10.0.0.180:7890",
-  "nonebot-plugin-gemini-vision:nonebot_plugin_gemini_vision": "gemini_api_key=your_api_key\ngemini_model=gemini-2.0-flash-exp-image-generation"
+  "nonebot-plugin-gemini-vision:nonebot_plugin_gemini_vision": "gemini_api_key=your_api_key\ngemini_model=gemini-2.0-flash-exp-image-generation",
+  "nonebot-plugin-oi-helper:nonebot_plugin_oi_helper": "CLIST__USERNAME=\nCLIST__USER_KEY="
 }
