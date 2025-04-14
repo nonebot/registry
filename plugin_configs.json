@@ -725,5 +725,6 @@
   "nonebot-plugin-zssm:nonebot_plugin_zssm": "zssm_ai_text_endpoint=https://api.siliconflow.cn/v1\nzssm_ai_text_token=sk-xxxxxx\nzssm_ai_text_model=deepseek-ai/DeepSeek-R1\n\nzssm_ai_vl_endpoint=https://api.siliconflow.cn/v1\nzssm_ai_vl_token=sk-xxxxxx\nzssm_ai_vl_model=Qwen/Qwen2.5-VL-72B-Instruct\n\nzssm_browser_proxy=http://10.0.0.180:7890",
   "nonebot-plugin-gemini-vision:nonebot_plugin_gemini_vision": "gemini_api_key=your_api_key\ngemini_model=gemini-2.0-flash-exp-image-generation",
   "nonebot-plugin-oi-helper:nonebot_plugin_oi_helper": "CLIST__USERNAME=\nCLIST__USER_KEY=",
-  "nonebot_plugin_mclib:nonebot_plugin_mclib": ""
+  "nonebot_plugin_mclib:nonebot_plugin_mclib": "",
+  "nonebot-plugin-furryyunhei:nonebot_plugin_furryyunhei": "yunhei_api_key=<str>"
 }
