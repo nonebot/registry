@@ -727,5 +727,6 @@
   "nonebot-plugin-oi-helper:nonebot_plugin_oi_helper": "CLIST__USERNAME=\nCLIST__USER_KEY=",
   "nonebot_plugin_mclib:nonebot_plugin_mclib": "",
   "nonebot-plugin-furryyunhei:nonebot_plugin_furryyunhei": "yunhei_api_key=<str>",
-  "nonebot-plugin-testhkk:nonebot_plugin_testhkk": ""
+  "nonebot-plugin-testhkk:nonebot_plugin_testhkk": "",
+  "nonebot-plugin-error-report:nonebot_plugin_error_report": ""
 }
