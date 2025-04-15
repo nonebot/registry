@@ -726,5 +726,6 @@
   "nonebot-plugin-gemini-vision:nonebot_plugin_gemini_vision": "gemini_api_key=your_api_key\ngemini_model=gemini-2.0-flash-exp-image-generation",
   "nonebot-plugin-oi-helper:nonebot_plugin_oi_helper": "CLIST__USERNAME=\nCLIST__USER_KEY=",
   "nonebot_plugin_mclib:nonebot_plugin_mclib": "",
-  "nonebot-plugin-furryyunhei:nonebot_plugin_furryyunhei": "yunhei_api_key=<str>"
+  "nonebot-plugin-furryyunhei:nonebot_plugin_furryyunhei": "yunhei_api_key=<str>",
+  "nonebot-plugin-testhkk:nonebot_plugin_testhkk": ""
 }
