@@ -684,7 +684,7 @@
   "nonebot-plugin-envious:nonebot_plugin_envious": "",
   "nonebot-plugin-emlp-Lightweight:nonebot_plugin_emlp_Lightweight": "",
   "nonebot-plugin-summary-group:nonebot_plugin_summary_group": "GEMINI_KEY=xyz",
-  "nonebot-plugin-palworld:nonebot_plugin_palworld": "",
+  "nonebot-plugin-palworld:nonebot_plugin_palworld": "palworld_host_port=127.0.0.1:8211",
   "nonebot-plugin-llm-jade:nonebot_plugin_llm_jade": "JADE_FOOT_TOKEN=xxxxxxxx",
   "nonebot-plugin-pictranslator:nonebot_plugin_pictranslator": "",
   "nonebot-plugin-fortnite:nonebot_plugin_fortnite": "",
