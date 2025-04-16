@@ -731,5 +731,6 @@
   "nonebot-plugin-error-report:nonebot_plugin_error_report": "",
   "nonebot-plugin-asmr100:nonebot_plugin_asmr100": "# ASMR插件配置\n# ZIP文件密码，默认为 afu3355\nASMR_ZIP_PASSWORD=afu3355\n# 最大错误尝试次数，默认为 3\nASMR_MAX_ERROR_COUNT=3",
   "nonebot-plugin-skland:nonebot_plugin_skland": "",
-  "nonebot-plugin-argot:nonebot_plugin_argot": ""
+  "nonebot-plugin-argot:nonebot_plugin_argot": "",
+  "nonebot-plugin-github-release-notifier:nonebot_plugin_github_release_notifier": ""
 }
