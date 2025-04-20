@@ -734,5 +734,6 @@
   "nonebot-plugin-argot:nonebot_plugin_argot": "",
   "nonebot-plugin-github-release-notifier:nonebot_plugin_github_release_notifier": "",
   "nonebot-plugin-bfvservermap:nonebot_plugin_bfvservermap": "",
-  "nonebot-plugin-tieba-monitor:nonebot_plugin_tieba_monitor": ""
+  "nonebot-plugin-tieba-monitor:nonebot_plugin_tieba_monitor": "",
+  "nonebot-plugin-anywhere-llm:nonebot_plugin_anywhere_llm": "OPENAI_API_KEY=\"...\"\nOPENAI_MODEL=\"...\"\nOPENAI_BASE_URL=\"...\""
 }
