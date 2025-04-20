@@ -738,5 +738,6 @@
   "nonebot-plugin-anywhere-llm:nonebot_plugin_anywhere_llm": "OPENAI_API_KEY=\"...\"\nOPENAI_MODEL=\"...\"\nOPENAI_BASE_URL=\"...\"",
   "nonebot-plugin-latex:nonebot_plugin_latex": "LATEX_ENABLE_AS_APPLICATION=false",
   "nonebot-plugin-mcmod:nonebot_plugin_mcmod": "",
-  "nonebot-plugin-revolver:nonebot_plugin_revolver": ""
+  "nonebot-plugin-revolver:nonebot_plugin_revolver": "",
+  "nonebot-plugin-custom-face:nonebot_plugin_custom_face": ""
 }
