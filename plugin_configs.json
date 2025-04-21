@@ -739,5 +739,6 @@
   "nonebot-plugin-latex:nonebot_plugin_latex": "LATEX_ENABLE_AS_APPLICATION=false",
   "nonebot-plugin-mcmod:nonebot_plugin_mcmod": "",
   "nonebot-plugin-revolver:nonebot_plugin_revolver": "",
-  "nonebot-plugin-custom-face:nonebot_plugin_custom_face": ""
+  "nonebot-plugin-custom-face:nonebot_plugin_custom_face": "",
+  "nonebot-plugin-jmcomic:nonebot_plugin_jmcomic": "JM_CLIENT=true"
 }
