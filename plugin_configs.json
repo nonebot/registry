@@ -740,5 +740,6 @@
   "nonebot-plugin-mcmod:nonebot_plugin_mcmod": "",
   "nonebot-plugin-revolver:nonebot_plugin_revolver": "",
   "nonebot-plugin-custom-face:nonebot_plugin_custom_face": "",
-  "nonebot-plugin-jmcomic:nonebot_plugin_jmcomic": "JM_CLIENT=true"
+  "nonebot-plugin-jmcomic:nonebot_plugin_jmcomic": "JM_CLIENT=true",
+  "nonebot-plugin-taygedo-helper:nonebot_plugin_taygedo_helper": ""
 }
