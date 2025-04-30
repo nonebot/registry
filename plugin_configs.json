@@ -742,5 +742,6 @@
   "nonebot-plugin-custom-face:nonebot_plugin_custom_face": "",
   "nonebot-plugin-jmcomic:nonebot_plugin_jmcomic": "JM_CLIENT=true",
   "nonebot-plugin-taygedo-helper:nonebot_plugin_taygedo_helper": "",
-  "nonebot-plugin-ban-sticker:nonebot_plugin_ban_sticker": ""
+  "nonebot-plugin-ban-sticker:nonebot_plugin_ban_sticker": "",
+  "nonebot-plugin-hitokoto-plus:nonebot_plugin_hitokoto_plus": ""
 }
