@@ -745,5 +745,6 @@
   "nonebot-plugin-ban-sticker:nonebot_plugin_ban_sticker": "",
   "nonebot-plugin-hitokoto-plus:nonebot_plugin_hitokoto_plus": "",
   "nonebot-plugin-poker:nonebot_plugin_poker": "",
-  "nonebot-plugin-mhguesser:nonebot_plugin_mhguesser": ""
+  "nonebot-plugin-mhguesser:nonebot_plugin_mhguesser": "",
+  "nonebot-plugin-ciku:nonebot_plugin_ciku": ""
 }
