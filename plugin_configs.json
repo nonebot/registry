@@ -442,7 +442,7 @@
   "nonebot-plugin-fgoavatarguess:nonebot_plugin_fgoavatarguess": "",
   "nonebot-plugin-vrchat:nonebot_plugin_vrchat": "",
   "nonebot-plugin-batitle:nonebot_plugin_batitle": "",
-  "nonebot-plugin-maimaidx:nonebot_plugin_maimaidx": "\nMAIMAIDXTOKEN=\r\nMAIMAIDXPATH=/\r\n",
+  "nonebot-plugin-maimaidx:nonebot_plugin_maimaidx": "MAIMAIDXTOKEN=\nMAIMAIDXPATH=/\nSAVEINMEM=false",
   "nonebot_plugin_getbapics:nonebot_plugin_getbapics": "",
   "nonebot-plugin-make-choice:nonebot_plugin_make_choice": "\nCHOOSE_BOTH_CHANCE=0.1\r\n",
   "nonebot-plugin-scheduled-broadcast:nonebot_plugin_scheduled_broadcast": "",
