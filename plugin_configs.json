@@ -747,5 +747,6 @@
   "nonebot-plugin-poker:nonebot_plugin_poker": "",
   "nonebot-plugin-mhguesser:nonebot_plugin_mhguesser": "",
   "nonebot-plugin-ciku:nonebot_plugin_ciku": "",
-  "nonebot-plugin-noadpls:nonebot_plugin_noadpls": ""
+  "nonebot-plugin-noadpls:nonebot_plugin_noadpls": "",
+  "nonebot-plugin-sideload:nonebot_plugin_sideload": ""
 }
