@@ -753,5 +753,6 @@
   "nonebot-plugin-dorodoro:nonebot_plugin_dorodoro": "",
   "nonebot-plugin-qqdetail:nonebot_plugin_qqdetail": "QQDETAIL_WHITELIST=[]",
   "nonebot-plugin-fix-qq-img-ssl:nonebot_plugin_fix_qq_img_ssl": "",
-  "nonebot-plugin-multi-source-daily:nonebot_plugin_multi_source_daily": ""
+  "nonebot-plugin-multi-source-daily:nonebot_plugin_multi_source_daily": "",
+  "nonebot-plugin-farm:nonebot_plugin_farm": ""
 }
