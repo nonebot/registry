@@ -754,5 +754,6 @@
   "nonebot-plugin-qqdetail:nonebot_plugin_qqdetail": "QQDETAIL_WHITELIST=[]",
   "nonebot-plugin-fix-qq-img-ssl:nonebot_plugin_fix_qq_img_ssl": "",
   "nonebot-plugin-multi-source-daily:nonebot_plugin_multi_source_daily": "",
-  "nonebot-plugin-farm:nonebot_plugin_farm": ""
+  "nonebot-plugin-farm:nonebot_plugin_farm": "",
+  "nonebot-plugin-ehentai:nonebot_plugin_ehentai": "EH__APIKEY=\"xxxxxxxxxx\"\nEH__CLIENT=false\nEH__PDF_PWD=\"default\"\nEH__COOKIE=\"ipb_member_id=xxxx; ipb_pass_hash=xxxx; yay=louder; igneous=xxxxxx; sk=xxxxxx\""
 }
