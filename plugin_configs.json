@@ -500,7 +500,7 @@
   "nonebot-plugin-chikari-economy:nonebot_plugin_chikari_economy": "",
   "nonebot-plugin-auto-bot-selector:nonebot_plugin_auto_bot_selector": "",
   "nonebot-plugin-nai3:nonebot_plugin_nai3": "\nNAI3_TOKEN=\"xxx\"\r\nSMMS_TOKEN=\"xxx\"\r\n",
-  "nonebot-plugin-clovers:nonebot_plugin_clovers": "\nCLOVERS_CONFIG_FILE=clovers.toml\r\n",
+  "nonebot-plugin-clovers:nonebot_plugin_clovers": "CLOVERS_USING_ADAPTERS=[]\nCLOVERS_MATCHER_PRIORITY=300",
   "nonebot-plugin-hx-yinying:nonebot_plugin_hx_yinying": "\nHX_API_YINYING=https://地址\r\nHX_API_FURBAR=https://地址\r\nYINYING_MODEL=模型\r\nFURBAR_MODEL=模型\r\nYINYING_TOKEN=你的token(不带bearer)\r\nHX_REPLY_AT=False\r\nYINYING_LIMIT=12\r\n",
   "nonebot-plugin-fhl:nonebot_plugin_fhl": "",
   "nonebot-plugin-yinyu:nonebot_plugin_yinyu": "",
