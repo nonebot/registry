@@ -1,6 +1,6 @@
 {
   "name": "Default Linux Universal",
-  "image": "mcr.microsoft.com/devcontainers/universal:2-linux",
+  "image": "mcr.microsoft.com/devcontainers/universal:3-linux",
   "postCreateCommand": "pnpm install",
   "customizations": {
     "vscode": {
