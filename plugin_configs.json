@@ -760,5 +760,6 @@
   "nonebot-plugin-nyaturingtest:nonebot_plugin_nyaturingtest": "nyaturingtest_chat_openai_api_key = sk-114514\nnyaturingtest_chat_openai_model = gpt-3.5-turbo\nnyaturingtest_chat_openai_base_url = https://api.openai.com/v1/chat/completions\nnyaturingtest_siliconflow_api_key = sk-114514\nnyaturingtest_enabled_groups = [114514, 1919810]",
   "nonebot-plugin-pokemonle:nonebot_plugin_pokemonle": "",
   "nonebot-plugin-bfvplayerlist:nonebot_plugin_bfvplayerlist": "",
-  "nonebot-plugin-emojilike-automonkey:nonebot_plugin_emojilike_automonkey": "AUTOMONKEY_USERS=[\"12345678\"]\nAUTOMONKEY_GROUPS=[\"12345678\"]"
+  "nonebot-plugin-emojilike-automonkey:nonebot_plugin_emojilike_automonkey": "AUTOMONKEY_USERS=[\"12345678\"]\nAUTOMONKEY_GROUPS=[\"12345678\"]",
+  "nonebot-plugin-df-armor-repair-simulator:nonebot_plugin_df_armor_repair_simulator": ""
 }
