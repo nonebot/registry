@@ -761,5 +761,6 @@
   "nonebot-plugin-pokemonle:nonebot_plugin_pokemonle": "",
   "nonebot-plugin-bfvplayerlist:nonebot_plugin_bfvplayerlist": "",
   "nonebot-plugin-emojilike-automonkey:nonebot_plugin_emojilike_automonkey": "AUTOMONKEY_USERS=[\"12345678\"]\nAUTOMONKEY_GROUPS=[\"12345678\"]",
-  "nonebot-plugin-df-armor-repair-simulator:nonebot_plugin_df_armor_repair_simulator": ""
+  "nonebot-plugin-df-armor-repair-simulator:nonebot_plugin_df_armor_repair_simulator": "",
+  "nonebot-plugin-hacker-news:nonebot_plugin_hacker_news": ""
 }
