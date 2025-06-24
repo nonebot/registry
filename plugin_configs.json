@@ -764,5 +764,6 @@
   "nonebot-plugin-df-armor-repair-simulator:nonebot_plugin_df_armor_repair_simulator": "",
   "nonebot-plugin-hacker-news:nonebot_plugin_hacker_news": "",
   "nonebot-plugin-limiter:nonebot_plugin_limiter": "COOLDOWN_ENABLE_PERSISTENCE = false # 开启持久化\nCOOLDOWN_SAVE_INTERVAL = 60 # 开启持久化后保存时间，单位为秒",
-  "nonebot-plugin-zzzpanel:nonebot_plugin_zzzpanel": ""
+  "nonebot-plugin-zzzpanel:nonebot_plugin_zzzpanel": "",
+  "nonebot-plugin-NobleDuel:nonebot_plugin_NobleDuel": ""
 }
