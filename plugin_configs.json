@@ -695,7 +695,7 @@
   "nonebot-plugin-deepseek:nonebot_plugin_deepseek": "",
   "nonebot-plugin-bot-tap:nonebot_plugin_bot_tap": "BOT_TAP_TOKEN=\"abc123456\"",
   "nonebot-plugin-track-anime:nonebot_plugin_track_anime": "",
-  "nonebot-plugin-groups-aichat:nonebot_plugin_groups_aichat": "",
+  "nonebot-plugin-groups-aichat:nonebot_plugin_groups_aichat": "CLOVERS_USING_ADAPTERS = '[]'\nGROUPS_AICHAT_TIMEOUT = 600\nGROUPS_AICHAT_MEMORY = 20\nGROUPS_AICHAT_STYLE_PROMPT = '你的名字是枫枫，你可以自由回答问题。'\nGROUPS_AICHAT_CONFIG_LIST = '\n[\n\t{\n\t\t\"key\": \"hunyuan\",\n\t\t\"model\": \"hunyuan-lite\",\n\t\t\"url\": \"https://hunyuan.tencentcloudapi.com\",\n\t\t\"secret_id\": \"\",\n\t\t\"secret_key\": \"\"\n\t}\n]\n'",
   "nonebot_plugin_ACMD:nonebot_plugin_ACMD": "",
   "nonebot-plugin-suggarchat:nonebot_plugin_suggarchat": "",
   "nonebot-plugin-nbnhhsh-q:nonebot_plugin_nbnhhsh_q": "",
