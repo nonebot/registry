@@ -38,7 +38,7 @@
     "@types/node": "^22.15.34",
     "@unocss/eslint-config": "^66.3.2",
     "@unocss/transformer-directives": "^66.3.2",
-    "@vitejs/plugin-vue": "^5.2.4",
+    "@vitejs/plugin-vue": "^6.0.0",
     "eslint": "^9.30.0",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-import-x": "^4.16.1",
