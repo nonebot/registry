@@ -768,5 +768,6 @@
   "nonebot-plugin-NobleDuel:nonebot_plugin_NobleDuel": "",
   "nonebot-plugin-setu-collection:nonebot_plugin_setu_collection": "CLOVERS_USING_ADAPTERS = '[]'\nSETU_COLLECTION_SAVE_IMAGE = true\nSETU_COLLECTION_PATH = \"./data/setu_collection\"\nSETU_COLLECTION_PRIVATE_SETU_LIMIT = false\nSETU_COLLECTION_PRIVATE_SETU_API = \"Lolicon API\"\nSETU_COLLECTION_PUBLIC_SETU_LIMIT = true\nSETU_COLLECTION_PUBLIC_SETU_API = \"Anosu API\"\nSETU_COLLECTION_HTTPX_CONFIG = '{\"LoliconAPI\": {\"proxy\":\"http://127.0.0.1:7897\"}}'",
   "nonebot-plugin-sunset-reminder:nonebot_plugin_sunset_reminder": "",
-  "nonebot-plugin-binance:nonebot_plugin_binance": "BINANCE_MASTER_KEY=\"yGovL8_zz3yxsPPdjXM8hNR0h8RsK5_9iYtsL6CmpaA=\""
+  "nonebot-plugin-binance:nonebot_plugin_binance": "BINANCE_MASTER_KEY=\"yGovL8_zz3yxsPPdjXM8hNR0h8RsK5_9iYtsL6CmpaA=\"",
+  "nonebot-plugin-orm:nonebot_plugin_orm": ""
 }
