@@ -259,7 +259,7 @@
   "nonebot-plugin-b23:nonebot_plugin_b23": "",
   "nonebot-plugin-autoreply:nonebot_plugin_autoreply": "",
   "nonebot_plugin_setu_collection:nonebot_plugin_setu_collection": "",
-  "nonebot-plugin-groupmate-waifu:nonebot_plugin_groupmate_waifu": "",
+  "nonebot-plugin-groupmate-waifu:nonebot_plugin_groupmate_waifu": "CLOVERS_USING_ADAPTERS = '[]'\nGROUPMATE_WAIFU_FONTNAME='simsun'\nGROUPMATE_WAIFU_FALLBACK_FONTS=[\"Arial\", \"Tahoma\", \"Microsoft YaHei\"]\nGROUPMATE_WAIFU_WAIFU_PATH='./data/waifu/'\nGROUPMATE_WAIFU_WAIFU_RESET=True\nGROUPMATE_WAIFU_AT_LISTEN=True\nGROUPMATE_WAIFU_WAIFU_HE=40\nGROUPMATE_WAIFU_WAIFU_BE=20\nGROUPMATE_WAIFU_WAIFU_NTR=50\nGROUPMATE_WAIFU_HAPPY_END_TIPS=[\"好耶~\", \"婚礼？启动！\"]\nGROUPMATE_WAIFU_BAD_END_TIPS=[\"你没有娶到群友，强者注定孤独，加油！\", \"找不到对象.jpg\"]\nGROUPMATE_WAIFU_WAIFU_LAST_SENT_TIME_FILTER=2592000\nGROUPMATE_WAIFU_YINPA_HE=50\nGROUPMATE_WAIFU_YINPA_CP=80\nGROUPMATE_WAIFU_BG_IMAGE='./data/waifu/bg.png'",
   "nonebot-plugin-jrrp2:nonebot_plugin_jrrp2": "",
   "nonebot-plugin-dicky-pk:nonebot_plugin_dicky_pk": "",
   "nonebot-plugin-eventmonitor:nonebot_plugin_eventmonitor": "",
