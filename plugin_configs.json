@@ -770,5 +770,6 @@
   "nonebot-plugin-sunset-reminder:nonebot_plugin_sunset_reminder": "",
   "nonebot-plugin-binance:nonebot_plugin_binance": "BINANCE_MASTER_KEY=\"yGovL8_zz3yxsPPdjXM8hNR0h8RsK5_9iYtsL6CmpaA=\"",
   "nonebot-plugin-orm:nonebot_plugin_orm": "",
-  "nonebot-plugin-exdi:nonebot_plugin_exdi": ""
+  "nonebot-plugin-exdi:nonebot_plugin_exdi": "",
+  "nonebot-plugin-xibao:nonebot_plugin_xibao": ""
 }
