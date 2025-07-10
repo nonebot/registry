@@ -772,5 +772,6 @@
   "nonebot-plugin-orm:nonebot_plugin_orm": "",
   "nonebot-plugin-exdi:nonebot_plugin_exdi": "",
   "nonebot-plugin-xibao:nonebot_plugin_xibao": "",
-  "nonebot-plugin-vv:nonebot_plugin_vv": ""
+  "nonebot-plugin-vv:nonebot_plugin_vv": "",
+  "nonebot-plugin-deltaforce-simulator:nonebot_plugin_deltaforce_simulator": "deltaforce_sim_config=\"\""
 }
