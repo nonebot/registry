@@ -573,7 +573,7 @@
   "pokepoke_miss:pokepoke_miss": "",
   "nonebot-plugin-ehentai-search:nonebot_plugin_ehentai_search": "",
   "mai2_pcount:mai2_pcount": "",
-  "nonebot-plugin-dify:nonebot_plugin_dify": "\nDIFY_API_BASE=http://127.0.0.1:8080/v1\r\nDIFY_API_KEY=app-1111111111111111\r\n",
+  "nonebot-plugin-dify:nonebot_plugin_dify": "DIFY_API_BASE=http://127.0.0.1:8080/v1\nDIFY_MAIN_APP_API_KEY=app-1111111111111111",
   "nonebot-plugin-looklike:nonebot_plugin_looklike": "",
   "nonebot-plugin-wait-a-minute:nonebot_plugin_wait_a_minute": "",
   "nonebot-plugin-repesix:nonebot_plugin_repesix": "",
