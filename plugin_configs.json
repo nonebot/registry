@@ -153,7 +153,7 @@
   "nonebot-plugin-gsmaterial:nonebot_plugin_gsmaterial": "",
   "nonebot-plugin-mystool:nonebot_plugin_mystool": "",
   "nonebot-plugin-warframe:nonebot_plugin_warframe": "",
-  "nonebot-plugin-mcqq-server:nonebot_plugin_mcqq_server": "",
+  "nonebot-plugin-mcqq-server:nonebot_plugin_mcqq_server": "# Minecraft Server 消息互通\nMCRCON_PASSWORD = \"A\"\nMCRCON_PORT = 25575\nMCS_LOG_PATH = \"D:/MinecraftServer/logs/latest.log\"\n# 功能配置\nMCS_GROUP_CMD = []\nMCS_GROUP_LIST = [\"724024810\"] # QQ群\nMCS_MC_CMD = []\nMCS_MC_BROADCAST = '{\"all\":[\"724024810\"]}'。",
   "nonebot-plugin-RealESRGAN:nonebot_plugin_RealESRGAN": "",
   "nonebot-plugin-wolf-kill:nonebot-plugin-wolf-kill": "",
   "nonebot-plugin-iot:iot": "",
