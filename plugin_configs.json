@@ -776,5 +776,6 @@
   "nonebot-plugin-deltaforce-simulator:nonebot_plugin_deltaforce_simulator": "deltaforce_sim_config=\"\"",
   "nonebot_plugin_liteperm:nonebot_plugin_liteperm": "",
   "nonebot_plugin_lazytea:nonebot_plugin_lazytea": "",
-  "nonebot-plugin-flomic:nonebot_plugin_flomic": ""
+  "nonebot-plugin-flomic:nonebot_plugin_flomic": "",
+  "nonebot-plugin-fishing2:nonebot_plugin_fishing2": ""
 }
