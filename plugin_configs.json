@@ -777,5 +777,6 @@
   "nonebot_plugin_liteperm:nonebot_plugin_liteperm": "",
   "nonebot_plugin_lazytea:nonebot_plugin_lazytea": "",
   "nonebot-plugin-flomic:nonebot_plugin_flomic": "",
-  "nonebot-plugin-fishing2:nonebot_plugin_fishing2": ""
+  "nonebot-plugin-fishing2:nonebot_plugin_fishing2": "",
+  "nonebot-plugin-llm-helper:nonebot_plugin_llm_helper": "LLM_HELPER_API_KEY=''\nLLM_HELPER_MODEL=''\nLLM_HELPER_BASE_URL=''"
 }
