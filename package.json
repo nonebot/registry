@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@mdi/js": "^7.4.47",
-    "@sentry/vue": "^9.44.0",
+    "@sentry/vue": "^10.0.0",
     "@vueuse/core": "^13.6.0",
     "ansi_up": "^6.0.6",
     "gsap": "^3.13.0",
