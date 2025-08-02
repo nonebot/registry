@@ -780,5 +780,6 @@
   "nonebot-plugin-fishing2:nonebot_plugin_fishing2": "",
   "nonebot-plugin-llm-helper:nonebot_plugin_llm_helper": "LLM_HELPER_API_KEY=''\nLLM_HELPER_MODEL=''\nLLM_HELPER_BASE_URL=''",
   "nonebot-plugin-guess-disease:nonebot_plugin_guess_disease": "GD_API_KEY=sk-testkey\nGD_API_BASE_URL=https://api.siliconflow.cn/v1\nGD_DEFAULT_MODEL=Qwen/Qwen2.5-72B-Instruct",
-  "nonebot-plugin-delta-helper:nonebot_plugin_delta_helper": ""
+  "nonebot-plugin-delta-helper:nonebot_plugin_delta_helper": "",
+  "nonebot-plugin-awsmgmt:nonebot_plugin_awsmgmt": ""
 }
