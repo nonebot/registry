@@ -783,5 +783,6 @@
   "nonebot-plugin-delta-helper:nonebot_plugin_delta_helper": "",
   "nonebot-plugin-awsmgmt:nonebot_plugin_awsmgmt": "",
   "nonebot_plugin_lazytea_shell_extension:nonebot_plugin_lazytea_shell_extension": "",
-  "nonebot-plugin-nmcweather:nonebot_plugin_nmcweather": ""
+  "nonebot-plugin-nmcweather:nonebot_plugin_nmcweather": "",
+  "nonebot-plugin-fuckfinalshell:nonebot_plugin_fuckfinalshell": ""
 }
