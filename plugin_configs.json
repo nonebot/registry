@@ -786,5 +786,6 @@
   "nonebot-plugin-nmcweather:nonebot_plugin_nmcweather": "",
   "nonebot-plugin-fuckfinalshell:nonebot_plugin_fuckfinalshell": "",
   "nonebot-plugin-value:nonebot_plugin_value": "",
-  "nonebot-plugin-mcplayer-render:nonebot_plugin_mcplayer_render": ""
+  "nonebot-plugin-mcplayer-render:nonebot_plugin_mcplayer_render": "",
+  "nonebot-plugin-alisten:nonebot_plugin_alisten": ""
 }
