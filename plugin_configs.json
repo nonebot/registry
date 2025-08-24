@@ -789,5 +789,6 @@
   "nonebot-plugin-mcplayer-render:nonebot_plugin_mcplayer_render": "",
   "nonebot-plugin-alisten:nonebot_plugin_alisten": "",
   "nonebot-plugin-simple-setu:nonebot_plugin_simple_setu": "",
-  "nonebot-plugin-anipusher:nonebot-plugin-anipusher": "ANIPUSH__EMBY_HOST=''\nANIPUSH__EMBY_APIKEY=''\nANIPUSH__TMDB_APIKEY=''\nANIPUSH__TMDB_PROXY=''"
+  "nonebot-plugin-anipusher:nonebot-plugin-anipusher": "ANIPUSH__EMBY_HOST=''\nANIPUSH__EMBY_APIKEY=''\nANIPUSH__TMDB_APIKEY=''\nANIPUSH__TMDB_PROXY=''",
+  "nonebot-plugin-huaer-bot:nonebot_plugin_huaer_bot": ""
 }
