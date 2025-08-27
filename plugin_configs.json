@@ -791,5 +791,6 @@
   "nonebot-plugin-simple-setu:nonebot_plugin_simple_setu": "",
   "nonebot-plugin-anipusher:nonebot-plugin-anipusher": "ANIPUSH__EMBY_HOST=''\nANIPUSH__EMBY_APIKEY=''\nANIPUSH__TMDB_APIKEY=''\nANIPUSH__TMDB_PROXY=''",
   "nonebot-plugin-huaer-bot:nonebot_plugin_huaer_bot": "",
-  "nonebot-plugin-sell-poor:nonebot_plugin_sell_poor": "SELL_POOR_TOKEN=abc1145141919810"
+  "nonebot-plugin-sell-poor:nonebot_plugin_sell_poor": "SELL_POOR_TOKEN=abc1145141919810",
+  "nonebot-plugin-abs:nonebot_plugin_abs": ""
 }
