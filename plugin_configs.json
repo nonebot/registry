@@ -161,7 +161,7 @@
   "nonebot_plugin_bottle:nonebot_plugin_bottle": "",
   "nonebot-plugin-tts-gal:nonebot_plugin_tts_gal": "",
   "nonebot-plugin-alicdk-get:nonebot_plugin_alicdk_get": "",
-  "nonebot-plugin-picstatus:nonebot_plugin_picstatus": "",
+  "nonebot-plugin-picstatus:nonebot_plugin_picstatus": "LOCALSTORE_USE_CWD=True",
   "nonebot-plugin-tuling:nonebot_plugin_tuling": "",
   "nonebot-plugin-makemidi:nonebot_plugin_makemidi": "",
   "nonebot-plugin-ocr:nonebot_plugin_ocr": "",
