@@ -800,5 +800,6 @@
   "nonebot-plugin-distributed-blacklist:nonebot_plugin_distributed_blacklist": "DISTRIBUTED_BLACKLIST_DB_HOST=127.0.0.1\nDISTRIBUTED_BLACKLIST_DB_PORT=5432\nDISTRIBUTED_BLACKLIST_DB_NAME=blacklist\nDISTRIBUTED_BLACKLIST_DB_USER=blacklist\nDISTRIBUTED_BLACKLIST_DB_PASSWORD=password\nDISTRIBUTED_BLACKLIST_ADMINS=[]\nDISTRIBUTED_BLACKLIST_CHECK_GLOBAL=true\nDISTRIBUTED_BLACKLIST_ENABLE_AUTO_KICK=true\nDISTRIBUTED_BLACKLIST_SYNC_INTERVAL=300\nDISTRIBUTED_BLACKLIST_KICK_CHECK_INTERVAL=3600\nDISTRIBUTED_BLACKLIST_DEBUG_MODE=false",
   "nonebot-plugin-bafortune:nonebot_plugin_bafortune": "",
   "nonebot-plugin-repeat-checker:nonebot_plugin_repeat_checker": "",
-  "nonebot-plugin-quark-autosave:nonebot_plugin_quark_autosave": ""
+  "nonebot-plugin-quark-autosave:nonebot_plugin_quark_autosave": "",
+  "nonebot-plugin-who-is-spy:nonebot_plugin_who_is_spy": ""
 }
