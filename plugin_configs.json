@@ -320,7 +320,7 @@
   "nonebot-plugin-sleep:nonebot_plugin_sleep": "",
   "nonebot-api-paddle:nonebot_api_paddle": "",
   "nonebot-plugin-chatppt:nonebot_plugin_chatppt": "",
-  "nonebot-plugin-steam-game-status:nonebot_plugin_steam_game_status": "",
+  "nonebot-plugin-steam-game-status:nonebot_plugin_steam_game_status": "steam_web_key='test_steam_web_key_example'",
   "nonebot-plugin-bilichat:nonebot_plugin_bilichat": "\nbilichat_use_browser=false\r\nbilichat_cache_serive=json\r\ndriver=~fastapi+~httpx+~websockets",
   "nonebot-plugin-genshinuid:GenshinUID": "",
   "nonebot-plugin-blive-danmaku:nonebot_plugin_blive_danmaku": "",
