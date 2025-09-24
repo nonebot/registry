@@ -801,5 +801,6 @@
   "nonebot-plugin-bafortune:nonebot_plugin_bafortune": "",
   "nonebot-plugin-repeat-checker:nonebot_plugin_repeat_checker": "",
   "nonebot-plugin-quark-autosave:nonebot_plugin_quark_autosave": "",
-  "nonebot-plugin-who-is-spy:nonebot_plugin_who_is_spy": ""
+  "nonebot-plugin-who-is-spy:nonebot_plugin_who_is_spy": "",
+  "nonebot-plugin-dst-qq:nonebot_plugin_dst_qq": "DMP_BASE_URL=http://your-dmp-server:port/v1\nDMP_TOKEN=your-jwt-token\nDEFAULT_CLUSTER=your-cluster-name"
 }
