@@ -804,5 +804,6 @@
   "nonebot-plugin-who-is-spy:nonebot_plugin_who_is_spy": "",
   "nonebot-plugin-dst-qq:nonebot_plugin_dst_qq": "DMP_BASE_URL=http://your-dmp-server:port/v1\nDMP_TOKEN=your-jwt-token\nDEFAULT_CLUSTER=your-cluster-name",
   "nonebot-plugin-fupan:nonebot_plugin_fupan": "",
-  "nonebot-plugin-algo:nonebot_plugin_algo": ""
+  "nonebot-plugin-algo:nonebot_plugin_algo": "",
+  "nonebot-plugin-llm-extension:nonebot_plugin_llm_extension": ""
 }
