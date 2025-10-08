@@ -807,5 +807,6 @@
   "nonebot-plugin-algo:nonebot_plugin_algo": "",
   "nonebot-plugin-llm-extension:nonebot_plugin_llm_extension": "",
   "nonebot-plugin-htmlkit:nonebot_plugin_htmlkit": "# FONTCONFIG_FILE\n# 用于覆盖默认的配置文件路径。\nFONTCONFIG_FILE: str\n\n# FONTCONFIG_PATH\n# 用于覆盖默认的配置目录。\nFONTCONFIG_PATH: str\n\n# FONTCONFIG_SYSROOT\n# 用于设置默认的 sysroot 目录。\nFONTCONFIG_SYSROOT: str\n\n# FC_DEBUG\n# 用于输出详细的调试信息。\n# 详细见 fontconfig 文档。\nFC_DEBUG: str\n\n# FC_DBG_MATCH_FILTER\n# 用于在调试时过滤特定模式。\n# 仅当 FC_DEBUG 设置为 MATCH2 时生效。\nFC_DBG_MATCH_FILTER: str\n\n# FC_LANG\n# 用于指定查询时的默认语言（弱绑定）。\n# 如果未设置，则从当前 locale 推导。\nFC_LANG: str\n\n# FONTCONFIG_USE_MMAP\n# 控制是否使用 mmap(2) 来处理缓存文件（如果可用）。\n# 值为布尔类型（yes/no, 1/0）。\n# 如果显式设置该变量，将跳过系统检查并强制启用或禁用。\nFONTCONFIG_USE_MMAP: str",
-  "nonebot-plugin-mhcodes:nonebot_plugin_mhcodes": ""
+  "nonebot-plugin-mhcodes:nonebot_plugin_mhcodes": "",
+  "nonebot-plugin-parser:nonebot_plugin_parser": ""
 }
