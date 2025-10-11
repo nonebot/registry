@@ -811,5 +811,6 @@
   "nonebot-plugin-parser:nonebot_plugin_parser": "",
   "nonebot-plugin-kookcardmessage:nonebot_plugin_kookcardmessage": "",
   "nonebot-plugin-mcnews:nonebot_plugin_mcnews": "",
-  "nonebot-plugin-open-file:nonebot_plugin_open_file": "# 管理员QQ号列表（用逗号分隔）\nFILE_OPENER_ADMINS=[\"\"]\n\n# 关键词映射（JSON格式）\nFILE_OPENER_KEYWORDS={\"\": \"\"}\n\n# 是否启用插件\nFILE_OPENER_ENABLE=true\n\n# 是否记录日志\nFILE_OPENER_LOG_ENABLED=true"
+  "nonebot-plugin-open-file:nonebot_plugin_open_file": "# 管理员QQ号列表（用逗号分隔）\nFILE_OPENER_ADMINS=[\"\"]\n\n# 关键词映射（JSON格式）\nFILE_OPENER_KEYWORDS={\"\": \"\"}\n\n# 是否启用插件\nFILE_OPENER_ENABLE=true\n\n# 是否记录日志\nFILE_OPENER_LOG_ENABLED=true",
+  "nonebot-plugin-memory:nonebot_plugin_memory": "memory_deepseek_api_key=\"sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\""
 }
