@@ -816,5 +816,6 @@
   "nonebot-plugin-pxchat:nonebot_plugin_pxchat": "pxchat_super_users=[\"123456\"]\npxchat_mcp={}",
   "nonebot-plugin-daily-bing:nonebot_plugin_daily_bing": "",
   "nonebot-plugin-ai-turtle-soup:nonebot_plugin_ai_turtle_soup": "# OpenAI API Configuration - 生成谜题\nATS_OPENAI_GENERATE_API_KEY=\nATS_OPENAI_GENERATE_BASE_URL=https://api-inference.modelscope.cn/v1\nATS_OPENAI_GENERATE_MODEL=ZhipuAI/GLM-4.5 # 推荐使用 GLM-4.5 / GLM-4.6\n\n# OpenAI API Configuration - 评判问题、刷新进度、谜题打分\nATS_OPENAI_JUDGE_API_KEY=\nATS_OPENAI_JUDGE_BASE_URL=https://openrouter.ai/api/v1\nATS_OPENAI_JUDGE_MODEL=x-ai/grok-4-fast # 推荐使用 grok-4-fast，最好是带 reasoning 的模型\n\n# Turtle Soup Game Configuration\nATS_MAX_QUESTIONS=50\nATS_TIMEOUT=7200",
-  "nonebot-plugin-bili-helper:nonebot_plugin_bili_helper": "analysis_blacklist=[]\nanalysis_group_blacklist=[]\nanalysis_group_strategies='{\n  \"xxxxx\": [\"detail\", \"link\", \"comments\"]\n}'"
+  "nonebot-plugin-bili-helper:nonebot_plugin_bili_helper": "analysis_blacklist=[]\nanalysis_group_blacklist=[]\nanalysis_group_strategies='{\n  \"xxxxx\": [\"detail\", \"link\", \"comments\"]\n}'",
+  "nonebot-plugin-markdown2img:nonebot_plugin_markdown2img": "MARKDOWN2IMG_FONT_PATH=\"\"\nMARKDOWN2IMG_DISABLE_GPU=true\nMARKDOWN2IMG_DISABLE_LINKIFY=true"
 }
