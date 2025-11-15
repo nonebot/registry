@@ -819,5 +819,6 @@
   "nonebot-plugin-bili-helper:nonebot_plugin_bili_helper": "analysis_blacklist=[]\nanalysis_group_blacklist=[]\nanalysis_group_strategies='{\n  \"xxxxx\": [\"detail\", \"link\", \"comments\"]\n}'",
   "nonebot-plugin-markdown2img:nonebot_plugin_markdown2img": "MARKDOWN2IMG_FONT_PATH=\"\"\nMARKDOWN2IMG_DISABLE_GPU=true\nMARKDOWN2IMG_DISABLE_LINKIFY=true",
   "nonebot-plugin-jrrp3:nonebot_plugin_jrrp3": "",
-  "nonebot-plugin-image-symmetry:nonebot_plugin_image_symmetry": "IMAGE_SYMMETRY_MAX_CACHE = 100"
+  "nonebot-plugin-image-symmetry:nonebot_plugin_image_symmetry": "IMAGE_SYMMETRY_MAX_CACHE = 100",
+  "nonebot-plugin-manosaba-memes:nonebot_plugin_manosaba_memes": ""
 }
