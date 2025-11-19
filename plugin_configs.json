@@ -821,5 +821,6 @@
   "nonebot-plugin-jrrp3:nonebot_plugin_jrrp3": "",
   "nonebot-plugin-image-symmetry:nonebot_plugin_image_symmetry": "IMAGE_SYMMETRY_MAX_CACHE = 100",
   "nonebot-plugin-manosaba-memes:nonebot_plugin_manosaba_memes": "",
-  "nonebot-plugin-course-schedule:nonebot_plugin_course_schedule": "COURSE_DATA_PATH = \"data/course_schedule\"\nCOURSE_FONT_PATH = \"resources/MapleMono-NF-CN-Medium.ttf\""
+  "nonebot-plugin-course-schedule:nonebot_plugin_course_schedule": "COURSE_DATA_PATH = \"data/course_schedule\"\nCOURSE_FONT_PATH = \"resources/MapleMono-NF-CN-Medium.ttf\"",
+  "nonebot-plugin-ipinfo:nonebot_plugin_ipinfo": ""
 }
