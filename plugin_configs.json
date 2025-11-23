@@ -823,5 +823,6 @@
   "nonebot-plugin-manosaba-memes:nonebot_plugin_manosaba_memes": "",
   "nonebot-plugin-course-schedule:nonebot_plugin_course_schedule": "COURSE_DATA_PATH = \"data/course_schedule\"\nCOURSE_FONT_PATH = \"resources/MapleMono-NF-CN-Medium.ttf\"",
   "nonebot-plugin-ipinfo:nonebot_plugin_ipinfo": "",
-  "nonebot-plugin-templates-draw:nonebot_plugin_templates_draw": ""
+  "nonebot-plugin-templates-draw:nonebot_plugin_templates_draw": "",
+  "nonebot-plugin-manosoba-reply-generator:nonebot_plugin_manosoba_reply_generator": ""
 }
