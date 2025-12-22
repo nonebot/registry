@@ -832,5 +832,6 @@
   "nonebot-plugin-omikuji:nonebot_plugin_omikuji": "# 是否启用御神签插件（默认：True）\nENABLE_OMIKUJI=true\n\n# 是否交给模型进行二次响应（默认：False）\nOMIKUJI_SEND_BY_CHAT=false\n\n# 是否加入SuggarChat的系统提示（默认：True）\nOMIKUJI_ADD_SYSTEM_PROMPT=true\n\n# 是否使用语料库的缓存（默认：True）\nOMIKUJI_USE_CACHE=true\n\n# 御神签语料缓存有效期（天），创建时间超过该天数之前会被清除（-1表示长期有效）（默认：14）\nOMIKUJI_CACHE_EXPIRE_DAYS=14\n\n# 更新时间差大于这个数值就会清除缓存（-1表示不检查更新时间）（默认：7）\nOMIKUJI_CACHE_UPDATE_EXPIRE_DAYS=7\n\n# 启用长期缓存模式（不会清除缓存）（默认：True）\nOMIKUJI_LONG_CACHE_MODE=true\n\n# 仅在语料库长期模式下生效，是否自动更新语料（默认：True）\nOMIKUJI_LONG_CACHE_UPDATE=true\n\n# 仅在语料库长期模式下生效，同一个Level和主题添加缓存内容的间隔天数（0为不更新）（默认：3）\nOMIKUJI_LONG_CACHE_UPDATE_DAYS=3\n\n# 仅在语料库长期模式下生效，添加缓存内容的最大数量（默认：100）\nOMIKUJI_LONG_CACHE_UPDATE_MAX_COUNT=100",
   "nonebot-plugin-rollpig:nonebot_plugin_rollpig": "",
   "nonebot-plugin-instagram:nonebot_plugin_instagram": "",
-  "nonebot-plugin-mcserver-status-check:nonebot_plugin_mcserver_status_check": ""
+  "nonebot-plugin-mcserver-status-check:nonebot_plugin_mcserver_status_check": "",
+  "nonebot-plugin-pErithacus:nonebot_plugin_perithacus": ""
 }
