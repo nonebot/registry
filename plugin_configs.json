@@ -833,5 +833,6 @@
   "nonebot-plugin-rollpig:nonebot_plugin_rollpig": "",
   "nonebot-plugin-instagram:nonebot_plugin_instagram": "",
   "nonebot-plugin-mcserver-status-check:nonebot_plugin_mcserver_status_check": "",
-  "nonebot-plugin-pErithacus:nonebot_plugin_perithacus": ""
+  "nonebot-plugin-pErithacus:nonebot_plugin_perithacus": "",
+  "nonebot-plugin-quickreply:nonebot_plugin_quickreply": "# 每个用户可创建的总回复数上限，0表示无限制，默认为0\nQUICKREPLY__MAX_PER_USER=0\n# 每个群聊/私聊上下文中的总回复数上限，0表示无限制，默认为0\nQUICKREPLY__MAX_PER_CONTEXT=0\n# 是否将图片消息转化为base64存储，有的图片消息可能会过期可以启用该项，但是可能会造成数据库内容冗余，默认为True\nQUICKREPLY__ENABLE_BASE64=true\n# 是否启用权限检查，是否启用权限检查,启用该选项后，超管/管理创建或覆盖的回复不可被普通成员覆盖，默认为true\nQUICKREPLY__ENABLE_PERMISSION_CHECK=true"
 }
