@@ -837,5 +837,6 @@
   "nonebot-plugin-quickreply:nonebot_plugin_quickreply": "# 每个用户可创建的总回复数上限，0表示无限制，默认为0\nQUICKREPLY__MAX_PER_USER=0\n# 每个群聊/私聊上下文中的总回复数上限，0表示无限制，默认为0\nQUICKREPLY__MAX_PER_CONTEXT=0\n# 是否将图片消息转化为base64存储，有的图片消息可能会过期可以启用该项，但是可能会造成数据库内容冗余，默认为True\nQUICKREPLY__ENABLE_BASE64=true\n# 是否启用权限检查，是否启用权限检查,启用该选项后，超管/管理创建或覆盖的回复不可被普通成员覆盖，默认为true\nQUICKREPLY__ENABLE_PERMISSION_CHECK=true",
   "nonebot-plugin-jimeng:nonebot_plugin_jimeng": "# 是否通过账号自动获取密钥。如果设为 `False`，则需要提供 `JIMENG_SECRET_KEY`\nJIMENG__USE_ACCOUNT=true\n# API 密钥。当 `JIMENG_USE_ACCOUNT=false` 时生效\nJIMENG__SECRET_KEY=sk-123456789\n# 请求失败时的最大重试次数，一般是上传图片出现问题重试\nJIMENG__MAX_RETRIES=3\n# 每次重试的间隔时间（秒）\nJIMENG__RETRY_DELAY=1\n# 发送API请求的超时时间（秒）\nJIMENG__TIMEOUT=300\n# 每个用户的最大并发任务数\nJIMENG__MAX_CONCURRENT_TASKS_PER_USER=1\n# 逆向 API 的地址或者 官方API地址\nJIMENG__OPEN_API_URL=http://127.0.0.1:5003\n# 默认使用的绘画模型\nJIMENG__MODEL=jimeng-4.5\n# 图片分辨率\nJIMENG__RESOLUTION=2k\n# 自动刷新账号积分数据的间隔时间，单位小时，默认1小时\nJIMENG__REFRESH_INTERVAL=1\n# 即梦账号（目前主要是国际服支持账密登录）列表。当 `JIMENG_USE_ACCOUNT=true` 时需要填写\nJIMENG__ACCOUNTS='\n[\n  {\n    \"account\": \"dadad.partridge3412@sadad.cc\",\n    \"password\": \"123\",\n    \"region\": \"jp\"\n  },\n  {\n    \"account\": \"quizzical.ddddd@eeead.cc\",\n    \"password\": \"123\",\n    \"region\": \"jp\"\n  }\n]\n'",
   "nonebot-plugin-ai-groupmate:nonebot_plugin_ai_groupmate": "",
-  "nonebot-plugin-boardgamehelper:nonebot_plugin_boardgamehelper": ""
+  "nonebot-plugin-boardgamehelper:nonebot_plugin_boardgamehelper": "",
+  "nonebot-plugin-trans-progress:nonebot_plugin_trans_progress": ""
 }
