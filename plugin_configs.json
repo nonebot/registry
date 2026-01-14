@@ -839,5 +839,6 @@
   "nonebot-plugin-ai-groupmate:nonebot_plugin_ai_groupmate": "",
   "nonebot-plugin-boardgamehelper:nonebot_plugin_boardgamehelper": "",
   "nonebot-plugin-trans-progress:nonebot_plugin_trans_progress": "",
-  "nonebot-plugin-word-censor:nonebot_plugin_word_censor": "SUPERUSERS = [\"114514\"]\nSEND_WORD_PRIORITY = 98"
+  "nonebot-plugin-word-censor:nonebot_plugin_word_censor": "SUPERUSERS = [\"114514\"]\nSEND_WORD_PRIORITY = 98",
+  "nonebot-plugin-internet-outage:nonebot_plugin_internet_outage": "outage_cf_token = \"your_cloudflare_api_token\""
 }
