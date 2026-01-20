@@ -16,7 +16,7 @@ on:
         required: false
         default: ""
   schedule:
-    - cron: "0 */4 * * *"
+    - cron: "0 0 * * *"
   repository_dispatch:
     types: [registry_update]
 
