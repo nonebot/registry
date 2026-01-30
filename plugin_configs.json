@@ -844,5 +844,6 @@
   "nonebot-plugin-group-relay:nonebot_plugin_group_relay": "",
   "nonebot-plugin-tavily:nonebot_plugin_tavily": "# Tavily API 密钥 (必填)\nTAVILY_API_KEY=tvly-xxxxxxxxxxxxxxxx\n\n# 默认搜索深度: basic (快速) / advanced (深度)\nTAVILY_DEFAULT_DEPTH=basic\n\n# 默认最大抓取页面数\nTAVILY_MAX_BREADTH=10\n\n# 搜索返回结果数量\nTAVILY_MAX_RESULTS=5\n\n# 搜索时间范围: day/week/month/year (留空不限制)\nTAVILY_TIME_RANGE=\n\n# 简单模式: 仅输出内容，不含标题和 URL\nTAVILY_SIMPLE_MODE=false\n\n# 内容截断长度\nTAVILY_SEARCH_TRUNCATE=200   # 搜索结果\nTAVILY_EXTRACT_TRUNCATE=2000 # 提取内容\nTAVILY_CRAWL_TRUNCATE=150    # 抓取预览",
   "nonebot-plugin-bf6-stats:nonebot_plugin_bf6_stats": "",
-  "nonebot-plugin-bili2mp4:nonebot_plugin_bili2mp4": "# 管理员qq号列表()\n# bili_super_admins=[1234567890,9876543210]\nbili_super_admins=[]"
+  "nonebot-plugin-bili2mp4:nonebot_plugin_bili2mp4": "# 管理员qq号列表()\n# bili_super_admins=[1234567890,9876543210]\nbili_super_admins=[]",
+  "nonebot-plugin-qqmusic-reco:nonebot_plugin_qqmusic_reco": ""
 }
