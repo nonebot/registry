@@ -846,5 +846,6 @@
   "nonebot-plugin-bf6-stats:nonebot_plugin_bf6_stats": "",
   "nonebot-plugin-bili2mp4:nonebot_plugin_bili2mp4": "# 管理员qq号列表()\n# bili_super_admins=[1234567890,9876543210]\nbili_super_admins=[]",
   "nonebot-plugin-qqmusic-reco:nonebot_plugin_qqmusic_reco": "",
-  "nonebot-plugin-osugreek:nonebot_plugin_osugreek": "OSUGREEK_CHROMATIC_INTENSITY=4"
+  "nonebot-plugin-osugreek:nonebot_plugin_osugreek": "OSUGREEK_CHROMATIC_INTENSITY=4",
+  "nonebot-plugin-uniconf:nonebot_plugin_uniconf": ""
 }
