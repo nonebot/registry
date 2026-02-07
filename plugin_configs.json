@@ -848,5 +848,6 @@
   "nonebot-plugin-qqmusic-reco:nonebot_plugin_qqmusic_reco": "",
   "nonebot-plugin-osugreek:nonebot_plugin_osugreek": "OSUGREEK_CHROMATIC_INTENSITY=4",
   "nonebot-plugin-uniconf:nonebot_plugin_uniconf": "",
-  "nonebot-plugin-dice-helper:nonebot_plugin_dice_helper": ""
+  "nonebot-plugin-dice-helper:nonebot_plugin_dice_helper": "",
+  "nonebot-plugin-mcpclient:nonebot_plugin_mcpclient": "MCP_SERVERS='{}'\n\n# 工具调用超时 (秒)\nMCP_TOOL_TIMEOUT=30\n\n# 工具缓存过期时间 (秒), 0 表示不过期\nMCP_CACHE_TTL=3600"
 }
