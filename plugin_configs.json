@@ -851,5 +851,6 @@
   "nonebot-plugin-dice-helper:nonebot_plugin_dice_helper": "",
   "nonebot-plugin-mcpclient:nonebot_plugin_mcpclient": "MCP_SERVERS='{}'\n\n# 工具调用超时 (秒)\nMCP_TOOL_TIMEOUT=30\n\n# 工具缓存过期时间 (秒), 0 表示不过期\nMCP_CACHE_TTL=3600",
   "nonebot-plugin-bittorrents:nonebot_plugin_BitTorrents": "MAGNET_BASE_URL=https://clg2.clgapp1.xyz\nMAGNET_SEARCH_PATH=/cllj.php\nMAGNET_MAX_RESULTS=3\nMAGNET_REQUEST_TIMEOUT=15",
-  "nonebot-plugin-shiro-personification:nonebot_plugin_personification": ""
+  "nonebot-plugin-shiro-personification:nonebot_plugin_personification": "",
+  "nonebot-plugin-shiro-web-console:nonebot_plugin_shiro_web_console": ""
 }
