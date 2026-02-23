@@ -854,5 +854,6 @@
   "nonebot-plugin-shiro-personification:nonebot_plugin_personification": "",
   "nonebot-plugin-shiro-web-console:nonebot_plugin_shiro_web_console": "",
   "nonebot-plugin-nodejsphira:nonebot_plugin_nodejsphira": "# Phira WEB服务器基础地址\nphira_api_url=\"https://phira.chuzoux.top\"\n\n# Phira 状态页截图地址\nphira_status_page_url=\"https://status.dmocken.top/status/phira\"\n\n# Phira 管理员密钥 (可通过环境变量 PHIRA_ADMIN_SECRET 配置)\nphira_admin_secret=null\n# 在对应项目https://github.com/chuzouX/phira-mp-nodejsver 设置 用于鉴权\n\n# 截图相关配置\nphira_screenshot_width_pc=1536\nphira_screenshot_width_mobile=414\nphira_screenshot_timeout=60000\nphira_screenshot_wait_time=2000",
-  "nonebot-plugin-doroending:nonebot_plugin_doroending": ""
+  "nonebot-plugin-doroending:nonebot_plugin_doroending": "",
+  "nonebot-plugin-auto-emojimix:nonebot_plugin_auto_emojimix": "# 启用显式合成（默认 True）\nemojimix_explicit=true\n# 启用自动合成（默认 True）\nemojimix_auto=true\n# 设置冷却时间\nemojimix_cd=60"
 }
