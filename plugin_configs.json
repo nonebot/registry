@@ -324,7 +324,7 @@
   "nonebot-plugin-bilichat:nonebot_plugin_bilichat": "\nbilichat_use_browser=false\r\nbilichat_cache_serive=json\r\ndriver=~fastapi+~httpx+~websockets",
   "nonebot-plugin-genshinuid:GenshinUID": "",
   "nonebot-plugin-blive-danmaku:nonebot_plugin_blive_danmaku": "",
-  "nonebot-plugin-clock:nonebot_plugin_clock": "",
+  "nonebot-plugin-clock:nonebot_plugin_clock": "group_at_me = True",
   "nonebot-plugin-sdgpt:nonebot_plugin_SDGPT": "",
   "nonebot-plugin-fuckyou:nonebot_plugin_fuckyou": "",
   "nonebot-plugin-pokemonfusion:nonebot_plugin_pokemonfusion": "",
