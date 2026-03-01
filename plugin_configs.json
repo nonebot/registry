@@ -857,5 +857,6 @@
   "nonebot-plugin-doroending:nonebot_plugin_doroending": "",
   "nonebot-plugin-auto-emojimix:nonebot_plugin_auto_emojimix": "# 启用显式合成（默认 True）\nemojimix_explicit=true\n# 启用自动合成（默认 True）\nemojimix_auto=true\n# 设置冷却时间\nemojimix_cd=60",
   "nonebot-plugin-peek:nonebot_plugin_peek": "# 单主机配置\nPEEK_HOSTS=[\"192.168.1.100:1920\"]\n\n# 多主机配置（自动选择最近操作的主机）\nPEEK_HOSTS=[\"pc1.local:1920\",\"pc2.local:1920\",\"192.168.1.100:1920\"]\n\nPEEK_KEY=your_secret_key\nPEEK_DEFAULT_RADIUS=5\nPEEK_NOTIFY_GROUP=123456789\nPEEK_NOTIFY_USER=987654321",
-  "nonebot-plugin-rikka:nonebot_plugin_rikka": ""
+  "nonebot-plugin-rikka:nonebot_plugin_rikka": "",
+  "nonebot-plugin-cardimg:nonebot_plugin_cardimg": "cardimg_use_global_config: bool = False\ncardimg_image_format: str = \"png\"\ncardimg_jpeg_quality: int = 85"
 }
