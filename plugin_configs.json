@@ -866,5 +866,6 @@
   "nonebot-plugin-codex:nonebot_plugin_codex": "# Codex 可执行文件名或绝对路径，默认直接调用 PATH 中的 `codex`\ncodex_binary = \"codex\"\n\n# 默认工作目录；新会话、目录浏览器 Home 入口、相对路径解析都基于它\ncodex_workdir = \"/home/yourname\"\n\n# `/stop` 或重置会话时，等待 Codex 子进程退出的超时时间，单位秒\ncodex_kill_timeout = 5.0\n\n# 运行中在 Telegram 中保留的进度消息条数\ncodex_progress_history = 6\n\n# 运行失败时最多保留多少条诊断输出\ncodex_diagnostic_history = 20\n\n# 单条 Telegram 消息的分片长度，过长回复会自动拆分\ncodex_chunk_size = 3500\n\n# 单条 Codex 协议消息允许的最大字节数\ncodex_stream_read_limit = 8388608",
   "nonebot-plugin-sentry-transaction:nonebot_plugin_sentry_transaction": "",
   "nonebot-plugin-calcgame-new:nonebot_plugin_calcgame_new": "",
-  "nonebot-plugin-qwqa:nonebot_plugin_qwqa": ""
+  "nonebot-plugin-qwqa:nonebot_plugin_qwqa": "",
+  "nonebot-plugin-endfield:endfield": ""
 }
