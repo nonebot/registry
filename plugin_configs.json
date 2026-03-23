@@ -867,5 +867,6 @@
   "nonebot-plugin-sentry-transaction:nonebot_plugin_sentry_transaction": "",
   "nonebot-plugin-calcgame-new:nonebot_plugin_calcgame_new": "",
   "nonebot-plugin-qwqa:nonebot_plugin_qwqa": "",
-  "nonebot-plugin-endfield:endfield": ""
+  "nonebot-plugin-endfield:endfield": "",
+  "nonebot-plugin-appstore-gameranking:nonebot_plugin_appstore_gameranking": ""
 }
