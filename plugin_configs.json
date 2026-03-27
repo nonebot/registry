@@ -869,5 +869,6 @@
   "nonebot-plugin-qwqa:nonebot_plugin_qwqa": "",
   "nonebot-plugin-endfield:endfield": "",
   "nonebot-plugin-appstore-gameranking:nonebot_plugin_appstore_gameranking": "",
-  "nonebot-plugin-maimaimonitor:nonebot_plugin_maimaimonitor": "MAIMAI_BOT_CLIENT_ID=your_client_id\nMAIMAI_BOT_PRIVATE_KEY=your_private_key\nMAIMAI_BOT_DISPLAY_NAME=qwq\nMAIMAI_WORKER_URL=https://maiapi.chongxi.us"
+  "nonebot-plugin-maimaimonitor:nonebot_plugin_maimaimonitor": "MAIMAI_BOT_CLIENT_ID=your_client_id\nMAIMAI_BOT_PRIVATE_KEY=your_private_key\nMAIMAI_BOT_DISPLAY_NAME=qwq\nMAIMAI_WORKER_URL=https://maiapi.chongxi.us",
+  "nonebot-plugin-cs2radar:nonebot_plugin_cs2radar": ""
 }
