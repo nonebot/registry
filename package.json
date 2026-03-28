@@ -66,7 +66,7 @@
     "vue-tsc": "^3.2.6"
   },
   "simple-git-hooks": {
-    "pre-commit": "pnpx lint-staged"
+    "pre-commit": "npx lint-staged"
   },
   "lint-staged": {
     "**/*.{js,ts,vue,json}": [
