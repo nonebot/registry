@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { h } from "vue";
 
-import { DataTableColumns, NDataTable, NText } from "naive-ui";
+import { type DataTableColumns, NDataTable, NText } from "naive-ui";
 
 import type { Metadata, Results } from "@/types/results";
 

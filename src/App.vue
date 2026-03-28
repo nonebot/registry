@@ -4,7 +4,7 @@ import { onMounted } from "vue";
 import hljs from "highlight.js/lib/core";
 import json from "highlight.js/lib/languages/json";
 import {
-  GlobalThemeOverrides,
+  type GlobalThemeOverrides,
   NBackTop,
   NConfigProvider,
   NLayout,
