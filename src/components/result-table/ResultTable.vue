@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ComputedRef, h, reactive } from "vue";
+import { computed, type ComputedRef, h, reactive } from "vue";
 
 import { NDataTable, NSkeleton, NSpace, type DataTableColumns } from "naive-ui";
 import { storeToRefs } from "pinia";
