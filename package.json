@@ -18,7 +18,7 @@
     "lint:js:fix": "eslint --fix \"**/*.{js,jsx,ts,tsx,cjs,mjs,vue}\"",
     "lint:style": "npm run stylelint \"**/*.{css,scss}\"",
     "lint:style:fix": "npm run stylelint:fix \"**/*.{css,scss}\"",
-    "prepare": "node .husky/install.mjs"
+    "prepare": "simple-git-hooks"
   },
   "dependencies": {
     "@mdi/js": "^7.4.47",
@@ -53,6 +53,7 @@
     "rollup-plugin-visualizer": "^7.0.1",
     "sass": "^1.98.0",
     "sass-loader": "^16.0.7",
+    "simple-git-hooks": "^2.13.1",
     "stylelint": "^17.6.0",
     "stylelint-config-standard": "^40.0.0",
     "stylelint-config-standard-scss": "^17.0.0",
@@ -64,11 +65,20 @@
     "vue-eslint-parser": "^10.4.0",
     "vue-tsc": "^3.2.6"
   },
+  "simple-git-hooks": {
+    "pre-commit": "pnpx lint-staged"
+  },
+  "lint-staged": {
+    "**/*.{js,ts,vue,json}": [
+      "eslint --fix --cache"
+    ]
+  },
   "pnpm": {
     "onlyBuiltDependencies": [
       "@parcel/watcher",
       "@sentry/cli",
       "esbuild",
+      "simple-git-hooks",
       "unrs-resolver",
       "vue-demi"
     ]
