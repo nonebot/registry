@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, type ComputedRef, h, reactive } from "vue";
 
+import { useNow } from "@vueuse/core";
 import { NDataTable, NSkeleton, NSpace, type DataTableColumns } from "naive-ui";
 import { storeToRefs } from "pinia";
 
@@ -17,7 +18,7 @@ import MetadataIcon from "./MetadataIcon.vue";
 import PluginLink from "./PluginLink.vue";
 import ValidationIcon from "./ValidationIcon.vue";
 
-const currentTime = Date.now();
+const currentTime = useNow({ interval: 60_000 });
 
 const store = usePageStore();
 const { loading } = storeToRefs(store);
@@ -147,7 +148,7 @@ const columns: DataTableColumns<RowData> = [
     render: (rowData: RowData) =>
       h(ColorTime, {
         time: rowData.plugin.time,
-        currentTime,
+        currentTime: currentTime.value,
       }),
     sorter: timeSorter("plugin", "time"),
   },
@@ -158,7 +159,7 @@ const columns: DataTableColumns<RowData> = [
     render: (rowData: RowData) =>
       h(ColorTime, {
         time: rowData.result.time,
-        currentTime,
+        currentTime: currentTime.value,
       }),
     sorter: timeSorter("result", "time"),
   },

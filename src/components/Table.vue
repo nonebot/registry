@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { nextTick, ref, watch } from "vue";
 
+import { mdiMagnify } from "@mdi/js";
 import { NInput, NLayout, type InputInst } from "naive-ui";
 import { storeToRefs } from "pinia";
 
+import Icon from "@/components/Icon.vue";
 import ResultTable from "@/components/result-table/ResultTable.vue";
 import { usePageStore } from "@/stores/page";
 import { debounce } from "@/utils/wrapper";
@@ -35,11 +37,15 @@ watch(searchKeyword, (newValue) => {
     <n-input
       ref="inputInstRef"
       v-model:value="searchKeyword"
-      class="min-w-1/4"
+      class="min-w-60"
       type="text"
       placeholder="搜索"
       clearable
-    />
+    >
+      <template #prefix>
+        <Icon :path="mdiMagnify" :size="18" class="color-gray" />
+      </template>
+    </n-input>
   </n-layout>
   <n-layout class="mt-3">
     <ResultTable
@@ -49,5 +55,3 @@ watch(searchKeyword, (newValue) => {
     />
   </n-layout>
 </template>
-
-<style scoped></style>

@@ -47,11 +47,14 @@ export const usePageStore = defineStore("page", () => {
   };
 
   const filterPlugins = (keyword: string) => {
+    const kw = keyword.toLowerCase();
     return Object.entries(plugins.value).reduce(
       (acc: Plugins, [key, value]) => {
         if (
-          key.toLowerCase().includes(keyword.toLowerCase()) ||
-          value.author.toLowerCase().includes(keyword.toLowerCase())
+          key.toLowerCase().includes(kw) ||
+          value.author.toLowerCase().includes(kw) ||
+          value.desc.toLowerCase().includes(kw) ||
+          value.tags.some((tag) => tag.label.toLowerCase().includes(kw))
         ) {
           acc[key] = value;
         }

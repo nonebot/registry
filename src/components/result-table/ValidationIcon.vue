@@ -22,10 +22,10 @@ const props = defineProps<{
 
 const showModal = ref(false);
 
-const getTagType = () => {
+const tagType = computed(() => {
   if (props.plugin.skip_test) return "default";
   return props.result.results.validation ? "success" : "error";
-};
+});
 const tagPath = computed(
   () =>
     (props.plugin.skip_test && mdiProgressCheck) ||
@@ -39,7 +39,7 @@ const tagPath = computed(
     class="mr-[15px] flex justify-center align-middle cursor-pointer"
     @click="showModal = true"
   >
-    <n-tag round :type="getTagType()">
+    <n-tag round :type="tagType">
       {{ `v${plugin.version}` }}
       <template #icon>
         <Icon :path="tagPath" />
