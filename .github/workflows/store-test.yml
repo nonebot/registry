@@ -56,7 +56,7 @@ jobs:
           PRIVATE_KEY: ${{ secrets.APP_KEY }}
 
       - name: Upload results
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: results
           path: |
@@ -80,7 +80,7 @@ jobs:
           ref: results
 
       - name: Download results
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: results
           path: ${{ github.workspace }}
@@ -111,7 +111,7 @@ jobs:
         uses: ./.github/actions/setup-node
 
       - name: Download results
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: results
           path: ${{ github.workspace }}/public
