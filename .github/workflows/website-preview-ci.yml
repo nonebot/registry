@@ -1,0 +1,42 @@
+name: Site Deploy (Preview CI)
+
+on:
+  pull_request:
+
+jobs:
+  preview-ci:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: pull-request-preview-${{ github.event.number }}
+      cancel-in-progress: true
+
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+
+      - name: Setup Node Environment
+        uses: ./.github/actions/setup-node
+
+      - name: Get results
+        run: |
+          git fetch origin
+          git checkout origin/results results.json adapters.json bots.json drivers.json plugins.json
+          mv -t public results.json adapters.json bots.json drivers.json plugins.json
+
+      - name: Build Website
+        run: pnpm build:preview
+
+      - name: Export Context
+        run: |
+          echo "${{ github.event.pull_request.number }}" > ./pr-number
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: website-preview
+          path: |
+            ./dist
+            ./pr-number
+          retention-days: 1
