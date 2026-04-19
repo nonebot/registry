@@ -875,5 +875,6 @@
   "nonebot-plugin-session-config:nonebot_plugin_session_config": "SESSION_CONFIG_BASE_DIR=None\nSESSION_CONFIG_DIR_FORMAT=bot-{bot_id}\nSESSION_CONFIG_FILE_FORMAT={scene_type}-{scene_id}.yaml\nSESSION_CONFIG_USE_GLOBAL=False\nSESSION_CONFIG_ENABLE_PARAM=False",
   "nonebot-plugin-12306-ticket:nonebot_plugin_12306_ticket": "",
   "nonebot-plugin-tg-stickers-downloads:nonebot_plugin_tg_stickers_downloads": "",
-  "nonebot-plugin-bot-monitor:nonebot_plugin_bot_monitor": ""
+  "nonebot-plugin-bot-monitor:nonebot_plugin_bot_monitor": "",
+  "nonebot-plugin-dingtalk-logger:nonebot_plugin_dingtalk_logger": "DINGTALK_TOKEN=\"xxx\"\nDINGTALK_SECRET=\"\"\nDINGTALK_KEYWORDS=[]\nDINGTALK_TIMEOUT=-1"
 }
