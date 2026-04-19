@@ -876,5 +876,6 @@
   "nonebot-plugin-12306-ticket:nonebot_plugin_12306_ticket": "",
   "nonebot-plugin-tg-stickers-downloads:nonebot_plugin_tg_stickers_downloads": "",
   "nonebot-plugin-bot-monitor:nonebot_plugin_bot_monitor": "",
-  "nonebot-plugin-dingtalk-logger:nonebot_plugin_dingtalk_logger": "DINGTALK_TOKEN=\"xxx\"\nDINGTALK_SECRET=\"\"\nDINGTALK_KEYWORDS=[]\nDINGTALK_TIMEOUT=-1"
+  "nonebot-plugin-dingtalk-logger:nonebot_plugin_dingtalk_logger": "DINGTALK_TOKEN=\"xxx\"\nDINGTALK_SECRET=\"\"\nDINGTALK_KEYWORDS=[]\nDINGTALK_TIMEOUT=-1",
+  "nonebot-plugin-arkguesser:nonebot_plugin_arkguesser": ""
 }
