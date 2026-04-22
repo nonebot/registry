@@ -406,7 +406,7 @@
   "nonebot-plugin-csornament:nonebot_plugin_csornament": "",
   "nonebot-plugin-mcversion:nonebot_plugin_mcversion": "\nMCVER_GROUP_ID=[123456789, 987654321]\r\n",
   "nonebot-plugin-muteme:nonebot_plugin_muteme": "",
-  "nonebot-plugin-jx3:nonebot_plugin_jx3": "",
+  "nonebot-plugin-jx3:nonebot_plugin_jx3": "# ====== JX3 插件配置 ======\nJX3API_KEY=''\nJX3_TUILAN_TICKET=''\nJX3WSS_TOKEN=''\nJX3_ENABLED_GROUPS='[]'\nJX3_BOT_NAME='水水'\nJX3API_BASE_URL='https://www.jx3api.com'\nJX3_WSS_URL='wss://seasun.nicemoe.com'\nJX3_DEFAULT_SERVER=''",
   "nonebot-plugin-xinghuo-api:nonebot_plugin_xinghuo_api": "\nXINGHUO_APP_ID=xxxxxx\r\nXINGHUO_API_SECRET=xxxxxx\r\nXINGHUO_API_KEY=xxxxxx\r\nXINGHUO_ENABLE_PRIVATE_CHAT=true\r\nXINGHUO_GROUP_PUBLIC=false\r\n",
   "dicergirl:dicergirl": "",
   "nonebot-plugin-uvdiviner:nonebot_plugin_uvdiviner": "",
