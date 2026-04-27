@@ -880,5 +880,6 @@
   "nonebot-plugin-arkguesser:nonebot_plugin_arkguesser": "",
   "nonebot-plugin-quotation:nonebot_plugin_quotation": "quotation_trusted_user=[]",
   "nonebot-plugin-dancecube:nonebot_plugin_dancecube": "",
-  "nonebot_plugin_suda_electricity:nonebot_plugin_suda_electricity": "suda_secret_key = secret_key"
+  "nonebot_plugin_suda_electricity:nonebot_plugin_suda_electricity": "suda_secret_key = secret_key",
+  "nonebot-plugin-amrita:nonebot_plugin_amrita": "AMRITA_COOKIE_ENABLE=true\nAMRITA_MCP_ENABLE=true\nAMRITA_MCP_CLIENTS='[\"client1\",\"client2\"]'\nAMRITA_TOOL_CALL_LIMIT=20\nAMRITA_MEMORY_TOKEN_LIMIT=3072\nAMRITA_MEMORY_LENGTH=100\nAMRITA_PROMPT_TOKEN_LIMIT=512\nAMRITA_AGENT_MODE=agent\nAMRITA_AGENT_THOUGHT_MODE=reasoning"
 }
