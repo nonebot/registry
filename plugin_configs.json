@@ -884,5 +884,6 @@
   "nonebot-plugin-amrita:nonebot_plugin_amrita": "AMRITA_COOKIE_ENABLE=true\nAMRITA_MCP_ENABLE=true\nAMRITA_MCP_CLIENTS='[\"client1\",\"client2\"]'\nAMRITA_TOOL_CALL_LIMIT=20\nAMRITA_MEMORY_TOKEN_LIMIT=3072\nAMRITA_MEMORY_LENGTH=100\nAMRITA_PROMPT_TOKEN_LIMIT=512\nAMRITA_AGENT_MODE=agent\nAMRITA_AGENT_THOUGHT_MODE=reasoning",
   "nonebot-plugin-osumania-toolkit:nonebot_plugin_osumania_toolkit": "",
   "nonebot-plugin-kuwo:nonebot_plugin_kuwo": "KUWO_SEARCH_LIMIT=5\nKUWO_LIST_RENDER_MODE=text\nKUWO_TRACK_RENDER_MODE=text\nKUWO_DEFAULT_QUALITY=standard\nKUWO_TRACK_CACHE_RETENTION_DAYS=1\nKUWO_TRACK_CACHE_MAX_SIZE_MB=1024",
-  "nonebot-plugin-hermes:nonebot_plugin_hermes": "HERMES_API_URL=http://127.0.0.1:8642\nHERMES_API_KEY=ABC123456"
+  "nonebot-plugin-hermes:nonebot_plugin_hermes": "HERMES_API_URL=http://127.0.0.1:8642\nHERMES_API_KEY=ABC123456",
+  "nonebot-plugin-umamusume:nonebot_plugin_uma": ""
 }
