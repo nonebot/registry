@@ -475,7 +475,7 @@
   "haruka_bot_red:haruka_bot_red": "",
   "nonebot-plugin-enatfrp:nonebot_plugin_enatfrp": "",
   "nonebot-plugin-nezha:nonebot_plugin_nezha": "\nNEZHA_API=https://nOne.boT\r\nNEZHA_TOKEN=\"114514114514114514\"\r\n",
-  "nonebot-plugin-randpic:nonebot_plugin_randpic": "",
+  "nonebot-plugin-randpic:nonebot_plugin_randpic": "randpic_command_list=[\"capoo\"]\nrandpic_store_dir_path=get_data_dir(\"nonebot_plugin_randpic\")\nrandpic_banner_group=[]\nrandpic_endpoint=None\nrandpic_bucket=None\nrandpic_region=None\nrandpic_oss_access_key_id=None\nrandpic_oss_access_key_secret=None\nrandpic_oss_no_upload_list=[]",
   "nonebot-plugin-badrawcard:nonebot_plugin_BAdrawcard": "",
   "nonebot-plugin-gpt:nonebot_plugin_gpt": "",
   "nonebot-plugin-easy-blacklist:nonebot_plugin_easy_blacklist": "",
