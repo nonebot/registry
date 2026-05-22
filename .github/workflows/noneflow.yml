@@ -1,7 +1,7 @@
 name: NoneFlow
 
 on:
-  pull_request_target:
+  pull_request:
     types: [closed]
   pull_request_review:
     types: [submitted]
