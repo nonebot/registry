@@ -383,7 +383,7 @@
   "nonebot-plugin-cp-broadcast:nonebot_plugin_cp_broadcast": "cp_broadcast_path=get_data_dir(\"nonebot_plugin_cp_broadcast\")\ncp_broadcast_list=[]\ncp_broadcast_botname=\"bot\"\ncp_broadcast_time={\"hour\": \"7\", \"minute\": \"20\"}\ncp_broadcast_updatetime={\"hour\": \"0\", \"minute\": \"0\"}\ncp_broadcast_cf_list=[]\ncp_broadcast_cf_interval=10",
   "nonebot-plugin-cfassistant:nonebot_plugin_cfassistant": "",
   "nonebot-plugin-splatoon3-schedule:nonebot_plugin_splatoon3_schedule": "",
-  "nonebot-plugin-capoo:nonebot_plugin_capoo": "\ncapoo_download=false\r\n",
+  "nonebot-plugin-capoo:nonebot_plugin_capoo": "capoo_path=nonebot_plugin_capoo",
   "nonebot-plugin-eventexpiry:nonebot_plugin_eventexpiry": "",
   "nonebot-plugin-nobahpicture:nonebot_plugin_nobahpicture": "",
   "nonebot-plugin-blocker:nonebot_plugin_blocker": "",
