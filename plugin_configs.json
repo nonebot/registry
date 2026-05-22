@@ -380,7 +380,7 @@
   "nonebot-plugin-poke:nonebot_plugin_poke": "",
   "nonebot-plugin-friends:nonebot_plugin_friends": "",
   "nonebot-plugin-update:nonebot_plugin_update": "\nnpu_auto_check=True\r\nnpu_check_prerelease=False\r\n",
-  "nonebot-plugin-cp-broadcast:nonebot_plugin_cp_broadcast": "\ncp_broadcast_list=[]\r\ncp_broadcast_botname=\"bot\"\r\ncp_broadcast_time={\"hour\": \"7\", \"minute\": \"20\"}\r\ncp_broadcast_updatetime={\"hour\": \"0\", \"minute\": \"0\"} \r\n",
+  "nonebot-plugin-cp-broadcast:nonebot_plugin_cp_broadcast": "cp_broadcast_path=get_data_dir(\"nonebot_plugin_cp_broadcast\")\ncp_broadcast_list=[]\ncp_broadcast_botname=\"bot\"\ncp_broadcast_time={\"hour\": \"7\", \"minute\": \"20\"}\ncp_broadcast_updatetime={\"hour\": \"0\", \"minute\": \"0\"}\ncp_broadcast_cf_list=[]\ncp_broadcast_cf_interval=10",
   "nonebot-plugin-cfassistant:nonebot_plugin_cfassistant": "",
   "nonebot-plugin-splatoon3-schedule:nonebot_plugin_splatoon3_schedule": "",
   "nonebot-plugin-capoo:nonebot_plugin_capoo": "\ncapoo_download=false\r\n",
