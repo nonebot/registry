@@ -894,5 +894,6 @@
   "nonebot-plugin-catcake:nonebot_plugin_catcake": "",
   "nonebot-plugin-onebot2tg:nonebot_plugin_onebot2tg": "onebot2tg_enable_bridge=True\nonebot2tg_enable_forward=False\nonebot2tg_bridge_group_id=\"\"\nonebot2tg_bridge_tg_chat_id=\"\"\nonebot2tg_forward_target_chat_id=\"\"\nonebot2tg_forward_filter_mode=“none\"\nonebot2tg_forward_filter_list=[]",
   "nonebot-plugin-set-essence-msg:nonebot_plugin_set_essence_msg": "ESSENCE_COOLDOWN=60 # 冷却时间，单位秒，默认为60，设为0关闭冷却；对超级用户、群主、管理员不生效\nESSENCE_ENABLED_GROUPS=[123456, 789012]  # 启用插件的群号列表，包含0表示所有群都启用",
-  "nonebot-plugin-maimai-raking:nonebot_plugin_maimai_raking": ""
+  "nonebot-plugin-maimai-raking:nonebot_plugin_maimai_raking": "",
+  "nonebot-plugin-permission:nonebot_plugin_permission": ""
 }
