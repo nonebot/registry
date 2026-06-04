@@ -896,5 +896,6 @@
   "nonebot-plugin-set-essence-msg:nonebot_plugin_set_essence_msg": "ESSENCE_COOLDOWN=60 # 冷却时间，单位秒，默认为60，设为0关闭冷却；对超级用户、群主、管理员不生效\nESSENCE_ENABLED_GROUPS=[123456, 789012]  # 启用插件的群号列表，包含0表示所有群都启用",
   "nonebot-plugin-maimai-raking:nonebot_plugin_maimai_raking": "",
   "nonebot-plugin-permission:nonebot_plugin_permission": "",
-  "nonebot-plugin-group-heat:nonebot_plugin_group_heat": ""
+  "nonebot-plugin-group-heat:nonebot_plugin_group_heat": "",
+  "nonebot-plugin-just-enough-katakanas:nonebot_plugin_just_enough_katakanas": ""
 }
