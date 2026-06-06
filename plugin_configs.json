@@ -897,5 +897,6 @@
   "nonebot-plugin-maimai-raking:nonebot_plugin_maimai_raking": "",
   "nonebot-plugin-permission:nonebot_plugin_permission": "",
   "nonebot-plugin-group-heat:nonebot_plugin_group_heat": "",
-  "nonebot-plugin-just-enough-katakanas:nonebot_plugin_just_enough_katakanas": ""
+  "nonebot-plugin-just-enough-katakanas:nonebot_plugin_just_enough_katakanas": "",
+  "nonebot-plugin-class-schedule:nonebot_plugin_class_schedule": ""
 }
