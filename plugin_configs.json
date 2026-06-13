@@ -900,5 +900,6 @@
   "nonebot-plugin-just-enough-katakanas:nonebot_plugin_just_enough_katakanas": "",
   "nonebot-plugin-class-schedule:nonebot_plugin_class_schedule": "",
   "nonebot-plugin-ret2shell:nonebot_plugin_ret2shell": "",
-  "nonebot-plugin-uptimekuma:nonebot_plugin_uptimekuma": ""
+  "nonebot-plugin-uptimekuma:nonebot_plugin_uptimekuma": "",
+  "nonebot-plugin-depsafe:nonebot_plugin_depsafe": ""
 }
