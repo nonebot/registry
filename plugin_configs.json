@@ -898,5 +898,6 @@
   "nonebot-plugin-permission:nonebot_plugin_permission": "",
   "nonebot-plugin-group-heat:nonebot_plugin_group_heat": "",
   "nonebot-plugin-just-enough-katakanas:nonebot_plugin_just_enough_katakanas": "",
-  "nonebot-plugin-class-schedule:nonebot_plugin_class_schedule": ""
+  "nonebot-plugin-class-schedule:nonebot_plugin_class_schedule": "",
+  "nonebot-plugin-ret2shell:nonebot_plugin_ret2shell": ""
 }
