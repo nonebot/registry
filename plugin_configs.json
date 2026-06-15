@@ -901,5 +901,6 @@
   "nonebot-plugin-class-schedule:nonebot_plugin_class_schedule": "",
   "nonebot-plugin-ret2shell:nonebot_plugin_ret2shell": "",
   "nonebot-plugin-uptimekuma:nonebot_plugin_uptimekuma": "",
-  "nonebot-plugin-depsafe:nonebot_plugin_depsafe": ""
+  "nonebot-plugin-depsafe:nonebot_plugin_depsafe": "",
+  "nonebot-plugin-bilidownloader-woju:nonebot_plugin_bilibili_downloader": ""
 }
