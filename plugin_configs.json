@@ -904,5 +904,6 @@
   "nonebot-plugin-depsafe:nonebot_plugin_depsafe": "",
   "nonebot-plugin-bilidownloader-woju:nonebot_plugin_bilibili_downloader": "",
   "nonebot-plugin-keyreply:nonebot_plugin_keyreply": "",
-  "nonebot-plugin-helper-recall:nonebot_plugin_helper_recall": ""
+  "nonebot-plugin-helper-recall:nonebot_plugin_helper_recall": "",
+  "nonebot-plugin-voicevox-bridge:nonebot_plugin_voicevox_bridge": ""
 }
