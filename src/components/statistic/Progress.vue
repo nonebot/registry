@@ -34,13 +34,11 @@ gsap.to(tweened, {
 function getProgressColor(percent: number) {
   if (percent < 25) {
     return "var(--error-color)";
-  } else if (percent < 50) {
-    return "var(--warning-color)";
-  } else if (percent < 80) {
-    return "var(--info-color)";
-  } else {
-    return "var(--success-color)";
   }
+  if (percent < 50) {
+    return "var(--warning-color)";
+  }
+  return percent < 80 ? "var(--info-color)" : "var(--success-color)";
 }
 
 const percentageList = computed(() => [

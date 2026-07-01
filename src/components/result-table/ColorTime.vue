@@ -12,13 +12,13 @@ function getTimeColor(timeDiff: number) {
   if (timeDiff <= 3_600_000 * 4) {
     // 4 小时内更新是绿色（活跃）
     return "success";
-  } else if (timeDiff <= 3_600_000 * 24) {
+  }
+  if (timeDiff <= 3_600_000 * 24) {
     // 24 小时内更新是蓝色
     return "info";
-  } else {
-    // 24 小时以上更新是正常
-    return "default";
   }
+  // 24 小时以上更新是正常
+  return "default";
 }
 
 const currentMs = computed(() =>

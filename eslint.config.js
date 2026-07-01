@@ -304,6 +304,8 @@ export const unicorn = [
       "unicorn/no-for-each": "warn",
       "unicorn/prefer-global-this": "off",
       "unicorn/prefer-module": "off",
+      "unicorn/name-replacements": "off",
+      "unicorn/prefer-https": "off",
     },
   },
 ];

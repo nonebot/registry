@@ -1,4 +1,3 @@
-/* eslint-disable unicorn/no-array-reduce */
 import { ref } from "vue";
 
 import { useDark, useToggle } from "@vueuse/core";
@@ -11,11 +10,11 @@ import type { Results } from "@/types/results";
 export const usePageStore = defineStore("page", () => {
   const theme = ref<GlobalTheme | null>(null);
   const isDark = useDark({
-    onChanged(dark: boolean) {
-      theme.value = dark ? darkTheme : null;
+    onChanged(isDark: boolean) {
+      theme.value = isDark ? darkTheme : null;
       const el = document.querySelector("html");
       if (el && el.dataset) {
-        el.dataset.hljsUseDark = dark ? "true" : "false";
+        el.dataset.hljsUseDark = isDark ? "true" : "false";
       }
     },
   });
@@ -25,43 +24,41 @@ export const usePageStore = defineStore("page", () => {
   const loading = ref(true);
 
   const initData = async () => {
-    const requests = [
-      fetch("/plugins.json", { method: "GET" })
-        .then((response) => response.json())
-        .then(
-          (data: PluginsResponse) =>
-            (plugins.value = data.reduce(
-              (acc: Plugins, plugin: Plugins[keyof Plugins]) => {
-                acc[`${plugin.project_link}:${plugin.module_name}`] = plugin;
-                return acc;
-              },
-              {},
-            )),
-        ),
-      fetch("/results.json", { method: "GET" })
-        .then((response) => response.json())
-        .then((data) => (results.value = data)),
-    ];
-    await Promise.all(requests);
+    const [pluginsResponse, resultsResponse] = await Promise.all([
+      fetch("/plugins.json", { method: "GET" }),
+      fetch("/results.json", { method: "GET" }),
+    ]);
+    const [pluginsData, resultsData] = await Promise.all([
+      pluginsResponse.json() as Promise<PluginsResponse>,
+      resultsResponse.json() as Promise<Results>,
+    ]);
+
+    const nextPlugins: Plugins = {};
+    for (const plugin of pluginsData) {
+      nextPlugins[`${plugin.project_link}:${plugin.module_name}`] = plugin;
+    }
+
+    plugins.value = nextPlugins;
+    results.value = resultsData;
     loading.value = false;
   };
 
   const filterPlugins = (keyword: string) => {
     const kw = keyword.toLowerCase();
-    return Object.entries(plugins.value).reduce(
-      (acc: Plugins, [key, value]) => {
-        if (
-          key.toLowerCase().includes(kw) ||
-          value.author.toLowerCase().includes(kw) ||
-          value.desc.toLowerCase().includes(kw) ||
-          value.tags.some((tag) => tag.label.toLowerCase().includes(kw))
-        ) {
-          acc[key] = value;
-        }
-        return acc;
-      },
-      {},
-    );
+    const filteredPlugins: Plugins = {};
+
+    for (const [key, value] of Object.entries(plugins.value)) {
+      if (
+        key.toLowerCase().includes(kw) ||
+        value.author.toLowerCase().includes(kw) ||
+        value.desc.toLowerCase().includes(kw) ||
+        value.tags.some((tag) => tag.label.toLowerCase().includes(kw))
+      ) {
+        filteredPlugins[key] = value;
+      }
+    }
+
+    return filteredPlugins;
   };
 
   const getPlugin = (pypi: string, module: string) => {

@@ -33,9 +33,9 @@ const filteredPlugins = computed(() =>
 );
 
 const data: ComputedRef<RowData[]> = computed(() =>
-  Object.keys(filteredPlugins.value).map((key) => {
+  Object.entries(filteredPlugins.value).map(([key, value]) => {
     return {
-      plugin: filteredPlugins.value[key],
+      plugin: value,
       result: props.results[key],
     };
   }),
