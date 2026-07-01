@@ -212,13 +212,13 @@ const vue3Rules = {
   ...pluginVue.configs.base.rules,
   ...pluginVue.configs["flat/essential"]
     .map((c) => c.rules)
-    .reduce((acc, c) => ({ ...acc, ...c }), {}),
+    .reduce((accumulator, c) => ({ ...accumulator, ...c }), {}),
   ...pluginVue.configs["flat/strongly-recommended"]
     .map((c) => c.rules)
-    .reduce((acc, c) => ({ ...acc, ...c }), {}),
+    .reduce((accumulator, c) => ({ ...accumulator, ...c }), {}),
   ...pluginVue.configs["flat/recommended"]
     .map((c) => c.rules)
-    .reduce((acc, c) => ({ ...acc, ...c }), {}),
+    .reduce((accumulator, c) => ({ ...accumulator, ...c }), {}),
 };
 
 export const vue = [
@@ -301,7 +301,7 @@ export const unicorn = [
       "unicorn/prefer-spread": "off",
       "unicorn/no-array-reduce": "warn",
       "unicorn/number-literal-case": "off",
-      "unicorn/no-array-for-each": "warn",
+      "unicorn/no-for-each": "warn",
       "unicorn/prefer-global-this": "off",
       "unicorn/prefer-module": "off",
     },
