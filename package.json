@@ -1,7 +1,7 @@
 {
   "name": "nonebot-registry",
   "license": "MIT",
-  "packageManager": "pnpm@10.34.4",
+  "packageManager": "pnpm@11.9.0",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -61,16 +61,6 @@
   "lint-staged": {
     "**/*.{js,ts,vue}": [
       "eslint --fix --cache"
-    ]
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@parcel/watcher",
-      "@sentry/cli",
-      "esbuild",
-      "simple-git-hooks",
-      "unrs-resolver",
-      "vue-demi"
     ]
   }
 }
