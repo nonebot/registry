@@ -898,5 +898,6 @@
   "nonebot-plugin-anime:nonebot_plugin_anime": "# 必填：资源目录，从网盘下载的 bangumi_resource 解压后的路径\nANIME__RESOURCE_DIR=/path/to/bangumi_resource\n\n# 可选：HTTP 代理（国内网络访问 Bangumi API 不稳定时建议配置，留空则不开启）\nANIME__HTTP_PROXY= \n\n# 可选：是否允许私聊使用（默认 true）\nANIME__PRIVATE_ALLOW=True\n\n# 可选：Bangumi API 令牌（提升请求频率限制）\nANIME__BGM_API_TOKEN=xxx",
   "nonebot-plugin-lottery-signup:nonebot_plugin_lottery_signup": "",
   "nonebot-plugin-mail:nonebot_plugin_mail": "",
-  "nonebot-plugin-bawiki-revive:nonebot_plugin_bawiki_revive": "LOCALSTORE_USE_CWD=True"
+  "nonebot-plugin-bawiki-revive:nonebot_plugin_bawiki_revive": "LOCALSTORE_USE_CWD=True",
+  "nonebot-plugin-roblox-search:nonebot_plugin_roblox_search": ""
 }
