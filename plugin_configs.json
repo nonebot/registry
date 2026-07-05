@@ -899,5 +899,6 @@
   "nonebot-plugin-lottery-signup:nonebot_plugin_lottery_signup": "",
   "nonebot-plugin-mail:nonebot_plugin_mail": "",
   "nonebot-plugin-bawiki-revive:nonebot_plugin_bawiki_revive": "LOCALSTORE_USE_CWD=True",
-  "nonebot-plugin-roblox-search:nonebot_plugin_roblox_search": ""
+  "nonebot-plugin-roblox-search:nonebot_plugin_roblox_search": "",
+  "nonebot-plugin-bili-query:nonebot_plugin_bili_query": ""
 }
