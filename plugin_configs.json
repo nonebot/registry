@@ -903,5 +903,6 @@
   "nonebot-plugin-bili-query:nonebot_plugin_bili_query": "",
   "nonebot-plugin-pxchat-enhanced:nonebot_plugin_pxchat_enhanced": "pxchat_super_users=[]\npxchat_mcp='{}'",
   "nonebot-plugin-onething-monitor:nonebot_plugin_onething_monitor": "ONETHING_TARGET_QQ=\"123456789\"\nONETHING_TARGET_GROUP=123456789\nONETHING_BOT_ID=\"123456789\"\nONETHING_DEFAULT_PHONE=\"13800000000\"",
-  "nonebot-plugin-group-historian:nonebot_plugin_group_historian": ""
+  "nonebot-plugin-group-historian:nonebot_plugin_group_historian": "",
+  "nonebot-plugin-gspanel-lite:nonebot_plugin_gspanel_lite": ""
 }
