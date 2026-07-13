@@ -906,5 +906,6 @@
   "nonebot-plugin-group-historian:nonebot_plugin_group_historian": "",
   "nonebot-plugin-gspanel-lite:nonebot_plugin_gspanel_lite": "",
   "nonebot-plugin-picstatus-re:nonebot_plugin_picstatus_re": "",
-  "nonebot-plugin-shitbot:nonebot_plugin_shitbot": "SHITBOT__OWNERS=[]"
+  "nonebot-plugin-shitbot:nonebot_plugin_shitbot": "SHITBOT__OWNERS=[]",
+  "nonebot-plugin-git-poller:nonebot_plugin_git_poller": ""
 }
