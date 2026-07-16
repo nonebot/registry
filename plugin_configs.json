@@ -908,5 +908,6 @@
   "nonebot-plugin-picstatus-re:nonebot_plugin_picstatus_re": "",
   "nonebot-plugin-shitbot:nonebot_plugin_shitbot": "SHITBOT__OWNERS=[]",
   "nonebot-plugin-git-poller:nonebot_plugin_git_poller": "",
-  "nonebot_plugin_zikequote3:nonebot_plugin_zikequote3": ""
+  "nonebot_plugin_zikequote3:nonebot_plugin_zikequote3": "",
+  "nonebot-plugin-ruok:nonebot_plugin_ruok": ""
 }
