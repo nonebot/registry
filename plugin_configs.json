@@ -910,5 +910,6 @@
   "nonebot-plugin-git-poller:nonebot_plugin_git_poller": "",
   "nonebot_plugin_zikequote3:nonebot_plugin_zikequote3": "",
   "nonebot-plugin-ruok:nonebot_plugin_ruok": "",
-  "nonebot-plugin-rollpig-plus:nonebot_plugin_rollpig_plus": ""
+  "nonebot-plugin-rollpig-plus:nonebot_plugin_rollpig_plus": "",
+  "nonebot-plugin-palworld-sync:nonebot_plugin_palworld_sync": "PALWORLD_API_URL=\"http://<服务器IP>:8212\"\nPALWORLD_API_PASSWORD=\"您的管理员密码\"\nPALWORLD_QQ_GROUPS=[\"123456\", \"789012\"]  # 必填：本插件生效的 QQ 群号列表（JSON 数组格式），非列表内的群不响应任何指令\nPALWORLD_FORWARD_GROUP_MSG=True  # 可选：设置为 True 即可开启 QQ 群消息互通转发至游戏内，默认 False\nPALWORLD_PLAYER_TRACKING=True  # 可选：是否开启玩家在线进出服务器的广播通知，默认 True\nPALWORLD_PLAYER_TRACKING_INTERVAL=10  # 可选：玩家在线状态的轮询间隔（秒），默认 10"
 }
