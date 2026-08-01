@@ -25,8 +25,8 @@ export const usePageStore = defineStore("page", () => {
 
   const initData = async () => {
     const [pluginsResponse, resultsResponse] = await Promise.all([
-      fetch("/plugins.json", { method: "GET" }),
-      fetch("/results.json", { method: "GET" }),
+      fetch("/plugins.json"),
+      fetch("/results.json"),
     ]);
     const [pluginsData, resultsData] = await Promise.all([
       pluginsResponse.json() as Promise<PluginsResponse>,
