@@ -917,5 +917,6 @@
   "nonebot-plugin-astra-bot:nonebot_plugin_astra_bot": "# 必填（无默认值，缺了 AI 调用不工作）\nSILICONFLOW_API_KEY=\"sk-your-key-here\"\nMINIMAX_API_KEY=\"sk-cp-your-key-here\"\nDEEPSEEK_API_KEY=\"sk-your-key-here\"\n\n# 常用推荐改\nname=\"Astra\"\nname_cn=\"残羽\"\nperson_setting=\"女、大二生，20岁。\"\nenabled_groups=['12345678']\n\n# 聊天模型（有内置默认值，按需调整）\nAPI_PROVIDER=\"DEEPSEEK\"\nAPI_MODEL=\"deepseek-v4-flash\"\nBACK_API_PROVIDER=\"MINIMAX\"\nBACK_API_MODEL=\"MiniMax-M2.7\"\nVISUAL_API_PROVIDER=\"SILICONFLOW\"\nVISUAL_API_MODEL=\"Qwen/Qwen3.6-35B-A3B\"",
   "nonebot-plugin-proxy-probe:nonebot_plugin_proxy_probe": "",
   "nonebot-plugin-hibank:nonebot_plugin_hibank": "",
-  "nonebot-plugin-cs2match:nonebot_plugin_cs2match": "pandascore_token=<PandaScore提供商获取的Token>"
+  "nonebot-plugin-cs2match:nonebot_plugin_cs2match": "pandascore_token=<PandaScore提供商获取的Token>",
+  "nonebot-plugin-asf:nonebot_plugin_asf": "ASF__TELEGRAM_BOT_TOKEN=123456\nASF__TELEGRAM_PROXY=socks5://proxy:1080\nASF__TELEGRAM_ALLOWED_USER_IDS=123456\nASF__TELEGRAM_ALLOWED_CHAT_IDS=123456\nASF__BASE_URL=http://asf:1242\nASF__IPC_PASSWORD=123456\nASF__POLL_TIMEOUT_SECONDS=45"
 }
