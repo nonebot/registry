@@ -919,5 +919,6 @@
   "nonebot-plugin-hibank:nonebot_plugin_hibank": "",
   "nonebot-plugin-cs2match:nonebot_plugin_cs2match": "pandascore_token=<PandaScore提供商获取的Token>",
   "nonebot-plugin-asf:nonebot_plugin_asf": "ASF__TELEGRAM_BOT_TOKEN=123456\nASF__TELEGRAM_PROXY=socks5://proxy:1080\nASF__TELEGRAM_ALLOWED_USER_IDS=123456\nASF__TELEGRAM_ALLOWED_CHAT_IDS=123456\nASF__BASE_URL=http://asf:1242\nASF__IPC_PASSWORD=123456\nASF__POLL_TIMEOUT_SECONDS=45",
-  "nonebot-plugin-smart-message-storage:nonebot_plugin_smart_message_storage": ""
+  "nonebot-plugin-smart-message-storage:nonebot_plugin_smart_message_storage": "",
+  "nonebot-plugin-cnrail:nonebot_plugin_cnrail": ""
 }
