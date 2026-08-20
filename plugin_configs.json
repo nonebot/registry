@@ -921,5 +921,6 @@
   "nonebot-plugin-asf:nonebot_plugin_asf": "ASF__TELEGRAM_BOT_TOKEN=123456\nASF__TELEGRAM_PROXY=socks5://proxy:1080\nASF__TELEGRAM_ALLOWED_USER_IDS=123456\nASF__TELEGRAM_ALLOWED_CHAT_IDS=123456\nASF__BASE_URL=http://asf:1242\nASF__IPC_PASSWORD=123456\nASF__POLL_TIMEOUT_SECONDS=45",
   "nonebot-plugin-smart-message-storage:nonebot_plugin_smart_message_storage": "",
   "nonebot-plugin-cnrail:nonebot_plugin_cnrail": "",
-  "nonebot-plugin-sues-bill:nonebot_plugin_sues_bill": "# SUES 一卡通系统地址（可选，默认 https://epay.sues.edu.cn）\nSUES_BASE_URL=https://epay.sues.edu.cn"
+  "nonebot-plugin-sues-bill:nonebot_plugin_sues_bill": "# SUES 一卡通系统地址（可选，默认 https://epay.sues.edu.cn）\nSUES_BASE_URL=https://epay.sues.edu.cn",
+  "nonebot-plugin-llm-qa-system:nonebot_plugin_llm_qa_system": "llm_qa_ollama_host=http://localhost:11434\nllm_qa_chat_model=qwen3:1.7b\nllm_qa_embed_model=nomic-embed-text"
 }
