@@ -923,5 +923,6 @@
   "nonebot-plugin-cnrail:nonebot_plugin_cnrail": "",
   "nonebot-plugin-sues-bill:nonebot_plugin_sues_bill": "# SUES 一卡通系统地址（可选，默认 https://epay.sues.edu.cn）\nSUES_BASE_URL=https://epay.sues.edu.cn",
   "nonebot-plugin-llm-qa-system:nonebot_plugin_llm_qa_system": "llm_qa_ollama_host=http://localhost:11434\nllm_qa_chat_model=qwen3:1.7b\nllm_qa_embed_model=nomic-embed-text",
-  "nonebot-plugin-easy-aidraw:nonebot_plugin_easy_aidraw": ""
+  "nonebot-plugin-easy-aidraw:nonebot_plugin_easy_aidraw": "",
+  "nonebot-plugin-aawarframe:nonebot_plugin_aawarframe": ""
 }
