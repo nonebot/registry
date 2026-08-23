@@ -925,5 +925,6 @@
   "nonebot-plugin-llm-qa-system:nonebot_plugin_llm_qa_system": "llm_qa_ollama_host=http://localhost:11434\nllm_qa_chat_model=qwen3:1.7b\nllm_qa_embed_model=nomic-embed-text",
   "nonebot-plugin-easy-aidraw:nonebot_plugin_easy_aidraw": "",
   "nonebot-plugin-aawarframe:nonebot_plugin_aawarframe": "",
-  "nonebot-plugin-aigf:nonebot_plugin_aigf": "AIGF_CHAT_OPENAI_API_KEY=\"***\"         \nAIGF_CHAT_OPENAI_BASE_URL=\"https://api.siliconflow.cn/v1\"  \nAIGF_CHAT_OPENAI_MODEL=\"Pro/Qwen/Qwen2.5-VL-7B-Instruct\"  \n\nAIGF_ENABLED_GROUPS=[123456, 789012]           \n\nAIGF_IMAGE_MODE=\"vlm\"                            \nAIGF_VLM_ENABLED=true                           \nAIGF_VLM_MODEL=\"Pro/Qwen/Qwen2.5-VL-7B-Instruct\"\nAIGF_VLM_BASE_URL=\"https://api.siliconflow.cn/v1\"\nAIGF_VLM_API_KEY=\"***\""
+  "nonebot-plugin-aigf:nonebot_plugin_aigf": "AIGF_CHAT_OPENAI_API_KEY=\"***\"         \nAIGF_CHAT_OPENAI_BASE_URL=\"https://api.siliconflow.cn/v1\"  \nAIGF_CHAT_OPENAI_MODEL=\"Pro/Qwen/Qwen2.5-VL-7B-Instruct\"  \n\nAIGF_ENABLED_GROUPS=[123456, 789012]           \n\nAIGF_IMAGE_MODE=\"vlm\"                            \nAIGF_VLM_ENABLED=true                           \nAIGF_VLM_MODEL=\"Pro/Qwen/Qwen2.5-VL-7B-Instruct\"\nAIGF_VLM_BASE_URL=\"https://api.siliconflow.cn/v1\"\nAIGF_VLM_API_KEY=\"***\"",
+  "nonebot-plugin-bilibili:nonebot_plugin_bilibili": ""
 }
