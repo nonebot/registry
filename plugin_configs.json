@@ -931,5 +931,6 @@
   "nonebot-plugin-ncqrcode:nonebot_plugin_ncqrcode": "",
   "nonebot-plugin-livetennis:nonebot_plugin_livetennis": "LIVETENNIS_API_KEY=ltapi_xxxxxxxx",
   "nonebot-plugin-mimo-console:nonebot_plugin_mimo_console": "MIMO_CONSOLE_PATH=/mimo-console\nMIMO_CONSOLE_SESSION_HOURS=72\nMIMO_CONSOLE_ENABLE_STORE=true\nMIMO_CONSOLE_ALLOW_PACKAGE_MANAGEMENT=true\nMIMO_CONSOLE_STORE_CACHE_SECONDS=600\nMIMO_CONSOLE_PACKAGE_TIMEOUT=300\n# MIMO_CONSOLE_PROJECT_ROOT=/path/to/nonebot-project\n# MIMO_CONSOLE_GITHUB_PROXY=",
-  "nonebot-plugin-retirement-countdown:nonebot_plugin_retirement_countdown": ""
+  "nonebot-plugin-retirement-countdown:nonebot_plugin_retirement_countdown": "",
+  "nonebot-plugin-chikari-yinpa-fix:nonebot_plugin_chikari_yinpa": ""
 }
