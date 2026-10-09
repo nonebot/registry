@@ -940,5 +940,6 @@
   "nonebot-plugin-maestro:nonebot_plugin_maestro": "",
   "nonebot-plugin-dnddicer:nonebot_plugin_dnddicer": "dnddicer_command_priority=10\ndnddicer_default_face=20\ndnddicer_enabled=true\ndnddicer_use_host_command_starts=false",
   "nonebot-plugin-yijing:nonebot_plugin_yijing": "",
-  "nonebot-plugin-varolant:nonebot_plugin_varolant": "VAROLANT_DEFAULT_LOGIN_MODE=wx\nVAROLANT_MONITOR_TIME=08:01\nVAROLANT_TIMEZONE=Asia/Shanghai\nVAROLANT_BOT_ID=\nVAROLANT_LOGIN_CALLBACK_URL=http://connect.qq.com\nVAROLANT_LOGIN_U1_URL=http://connect.qq.com"
+  "nonebot-plugin-varolant:nonebot_plugin_varolant": "VAROLANT_DEFAULT_LOGIN_MODE=wx\nVAROLANT_MONITOR_TIME=08:01\nVAROLANT_TIMEZONE=Asia/Shanghai\nVAROLANT_BOT_ID=\nVAROLANT_LOGIN_CALLBACK_URL=http://connect.qq.com\nVAROLANT_LOGIN_U1_URL=http://connect.qq.com",
+  "nonebot-plugin-wuwa-emoji:nonebot_plugin_wuwa_emoji": ""
 }
