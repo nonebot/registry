@@ -943,5 +943,6 @@
   "nonebot-plugin-varolant:nonebot_plugin_varolant": "VAROLANT_DEFAULT_LOGIN_MODE=wx\nVAROLANT_MONITOR_TIME=08:01\nVAROLANT_TIMEZONE=Asia/Shanghai\nVAROLANT_BOT_ID=\nVAROLANT_LOGIN_CALLBACK_URL=http://connect.qq.com\nVAROLANT_LOGIN_U1_URL=http://connect.qq.com",
   "nonebot-plugin-wuwa-emoji:nonebot_plugin_wuwa_emoji": "",
   "nonebot-plugin-xbox-status:nonebot_plugin_xbox_status": "",
-  "nonebot-plugin-status-zmd:nonebot_plugin_status_zmd": ""
+  "nonebot-plugin-status-zmd:nonebot_plugin_status_zmd": "",
+  "nonebot-plugin-group-rename:nonebot_plugin_group_rename": ""
 }
