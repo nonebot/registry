@@ -944,5 +944,6 @@
   "nonebot-plugin-wuwa-emoji:nonebot_plugin_wuwa_emoji": "",
   "nonebot-plugin-xbox-status:nonebot_plugin_xbox_status": "",
   "nonebot-plugin-status-zmd:nonebot_plugin_status_zmd": "",
-  "nonebot-plugin-group-rename:nonebot_plugin_group_rename": ""
+  "nonebot-plugin-group-rename:nonebot_plugin_group_rename": "",
+  "nonebot-plugin-agent-chat:nonebot_plugin_agent_chat": ""
 }
