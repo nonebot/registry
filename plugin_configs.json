@@ -946,5 +946,6 @@
   "nonebot-plugin-status-zmd:nonebot_plugin_status_zmd": "",
   "nonebot-plugin-group-rename:nonebot_plugin_group_rename": "",
   "nonebot-plugin-agent-chat:nonebot_plugin_agent_chat": "",
-  "nonebot-plugin-github-release:nonebot_plugin_github_release": ""
+  "nonebot-plugin-github-release:nonebot_plugin_github_release": "",
+  "nonebot-plugin-botui:nonebot_plugin_botui": ""
 }
