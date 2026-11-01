@@ -75,9 +75,9 @@ const numberSorter = (field: "validation" | "load" | "metadata") => {
   };
 };
 
-const timeSorter = (type: "plugin" | "result", field: "time") => {
+const timeSorter = (type: "plugin" | "result") => {
   return (rowA: RowData, rowB: RowData) => {
-    return Date.parse(rowA[type][field]) - Date.parse(rowB[type][field]);
+    return Date.parse(rowA[type].time) - Date.parse(rowB[type].time);
   };
 };
 
@@ -150,7 +150,7 @@ const columns: DataTableColumns<RowData> = [
         time: rowData.plugin.time,
         currentTime: currentTime.value,
       }),
-    sorter: timeSorter("plugin", "time"),
+    sorter: timeSorter("plugin"),
   },
   {
     title: "测试时间",
@@ -161,7 +161,7 @@ const columns: DataTableColumns<RowData> = [
         time: rowData.result.time,
         currentTime: currentTime.value,
       }),
-    sorter: timeSorter("result", "time"),
+    sorter: timeSorter("result"),
   },
   {
     title: "选项",
