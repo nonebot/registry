@@ -1,5 +1,4 @@
 allowBuilds:
   '@parcel/watcher': true
-  '@sentry/cli': true
   simple-git-hooks: true
   unrs-resolver: true
