@@ -16,8 +16,10 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
           fetch-depth: 0
 
-      - name: Setup Node Environment
-        uses: ./.github/actions/setup-node
+      - name: Setup pnpm and Node.js
+        uses: pnpm/setup@v3
+        with:
+          cache: true
 
       - name: Get results
         run: |
