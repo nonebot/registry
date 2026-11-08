@@ -950,5 +950,6 @@
   "nonebot-plugin-botui:nonebot_plugin_botui": "",
   "nonebot-plugin-lsay:nonebot_plugin_lsay": "",
   "nonebot-plugin-hsy:nonebot_plugin_hsy": "",
-  "nonebot-plugin-ifollow:nonebot_plugin_ifollow": ""
+  "nonebot-plugin-ifollow:nonebot_plugin_ifollow": "",
+  "nonebot-plugin-parsehub:nonebot_plugin_parsehub": ""
 }
