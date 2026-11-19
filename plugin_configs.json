@@ -955,5 +955,6 @@
   "nonebot-plugin-volt-toy:nonebot_plugin_volt_toy": "",
   "nonebot-plugin-myom:nonebot_plugin_myom": "",
   "nonebot-plugin-number-meme:nonebot_plugin_number_meme": "",
-  "nonebot-plugin-mortis-analysis:nonebot_plugin_mortis_analysis": ""
+  "nonebot-plugin-mortis-analysis:nonebot_plugin_mortis_analysis": "",
+  "nonebot-plugin-zhihu-parser:nonebot_plugin_zhihu_parser": ""
 }
